@@ -1,0 +1,90 @@
+{
+  "version": "historical-exercise-basis-1",
+  "battle": "抗日战争-武汉会战-1938.06至1938.10",
+  "card": "corpus/抗日战争-武汉会战-1938.06至1938.10.md",
+  "card_digest": "707150ac1eedf973cb0526934576fdb1e3f90c52a87d8aeec1e121c5a4529b5f",
+  "units": [
+    {
+      "id": "force-0",
+      "team": "red",
+      "name": "武汉外围中国陆军与中苏航空力量",
+      "context": "各方向逐步投入，航空支援、舰艇和地面部队独立记账。",
+      "sources": [
+        {
+          "id": "A10",
+          "title": "武汉会战：中国抗战的战略转折",
+          "publisher": "新华社",
+          "url": "http://www.news.cn/20250729/8cf25eaa832449aca9734ac831aa1de4/c.html",
+          "supports": "6—10月会战、双方投入、万家岭、9月田家镇、10月24日中山舰",
+          "evidence_type": "公开网页正文",
+          "accessed": "2026-10-22",
+          "original_archive_examined": false,
+          "caveat": "公开叙述不等于已逐页校验原始战报、名册或日方档案。"
+        }
+      ],
+      "source_locator": {
+        "A10": "6—10月会战、双方投入、万家岭、9月田家镇、10月24日中山舰"
+      },
+      "evidence_status": "published_account",
+      "actual_personnel": null,
+      "actual_equipment": null,
+      "actual_tactical_position": null
+    },
+    {
+      "id": "force-1",
+      "team": "blue",
+      "name": "沿长江及大别山方向进攻部队",
+      "context": "海空与陆军配合作战，兵力为全会战累计口径。",
+      "sources": [
+        {
+          "id": "A10",
+          "title": "武汉会战：中国抗战的战略转折",
+          "publisher": "新华社",
+          "url": "http://www.news.cn/20250729/8cf25eaa832449aca9734ac831aa1de4/c.html",
+          "supports": "6—10月会战、双方投入、万家岭、9月田家镇、10月24日中山舰",
+          "evidence_type": "公开网页正文",
+          "accessed": "2026-10-22",
+          "original_archive_examined": false,
+          "caveat": "公开叙述不等于已逐页校验原始战报、名册或日方档案。"
+        }
+      ],
+      "source_locator": {
+        "A10": "6—10月会战、双方投入、万家岭、9月田家镇、10月24日中山舰"
+      },
+      "evidence_status": "published_account",
+      "actual_personnel": null,
+      "actual_equipment": null,
+      "actual_tactical_position": null
+    }
+  ],
+  "scope": "史料参战单位/隶属参考；不等于某时刻全军到场。演习取局部代表性编组，人数、装备可用量与战术部署另作估计。",
+  "events": [
+    {
+      "date": "1938年6月 · 月内",
+      "event": "日军向武汉外围展开进攻。"
+    },
+    {
+      "date": "1938年9月 · 月内",
+      "event": "田家镇保卫战迟滞溯江推进，不应写为10月才开始。"
+    },
+    {
+      "date": "1938年9—10月 · 阶段",
+      "event": "万家岭形成局部包围战。"
+    },
+    {
+      "date": "1938-10-24 · 当日",
+      "event": "中山舰在金口水域遭空袭后沉没。"
+    },
+    {
+      "date": "1938-10-25 · 当日",
+      "event": "中国军队按计划撤离武汉，后方转移成为结果的重要部分。"
+    }
+  ],
+  "unknowns": [
+    "逐编组实到人数",
+    "逐类装备可用量",
+    "同一时刻战术部署",
+    "历史武器效能标定"
+  ],
+  "basis_hash": "b35ae4dd6f307e86242057ca7737da0e7a45b884373d3db77d59f0cb7e423300"
+}

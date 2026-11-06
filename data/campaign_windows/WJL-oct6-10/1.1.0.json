@@ -1,0 +1,2103 @@
+{
+  "format": "gentactix-campaign-window-1",
+  "id": "WJL-oct6-10",
+  "version": "1.1.0",
+  "label": "万家岭：10月6—10日地面会战 · 计算先验",
+  "battle": "抗日战争-万家岭战役-1938.09下旬至1938.10",
+  "historical_initial": {
+    "profile_id": "AJ07-wanjialing",
+    "version": "1.3.0",
+    "definition_hash": "8d213c6c58f8ff74e9bc181cfcd9646de0589ef9bcec3deff2056e75d0a9d873"
+  },
+  "start_phase_id": "oct6_orders",
+  "phase_ids": [
+    "oct6_orders",
+    "oct7_attack",
+    "oct8_counterattacks",
+    "oct9_final_orders",
+    "oct10_attacks"
+  ],
+  "bounds": {
+    "start": "1938-10-06T00:00:00",
+    "end": "1938-10-11T00:00:00",
+    "kind": "model_scope_limit",
+    "note": "覆盖6—10日的模型日界，不是史实零点调令；开放模式按目标结束，可延伸，后续援军和史实结果不自动注入。"
+  },
+  "units": {
+    "ww2.cn.warzone9": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "历史指挥参考；不生成另一份可交战兵力或重复计入下属资源。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ARCHIVE",
+          "locator": "第九战区调集部队围攻万家岭"
+        }
+      ]
+    },
+    "ww2.cn.corps1": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "历史指挥参考；不生成另一份可交战兵力或重复计入下属资源。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct2-east-order",
+        "WJL-Oct2-west-order",
+        "WJL-Oct6-orders",
+        "WJL-Oct6-relief-blocking",
+        "WJL-Oct9-orders",
+        "WJL-Oct10-residual",
+        "WJL-Oct12-redeployment",
+        "WJL-Oct16-retrograde",
+        "WJL-Oct17-withdrawal"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ARCHIVE",
+          "locator": "第一兵团部署与10月6日兵力部署电报目录"
+        }
+      ]
+    },
+    "ww2.cn.army4": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.division90",
+      "presence_basis": "window_reference",
+      "extent": "行政编制或有机下级参考，非额外计算兵力；已列下级不证明覆盖完整，未核余部另行登记。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct2-east-order",
+        "WJL-Oct6-orders",
+        "WJL-Oct7-eastern",
+        "WJL-Oct8-hills",
+        "WJL-Oct9-orders",
+        "WJL-Oct9-preparation",
+        "WJL-Oct9-fire",
+        "WJL-Oct10-4",
+        "WJL-Oct12-redeployment",
+        "WJL-Oct17-withdrawal"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ACCOUNT",
+          "locator": "10月7日扁担山方向的第4军任务"
+        }
+      ]
+    },
+    "ww2.cn.army66": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.division159",
+      "presence_basis": "window_reference",
+      "extent": "行政编制或有机下级参考，非额外计算兵力；已列下级不证明覆盖完整，未核余部另行登记。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct6-redeployment",
+        "WJL-Oct6-orders",
+        "WJL-Oct7-shibao",
+        "WJL-Oct8-hills",
+        "WJL-Oct9-orders",
+        "WJL-Oct9-preparation",
+        "WJL-Oct9-fire",
+        "WJL-Oct10-66",
+        "WJL-Oct12-redeployment",
+        "WJL-Oct17-withdrawal"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ACCOUNT",
+          "locator": "10月7日石堡山方向的第66军任务"
+        }
+      ]
+    },
+    "ww2.cn.army74": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.division51",
+      "presence_basis": "window_reference",
+      "extent": "行政编制或有机下级参考，非额外计算兵力；已列下级不证明覆盖完整，未核余部另行登记。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct2-east-order",
+        "WJL-Oct6-redeployment",
+        "WJL-Oct6-orders",
+        "WJL-Oct7-changling",
+        "WJL-Oct9-orders",
+        "WJL-Oct9-preparation",
+        "WJL-Oct9-fire",
+        "WJL-Oct10-74",
+        "WJL-Oct12-redeployment"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ACCOUNT",
+          "locator": "10月7日长岭和张古山方向的第74军任务"
+        }
+      ]
+    },
+    "ww2.cn.army32": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.division139",
+      "presence_basis": "window_reference",
+      "extent": "行政编制或有机下级参考，非额外计算兵力；已列下级不证明覆盖完整，未核余部另行登记。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ARCHIVE",
+          "locator": "白水街方向阻击27师团援军的外线任务"
+        }
+      ]
+    },
+    "ww2.jp.army11": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "历史指挥参考；不生成另一份可交战兵力或重复计入下属资源。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ARCHIVE",
+          "locator": "第11军106师团主力进入万家岭"
+        }
+      ]
+    },
+    "ww2.jp.division106": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "reported_action",
+      "extent": "被围106师团在本窗口的原有投入部分，聚合含123联队；不含另列149联队和由补充人员组成的宇贺支队，不使用满编师团人数。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Sep28-149-attachment",
+        "WJL-Oct6-orders",
+        "WJL-Oct7-shibao",
+        "WJL-Oct7-eastern",
+        "WJL-Oct7-changling",
+        "WJL-Oct8-zhanggu",
+        "WJL-Oct8-hills",
+        "WJL-Oct8-japanese-situation",
+        "WJL-Oct9-fire",
+        "WJL-Oct10-66",
+        "WJL-Oct10-74",
+        "WJL-Oct10-residual",
+        "WJL-Oct17-withdrawal"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ARCHIVE",
+          "locator": "被围106师团及10月7日总攻对象"
+        }
+      ]
+    },
+    "ww2.jp.division27": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.jp.saeda_detachment",
+      "presence_basis": "window_reference",
+      "extent": "行政编制或有机下级参考，非额外计算兵力；已列下级不证明覆盖完整，未核余部另行登记。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct6-relief-blocking"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ARCHIVE",
+          "locator": "白水街方向的27师团一部，非106师团被围主力"
+        }
+      ]
+    },
+    "ww2.cn.army18": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.division60",
+      "presence_basis": "window_reference",
+      "extent": "行政编制或有机下级参考，非额外计算兵力；已列下级不证明覆盖完整，未核余部另行登记。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ]
+    },
+    "ww2.cn.army64": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.division187",
+      "presence_basis": "window_reference",
+      "extent": "行政编制或有机下级参考，非额外计算兵力；已列下级不证明覆盖完整，未核余部另行登记。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ]
+    },
+    "ww2.cn.army72": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.division_new15",
+      "presence_basis": "window_reference",
+      "extent": "行政编制或有机下级参考，非额外计算兵力；已列下级不证明覆盖完整，未核余部另行登记。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ]
+    },
+    "ww2.cn.army78": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.division_new13",
+      "presence_basis": "window_reference",
+      "extent": "行政编制或有机下级参考，非额外计算兵力；已列下级不证明覆盖完整，未核余部另行登记。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ]
+    },
+    "ww2.cn.division90": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页：第4军90师从东面攻击"
+        }
+      ]
+    },
+    "ww2.cn.division159": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "reported_action",
+      "extent": "本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct6-redeployment",
+        "WJL-Oct7-shibao"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118—119页：调入159师，7日向石堡山攻击"
+        }
+      ]
+    },
+    "ww2.cn.division160": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct6-redeployment"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页：10月5日调159、160师；不能据此证明7日全160师到场"
+        }
+      ]
+    },
+    "ww2.cn.division161": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.division161.wjl_part",
+      "presence_basis": "window_reference",
+      "extent": "行政编制或有机下级参考，非额外计算兵力；已列下级不证明覆盖完整，未核余部另行登记。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第119页：161师一部在66军方向投入，不据此确定全师行政上级"
+        }
+      ]
+    },
+    "ww2.cn.division161.wjl_part": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "reported_action",
+      "extent": "本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct7-shibao"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第119页：161师之一部；下级番号、规模缺载，不补造一个新团"
+        }
+      ]
+    },
+    "ww2.cn.division51": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "reported_action",
+      "extent": "本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct6-redeployment",
+        "WJL-Oct8-zhanggu"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页：74军率51师到白槎西北；第119页8日拂晓张古山争夺"
+        }
+      ]
+    },
+    "ww2.cn.division58": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct6-redeployment"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页：58师归还74军建制，仍任长岭、张古山守备"
+        }
+      ]
+    },
+    "ww2.cn.division60": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "包围与外线阻援任务参考；抽调范围、到离场和分兵数量未载，不把全师同时放入内圈和外线。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct2-west-order",
+        "WJL-Oct6-relief-blocking",
+        "WJL-Oct12-redeployment"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ]
+    },
+    "ww2.cn.division139": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct2-east-order"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ]
+    },
+    "ww2.cn.division141": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ]
+    },
+    "ww2.cn.division142": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.division142.wjl_part",
+      "presence_basis": "window_reference",
+      "extent": "行政编制或有机下级参考，非额外计算兵力；已列下级不证明覆盖完整，未核余部另行登记。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct2-west-order",
+        "WJL-Oct12-redeployment"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ]
+    },
+    "ww2.cn.division187": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct2-east-order",
+        "WJL-Oct12-redeployment"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ]
+    },
+    "ww2.cn.division_new15": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "包围与外线阻援任务参考；抽调范围、到离场和分兵数量未载，不把全师同时放入内圈和外线。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct2-west-order",
+        "WJL-Oct6-relief-blocking"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ]
+    },
+    "ww2.cn.division_new13": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "包围与外线阻援任务参考；抽调范围、到离场和分兵数量未载，不把全师同时放入内圈和外线。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct2-west-order",
+        "WJL-Oct6-relief-blocking",
+        "WJL-Oct12-redeployment"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ]
+    },
+    "ww2.cn.division91": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "reported_action",
+      "extent": "原文为各一部，自西侧攻击并有抽调阻援；不代表整个师全数投入或全师撤离内圈，数值须注明局部估计。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Sep28-western-contact",
+        "WJL-Oct2-west-order",
+        "WJL-Oct6-relief-blocking",
+        "WJL-Oct10-west",
+        "WJL-Oct12-redeployment"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118—119页：南田铺攻击后抽调阻援；全程行政隶属未由此核定"
+        }
+      ]
+    },
+    "ww2.cn.division_reserve6": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "原文为各一部，自西侧攻击并有抽调阻援；不代表整个师全数投入或全师撤离内圈，数值须注明局部估计。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Sep28-western-contact",
+        "WJL-Oct2-west-order",
+        "WJL-Oct6-relief-blocking",
+        "WJL-Oct12-redeployment",
+        "WJL-Oct16-retrograde"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118—119页：西面攻击与抽调阻援，不确定全程行政上级"
+        }
+      ]
+    },
+    "ww2.cn.artillery2.battalion3": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段：炮2团3营；无实有火炮数及逐日阵位"
+        }
+      ]
+    },
+    "ww2.cn.artillery1.company6": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段，视觉核读为炮一团六连；1.1.0炮4团为转录错误"
+        }
+      ]
+    },
+    "ww2.cn.division142.wjl_part": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "departure_only",
+      "extent": "第142师欠一团；8日11时记载为出发，不是同时到前沿或接敌；不得将启程钟点直接设为首次开火钟点。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct8-142-departure",
+        "WJL-Oct10-west"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第119—120页：142师欠一团出击及次日攻击"
+        }
+      ]
+    },
+    "ww2.jp.division101": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.jp.regiment149",
+      "presence_basis": "window_reference",
+      "extent": "行政编制或有机下级参考，非额外计算兵力；已列下级不证明覆盖完整，未核余部另行登记。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第116页：149联队行政归属；不代表整个101师团在万家岭内圈"
+        }
+      ]
+    },
+    "ww2.jp.regiment149": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "prior_reference",
+      "extent": "9月28日前后会合与临时指挥关系有据，结束日和6—10日连续在场未核；该窗口是否投入、到场时刻及兵额须显式估计，仍行政隶属101师团。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Sep28-149-attachment"
+      ],
+      "operational_reference": "WJL-149-operational-command",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第116页：101师团149联队与106师团会合并受其统一指挥"
+        }
+      ]
+    },
+    "ww2.jp.regiment123": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.jp.division106",
+      "presence_basis": "window_reference",
+      "extent": "106师团计算聚合包含其有机123联队的本窗口投入部分；不再另建联队，不据“一部”补全整联队。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Sep28-western-contact"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第117页：106师团123联队一部在白水街方向；实际投入一部，不补全全联队"
+        }
+      ]
+    },
+    "ww2.jp.uga_detachment": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "由另拨106师团补充人员组成的外线支队；与被围师团原有人员分账，不按同一份人员重复计算。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct6-relief-blocking"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第119页：临时组成的外线援敌；其补充兵数与被围师团原有人员不能重复计入"
+        }
+      ]
+    },
+    "ww2.jp.suzuki_detachment": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct6-relief-blocking",
+        "WJL-Oct17-withdrawal"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第119、121页：外线援敌与17日取得联系；原行政序列未据此确定"
+        }
+      ]
+    },
+    "ww2.jp.saeda_detachment": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "27师团留置支队的外线投入参考，不是整个27师团进入内圈；兵额和到场须估计。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct6-relief-blocking"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第119页：27师团留置支队；不是27师团全体重回万家岭"
+        }
+      ]
+    },
+    "ww2.cn.division61": {
+      "representation": "after_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅核16日后退文字，番号异文待核；不据此投入6—10日窗口。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WJL-Oct16-retrograde"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第121页16日后退原文为六一师，前述阻援为六十师；不将两番号自动合并，隶属及番号异文待原件复核"
+        }
+      ]
+    }
+  },
+  "sectors": [
+    {
+      "id": "north",
+      "label": "金娥殿—公母岭—石堡山北侧方向",
+      "position": null,
+      "unit_ids": [
+        "ww2.cn.division159",
+        "ww2.cn.division160",
+        "ww2.cn.division161.wjl_part"
+      ],
+      "operation_ids": [
+        "WJL-Oct6-redeployment",
+        "WJL-Oct7-shibao"
+      ],
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "印刷118—119页：66军移交阵地后集中及7日攻击",
+          "note": "已核研究论文印刷页；其转引电报和日方原始档案尚未查阅。"
+        }
+      ]
+    },
+    {
+      "id": "east",
+      "label": "东侧包围与局部攻击方向",
+      "position": null,
+      "unit_ids": [
+        "ww2.cn.division90",
+        "ww2.cn.division139",
+        "ww2.cn.division141",
+        "ww2.cn.division187"
+      ],
+      "operation_ids": [
+        "WJL-Oct2-east-order",
+        "WJL-Oct7-eastern"
+      ],
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "印刷117—118页：东西分工和参加部队；具体阵位未核",
+          "note": "已核研究论文印刷页；其转引电报和日方原始档案尚未查阅。"
+        }
+      ]
+    },
+    {
+      "id": "south",
+      "label": "白槎西北—长岭—张古山方向",
+      "position": null,
+      "unit_ids": [
+        "ww2.cn.division51",
+        "ww2.cn.division58"
+      ],
+      "operation_ids": [
+        "WJL-Oct6-redeployment",
+        "WJL-Oct8-zhanggu",
+        "WJL-Oct10-74"
+      ],
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "印刷118—120页：51、58师部署与争夺",
+          "note": "已核研究论文印刷页；其转引电报和日方原始档案尚未查阅。"
+        }
+      ]
+    },
+    {
+      "id": "west",
+      "label": "杨家山—松熊及西侧方向",
+      "position": null,
+      "unit_ids": [
+        "ww2.cn.division91",
+        "ww2.cn.division_reserve6",
+        "ww2.cn.division142.wjl_part"
+      ],
+      "operation_ids": [
+        "WJL-Oct8-142-departure",
+        "WJL-Oct10-west"
+      ],
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "印刷118—120页：各一部、142师启程及10日攻击",
+          "note": "已核研究论文印刷页；其转引电报和日方原始档案尚未查阅。"
+        }
+      ]
+    },
+    {
+      "id": "relief",
+      "label": "武永路—箬溪外线阻援方向",
+      "position": null,
+      "unit_ids": [
+        "ww2.cn.division_new13",
+        "ww2.cn.division_new15",
+        "ww2.cn.division60",
+        "ww2.cn.division91",
+        "ww2.cn.division_reserve6",
+        "ww2.jp.uga_detachment",
+        "ww2.jp.suzuki_detachment",
+        "ww2.jp.saeda_detachment"
+      ],
+      "operation_ids": [
+        "WJL-Oct6-relief-blocking"
+      ],
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "印刷119页：援军及阻援抽调，实际数量和到场缺载",
+          "note": "已核研究论文印刷页；其转引电报和日方原始档案尚未查阅。"
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "operation_id": "WJL-Oct6-redeployment",
+      "phase_id": "oct6_orders",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct6-orders",
+      "phase_id": "oct6_orders",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct6-relief-blocking",
+      "phase_id": "oct6_orders",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct7-shibao",
+      "phase_id": "oct7_attack",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct7-eastern",
+      "phase_id": "oct7_attack",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct7-changling",
+      "phase_id": "oct7_attack",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct8-zhanggu",
+      "phase_id": "oct8_counterattacks",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct8-hills",
+      "phase_id": "oct8_counterattacks",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct8-142-departure",
+      "phase_id": "oct8_counterattacks",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct8-japanese-situation",
+      "phase_id": "oct8_counterattacks",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct9-orders",
+      "phase_id": "oct9_final_orders",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct9-preparation",
+      "phase_id": "oct9_final_orders",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct9-fire",
+      "phase_id": "oct9_final_orders",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct10-66",
+      "phase_id": "oct10_attacks",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct10-4",
+      "phase_id": "oct10_attacks",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct10-74",
+      "phase_id": "oct10_attacks",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct10-west",
+      "phase_id": "oct10_attacks",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WJL-Oct10-residual",
+      "phase_id": "oct10_attacks",
+      "policy": "reference_only"
+    }
+  ],
+  "limitations": "窗口准入与史实参照，不是完整历史部署认证。逐单位兵力、装备、库存、补给线、精确阵位、临时配属有效期及支援可用量仍须补证或显式估计；原件和日军日志未核。22个计算身份是明确范围的建模候选，不是22个完整建制同时在场。 本版补可计算先验和双边目标模板，未新增单位实有事实；数值、位置与阈值未经历史标定，航空及真正场外过程未因此补齐。",
+  "parameter_estimates": {
+    "version": "campaign-estimates-1",
+    "historically_calibrated": false,
+    "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。",
+    "area": {
+      "center": {
+        "lat": 29.365246,
+        "lng": 115.581335
+      },
+      "radius_km": 60,
+      "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。60公里是包含外线的宽工作范围假设，未核道路通行与各地精确坐标。",
+      "evidence": [
+        {
+          "source_id": "GEO",
+          "locator": "现代磨溪乡地名参考；外线范围为独立模型假设，不来自OSM单位阵位"
+        }
+      ]
+    },
+    "actors": {
+      "ww2.jp.division106": {
+        "personnel": {
+          "minimum": 4000,
+          "maximum": 12000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.365246,
+            "lng": 115.581335
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 被围106师团在本窗口的原有投入部分，聚合含123联队；不含另列149联队和由补充人员组成的宇贺支队，不使用满编师团人数。"
+      },
+      "ww2.cn.division90": {
+        "personnel": {
+          "minimum": 1200,
+          "maximum": 6000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.365246,
+            "lng": 115.636335
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。"
+      },
+      "ww2.cn.division159": {
+        "personnel": {
+          "minimum": 1000,
+          "maximum": 6000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.420246,
+            "lng": 115.581335
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。"
+      },
+      "ww2.cn.division160": {
+        "personnel": {
+          "minimum": 1000,
+          "maximum": 6000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.420246,
+            "lng": 115.581335
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。"
+      },
+      "ww2.cn.division161.wjl_part": {
+        "personnel": {
+          "minimum": 600,
+          "maximum": 3600
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.420246,
+            "lng": 115.581335
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。"
+      },
+      "ww2.cn.division51": {
+        "personnel": {
+          "minimum": 1200,
+          "maximum": 6000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.315246,
+            "lng": 115.581335
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。"
+      },
+      "ww2.cn.division58": {
+        "personnel": {
+          "minimum": 1200,
+          "maximum": 6000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.315246,
+            "lng": 115.581335
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。"
+      },
+      "ww2.cn.division60": {
+        "personnel": {
+          "minimum": 600,
+          "maximum": 4000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.265245999999998,
+            "lng": 115.481335
+          },
+          "radius_km": 12,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 包围与外线阻援任务参考；抽调范围、到离场和分兵数量未载，不把全师同时放入内圈和外线。"
+      },
+      "ww2.cn.division139": {
+        "personnel": {
+          "minimum": 800,
+          "maximum": 4800
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.365246,
+            "lng": 115.636335
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。"
+      },
+      "ww2.cn.division141": {
+        "personnel": {
+          "minimum": 800,
+          "maximum": 4800
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.365246,
+            "lng": 115.636335
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。"
+      },
+      "ww2.cn.division187": {
+        "personnel": {
+          "minimum": 800,
+          "maximum": 4800
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.365246,
+            "lng": 115.636335
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。"
+      },
+      "ww2.cn.division_new15": {
+        "personnel": {
+          "minimum": 600,
+          "maximum": 4000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.265245999999998,
+            "lng": 115.481335
+          },
+          "radius_km": 12,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 包围与外线阻援任务参考；抽调范围、到离场和分兵数量未载，不把全师同时放入内圈和外线。"
+      },
+      "ww2.cn.division_new13": {
+        "personnel": {
+          "minimum": 600,
+          "maximum": 4000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.265245999999998,
+            "lng": 115.481335
+          },
+          "radius_km": 12,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 包围与外线阻援任务参考；抽调范围、到离场和分兵数量未载，不把全师同时放入内圈和外线。"
+      },
+      "ww2.cn.division91": {
+        "personnel": {
+          "minimum": 300,
+          "maximum": 2400
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.265245999999998,
+            "lng": 115.481335
+          },
+          "radius_km": 12,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 原文为各一部，自西侧攻击并有抽调阻援；不代表整个师全数投入或全师撤离内圈，数值须注明局部估计。"
+      },
+      "ww2.cn.division_reserve6": {
+        "personnel": {
+          "minimum": 300,
+          "maximum": 2400
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.265245999999998,
+            "lng": 115.481335
+          },
+          "radius_km": 12,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 原文为各一部，自西侧攻击并有抽调阻援；不代表整个师全数投入或全师撤离内圈，数值须注明局部估计。"
+      },
+      "ww2.cn.artillery2.battalion3": {
+        "personnel": {
+          "minimum": 120,
+          "maximum": 600
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 3,
+            "maximum": 12
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.295246,
+            "lng": 115.581335
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "support",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 600
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。"
+      },
+      "ww2.cn.artillery1.company6": {
+        "personnel": {
+          "minimum": 40,
+          "maximum": 200
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 1,
+            "maximum": 4
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.295246,
+            "lng": 115.581335
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "support",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 600
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。"
+      },
+      "ww2.cn.division142.wjl_part": {
+        "personnel": {
+          "minimum": 800,
+          "maximum": 4000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.365246,
+            "lng": 115.49133499999999
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 第142师欠一团；8日11时记载为出发，不是同时到前沿或接敌；不得将启程钟点直接设为首次开火钟点。"
+      },
+      "ww2.jp.regiment149": {
+        "personnel": {
+          "minimum": 400,
+          "maximum": 2600
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.365246,
+            "lng": 115.581335
+          },
+          "radius_km": 8,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 9月28日前后会合与临时指挥关系有据，结束日和6—10日连续在场未核；该窗口是否投入、到场时刻及兵额须显式估计，仍行政隶属101师团。"
+      },
+      "ww2.jp.uga_detachment": {
+        "personnel": {
+          "minimum": 1800,
+          "maximum": 4000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.245245999999998,
+            "lng": 115.361335
+          },
+          "radius_km": 12,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 由另拨106师团补充人员组成的外线支队；与被围师团原有人员分账，不按同一份人员重复计算。"
+      },
+      "ww2.jp.suzuki_detachment": {
+        "personnel": {
+          "minimum": 600,
+          "maximum": 3000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.245245999999998,
+            "lng": 115.361335
+          },
+          "radius_km": 12,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 本窗口所述投入范围；实到兵额、分类装备、阵位及开局状态缺载，不代表全建制满编。"
+      },
+      "ww2.jp.saeda_detachment": {
+        "personnel": {
+          "minimum": 400,
+          "maximum": 2200
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 0
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 24
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 4
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 16
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 29.245245999999998,
+            "lng": 115.361335
+          },
+          "radius_km": 12,
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。仅约束开局估计工作区，不限制随后合法机动。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1500
+        },
+        "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。 27师团留置支队的外线投入参考，不是整个27师团进入内圈；兵额和到场须估计。"
+      }
+    },
+    "goal_template": {
+      "version": "campaign-objectives-1",
+      "nodes": [
+        {
+          "id": "red_inner",
+          "label": "控制内圈估计作战地域",
+          "team": "red",
+          "unit_ids": [
+            "ww2.cn.division90",
+            "ww2.cn.division159",
+            "ww2.cn.division160",
+            "ww2.cn.division161.wjl_part",
+            "ww2.cn.division51",
+            "ww2.cn.division58",
+            "ww2.cn.division139",
+            "ww2.cn.division141",
+            "ww2.cn.division187",
+            "ww2.cn.division142.wjl_part"
+          ],
+          "after": {
+            "mode": "all",
+            "node_ids": []
+          },
+          "not_before_seconds": 0,
+          "condition": {
+            "kind": "control",
+            "region": {
+              "center": {
+                "lat": null,
+                "lng": null
+              },
+              "radius_km": null
+            },
+            "minimum_personnel": null
+          },
+          "hold_seconds": null,
+          "latch": false,
+          "operation_ids": [
+            "WJL-Oct6-orders",
+            "WJL-Oct10-residual"
+          ],
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。"
+        },
+        {
+          "id": "red_block",
+          "label": "维持外线估计阻援地域",
+          "team": "red",
+          "unit_ids": [
+            "ww2.cn.division60",
+            "ww2.cn.division_new13",
+            "ww2.cn.division_new15",
+            "ww2.cn.division91",
+            "ww2.cn.division_reserve6"
+          ],
+          "after": {
+            "mode": "all",
+            "node_ids": []
+          },
+          "not_before_seconds": 0,
+          "condition": {
+            "kind": "control",
+            "region": {
+              "center": {
+                "lat": null,
+                "lng": null
+              },
+              "radius_km": null
+            },
+            "minimum_personnel": null
+          },
+          "hold_seconds": null,
+          "latch": false,
+          "operation_ids": [
+            "WJL-Oct6-relief-blocking"
+          ],
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。"
+        },
+        {
+          "id": "red_preserve",
+          "label": "在两方向达成时保存投入兵力",
+          "team": "red",
+          "unit_ids": [
+            "ww2.cn.division90",
+            "ww2.cn.division159",
+            "ww2.cn.division160",
+            "ww2.cn.division161.wjl_part",
+            "ww2.cn.division51",
+            "ww2.cn.division58",
+            "ww2.cn.division60",
+            "ww2.cn.division139",
+            "ww2.cn.division141",
+            "ww2.cn.division187",
+            "ww2.cn.division_new15",
+            "ww2.cn.division_new13",
+            "ww2.cn.division91",
+            "ww2.cn.division_reserve6",
+            "ww2.cn.artillery2.battalion3",
+            "ww2.cn.artillery1.company6",
+            "ww2.cn.division142.wjl_part"
+          ],
+          "after": {
+            "mode": "all",
+            "node_ids": [
+              "red_inner",
+              "red_block"
+            ]
+          },
+          "not_before_seconds": 0,
+          "condition": {
+            "kind": "preserve",
+            "minimum_fraction": null
+          },
+          "hold_seconds": null,
+          "latch": false,
+          "operation_ids": [],
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。"
+        },
+        {
+          "id": "blue_core",
+          "label": "保存被围投入部",
+          "team": "blue",
+          "unit_ids": [
+            "ww2.jp.division106"
+          ],
+          "after": {
+            "mode": "all",
+            "node_ids": []
+          },
+          "not_before_seconds": 0,
+          "condition": {
+            "kind": "preserve",
+            "minimum_fraction": null
+          },
+          "hold_seconds": null,
+          "latch": false,
+          "operation_ids": [],
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。"
+        },
+        {
+          "id": "blue_exit",
+          "label": "被围投入部到达估计突围地域",
+          "team": "blue",
+          "unit_ids": [
+            "ww2.jp.division106"
+          ],
+          "after": {
+            "mode": "all",
+            "node_ids": [
+              "blue_core"
+            ]
+          },
+          "not_before_seconds": 0,
+          "condition": {
+            "kind": "reach",
+            "region": {
+              "center": {
+                "lat": null,
+                "lng": null
+              },
+              "radius_km": null
+            },
+            "minimum_personnel": null
+          },
+          "hold_seconds": null,
+          "latch": false,
+          "operation_ids": [
+            "WJL-Oct6-orders"
+          ],
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。"
+        },
+        {
+          "id": "blue_relief",
+          "label": "援军推进至内圈估计地域",
+          "team": "blue",
+          "unit_ids": [
+            "ww2.jp.uga_detachment",
+            "ww2.jp.suzuki_detachment",
+            "ww2.jp.saeda_detachment"
+          ],
+          "after": {
+            "mode": "all",
+            "node_ids": [
+              "blue_core"
+            ]
+          },
+          "not_before_seconds": 0,
+          "condition": {
+            "kind": "reach",
+            "region": {
+              "center": {
+                "lat": null,
+                "lng": null
+              },
+              "radius_km": null
+            },
+            "minimum_personnel": null
+          },
+          "hold_seconds": null,
+          "latch": false,
+          "operation_ids": [
+            "WJL-Oct6-relief-blocking"
+          ],
+          "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。"
+        }
+      ],
+      "outcomes": {
+        "red": {
+          "mode": "all",
+          "node_ids": [
+            "red_preserve"
+          ]
+        },
+        "blue": {
+          "mode": "any",
+          "node_ids": [
+            "blue_exit",
+            "blue_relief"
+          ]
+        }
+      },
+      "elimination_ends": true,
+      "assumption": "可编辑的探索性计算先验，非史料实有数、非历史标定。人数区间用于限制局部投入规模，不按全役总数平均分配；装备0表示本模型不投入，不证明历史没有。位置为相对现代磨溪地名的方向估计，不是1938年阵位。到场和库存须另填估计；粮弹按编组工作量，不是按人数或重量标定。双边目标为模型胜负代理，不是原始作战命令；到达参照区不证明已完成真实解围或通信接通。"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "scope": "K00 Native report completion + bounded legacy JSON recovery; not complete campaign modernization",
+  "passed_for_scoped_component": true,
+  "full_goal_complete": false,
+  "offline": {
+    "groups": 122,
+    "failed": 0,
+    "unittest_cases": 1339,
+    "skipped": 0,
+    "summed_seconds": 722.34,
+    "live_model_calls": false
+  },
+  "new_regressions": {
+    "json_recovery": 15,
+    "native_report": 16
+  },
+  "frontend": {
+    "typecheck": true,
+    "production_build": true,
+    "browser_checks": 38,
+    "cold_ui_checks": 4,
+    "viewports": [
+      1440,
+      900
+    ],
+    "visual_inspection_performed": true
+  },
+  "real_native": {
+    "committed_turns": [
+      3,
+      4,
+      5
+    ],
+    "runtime_runs_per_turn": [
+      1,
+      1,
+      1
+    ],
+    "inference_steps_per_turn": [
+      3,
+      3,
+      3
+    ],
+    "json_recoveries_per_turn": [
+      0,
+      0,
+      0
+    ],
+    "elapsed_browser_seconds": [
+      107.149,
+      158.275,
+      150.52
+    ],
+    "cancel_ms": 251,
+    "final_text_fault_injection": true,
+    "afsim_effect_substitution": false,
+    "committed_hash_audit": true
+  },
+  "afsim_smoke": {
+    "passed": true,
+    "turns": 1,
+    "actual_model": false
+  },
+  "cold_restore": {
+    "passed": true,
+    "case_count": 3,
+    "turns": {
+      "8af669ef9d45": 1,
+      "a4dfb23da9f2": 1,
+      "7cda77706dab": 5
+    }
+  },
+  "preservation": {
+    "passed": true,
+    "runtime_source_fingerprints": 223,
+    "protected_input_fingerprints": 24448,
+    "local_doc_links": 165,
+    "profiles": 45,
+    "planned_status_cells": 270,
+    "planned_interventions": 90,
+    "cold_ui": {
+      "passed": true,
+      "checks": 4,
+      "turn": 5,
+      "cold_backend": true,
+      "actual_new_model_call": false
+    },
+    "source_changed_since_final_gate": false,
+    "historical_data_or_AGENTS_changed": false,
+    "new_plugin_in_bundle_members": true,
+    "no_archive_built": true
+  },
+  "open": [
+    "X20 general prose and X26 concrete screening false positives",
+    "X24 native early process exit and large-scale uninterrupted stability",
+    "DSH positive damaged equipment lifecycle",
+    "K02/K03 complete scoped historical data",
+    "true off-map and runtime conversion",
+    "multi-warehouse C2 terrain and calibration",
+    "45 profile complete windows and packaging/Windows"
+  ],
+  "configuration": "Actual saved medium/65536/262144 unchanged; no keys or private reasoning in this report",
+  "installation_or_upload": false,
+  "source_sha256": {
+    "backend/harness_engine.py": "90dc04e468eb6f58df3420522975928b6cdd63bc1542e0fe0ca9e94808683e2e",
+    "backend/dsh_simulation.py": "cb20cd5d421f287950c208c7930086ec5649594e715f7144305c4f1f833cb1d9",
+    "backend/turn_preview.py": "d839cf0a2b384ba4c7de75aaa8e3f9cf96704a2b8e86a5468c1bb532694499c8",
+    "backend/main.py": "e7edc2cb5a6f9493e7de058a78fa706e75c2ef1bee7a860fa7d606aa8f5cb3b8",
+    "plugins/dsh-gentactix/index.mjs": "bf49bb6a07ddc7e1682b2ec0f454529bcc6e8a43542ce4956fc95f5292d514bd",
+    "plugins/dsh-gentactix/report-evidence.mjs": "e7261e196c7648ce09418845a8d01e2331f34dfd91ed86e6c726d4052c1ae5b8",
+    "frontend/src/components/OperationProgress.vue": "95007f3bf69d19d7eaaaec28344c9f439626064818f20a4f171052d99a7770ed",
+    "verify_dsh_output_recovery.py": "3562aec49563d08df36ca512bba4f964938b214e016144d01e7127d5ebc6bb18",
+    "verify_native_report_submission.py": "e0d30c801c78a66ddbd9c49d8a21a522b730eb2a16693b5f61ab092843f0ec60",
+    "docs/Native战报候选与JSON拒收修复验收-2026-11-01.md": "69cef2bceb42fe5223cd38cb1d5bcfe1cec2b884ee0c2bd252ef3bcd4efeaf12",
+    "docs/会战级多层编制与分合兵改造规划-2026-10-31.md": "bb398fd65f31dce757de76b01b7c1075c0254a4c9cc77ec02d761d27f03fb466",
+    "docs/会战级改造验收矩阵-2026-10-31.md": "544a151fbd3f75678c697fcc63a2084b50863ff34068cdc019376965377f9631",
+    "docs/会战级改造执行任务与检测基线-2026-11-01.json": "c340e475f224d26f980738811ce50fc891634c40a660ff5eb47e997f8f959550",
+    "docs/会战级资料逐场清单-2026-10-31.csv": "1a8b6a8663986901bc64a4c033074ae0e9c020663838502a7a7ae1ade25373c4",
+    "CLAUDE.md": "8e8e4f0cb302e74b272d2c7dba80146c37a66fbcbc408cfe45aff6da3fd2b1cb",
+    "TESTING.md": "69c719dadba5f5672ceaecf5075c5483731d05a9451fe5d9049efe6561950abb",
+    "plugins/dsh-afsim/README.md": "98b2d1c5967474a571f2d82d51921ac2fe0814ff466face36c35e32fb2bfb5a0"
+  }
+}

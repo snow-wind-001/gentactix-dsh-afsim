@@ -1,0 +1,505 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "LM02-wujiang",
+  "version": "1.0.0",
+  "battle": "红军长征-强渡乌江-1935.01.01至1935.01.06",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "仅桥成后的局部后续通行：军委纵队、红5军团与记述中的退却守军；不含各渡口全序列、红4团先遣攻击全过程或追兵全部序列。",
+      "1月2日初次强渡、夜渡、1月3日再次强渡为不同过程；舟艇、先遣分队分岸与桥头夺取尚未建模，本窗从桥成后开始。",
+      "回忆文章的再强渡段列第3团、教导团、独立团；其他叙述的初期第5、第6团不并入同一时刻。各来源阶段与番号差异保留，未核原始战斗详报。",
+      "12时是计算窗口边界；双方实到数、桥成准确时刻、河线、部队位置和通行能力缺载，均不可写为史实数值。",
+      "新华社报道的回龙场8人遇难仅是单次分队损失，不是江界河或全战役伤亡；本档案不设置伤亡额度。",
+      "现代江界河聚落是地域参考，水库抬水后现代岸线、公路桥不能还原历史；未做DEM、道路、舟桥安全或水文标定。"
+    ]
+  },
+  "sources": {
+    "WJ_MEMOIR": {
+      "title": "刘亚楼：渡乌江（星火燎原撷英）",
+      "url": "https://www.81.cn/js_208592/jdt_208593/9969294.html",
+      "publisher": "中国军网·解放军报，2021-01-18",
+      "evidence_kind": "published_memoir",
+      "original_archive_examined": false,
+      "limitations": "公开回忆文章及编者导语，不是已核原始命令；导语范围与正文单团过程分开，不把叙述钟点当作全军到场时间。"
+    },
+    "WJ_XH": {
+      "title": "乌江：红军在这里开始反攻",
+      "url": "https://www.xinhuanet.com/politics/2019-07/10/c_1124736075.htm",
+      "publisher": "新华社，2019-07-10",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "采访与历史回顾；同日上午桥成等属于公开叙述，不给出桥梁容量或全部单位逐时位置。"
+    },
+    "WJ_GEO": {
+      "title": "Jiangjiehe，GeoNames 1806350",
+      "url": "https://www.geonames.org/1806350/",
+      "publisher": "GeoNames",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代聚落索引，沿用本项目已核地名参考与5公里不确定度；不是1935年渡口、岸线或单位阵地。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "乌江各渡口累计参战参考（本档案不含完整序列）",
+      "date": {
+        "label": "1935年1月1日至6日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "WJ_XH",
+            "locator": "各渡口全程"
+          }
+        ]
+      },
+      "scope": "后续通行相关单位的累计参考；不作为全军同时同地部署。",
+      "evidence": [
+        {
+          "source_id": "WJ_MEMOIR",
+          "locator": "编者导语：至3日军委纵队和红5军团由江界河过江；再强渡、猛追两节"
+        }
+      ]
+    },
+    {
+      "id": "follow_on_jan3",
+      "label": "江界河桥成后：后续编组通行与北岸集结（局部）",
+      "date": {
+        "label": "1935-01-03",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "WJ_MEMOIR",
+            "locator": "编者导语：至3日军委纵队和红5军团由江界河过江；再强渡、猛追两节"
+          }
+        ]
+      },
+      "scope": "只处理桥成后的编组通行；此前泅渡、夜渡与夺取桥头的过程尚未支持，不能以本阶段替代整场强渡。",
+      "evidence": [
+        {
+          "source_id": "WJ_MEMOIR",
+          "locator": "编者导语：至3日军委纵队和红5军团由江界河过江；再强渡、猛追两节"
+        }
+      ],
+      "execution_window": {
+        "start": "1935-01-03T12:00",
+        "end": "1935-01-03T17:00",
+        "kind": "model_scope_limit",
+        "note": "12时是将当日上午桥成后划为后续窗口的建模选择，不是桥成或各部队抵岸钟点；17时仅参照回忆文章的追击节点设局部上界，不强制历史战果。",
+        "evidence": [
+          {
+            "source_id": "WJ_MEMOIR",
+            "locator": "编者导语：至3日军委纵队和红5军团由江界河过江；再强渡、猛追两节"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 27.3148,
+          "lng": 107.402
+        },
+        "radius_km": 30,
+        "kind": "model_scope_limit",
+        "note": "现代聚落位置加30公里计算边界，不是渡口、阵地或1935年河槽；库区水位已变化，河线与部署必须另填估计。",
+        "evidence": [
+          {
+            "source_id": "WJ_GEO",
+            "locator": "GeoNames 1806350，现代聚落"
+          },
+          {
+            "source_id": "WJ_XH",
+            "locator": "末段：构皮滩水库水位升高100多米"
+          }
+        ]
+      },
+      "process_requirements": [
+        {
+          "kind": "formation_crossing",
+          "scope": "浮桥开放后的整建制通行与共享物资吞吐；不能只以无河流的地域占点代替。",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "编者导语：至3日军委纵队和红5军团由江界河过江；再强渡、猛追两节"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "lm.red.cmc",
+      "name": "中革军委",
+      "team": "red",
+      "role": "command",
+      "echelon": "军委",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJ_MEMOIR",
+          "locator": "导语：军委纵队渡江"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "导语：军委纵队渡江"
+            }
+          ]
+        },
+        {
+          "phase_id": "follow_on_jan3",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "导语：军委纵队渡江"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.cmc_column",
+      "name": "军委纵队",
+      "team": "red",
+      "role": "support",
+      "echelon": "纵队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJ_MEMOIR",
+          "locator": "导语：至3日由江界河渡河点过江"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "导语：至3日由江界河渡河点过江"
+            }
+          ]
+        },
+        {
+          "phase_id": "follow_on_jan3",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "导语：至3日由江界河渡河点过江"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.corps5",
+      "name": "红5军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJ_MEMOIR",
+          "locator": "导语：至3日由江界河渡河点过江"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "导语：至3日由江界河渡河点过江"
+            }
+          ]
+        },
+        {
+          "phase_id": "follow_on_jan3",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "导语：至3日由江界河渡河点过江"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        }
+      }
+    },
+    {
+      "id": "lm.blue.jiangfang",
+      "name": "黔军江防司令部",
+      "team": "blue",
+      "role": "command",
+      "echelon": "江防指挥部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJ_MEMOIR",
+          "locator": "再强渡、猛追：林秀生指挥，司令部在猪场"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "再强渡、猛追：林秀生指挥，司令部在猪场"
+            }
+          ]
+        },
+        {
+          "phase_id": "follow_on_jan3",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "再强渡、猛追：林秀生指挥，司令部在猪场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        }
+      }
+    },
+    {
+      "id": "lm.blue.regiment3",
+      "name": "黔军第3团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "lm.blue.jiangfang",
+      "evidence": [
+        {
+          "source_id": "WJ_MEMOIR",
+          "locator": "再强渡：第三团、教导团、独立团；猛追：三个团向遵义方向退却"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "再强渡：第三团、教导团、独立团；猛追：三个团向遵义方向退却"
+            }
+          ]
+        },
+        {
+          "phase_id": "follow_on_jan3",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "再强渡：第三团、教导团、独立团；猛追：三个团向遵义方向退却"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        }
+      }
+    },
+    {
+      "id": "lm.blue.training",
+      "name": "黔军教导团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "lm.blue.jiangfang",
+      "evidence": [
+        {
+          "source_id": "WJ_MEMOIR",
+          "locator": "再强渡：第三团、教导团、独立团；猛追：三个团向遵义方向退却"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "再强渡：第三团、教导团、独立团；猛追：三个团向遵义方向退却"
+            }
+          ]
+        },
+        {
+          "phase_id": "follow_on_jan3",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "再强渡：第三团、教导团、独立团；猛追：三个团向遵义方向退却"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        }
+      }
+    },
+    {
+      "id": "lm.blue.independent",
+      "name": "黔军独立团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "lm.blue.jiangfang",
+      "evidence": [
+        {
+          "source_id": "WJ_MEMOIR",
+          "locator": "再强渡：第三团、教导团、独立团；猛追：三个团向遵义方向退却"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "再强渡：第三团、教导团、独立团；猛追：三个团向遵义方向退却"
+            }
+          ]
+        },
+        {
+          "phase_id": "follow_on_jan3",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJ_MEMOIR",
+              "locator": "再强渡：第三团、教导团、独立团；猛追：三个团向遵义方向退却"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗口逐单位实到、分类库存及阵地坐标；参战记述不等于12时所有部队同时到桥边，计算部署须标明估计。"
+        }
+      }
+    }
+  ]
+}

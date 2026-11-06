@@ -1,0 +1,167 @@
+{
+  "observed_started_at": "2026-11-03T18:11:05.540232+08:00",
+  "observed_finished_at": "2026-11-03T18:14:35.603776+08:00",
+  "purpose": "Documentation-only handoff; source/evidence inspection and read-only API checks. No simulation, model call, test execution, process restart, configuration edit, installation or upload.",
+  "repository": {
+    "branch": "main",
+    "head": "b5a38a5d0c440cb41f77edb5ce6261cff1020082",
+    "tracked_changes_before": 131,
+    "untracked_files_before": 1107,
+    "frontend_source_version": "3.7.2"
+  },
+  "preservation": {
+    "existing_files_checked": 1384,
+    "content_and_mtime_unchanged": true,
+    "changed": [],
+    "includes_existing_source_docs_and_selected_checkpoints": true,
+    "includes_existing_local_encrypted_configuration_and_vault_key": true,
+    "secret_values_and_key_fingerprints_included": false,
+    "process_pids_and_start_times_unchanged": true,
+    "observed_processes": [
+      "  86050 Tue Nov  3 16:32:11 2026 python",
+      " 186277 Tue Nov  3 17:03:55 2026 python",
+      " 292476 Tue Nov  3 17:49:52 2026 python"
+    ],
+    "listeners": {
+      "8700": false,
+      "8501": false,
+      "19358": true,
+      "19359": true,
+      "19368": true,
+      "19369": false
+    },
+    "all_four_whole_session_exports_unchanged": true,
+    "scope": "Selected local textual project files, two QA stores, existing local configuration/key, and four known live QA cases; not an entire-machine audit."
+  },
+  "runtime_observations": {
+    "19358": {
+      "health": "ok",
+      "loaded_revision": "a4a94121b09d081c",
+      "disk_revision": "54877b61f44b1e9b",
+      "restart_required": true,
+      "harness_connected_at_start": false
+    },
+    "19368": {
+      "health": "ok",
+      "loaded_revision": "690deb0fd5da1728",
+      "disk_revision": "54877b61f44b1e9b",
+      "restart_required": true,
+      "mode": "native",
+      "ptc": false,
+      "harness_connected_at_start": true
+    },
+    "cases": [
+      {
+        "port": 19358,
+        "session_id": "2c51981789fd",
+        "turn_count": 3,
+        "elapsed_seconds": 64800,
+        "phase_index_zero_based": null,
+        "active": false,
+        "export_sha256": "46a3101704006d599a039fffb1a7c87a2bac9d45f343abe97e1cad5099d2b384",
+        "whole_export_bytes_unchanged": true,
+        "native_unit_binding_count": 2,
+        "failed_operations": 1
+      },
+      {
+        "port": 19358,
+        "session_id": "041fe52b2b8d",
+        "turn_count": 1,
+        "elapsed_seconds": 21600,
+        "phase_index_zero_based": null,
+        "active": false,
+        "export_sha256": "8e23cf658c95fb187d4edf76825dba6d64180973802dfc684259292e61ce4ffc",
+        "whole_export_bytes_unchanged": true,
+        "native_unit_binding_count": 0,
+        "failed_operations": 0
+      },
+      {
+        "port": 19368,
+        "session_id": "cbb95b02630c",
+        "turn_count": 3,
+        "elapsed_seconds": 2700,
+        "phase_index_zero_based": 2,
+        "active": false,
+        "export_sha256": "a73736fec7cf1a9109759c007f4d90883042dda7d940737a9715a9d801636ca3",
+        "whole_export_bytes_unchanged": true,
+        "native_unit_binding_count": 1,
+        "failed_operations": 0
+      },
+      {
+        "port": 19368,
+        "session_id": "fb11ed13786b",
+        "turn_count": 3,
+        "elapsed_seconds": 2700,
+        "phase_index_zero_based": 2,
+        "active": false,
+        "export_sha256": "2bab8bde4b92f85f28b168750cf49b51d2d5b4c39fca6bbbd4663538a1174d91",
+        "whole_export_bytes_unchanged": true,
+        "native_unit_binding_count": 1,
+        "failed_operations": 1
+      }
+    ]
+  },
+  "test_evidence_review_only": {
+    "previous_full_gate": {
+      "root": ".cache/qa/native-completion-2026-11-03/stable-gate",
+      "groups": 166,
+      "tests": 1967,
+      "failed": 0,
+      "skipped": 0,
+      "sum_seconds": 1042.81,
+      "not_rerun_for_this_handoff": true
+    },
+    "previous_gate_frozen_files": 109,
+    "current_changed_from_previous_gate": [
+      "backend/dsh_simulation.py",
+      "backend/unit_planning.py",
+      "gentactix/supply_schedule.py"
+    ],
+    "current_full_gate_pass_claimed": false,
+    "recent_related": {
+      "root": ".cache/qa/personnel-continuity-2026-11-03/related",
+      "groups": 7,
+      "tests": 120,
+      "all_passed": true,
+      "predates_latest_supply_changes": true
+    },
+    "supply_geometry": {
+      "log": ".cache/qa/personnel-continuity-2026-11-03/supply-geometry-green-v3.log",
+      "tests": 8,
+      "passed": true
+    },
+    "actual_native_supply": {
+      "passed": false,
+      "actual_afsim": true,
+      "live_model_calls": false,
+      "cases": [
+        {
+          "label": "blocked-first-hour",
+          "returncode": 0
+        },
+        {
+          "label": "actual-blocker-clearing-move",
+          "returncode": 0
+        },
+        {
+          "label": "supply-after-clearing",
+          "returncode": 0
+        }
+      ],
+      "historical_calibration": false,
+      "error": "定时补给断线或无可用人员却声明到货"
+    },
+    "live_native_empty_recovery_triggered_in_latest_t3": false
+  },
+  "acceptance": {
+    "all_45_campaigns_complete": false,
+    "all_270_full_historical_cells_accepted": false,
+    "latest_native_supply_overall_passed": false,
+    "no_new_test_or_model_execution_for_handoff": true
+  },
+  "document": {
+    "path": "docs/项目交接说明-2026-11-03-最新进展.md",
+    "sha256": "7cdb6be6757f5ac6b2b48dfafe476de14e35fd7c5832eba27748b506867d6339",
+    "broken_local_links": []
+  }
+}

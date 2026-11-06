@@ -1,0 +1,171 @@
+{
+  "format": "gentactix-handover-readonly-1",
+  "scope": "2026-11-04 08时：交接文件，不是新一轮产品验收。",
+  "started_at": "2026-11-04T08:33:55.536675+08:00",
+  "finished_at": "2026-11-04T08:38:34.505004+08:00",
+  "document": "docs/项目交接说明-2026-11-04-08时更新.md",
+  "document_sha256": "8614950bc9f8bbe191b39640c90c5137d147f2a2df9b00ae25f55794aaec866a",
+  "head": "b5a38a5d0c440cb41f77edb5ce6261cff1020082",
+  "branch": "main",
+  "starting_git_status_counts": {
+    "tracked_changed": 132,
+    "untracked_entries": 1022
+  },
+  "checks": {
+    "selected_existing_files_unchanged": true,
+    "original_protected_files_unchanged": true,
+    "owned_74_raw_files_unchanged": true,
+    "head_unchanged": true,
+    "all_readable_progress_unchanged": true,
+    "readable_operations_idle": true,
+    "readable_api_processes_and_loaded_source_unchanged": true,
+    "v3_frozen_source_unchanged": true
+  },
+  "counts": {
+    "existing_selected_files": 1387,
+    "original_protected_files": 114,
+    "v3_frozen_source_files": 584,
+    "owned_raw_fingerprints": 74,
+    "known_api_ports": 11,
+    "health_ok": 9,
+    "whole_exports_read_at_start": 17,
+    "progress_read_at_end": 17
+  },
+  "changed": {
+    "selected": [],
+    "protected": [],
+    "owned_raw": []
+  },
+  "services": {
+    "19358": {
+      "status": "ok",
+      "pid": 186277,
+      "started_at": "2026-11-03T09:03:58.457042+00:00",
+      "loaded_revision": "a4a94121b09d081c",
+      "same_process_and_loaded_source": true
+    },
+    "19368": {
+      "status": "ok",
+      "pid": 474702,
+      "started_at": "2026-11-03T11:01:11.306587+00:00",
+      "loaded_revision": "a54b60df09972c07",
+      "same_process_and_loaded_source": true
+    },
+    "19378": {
+      "read_error": "URLError"
+    },
+    "19388": {
+      "status": "ok",
+      "pid": 807848,
+      "started_at": "2026-11-03T13:04:39.170750+00:00",
+      "loaded_revision": "a30e7949ab0f0b8e",
+      "same_process_and_loaded_source": true
+    },
+    "19398": {
+      "read_error": "URLError"
+    },
+    "19408": {
+      "status": "ok",
+      "pid": 1550193,
+      "started_at": "2026-11-03T17:53:59.169895+00:00",
+      "loaded_revision": "93820d313d09a5f2",
+      "same_process_and_loaded_source": true
+    },
+    "19418": {
+      "status": "ok",
+      "pid": 1698428,
+      "started_at": "2026-11-03T18:52:05.607423+00:00",
+      "loaded_revision": "548d0551cfb4ca30",
+      "same_process_and_loaded_source": true
+    },
+    "19428": {
+      "status": "ok",
+      "pid": 1821928,
+      "started_at": "2026-11-03T19:36:26.182727+00:00",
+      "loaded_revision": "461427bed03f631f",
+      "same_process_and_loaded_source": true
+    },
+    "19438": {
+      "status": "ok",
+      "pid": 2009849,
+      "started_at": "2026-11-03T20:51:00.199979+00:00",
+      "loaded_revision": "079d6f746cd9f77a",
+      "same_process_and_loaded_source": true
+    },
+    "19448": {
+      "status": "ok",
+      "pid": 2222880,
+      "started_at": "2026-11-03T22:10:53.241848+00:00",
+      "loaded_revision": "ef281ce201b11fd0",
+      "same_process_and_loaded_source": true
+    },
+    "19458": {
+      "status": "ok",
+      "pid": 2443716,
+      "started_at": "2026-11-03T23:35:09.412877+00:00",
+      "loaded_revision": "102dc3a4d9a79f2a",
+      "same_process_and_loaded_source": true
+    }
+  },
+  "known_read_limits": [
+    "19378此前已离线；本次19398也无监听，原因未确证。本次未重启或恢复。",
+    "19458健康检查成功，但一次完整导出超时；7个开发记录中本次仅2个完成在线整体导出。",
+    "结束核对不重复大存档导出，仅比较持久文件指纹、健康和进度；不等同第二次完整内存世界核对。",
+    "17份已读取进度均闲置，未读取的记录不作当前在途状态保证。",
+    "1387既有文件范围不含本次新增交接文档、缓存检查工具及正在增长的离线门禁输出。"
+  ],
+  "resource_observation": {
+    "supplement_before": {
+      "loadavg": "19.89 35.56 21.48 3/2845 2607154",
+      "memory": {
+        "MemTotal_kB": 32663428,
+        "MemAvailable_kB": 4289440,
+        "SwapTotal_kB": 2097148,
+        "SwapFree_kB": 24
+      }
+    },
+    "after": {
+      "loadavg": "3.66 22.38 18.60 2/2843 2611964",
+      "memory": {
+        "MemTotal_kB": 32663428,
+        "MemAvailable_kB": 4325176,
+        "SwapTotal_kB": 2097148,
+        "SwapFree_kB": 52
+      }
+    },
+    "interpretation": "交换空间接近用满；单次负载观测不能确证导出超时或服务离线的唯一原因。"
+  },
+  "latest_v3_gate": {
+    "results_exists": false,
+    "pass_lines": 81,
+    "fail_lines": 0,
+    "results_fingerprint": {
+      "missing": true
+    }
+  },
+  "pending_real_goal_semantic_test": true,
+  "pending_goal_analysis_cold_review": true,
+  "full_45_by_3_by_2_history_acceptance": false,
+  "methods": [
+    "仅localhost GET health/sessions/export/progress",
+    "既有文件SHA256、大小及mtime核对",
+    "只读Git状态与监听进程核对"
+  ],
+  "not_performed": [
+    "业务代码和配置修改",
+    "模型或私有思考读取",
+    "POST或回合推进",
+    "服务启停与恢复",
+    "依赖安装",
+    "编译或安装包替换",
+    "Git提交或上传",
+    "重新运行测试或浏览器"
+  ],
+  "evidence": {
+    "before.json": ".cache/qa/handover-2026-11-04-08h/before.json",
+    "supplement-before.json": ".cache/qa/handover-2026-11-04-08h/supplement-before.json",
+    "after.json": ".cache/qa/handover-2026-11-04-08h/after.json",
+    "capture.py": ".cache/qa/handover-2026-11-04-08h/capture.py",
+    "review.py": ".cache/qa/handover-2026-11-04-08h/review.py"
+  }
+}

@@ -1,0 +1,3452 @@
+[
+  {
+    "id": "mil-001",
+    "file": "icons/mil-001.svg",
+    "name_zh": "车材油料库",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-002",
+    "file": "icons/mil-002.svg",
+    "name_zh": "车材库",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-003",
+    "file": "icons/mil-003.svg",
+    "name_zh": "综合保障组",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-004",
+    "file": "icons/mil-004.svg",
+    "name_zh": "机动综合保障组",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-005",
+    "file": "icons/mil-005.svg",
+    "name_zh": "伴随保障组",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-006",
+    "file": "icons/mil-006.svg",
+    "name_zh": "机动伴随保障组",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-007",
+    "file": "icons/mil-007.svg",
+    "name_zh": "巡回修理组",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-008",
+    "file": "icons/mil-008.svg",
+    "name_zh": "连战勤组",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-009",
+    "file": "icons/mil-009.svg",
+    "name_zh": "卫生后送分队（示例为卫生后送连）",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-010",
+    "file": "icons/mil-010.svg",
+    "name_zh": "未展开的救护所",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-011",
+    "file": "icons/mil-011.svg",
+    "name_zh": "渡江抢救组",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-012",
+    "file": "icons/mil-012.svg",
+    "name_zh": "渡江救护所",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-013",
+    "file": "icons/mil-013.svg",
+    "name_zh": "装甲救护车",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-014",
+    "file": "icons/mil-014.svg",
+    "name_zh": "连抢救组",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-015",
+    "file": "icons/mil-015.svg",
+    "name_zh": "伤员集中点",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-016",
+    "file": "icons/mil-016.svg",
+    "name_zh": "地方卫生所",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-017",
+    "file": "icons/mil-017.svg",
+    "name_zh": "地方修理队（示例为汽车修理队）",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-018",
+    "file": "icons/mil-018.svg",
+    "name_zh": "地方供应站",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-019",
+    "file": "icons/mil-019.svg",
+    "name_zh": "地方担架队",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-020",
+    "file": "icons/mil-020.svg",
+    "name_zh": "军马所",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-021",
+    "file": "icons/mil-021.svg",
+    "name_zh": "占领阵地的高机排",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-022",
+    "file": "icons/mil-022.svg",
+    "name_zh": "角反射艇",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-023",
+    "file": "icons/mil-023.svg",
+    "name_zh": "照明飞机",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-024",
+    "file": "icons/mil-024.svg",
+    "name_zh": "轰炸侦察飞机",
+    "category": "具名补充标号",
+    "source_pdf_page": 35,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-025",
+    "file": "icons/mil-025.svg",
+    "name_zh": "检验队",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-026",
+    "file": "icons/mil-026.svg",
+    "name_zh": "手术队",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-027",
+    "file": "icons/mil-027.svg",
+    "name_zh": "地方手术队",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-028",
+    "file": "icons/mil-028.svg",
+    "name_zh": "医疗队",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-029",
+    "file": "icons/mil-029.svg",
+    "name_zh": "兽医防治队",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-030",
+    "file": "icons/mil-030.svg",
+    "name_zh": "核伤员抢救队",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-031",
+    "file": "icons/mil-031.svg",
+    "name_zh": "化学伤员抢救队",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-032",
+    "file": "icons/mil-032.svg",
+    "name_zh": "供血站（示例为战区供血站）",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-033",
+    "file": "icons/mil-033.svg",
+    "name_zh": "卫生运输船",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-034",
+    "file": "icons/mil-034.svg",
+    "name_zh": "救护艇",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-035",
+    "file": "icons/mil-035.svg",
+    "name_zh": "气垫卫生船",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-036",
+    "file": "icons/mil-036.svg",
+    "name_zh": "医院船",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-037",
+    "file": "icons/mil-037.svg",
+    "name_zh": "卫生检验车",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-038",
+    "file": "icons/mil-038.svg",
+    "name_zh": "卫生马车",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-039",
+    "file": "icons/mil-039.svg",
+    "name_zh": "卫生直升机",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-040",
+    "file": "icons/mil-040.svg",
+    "name_zh": "卫生运输机",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-041",
+    "file": "icons/mil-041.svg",
+    "name_zh": "分类哨",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-042",
+    "file": "icons/mil-042.svg",
+    "name_zh": "码头救护所",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-043",
+    "file": "icons/mil-043.svg",
+    "name_zh": "滩头救护所",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-044",
+    "file": "icons/mil-044.svg",
+    "name_zh": "支前卫生机构",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": " 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-045",
+    "file": "icons/mil-045.svg",
+    "name_zh": "弹药屯积点",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-046",
+    "file": "icons/mil-046.svg",
+    "name_zh": "野战油库",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-047",
+    "file": "icons/mil-047.svg",
+    "name_zh": "浴池",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-048",
+    "file": "icons/mil-048.svg",
+    "name_zh": "预警飞机",
+    "category": "具名补充标号",
+    "source_pdf_page": 36,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-049",
+    "file": "icons/mil-049.svg",
+    "name_zh": "地方工程机械（示例为推土机）",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-050",
+    "file": "icons/mil-050.svg",
+    "name_zh": "地方道路抢修队",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-051",
+    "file": "icons/mil-051.svg",
+    "name_zh": "高炮跟进掩护",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-052",
+    "file": "icons/mil-052.svg",
+    "name_zh": "炮兵侦察校射飞机",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-053",
+    "file": "icons/mil-053.svg",
+    "name_zh": "炮兵侦察校射直升机",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-054",
+    "file": "icons/mil-054.svg",
+    "name_zh": "炮兵无人驾驶飞机",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-055",
+    "file": "icons/mil-055.svg",
+    "name_zh": "声测整理所",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-056",
+    "file": "icons/mil-056.svg",
+    "name_zh": "声测预报哨",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-057",
+    "file": "icons/mil-057.svg",
+    "name_zh": "信号站（哨）",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-058",
+    "file": "icons/mil-058.svg",
+    "name_zh": "徒步通信",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-059",
+    "file": "icons/mil-059.svg",
+    "name_zh": "运动通信",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-060",
+    "file": "icons/mil-060.svg",
+    "name_zh": "测地整理所",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-061",
+    "file": "icons/mil-061.svg",
+    "name_zh": "指挥机",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-062",
+    "file": "icons/mil-062.svg",
+    "name_zh": "阵地通话器",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-063",
+    "file": "icons/mil-063.svg",
+    "name_zh": "C³I系统",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-064",
+    "file": "icons/mil-064.svg",
+    "name_zh": "通信侦察干扰站",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-065",
+    "file": "icons/mil-065.svg",
+    "name_zh": "雷达侦察干扰站",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-066",
+    "file": "icons/mil-066.svg",
+    "name_zh": "前后送道路（示例为第1号道路）",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-067",
+    "file": "icons/mil-067.svg",
+    "name_zh": "战斗保障群",
+    "category": "具名补充标号",
+    "source_pdf_page": 37,
+    "source_figure": "表2.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-068",
+    "file": "icons/mil-068.svg",
+    "name_zh": "正方框",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-069",
+    "file": "icons/mil-069.svg",
+    "name_zh": "长方框",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-070",
+    "file": "icons/mil-070.svg",
+    "name_zh": "椭圆带短杆",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-071",
+    "file": "icons/mil-071.svg",
+    "name_zh": "直立三角框",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-072",
+    "file": "icons/mil-072.svg",
+    "name_zh": "屋形医疗框",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。 医疗十字符号采用单色；改变为红十字、红新月等受保护标志前，应核对相应使用资格和规则。"
+  },
+  {
+    "id": "mil-073",
+    "file": "icons/mil-073.svg",
+    "name_zh": "圆框",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-074",
+    "file": "icons/mil-074.svg",
+    "name_zh": "顶部带短横的圆框",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-075",
+    "file": "icons/mil-075.svg",
+    "name_zh": "左尖五边框",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-076",
+    "file": "icons/mil-076.svg",
+    "name_zh": "左向楔形框",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-077",
+    "file": "icons/mil-077.svg",
+    "name_zh": "阶梯梯形框",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-078",
+    "file": "icons/mil-078.svg",
+    "name_zh": "三横带端点",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-079",
+    "file": "icons/mil-079.svg",
+    "name_zh": "横线中置工字形",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-080",
+    "file": "icons/mil-080.svg",
+    "name_zh": "横线右端竖挡",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-081",
+    "file": "icons/mil-081.svg",
+    "name_zh": "横向细箭",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-082",
+    "file": "icons/mil-082.svg",
+    "name_zh": "横线中置小圆",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-083",
+    "file": "icons/mil-083.svg",
+    "name_zh": "纵向三线箭形",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-084",
+    "file": "icons/mil-084.svg",
+    "name_zh": "纵向分叉箭形",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-085",
+    "file": "icons/mil-085.svg",
+    "name_zh": "圆顶短杆",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-086",
+    "file": "icons/mil-086.svg",
+    "name_zh": "矩形旗面指挥所框",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-087",
+    "file": "icons/mil-087.svg",
+    "name_zh": "三角旗面指挥所框",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-088",
+    "file": "icons/mil-088.svg",
+    "name_zh": "三角底座双横杆",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-089",
+    "file": "icons/mil-089.svg",
+    "name_zh": "圆底座横杆",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-090",
+    "file": "icons/mil-090.svg",
+    "name_zh": "三角底座横杆",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-091",
+    "file": "icons/mil-091.svg",
+    "name_zh": "左叉右空心点",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-092",
+    "file": "icons/mil-092.svg",
+    "name_zh": "横线与小圆组合",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-093",
+    "file": "icons/mil-093.svg",
+    "name_zh": "弧形掩体内箭形",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-094",
+    "file": "icons/mil-094.svg",
+    "name_zh": "弧形掩体内三横形",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-095",
+    "file": "icons/mil-095.svg",
+    "name_zh": "弧形掩体内菱形",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-096",
+    "file": "icons/mil-096.svg",
+    "name_zh": "竖掩体内细箭",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-097",
+    "file": "icons/mil-097.svg",
+    "name_zh": "竖掩体内小圆横线",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-098",
+    "file": "icons/mil-098.svg",
+    "name_zh": "阶梯车体",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-099",
+    "file": "icons/mil-099.svg",
+    "name_zh": "轮式斜顶车体",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-100",
+    "file": "icons/mil-100.svg",
+    "name_zh": "轮式菱形车体",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-101",
+    "file": "icons/mil-101.svg",
+    "name_zh": "轮式矩形车体",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-102",
+    "file": "icons/mil-102.svg",
+    "name_zh": "轮式圆罐车体",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-103",
+    "file": "icons/mil-103.svg",
+    "name_zh": "船形内箭",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-104",
+    "file": "icons/mil-104.svg",
+    "name_zh": "船形上置矩形",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-105",
+    "file": "icons/mil-105.svg",
+    "name_zh": "拖尾船形",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-106",
+    "file": "icons/mil-106.svg",
+    "name_zh": "尖顶竖框",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-107",
+    "file": "icons/mil-107.svg",
+    "name_zh": "半圆罩形",
+    "category": "基本图形与定位点",
+    "source_pdf_page": 25,
+    "source_figure": "表2.8",
+    "method": "几何重绘",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此表仅用于说明图形分类及定位点，未逐个定义军事含义。不得仅凭形状自行指定兵种。"
+  },
+  {
+    "id": "mil-108",
+    "file": "icons/mil-108.svg",
+    "name_zh": "三横线笔画",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-109",
+    "file": "icons/mil-109.svg",
+    "name_zh": "带斜短线的折线",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-110",
+    "file": "icons/mil-110.svg",
+    "name_zh": "不规则三角轮廓",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-111",
+    "file": "icons/mil-111.svg",
+    "name_zh": "带弧端与交叉的断续线",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-112",
+    "file": "icons/mil-112.svg",
+    "name_zh": "连续小环线",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-113",
+    "file": "icons/mil-113.svg",
+    "name_zh": "断续椭圆轮廓",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-114",
+    "file": "icons/mil-114.svg",
+    "name_zh": "开口弧线",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-115",
+    "file": "icons/mil-115.svg",
+    "name_zh": "带竖短划的直线",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-116",
+    "file": "icons/mil-116.svg",
+    "name_zh": "细箭带实心端点",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-117",
+    "file": "icons/mil-117.svg",
+    "name_zh": "双点椭圆带短杆",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-118",
+    "file": "icons/mil-118.svg",
+    "name_zh": "中线椭圆带实心点",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-119",
+    "file": "icons/mil-119.svg",
+    "name_zh": "双触角点圆",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-120",
+    "file": "icons/mil-120.svg",
+    "name_zh": "圆内短箭",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-121",
+    "file": "icons/mil-121.svg",
+    "name_zh": "车体内点",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-122",
+    "file": "icons/mil-122.svg",
+    "name_zh": "六点圆角框",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-123",
+    "file": "icons/mil-123.svg",
+    "name_zh": "点划双线",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-124",
+    "file": "icons/mil-124.svg",
+    "name_zh": "叉杆与连续圆点",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-125",
+    "file": "icons/mil-125.svg",
+    "name_zh": "三角型笔画",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-126",
+    "file": "icons/mil-126.svg",
+    "name_zh": "正方型笔画",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-127",
+    "file": "icons/mil-127.svg",
+    "name_zh": "矩形笔画",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-128",
+    "file": "icons/mil-128.svg",
+    "name_zh": "圆型笔画",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-129",
+    "file": "icons/mil-129.svg",
+    "name_zh": "椭圆与短箭",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-130",
+    "file": "icons/mil-130.svg",
+    "name_zh": "左向楔形笔画",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-131",
+    "file": "icons/mil-131.svg",
+    "name_zh": "菱型笔画",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-132",
+    "file": "icons/mil-132.svg",
+    "name_zh": "左圆右平框",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-133",
+    "file": "icons/mil-133.svg",
+    "name_zh": "左尖右平框",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-134",
+    "file": "icons/mil-134.svg",
+    "name_zh": "屋型笔画",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-135",
+    "file": "icons/mil-135.svg",
+    "name_zh": "纵向三线箭笔画",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-136",
+    "file": "icons/mil-136.svg",
+    "name_zh": "横向细箭笔画",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-137",
+    "file": "icons/mil-137.svg",
+    "name_zh": "椭圆尾横箭",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-138",
+    "file": "icons/mil-138.svg",
+    "name_zh": "阵线与纵向箭",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-139",
+    "file": "icons/mil-139.svg",
+    "name_zh": "带弧尾的阵线箭",
+    "category": "基本笔画",
+    "source_pdf_page": 39,
+    "source_figure": "表3.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "此表是笔画示例，不是完整军标字典；需结合图例解释。"
+  },
+  {
+    "id": "mil-140",
+    "file": "icons/mil-140.svg",
+    "name_zh": "坦克（图5.10完成形）",
+    "category": "武器与车辆",
+    "source_pdf_page": 138,
+    "source_figure": "图5.10",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-141",
+    "file": "icons/mil-141.svg",
+    "name_zh": "装甲运输车（图5.10完成形）",
+    "category": "武器与车辆",
+    "source_pdf_page": 138,
+    "source_figure": "图5.10",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-142",
+    "file": "icons/mil-142.svg",
+    "name_zh": "汽车（图5.10完成形）",
+    "category": "武器与车辆",
+    "source_pdf_page": 138,
+    "source_figure": "图5.10",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-143",
+    "file": "icons/mil-143.svg",
+    "name_zh": "步兵展开线",
+    "category": "队形示例",
+    "source_pdf_page": 139,
+    "source_figure": "图5.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-144",
+    "file": "icons/mil-144.svg",
+    "name_zh": "坦克展开队形",
+    "category": "队形示例",
+    "source_pdf_page": 139,
+    "source_figure": "图5.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-145",
+    "file": "icons/mil-145.svg",
+    "name_zh": "步兵坦克组合展开队形",
+    "category": "队形示例",
+    "source_pdf_page": 139,
+    "source_figure": "图5.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-146",
+    "file": "icons/mil-146.svg",
+    "name_zh": "疏开队形轮廓",
+    "category": "队形示例",
+    "source_pdf_page": 139,
+    "source_figure": "图5.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-147",
+    "file": "icons/mil-147.svg",
+    "name_zh": "带方向箭的疏开队形",
+    "category": "队形示例",
+    "source_pdf_page": 139,
+    "source_figure": "图5.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-148",
+    "file": "icons/mil-148.svg",
+    "name_zh": "含坦克的疏开队形",
+    "category": "队形示例",
+    "source_pdf_page": 139,
+    "source_figure": "图5.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-149",
+    "file": "icons/mil-149.svg",
+    "name_zh": "坦克疏开队形",
+    "category": "队形示例",
+    "source_pdf_page": 139,
+    "source_figure": "图5.11",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-150",
+    "file": "icons/mil-150.svg",
+    "name_zh": "坦克（菱形）",
+    "category": "武器与车辆",
+    "source_pdf_page": 143,
+    "source_figure": "图6.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-151",
+    "file": "icons/mil-151.svg",
+    "name_zh": "火器三横叉尾示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 143,
+    "source_figure": "图6.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-152",
+    "file": "icons/mil-152.svg",
+    "name_zh": "纵向三线火器示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 143,
+    "source_figure": "图6.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-153",
+    "file": "icons/mil-153.svg",
+    "name_zh": "汽车（阶梯车体）",
+    "category": "武器与车辆",
+    "source_pdf_page": 143,
+    "source_figure": "图6.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-154",
+    "file": "icons/mil-154.svg",
+    "name_zh": "拖车示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 143,
+    "source_figure": "图6.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-155",
+    "file": "icons/mil-155.svg",
+    "name_zh": "直升机载荷示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 143,
+    "source_figure": "图6.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-156",
+    "file": "icons/mil-156.svg",
+    "name_zh": "坦克与火器组合示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 143,
+    "source_figure": "图6.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-157",
+    "file": "icons/mil-157.svg",
+    "name_zh": "火器与掩体组合示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 143,
+    "source_figure": "图6.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-158",
+    "file": "icons/mil-158.svg",
+    "name_zh": "圆内火器示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 143,
+    "source_figure": "图6.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-159",
+    "file": "icons/mil-159.svg",
+    "name_zh": "车体内载荷示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 143,
+    "source_figure": "图6.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-160",
+    "file": "icons/mil-160.svg",
+    "name_zh": "圆内车体示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 143,
+    "source_figure": "图6.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-161",
+    "file": "icons/mil-161.svg",
+    "name_zh": "直升机与矩框组合示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 143,
+    "source_figure": "图6.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。"
+  },
+  {
+    "id": "mil-162",
+    "file": "icons/mil-162.svg",
+    "name_zh": "指北针样式01",
+    "category": "地图辅助",
+    "source_pdf_page": 166,
+    "source_figure": "图6.34",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须区分真北、磁北与坐标北；图形本身不包含磁偏角。"
+  },
+  {
+    "id": "mil-163",
+    "file": "icons/mil-163.svg",
+    "name_zh": "指北针样式02",
+    "category": "地图辅助",
+    "source_pdf_page": 166,
+    "source_figure": "图6.34",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须区分真北、磁北与坐标北；图形本身不包含磁偏角。"
+  },
+  {
+    "id": "mil-164",
+    "file": "icons/mil-164.svg",
+    "name_zh": "指北针样式03",
+    "category": "地图辅助",
+    "source_pdf_page": 166,
+    "source_figure": "图6.34",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须区分真北、磁北与坐标北；图形本身不包含磁偏角。"
+  },
+  {
+    "id": "mil-165",
+    "file": "icons/mil-165.svg",
+    "name_zh": "指北针样式04",
+    "category": "地图辅助",
+    "source_pdf_page": 166,
+    "source_figure": "图6.34",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须区分真北、磁北与坐标北；图形本身不包含磁偏角。"
+  },
+  {
+    "id": "mil-166",
+    "file": "icons/mil-166.svg",
+    "name_zh": "指北针样式05",
+    "category": "地图辅助",
+    "source_pdf_page": 166,
+    "source_figure": "图6.34",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须区分真北、磁北与坐标北；图形本身不包含磁偏角。"
+  },
+  {
+    "id": "mil-167",
+    "file": "icons/mil-167.svg",
+    "name_zh": "指北针样式06",
+    "category": "地图辅助",
+    "source_pdf_page": 166,
+    "source_figure": "图6.34",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须区分真北、磁北与坐标北；图形本身不包含磁偏角。"
+  },
+  {
+    "id": "mil-168",
+    "file": "icons/mil-168.svg",
+    "name_zh": "指北针样式07",
+    "category": "地图辅助",
+    "source_pdf_page": 166,
+    "source_figure": "图6.34",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须区分真北、磁北与坐标北；图形本身不包含磁偏角。"
+  },
+  {
+    "id": "mil-169",
+    "file": "icons/mil-169.svg",
+    "name_zh": "指北针样式08",
+    "category": "地图辅助",
+    "source_pdf_page": 166,
+    "source_figure": "图6.34",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须区分真北、磁北与坐标北；图形本身不包含磁偏角。"
+  },
+  {
+    "id": "mil-170",
+    "file": "icons/mil-170.svg",
+    "name_zh": "指北针样式09",
+    "category": "地图辅助",
+    "source_pdf_page": 166,
+    "source_figure": "图6.34",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须区分真北、磁北与坐标北；图形本身不包含磁偏角。"
+  },
+  {
+    "id": "mil-171",
+    "file": "icons/mil-171.svg",
+    "name_zh": "指北针样式10",
+    "category": "地图辅助",
+    "source_pdf_page": 166,
+    "source_figure": "图6.34",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须区分真北、磁北与坐标北；图形本身不包含磁偏角。"
+  },
+  {
+    "id": "mil-172",
+    "file": "icons/mil-172.svg",
+    "name_zh": "单线实心箭",
+    "category": "线型与箭头",
+    "source_pdf_page": 133,
+    "source_figure": "图5.1",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-173",
+    "file": "icons/mil-173.svg",
+    "name_zh": "双线实心箭",
+    "category": "线型与箭头",
+    "source_pdf_page": 133,
+    "source_figure": "图5.2",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-174",
+    "file": "icons/mil-174.svg",
+    "name_zh": "多箭头转折箭",
+    "category": "线型与箭头",
+    "source_pdf_page": 134,
+    "source_figure": "图5.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-175",
+    "file": "icons/mil-175.svg",
+    "name_zh": "并肩多箭头",
+    "category": "线型与箭头",
+    "source_pdf_page": 134,
+    "source_figure": "图5.3",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-176",
+    "file": "icons/mil-176.svg",
+    "name_zh": "燕尾转折箭",
+    "category": "线型与箭头",
+    "source_pdf_page": 135,
+    "source_figure": "图5.4",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-177",
+    "file": "icons/mil-177.svg",
+    "name_zh": "燕尾曲线箭",
+    "category": "线型与箭头",
+    "source_pdf_page": 135,
+    "source_figure": "图5.4",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-178",
+    "file": "icons/mil-178.svg",
+    "name_zh": "平尾箭",
+    "category": "线型与箭头",
+    "source_pdf_page": 135,
+    "source_figure": "图5.4",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-179",
+    "file": "icons/mil-179.svg",
+    "name_zh": "特种宽箭",
+    "category": "线型与箭头",
+    "source_pdf_page": 136,
+    "source_figure": "图5.5",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-180",
+    "file": "icons/mil-180.svg",
+    "name_zh": "开口地域线",
+    "category": "线型与箭头",
+    "source_pdf_page": 137,
+    "source_figure": "图5.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-181",
+    "file": "icons/mil-181.svg",
+    "name_zh": "S形地域线",
+    "category": "线型与箭头",
+    "source_pdf_page": 137,
+    "source_figure": "图5.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-182",
+    "file": "icons/mil-182.svg",
+    "name_zh": "带箭开口地域",
+    "category": "线型与箭头",
+    "source_pdf_page": 137,
+    "source_figure": "图5.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-183",
+    "file": "icons/mil-183.svg",
+    "name_zh": "带箭环形地域",
+    "category": "线型与箭头",
+    "source_pdf_page": 137,
+    "source_figure": "图5.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-184",
+    "file": "icons/mil-184.svg",
+    "name_zh": "带箭狭长地域",
+    "category": "线型与箭头",
+    "source_pdf_page": 137,
+    "source_figure": "图5.8",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-185",
+    "file": "icons/mil-185.svg",
+    "name_zh": "进攻或反冲击箭示例",
+    "category": "线型与箭头",
+    "source_pdf_page": 41,
+    "source_figure": "图3.4",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-186",
+    "file": "icons/mil-186.svg",
+    "name_zh": "出击箭示例",
+    "category": "线型与箭头",
+    "source_pdf_page": 41,
+    "source_figure": "图3.4",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-187",
+    "file": "icons/mil-187.svg",
+    "name_zh": "围击箭示例",
+    "category": "线型与箭头",
+    "source_pdf_page": 41,
+    "source_figure": "图3.4",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-188",
+    "file": "icons/mil-188.svg",
+    "name_zh": "钳击箭示例",
+    "category": "线型与箭头",
+    "source_pdf_page": 41,
+    "source_figure": "图3.4",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-189",
+    "file": "icons/mil-189.svg",
+    "name_zh": "卷击箭示例",
+    "category": "线型与箭头",
+    "source_pdf_page": 41,
+    "source_figure": "图3.4",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-190",
+    "file": "icons/mil-190.svg",
+    "name_zh": "并肩突击箭示例",
+    "category": "线型与箭头",
+    "source_pdf_page": 41,
+    "source_figure": "图3.4",
+    "method": "几何重绘",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-191",
+    "file": "icons/mil-191.svg",
+    "name_zh": "特种箭120度",
+    "category": "线型与箭头",
+    "source_pdf_page": 44,
+    "source_figure": "图3.9",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-192",
+    "file": "icons/mil-192.svg",
+    "name_zh": "特种箭100度",
+    "category": "线型与箭头",
+    "source_pdf_page": 44,
+    "source_figure": "图3.9",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-193",
+    "file": "icons/mil-193.svg",
+    "name_zh": "特种箭80度",
+    "category": "线型与箭头",
+    "source_pdf_page": 44,
+    "source_figure": "图3.9",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-194",
+    "file": "icons/mil-194.svg",
+    "name_zh": "长期对峙线",
+    "category": "线型与箭头",
+    "source_pdf_page": 63,
+    "source_figure": "图3.30",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-195",
+    "file": "icons/mil-195.svg",
+    "name_zh": "暂时对峙线",
+    "category": "线型与箭头",
+    "source_pdf_page": 63,
+    "source_figure": "图3.30",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-196",
+    "file": "icons/mil-196.svg",
+    "name_zh": "互攻后转守对峙线",
+    "category": "线型与箭头",
+    "source_pdf_page": 63,
+    "source_figure": "图3.30",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-197",
+    "file": "icons/mil-197.svg",
+    "name_zh": "撤退转守对峙示例",
+    "category": "线型与箭头",
+    "source_pdf_page": 63,
+    "source_figure": "图3.30",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-198",
+    "file": "icons/mil-198.svg",
+    "name_zh": "按实际地段标示的对峙线",
+    "category": "线型与箭头",
+    "source_pdf_page": 63,
+    "source_figure": "图3.30",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "须结合原书图例、编号和上下文解释；不是独立的国别、部队番号或装备型号证据。 固定形状仅作图例；实际路线、阵线和范围需按史实地图重新绘制，不能直接拉伸为地理边界。"
+  },
+  {
+    "id": "mil-199",
+    "file": "icons/mil-199.svg",
+    "name_zh": "基本指挥所（空白旗面）",
+    "category": "指挥所",
+    "source_pdf_page": 55,
+    "source_figure": "图3.22",
+    "method": "几何重绘",
+    "anchor_xy": [
+      28,
+      110
+    ],
+    "anchor_verified_for_geographic_placement": true,
+    "limitations": "本图未含部队番号，旗面文字需另行叠加；不同指挥所结构须结合软件图例解释。"
+  },
+  {
+    "id": "mil-200",
+    "file": "icons/mil-200.svg",
+    "name_zh": "前进指挥所（空白旗面）",
+    "category": "指挥所",
+    "source_pdf_page": 55,
+    "source_figure": "图3.22",
+    "method": "几何重绘",
+    "anchor_xy": [
+      28,
+      110
+    ],
+    "anchor_verified_for_geographic_placement": true,
+    "limitations": "本图未含部队番号，旗面文字需另行叠加；不同指挥所结构须结合软件图例解释。"
+  },
+  {
+    "id": "mil-201",
+    "file": "icons/mil-201.svg",
+    "name_zh": "后勤指挥所（空白旗面）",
+    "category": "指挥所",
+    "source_pdf_page": 55,
+    "source_figure": "图3.22",
+    "method": "几何重绘",
+    "anchor_xy": [
+      28,
+      110
+    ],
+    "anchor_verified_for_geographic_placement": true,
+    "limitations": "本图未含部队番号，旗面文字需另行叠加；不同指挥所结构须结合软件图例解释。"
+  },
+  {
+    "id": "mil-202",
+    "file": "icons/mil-202.svg",
+    "name_zh": "技术指挥所（空白旗面）",
+    "category": "指挥所",
+    "source_pdf_page": 55,
+    "source_figure": "图3.22",
+    "method": "几何重绘",
+    "anchor_xy": [
+      28,
+      110
+    ],
+    "anchor_verified_for_geographic_placement": true,
+    "limitations": "本图未含部队番号，旗面文字需另行叠加；不同指挥所结构须结合软件图例解释。"
+  },
+  {
+    "id": "mil-203",
+    "file": "icons/mil-203.svg",
+    "name_zh": "武警指挥所（空白旗面）",
+    "category": "指挥所",
+    "source_pdf_page": 55,
+    "source_figure": "图3.22",
+    "method": "几何重绘",
+    "anchor_xy": [
+      28,
+      110
+    ],
+    "anchor_verified_for_geographic_placement": true,
+    "limitations": "本图未含部队番号，旗面文字需另行叠加；不同指挥所结构须结合软件图例解释。"
+  },
+  {
+    "id": "mil-204",
+    "file": "icons/mil-204.svg",
+    "name_zh": "预备指挥所（空白旗面）",
+    "category": "指挥所",
+    "source_pdf_page": 55,
+    "source_figure": "图3.22",
+    "method": "几何重绘",
+    "anchor_xy": [
+      28,
+      110
+    ],
+    "anchor_verified_for_geographic_placement": true,
+    "limitations": "本图未含部队番号，旗面文字需另行叠加；不同指挥所结构须结合软件图例解释。"
+  },
+  {
+    "id": "mil-205",
+    "file": "icons/mil-205.svg",
+    "name_zh": "五画火器示例A",
+    "category": "武器与车辆",
+    "source_pdf_page": 137,
+    "source_figure": "图5.9",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此图讲解武器符号笔画顺序，未逐个给出型号与名称；不得用此形状推定具体武器。"
+  },
+  {
+    "id": "mil-206",
+    "file": "icons/mil-206.svg",
+    "name_zh": "四画火器示例B",
+    "category": "武器与车辆",
+    "source_pdf_page": 137,
+    "source_figure": "图5.9",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此图讲解武器符号笔画顺序，未逐个给出型号与名称；不得用此形状推定具体武器。"
+  },
+  {
+    "id": "mil-207",
+    "file": "icons/mil-207.svg",
+    "name_zh": "四画火器示例C",
+    "category": "武器与车辆",
+    "source_pdf_page": 137,
+    "source_figure": "图5.9",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此图讲解武器符号笔画顺序，未逐个给出型号与名称；不得用此形状推定具体武器。"
+  },
+  {
+    "id": "mil-208",
+    "file": "icons/mil-208.svg",
+    "name_zh": "四画箭形火器示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 137,
+    "source_figure": "图5.9",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此图讲解武器符号笔画顺序，未逐个给出型号与名称；不得用此形状推定具体武器。"
+  },
+  {
+    "id": "mil-209",
+    "file": "icons/mil-209.svg",
+    "name_zh": "四画纵向火器示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 137,
+    "source_figure": "图5.9",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此图讲解武器符号笔画顺序，未逐个给出型号与名称；不得用此形状推定具体武器。"
+  },
+  {
+    "id": "mil-210",
+    "file": "icons/mil-210.svg",
+    "name_zh": "五画纵向火器示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 137,
+    "source_figure": "图5.9",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此图讲解武器符号笔画顺序，未逐个给出型号与名称；不得用此形状推定具体武器。"
+  },
+  {
+    "id": "mil-211",
+    "file": "icons/mil-211.svg",
+    "name_zh": "五画尖顶火器示例",
+    "category": "武器与车辆",
+    "source_pdf_page": 137,
+    "source_figure": "图5.9",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "原书此图讲解武器符号笔画顺序，未逐个给出型号与名称；不得用此形状推定具体武器。"
+  },
+  {
+    "id": "mil-212",
+    "file": "icons/mil-212.svg",
+    "name_zh": "三角底双横杆（比例示例）",
+    "category": "结构比例示例",
+    "source_pdf_page": 151,
+    "source_figure": "图6.19",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "保留原书图形比例，未包含周围的尺寸标注；不对应具体型号或固定地图比例尺。"
+  },
+  {
+    "id": "mil-213",
+    "file": "icons/mil-213.svg",
+    "name_zh": "纵向三线箭（比例示例）",
+    "category": "结构比例示例",
+    "source_pdf_page": 151,
+    "source_figure": "图6.19",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "保留原书图形比例，未包含周围的尺寸标注；不对应具体型号或固定地图比例尺。"
+  },
+  {
+    "id": "mil-214",
+    "file": "icons/mil-214.svg",
+    "name_zh": "尖顶框（比例示例）",
+    "category": "结构比例示例",
+    "source_pdf_page": 151,
+    "source_figure": "图6.19",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "保留原书图形比例，未包含周围的尺寸标注；不对应具体型号或固定地图比例尺。"
+  },
+  {
+    "id": "mil-215",
+    "file": "icons/mil-215.svg",
+    "name_zh": "飞机圆尾（比例示例）",
+    "category": "结构比例示例",
+    "source_pdf_page": 151,
+    "source_figure": "图6.19",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "保留原书图形比例，未包含周围的尺寸标注；不对应具体型号或固定地图比例尺。"
+  },
+  {
+    "id": "mil-216",
+    "file": "icons/mil-216.svg",
+    "name_zh": "叉尾三横（比例示例）",
+    "category": "结构比例示例",
+    "source_pdf_page": 151,
+    "source_figure": "图6.19",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "保留原书图形比例，未包含周围的尺寸标注；不对应具体型号或固定地图比例尺。"
+  },
+  {
+    "id": "mil-217",
+    "file": "icons/mil-217.svg",
+    "name_zh": "圆尾三横（比例示例）",
+    "category": "结构比例示例",
+    "source_pdf_page": 151,
+    "source_figure": "图6.19",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "保留原书图形比例，未包含周围的尺寸标注；不对应具体型号或固定地图比例尺。"
+  },
+  {
+    "id": "mil-218",
+    "file": "icons/mil-218.svg",
+    "name_zh": "竖挡三横（比例示例）",
+    "category": "结构比例示例",
+    "source_pdf_page": 151,
+    "source_figure": "图6.19",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "保留原书图形比例，未包含周围的尺寸标注；不对应具体型号或固定地图比例尺。"
+  },
+  {
+    "id": "mil-219",
+    "file": "icons/mil-219.svg",
+    "name_zh": "中置工形横线（比例示例）",
+    "category": "结构比例示例",
+    "source_pdf_page": 151,
+    "source_figure": "图6.19",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "保留原书图形比例，未包含周围的尺寸标注；不对应具体型号或固定地图比例尺。"
+  },
+  {
+    "id": "mil-220",
+    "file": "icons/mil-220.svg",
+    "name_zh": "矩框短箭（比例示例）",
+    "category": "结构比例示例",
+    "source_pdf_page": 151,
+    "source_figure": "图6.19",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "保留原书图形比例，未包含周围的尺寸标注；不对应具体型号或固定地图比例尺。"
+  },
+  {
+    "id": "mil-221",
+    "file": "icons/mil-221.svg",
+    "name_zh": "椭圆短箭（比例示例）",
+    "category": "结构比例示例",
+    "source_pdf_page": 151,
+    "source_figure": "图6.19",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "保留原书图形比例，未包含周围的尺寸标注；不对应具体型号或固定地图比例尺。"
+  },
+  {
+    "id": "mil-222",
+    "file": "icons/mil-222.svg",
+    "name_zh": "阶梯车体（比例示例）",
+    "category": "结构比例示例",
+    "source_pdf_page": 151,
+    "source_figure": "图6.19",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "保留原书图形比例，未包含周围的尺寸标注；不对应具体型号或固定地图比例尺。"
+  },
+  {
+    "id": "mil-223",
+    "file": "icons/mil-223.svg",
+    "name_zh": "圆首车体（比例示例）",
+    "category": "结构比例示例",
+    "source_pdf_page": 151,
+    "source_figure": "图6.19",
+    "method": "轮廓矢量描摹",
+    "anchor_xy": [
+      64,
+      64
+    ],
+    "anchor_verified_for_geographic_placement": false,
+    "limitations": "保留原书图形比例，未包含周围的尺寸标注；不对应具体型号或固定地图比例尺。"
+  },
+  {
+    "id": "add-001",
+    "file": "icons/add-001.svg",
+    "name_zh": "附有通路的防坦克壕示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.2",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-002",
+    "file": "icons/add-002.svg",
+    "name_zh": "断桥与迂回道路示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.2",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-003",
+    "file": "icons/add-003.svg",
+    "name_zh": "修整或未修复道路",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.2",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-004",
+    "file": "icons/add-004.svg",
+    "name_zh": "急造军路示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.2",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-005",
+    "file": "icons/add-005.svg",
+    "name_zh": "三角标记直立示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.3",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-006",
+    "file": "icons/add-006.svg",
+    "name_zh": "带V圆顶杆直立示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.3",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-007",
+    "file": "icons/add-007.svg",
+    "name_zh": "三角附折线直立示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.3",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-008",
+    "file": "icons/add-008.svg",
+    "name_zh": "横杆三角底座直立示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.3",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-009",
+    "file": "icons/add-009.svg",
+    "name_zh": "下垂矩形直立示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.3",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-010",
+    "file": "icons/add-010.svg",
+    "name_zh": "圆内箭直立示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.3",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-011",
+    "file": "icons/add-011.svg",
+    "name_zh": "方框医疗直立示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.3",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-012",
+    "file": "icons/add-012.svg",
+    "name_zh": "框内车体直立示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.3",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-013",
+    "file": "icons/add-013.svg",
+    "name_zh": "屋框医疗直立示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.3",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-014",
+    "file": "icons/add-014.svg",
+    "name_zh": "后勤技术指挥所原书示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.3",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-015",
+    "file": "icons/add-015.svg",
+    "name_zh": "纵向三线箭直立示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 19,
+    "source_figure": "图2.3",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-016",
+    "file": "icons/add-016.svg",
+    "name_zh": "型号注记用飞机轮廓",
+    "category": "新增独立示例",
+    "source_pdf_page": 31,
+    "source_figure": "表2.10续",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-017",
+    "file": "icons/add-017.svg",
+    "name_zh": "型号注记用导弹轮廓",
+    "category": "新增独立示例",
+    "source_pdf_page": 31,
+    "source_figure": "表2.10续",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-018",
+    "file": "icons/add-018.svg",
+    "name_zh": "型号注记用高炮轮廓",
+    "category": "新增独立示例",
+    "source_pdf_page": 31,
+    "source_figure": "表2.10续",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-019",
+    "file": "icons/add-019.svg",
+    "name_zh": "型号注记用岸炮轮廓",
+    "category": "新增独立示例",
+    "source_pdf_page": 31,
+    "source_figure": "表2.10续",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-020",
+    "file": "icons/add-020.svg",
+    "name_zh": "飞机损失交叉示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 32,
+    "source_figure": "表2.10续",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-021",
+    "file": "icons/add-021.svg",
+    "name_zh": "坦克损失交叉示例A",
+    "category": "新增独立示例",
+    "source_pdf_page": 32,
+    "source_figure": "表2.10续",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-022",
+    "file": "icons/add-022.svg",
+    "name_zh": "坦克损失交叉示例B",
+    "category": "新增独立示例",
+    "source_pdf_page": 32,
+    "source_figure": "表2.10续",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-023",
+    "file": "icons/add-023.svg",
+    "name_zh": "坦克损伤斜线示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 32,
+    "source_figure": "表2.10续",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-024",
+    "file": "icons/add-024.svg",
+    "name_zh": "展开队形损失标记示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 32,
+    "source_figure": "表2.10续",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-025",
+    "file": "icons/add-025.svg",
+    "name_zh": "步兵疏开队形完整示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 52,
+    "source_figure": "图3.18",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-026",
+    "file": "icons/add-026.svg",
+    "name_zh": "炮兵疏开队形完整示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 52,
+    "source_figure": "图3.18",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-027",
+    "file": "icons/add-027.svg",
+    "name_zh": "步兵坦克疏开队形完整示例",
+    "category": "新增独立示例",
+    "source_pdf_page": 52,
+    "source_figure": "图3.18",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-028",
+    "file": "icons/add-028.svg",
+    "name_zh": "细箭疏开队形样式",
+    "category": "新增独立示例",
+    "source_pdf_page": 52,
+    "source_figure": "图3.18",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-029",
+    "file": "icons/add-029.svg",
+    "name_zh": "兵种水平三横叉尾样式",
+    "category": "新增独立示例",
+    "source_pdf_page": 20,
+    "source_figure": "图2.4",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-030",
+    "file": "icons/add-030.svg",
+    "name_zh": "椭圆内三横箭样式",
+    "category": "新增独立示例",
+    "source_pdf_page": 20,
+    "source_figure": "图2.4",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-031",
+    "file": "icons/add-031.svg",
+    "name_zh": "水平中置工形样式",
+    "category": "新增独立示例",
+    "source_pdf_page": 20,
+    "source_figure": "图2.4",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-032",
+    "file": "icons/add-032.svg",
+    "name_zh": "展开线与双菱形样式",
+    "category": "新增独立示例",
+    "source_pdf_page": 20,
+    "source_figure": "图2.4",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  },
+  {
+    "id": "add-033",
+    "file": "icons/add-033.svg",
+    "name_zh": "小菱形横线样式",
+    "category": "新增独立示例",
+    "source_pdf_page": 20,
+    "source_figure": "图2.4",
+    "method": "contour_vector_redraw",
+    "anchor_xy": null,
+    "anchor_verified_for_geographic_placement": null,
+    "limitations": "保留原图画法与必要注记；不得据此推定具体型号、国别或朝鲜战争年代适用性。损失与队形类需与地图语境配套使用。"
+  }
+]

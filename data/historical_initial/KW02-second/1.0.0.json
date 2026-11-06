@@ -1,0 +1,1188 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "KW02-second",
+  "version": "1.0.0",
+  "battle": "抗美援朝-第二次战役-1950.11.07至1950.12.24",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "两线独立，累计序列不等于同地部署；本档只覆盖三所里局部和新兴里30日夜的已识别单位。",
+      "31RCT不是全部第31、第32团；配属营和炮兵已含在聚合单位，不重复加兵。",
+      "公开资料身份、参战和工作范围不等于实到人数、完好装备或精确部署已核。来源原始档案未逐件查验，缺载事实保持null。",
+      "仅登记的地面局部阶段可另填计算参数；未完成全战役航空、海军、坑道、冻伤或跨阶段增援模型，不把缺项静默换成普通步兵。"
+    ]
+  },
+  "sources": {
+    "KW2_CN": {
+      "title": "抗美援朝战争第二次战役",
+      "url": "https://www.gfbzb.gov.cn/zbbm/gfzs/201403/20140314/819925728.html",
+      "publisher": "全国征兵网，2014-03-14",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "分两线及后续阶段；网页对第26军到场和新兴里美军团级范围有概括与异文，不能视为逐时名册。"
+    },
+    "KW2_US": {
+      "title": "NY National Guard honors Korean War MIA Soldier’s return",
+      "url": "https://www.army.mil/article/246784/ny_national_guard_honors_korean_war_mia_soldiers_return",
+      "publisher": "美国陆军，2021",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "证明第31团级战斗队、第57野炮营与第32团第1营及第80、81师；纪念报道的总兵力与地理概括不作为局部精确参数。"
+    },
+    "KW2_DPAA": {
+      "title": "Funeral Announcement for Soldier Killed in Korean War (Sadewasser, W)",
+      "url": "https://www.dpaa.mil/News-Stories/ID-Announcements/Article/1315679/funeral-announcement-for-soldier-killed-in-korean-war-sadewasser-w/",
+      "publisher": "美国国防部DPAA，2017",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "证明31RCT与57野炮营在长津湖东岸，报道约2500美军、700韩军是集合估计，不能当作11月30日实到数。"
+    },
+    "KW2_EBB": {
+      "title": "Ebb and Flow, Chapter4: The Battle of the Ch’ongch’on",
+      "url": "https://www.koreanwaronline.com/history/EbbAndFlow/Ch4.htm",
+      "publisher": "美国陆军官方军史公开镜像",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "官方军史文本镜像；说明三所里在价川以南约7英里和113师/5骑兵团接触，不是地名同名点的精确经纬度。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "战役参战参考（非同日部署）",
+      "date": {
+        "label": "1950年11月7日至12月24日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "KW2_CN",
+            "locator": "战役范围与过程"
+          }
+        ]
+      },
+      "scope": "累计参战身份参考，不能作为同一时刻战斗部署。",
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "战役范围与过程"
+        }
+      ]
+    },
+    {
+      "id": "samsori_blocking",
+      "label": "三所里道路阻击局部",
+      "date": {
+        "label": "1950-11-29",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "KW2_CN",
+            "locator": "西线反击：113师与美骑1师，11月28—29日"
+          }
+        ]
+      },
+      "scope": "价川以南走廊工作范围；中心由既有价川参考向南约11公里构造，并非已证三所里村心。",
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "西线反击：113师与美骑1师，11月28—29日"
+        }
+      ],
+      "execution_window": {
+        "start": "1950-11-29T00:00",
+        "end": "1950-11-29T06:00",
+        "kind": "model_scope_limit",
+        "note": "钟点窗口为局部模型边界；史料未载的分钟不视为历史准确时刻。价川以南走廊工作范围；中心由既有价川参考向南约11公里构造，并非已证三所里村心。",
+        "evidence": [
+          {
+            "source_id": "KW2_CN",
+            "locator": "西线反击：113师与美骑1师，11月28—29日"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 39.60056,
+          "lng": 125.89333
+        },
+        "radius_km": 18,
+        "kind": "model_scope_limit",
+        "note": "既有地名/地形参考与人为工作半径，不是历史部队点位或测绘边界。价川以南走廊工作范围；中心由既有价川参考向南约11公里构造，并非已证三所里村心。",
+        "evidence": [
+          {
+            "source_id": "KW2_CN",
+            "locator": "西线反击：113师与美骑1师，11月28—29日"
+          }
+        ]
+      }
+    },
+    {
+      "id": "chosin_east_nov30",
+      "label": "长津湖东岸新兴里：11月30日晚",
+      "date": {
+        "label": "1950-11-30",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "KW2_CN",
+            "locator": "东线推进：30日晚第80、81师主攻"
+          }
+        ]
+      },
+      "scope": "下碣隅里地名只作长津湖工作区域参考；新兴里具体部署未配准。第26军不提前投入，尚不计算冻伤和全部航空。",
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "东线推进：30日晚第80、81师主攻"
+        }
+      ],
+      "execution_window": {
+        "start": "1950-11-30T18:00",
+        "end": "1950-12-01T00:00",
+        "kind": "model_scope_limit",
+        "note": "钟点窗口为局部模型边界；史料未载的分钟不视为历史准确时刻。下碣隅里地名只作长津湖工作区域参考；新兴里具体部署未配准。第26军不提前投入，尚不计算冻伤和全部航空。",
+        "evidence": [
+          {
+            "source_id": "KW2_CN",
+            "locator": "东线推进：30日晚第80、81师主攻"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 40.38602,
+          "lng": 127.25253
+        },
+        "radius_km": 32,
+        "kind": "model_scope_limit",
+        "note": "既有地名/地形参考与人为工作半径，不是历史部队点位或测绘边界。下碣隅里地名只作长津湖工作区域参考；新兴里具体部署未配准。第26军不提前投入，尚不计算冻伤和全部航空。",
+        "evidence": [
+          {
+            "source_id": "KW2_CN",
+            "locator": "东线推进：30日晚第80、81师主攻"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "kw.cn.hq",
+      "name": "志愿军总部",
+      "team": "red",
+      "role": "command",
+      "echelon": "总部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "战役部署"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "战役部署"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "战役部署"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "战役部署"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.corps38",
+      "name": "志愿军第38军",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": "kw.cn.hq",
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "西线反击"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "西线反击"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "西线反击"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "西线反击"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.division113",
+      "name": "志愿军第113师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps38",
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "三所里、龙源里阻击"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "三所里、龙源里阻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "三所里、龙源里阻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "三所里、龙源里阻击"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.corps20",
+      "name": "志愿军第20军",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": "kw.cn.hq",
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "东线推进"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "东线推进"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "东线推进"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "东线推进"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.corps27",
+      "name": "志愿军第27军",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": "kw.cn.hq",
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "30日晚主攻"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "30日晚主攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "30日晚主攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "30日晚主攻"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.division80",
+      "name": "志愿军第80师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps27",
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "30日晚新兴里主攻"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "30日晚新兴里主攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "30日晚新兴里主攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "30日晚新兴里主攻"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.division81",
+      "name": "志愿军第81师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps27",
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "30日晚主力增援攻击"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "30日晚主力增援攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "30日晚主力增援攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "30日晚主力增援攻击"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.corps26",
+      "name": "志愿军第26军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": "kw.cn.hq",
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "12月6日投入东线后续作战"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "12月6日投入东线后续作战"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "12月6日投入东线后续作战"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "12月6日投入东线后续作战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.us.army8",
+      "name": "美第8集团军",
+      "team": "blue",
+      "role": "command",
+      "echelon": "集团军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "西线反击"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "西线反击"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "西线反击"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "西线反击"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.us.cavalry_division1",
+      "name": "美骑兵第1师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.us.army8",
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "113师阻击北援与突围部队"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "113师阻击北援与突围部队"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "113师阻击北援与突围部队"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "113师阻击北援与突围部队"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.us.corps10",
+      "name": "美第10军",
+      "team": "blue",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "东线推进"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "东线推进"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "东线推进"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "东线推进"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.us.division7",
+      "name": "美步兵第7师",
+      "team": "blue",
+      "role": "command",
+      "echelon": "师",
+      "parent_id": "kw.us.corps10",
+      "evidence": [
+        {
+          "source_id": "KW2_US",
+          "locator": "31RCT来源"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_US",
+              "locator": "31RCT来源"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_US",
+              "locator": "31RCT来源"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_US",
+              "locator": "31RCT来源"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.us.regiment31.task_force",
+      "name": "美第31团级战斗队（麦克莱恩/费思特遣队）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团级战斗队",
+      "parent_id": "kw.us.division7",
+      "evidence": [
+        {
+          "source_id": "KW2_DPAA",
+          "locator": "长津湖东岸集合部队",
+          "note": "作为一个聚合单位含已到场配属，不能再累计其营和炮兵。"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_DPAA",
+              "locator": "长津湖东岸集合部队",
+              "note": "作为一个聚合单位含已到场配属，不能再累计其营和炮兵。"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_DPAA",
+              "locator": "长津湖东岸集合部队",
+              "note": "作为一个聚合单位含已到场配属，不能再累计其营和炮兵。"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW2_DPAA",
+              "locator": "长津湖东岸集合部队",
+              "note": "作为一个聚合单位含已到场配属，不能再累计其营和炮兵。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.us.regiment32.battalion1",
+      "name": "美第32步兵团第1营",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "营",
+      "parent_id": "kw.us.division7",
+      "evidence": [
+        {
+          "source_id": "KW2_US",
+          "locator": "费思指挥的第1营，作为31RCT组成参考",
+          "note": "本阶段已聚合于31RCT，不另作为第二支同一人员实体。"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_US",
+              "locator": "费思指挥的第1营，作为31RCT组成参考",
+              "note": "本阶段已聚合于31RCT，不另作为第二支同一人员实体。"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_US",
+              "locator": "费思指挥的第1营，作为31RCT组成参考",
+              "note": "本阶段已聚合于31RCT，不另作为第二支同一人员实体。"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_US",
+              "locator": "费思指挥的第1营，作为31RCT组成参考",
+              "note": "本阶段已聚合于31RCT，不另作为第二支同一人员实体。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.us.artillery57",
+      "name": "美第57野战炮兵营",
+      "team": "blue",
+      "role": "support",
+      "echelon": "营",
+      "parent_id": "kw.us.division7",
+      "evidence": [
+        {
+          "source_id": "KW2_DPAA",
+          "locator": "31RCT组成参考，已聚合于战斗队"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_DPAA",
+              "locator": "31RCT组成参考，已聚合于战斗队"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_DPAA",
+              "locator": "31RCT组成参考，已聚合于战斗队"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_DPAA",
+              "locator": "31RCT组成参考，已聚合于战斗队"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.us.marine_division1",
+      "name": "美陆战第1师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.us.corps10",
+      "evidence": [
+        {
+          "source_id": "KW2_CN",
+          "locator": "长津湖西岸和下碣隅里，非新兴里东岸同一战场"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "长津湖西岸和下碣隅里，非新兴里东岸同一战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "samsori_blocking",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "长津湖西岸和下碣隅里，非新兴里东岸同一战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "chosin_east_nov30",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW2_CN",
+              "locator": "长津湖西岸和下碣隅里，非新兴里东岸同一战场"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

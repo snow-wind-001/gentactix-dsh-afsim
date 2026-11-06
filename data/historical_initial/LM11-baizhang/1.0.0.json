@@ -1,0 +1,736 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "LM11-baizhang",
+  "version": "1.0.0",
+  "battle": "红军长征-百丈关战役-1935.11",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "有出处的阶段参战身份，不是完整战斗序列。未知实到人数、装备与部队坐标留空；计算值必须单独说明估计依据。",
+      "战役总伤亡、出发兵力和战后残部不能替代阶段初态；不得按回合平摊伤亡或固定史实结局。",
+      "13日至21日的进攻、撤退叙述与19日至25日激战七日属于不同分期；只选交集19日至20日作区域计算窗口，不宣布争议已解决。",
+      "师、纵队为百丈地区参战集合，内部团营与到场先后未核齐。不可将地方回顾的2万、10万和20万战区统计相加。"
+    ]
+  },
+  "sources": {
+    "LOCAL": {
+      "title": "百丈关下忆峥嵘 血色丰碑映青山",
+      "url": "https://www.yasskl.org.cn/news/yaskl_0604/2025122/2512293445367033049.html",
+      "publisher": "雅安市社会科学界联合会，2025-01-22",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "地方社科回顾；参战序列可作区域阶段参考，非逐日到达表，全文获取不稳定，不据此核定实到人数。"
+    },
+    "MILITARY": {
+      "title": "红军长征中有哪些重要战役战斗？",
+      "url": "https://www.81.mil.cn/yw_208727/16343466.html",
+      "publisher": "中国军网，2024",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "公开回顾，未核原始名册、逐时命令及实到兵力；仅支持所列身份与过程。"
+    },
+    "MUSEUM": {
+      "title": "解读长征（37）：一场歼敌1.5万又转攻为防的战斗",
+      "url": "https://dangshi.people.com.cn/n1/2016/0920/c85037-28726730.html",
+      "publisher": "姜廷玉，中国人民革命军事博物馆研究员／人民网，2016-09-20",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "公开回顾，未核原始名册、逐时命令及实到兵力；仅支持所列身份与过程。"
+    },
+    "GEO_baizhang": {
+      "title": "红军长征-百丈镇",
+      "url": "https://www.geonames.org/1817206/",
+      "publisher": "GeoNames；项目2026-10-22地名核验",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代聚落点。不是历史渡口、桥面或阵地；计算半径与部署是模型假设。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "百丈地区分期口径参考",
+      "date": {
+        "label": "1935年11月",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "MILITARY",
+            "locator": "百丈战斗总述与七日口径"
+          }
+        ]
+      },
+      "scope": "百丈地区分期口径参考",
+      "evidence": [
+        {
+          "source_id": "MILITARY",
+          "locator": "百丈战斗总述与七日口径"
+        }
+      ]
+    },
+    {
+      "id": "baizhang_contest",
+      "label": "百丈地区争夺与转入防御",
+      "date": {
+        "label": "1935年11月19日至20日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "LOCAL",
+            "locator": "11月中下旬参战师与川军部队"
+          }
+        ]
+      },
+      "scope": "百丈地区区域级消耗与退却通路；不当作一个关口内所有师同时接战。",
+      "evidence": [
+        {
+          "source_id": "LOCAL",
+          "locator": "11月中下旬参战师与川军部队"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 30.18732,
+          "lng": 103.26072
+        },
+        "radius_km": 45,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_baizhang",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1935-11-19T00:00",
+        "end": "1935-11-21T00:00",
+        "kind": "model_scope_limit",
+        "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。",
+        "evidence": [
+          {
+            "source_id": "LOCAL",
+            "locator": "11月中下旬参战师与川军部队"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "bz.red.div25",
+      "name": "红9军第25师百丈参战部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "LOCAL",
+          "locator": "11月中下旬参战部队序列"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ]
+        },
+        {
+          "phase_id": "baizhang_contest",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "bz.red.div10",
+      "name": "红4军第10师百丈参战部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "LOCAL",
+          "locator": "11月中下旬参战部队序列"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ]
+        },
+        {
+          "phase_id": "baizhang_contest",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "bz.red.div88",
+      "name": "红30军第88师百丈参战部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "LOCAL",
+          "locator": "11月中下旬参战部队序列"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ]
+        },
+        {
+          "phase_id": "baizhang_contest",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "bz.red.div89",
+      "name": "红30军第89师百丈参战部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "LOCAL",
+          "locator": "11月中下旬参战部队序列"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ]
+        },
+        {
+          "phase_id": "baizhang_contest",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "bz.red.div90",
+      "name": "红30军第90师百丈参战部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "LOCAL",
+          "locator": "11月中下旬参战部队序列"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ]
+        },
+        {
+          "phase_id": "baizhang_contest",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "bz.red.div93",
+      "name": "红31军第93师百丈参战部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "LOCAL",
+          "locator": "11月中下旬参战部队序列"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ]
+        },
+        {
+          "phase_id": "baizhang_contest",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "11月中下旬参战部队序列"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "bz.blue.li",
+      "name": "李家钰部百丈参战部",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "区域参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "LOCAL",
+          "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "baizhang_contest",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "bz.blue.guo",
+      "name": "郭勋祺部百丈参战部",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "区域参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "LOCAL",
+          "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "baizhang_contest",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "bz.blue.fan",
+      "name": "范绍增部百丈参战部",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "区域参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "LOCAL",
+          "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "baizhang_contest",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "LOCAL",
+              "locator": "川军李家钰、郭勋祺、范绍增部的地域投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    }
+  ]
+}

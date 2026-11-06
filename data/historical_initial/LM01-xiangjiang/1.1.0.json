@@ -1,0 +1,2749 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "LM01-xiangjiang",
+  "version": "1.1.0",
+  "battle": "红军长征-湘江战役-1934.11.25至1934.12.01",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "仅整理新圩首日与光华铺上午的双方身份和配属；不含脚山铺、全部渡场、纵队及后卫完整序列。",
+      "新圩28日阶段不提前加入29日起增援的24、45师和30日接防的红18团，红13团随军团部行动，不作为新圩首日战斗实体。",
+      "光华铺上午只绑定红10团与桂43师当地投入部分，不叠加红4师；11、12团另有地域任务，红5师接替在午后或晚间的异文均在本窗口外。",
+      "所有逐单位人数、分类装备与阵地坐标仍缺载为null；不能把总师兵力或全战役损失平均分给各团。",
+      "新圩红5师2000余伤亡、含炮兵与红18团的约3500伤亡、光华铺红10团400余伤亡范围不同，不相加。",
+      "10月出发8.6万余和渡江后3万余是异时兵力快照，差额不能视作湘江一役阵亡；不强制开放推演复现总战果。",
+      "现代地名仅约束局部计算地域，06时/12时/18时均为时段离散化的模型边界；未完成DEM、真实道路、炮位或航空遮断建模。",
+      "1.1.0新增10月8日七单位22条日期限定人员测量及六个参考身份。77159现有、9700拟补充、86859含计划总计分别保存。军委两纵队为混合机关与直属人员统计参考，不生成两支步兵；与后期军委纵队汇总身份的覆盖对应未核，不自动跨阶段合并。本新增参考不扩张旧11月局部或累计执行名单，不提升历史初态完整度。"
+    ]
+  },
+  "sources": {
+    "XJ_GX": {
+      "title": "红军长征过广西",
+      "url": "https://www.dswxyjy.org.cn/n1/2026/0702/c244516-40752274.html",
+      "publisher": "中共广西壮族自治区委员会党史研究室／中央党史和文献研究院，2026-07-02",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "省级党史机构公开回顾，未核原始命令、实力表和历史地图；战果与伤亡涵盖多个时段，不作小时配额。"
+    },
+    "XJ_MEM": {
+      "title": "湘江战役：鲜血与生命写就的英雄史诗（2）",
+      "url": "https://cpc.people.com.cn/GB/67481/68751/68760/4873839.html",
+      "publisher": "中国共产党新闻网，2006-09-29；转述回忆录及《兴安县志》",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "网页转引回忆与地方志，未直接核阅所引原件；接防时段及杜宗美/杜中美姓名与后出叙述有异文，不据此统一钟点。"
+    },
+    "XJ_FJ": {
+      "title": "以铁血担当践行对党绝对忠诚的政治品格——湘江战役的故事",
+      "url": "https://slt.fj.gov.cn/ztzl/dsxxjy/dsrrj/202108/t20210830_5677522.htm",
+      "publisher": "福建省水利厅机关党委，2021-08-30",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "机关党史学习文章，只佐证光华铺参战关系；七天六夜及全师损失不能当成本局局部实到/伤亡。"
+    },
+    "XJ_GEO_X": {
+      "title": "GeoNames 1788540：Xinxu",
+      "url": "https://www.geonames.org/1788540/",
+      "publisher": "GeoNames CN.zip；项目已保存地名表",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代新圩聚落坐标25.61667,111.10000，非枫树脚阵地；阶段中心南移和半径是模型范围估计。"
+    },
+    "XJ_GEO_J": {
+      "title": "GeoNames 1805849：Jieshou",
+      "url": "https://www.geonames.org/1805849/",
+      "publisher": "GeoNames；项目既有界首参考",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代界首地名25.72417,110.75778，非历史渡口或军标；向南约5公里推得的光华铺范围中心不是勘测点。"
+    },
+    "XJ_OCT8_SH2026": {
+      "title": "伟大的出发 永远的长征⑥：中共中央和中央红军主力集结于都（一）",
+      "url": "https://www.ccphistory.org.cn/shds/dsxx/content/064b44dc-971a-4c00-a790-895b669edfbc.html",
+      "publisher": "上海党史网，来源党史镜报，2026-10-13",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 图3为公开重排，不称原件影印。图像SHA-256=6d39f46a072ed9b0f0eeea3bf753391d9308797499665424134a7575cd2efa94"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "湘江累计参战参考（不同时同地部署）",
+      "date": {
+        "label": "1934年11月25日至12月1日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "XJ_GX",
+            "locator": "中央红军过广西"
+          }
+        ]
+      },
+      "scope": "仅列两个方向有关上级与部队；不是完整会战开局。",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "三处阻击与渡江"
+        }
+      ]
+    },
+    {
+      "id": "xinxu_nov28",
+      "label": "新圩首日：后续师与接防团到场前",
+      "date": {
+        "label": "1934-11-28",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "XJ_GX",
+            "locator": "新圩：28日与后续投入"
+          }
+        ]
+      },
+      "scope": "不把另一方向或后续接替部队提前放入本地；目标只检验局部迟滞，非主力全部过江。",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "新圩：28日与后续投入"
+        }
+      ],
+      "execution_window": {
+        "start": "1934-11-28T06:00",
+        "end": "1934-11-28T18:00",
+        "kind": "model_scope_limit",
+        "note": "06时及窗口末刻是拂晓/上午/入夜的计算离散化，不是确证开火或换防钟点；后续增援、换防和全役战果不在本窗自动发生。",
+        "evidence": [
+          {
+            "source_id": "XJ_GX",
+            "locator": "新圩：28日与后续投入"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 25.57,
+          "lng": 111.1
+        },
+        "radius_km": 12,
+        "kind": "model_scope_limit",
+        "note": "现代地名及相对方位的粗计算范围；不是史实阵地、精确渡口或道路。部署数值须另作显式估计。",
+        "evidence": [
+          {
+            "source_id": "XJ_GEO_X",
+            "locator": "现代聚落地名"
+          },
+          {
+            "source_id": "XJ_GX",
+            "locator": "新圩：28日与后续投入"
+          }
+        ]
+      }
+    },
+    {
+      "id": "guanghuapu_nov30_morning",
+      "label": "光华铺上午：红10团阻击，接替前",
+      "date": {
+        "label": "1934-11-30",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "XJ_GX",
+            "locator": "光华铺：29日夜至30日"
+          }
+        ]
+      },
+      "scope": "不把另一方向或后续接替部队提前放入本地；目标只检验局部迟滞，非主力全部过江。",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "光华铺：29日夜至30日"
+        }
+      ],
+      "execution_window": {
+        "start": "1934-11-30T06:00",
+        "end": "1934-11-30T12:00",
+        "kind": "model_scope_limit",
+        "note": "06时及窗口末刻是拂晓/上午/入夜的计算离散化，不是确证开火或换防钟点；后续增援、换防和全役战果不在本窗自动发生。",
+        "evidence": [
+          {
+            "source_id": "XJ_GX",
+            "locator": "光华铺：29日夜至30日"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 25.67917,
+          "lng": 110.75778
+        },
+        "radius_km": 10,
+        "kind": "model_scope_limit",
+        "note": "现代地名及相对方位的粗计算范围；不是史实阵地、精确渡口或道路。部署数值须另作显式估计。",
+        "evidence": [
+          {
+            "source_id": "XJ_GEO_J",
+            "locator": "现代聚落地名"
+          },
+          {
+            "source_id": "XJ_GX",
+            "locator": "光华铺：29日夜至30日"
+          }
+        ]
+      }
+    },
+    {
+      "id": "oct8_strength_reference",
+      "label": "1934年10月8日人员统计参考（非可执行部署）",
+      "date": {
+        "label": "1934-10-08",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "XJ_OCT8_SH2026",
+            "locator": "正文10月8日统计及图3题日期"
+          }
+        ]
+      },
+      "scope": "出发前日期限定的人员测量；不新增湘江战斗单位、地理部署或可运行窗口。缺载阵位和后续实力保持未知。",
+      "evidence": [
+        {
+          "source_id": "XJ_OCT8_SH2026",
+          "locator": "正文10月8日统计与图3人员栏"
+        }
+      ],
+      "measurements": [
+        {
+          "id": "XJ-M-oct8-corps1-existing",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps1"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 17280,
+            "upper": 17280,
+            "unit": "persons"
+          },
+          "statistic": "reported_existing_strength",
+          "population": "红一军团的“现有”栏报列人数",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红一军团的“现有”栏报列人数"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 “现有”只描述统计日报列数，不代表后续日期实力。"
+        },
+        {
+          "id": "XJ-M-oct8-corps1-planned",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps1"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 2600,
+            "upper": 2600,
+            "unit": "persons"
+          },
+          "statistic": "planned_replacement",
+          "population": "红一军团的“最后拟补充”栏计划人数",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红一军团的“最后拟补充”栏计划人数"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 拟补充不等于实际补入；无独立增补事件。"
+        },
+        {
+          "id": "XJ-M-oct8-corps1-including-plan",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps1"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 19880,
+            "upper": 19880,
+            "unit": "persons"
+          },
+          "statistic": "reported_strength_including_plan",
+          "population": "红一军团的“小计”；含拟补充，与上述分项重叠",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红一军团的“小计”；含拟补充，与上述分项重叠"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 含计划数与分项重叠，不可重复相加。"
+        },
+        {
+          "id": "XJ-M-oct8-corps3-existing",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps3"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 15205,
+            "upper": 15205,
+            "unit": "persons"
+          },
+          "statistic": "reported_existing_strength",
+          "population": "红三军团的“现有”栏报列人数",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红三军团的“现有”栏报列人数"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 “现有”只描述统计日报列数，不代表后续日期实力。"
+        },
+        {
+          "id": "XJ-M-oct8-corps3-planned",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps3"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 2600,
+            "upper": 2600,
+            "unit": "persons"
+          },
+          "statistic": "planned_replacement",
+          "population": "红三军团的“最后拟补充”栏计划人数",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红三军团的“最后拟补充”栏计划人数"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 拟补充不等于实际补入；无独立增补事件。"
+        },
+        {
+          "id": "XJ-M-oct8-corps3-including-plan",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps3"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 17805,
+            "upper": 17805,
+            "unit": "persons"
+          },
+          "statistic": "reported_strength_including_plan",
+          "population": "红三军团的“小计”；含拟补充，与上述分项重叠",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红三军团的“小计”；含拟补充，与上述分项重叠"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 含计划数与分项重叠，不可重复相加。"
+        },
+        {
+          "id": "XJ-M-oct8-corps5-existing",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps5"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 10868,
+            "upper": 10868,
+            "unit": "persons"
+          },
+          "statistic": "reported_existing_strength",
+          "population": "红五军团的“现有”栏报列人数",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红五军团的“现有”栏报列人数"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 “现有”只描述统计日报列数，不代表后续日期实力。"
+        },
+        {
+          "id": "XJ-M-oct8-corps5-planned",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps5"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 1300,
+            "upper": 1300,
+            "unit": "persons"
+          },
+          "statistic": "planned_replacement",
+          "population": "红五军团的“最后拟补充”栏计划人数",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红五军团的“最后拟补充”栏计划人数"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 拟补充不等于实际补入；无独立增补事件。"
+        },
+        {
+          "id": "XJ-M-oct8-corps5-including-plan",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps5"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 12168,
+            "upper": 12168,
+            "unit": "persons"
+          },
+          "statistic": "reported_strength_including_plan",
+          "population": "红五军团的“小计”；含拟补充，与上述分项重叠",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红五军团的“小计”；含拟补充，与上述分项重叠"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 含计划数与分项重叠，不可重复相加。"
+        },
+        {
+          "id": "XJ-M-oct8-corps8-existing",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps8"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 9022,
+            "upper": 9022,
+            "unit": "persons"
+          },
+          "statistic": "reported_existing_strength",
+          "population": "红八军团的“现有”栏报列人数",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红八军团的“现有”栏报列人数"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 “现有”只描述统计日报列数，不代表后续日期实力。"
+        },
+        {
+          "id": "XJ-M-oct8-corps8-planned",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps8"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 1900,
+            "upper": 1900,
+            "unit": "persons"
+          },
+          "statistic": "planned_replacement",
+          "population": "红八军团的“最后拟补充”栏计划人数",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红八军团的“最后拟补充”栏计划人数"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 拟补充不等于实际补入；无独立增补事件。"
+        },
+        {
+          "id": "XJ-M-oct8-corps8-including-plan",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps8"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 10922,
+            "upper": 10922,
+            "unit": "persons"
+          },
+          "statistic": "reported_strength_including_plan",
+          "population": "红八军团的“小计”；含拟补充，与上述分项重叠",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红八军团的“小计”；含拟补充，与上述分项重叠"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 含计划数与分项重叠，不可重复相加。"
+        },
+        {
+          "id": "XJ-M-oct8-corps9-existing",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps9"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 10238,
+            "upper": 10238,
+            "unit": "persons"
+          },
+          "statistic": "reported_existing_strength",
+          "population": "红九军团的“现有”栏报列人数",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红九军团的“现有”栏报列人数"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 “现有”只描述统计日报列数，不代表后续日期实力。"
+        },
+        {
+          "id": "XJ-M-oct8-corps9-planned",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps9"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 1300,
+            "upper": 1300,
+            "unit": "persons"
+          },
+          "statistic": "planned_replacement",
+          "population": "红九军团的“最后拟补充”栏计划人数",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红九军团的“最后拟补充”栏计划人数"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 拟补充不等于实际补入；无独立增补事件。"
+        },
+        {
+          "id": "XJ-M-oct8-corps9-including-plan",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps9"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 11538,
+            "upper": 11538,
+            "unit": "persons"
+          },
+          "statistic": "reported_strength_including_plan",
+          "population": "红九军团的“小计”；含拟补充，与上述分项重叠",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；红九军团的“小计”；含拟补充，与上述分项重叠"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 含计划数与分项重叠，不可重复相加。"
+        },
+        {
+          "id": "XJ-M-oct8-cmc_column1-existing",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.cmc_column1"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 4693,
+            "upper": 4693,
+            "unit": "persons"
+          },
+          "statistic": "reported_existing_strength",
+          "population": "军委纵队（1934年10月报列）的“现有”栏报列人数",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；军委纵队（1934年10月报列）的“现有”栏报列人数"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 “现有”只描述统计日报列数，不代表后续日期实力。"
+        },
+        {
+          "id": "XJ-M-oct8-cmc_column1-including-plan",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.cmc_column1"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 4693,
+            "upper": 4693,
+            "unit": "persons"
+          },
+          "statistic": "reported_strength_including_plan",
+          "population": "军委纵队（1934年10月报列）的“小计”；含拟补充，与上述分项重叠",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；军委纵队（1934年10月报列）的“小计”；含拟补充，与上述分项重叠"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 含计划数与分项重叠，不可重复相加。"
+        },
+        {
+          "id": "XJ-M-oct8-cmc_column2-existing",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.cmc_column2"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 9853,
+            "upper": 9853,
+            "unit": "persons"
+          },
+          "statistic": "reported_existing_strength",
+          "population": "罗迈纵队（1934年10月报列）的“现有”栏报列人数",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；罗迈纵队（1934年10月报列）的“现有”栏报列人数"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 “现有”只描述统计日报列数，不代表后续日期实力。"
+        },
+        {
+          "id": "XJ-M-oct8-cmc_column2-including-plan",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.cmc_column2"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 9853,
+            "upper": 9853,
+            "unit": "persons"
+          },
+          "statistic": "reported_strength_including_plan",
+          "population": "罗迈纵队（1934年10月报列）的“小计”；含拟补充，与上述分项重叠",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；罗迈纵队（1934年10月报列）的“小计”；含拟补充，与上述分项重叠"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 含计划数与分项重叠，不可重复相加。"
+        },
+        {
+          "id": "XJ-M-oct8-total-reported_existing_strength",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps1",
+            "lm.red.corps3",
+            "lm.red.corps5",
+            "lm.red.corps8",
+            "lm.red.corps9",
+            "lm.red.cmc_column1",
+            "lm.red.cmc_column2"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 77159,
+            "upper": 77159,
+            "unit": "persons"
+          },
+          "statistic": "reported_existing_strength",
+          "population": "表列七单位“现有”合计；与各单位分项重叠",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；表列七单位“现有”合计；与各单位分项重叠"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 “现有”只描述统计日报列数，不代表后续日期实力。"
+        },
+        {
+          "id": "XJ-M-oct8-total-planned_replacement",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps1",
+            "lm.red.corps3",
+            "lm.red.corps5",
+            "lm.red.corps8",
+            "lm.red.corps9"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 9700,
+            "upper": 9700,
+            "unit": "persons"
+          },
+          "statistic": "planned_replacement",
+          "population": "表列有填数的五军团“最后拟补充”合计；与各单位计划分项重叠",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；表列有填数的五军团“最后拟补充”合计；与各单位计划分项重叠"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 拟补充不等于实际补入；无独立增补事件。"
+        },
+        {
+          "id": "XJ-M-oct8-total-reported_strength_including_plan",
+          "date": {
+            "label": "1934-10-08",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "lm.red.corps1",
+            "lm.red.corps3",
+            "lm.red.corps5",
+            "lm.red.corps8",
+            "lm.red.corps9",
+            "lm.red.cmc_column1",
+            "lm.red.cmc_column2"
+          ],
+          "metric": "personnel",
+          "quantity": {
+            "relation": "eq",
+            "lower": 86859,
+            "upper": 86859,
+            "unit": "persons"
+          },
+          "statistic": "reported_strength_including_plan",
+          "population": "表列含拟补充总计；与各单位小计及现有、拟补充分项重叠",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "图3《野战军人员武器弹药供给统计表》人员三行；表列含拟补充总计；与各单位小计及现有、拟补充分项重叠"
+            }
+          ],
+          "limitations": "限1934-10-08的表列对象；不是1934年11月湘江开局人数，不证明拟补充已入队或部队空间到场，不向师团摊配，不作为战斗减员。公开重排表已核读，原件影印、单位注记与统计是否覆盖全部附属人员仍待复核。 含计划数与分项重叠，不可重复相加。"
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "lm.red.cmc",
+      "name": "中革军委",
+      "team": "red",
+      "role": "command",
+      "echelon": "中央军委",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "军委与两个纵队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "军委与两个纵队"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "军委与两个纵队"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "军委与两个纵队"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.corps3",
+      "name": "红三军团",
+      "team": "red",
+      "role": "command",
+      "echelon": "军团",
+      "parent_id": "lm.red.cmc",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "新圩与光华铺部署"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "新圩与光华铺部署"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "新圩与光华铺部署"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "新圩与光华铺部署"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.division4",
+      "name": "红三军团第4师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "lm.red.corps3",
+      "evidence": [
+        {
+          "source_id": "XJ_MEM",
+          "locator": "四师下辖团分工"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_MEM",
+              "locator": "四师下辖团分工"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_MEM",
+              "locator": "四师下辖团分工"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_MEM",
+              "locator": "四师下辖团分工"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.regiment10",
+      "name": "红三军团第4师第10团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "lm.red.division4",
+      "evidence": [
+        {
+          "source_id": "XJ_MEM",
+          "locator": "十、十一、十二团任务"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_MEM",
+              "locator": "十、十一、十二团任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_MEM",
+              "locator": "十、十一、十二团任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_MEM",
+              "locator": "十、十一、十二团任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.regiment11",
+      "name": "红三军团第4师第11团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "lm.red.division4",
+      "evidence": [
+        {
+          "source_id": "XJ_MEM",
+          "locator": "十、十一、十二团任务"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_MEM",
+              "locator": "十、十一、十二团任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_MEM",
+              "locator": "十、十一、十二团任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_MEM",
+              "locator": "十、十一、十二团任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.regiment12",
+      "name": "红三军团第4师第12团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "lm.red.division4",
+      "evidence": [
+        {
+          "source_id": "XJ_MEM",
+          "locator": "十、十一、十二团任务"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_MEM",
+              "locator": "十、十一、十二团任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_MEM",
+              "locator": "十、十一、十二团任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_MEM",
+              "locator": "十、十一、十二团任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.division5",
+      "name": "红三军团第5师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "lm.red.corps3",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "新圩部队及后续换防"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "新圩部队及后续换防"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "新圩部队及后续换防"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "新圩部队及后续换防"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "回顾中3000余人数/2000余损失是全师阶段概数，不能当作28日两个团或30日投入部实到；未核本窗实力表。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "回顾中3000余人数/2000余损失是全师阶段概数，不能当作28日两个团或30日投入部实到；未核本窗实力表。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "回顾中3000余人数/2000余损失是全师阶段概数，不能当作28日两个团或30日投入部实到；未核本窗实力表。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.regiment13",
+      "name": "红三军团第5师第13团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "lm.red.division5",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "13团另随军团部；14/15团出动"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "13团另随军团部；14/15团出动"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "13团另随军团部；14/15团出动"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "13团另随军团部；14/15团出动"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.regiment14",
+      "name": "红三军团第5师第14团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "lm.red.division5",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "13团另随军团部；14/15团出动"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "13团另随军团部；14/15团出动"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "13团另随军团部；14/15团出动"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "13团另随军团部；14/15团出动"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.regiment15",
+      "name": "红三军团第5师第15团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "lm.red.division5",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "13团另随军团部；14/15团出动"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "13团另随军团部；14/15团出动"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "13团另随军团部；14/15团出动"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "13团另随军团部；14/15团出动"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.cmc_artillery_battalion",
+      "name": "军委炮兵营（配属新圩方向）",
+      "team": "red",
+      "role": "support",
+      "echelon": "营",
+      "parent_id": "lm.red.cmc",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "军委炮兵营配属新圩"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "军委炮兵营配属新圩"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "军委炮兵营配属新圩"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "军委炮兵营配属新圩"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "配属不改写原隶属；未核本窗炮数、口径、人员和阵地，不能为步兵团重复配发同一火炮。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "配属不改写原隶属；未核本窗炮数、口径、人员和阵地，不能为步兵团重复配发同一火炮。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "配属不改写原隶属；未核本窗炮数、口径、人员和阵地，不能为步兵团重复配发同一火炮。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.division6",
+      "name": "红三军团第6师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "lm.red.corps3",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "红18团后续接防"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "红18团后续接防"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "红18团后续接防"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "红18团后续接防"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.regiment18",
+      "name": "红三军团第6师第18团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "lm.red.division6",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "30日新圩接防"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "30日新圩接防"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "30日新圩接防"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "30日新圩接防"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.gx.corps15",
+      "name": "桂军第15军",
+      "team": "blue",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "43、44、45师"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "43、44、45师"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "43、44、45师"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "43、44、45师"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.gx.division43",
+      "name": "桂军第15军第43师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "lm.gx.corps15",
+      "evidence": [
+        {
+          "source_id": "XJ_FJ",
+          "locator": "光华铺43师投入"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_FJ",
+              "locator": "光华铺43师投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_FJ",
+              "locator": "光华铺43师投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_FJ",
+              "locator": "光华铺43师投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "只绑定光华铺计算地域的投入估计，缺下级团番号、实到量、分类装备和阵地；不能当全师满编。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "只绑定光华铺计算地域的投入估计，缺下级团番号、实到量、分类装备和阵地；不能当全师满编。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只绑定光华铺计算地域的投入估计，缺下级团番号、实到量、分类装备和阵地；不能当全师满编。"
+        }
+      }
+    },
+    {
+      "id": "lm.gx.division44",
+      "name": "桂军第15军第44师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "lm.gx.corps15",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "28日枫树脚进攻"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "28日枫树脚进攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "28日枫树脚进攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "28日枫树脚进攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "只绑定新圩首日计算地域的投入估计；未核实到兵力和下级团序列，不按全师满编或25师30万人赋值。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "只绑定新圩首日计算地域的投入估计；未核实到兵力和下级团序列，不按全师满编或25师30万人赋值。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只绑定新圩首日计算地域的投入估计；未核实到兵力和下级团序列，不按全师满编或25师30万人赋值。"
+        }
+      }
+    },
+    {
+      "id": "lm.gx.division45",
+      "name": "桂军第15军第45师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "lm.gx.corps15",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "29日起后续投入"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "29日起后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "29日起后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "29日起后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.gx.corps7",
+      "name": "桂军第7军",
+      "team": "blue",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "24师与19师任务"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "24师与19师任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "24师与19师任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "24师与19师任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.gx.division24",
+      "name": "桂军第7军第24师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "lm.gx.corps7",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "29日起后续投入"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "29日起后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "29日起后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "29日起后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.gx.division19",
+      "name": "桂军第7军第19师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "lm.gx.corps7",
+      "evidence": [
+        {
+          "source_id": "XJ_GX",
+          "locator": "光华铺后续19师一部"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "光华铺后续19师一部"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "光华铺后续19师一部"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "XJ_GX",
+              "locator": "光华铺后续19师一部"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核得该单位本阶段实到人数、分类装备与可配准阵地；保留未知，不按建制满额填数。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.corps1",
+      "name": "红一军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XJ_OCT8_SH2026",
+          "locator": "图3该单位列名；仅核统计对象，未据表推定永久隶属和后期部署"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        }
+      },
+      "children_coverage": {
+        "status": "unknown",
+        "scope": "仅核统计列名，未核下级全覆盖或余部；不自动分摊兵额。",
+        "evidence": [
+          {
+            "source_id": "XJ_OCT8_SH2026",
+            "locator": "图3军团层级，不提供师团分项"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lm.red.corps5",
+      "name": "红五军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XJ_OCT8_SH2026",
+          "locator": "图3该单位列名；仅核统计对象，未据表推定永久隶属和后期部署"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        }
+      },
+      "children_coverage": {
+        "status": "unknown",
+        "scope": "仅核统计列名，未核下级全覆盖或余部；不自动分摊兵额。",
+        "evidence": [
+          {
+            "source_id": "XJ_OCT8_SH2026",
+            "locator": "图3军团层级，不提供师团分项"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lm.red.corps8",
+      "name": "红八军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XJ_OCT8_SH2026",
+          "locator": "图3该单位列名；仅核统计对象，未据表推定永久隶属和后期部署"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        }
+      },
+      "children_coverage": {
+        "status": "unknown",
+        "scope": "仅核统计列名，未核下级全覆盖或余部；不自动分摊兵额。",
+        "evidence": [
+          {
+            "source_id": "XJ_OCT8_SH2026",
+            "locator": "图3军团层级，不提供师团分项"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lm.red.corps9",
+      "name": "红九军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XJ_OCT8_SH2026",
+          "locator": "图3该单位列名；仅核统计对象，未据表推定永久隶属和后期部署"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        }
+      },
+      "children_coverage": {
+        "status": "unknown",
+        "scope": "仅核统计列名，未核下级全覆盖或余部；不自动分摊兵额。",
+        "evidence": [
+          {
+            "source_id": "XJ_OCT8_SH2026",
+            "locator": "图3军团层级，不提供师团分项"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lm.red.cmc_column1",
+      "name": "军委纵队（1934年10月报列）",
+      "team": "red",
+      "role": "command",
+      "echelon": "纵队参考",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XJ_OCT8_SH2026",
+          "locator": "图3该单位列名；仅核统计对象，未据表推定永久隶属和后期部署"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.cmc_column2",
+      "name": "罗迈纵队（1934年10月报列）",
+      "team": "red",
+      "role": "command",
+      "echelon": "纵队参考",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XJ_OCT8_SH2026",
+          "locator": "图3该单位列名；仅核统计对象，未据表推定永久隶属和后期部署"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinxu_nov28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "本条仅10月8日统计参考，不据表补入11月计算阶段；不等于该部历史上未参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_strength_reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XJ_OCT8_SH2026",
+              "locator": "统计列名不等于地理到场；unverified表示未形成可执行部署，非否认报列身份。未列师团与对手不补造。"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "日期限定数值列于oct8_strength_reference的measurements；本无日期字段保持未知，不移作11月实力或阵位。"
+        }
+      }
+    }
+  ]
+}

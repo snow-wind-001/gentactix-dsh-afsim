@@ -1,0 +1,905 @@
+{
+  "scope": "原CA兼容模板与严格事件帧的合同审计；DSH派生配置另行验收，不代表史料全部重新核实",
+  "battles": [
+    {
+      "battle": "抗日战争-万家岭战役-1938.09下旬至1938.10",
+      "card": "corpus/抗日战争-万家岭战役-1938.09下旬至1938.10.md",
+      "source_event_count": 4,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "深入→局部包围→阻援与收缩→围歼程度判定",
+      "missing_process_design": "包围封闭度、空投/增援、残部突围；占点不等于歼灭",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-全面反攻与受降总览-1945.08至1945.09",
+      "card": "corpus/抗日战争-全面反攻与受降总览-1945.08至1945.09.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "reception",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "反攻命令→地方停火/继续抵抗→缴械登记→交通与城市接收",
+      "missing_process_design": "地区命令服从、交涉/拒降/缴械状态、受降权限；不得第4轮全局停火",
+      "priority": "P0",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-冀中五一反扫荡-1942.05.01至1942.06.20",
+      "card": "corpus/抗日战争-冀中五一反扫荡-1942.05.01至1942.06.20.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "underground",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "合围与封锁→隐蔽分散/转移→持续反扫荡",
+      "missing_process_design": "表面占领与地下组织独立、平民与补给网络、长期追捕成本",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-台儿庄战役-1938.03.23至1938.04.07",
+      "card": "corpus/抗日战争-台儿庄战役-1938.03.23至1938.04.07.md",
+      "source_event_count": 7,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "城内坚守↔临沂阻援→外围反击→敌军撤退",
+      "missing_process_design": "街区控制、守城消耗与外围合围的时限耦合",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-太原会战-1937.09至1937.11",
+      "card": "corpus/抗日战争-太原会战-1937.09至1937.11.md",
+      "source_event_count": 6,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "delay",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "平型关/忻口正面牵制与敌后破袭并行→娘子关侧翼失守→撤离",
+      "missing_process_design": "多轴线协同、交通延误、侧翼突破触发而非八回合存活",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-平型关伏击战-1937.09.25",
+      "card": "corpus/抗日战争-平型关伏击战-1937.09.25.md",
+      "source_event_count": 4,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "运输纵队进入伏击区→封口分割→近战→脱离",
+      "missing_process_design": "行军纵队、隐蔽/暴露、伏击区与敌增援；占领桥东不能代表伏击成功",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-徐州会战总览-1938.01至1938.05",
+      "card": "corpus/抗日战争-徐州会战总览-1938.01至1938.05.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "滕县/临沂/台儿庄并行→日军扩张包围→主力突围",
+      "missing_process_design": "子战场时间同步、援军到达、合围缺口；总览须拆局部切片",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-敌后局部反攻总览-1944",
+      "card": "corpus/抗日战争-敌后局部反攻总览-1944.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "选择局部目标→集中攻坚/打援→巩固根据地",
+      "missing_process_design": "目标群与区域控制、分散转集中成本；不能压成单桥争夺",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-桂南会战与昆仑关攻坚-1939.11至1940.01",
+      "card": "corpus/抗日战争-桂南会战与昆仑关攻坚-1939.11至1940.01.md",
+      "source_event_count": 6,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "周边高地争夺→关隘攻坚→阻援→巩固",
+      "missing_process_design": "山地道路、步炮装协同、增援计时；不得预设旅团全灭",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-武汉会战-1938.06至1938.10",
+      "card": "corpus/抗日战争-武汉会战-1938.06至1938.10.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "delay",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "江上推进与南北岸作战→万家岭局部包围→主力撤离",
+      "missing_process_design": "江运/要塞/侧翼多轴线、疏散完成度与非战斗减员",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-淞沪会战-1937.08.13至1937.11.12",
+      "card": "corpus/抗日战争-淞沪会战-1937.08.13至1937.11.12.md",
+      "source_event_count": 8,
+      "structured_force_records": 4,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "delay",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "市区抵抗→沿江登陆→罗店/大场争夺→杭州湾侧背威胁→撤离",
+      "missing_process_design": "登陆点与到达梯队、沿水网补给、侧翼预警和撤退通道",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-湘西会战-1945.04.09至1945.06.07",
+      "card": "corpus/抗日战争-湘西会战-1945.04.09至1945.06.07.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "air",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "山地阻击→航空遮断→局部反击→日军退却",
+      "missing_process_design": "地面多轴线与航空架次、补给线、目标复核；现有航空仅局部抽象",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-百团大战-1940.08.20至1941.01.24",
+      "card": "corpus/抗日战争-百团大战-1940.08.20至1941.01.24.md",
+      "source_event_count": 7,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "rail",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "交通破袭→据点攻坚→反扫荡",
+      "missing_process_design": "铁路网连通/修复、据点警戒、敌反应延迟和根据地损耗",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-第一次长沙会战-1939.09.14至1939.10",
+      "card": "corpus/抗日战争-第一次长沙会战-1939.09.14至1939.10.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "delay",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "多河线迟滞→纵深接近→侧翼反击→日军撤离",
+      "missing_process_design": "河线分层、进攻补给距离、撤离触发；存活八轮不足以代表会战",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-第三次长沙会战-1941.12.24至1942.01.16",
+      "card": "corpus/抗日战争-第三次长沙会战-1941.12.24至1942.01.16.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "前沿诱入→长沙守城→外翼向心反击→追击",
+      "missing_process_design": "炉底/炉壁、多路合围到达同步和补给顶点",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-第二次长沙会战-1941.09.07至1941.10.09",
+      "card": "corpus/抗日战争-第二次长沙会战-1941.09.07至1941.10.09.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "前沿突破→长沙方向推进→调整与撤出",
+      "missing_process_design": "与第一次、第三次分开配置部署、通信与撤退条件",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-缅北滇西反攻总览-1943.10至1945.03",
+      "card": "corpus/抗日战争-缅北滇西反攻总览-1943.10至1945.03.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "air",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "缅北/滇西并行攻坚→交通线贯通",
+      "missing_process_design": "双战区、河谷道路/据点与航空运输；航空任务不等于战区复原",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-衡阳保卫战-1944.06至1944.08.08",
+      "card": "corpus/抗日战争-衡阳保卫战-1944.06至1944.08.08.md",
+      "source_event_count": 4,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "delay",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "外围接敌→多次总攻→援军受阻→守军耗竭",
+      "missing_process_design": "分次进攻与休整、围城库存、救援时限、撤离/停战选择",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-豫湘桂战役总览-1944.04至1944.12",
+      "card": "corpus/抗日战争-豫湘桂战役总览-1944.04至1944.12.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "豫中→长衡→桂柳，跨战区铁路轴线推进",
+      "missing_process_design": "战区交接、铁路/机场网络、有效兵力与指挥失效；拆分阶段",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗日战争-车桥战役-1944.03.05至1944.03.06",
+      "card": "corpus/抗日战争-车桥战役-1944.03.05至1944.03.06.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "隐蔽接近→攻点→阻援→巩固/撤出",
+      "missing_process_design": "攻点/打援两组命令、交通节点、日伪军分别记账",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗美援朝-上甘岭战役-1952.10.14至1952.11.25",
+      "card": "corpus/抗美援朝-上甘岭战役-1952.10.14至1952.11.25.md",
+      "source_event_count": 4,
+      "structured_force_records": 0,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "delay",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "地表阵地争夺↔坑道存续→补给/换防→反击巩固",
+      "missing_process_design": "地表/坑道双状态、水弹兵员补给与炮兵周期；存活八轮不等于守住两高地",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27",
+      "card": "corpus/抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27.md",
+      "source_event_count": 6,
+      "structured_force_records": 0,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "多阶段反击→金城突破→纵深发展→巩固与停战",
+      "missing_process_design": "火力准备、突破口/纵深道路、谈判截止及土地巩固",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22",
+      "card": "corpus/抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22.md",
+      "source_event_count": 3,
+      "structured_force_records": 0,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "delay",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "夏季进攻→秋季进攻→要点争夺/反坦克→稳定战线",
+      "missing_process_design": "双时段/双线、洪水与遮断、工事火力及谈判压力",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31",
+      "card": "corpus/抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31.md",
+      "source_event_count": 4,
+      "structured_force_records": 0,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "多点有限攻击→反扑争夺→巩固或主动撤出",
+      "missing_process_design": "目标群、炮兵火力分配、攻克/巩固分开、交替休整",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗美援朝-第一次战役-1950.10.25至1950.11.05",
+      "card": "corpus/抗美援朝-第一次战役-1950.10.25至1950.11.05.md",
+      "source_event_count": 4,
+      "structured_force_records": 0,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "隐蔽开进→遭遇→分途反击→稳定战线",
+      "missing_process_design": "通信管制、接触发现、前锋/后续梯队；通用占点失配",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗美援朝-第三次战役-1950.12.31至1951.01.08",
+      "card": "corpus/抗美援朝-第三次战役-1950.12.31至1951.01.08.md",
+      "source_event_count": 4,
+      "structured_force_records": 0,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "突破既设阵地→追击→城市占领→补给极限",
+      "missing_process_design": "突破/追击速度、城市时间窗口与向第四次战役传递状态",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗美援朝-第二次战役-1950.11.07至1950.12.24",
+      "card": "corpus/抗美援朝-第二次战役-1950.11.07至1950.12.24.md",
+      "source_event_count": 4,
+      "structured_force_records": 0,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "诱敌→东西线反击→分割阻击→追击/撤离",
+      "missing_process_design": "东西线独立、严寒冻伤、追击通道和海运撤离",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗美援朝-第五次战役-1951.04.22至1951.06.10",
+      "card": "corpus/抗美援朝-第五次战役-1951.04.22至1951.06.10.md",
+      "source_event_count": 6,
+      "structured_force_records": 0,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "第一阶段进攻→东线转兵→补给顶点→转移阻击",
+      "missing_process_design": "阶段换向、空中遮断、摩托化追击与通信中断；不预设180师结局",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "抗美援朝-第四次战役-1951.01.25至1951.04.21",
+      "card": "corpus/抗美援朝-第四次战役-1951.01.25至1951.04.21.md",
+      "source_event_count": 6,
+      "structured_force_records": 0,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "assault",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "西线迟滞↔东线反击→逐次后撤→新兵团集结",
+      "missing_process_design": "多线时间换空间、增援到达、攻击补给周期；当前为占点进攻目标",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-中央红军巧渡金沙江-1935.05.03至1935.05.09",
+      "card": "corpus/红军长征-中央红军巧渡金沙江-1935.05.03至1935.05.09.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "佯动→夺取渡口与船只→连续摆渡→脱离追击",
+      "missing_process_design": "船只与班次、追兵时距、隐蔽渡场；非必须歼敌的渡河组织",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-乌蒙山回旋战-1936.02.27至1936.03.28",
+      "card": "corpus/红军长征-乌蒙山回旋战-1936.02.27至1936.03.28.md",
+      "source_event_count": 6,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "分路追堵→连续转向与迂回→摆脱包围",
+      "missing_process_design": "道路图、情报时延、追踪与反追踪、疲劳；固定出口不足",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-包座战役-1935.08.29至1935.09.01",
+      "card": "corpus/红军长征-包座战役-1935.08.29至1935.09.01.md",
+      "source_event_count": 6,
+      "structured_force_records": 3,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "围点→援军进入→打援→围歼与通道开放",
+      "missing_process_design": "围点/打援分兵、援军到达、退路控制；当前突围目标失配",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-嘉陵江战役-1935.03.28至1935.04.21",
+      "card": "corpus/红军长征-嘉陵江战役-1935.03.28至1935.04.21.md",
+      "source_event_count": 7,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "多渡点突击→桥头扩张→纵深发展与分割",
+      "missing_process_design": "渡点/桥梁网络、主攻与助攻、增援反应；当前突围目标失配",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-四渡赤水-1935.01.19至1935.03.22",
+      "card": "corpus/红军长征-四渡赤水-1935.01.19至1935.03.22.md",
+      "source_event_count": 12,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "土城接触与调整→多次渡河/转向→遵义反击→脱离合围",
+      "missing_process_design": "渡口网络、敌我不完全情报、机动/追堵速度、四阶段可选转向",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-强渡乌江-1935.01.01至1935.01.06",
+      "card": "corpus/红军长征-强渡乌江-1935.01.01至1935.01.06.md",
+      "source_event_count": 8,
+      "structured_force_records": 3,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "侦察与试渡→夺取桥头→架桥→主力通过",
+      "missing_process_design": "船/浮桥工程并行、桥头掩护和通行吞吐；不以到出口代替渡江",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-强渡大渡河与飞夺泸定桥-1935.05.24至1935.05.29",
+      "card": "corpus/红军长征-强渡大渡河与飞夺泸定桥-1935.05.24至1935.05.29.md",
+      "source_event_count": 6,
+      "structured_force_records": 3,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "安顺场渡河→两岸分路→奔袭→夺桥→主力通过",
+      "missing_process_design": "船容量与桥梁状态、两岸时钟、疲劳和敌援到达",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-懋功会师与雪山草地转移-1935.06.12至1935.09.12",
+      "card": "corpus/红军长征-懋功会师与雪山草地转移-1935.06.12至1935.09.12.md",
+      "source_event_count": 19,
+      "structured_force_records": 4,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "会师→补给/路线分歧→翻山与草地转移→分路",
+      "missing_process_design": "多路指挥、非战斗损耗、粮食/宿营和战略路线；不能强制持续交战",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-湘江战役-1934.11.25至1934.12.01",
+      "card": "corpus/红军长征-湘江战役-1934.11.25至1934.12.01.md",
+      "source_event_count": 7,
+      "structured_force_records": 3,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "渡口抢占→阻击掩护→中央纵队过江→后卫撤离",
+      "missing_process_design": "分列战斗/非战斗纵队、渡场容量、道路排队与后卫接替",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-甘孜会师至三大主力会师-1936.07.01至1936.10.22",
+      "card": "corpus/红军长征-甘孜会师至三大主力会师-1936.07.01至1936.10.22.md",
+      "source_event_count": 7,
+      "structured_force_records": 3,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "多路集结→北上→先头接应→总部与主力会师",
+      "missing_process_design": "多军团身份、路线同步、补给与会师判定；会师不是歼灭战",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-百丈关战役-1935.11",
+      "card": "corpus/红军长征-百丈关战役-1935.11.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "初期推进→敌增兵反扑→消耗顶点→撤退重组",
+      "missing_process_design": "兵力到达、续战阈值、撤退秩序；不能把南下失利简化为向出口移动",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-直罗镇战役-1935.11.20至1935.11.24",
+      "card": "corpus/红军长征-直罗镇战役-1935.11.20至1935.11.24.md",
+      "source_event_count": 5,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "诱入→围点/阻援→突围与围歼",
+      "missing_process_design": "诱敌判断、封闭退路、俘虏与伤亡分账；当前突围目标失配",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-红二六军团抢渡金沙江-1936.04.25至1936.04.28",
+      "card": "corpus/红军长征-红二六军团抢渡金沙江-1936.04.25至1936.04.28.md",
+      "source_event_count": 4,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "组织渡口→连续摆渡→转移主力",
+      "missing_process_design": "渡船吞吐、纵队排队、追兵窗口；无接触不强造交战",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-红二十五军长征-1934.11.16至1935.09.16",
+      "card": "corpus/红军长征-红二十五军长征-1934.11.16至1935.09.16.md",
+      "source_event_count": 8,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "独立转移→多次突围与建基→继续北上→会师",
+      "missing_process_design": "跨月路线、追堵、补充/脱离与根据地；应拆局部节点",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "红军长征-腊子口战斗-1935.09.16至1935.09.17",
+      "card": "corpus/红军长征-腊子口战斗-1935.09.16至1935.09.17.md",
+      "source_event_count": 4,
+      "structured_force_records": 2,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "正面压制→攀崖迂回→侧后突击→通路开放",
+      "missing_process_design": "隘口正面与攀崖可达性、分队同步；不是通用出口移动",
+      "priority": "P1",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    },
+    {
+      "battle": "长平之战",
+      "card": "corpus/长平之战.md",
+      "source_event_count": 10,
+      "structured_force_records": 0,
+      "replay_unit_counts": [
+        0
+      ],
+      "open_model": "combined-arms-teaching-1",
+      "open_goal_profile": "breakout",
+      "open_unit_count": 6,
+      "open_units_all_synthetic_labels": true,
+      "open_seconds_per_turn": 1800,
+      "open_deadline_turn": 8,
+      "process_assessment": "尚不能重现完整历史作战过程",
+      "required_process_design": "坚守→指挥调整/出击→佯退→分割断粮→突围或投降",
+      "missing_process_design": "粮道网络、分割/封闭程度、四十六日围困与投降；保留史料数字口径",
+      "priority": "P2",
+      "assessment_basis": "执行初态/目标/事件帧与本地史料卡的合同审计；非逐场真实模型或历史效能验收"
+    }
+  ]
+}

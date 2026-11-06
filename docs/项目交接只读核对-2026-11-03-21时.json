@@ -1,0 +1,243 @@
+{
+  "kind": "read_only_handover_verification",
+  "before_at": "2026-11-03T21:20:44.730831+08:00",
+  "after_at": "2026-11-03T21:26:40.488863+08:00",
+  "branch": "main",
+  "head": "b5a38a5d0c440cb41f77edb5ce6261cff1020082",
+  "git_status_at_start": {
+    "tracked_changed": 131,
+    "untracked_entries": 974
+  },
+  "changes_by_this_task": {
+    "business_code": false,
+    "configuration": false,
+    "simulation_turn": false,
+    "model_call": false,
+    "test_launch": false,
+    "service_restart": false,
+    "install_or_package": false,
+    "github_sync": false,
+    "handover_documents_and_read_only_evidence_only": true
+  },
+  "selected_files": {
+    "count": 599,
+    "sha256_and_mtime_unchanged": true,
+    "changed_paths": []
+  },
+  "protected_predevelopment_files": {
+    "count": 104,
+    "same_at_start": true,
+    "unchanged_during_handover": true
+  },
+  "current_source_freeze": {
+    "count": 559,
+    "same_at_start": true,
+    "unchanged_during_handover": true
+  },
+  "services": {
+    "19358": {
+      "status": "ok",
+      "pid": 186277,
+      "same_pid_as_handover_start": true,
+      "session_count": 2,
+      "build": {
+        "loaded_revision": "a4a94121b09d081c",
+        "disk_revision": "a30e7949ab0f0b8e",
+        "restart_required": true,
+        "pid": 186277,
+        "started_at": "2026-11-03T09:03:58.457042+00:00"
+      },
+      "runtime": {
+        "mode": null,
+        "ptc": false,
+        "connected": false
+      }
+    },
+    "19368": {
+      "status": "ok",
+      "pid": 474702,
+      "same_pid_as_handover_start": true,
+      "session_count": 3,
+      "build": {
+        "loaded_revision": "a54b60df09972c07",
+        "disk_revision": "a30e7949ab0f0b8e",
+        "restart_required": true,
+        "pid": 474702,
+        "started_at": "2026-11-03T11:01:11.306587+00:00"
+      },
+      "runtime": {
+        "mode": null,
+        "ptc": false,
+        "connected": false
+      }
+    },
+    "19378": {
+      "status": "ok",
+      "pid": 690071,
+      "same_pid_as_handover_start": true,
+      "session_count": 2,
+      "build": {
+        "loaded_revision": "1119bbf318e3cfa5",
+        "disk_revision": "a30e7949ab0f0b8e",
+        "restart_required": true,
+        "pid": 690071,
+        "started_at": "2026-11-03T12:22:25.723841+00:00"
+      },
+      "runtime": {
+        "mode": null,
+        "ptc": false,
+        "connected": false
+      }
+    },
+    "19388": {
+      "status": "ok",
+      "pid": 807848,
+      "same_pid_as_handover_start": true,
+      "session_count": 0,
+      "build": {
+        "loaded_revision": "a30e7949ab0f0b8e",
+        "disk_revision": "a30e7949ab0f0b8e",
+        "restart_required": false,
+        "pid": 807848,
+        "started_at": "2026-11-03T13:04:39.170750+00:00"
+      },
+      "runtime": {
+        "mode": "native",
+        "ptc": false,
+        "connected": true
+      }
+    }
+  },
+  "sessions": {
+    "19358:2c51981789fd": {
+      "turn_count": 3,
+      "elapsed_seconds": 64800,
+      "mission_status": "active",
+      "active": false,
+      "whole_session_sha256": "278071f87d9c959d1d744e62d5efd590a8696d7cda5f3ba0754cefbce33fe568",
+      "same_as_predevelopment_baseline": true,
+      "same_full_export_as_handover_start": true
+    },
+    "19358:041fe52b2b8d": {
+      "turn_count": 1,
+      "elapsed_seconds": 21600,
+      "mission_status": "active",
+      "active": false,
+      "whole_session_sha256": "b99d0a4bed208bd718ffa95b9d918e92b4e3f4248e5b083f171dc6880ba639de",
+      "same_as_predevelopment_baseline": true,
+      "same_full_export_as_handover_start": true
+    },
+    "19368:cbb95b02630c": {
+      "turn_count": 7,
+      "elapsed_seconds": 6300,
+      "mission_status": "completed",
+      "active": false,
+      "whole_session_sha256": "73d85fe61607a817799c8776d635b53fa4462b53218a2dcb278c009de7329600",
+      "same_as_predevelopment_baseline": true,
+      "same_full_export_as_handover_start": true
+    },
+    "19368:fb11ed13786b": {
+      "turn_count": 9,
+      "elapsed_seconds": 8100,
+      "mission_status": "completed",
+      "active": false,
+      "whole_session_sha256": "05ce71e77ac90318d889b2c16794e5aeabf18483bc67e0b5e65fa85e297ee908",
+      "same_as_predevelopment_baseline": true,
+      "same_full_export_as_handover_start": true
+    },
+    "19368:5f55ddd507a7": {
+      "turn_count": 3,
+      "elapsed_seconds": 10800,
+      "mission_status": "active",
+      "active": false,
+      "whole_session_sha256": "340c892bab7fb30429c7cc1b16912a0fb204f71bea5e2a1260f6785080893233",
+      "same_as_predevelopment_baseline": true,
+      "same_full_export_as_handover_start": true
+    },
+    "19378:24f1946c7010": {
+      "turn_count": 6,
+      "elapsed_seconds": 10800,
+      "mission_status": "active",
+      "active": false,
+      "whole_session_sha256": "0c2bc98ca23df6d38dea1c319c554e0ff5cedac5c69fe53934ba108229d74523",
+      "same_as_predevelopment_baseline": true,
+      "same_full_export_as_handover_start": true
+    },
+    "19378:91ee5e8bf177": {
+      "turn_count": 6,
+      "elapsed_seconds": 10800,
+      "mission_status": "active",
+      "active": false,
+      "whole_session_sha256": "49266b61604286a735c8cec61399e01e9e2706e0a36237cb2bc78b49ec3c7eb8",
+      "same_as_predevelopment_baseline": true,
+      "same_full_export_as_handover_start": true
+    }
+  },
+  "all_seven_original_sessions_exact": true,
+  "current_source_inventory": {
+    "scenario_count": 45,
+    "version_count": 59,
+    "latest_reference_identities": 622,
+    "latest_phases": 117,
+    "latest_known_fact_counts": {
+      "personnel": 0,
+      "equipment": 0,
+      "position": 1
+    },
+    "campaign_window_families": 5,
+    "campaign_window_versions": 10
+  },
+  "latest_completed_gate": {
+    "evidence": ".cache/qa/deferred-support-2026-11-03/stable-gate/results.json",
+    "groups": 170,
+    "unittest_cases": 2004,
+    "failed_groups": 0,
+    "skipped_cases": 0,
+    "does_not_validate_current_lm15_changes": true
+  },
+  "previously_started_gate": {
+    "status": "in_progress_no_final_results",
+    "final_results_exists": false,
+    "pass_lines_observed": 96,
+    "fail_lines_observed": 0,
+    "last_completed_group": "PASS verify_history_replay (4.07s)",
+    "log": ".cache/qa/reunion-windows-2026-11-03/full-gate.log",
+    "result_path": ".cache/qa/reunion-windows-2026-11-03/stable-gate/results.json",
+    "runner_pid": 825792,
+    "runner_process_exists": true,
+    "not_launched_or_restarted_by_handover": true
+  },
+  "current_generation": {
+    "operation_id": "83b451c7140e4a1db115720474ce8072",
+    "checkpoint_id": "0770a860499444c1b7aa66cabd4eea3f",
+    "status": "interrupted",
+    "failed_part": "final",
+    "error": "最终校验回执缺失或版本不一致",
+    "configuration_revision": 3,
+    "global_ready": true,
+    "filled_actor_count": 5,
+    "final_validation_present": false,
+    "loaded_draft_id": null,
+    "operation_progress": {
+      "active": false,
+      "cancel_requested": false,
+      "progress": null
+    },
+    "http_result": 502,
+    "actual_new_campaign_started": false,
+    "server_failure_not_established": true
+  },
+  "document": {
+    "path": "docs/项目交接说明-2026-11-03-21时只读快照.md",
+    "local_links_checked": true,
+    "broken_links": [],
+    "sha256": "212832f1a7fd47bac87ce8f7767f0224085fa5a51b7c43d364d0c2197aa5d04b"
+  },
+  "comparison_method": "Compare full export.session against typed prior session; full envelope against handover-start envelope; read war_state.simulation_clock. Initial envelope-vs-session comparison was corrected in preserved session-baseline-reviewed.json; no state repair.",
+  "local_evidence_directory": ".cache/qa/handover-readonly-2026-11-03-21h",
+  "historical_acceptance": {
+    "scenarios": 45,
+    "matrix_cells": 270,
+    "full_history_acceptance_complete": false
+  }
+}

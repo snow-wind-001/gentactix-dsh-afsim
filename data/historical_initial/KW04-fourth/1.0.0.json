@@ -1,0 +1,708 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "KW04-fourth",
+  "version": "1.0.0",
+  "battle": "抗美援朝-第四次战役-1951.01.25至1951.04.21",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "不是87天全战役同时展开；砥平里14日晚范围固定，次日增援不提前出现。",
+      "不把“115师2团、126师1团”偷换成全师；守军23团与法营、炮营分账。",
+      "公开资料身份、参战和工作范围不等于实到人数、完好装备或精确部署已核。来源原始档案未逐件查验，缺载事实保持null。",
+      "仅登记的地面局部阶段可另填计算参数；未完成全战役航空、海军、坑道、冻伤或跨阶段增援模型，不把缺项静默换成普通步兵。"
+    ]
+  },
+  "sources": {
+    "KW4_CN": {
+      "title": "砥平里战斗",
+      "url": "https://www.81.mil.cn/2018zgjnmhj/2018-03/27/content_7984802_2.htm",
+      "publisher": "中国军网转载抗美援朝纪念馆，2018",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "14日晚119师全部、115师2团、126师1团是不同投入范围；未载团号不编造。15日坦克增援是后续过程。"
+    },
+    "KW4_US": {
+      "title": "Korean War veterans remember Battle of Chipyong-ni",
+      "url": "https://www.army.mil/article/82510/",
+      "publisher": "美国陆军，2012-06-26",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "网页误写战斗年份1950，且称首尔西南方，与地名位置不符；只取23团与法国营身份，日期、地理另交叉核对。"
+    },
+    "KW4_PRESS": {
+      "title": "Battle of Chipyong-ni: Exportable Readings",
+      "url": "https://www.armyupress.army.mil/Portals/7/educational-services/staff-rides/2_Battle_of_Chipyong_ni_Readings_Exportable.pdf",
+      "publisher": "美国陆军大学出版社历史战例材料",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "依据公开教学材料核对37野炮营支援；未核各日原始实到名册，不把现代教学编制当1951年精确库存。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "战役参战参考（非同日部署）",
+      "date": {
+        "label": "1951年1月25日至4月21日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "KW4_CN",
+            "locator": "战役范围与过程"
+          }
+        ]
+      },
+      "scope": "累计参战身份参考，不能作为同一时刻战斗部署。",
+      "evidence": [
+        {
+          "source_id": "KW4_CN",
+          "locator": "战役范围与过程"
+        }
+      ]
+    },
+    {
+      "id": "chipyong_second_night",
+      "label": "砥平里第二夜：增援坦克到达前",
+      "date": {
+        "label": "1951-02-14",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "KW4_CN",
+            "locator": "2月14日晚调整六个团攻击部署"
+          }
+        ]
+      },
+      "scope": "只计算18—24时模型窗口；第115师2团、第126师1团为来源明确的部队集合，不虚构其未载团号。",
+      "evidence": [
+        {
+          "source_id": "KW4_CN",
+          "locator": "2月14日晚调整六个团攻击部署"
+        }
+      ],
+      "execution_window": {
+        "start": "1951-02-14T18:00",
+        "end": "1951-02-15T00:00",
+        "kind": "model_scope_limit",
+        "note": "钟点窗口为局部模型边界；史料未载的分钟不视为历史准确时刻。只计算18—24时模型窗口；第115师2团、第126师1团为来源明确的部队集合，不虚构其未载团号。",
+        "evidence": [
+          {
+            "source_id": "KW4_CN",
+            "locator": "2月14日晚调整六个团攻击部署"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 37.47361,
+          "lng": 127.63806
+        },
+        "radius_km": 12,
+        "kind": "model_scope_limit",
+        "note": "既有地名/地形参考与人为工作半径，不是历史部队点位或测绘边界。只计算18—24时模型窗口；第115师2团、第126师1团为来源明确的部队集合，不虚构其未载团号。",
+        "evidence": [
+          {
+            "source_id": "KW4_CN",
+            "locator": "2月14日晚调整六个团攻击部署"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "kw.cn.corps40",
+      "name": "志愿军第40军",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW4_CN",
+          "locator": "119师攻击"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "119师攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "chipyong_second_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "119师攻击"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.corps39",
+      "name": "志愿军第39军",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW4_CN",
+          "locator": "115师攻击、116师阻援"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "115师攻击、116师阻援"
+            }
+          ]
+        },
+        {
+          "phase_id": "chipyong_second_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "115师攻击、116师阻援"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.corps42",
+      "name": "志愿军第42军",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW4_CN",
+          "locator": "126师攻击、阻援"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "126师攻击、阻援"
+            }
+          ]
+        },
+        {
+          "phase_id": "chipyong_second_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "126师攻击、阻援"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.division119",
+      "name": "志愿军第119师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps40",
+      "evidence": [
+        {
+          "source_id": "KW4_CN",
+          "locator": "14日晚全师攻击"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "14日晚全师攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "chipyong_second_night",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "14日晚全师攻击"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.division115.chipyong_elements",
+      "name": "志愿军第115师参战两个团（团号未载）",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团级部队集合",
+      "parent_id": "kw.cn.corps39",
+      "evidence": [
+        {
+          "source_id": "KW4_CN",
+          "locator": "14日晚115师2团投入",
+          "note": "来源明确的参战部分，不是全师或合成代表旅。"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "14日晚115师2团投入",
+              "note": "来源明确的参战部分，不是全师或合成代表旅。"
+            }
+          ]
+        },
+        {
+          "phase_id": "chipyong_second_night",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "14日晚115师2团投入",
+              "note": "来源明确的参战部分，不是全师或合成代表旅。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.division126.chipyong_elements",
+      "name": "志愿军第126师参战一个团（团号未载）",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团级部队集合",
+      "parent_id": "kw.cn.corps42",
+      "evidence": [
+        {
+          "source_id": "KW4_CN",
+          "locator": "14日晚126师1团投入",
+          "note": "不把126师阻援主力同时投入砥平里中心。"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "14日晚126师1团投入",
+              "note": "不把126师阻援主力同时投入砥平里中心。"
+            }
+          ]
+        },
+        {
+          "phase_id": "chipyong_second_night",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "14日晚126师1团投入",
+              "note": "不把126师阻援主力同时投入砥平里中心。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.us.division2",
+      "name": "美步兵第2师",
+      "team": "blue",
+      "role": "command",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW4_US",
+          "locator": "23团上级"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW4_US",
+              "locator": "23团上级"
+            }
+          ]
+        },
+        {
+          "phase_id": "chipyong_second_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW4_US",
+              "locator": "23团上级"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.us.infantry_regiment23",
+      "name": "美第23步兵团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "kw.us.division2",
+      "evidence": [
+        {
+          "source_id": "KW4_US",
+          "locator": "23团与配属法国营防御",
+          "note": "本单位只计美团有机部队；法国营和37炮营分列，不以整个RCT重复累计。"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW4_US",
+              "locator": "23团与配属法国营防御",
+              "note": "本单位只计美团有机部队；法国营和37炮营分列，不以整个RCT重复累计。"
+            }
+          ]
+        },
+        {
+          "phase_id": "chipyong_second_night",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW4_US",
+              "locator": "23团与配属法国营防御",
+              "note": "本单位只计美团有机部队；法国营和37炮营分列，不以整个RCT重复累计。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.fr.battalion",
+      "name": "法国营",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "营",
+      "parent_id": "kw.us.division2",
+      "evidence": [
+        {
+          "source_id": "KW4_US",
+          "locator": "配属23团战斗队"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW4_US",
+              "locator": "配属23团战斗队"
+            }
+          ]
+        },
+        {
+          "phase_id": "chipyong_second_night",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW4_US",
+              "locator": "配属23团战斗队"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.us.artillery37",
+      "name": "美第37野战炮兵营",
+      "team": "blue",
+      "role": "support",
+      "echelon": "营",
+      "parent_id": "kw.us.division2",
+      "evidence": [
+        {
+          "source_id": "KW4_PRESS",
+          "locator": "战例序列与炮兵支援"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW4_PRESS",
+              "locator": "战例序列与炮兵支援"
+            }
+          ]
+        },
+        {
+          "phase_id": "chipyong_second_night",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW4_PRESS",
+              "locator": "战例序列与炮兵支援"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.us.cavalry_regiment5",
+      "name": "美骑兵第5团增援部队",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团级增援部队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW4_CN",
+          "locator": "15日曲水里与坦克黄昏突入"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "15日曲水里与坦克黄昏突入"
+            }
+          ]
+        },
+        {
+          "phase_id": "chipyong_second_night",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "KW4_CN",
+              "locator": "15日曲水里与坦克黄昏突入"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

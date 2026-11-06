@@ -1,0 +1,28 @@
+{
+  "version": "0.2.1rc5",
+  "source": "https://github.com/deepseek-ai/deepseek-harness",
+  "commit": "b830ec950faba0a46dda564be3e2d854afed94f1",
+  "platform": "linux-x86_64",
+  "python_min": "3.10",
+  "local_build": true,
+  "artifacts": [
+    {
+      "filename": "deepseek_harness_runtime_bin-0.2.1rc5-py3-none-manylinux_2_28_x86_64.whl",
+      "bytes": 144887797,
+      "sha256": "8ef32aff39cba41e03b43bc93975d8a515362d8d1817f0c312266ce7516b588f"
+    },
+    {
+      "filename": "deepseek_harness_sdk-0.2.1rc5-py3-none-any.whl",
+      "bytes": 18112,
+      "sha256": "ae4a2582016ee32527cf1155385988fa6e8d1c197fa7509498ccab426e7d14e5"
+    }
+  ],
+  "packaging_repairs": [
+    "Pin deployed dependencies to the existing root lockfile",
+    "GZip SEA archive",
+    "Clamp empty SEA entry decompression maxOutputLength to1 (Node rejects0)"
+  ],
+  "license": "MIT",
+  "release_base": "https://github.com/snow-wind-001/gentactix-dsh-afsim/releases/download/v3.7.6-beta.1",
+  "note": "Official PyPI has no rc5. These Linux x86_64 wheels were locally built from the pinned upstream revision with the three documented packaging repairs; byte identity is verified. Source rebuild bit reproducibility is not claimed."
+}

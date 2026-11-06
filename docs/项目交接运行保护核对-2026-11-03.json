@@ -1,0 +1,2717 @@
+{
+  "kind": "read-only handover verification; no live probe, turn, restart or test execution",
+  "before_at": "2026-11-03T19:56:20.059538+08:00",
+  "branch": "main",
+  "head": "b5a38a5d0c440cb41f77edb5ce6261cff1020082",
+  "health": {
+    "19358": {
+      "status": "ok",
+      "harness_started": false,
+      "session_count": 2,
+      "build": {
+        "loaded_revision": "a4a94121b09d081c",
+        "disk_revision": "1119bbf318e3cfa5",
+        "restart_required": true,
+        "pid": 186277,
+        "started_at": "2026-11-03T09:03:58.457042+00:00"
+      },
+      "runtime": {
+        "connected": false,
+        "ptc": false
+      }
+    },
+    "19368": {
+      "status": "ok",
+      "harness_started": false,
+      "session_count": 3,
+      "build": {
+        "loaded_revision": "a54b60df09972c07",
+        "disk_revision": "1119bbf318e3cfa5",
+        "restart_required": true,
+        "pid": 474702,
+        "started_at": "2026-11-03T11:01:11.306587+00:00"
+      },
+      "runtime": {
+        "connected": false,
+        "ptc": false
+      }
+    },
+    "19378": {
+      "status": "ok",
+      "harness_started": true,
+      "session_count": 1,
+      "build": {
+        "loaded_revision": "1119bbf318e3cfa5",
+        "disk_revision": "1119bbf318e3cfa5",
+        "restart_required": false,
+        "pid": 597629,
+        "started_at": "2026-11-03T11:46:10.515352+00:00"
+      },
+      "runtime": {
+        "connected": true,
+        "ptc": false,
+        "mode": "native"
+      }
+    }
+  },
+  "sessions": {
+    "19358:2c51981789fd": {
+      "whole_session_sha256": "278071f87d9c959d1d744e62d5efd590a8696d7cda5f3ba0754cefbce33fe568",
+      "progress_sha256": "f7a06ea798460978783fac2136ac7cf520e517176003bd7b3cb48c1241e853e4",
+      "turn_count": 3,
+      "simulation_clock": {
+        "version": 1,
+        "origin_label": "1935-08-21 00:00",
+        "origin_iso": "1935-08-21T00:00:00",
+        "elapsed_seconds": 64800
+      },
+      "product_mode": "historical",
+      "execution_backend": null,
+      "old_whole_export_unchanged": true,
+      "progress": {
+        "active": false,
+        "operation_id": null
+      },
+      "active": false,
+      "last_operation": {
+        "operation_id": "f4dbe2dceb6e4259a1c7cc42f33682c4",
+        "label": "推演 T+3",
+        "outcome": "success",
+        "wall_elapsed_ms": 129447
+      },
+      "groups": []
+    },
+    "19358:041fe52b2b8d": {
+      "whole_session_sha256": "b99d0a4bed208bd718ffa95b9d918e92b4e3f4248e5b083f171dc6880ba639de",
+      "progress_sha256": "deb2a653c3437a7450ba541c39689929b1f03bbd41af3df296eaf772825e9528",
+      "turn_count": 1,
+      "simulation_clock": {
+        "version": 1,
+        "origin_label": "1935-08-21 00:00",
+        "origin_iso": "1935-08-21T00:00:00",
+        "elapsed_seconds": 21600
+      },
+      "product_mode": "historical",
+      "execution_backend": null,
+      "old_whole_export_unchanged": true,
+      "progress": {
+        "active": false,
+        "operation_id": null
+      },
+      "active": false,
+      "last_operation": {
+        "operation_id": "7964384bf1f549c4b57e7b3fb2dc7c8d",
+        "label": "推演 T+1",
+        "outcome": "success",
+        "wall_elapsed_ms": 101416
+      },
+      "groups": []
+    },
+    "19368:cbb95b02630c": {
+      "whole_session_sha256": "73d85fe61607a817799c8776d635b53fa4462b53218a2dcb278c009de7329600",
+      "progress_sha256": "e74d5d0d4dd299bfcba6370bfa44f290280dbed892338c9d61b50b47bbadca02",
+      "turn_count": 7,
+      "simulation_clock": {
+        "version": 1,
+        "origin_label": "1938-10-07 00:00",
+        "origin_iso": "1938-10-07T00:00:00",
+        "elapsed_seconds": 6300
+      },
+      "product_mode": "synthetic",
+      "execution_backend": "afsim",
+      "old_whole_export_unchanged": true,
+      "progress": {
+        "active": false,
+        "operation_id": null
+      },
+      "active": false,
+      "last_operation": {
+        "operation_id": "e09ea48a32a540f49b57acf2cdf24fd8",
+        "label": "推演 T+7",
+        "outcome": "success",
+        "wall_elapsed_ms": 69899
+      },
+      "groups": [
+        {
+          "id": "task:1",
+          "label": "跨阶段原任务群",
+          "members": [
+            "af4d5a81fd2dddf2e2997e2dbb20dc1f71fa2761f8e4f038c708969bcc412079",
+            "c1cc9993a4cd340e931c530b745f4a629a9dd5fdcc10723db3e7fed42c947b40"
+          ]
+        },
+        {
+          "id": "task:5",
+          "label": "阶段三南向任务群",
+          "members": [
+            "40b6f3dfd0f57e9d05c770dc3e586ce36eecb2d18bd7bb802d81c85ab63df68d"
+          ]
+        }
+      ]
+    },
+    "19368:fb11ed13786b": {
+      "whole_session_sha256": "05ce71e77ac90318d889b2c16794e5aeabf18483bc67e0b5e65fa85e297ee908",
+      "progress_sha256": "69a3fe62f6f2aca040ff49f338cb0a4a54d9ad61783fa17f193ee51dc16ea8b0",
+      "turn_count": 9,
+      "simulation_clock": {
+        "version": 1,
+        "origin_label": "1938-10-07 00:00",
+        "origin_iso": "1938-10-07T00:00:00",
+        "elapsed_seconds": 8100
+      },
+      "product_mode": "synthetic",
+      "execution_backend": null,
+      "old_whole_export_unchanged": true,
+      "progress": {
+        "active": false,
+        "operation_id": null
+      },
+      "active": false,
+      "last_operation": {
+        "operation_id": "6e1cfdf922454398b8710b18bc356005",
+        "label": "推演 T+9",
+        "outcome": "success",
+        "wall_elapsed_ms": 91874
+      },
+      "groups": [
+        {
+          "id": "task:1",
+          "label": "跨阶段原任务群",
+          "members": [
+            "e591d79413924a690236accaf620b0715feba2c2ab8bd2ee72c7cbc1862aa13f",
+            "a67e64e64b73a724642ca86fb6f0da09f7361cc4b243dbe76eff136c1fb47022"
+          ]
+        },
+        {
+          "id": "task:5",
+          "label": "阶段三南向任务群",
+          "members": [
+            "40b6f3dfd0f57e9d05c770dc3e586ce36eecb2d18bd7bb802d81c85ab63df68d"
+          ]
+        }
+      ]
+    },
+    "19368:5f55ddd507a7": {
+      "whole_session_sha256": "340c892bab7fb30429c7cc1b16912a0fb204f71bea5e2a1260f6785080893233",
+      "progress_sha256": "d17d2c7b69c20553be0dfaad385a55f4011981f68ece5d42a24b07fc76d1a15a",
+      "turn_count": 3,
+      "simulation_clock": {
+        "version": 1,
+        "origin_label": "1938-03-31 00:00",
+        "origin_iso": "1938-03-31T00:00:00",
+        "elapsed_seconds": 10800
+      },
+      "product_mode": "synthetic",
+      "execution_backend": null,
+      "old_whole_export_unchanged": true,
+      "progress": {
+        "active": false,
+        "operation_id": null
+      },
+      "active": false,
+      "last_operation": {
+        "operation_id": "98d036932aae4e258c7f35bca1a3c4f6",
+        "label": "推演 T+3",
+        "outcome": "success",
+        "wall_elapsed_ms": 90476
+      },
+      "groups": []
+    },
+    "19378:24f1946c7010": {
+      "whole_session_sha256": "88fadef8418c3e89be7d051990c161315cd4b6331d71db5080a6971dd93ed540",
+      "progress_sha256": "c9d999129becc17bd7e16c15832395e1cbbd4d7b359a2cd8d6c2e8c5481d5789",
+      "turn_count": 0,
+      "simulation_clock": {
+        "version": 1,
+        "origin_label": "1938-10-07 00:00",
+        "origin_iso": "1938-10-07T00:00:00",
+        "elapsed_seconds": 0
+      },
+      "product_mode": "synthetic",
+      "execution_backend": "afsim",
+      "old_whole_export_unchanged": null,
+      "progress": {
+        "active": false,
+        "operation_id": null
+      },
+      "active": false,
+      "last_operation": {
+        "operation_id": "5d64b474956048fb9a817996f6943410",
+        "label": "初始化",
+        "outcome": "success",
+        "wall_elapsed_ms": 855
+      },
+      "groups": [
+        {
+          "id": "task:1",
+          "label": "保障余量任务群",
+          "members": [
+            "845f19901d279994034c8b658df1a17f7e4609f496b06b2921ebacc7a69cb59a"
+          ]
+        }
+      ]
+    }
+  },
+  "selected_files": {
+    ".cache/qa/deferred-support-2026-11-03/api/sessions/24f1946c7010.json": {
+      "sha256": "ee06b111eb25f850aab9e61a4553ebe1331831b50717efbdc1aff6943666272e",
+      "mtime_ns": 1793706669773274286
+    },
+    ".cache/qa/native-completion-2026-11-03/api/roles.json": {
+      "sha256": "34a4130a26f65935f6b02e9d31d4b2bd4bfeb240f203bd656fbb1800c4eb3720",
+      "mtime_ns": 1793696385536038176
+    },
+    ".cache/qa/native-completion-2026-11-03/api/sessions/041fe52b2b8d.json": {
+      "sha256": "74a7b36f6fb95b2823949932c81b12d95e4513a5266d4d65d605276719814b3b",
+      "mtime_ns": 1793696385530038342
+    },
+    ".cache/qa/native-completion-2026-11-03/api/sessions/2c51981789fd.json": {
+      "sha256": "8ca515313bae3f9df7667ea55689f2393ef09e0cde110a882584265ac9fcf38e",
+      "mtime_ns": 1793695503728380808
+    },
+    ".cache/qa/personnel-continuity-2026-11-03/api/roles.json": {
+      "sha256": "a0b15f57c4aa389a00eb8391568542f4ce08d76dd006907ab9d0f6194db7fc67",
+      "mtime_ns": 1793703403443838965
+    },
+    ".cache/qa/personnel-continuity-2026-11-03/api/sessions/5f55ddd507a7.json": {
+      "sha256": "602e6fe924febe544a9290bc2dd7dae226bc645f73193a60bec04bb05429db4f",
+      "mtime_ns": 1793703403436838851
+    },
+    ".cache/qa/personnel-continuity-2026-11-03/api/sessions/cbb95b02630c.json": {
+      "sha256": "61c9c46e98d18aafe02f5710b50be81d2cc2a291e74a0c5f6196a24a69c2b22b",
+      "mtime_ns": 1793701384726630881
+    },
+    ".cache/qa/personnel-continuity-2026-11-03/api/sessions/fb11ed13786b.json": {
+      "sha256": "fc0c34c5405d259d7d849f3a6918ce88184d09c79acc44ea1c1b683782d3b068",
+      "mtime_ns": 1793702196061668635
+    },
+    ".cache/qa/personnel-rations-2026-11-03/api/roles.json": {
+      "sha256": "37287c18acda5706a7c701c2e21b5059c68ce6daeb527017bf7c0982340527b6",
+      "mtime_ns": 1793683692322104943
+    },
+    ".cache/qa/personnel-rations-2026-11-03/api/sessions/2c51981789fd.json": {
+      "sha256": "e24ce08c3d4dc4d69f19f4f247538a1169a8fa4bc1c12ae14cb339e0120b0b00",
+      "mtime_ns": 1793683225269050915
+    },
+    ".cache/qa/personnel-rations-2026-11-03/api/sessions/4658af78f14f.json": {
+      "sha256": "13a9599645eb9674e6037fb7d4bb558707f2d6b6d4a8a4119e8c9d88d36a8e3f",
+      "mtime_ns": 1793684170801612600
+    },
+    ".cache/qa/personnel-rations-2026-11-03/browser-r6/result.json": {
+      "sha256": "b2b2729d6fdc3afc6fc664868d6cf3fa7cbdeaffa419e09222d70607f3f3aed7",
+      "mtime_ns": 1793682407852493739
+    },
+    ".cache/qa/personnel-rations-2026-11-03/cold-review.json": {
+      "sha256": "7f8891ebb943f55e65e3557cf6ae053c0f877626e7a4c86ef2aa6b5a7b683bf9",
+      "mtime_ns": 1793684085195406241
+    },
+    ".cache/qa/personnel-rations-2026-11-03/native-r3/result.json": {
+      "sha256": "de71d9ee2d4f8235ef65a71d4c73c0f371426af9eff780ae630854a865011da9",
+      "mtime_ns": 1793681384194712224
+    },
+    ".cache/qa/personnel-rations-2026-11-03/next-native-completion-action.json": {
+      "sha256": "3a2c7d6ebf4fb7501a55190d7b978e458adf67c3cc2c152248d88d6dd3c49e84",
+      "mtime_ns": 1793684999663359150
+    },
+    ".cache/qa/personnel-rations-2026-11-03/physical-parity-review.json": {
+      "sha256": "06babba84ecad69c52bcb2e48be52a4bc1a0f91658c6dceaaa1ed7c601e632e8",
+      "mtime_ns": 1793683924704410921
+    },
+    ".cache/qa/personnel-rations-2026-11-03/protected-current-review.json": {
+      "sha256": "eba55c3fa38b90aeb8b31661274f5da5b5baa188c197b14239fff7694762b3d7",
+      "mtime_ns": 1793682896646054980
+    },
+    ".cache/qa/personnel-rations-2026-11-03/readonly-analysis-review.json": {
+      "sha256": "4852223b383609df19e9f36aa5ee9e7d4c476203404b591658877128111c7e48",
+      "mtime_ns": 1793684387195747035
+    },
+    ".cache/qa/personnel-rations-2026-11-03/readonly-browser/result.json": {
+      "sha256": "72d7df42c61939021f7067b6636dedcbdd8b1f94e672009b6b422b27a3fa4142",
+      "mtime_ns": 1793684478398002503
+    },
+    ".cache/qa/personnel-rations-2026-11-03/stable-gate/results.json": {
+      "sha256": "383775f793ccb050f106a173e9140c2d447a02e9691be3f1fa1628342cbf0cea",
+      "mtime_ns": 1793683589498773015
+    },
+    ".cache/qa/personnel-rations-2026-11-03/stable-source-freeze.json": {
+      "sha256": "baad08d2630bb1049e69e28dc8cd135a33f62db8b94e0fdb94c297e72a995e91",
+      "mtime_ns": 1793682487367901913
+    },
+    ".cache/qa/personnel-rations-2026-11-03/t1-canonical.json": {
+      "sha256": "0d491c486a22baf847423943aa04587a30f861050dbe4c79e20d7125809a803f",
+      "mtime_ns": 1793682675020618199
+    },
+    ".cache/qa/personnel-rations-2026-11-03/t2-failed-canonical.json": {
+      "sha256": "f195e6bc36ff90dfef4bb5f3b9f75bf47a123c978e448f02a6b5ac512388057f",
+      "mtime_ns": 1793683247534309163
+    },
+    ".cache/qa/personnel-rations-2026-11-03/t2-independent/final-canonical.json": {
+      "sha256": "e6d11e85708aa5b371697a013be074aa614a387e1fd430dc00c13b929c534e40",
+      "mtime_ns": 1793683853874372330
+    },
+    ".cache/qa/personnel-rations-2026-11-03/validation-summary.json": {
+      "sha256": "bf774a3701ba911462b88e62327bdaf9827e0c53f75bdc151e5cc41b1512556c",
+      "mtime_ns": 1793684999649359563
+    },
+    ".env.wargame": {
+      "sha256": "54444d9d0d48d1a2eac74843a8c80549f2f972e26e1015808b43d2b7271a356e",
+      "mtime_ns": 1792602106932166789
+    },
+    ".gentactix-llm.enc": {
+      "sha256": "738f400129a7dca80eb065cb947e0f61141dea20a303403badb72de9cff9412c",
+      "mtime_ns": 1793279619573895292
+    },
+    "/home/spikebai/.config/GenTactix-DSH/vault.key": {
+      "sha256": "d3f608b1714d0ca579700690972b01352e2003f51a33cc222061abe621b6f9ac",
+      "mtime_ns": 1792602106926166917
+    },
+    "AGENTS.md": {
+      "sha256": "7843b4d3d32b423430e97a840e273dc237f8db262b19208a1521e32bb4414be0",
+      "mtime_ns": 1792555387587313037
+    },
+    "CLAUDE.md": {
+      "sha256": "098332f1237431b4b249ea6ad32085ac6b48a5dad9614d738dc54820d755cd97",
+      "mtime_ns": 1793704179800307347
+    },
+    "TESTING.md": {
+      "sha256": "49a39a54c80d63f811b131ce515ec6189ead8d05cd6e1d75a9484a9eeeff8560",
+      "mtime_ns": 1793704179801307335
+    },
+    "adjudication/README.md": {
+      "sha256": "2fd5396c5895d02913716613a681ebea910c111e35e80600edca772de94ab5f2",
+      "mtime_ns": 1792675357573184583
+    },
+    "adjudication/_template.md": {
+      "sha256": "98317c0466bc68a3a15fdeba76a4d0d301fca123e291b6826c9b8e33c4ccde97",
+      "mtime_ns": 1792598781284263867
+    },
+    "adjudication/抗日战争-万家岭战役-1938.09下旬至1938.10.md": {
+      "sha256": "e4437e16c784cbbf22df2d0467df2aa69363882acc3ff708bd3829a5a812ffed",
+      "mtime_ns": 1793489810791429216
+    },
+    "adjudication/抗日战争-全面反攻与受降总览-1945.08至1945.09.md": {
+      "sha256": "860a6540da46ecea42c08c61007a2435f0e6ea9f369b87cfd85b237639231d5d",
+      "mtime_ns": 1793489810796432296
+    },
+    "adjudication/抗日战争-冀中五一反扫荡-1942.05.01至1942.06.20.md": {
+      "sha256": "4757a6a0b40d7e741101213440527c6fbf5599725559e171754b6361a9684d8b",
+      "mtime_ns": 1793489810795431680
+    },
+    "adjudication/抗日战争-台儿庄战役-1938.03.23至1938.04.07.md": {
+      "sha256": "2c4bdb72c049c99105f350aa7b603d5196f7569b26bf332f261679c3d92e85da",
+      "mtime_ns": 1793489810791429216
+    },
+    "adjudication/抗日战争-太原会战-1937.09至1937.11.md": {
+      "sha256": "e52a32230a2ac39c7b615906370b1cad2e072cad9afd0719d94f572532e192f4",
+      "mtime_ns": 1793489810791429216
+    },
+    "adjudication/抗日战争-平型关伏击战-1937.09.25.md": {
+      "sha256": "3805061d965d8d3c0247ac121ea9814badb92ff6a2609d10ac20896b28edb633",
+      "mtime_ns": 1793489810791429216
+    },
+    "adjudication/抗日战争-徐州会战总览-1938.01至1938.05.md": {
+      "sha256": "78927fca409be7a2c4edd2134d8e5cddf74ff065811236762c6bede59824ec58",
+      "mtime_ns": 1793489810791429216
+    },
+    "adjudication/抗日战争-敌后局部反攻总览-1944.md": {
+      "sha256": "3a131f3016a8260b00bf2e7df3309397888b8c7f7ac3c8ee9e3b62d4e86e1723",
+      "mtime_ns": 1793489810795431680
+    },
+    "adjudication/抗日战争-桂南会战与昆仑关攻坚-1939.11至1940.01.md": {
+      "sha256": "79b8ae3eac823501fcbd4ee26d3da537c305012b4131ec796fb4517bffc13e6b",
+      "mtime_ns": 1793489810794431064
+    },
+    "adjudication/抗日战争-武汉会战-1938.06至1938.10.md": {
+      "sha256": "5f4e1dfff0981dc87eb3aa02c1e8ad89d00ab2cce9db896d372a3f67629d44ad",
+      "mtime_ns": 1793489810791429216
+    },
+    "adjudication/抗日战争-淞沪会战-1937.08.13至1937.11.12.md": {
+      "sha256": "9cafd8775048f767028f9ef5d1e0d12c73b8f1267f7488778b16a59ddf6a56c7",
+      "mtime_ns": 1793489810791429216
+    },
+    "adjudication/抗日战争-湘西会战-1945.04.09至1945.06.07.md": {
+      "sha256": "dbad7b80012d152530819c2ad6dc19a01f96093ba9e2f159a7392415598564e8",
+      "mtime_ns": 1793489810796432296
+    },
+    "adjudication/抗日战争-百团大战-1940.08.20至1941.01.24.md": {
+      "sha256": "82f91e061fc669997e3da89344d1af781a8608e08d7293e2361be065e44d4122",
+      "mtime_ns": 1793489810795431680
+    },
+    "adjudication/抗日战争-第一次长沙会战-1939.09.14至1939.10.md": {
+      "sha256": "e71384c349f8d8724efa4464f12bde9ec6140754e7495a0f4119d88c9fd88c85",
+      "mtime_ns": 1793489810791429216
+    },
+    "adjudication/抗日战争-第三次长沙会战-1941.12.24至1942.01.16.md": {
+      "sha256": "f6ff8c86f329cfe837a6b3d1cbf528bc6779e9d52e13347bde3f49a8cbf006ca",
+      "mtime_ns": 1793489810794431064
+    },
+    "adjudication/抗日战争-第二次长沙会战-1941.09.07至1941.10.09.md": {
+      "sha256": "91149701069ec996ec29808fefa28ee35604039abc0e6a740570662fb1140ce5",
+      "mtime_ns": 1793489810794431064
+    },
+    "adjudication/抗日战争-缅北滇西反攻总览-1943.10至1945.03.md": {
+      "sha256": "000a8e28fae897cf86843eb483caab0051cfd98a0f828bdba9731ce22aa1d155",
+      "mtime_ns": 1793489810796432296
+    },
+    "adjudication/抗日战争-衡阳保卫战-1944.06至1944.08.08.md": {
+      "sha256": "62d8392fd2aa44c0c09f8f18dcfbe3340a8706994b8cbf2d8547c353a8cfd769",
+      "mtime_ns": 1793489810795431680
+    },
+    "adjudication/抗日战争-豫湘桂战役总览-1944.04至1944.12.md": {
+      "sha256": "0003bdb02b5fcb302141d0509e0f2191f6c6f32fe00a0833ff11b31320cdec76",
+      "mtime_ns": 1793489810794431064
+    },
+    "adjudication/抗日战争-车桥战役-1944.03.05至1944.03.06.md": {
+      "sha256": "c637fea0b038485c40c1afb201f6eee0f224518face69b76d43e1f5756d408a0",
+      "mtime_ns": 1793489810796432296
+    },
+    "adjudication/抗美援朝-上甘岭战役-1952.10.14至1952.11.25.md": {
+      "sha256": "6b5b8620b4d5d970d1b68187c1bda0581efb9e24ec1f87a74a2c8c66421ac68f",
+      "mtime_ns": 1793631937325573337
+    },
+    "adjudication/抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27.md": {
+      "sha256": "cb5ab7491a81647c3203bd4385bad0c3cad1b1a0b2d85829eb9fc78231e98e87",
+      "mtime_ns": 1793631937325573337
+    },
+    "adjudication/抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22.md": {
+      "sha256": "21608ba050b159144689638780d5eb24cbabe06005c6356dccf23179d2006e8b",
+      "mtime_ns": 1793631937325573337
+    },
+    "adjudication/抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31.md": {
+      "sha256": "a3ec604390d00949198c3ce4b2a0f67dba71bc4cf1d4b891edd6214fabc5293a",
+      "mtime_ns": 1793631937325573337
+    },
+    "adjudication/抗美援朝-第一次战役-1950.10.25至1950.11.05.md": {
+      "sha256": "0a40fd10d0803dfda8cc327cae31a482b90b9922c13295307a308c2a76f6470d",
+      "mtime_ns": 1793631937326573277
+    },
+    "adjudication/抗美援朝-第三次战役-1950.12.31至1951.01.08.md": {
+      "sha256": "71b0d07f443686927a70459855b6fc77948619565e32caecc565eb138137ad13",
+      "mtime_ns": 1793631937326573277
+    },
+    "adjudication/抗美援朝-第二次战役-1950.11.07至1950.12.24.md": {
+      "sha256": "75e93564845a0092339f5afeb9fb04487a1ccdf2cd4ee59af9f8530c5185056c",
+      "mtime_ns": 1793631937326573277
+    },
+    "adjudication/抗美援朝-第五次战役-1951.04.22至1951.06.10.md": {
+      "sha256": "a2a10531a9187d1985ef41ab99cde3d063914452a77164178fcdb0451d088ef9",
+      "mtime_ns": 1793631937326573277
+    },
+    "adjudication/抗美援朝-第四次战役-1951.01.25至1951.04.21.md": {
+      "sha256": "1da04bfc935ab91277bc5c52f38db7c2488261136d2945f8472e215cc0d57850",
+      "mtime_ns": 1793631937326573277
+    },
+    "adjudication/红军长征-中央红军巧渡金沙江-1935.05.03至1935.05.09.md": {
+      "sha256": "9861ff4cd7fb1c586e784f321eb285cb4d183e614c1a726f1d4105df66ed0bc2",
+      "mtime_ns": 1793490772738605058
+    },
+    "adjudication/红军长征-乌蒙山回旋战-1936.02.27至1936.03.28.md": {
+      "sha256": "f63d37ad9b51552a0aa7f1361a3603b07e8acdce683817fdda4296f0a2590170",
+      "mtime_ns": 1793490772739605009
+    },
+    "adjudication/红军长征-包座战役-1935.08.29至1935.09.01.md": {
+      "sha256": "f3c0259dbdec3d004b84ddc4411184ed7ecd2d783d9e1ac5fa7a9d8caab7065a",
+      "mtime_ns": 1793490772738605058
+    },
+    "adjudication/红军长征-嘉陵江战役-1935.03.28至1935.04.21.md": {
+      "sha256": "e18d40ebafeb9775cc2a9e3ff10bab4f23c975cdb021147e7b3e699b70cd996a",
+      "mtime_ns": 1793490772739605009
+    },
+    "adjudication/红军长征-四渡赤水-1935.01.19至1935.03.22.md": {
+      "sha256": "ae6e7ae052d452d106f6907cc491e09f2bfb64f1742039816e8797aa2791669d",
+      "mtime_ns": 1793490772738605058
+    },
+    "adjudication/红军长征-强渡乌江-1935.01.01至1935.01.06.md": {
+      "sha256": "5e375424421b438dd989b55658c95eb00cba27bcb5a7e22a531a4e5c0e0f5025",
+      "mtime_ns": 1793490772737605107
+    },
+    "adjudication/红军长征-强渡大渡河与飞夺泸定桥-1935.05.24至1935.05.29.md": {
+      "sha256": "e4ea52eee3ee6458bd849ebb3f81321517b070733a214d228efedb5c7726f07b",
+      "mtime_ns": 1793490772738605058
+    },
+    "adjudication/红军长征-懋功会师与雪山草地转移-1935.06.12至1935.09.12.md": {
+      "sha256": "31afb627c8b8c260be00931550fe1a9fb7b71a1cd8d9c60ba0231ad5146c01d0",
+      "mtime_ns": 1793490772738605058
+    },
+    "adjudication/红军长征-湘江战役-1934.11.25至1934.12.01.md": {
+      "sha256": "ccd5e271adda646141a0d8714a070d1d4ecf409ccdf4c77f81e8a872ac721a4d",
+      "mtime_ns": 1793490772737605107
+    },
+    "adjudication/红军长征-甘孜会师至三大主力会师-1936.07.01至1936.10.22.md": {
+      "sha256": "4ff1812ff7979858996a604dc2d61f74845a97d6cd247205c7315df863cb3e23",
+      "mtime_ns": 1793490772740604959
+    },
+    "adjudication/红军长征-百丈关战役-1935.11.md": {
+      "sha256": "ff51812ad28734f2b38c36f987599c79172ca406d7933e0d94d29b1d79535fce",
+      "mtime_ns": 1793490772739605009
+    },
+    "adjudication/红军长征-直罗镇战役-1935.11.20至1935.11.24.md": {
+      "sha256": "076f40a158f9937c75b99341cf349fb4aa62c204b818104604b00afe88486b04",
+      "mtime_ns": 1793490772740604959
+    },
+    "adjudication/红军长征-红二六军团抢渡金沙江-1936.04.25至1936.04.28.md": {
+      "sha256": "7f8230ea388dab8ae3a4a21c085e438fa8f9454777468ae643161bde39f344d3",
+      "mtime_ns": 1793490772740604959
+    },
+    "adjudication/红军长征-红二十五军长征-1934.11.16至1935.09.16.md": {
+      "sha256": "b45aab170ea60b5c21d3ef94ae81f949e34b7da4ee18118929130305685b601d",
+      "mtime_ns": 1793490772739605009
+    },
+    "adjudication/红军长征-腊子口战斗-1935.09.16至1935.09.17.md": {
+      "sha256": "6f57fcb2e622cd388c70c663765684388f3940e0c73a616966fc663004722f01",
+      "mtime_ns": 1793490772738605058
+    },
+    "adjudication/长平之战.md": {
+      "sha256": "776dd34b52bc3f4300bba89b9ca0464a367936c96bd017c6e8fb18157c15e478",
+      "mtime_ns": 1792581983599545106
+    },
+    "app.py": {
+      "sha256": "563049cda426219df1d744f789ad770578733888b5ede92f624110e36886ea1a",
+      "mtime_ns": 1792678869041279434
+    },
+    "backend/__init__.py": {
+      "sha256": "ec44a28848b9eb218e0aa1dd5ac420efb3ed307524a04f8fd8839794addbf088",
+      "mtime_ns": 1792573953164128849
+    },
+    "backend/afsim_air.py": {
+      "sha256": "5ef98999db60afd68e3d0f910f29346466f342ab6071566ce00d28c59fcaf5ae",
+      "mtime_ns": 1793539161310571905
+    },
+    "backend/afsim_campaign.py": {
+      "sha256": "65c12882c67d69fbe05fcf33df5ba4e7d6d6760790b6491a004307b3bf605a1f",
+      "mtime_ns": 1793674831203653837
+    },
+    "backend/afsim_combined.py": {
+      "sha256": "6ba0e313fa043ab894d79f81b0aeb5001bb0a19741ab8c3b2aa1eb5a95848ab4",
+      "mtime_ns": 1793705391333511054
+    },
+    "backend/afsim_comparison.py": {
+      "sha256": "27aa7d16cc37bed306b94887ccf83c09e924bcca20603bfcf4131a65deba2fe6",
+      "mtime_ns": 1793525455444830756
+    },
+    "backend/afsim_crossing.py": {
+      "sha256": "9a5504bfdcca784d38eca31f172262de1444a25235909d1c4545cd3b95ae08f2",
+      "mtime_ns": 1793274556796031787
+    },
+    "backend/afsim_crossing_network.py": {
+      "sha256": "3a4389909642c77b51a22dde033f4a2dafa555294ce6f40af94e87df0a854f98",
+      "mtime_ns": 1793274556796031787
+    },
+    "backend/afsim_ferries.py": {
+      "sha256": "bc004af81536fc1a03dfa6d6e483b1a332ddd8b79c6e9a5559f3cc0efdd131f8",
+      "mtime_ns": 1793624574795863585
+    },
+    "backend/afsim_formation_parts.py": {
+      "sha256": "74656c740083f7853d3f1814334f01ad11b2168fdc0b87823f08a651dc5264bf",
+      "mtime_ns": 1793573472052040168
+    },
+    "backend/afsim_history.py": {
+      "sha256": "6a730e109635526be1356657b4a28fcb69e3af4229272221f3baf724676ba658",
+      "mtime_ns": 1793111114687431583
+    },
+    "backend/afsim_literals.py": {
+      "sha256": "c9f8fb061f9949c2bbb44f656a340cc81d0159f6cb86167ce9000f5f36ef2ffe",
+      "mtime_ns": 1793274556792033889
+    },
+    "backend/afsim_movement.py": {
+      "sha256": "7d5e6f1ff2b557803ec863b8a35bf6ab77a70b5095d644a61945736804b46334",
+      "mtime_ns": 1793624574791863694
+    },
+    "backend/afsim_rules.py": {
+      "sha256": "cf6655b00b4affef93b5244b01ac938ac5fbb2215c17526ba221b85a7a52f3f7",
+      "mtime_ns": 1793573472103039798
+    },
+    "backend/afsim_split_supply.py": {
+      "sha256": "fcf9f7778786846c0859cfed89d87c3ec5ca856e566e6ae67845617d9c4f1215",
+      "mtime_ns": 1793680279908113338
+    },
+    "backend/afsim_state.py": {
+      "sha256": "1f23d77bc9c8e2d4c2c0b7be7c61f15dd266359bf223f2599eefd13a9fc6ef6c",
+      "mtime_ns": 1793660998610471152
+    },
+    "backend/afsim_summary.py": {
+      "sha256": "c17f8b654db30b369c6f759e82c2b6063229bd99c29778b3de49fe4bc1be6f21",
+      "mtime_ns": 1793287644023647464
+    },
+    "backend/afsim_supply_schedule.py": {
+      "sha256": "2272d1e3affdea9392423217a81928ffbec00d91762f7ed75aca52863979cdb8",
+      "mtime_ns": 1793705352384857274
+    },
+    "backend/afsim_sustainment.py": {
+      "sha256": "cae77934c42d6068780237174d8ed12c2a16818128be85cb4b94839bbae75081",
+      "mtime_ns": 1793705342017684848
+    },
+    "backend/afsim_terrain.py": {
+      "sha256": "42a4fdb637dd3dd031ce6b622b797dcf66731542484b9601b459016835910d3d",
+      "mtime_ns": 1793315757937495948
+    },
+    "backend/afsim_turns.py": {
+      "sha256": "448a9feea996f57d7717f70bb522e0c648360ce2954a08a114178c08da2a4151",
+      "mtime_ns": 1793581499553479236
+    },
+    "backend/afsim_world.py": {
+      "sha256": "6391d98666872a45260bae306df9621058fa4a8787e8a93985eb5698b8cc827a",
+      "mtime_ns": 1793624574794863612
+    },
+    "backend/agent_tools.py": {
+      "sha256": "f2062316ca6fe2142ac147d84a2af546d8992d7a3cbf089c39e79e82f9f02366",
+      "mtime_ns": 1793608377989911665
+    },
+    "backend/analysis_routes.py": {
+      "sha256": "50bd71c9f6dd921d5a017493ef5643a3ec48be77c67ad73d5a65e1b5b1f64a2d",
+      "mtime_ns": 1793655893062255618
+    },
+    "backend/campaign_model.py": {
+      "sha256": "3bf59010d865729aca839711aa7d3a61bd6b0e2926a4aeac9936e215e2d27023",
+      "mtime_ns": 1793577623406615714
+    },
+    "backend/checkpoint_codec.py": {
+      "sha256": "bdf548e6fe37849bbbb70ce9f0929ffc203706244188e4bc2ddb17ddbd723696",
+      "mtime_ns": 1793665895519725585
+    },
+    "backend/command_routes.py": {
+      "sha256": "9c9871343d39a9533839a2d312db694bd74c8efad5a9bf33daeae4817f914abb",
+      "mtime_ns": 1793654831790886574
+    },
+    "backend/dsh_simulation.py": {
+      "sha256": "081720085f008ddb884505aac87834d382f770ca3dcc5744bf2fb928a88c5713",
+      "mtime_ns": 1793700003184799757
+    },
+    "backend/effect_amendments.py": {
+      "sha256": "a7eae2079f905664adf347102d6d699b69bdd3f9efd7ea859f5920eba54c4eb2",
+      "mtime_ns": 1793650071043619914
+    },
+    "backend/effect_constraints.py": {
+      "sha256": "abefee37ef4e32fc8ce0da93506f6c1a9a65fc9c97ec3531fdf66f9bdd6fd804",
+      "mtime_ns": 1793680279908113338
+    },
+    "backend/effect_contract.py": {
+      "sha256": "ca767fb1888d6d6d74334291692c3d9302e68f43a1e4ccf12fe08f915e7b61d3",
+      "mtime_ns": 1793651711788378154
+    },
+    "backend/extensions.py": {
+      "sha256": "1e4c05183a893c186b9a873f0a11f2728cf022323e0c152567e8b7f8a9a75538",
+      "mtime_ns": 1793654043452777505
+    },
+    "backend/force_routes.py": {
+      "sha256": "3ff70b2c9d49a9040f86e16e4b35d994654e3866b83f8732046846cfef9fb5e4",
+      "mtime_ns": 1793583848120999264
+    },
+    "backend/formation_commit.py": {
+      "sha256": "9747e64634e5862e53abdf4818ed5662bdaad79063eef7b6214af5d92e625929",
+      "mtime_ns": 1793592352306320231
+    },
+    "backend/formation_execution.py": {
+      "sha256": "59c8636992ed7e900f2e92a971dc04dfe57405db63a92fc0a589ba2dc28e3b96",
+      "mtime_ns": 1793573738823475384
+    },
+    "backend/harness_engine.py": {
+      "sha256": "84cf292e42764d3669377ee7c59afc5492f1979ea92bc0055cb29a199766f092",
+      "mtime_ns": 1793653975856601678
+    },
+    "backend/llm_settings.py": {
+      "sha256": "054131837215a43db9e5f6e4051665d6dc09b28dcdf6a046117d8100ee7476e6",
+      "mtime_ns": 1793337919324002050
+    },
+    "backend/llm_transport.py": {
+      "sha256": "cf7a2a1bad7da44a82e844971c9371dddfbf00dfc1f3b6ea1bac8c0e51c0f46c",
+      "mtime_ns": 1793280285097148981
+    },
+    "backend/main.py": {
+      "sha256": "4ce7dab8a1867d27187ca5d7532d4e3a724ae5e4f33ec667a091bf83b6f14479",
+      "mtime_ns": 1793664980711819426
+    },
+    "backend/operation_status.py": {
+      "sha256": "0337e9ca7be519f7d58ebf0c3eb504eba9cd5e5629eaa5cf157bae2836a1f5a5",
+      "mtime_ns": 1793653975855601650
+    },
+    "backend/phase_routes.py": {
+      "sha256": "eb17032e516e29b76a23c337815f488630d7c84823b43ff19159b6999dab8ef6",
+      "mtime_ns": 1793423585221376365
+    },
+    "backend/plotting_routes.py": {
+      "sha256": "b088b2d212639f5094d61be338333e8bf1cf32fb753fed3c432a748e7296ea7e",
+      "mtime_ns": 1793094815872605674
+    },
+    "backend/runtime_bridge.py": {
+      "sha256": "3c93d766c3cd8beb3163e592758de8ace94e0aee1962f3795a6d44547e024feb",
+      "mtime_ns": 1793159140302375832
+    },
+    "backend/runtime_identity.py": {
+      "sha256": "d62edd78bdb648a39c0a6d9e3e6d3e67af1d8f8a82c94117b5f06301126e5455",
+      "mtime_ns": 1792598492099792045
+    },
+    "backend/scenario_assembly.py": {
+      "sha256": "df40fb72166cf9e4e5761a6c9e3997508ea1a53d00f40a11388ad4bdedb9192e",
+      "mtime_ns": 1793680351555150239
+    },
+    "backend/scenario_builder.py": {
+      "sha256": "038e5fd8416670ab6c2f71a9e1c142f250bf5cfa5a83c9efe71257d15a929165",
+      "mtime_ns": 1793682331988441688
+    },
+    "backend/scenario_checkpoints.py": {
+      "sha256": "8eaea9cdf322f0ef0b7bd4d08cb3916157ae25ccea880570f2bcf53b31d701e8",
+      "mtime_ns": 1793544729298282686
+    },
+    "backend/scenario_routes.py": {
+      "sha256": "7adf039135e783785877abe308df9ee5cf5d6feb6aed7b451dad212ba851819f",
+      "mtime_ns": 1792599376255344463
+    },
+    "backend/session_branch.py": {
+      "sha256": "7898ee37b77faed31d746d869b4bca1643aba559ff075dda4042de07d781d2ea",
+      "mtime_ns": 1793590206950759011
+    },
+    "backend/session_store.py": {
+      "sha256": "6ab26197a1febc91ad7a44545a54b369873141ed7e222aa4730321e930748e8d",
+      "mtime_ns": 1793665895523725229
+    },
+    "backend/turn_preview.py": {
+      "sha256": "f07a25895ff12a77edc22695a6d9b34173c9869f9ce1ae2e80e1bc4f1714e3fb",
+      "mtime_ns": 1793668170116279850
+    },
+    "backend/unit_order_submission.py": {
+      "sha256": "13c01f211d60ed547fbd9bd3fbc242e1cf2006d64570dcba19feac7ebaff1998",
+      "mtime_ns": 1793622114211934407
+    },
+    "backend/unit_planning.py": {
+      "sha256": "5516058195c0a750948d4ec9f4091dc3839d4a0709e6d27342f1dcd7dde811c2",
+      "mtime_ns": 1793699249922659955
+    },
+    "corpus/README.md": {
+      "sha256": "985b9832061d185bb81bd673d0cf73519cbe11c17827edb0cbe4c4cac4f9432c",
+      "mtime_ns": 1792675357572184622
+    },
+    "corpus/抗日战争-万家岭战役-1938.09下旬至1938.10.md": {
+      "sha256": "549af9986d647ab984a3d5ef6fd5a17fbeff0f8e24477f8cc2a718d2d9a8c471",
+      "mtime_ns": 1793489810791429216
+    },
+    "corpus/抗日战争-全面反攻与受降总览-1945.08至1945.09.md": {
+      "sha256": "e3916a666715fc51eddb22e04a0b58d4754419c1832f8debd1f0049d7e8b5f6a",
+      "mtime_ns": 1793489810796432296
+    },
+    "corpus/抗日战争-冀中五一反扫荡-1942.05.01至1942.06.20.md": {
+      "sha256": "034a1058d9744abfeb1e4e856a66f10fbbb5d76cc645212e5d9f676457e115b7",
+      "mtime_ns": 1793489810795431680
+    },
+    "corpus/抗日战争-台儿庄战役-1938.03.23至1938.04.07.md": {
+      "sha256": "451bde3c2cd3406f89232c7152bb9d4dc3e108e3cebb0d87129227bde52ae316",
+      "mtime_ns": 1793489810791429216
+    },
+    "corpus/抗日战争-太原会战-1937.09至1937.11.md": {
+      "sha256": "4a3acc763d522ccba97b2f46a07614b7bfad59cd39493e45f9aa4660477c406a",
+      "mtime_ns": 1793489810791429216
+    },
+    "corpus/抗日战争-平型关伏击战-1937.09.25.md": {
+      "sha256": "43e4df3fcf61af7ab614b8d8d4480569fe97fe5cb050e4996117568b9ef941ca",
+      "mtime_ns": 1793489810791429216
+    },
+    "corpus/抗日战争-徐州会战总览-1938.01至1938.05.md": {
+      "sha256": "cf53b1cf86bf449e8c8853b789cd3e38e729361acea2513ad27cdda39b742788",
+      "mtime_ns": 1793489810791429216
+    },
+    "corpus/抗日战争-敌后局部反攻总览-1944.md": {
+      "sha256": "d8da1d31c3d80ab3d619a6363c5c7101426782adf31c916b7641fbc1678c07f0",
+      "mtime_ns": 1793489810795431680
+    },
+    "corpus/抗日战争-桂南会战与昆仑关攻坚-1939.11至1940.01.md": {
+      "sha256": "1e3a377f0911e665455c73ee4de397328b5548368da1ffb2fd716da8f20cd969",
+      "mtime_ns": 1793489810794431064
+    },
+    "corpus/抗日战争-武汉会战-1938.06至1938.10.md": {
+      "sha256": "193561d2d29c8b15dc2f89727aba6b008488a5c58f7d32ca44f1944bf5c1c61c",
+      "mtime_ns": 1793489810791429216
+    },
+    "corpus/抗日战争-淞沪会战-1937.08.13至1937.11.12.md": {
+      "sha256": "c0074430f4a611ad374865e76572cc3ed4b66aee32bf1371c05feef829f4370c",
+      "mtime_ns": 1793489810790428601
+    },
+    "corpus/抗日战争-湘西会战-1945.04.09至1945.06.07.md": {
+      "sha256": "d810429a24d9581454af7f36dba596d7ef9daa4f3a0ed08b8a585ce5e5382c04",
+      "mtime_ns": 1793489810796432296
+    },
+    "corpus/抗日战争-百团大战-1940.08.20至1941.01.24.md": {
+      "sha256": "d0fe9840e87fc034401736e4a72279728a9ee39379c9e1e34916a52ce7d90f1c",
+      "mtime_ns": 1793489810795431680
+    },
+    "corpus/抗日战争-第一次长沙会战-1939.09.14至1939.10.md": {
+      "sha256": "8ee1db6b09ee195a45d12653976e24f15ec13a86c5dd4addbfa0048d3bcadcf8",
+      "mtime_ns": 1793489810791429216
+    },
+    "corpus/抗日战争-第三次长沙会战-1941.12.24至1942.01.16.md": {
+      "sha256": "fd2445346dcfeb60405c532cd7ccfda8d22d651690123eaa668a0c5ff20a3172",
+      "mtime_ns": 1793489810794431064
+    },
+    "corpus/抗日战争-第二次长沙会战-1941.09.07至1941.10.09.md": {
+      "sha256": "c067c9fe75a88c75acb46bfe7bc59bd07b51ead7ae104bae0072e2da180f246c",
+      "mtime_ns": 1793489810792429832
+    },
+    "corpus/抗日战争-缅北滇西反攻总览-1943.10至1945.03.md": {
+      "sha256": "83ab6e34e6b29546f6ce1672b765cf7d1c79e2bf395184fd159cc66dc9a68236",
+      "mtime_ns": 1793489810796432296
+    },
+    "corpus/抗日战争-衡阳保卫战-1944.06至1944.08.08.md": {
+      "sha256": "254257faa6db20e1be10233b6888602366a4e3e20387badd3970b5d6f0f5dea9",
+      "mtime_ns": 1793489810794431064
+    },
+    "corpus/抗日战争-豫湘桂战役总览-1944.04至1944.12.md": {
+      "sha256": "c1ec51911eaa7b8cdaa35e679f499cdc468afbfcc7f48d58ae209b308e588b70",
+      "mtime_ns": 1793489810794431064
+    },
+    "corpus/抗日战争-车桥战役-1944.03.05至1944.03.06.md": {
+      "sha256": "e5bb88805429e502b9a0d9ccee6bad351365f0cf3a6eb7fb631a299408ffd2af",
+      "mtime_ns": 1793489810796432296
+    },
+    "corpus/抗日战争/阶段战场与证据边界.md": {
+      "sha256": "a3ab6f898806ece3cf06e8f47a4c352a5bfc28b33e8a164fce99cb7a8c06651c",
+      "mtime_ns": 1792675084768879551
+    },
+    "corpus/抗美援朝-上甘岭战役-1952.10.14至1952.11.25.md": {
+      "sha256": "5031cb0c573dba148b15f483f0add4f08700bd2658f1225ba6f0eff0d79ee9d9",
+      "mtime_ns": 1793156579085000084
+    },
+    "corpus/抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27.md": {
+      "sha256": "0d8a918e13f685d6123604def9acd403429208642b697718c0e702e1aa76cf2d",
+      "mtime_ns": 1792587324001701983
+    },
+    "corpus/抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22.md": {
+      "sha256": "590d63a33a74bd6b7316c0041a6906d0ebdfc2dcc3ec373fb71b228d4aaec914",
+      "mtime_ns": 1792586658895900960
+    },
+    "corpus/抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31.md": {
+      "sha256": "027dfad29f54f8671624471852d74efbad7873a966bf040b6b98bfa3e844f666",
+      "mtime_ns": 1792586809398387122
+    },
+    "corpus/抗美援朝-第一次战役-1950.10.25至1950.11.05.md": {
+      "sha256": "68c54986b593ba82b4caf35413d4bcb602dca2521a86042983665f08d5f304d5",
+      "mtime_ns": 1793136101911917543
+    },
+    "corpus/抗美援朝-第三次战役-1950.12.31至1951.01.08.md": {
+      "sha256": "eb2d5233a71627aa45e28eb190de891084399a375366b8c27b90ad7d366a136f",
+      "mtime_ns": 1792586531620676133
+    },
+    "corpus/抗美援朝-第二次战役-1950.11.07至1950.12.24.md": {
+      "sha256": "d92dc5facfafb75b2750ff1b290880af439b14f85c47ef40f9f2fbc5947e7ec3",
+      "mtime_ns": 1792586531620676133
+    },
+    "corpus/抗美援朝-第五次战役-1951.04.22至1951.06.10.md": {
+      "sha256": "70106e8f47e376b4c13e1cb6aa1c3a63b682aec8f29329c4abc9085017d90b9c",
+      "mtime_ns": 1792586658895900960
+    },
+    "corpus/抗美援朝-第四次战役-1951.01.25至1951.04.21.md": {
+      "sha256": "c92b257cbb43168d5c113bd220d9f600203cbe83d59a197578142e2a9e0baa8b",
+      "mtime_ns": 1793156579086000048
+    },
+    "corpus/抗美援朝/兵种与统计口径.md": {
+      "sha256": "9163c11af8fa3b972679ec444f0c9e9e9ad12e5829cecc439fa1c0a300933368",
+      "mtime_ns": 1792587235920967556
+    },
+    "corpus/红军长征-中央红军巧渡金沙江-1935.05.03至1935.05.09.md": {
+      "sha256": "b432cd9c05c0225fdf9a47fc340f961e6813b58ab2c9f6b711dfe401fad80aa6",
+      "mtime_ns": 1793490772738605058
+    },
+    "corpus/红军长征-乌蒙山回旋战-1936.02.27至1936.03.28.md": {
+      "sha256": "7d826d166b09f29315f7b73f9a5180b00a9a9d46508c371c080e5adf82d9bcdb",
+      "mtime_ns": 1793490772739605009
+    },
+    "corpus/红军长征-包座战役-1935.08.29至1935.09.01.md": {
+      "sha256": "9bf058b0258f8d213c8ac5d167a2440b8164a4f59107e42c585d5ca8f5b7eeb0",
+      "mtime_ns": 1793490772738605058
+    },
+    "corpus/红军长征-嘉陵江战役-1935.03.28至1935.04.21.md": {
+      "sha256": "417c642e14660b9c63d98ab45ac46736912e2ccddce2377c858b75948c782297",
+      "mtime_ns": 1793490772739605009
+    },
+    "corpus/红军长征-四渡赤水-1935.01.19至1935.03.22.md": {
+      "sha256": "64a5df43bd725bfaeccb30f4da283964316bb1cf210ce09982eb423a41bd1547",
+      "mtime_ns": 1793490772738605058
+    },
+    "corpus/红军长征-强渡乌江-1935.01.01至1935.01.06.md": {
+      "sha256": "d8e647bb2a845dd0dff9f3709c2248cdd9360383ab5e54737f5707276fafde21",
+      "mtime_ns": 1793490772737605107
+    },
+    "corpus/红军长征-强渡大渡河与飞夺泸定桥-1935.05.24至1935.05.29.md": {
+      "sha256": "e843a0faae102e4f118314a6bbbd3eb1aecc561ed66bcc3d3e6683f9129af88c",
+      "mtime_ns": 1793490772738605058
+    },
+    "corpus/红军长征-懋功会师与雪山草地转移-1935.06.12至1935.09.12.md": {
+      "sha256": "11201f0337d5f651cd7334c17711035a2f0b79565dc718e2870e4c251b2dcc53",
+      "mtime_ns": 1793490772738605058
+    },
+    "corpus/红军长征-湘江战役-1934.11.25至1934.12.01.md": {
+      "sha256": "8181238c2ff10162aa5dcb68a4bc99a8c08f297a0f4547843218ceab6c3fdcef",
+      "mtime_ns": 1793490772737605107
+    },
+    "corpus/红军长征-甘孜会师至三大主力会师-1936.07.01至1936.10.22.md": {
+      "sha256": "8c899e1382013db5a2793fe648735e051aba172ce353c6b88b28315855b35617",
+      "mtime_ns": 1793490772740604959
+    },
+    "corpus/红军长征-百丈关战役-1935.11.md": {
+      "sha256": "9e72e456c5307cb706fe54e090d22c1f91dfa347f3f2f47cbc927e60bb2f52e2",
+      "mtime_ns": 1793490772739605009
+    },
+    "corpus/红军长征-直罗镇战役-1935.11.20至1935.11.24.md": {
+      "sha256": "4cba877da9fabbeb0c78f64631c4dbb7c4f9a73343e08cbdc2d3a3c97342aed0",
+      "mtime_ns": 1793490772740604959
+    },
+    "corpus/红军长征-红二六军团抢渡金沙江-1936.04.25至1936.04.28.md": {
+      "sha256": "06a4b7ec81510af45d1004cd6cebba78beb22f32c54ec7f906a7c383476f2de8",
+      "mtime_ns": 1793490772739605009
+    },
+    "corpus/红军长征-红二十五军长征-1934.11.16至1935.09.16.md": {
+      "sha256": "93d66571741417fa667b9639b17b42951953de676f33a8c28aa260eb6e2d5b2a",
+      "mtime_ns": 1793490772738605058
+    },
+    "corpus/红军长征-腊子口战斗-1935.09.16至1935.09.17.md": {
+      "sha256": "e9d9740ddddd7125b072d2ac806d0472a59f16abeaf12132cad8b1922353fcb1",
+      "mtime_ns": 1793490772738605058
+    },
+    "corpus/红军长征/建模与统计口径.md": {
+      "sha256": "64bc09c1108c09be20a8726c68270d35c5ba8bdbcdfe1210a3bd42a8fc37a12c",
+      "mtime_ns": 1792672811843787022
+    },
+    "corpus/长平之战.md": {
+      "sha256": "82d62c0a76d6ad63643115b1d302a88141cf067e929d4cbae5a8064f090ba0c2",
+      "mtime_ns": 1792555114371965851
+    },
+    "data/campaign_windows/LM06-right-column-aug21-27/1.0.0.json": {
+      "sha256": "5d3fd5bf0254b45e08c7772fe542b58e52ec152f1847f5acfe72c1b16e314ff0",
+      "mtime_ns": 1793674455030973636
+    },
+    "data/campaign_windows/WJL-oct6-10/1.0.0.json": {
+      "sha256": "bf5368a66168bea1cdbf2f901879f617649bccdc2674cb0f0b8273f75214a800",
+      "mtime_ns": 1793492000340204557
+    },
+    "data/campaign_windows/WJL-oct6-10/1.1.0.json": {
+      "sha256": "6cf27fd2e98f4a744ff4e222bcd55fd1c133b73d67d761f2d4d4d9ada43090fd",
+      "mtime_ns": 1793494028652639291
+    },
+    "data/campaign_windows/WJL-oct6-10/1.2.0.json": {
+      "sha256": "e35d1c1b76e2c2c888477fa8a1e68befdeee4666642dba0fac5db85d2fa7d74a",
+      "mtime_ns": 1793495412737858868
+    },
+    "data/campaign_windows/WJL-oct6-10/1.3.0.json": {
+      "sha256": "b0d90f2a071463e6a49eaa417d2c66d5262c96efcfd2d972729ba38cdaf6062f",
+      "mtime_ns": 1793496106791515670
+    },
+    "data/campaign_windows/WJL-oct6-10/1.4.0.json": {
+      "sha256": "fac6ee7a74544011eaf002def0122a382cb7114b1185182c0740540859729b4b",
+      "mtime_ns": 1793608251917885131
+    },
+    "data/campaign_windows/WJL-oct6-10/1.5.0.json": {
+      "sha256": "22698c81450053480474dfa5e5250a976c25de29a9563b6495d89a502b395f54",
+      "mtime_ns": 1793625877230366035
+    },
+    "data/historical_initial/AJ01-shanghai/1.0.0.json": {
+      "sha256": "bd82c9761bf00566a2437b3d1b7c258954ec749add8bc129028d02b99cd85660",
+      "mtime_ns": 1793232599910311137
+    },
+    "data/historical_initial/AJ02-taiyuan/1.0.0.json": {
+      "sha256": "6dff1fed04e442f0edc171fdc5e41b945d86cad12a49e71fafe9b7ce23d704bb",
+      "mtime_ns": 1793232599912311171
+    },
+    "data/historical_initial/AJ03-pingxingguan/1.0.0.json": {
+      "sha256": "2c05497ed65c6fb119f250d116c352fe21549af170bda564164493370916cc2d",
+      "mtime_ns": 1793124533186357117
+    },
+    "data/historical_initial/AJ04-xuzhou/1.0.0.json": {
+      "sha256": "67a6a420209ea0663a1ef0f1487f4b0591695156b2bc974836e16eff593b130f",
+      "mtime_ns": 1793109096427464118
+    },
+    "data/historical_initial/AJ04-xuzhou/1.1.0.json": {
+      "sha256": "d5195787bd20056cbd7e7f43d40acd6a38a01ab9b1ca87213fd52aea924a9ce4",
+      "mtime_ns": 1793124533184357132
+    },
+    "data/historical_initial/AJ04-xuzhou/1.2.0.json": {
+      "sha256": "ba390fadb6f27f61cc0787a823e2869a06f0c66e12cd40c7b9e7f5e54b6f2ba3",
+      "mtime_ns": 1793144749989034782
+    },
+    "data/historical_initial/AJ05-taierzhuang/1.0.0.json": {
+      "sha256": "2643cf392735566856338487543c2f0657d63f774d401ab103d4b7bf51ff18d6",
+      "mtime_ns": 1793144699514964471
+    },
+    "data/historical_initial/AJ06-wuhan/1.0.0.json": {
+      "sha256": "c5efd6296c7b1ec4208296599016e53de89a016be953427447a85df62c305c60",
+      "mtime_ns": 1793108728550834866
+    },
+    "data/historical_initial/AJ06-wuhan/1.1.0.json": {
+      "sha256": "381ce58ac1c8ee07dfdc124dc487fcaedcba00bca20f66d8696ecf05438fe367",
+      "mtime_ns": 1793416441232540138
+    },
+    "data/historical_initial/AJ07-wanjialing/1.0.0.json": {
+      "sha256": "b67c0e1c725d379bd2c358b9e26c573d08d388985eb46f525a7008a10d38c6ff",
+      "mtime_ns": 1793144699515964266
+    },
+    "data/historical_initial/AJ07-wanjialing/1.1.0.json": {
+      "sha256": "4c06a58947c3819b870087ef0f55e8f192e86155d3051ed4833aed88b889d968",
+      "mtime_ns": 1793428499520652800
+    },
+    "data/historical_initial/AJ07-wanjialing/1.2.0.json": {
+      "sha256": "7834b74c058e585fd0ae90441947b1f7c19a4ecc931663be109790a5b9e45d5f",
+      "mtime_ns": 1793438999546356845
+    },
+    "data/historical_initial/AJ07-wanjialing/1.3.0.json": {
+      "sha256": "0e9e23293ab867ba267f170f50ac1ea1f54706118c210847644b910f620e8bad",
+      "mtime_ns": 1793475069863850675
+    },
+    "data/historical_initial/AJ07-wanjialing/1.4.0.json": {
+      "sha256": "99f591cef71f338b0c1491d7ff93485754384aedee2b69da058f171fe9ff11b2",
+      "mtime_ns": 1793608251913884620
+    },
+    "data/historical_initial/AJ08-changsha1/1.0.0.json": {
+      "sha256": "9e1481632dbf8a2e2614e752899d3a959d15b7809cf107d388ad510cd1742aa0",
+      "mtime_ns": 1793232599913311188
+    },
+    "data/historical_initial/AJ08-changsha1/1.1.0.json": {
+      "sha256": "ccfe241614f5675820a15292b8392b17743d34643389d3c0e74a7c611176839e",
+      "mtime_ns": 1793233195775053177
+    },
+    "data/historical_initial/AJ09-changsha2/1.0.0.json": {
+      "sha256": "866e3ca36fc5993a772a857c49fc2015f2aa009ff0f0ae66555a8787cd964ddd",
+      "mtime_ns": 1793232599914311204
+    },
+    "data/historical_initial/AJ09-changsha2/1.1.0.json": {
+      "sha256": "0730b965c70d280e84f31077ba93368972e389224822895bed587975fd8e2413",
+      "mtime_ns": 1793233195776053193
+    },
+    "data/historical_initial/AJ10-changsha3/1.0.0.json": {
+      "sha256": "ec684e07ce0cbffe20f02aaccdc0917f8b4606866086139ff3ad1ed6d6692cff",
+      "mtime_ns": 1793232599915311221
+    },
+    "data/historical_initial/AJ11-kunlun/1.0.0.json": {
+      "sha256": "b8182fae5fb27ee1518168c4d04e3cec766e14c9b4dcfb9e17568ee48d010266",
+      "mtime_ns": 1793232599917311254
+    },
+    "data/historical_initial/AJ12-ichigo/1.0.0.json": {
+      "sha256": "52a379197611702272d4a93c95dab1e2a572707c16b478a895c6ac2aaa5f9899",
+      "mtime_ns": 1793232599918311271
+    },
+    "data/historical_initial/AJ13-hengyang/1.0.0.json": {
+      "sha256": "ea4c6bba4199079c10d6bfd37c2c13dc7e787a37eb175e0866c209657651c421",
+      "mtime_ns": 1793232599919311288
+    },
+    "data/historical_initial/AJ14-hundred/1.0.0.json": {
+      "sha256": "499b16d0309c9affcce9ea67db8a8b2d6488e2f6e4a79232a8b5ea2f15a103c4",
+      "mtime_ns": 1793232599920311305
+    },
+    "data/historical_initial/AJ15-jizhong/1.0.0.json": {
+      "sha256": "84087815f1f6f9a63ecde230ab7c42a85324d500671f408c21efbce9e744d2ea",
+      "mtime_ns": 1793108728555834764
+    },
+    "data/historical_initial/AJ16-counter1944/1.0.0.json": {
+      "sha256": "b3e43ee87680667574c8b14ce4e5c2620487b5cf77f288a31237b0ceed1f342c",
+      "mtime_ns": 1793232599921311322
+    },
+    "data/historical_initial/AJ17-cheqiao/1.0.0.json": {
+      "sha256": "7dd87a78a74795c2c45a935e61ce00adf9ffd136808ccbebc1883efa475b2994",
+      "mtime_ns": 1793232599922311338
+    },
+    "data/historical_initial/AJ17-cheqiao/1.1.0.json": {
+      "sha256": "47288b2aa86402d5dc127484e74f0cba00838a0467c26cd5333de118f44a7bb0",
+      "mtime_ns": 1793250633569524018
+    },
+    "data/historical_initial/AJ17-cheqiao/1.2.0.json": {
+      "sha256": "31905eed34423126a4d0304c45f0406e38aa2cf5a6d7d2e95fec404efca483e2",
+      "mtime_ns": 1793257405441340472
+    },
+    "data/historical_initial/AJ17-cheqiao/1.3.0.json": {
+      "sha256": "9da3defc13ef97325f07c1ba036459372ef6582eebcb646f4ae6ee0ce1bb4de7",
+      "mtime_ns": 1793261741520627061
+    },
+    "data/historical_initial/AJ18-xiangxi/1.0.0.json": {
+      "sha256": "7e8d42f623e5ad9037f38c7eee898bdc3a31006db521e182ebd6ae6b14c66d95",
+      "mtime_ns": 1793173955996693348
+    },
+    "data/historical_initial/AJ19-burma/1.0.0.json": {
+      "sha256": "48e5c58a73a5e27a6e32cfb200a9ac4f72783c2dbec01494a1720957f122b572",
+      "mtime_ns": 1793232599924311372
+    },
+    "data/historical_initial/AJ20-reception/1.0.0.json": {
+      "sha256": "956c1f27128aedfcb93239a29f7f0e6dde13f4b414e74f631e1125af84508fbd",
+      "mtime_ns": 1793232599925311389
+    },
+    "data/historical_initial/CP01-changping/1.0.0.json": {
+      "sha256": "4f3baef4b4086d92bdc39289cacbfb1a8e11cb50544fdb7015b751cc745d649c",
+      "mtime_ns": 1793286858485276127
+    },
+    "data/historical_initial/KW01-first/1.0.0.json": {
+      "sha256": "579744550cde33fb7810b65a7340f21ab4f6aca28413596398d28fa94a482a60",
+      "mtime_ns": 1793136508831791136
+    },
+    "data/historical_initial/KW02-second/1.0.0.json": {
+      "sha256": "dc6981f7663daff66ac2852190877c827b4a7cc011390e3ae1fc6cf641a0ece9",
+      "mtime_ns": 1793156456880474671
+    },
+    "data/historical_initial/KW03-third/1.0.0.json": {
+      "sha256": "c4a1c11e1571177898e47e32cddb7700d68a2ef565ca7846494fde31ddc6bb27",
+      "mtime_ns": 1793156456882474597
+    },
+    "data/historical_initial/KW04-fourth/1.0.0.json": {
+      "sha256": "2752be8a4d8d4b601d1d8a821bc31090e2a52a92d261059669f73e4b151404eb",
+      "mtime_ns": 1793156456883474560
+    },
+    "data/historical_initial/KW05-fifth/1.0.0.json": {
+      "sha256": "40cbac2ddc548d910ca41f92f5a5de8bcbd0e4824629051569ee5cc085f78abd",
+      "mtime_ns": 1793156456886474449
+    },
+    "data/historical_initial/KW06-autumn1951/1.0.0.json": {
+      "sha256": "8164d6970381adddf1a3e9debd2af69ccc9e54c4d1817a168218de8b89ea4a0d",
+      "mtime_ns": 1793156456887474412
+    },
+    "data/historical_initial/KW07-counter1952/1.0.0.json": {
+      "sha256": "c9b0a3d82e7f7c45355b3b769cbde049bd752209e3eab207cf4d50592300ea78",
+      "mtime_ns": 1793156456889474337
+    },
+    "data/historical_initial/KW08-sangganling/1.0.0.json": {
+      "sha256": "9df031c73a774fac037117165cfb935671c13c334d1808300bb9128474cfdd38",
+      "mtime_ns": 1793156456890474300
+    },
+    "data/historical_initial/KW09-summer1953/1.0.0.json": {
+      "sha256": "6401183cc4441be096ecfccbfffc2d1e1dfc137caffc89083859431ec3f87891",
+      "mtime_ns": 1793156456892474226
+    },
+    "data/historical_initial/LM01-xiangjiang/1.0.0.json": {
+      "sha256": "6eb6a904329ec427f40ebcd6e6df830936748a97427df8cd451a1f0c9f37002e",
+      "mtime_ns": 1793169408396755440
+    },
+    "data/historical_initial/LM02-wujiang/1.0.0.json": {
+      "sha256": "1f012a06c19afdd72c55f2bc077d7b6d4f3b260f4381210e97cb1690788a024d",
+      "mtime_ns": 1793181189344954020
+    },
+    "data/historical_initial/LM03-chishui/1.0.0.json": {
+      "sha256": "a2ad42deda90c56655b894c833ac3ee1992423fbe495845ae2149972fbe434a3",
+      "mtime_ns": 1793286858476168070
+    },
+    "data/historical_initial/LM04-jinsha1935/1.0.0.json": {
+      "sha256": "49daabaa6a457a6a505fa2c760d4284782e8856b3c30ea7831f60282ea20e0a4",
+      "mtime_ns": 1793238632187242043
+    },
+    "data/historical_initial/LM05-dadu/1.0.0.json": {
+      "sha256": "eaa3b45861bef39ed16ddd6f420e5b4a4dc88840b262db9272529c9797304340",
+      "mtime_ns": 1793286858477180077
+    },
+    "data/historical_initial/LM06-maogong/1.0.0.json": {
+      "sha256": "baf144ae920c68c91aac40456a840f7e60996c2ff6f2586269a4f4d7c19a6b39",
+      "mtime_ns": 1793286858478192083
+    },
+    "data/historical_initial/LM06-maogong/1.1.0.json": {
+      "sha256": "f8075307266c5118eae135bbdb96db93537bf49cc5d73bcca30e1dcdd5e9d462",
+      "mtime_ns": 1793674455029973674
+    },
+    "data/historical_initial/LM07-baozuo/1.0.0.json": {
+      "sha256": "69546eaa932c5304d0fed84c5fa176537091c2ecb6893b5c331a04f9fa293857",
+      "mtime_ns": 1793268627655483980
+    },
+    "data/historical_initial/LM08-lazikou/1.0.0.json": {
+      "sha256": "1f95a44b598635d054bdf899ac13ed0a945985f9a0487a7c4fe1659a706cd45a",
+      "mtime_ns": 1793286858479204089
+    },
+    "data/historical_initial/LM09-red25/1.0.0.json": {
+      "sha256": "9be2df24db341c9d47fbd022faf759c0df01f7047980e1759ca6a6cd971efec5",
+      "mtime_ns": 1793286858480216095
+    },
+    "data/historical_initial/LM10-jialing/1.0.0.json": {
+      "sha256": "0f300967c1f5745869132af888167f9ba4b3295ad6b776017fb3a259c029df58",
+      "mtime_ns": 1793271653055331824
+    },
+    "data/historical_initial/LM11-baizhang/1.0.0.json": {
+      "sha256": "e55f93696f01bc893ccc0b63a267a7dd99746666fd9ae11e47ee7ee5ee43c787",
+      "mtime_ns": 1793286858482240108
+    },
+    "data/historical_initial/LM12-wumeng/1.0.0.json": {
+      "sha256": "e151b7c05053c4816d751f100a3b902144531285150db9f98ee6f66416b4e8dc",
+      "mtime_ns": 1793286858483252114
+    },
+    "data/historical_initial/LM13-jinsha1936/1.0.0.json": {
+      "sha256": "f0aed8a54d8c0ffeb429157612fa8dad55da84288c763851858cb82369f05a19",
+      "mtime_ns": 1793238632188242044
+    },
+    "data/historical_initial/LM14-zhiluo/1.0.0.json": {
+      "sha256": "9065717621d0523bfba9ee9522f5edcb335b121068abcc4c2f8308553b6ac3e8",
+      "mtime_ns": 1793142997877286472
+    },
+    "data/historical_initial/LM15-reunion/1.0.0.json": {
+      "sha256": "9a3af6d51ed75d83f6c3004aafd928bc865b8ad90a6b0c40db1ffe15473a77c9",
+      "mtime_ns": 1793286858484264120
+    },
+    "data/historical_initial/README.md": {
+      "sha256": "4b57090204aae2c332cbfdfbbb392114b3526cca3f050a10c9dfe29daa6e46d1",
+      "mtime_ns": 1793420466100165450
+    },
+    "data/historical_initial/index.json": {
+      "sha256": "8a025747955e16500d1b3ff06631121693ea90171373709ac91a06c1c928a70d",
+      "mtime_ns": 1793286858486288132
+    },
+    "docs/会战级多层编制与分合兵改造规划-2026-10-31.md": {
+      "sha256": "6f02ff97591aa7531f144a8490c7cbbe3a2b11daa22b9537d6e959621f438733",
+      "mtime_ns": 1793684713516883676
+    },
+    "docs/会战级资料逐场清单-2026-10-31.csv": {
+      "sha256": "07cfed02b9a986fd99357fd1398b852014842b61c777d2e11a2e454ab7e6e8ff",
+      "mtime_ns": 1793555849459688011
+    },
+    "docs/按人员耗粮与运输质量一致性验收-2026-11-03.md": {
+      "sha256": "3126f146e7d4331fb7933dbc66ef1e49ff658b22a413513269b492ac144bf99a",
+      "mtime_ns": 1793684713477885151
+    },
+    "docs/重编非战斗整数余量结转契约-2026-11-03.md": {
+      "sha256": "fc134806378fc28d90d6aedacddda107d09dde41f9fd7a67d73439d917307cb6",
+      "mtime_ns": 1793705063288363208
+    },
+    "docs/长征原生配置生成与纯DSH过程验收-2026-11-03.md": {
+      "sha256": "ad93d3f99896e7af489a6d08b8abb95edf9c87e4ebfc573e6a8eb0a8a19c151c",
+      "mtime_ns": 1793679775784371245
+    },
+    "docs/长征多军转移窗口与原生会话续推验收-2026-11-03.md": {
+      "sha256": "d1d075cc8798ed8606022cc497a45dabee98fe1d82e32a072424ee57d510411c",
+      "mtime_ns": 1793676771482854528
+    },
+    "frontend/package.json": {
+      "sha256": "266372388e1b620c0d578c37b0be2e669ddb8daf6a6f993f39984a4a637a1335",
+      "mtime_ns": 1793342836046060503
+    },
+    "frontend/src/App.vue": {
+      "sha256": "9793819bc03365ef92153d5f7fb8043dc6af085bceaaa7bf36da3a46b907e7df",
+      "mtime_ns": 1793664980721819185
+    },
+    "frontend/src/api.ts": {
+      "sha256": "d5286c22180f4a94dfd03d280a4eb7ce9bb3497b530ff7ffcca52fe7aafb3bea",
+      "mtime_ns": 1793664980716819305
+    },
+    "frontend/src/assets.d.ts": {
+      "sha256": "381a6fe9fc9d96dfbb5db96650870001edcf24f5396975d86e6a1e3ac620e999",
+      "mtime_ns": 1792599559830537787
+    },
+    "frontend/src/components/AFSimPanel.vue": {
+      "sha256": "791bd159c3ae73f3531726f8a8c50699c1665ef230db211c5dc948d0ae69cde6",
+      "mtime_ns": 1793444923949355012
+    },
+    "frontend/src/components/AdjudicationPanel.vue": {
+      "sha256": "2d289a6e39dc5f694833bb23e739aba47192f0b470d24b93fbb7b391bc4715aa",
+      "mtime_ns": 1792678869040279467
+    },
+    "frontend/src/components/AirOperationsPanel.vue": {
+      "sha256": "d8f27368b2bccf9f892ea7ed6238ad7a2b6f96858ca1dcfc300ceec854a85ac7",
+      "mtime_ns": 1793539262750464506
+    },
+    "frontend/src/components/ArrivalScheduleEditor.vue": {
+      "sha256": "ba04981cf095bd23ca8259f3a4ba1305e44dfb0b3e251f5cea1ce79f5d5a30a1",
+      "mtime_ns": 1793262831601026603
+    },
+    "frontend/src/components/AviationParametersEditor.vue": {
+      "sha256": "3b3c478f2714ff5033c8e971487496ea02258feae0be5c72f7eb6ccf9a1760c0",
+      "mtime_ns": 1793539081716752447
+    },
+    "frontend/src/components/BattlefieldPanel.vue": {
+      "sha256": "3336cebfa61b9536d499c788dfe2e2df82040dffe3fe214a35441730bebeaf9e",
+      "mtime_ns": 1792638720093441064
+    },
+    "frontend/src/components/CampaignGoalInputs.vue": {
+      "sha256": "d0b930ddc6dba31bcdb6c8c325016780e2b7e90008e4b9ad462a4f318bc6bd8a",
+      "mtime_ns": 1793674610439483551
+    },
+    "frontend/src/components/CampaignLifecycle.vue": {
+      "sha256": "a7d1a08266c6387f7ad103eeb5c360ddd7711721a4c627060e62a4b795cfcae7",
+      "mtime_ns": 1793456955654794868
+    },
+    "frontend/src/components/CampaignObjectives.vue": {
+      "sha256": "122f67b354bf430d8497aff67da294a439acc8973c1e028b340a7acd87dc11a8",
+      "mtime_ns": 1793674610439483551
+    },
+    "frontend/src/components/CampaignParametersEditor.vue": {
+      "sha256": "57ed4bfb81b290d30260d0da035387e95223a3cea8fdddcd1ba4b07e048a26d5",
+      "mtime_ns": 1793674610439483551
+    },
+    "frontend/src/components/CausalPanel.vue": {
+      "sha256": "d7b12213ba30aa4d5618453a5563ff71d5247d813f1bacbcf0bf75af85a4afed",
+      "mtime_ns": 1793054355557117293
+    },
+    "frontend/src/components/CombinedArmsPanel.vue": {
+      "sha256": "b1a1904dc6d5500df2042ecab64d70d110f78fa5a4f18739dfda99aa79c751b1",
+      "mtime_ns": 1793597550995405319
+    },
+    "frontend/src/components/CommandCenter.vue": {
+      "sha256": "78bed4c3d3f85952458c80adff18981ce205ff30a6c1f5622805601c963c27ab",
+      "mtime_ns": 1793630723280545545
+    },
+    "frontend/src/components/CrossingParametersEditor.vue": {
+      "sha256": "e0c34758741295154208c64f2959b77da7ffc603d329affdb2de617d3711193d",
+      "mtime_ns": 1793273325132992741
+    },
+    "frontend/src/components/FixedParameterInputs.vue": {
+      "sha256": "0a99354934a19297a471b944066cd763a470666a1182441c682c1d048c81a2a4",
+      "mtime_ns": 1793537691373533228
+    },
+    "frontend/src/components/ForceOrganizationPanel.vue": {
+      "sha256": "2de0c1f53aea578be8793507c74312cf7dffad8aa7b8ceac65ea4540904e3696",
+      "mtime_ns": 1793606443240901988
+    },
+    "frontend/src/components/ForceTaskExecutionPanel.vue": {
+      "sha256": "c104b8b97f77d22a10ed116f4571f7c507dab842870aae987023a28ba7f6c80b",
+      "mtime_ns": 1793450136102645432
+    },
+    "frontend/src/components/FormationConversionPanel.vue": {
+      "sha256": "dad878216e7c8879f2b6b64608650ad04d582ebd4e988417a9f58248334d4278",
+      "mtime_ns": 1793606459725051700
+    },
+    "frontend/src/components/FormationPartsEditor.vue": {
+      "sha256": "418ca291db549fa2eea430dd00a7a25f7cc43230d254ba44653fde02ee4697ac",
+      "mtime_ns": 1793416847583902721
+    },
+    "frontend/src/components/HistoricalRosterPanel.vue": {
+      "sha256": "cc0395f8518bad4132f66351dc2102148e14644458133664a9049a600d4ad305",
+      "mtime_ns": 1793137977935356324
+    },
+    "frontend/src/components/HistoricalScenarioComposer.vue": {
+      "sha256": "54f630ee20510811b16915380bd77a8773d58d34a65fc45772e93157cb0d6e6b",
+      "mtime_ns": 1793680536537582634
+    },
+    "frontend/src/components/HistoryReplayPanel.vue": {
+      "sha256": "960e6930cafb23d49ee9a8219b81a56cbdc7bfc3ad8d5f1d553622a62bbcadd9",
+      "mtime_ns": 1793428867287570140
+    },
+    "frontend/src/components/ImportSession.vue": {
+      "sha256": "e8bf57a6238afbdbab05eaa0804f0c3d9225906f368106067194baefa1630361",
+      "mtime_ns": 1793072022397287101
+    },
+    "frontend/src/components/LaunchScreen.vue": {
+      "sha256": "a58349b98f0ac2a3f3d5502b6e593e68449d47c4aa1af4460b4ef1feabb583c4",
+      "mtime_ns": 1793520625059445556
+    },
+    "frontend/src/components/LlmSettings.vue": {
+      "sha256": "8761e5120269ec718a1f88f6a96f2459d0fd70dae760388acfd240d860c1a23d",
+      "mtime_ns": 1793279478923850781
+    },
+    "frontend/src/components/MapUnitLocator.vue": {
+      "sha256": "b7b5b0bee7fd78c6b99c24718c96ea0e490371054a5d0acea9e7fd3ad25d2a15",
+      "mtime_ns": 1793549532538547007
+    },
+    "frontend/src/components/MapView.vue": {
+      "sha256": "c1380920fad2ad2ba25c80ff1de8f42ab7574caf7b83d8b70512fbb0a8d094b2",
+      "mtime_ns": 1793630723281545524
+    },
+    "frontend/src/components/MapWorkbench.vue": {
+      "sha256": "f5e421a0bdb93d3e2b26bcf462b90f92a2db5d04c98f8abf3ccd4357a41779ea",
+      "mtime_ns": 1793342613658181336
+    },
+    "frontend/src/components/MilitaryPlottingPanel.vue": {
+      "sha256": "9d2918762ea3da24a4e0939c5d58ff42310a564555506ddf8467f47ad18ffd1e",
+      "mtime_ns": 1793094430069225534
+    },
+    "frontend/src/components/MissionPanel.vue": {
+      "sha256": "7dc1168f1007fd6b2c84b0cc08614d4a24c944aaad17323dffe40bb90546035b",
+      "mtime_ns": 1793680699932973888
+    },
+    "frontend/src/components/OperationBoundaryEditor.vue": {
+      "sha256": "58b1e023300585ca6e1901a483546bf554dd99411a5945e5f5ff4972e376d414",
+      "mtime_ns": 1793551949815025822
+    },
+    "frontend/src/components/OperationProgress.vue": {
+      "sha256": "80153a63e0b04f8d834341694494c37761953908b024ab9e59da44f85a67eb1d",
+      "mtime_ns": 1793654734464364356
+    },
+    "frontend/src/components/PhaseContinuation.vue": {
+      "sha256": "5ad32421b98c81d04d01a3b312c3dee2ba693192f447c246c1783220433eb393",
+      "mtime_ns": 1793432075911131872
+    },
+    "frontend/src/components/ScenarioComposer.vue": {
+      "sha256": "9b558b437e6b8b48abedf05e5da05471d545480a57cbf354b43e3b26ffceb41e",
+      "mtime_ns": 1793338241929909469
+    },
+    "frontend/src/components/SplitSupplyEditor.vue": {
+      "sha256": "062dccfecd04a998b1efbddd963ba6d84a569a7c06543d4f58a564f97a5f2e7c",
+      "mtime_ns": 1793283437307763764
+    },
+    "frontend/src/components/SupplyScheduleEditor.vue": {
+      "sha256": "27ec952b5060fdbb447a4257d13cdbd3f9c00e71ce3356932c843e800b6f1f7a",
+      "mtime_ns": 1793525819904636292
+    },
+    "frontend/src/components/SupportDynamicsEditor.vue": {
+      "sha256": "d4cf078cea0f136c96673e7829ac1240800df795f84423ef9331d1234c2d2742",
+      "mtime_ns": 1793680495394256870
+    },
+    "frontend/src/components/SustainmentPanel.vue": {
+      "sha256": "c090449b15e8fbcdd0642d49e5659394ec864b07a96f2948baa49efaa08e7158",
+      "mtime_ns": 1793680495394256870
+    },
+    "frontend/src/formation-parts.ts": {
+      "sha256": "8aa390a2ea793c77a437d28224ce6fce1d4cab3dd03b2246e7dd4217d0fb6e21",
+      "mtime_ns": 1793416847583902721
+    },
+    "frontend/src/historicalGoals.ts": {
+      "sha256": "66bc0e7e20b838985930eda4ef0d66264db53c665a4d84185f7aae8372b543ea",
+      "mtime_ns": 1793677979385960292
+    },
+    "frontend/src/main.ts": {
+      "sha256": "1066054c8b94b3179806a0f3b7d62c6bf436e3add8787fdbf83ff6e494b466cd",
+      "mtime_ns": 1792574371676379953
+    },
+    "frontend/src/mapPlotting.ts": {
+      "sha256": "0686591666ab59b735bdc3779b28428c31781a9862b02b009fb93f3673cc661b",
+      "mtime_ns": 1793095394869052982
+    },
+    "frontend/src/mapUnits.ts": {
+      "sha256": "08878d80775253bcc8830adb0fd88e49442492faa69f0b1e6fcdb4bc5aafbde4",
+      "mtime_ns": 1793551949815025822
+    },
+    "frontend/src/markdown.ts": {
+      "sha256": "39c8336a0e66479b95039634f9d94ae7bcd0a17f42aaa8259aae2eaf55fdb11d",
+      "mtime_ns": 1793154590331912733
+    },
+    "frontend/src/militarySymbols.ts": {
+      "sha256": "19f0182ca3d16d12229c90329df520c73758f8c10a998b1744c417376ca53314",
+      "mtime_ns": 1793629025757429180
+    },
+    "frontend/src/operationClock.ts": {
+      "sha256": "748c7e49b2dd57103ce7490bff7b1095584729c21b19006d64d8d7167194fa0d",
+      "mtime_ns": 1793654181839410457
+    },
+    "frontend/src/personnelProjection.ts": {
+      "sha256": "ea644554eab776e4bb7d994675b333644b7b89652bc108104154704ff3ff642d",
+      "mtime_ns": 1793629170509362107
+    },
+    "frontend/src/styles.css": {
+      "sha256": "ace8814bba5176a9f21eaa2120922e3d58eee57573a6a24d4cfc7b446d5f0807",
+      "mtime_ns": 1793522808742650601
+    },
+    "frontend/src/tactical.ts": {
+      "sha256": "e8dd4b2dbfc5ad0ac5076de353f2b9c6334152bbd928b62a1b7c02c30b1d05a7",
+      "mtime_ns": 1793629025757429180
+    },
+    "frontend/src/timeSteps.ts": {
+      "sha256": "b798aaf28496a192996472548891d28ae97a7af261f912fbc30f34ddc0014a28",
+      "mtime_ns": 1793463353014714001
+    },
+    "frontend/src/types.ts": {
+      "sha256": "0b0a5740704d5c51bb174933acd3595d37665e9361356458899f9b2513d9bcf9",
+      "mtime_ns": 1793680495393256910
+    },
+    "frontend/src/unitTypes.ts": {
+      "sha256": "8c151acc76e96d0d81ddea93f9caa7526c6603e11432510e407c211df12fb36c",
+      "mtime_ns": 1793138551991336011
+    },
+    "frontend/src/weaponRanges.ts": {
+      "sha256": "3f5995993092a44e06e58ead132bc60545a16785ee8decb8cc81c8348a2e9feb",
+      "mtime_ns": 1793140620562446194
+    },
+    "gentactix/__init__.py": {
+      "sha256": "27f4cbb5fc9a0d9c1f6246bde3842fc001ea1ee0c51b909c576de058a4e43748",
+      "mtime_ns": 1792555114371965851
+    },
+    "gentactix/adjudication_lib.py": {
+      "sha256": "8a014f724c53a2bee474750a12eb05f84a2c807918acc949ce275956e3ea50e1",
+      "mtime_ns": 1792672063868858073
+    },
+    "gentactix/adjudicator.py": {
+      "sha256": "88d6e6e0f2ba54ac9a9ab5a7bb96778cedfc0f67772f3f08e7d201a3045b24fb",
+      "mtime_ns": 1793629901512054584
+    },
+    "gentactix/air_assets.py": {
+      "sha256": "0140af186e7e6cd8086a2f1efd4798ef6e4dfb7455aca3cf543455aeb27bfdc6",
+      "mtime_ns": 1793538931296068917
+    },
+    "gentactix/air_availability.py": {
+      "sha256": "3afe9c0be3813a51dfa66f473cc453cbdc63a43ce92fae357f23473268a31f94",
+      "mtime_ns": 1793539262748467022
+    },
+    "gentactix/air_model_receipts.py": {
+      "sha256": "e64b6777292075dc60b32580c9bd46cb406f782f9b7b2224407dcd32d3716c8c",
+      "mtime_ns": 1793580397957249896
+    },
+    "gentactix/anchors.py": {
+      "sha256": "eed955dd0c884604337e2c2ecab6683fa5486ca9f8b08eb49063edb5b359c44c",
+      "mtime_ns": 1792674501907981578
+    },
+    "gentactix/anti_japanese_war_anchors.json": {
+      "sha256": "fc27776479f2da14e24b64a037c14f129fa8023f3e3a30974f06ad8ec697bb66",
+      "mtime_ns": 1793232711378167899
+    },
+    "gentactix/battle_scope.py": {
+      "sha256": "c31ed8adbe33197e219ffda3d839b31b057808ad30a3bb4e7b8b66bfade0bda0",
+      "mtime_ns": 1793078054554478503
+    },
+    "gentactix/battlefield.py": {
+      "sha256": "fa5b9d29a22dda26a0be7b24b2c312693266ff5f15042e9c55f8b892050db1cf",
+      "mtime_ns": 1793447909286445002
+    },
+    "gentactix/battlefield_viz.py": {
+      "sha256": "a80dd84bdd38848c3de7e88b458acd78c53798ebf6da9debd0c274f5f3e73b70",
+      "mtime_ns": 1792649762620743867
+    },
+    "gentactix/c2_observation.py": {
+      "sha256": "474b72259ce7ad96b047f4bbd0a5152413cdf2309458f71491f9cd92b1b88385",
+      "mtime_ns": 1793463881535069915
+    },
+    "gentactix/campaign.py": {
+      "sha256": "63a49dc08f114b248264ccd19760dbf9df03b4a9890d7f7bd6e5cfbd5437bd4f",
+      "mtime_ns": 1793674453887016699
+    },
+    "gentactix/campaign_estimates.py": {
+      "sha256": "e1944e5ad0c5481d2f77cc54f3e0047df9799246a50f21fe2c2d62479150870b",
+      "mtime_ns": 1793677290667837331
+    },
+    "gentactix/campaign_lifecycle.py": {
+      "sha256": "bd52b6f78b2c7c70544b288fd3d986375da986dc22b2822538a96a0ef49c0f96",
+      "mtime_ns": 1793458138115311165
+    },
+    "gentactix/campaign_plan.py": {
+      "sha256": "a04e8dc9c5d00dcd44e23549e10d31dfb7ee7e598b7a0cb1d63a57d36eb3269d",
+      "mtime_ns": 1793677290667837331
+    },
+    "gentactix/campaign_scope.py": {
+      "sha256": "1293089f669017627b9775d3467c6b4d8f7017aff3e789b14410b17a1b76be26",
+      "mtime_ns": 1793493072427968723
+    },
+    "gentactix/campaign_windows.py": {
+      "sha256": "1ad04ebeb7b40b5e3fb54ff1080b6f364d0a7d7ca899b8921dc45c132c0a3eaa",
+      "mtime_ns": 1793674453887016699
+    },
+    "gentactix/causal.py": {
+      "sha256": "c903e3e1e1a33c9e32bff47e5b9f9f1ce716320b2d92f77e318285ef6f083a2f",
+      "mtime_ns": 1793620844427147328
+    },
+    "gentactix/combat_effects.py": {
+      "sha256": "c475f1de4b1feadfb7c18f06393b6dbf35401ab3ef417fbace8f58b81c68a698",
+      "mtime_ns": 1793315757940496747
+    },
+    "gentactix/combined_arms.py": {
+      "sha256": "7a590af12df0a306d930959d69ecfb2c90df81f0eab9427660e4ff13d33417b0",
+      "mtime_ns": 1793538931296068917
+    },
+    "gentactix/commands.py": {
+      "sha256": "85f511d3d4c47db818584ce69c6a6ad4c3db39982241dcc48d7e1ce1b1b648a6",
+      "mtime_ns": 1793629025759429123
+    },
+    "gentactix/config.py": {
+      "sha256": "294537a4c71130e0250601b2f7427ad24fb5995666284faea38b4e0d30a27a1d",
+      "mtime_ns": 1792586829426266458
+    },
+    "gentactix/crossing_network.py": {
+      "sha256": "908eda75c519cf548bd00c6440b62fe240562e8f13a11dc06ac92a2efc49b4f8",
+      "mtime_ns": 1793273956097020088
+    },
+    "gentactix/crossings.py": {
+      "sha256": "62156fa3b1a9445f53eb49207b565671636909b46c691004806e95d91c169edc",
+      "mtime_ns": 1793273223167110199
+    },
+    "gentactix/engine.py": {
+      "sha256": "b1f9d3f27d3bad1b5daac9ca3e87dfa97dc7b556186ef80a8f899e898b83f846",
+      "mtime_ns": 1792590818215248813
+    },
+    "gentactix/ferries.py": {
+      "sha256": "06cca0c724eeb587e270b06f5a6bc6858ea3b42f9666e31167289e44f223629f",
+      "mtime_ns": 1793240474553090653
+    },
+    "gentactix/fire_control.py": {
+      "sha256": "91adfb320be30a9a7a6ddca565b2b877de7a9d772f00df231120631a790ed3f8",
+      "mtime_ns": 1793140688358867204
+    },
+    "gentactix/fire_effect_bounds.py": {
+      "sha256": "e6c59f957c019cf7a689846ba636d313db9ffa696e7dbee54c89c3b43782b2ee",
+      "mtime_ns": 1793577738908119545
+    },
+    "gentactix/fire_process.py": {
+      "sha256": "9c51022b65d3f41ce0a1fa10f8c37a15832107cef909a2ab2df1fbbea6700311",
+      "mtime_ns": 1793702529259603033
+    },
+    "gentactix/force_organization.py": {
+      "sha256": "d8f1ebf52c4423117c2ddfe06fe364ac8212395de8e2045ee24bff86f86f6971",
+      "mtime_ns": 1793479517688993276
+    },
+    "gentactix/force_task_execution.py": {
+      "sha256": "31ad9fa87af0b76f15e07f6824cdad492ca36b32ab775e4eb1c3be6af22f83a6",
+      "mtime_ns": 1793642150362952787
+    },
+    "gentactix/force_tasks.py": {
+      "sha256": "9637ded274b07e910ac7c498239678e37c89e755e2aaa578b6607d106faa3359",
+      "mtime_ns": 1793613775674579965
+    },
+    "gentactix/formation_continuity.py": {
+      "sha256": "2a1f43f639c532a6f3860b381dd9146e162dab2762d1524026281745f68b2b0a",
+      "mtime_ns": 1793583814269724708
+    },
+    "gentactix/formation_conversion.py": {
+      "sha256": "d223eb181f02112686d053700810558c6195453a7fa7f3b2bbbf2ce8308b7fe6",
+      "mtime_ns": 1793705342017684848
+    },
+    "gentactix/formation_parts.py": {
+      "sha256": "7d1730ea7b32245ca84b8d2c50e134a9e55cdb0a81f619c4585e2ec5ea7e9a27",
+      "mtime_ns": 1793575599720742823
+    },
+    "gentactix/formation_registry.py": {
+      "sha256": "43b56c44d4a42f58134b156d946bb54bb700698044444edb6754658d87a698cf",
+      "mtime_ns": 1793567540530663486
+    },
+    "gentactix/formation_runtime.py": {
+      "sha256": "6fcc332c07d32df367524cdffa453d2c25171f52626e50c14f0f93f11ea00836",
+      "mtime_ns": 1793585084146066630
+    },
+    "gentactix/formation_session.py": {
+      "sha256": "b3905b90292894226ad635233bf9da3993630e48a89e5b4b1f288c37830a4229",
+      "mtime_ns": 1793589927186858013
+    },
+    "gentactix/geo.py": {
+      "sha256": "967dc9e97cb1a8005c894416bf176b83448d247a05408b8ab3d5437b3d294f61",
+      "mtime_ns": 1792592145686239727
+    },
+    "gentactix/historical_constraints.py": {
+      "sha256": "3108f40c5824a8cb7dcb533680081fac8b5b2192293d25d7a501a359ac44421d",
+      "mtime_ns": 1793261741470652822
+    },
+    "gentactix/historical_initial.py": {
+      "sha256": "30ae77b71ace9626e34e476f2c0fa970c07b724e75c7b3f9f1e4ab014b0f34db",
+      "mtime_ns": 1793608162474734648
+    },
+    "gentactix/historical_links.py": {
+      "sha256": "6143ed1cb379054efb782556cc628cae843540f963cfde29f43ee1845100f69b",
+      "mtime_ns": 1793608377989911665
+    },
+    "gentactix/historical_operations.py": {
+      "sha256": "db22f14ce86a0e83fa4d8b4c8d3aaca0e9d2365c92168851d1da83c4ef8675fa",
+      "mtime_ns": 1793680279907113380
+    },
+    "gentactix/history_replay.py": {
+      "sha256": "0ecacd16501519356edf27c8a23708eff1eaab321fbf74bbb776f34ed46efa1a",
+      "mtime_ns": 1793476316558933687
+    },
+    "gentactix/initial_command.py": {
+      "sha256": "2249ba32c3aba850c4d6443a9620fce69bda760e867dec6bb50d20901714b4dc",
+      "mtime_ns": 1793432075910130379
+    },
+    "gentactix/integrity.py": {
+      "sha256": "60128db5b0792834a57e25c6fbf8397996e8a0a19065d207fc129dd3f7eb8151",
+      "mtime_ns": 1792623163189775027
+    },
+    "gentactix/korean_anchors.json": {
+      "sha256": "56ef90760a1c7235b6e3c60161001fff6147783f0ba4ee59f89a078247d0a9b2",
+      "mtime_ns": 1793156579086000048
+    },
+    "gentactix/long_march_anchors.json": {
+      "sha256": "66ee9b5211ccd75fa62d9c3cc80067a340a1908484c6525669c55c45235396c7",
+      "mtime_ns": 1793169523332497773
+    },
+    "gentactix/military_symbol_reference.json": {
+      "sha256": "5e58515885812855c180de5d58c5c44cf1cde7f08d76d8556e8c18e7c9400f90",
+      "mtime_ns": 1793094430017224491
+    },
+    "gentactix/military_symbols.json": {
+      "sha256": "bb393d5fa76da4e656750addceaa2050b31084a66b047ce4742470bb9d5b70db",
+      "mtime_ns": 1793094430012224391
+    },
+    "gentactix/military_symbols.py": {
+      "sha256": "c4edcc9df58699fbe0be80656bb28f11791e8bd921da2b6163fd24ad056ac955",
+      "mtime_ns": 1793629170509362107
+    },
+    "gentactix/mission_termination.py": {
+      "sha256": "0bcf3cdef26c2c6e5905afcfc7c8163a97d7a0201987937e8a81906059c24322",
+      "mtime_ns": 1793441775306430178
+    },
+    "gentactix/missions.json": {
+      "sha256": "54f6d3dc51c55c94f2f3926ecf857c56fb3395e1e1dfd43db2aada60795bf805",
+      "mtime_ns": 1793429581378520573
+    },
+    "gentactix/missions.py": {
+      "sha256": "d0f20c03d386c1da99bf0b6d369b72cc2c6f60ba644afd7d4f0095ae76eb07cd",
+      "mtime_ns": 1793674610440483517
+    },
+    "gentactix/movement_feedback.py": {
+      "sha256": "dc2e7075addf1526a6d690621bcdbd0fe4bda0dca61ad7ed9837325f0c6f00d0",
+      "mtime_ns": 1793626480057059794
+    },
+    "gentactix/observation_codec.py": {
+      "sha256": "3c846cd24cdbd0ef95520a89b0bc71ece4edbc84457743c172d73b85c3fea0ed",
+      "mtime_ns": 1793661072811951276
+    },
+    "gentactix/operation_boundary.py": {
+      "sha256": "29c440196d227cac6f7450cd11a1709c6c1e94c4a04116aea75630b3c8d7af0f",
+      "mtime_ns": 1793552387784236383
+    },
+    "gentactix/personnel_projection.py": {
+      "sha256": "27cae8c8c5934082848b8563ae2b3a0c18dc4e133da928ce8103b8b220acce6a",
+      "mtime_ns": 1793629301517778411
+    },
+    "gentactix/phase_continuity.py": {
+      "sha256": "8d4990a443d585bf16a0b3eb8df9019684734e42cd1c092131bf5a734f941cd5",
+      "mtime_ns": 1793624391595926788
+    },
+    "gentactix/prompts.py": {
+      "sha256": "045431a2db13247f5c0009ae5e1be8f0d00b2b8b4e8addee7aa4d9f0f286b221",
+      "mtime_ns": 1793065118640197762
+    },
+    "gentactix/rag.py": {
+      "sha256": "3b71df142b862cb6accf8ed1578657231c9041d5390026deb67216d188ef0752",
+      "mtime_ns": 1793489810266105913
+    },
+    "gentactix/reporting.py": {
+      "sha256": "3947f210f7dd4b4abaf47e4e2bfa88014aec81f0aba209c6043cf64737d0981f",
+      "mtime_ns": 1793659186171688236
+    },
+    "gentactix/resource_accounts.py": {
+      "sha256": "a1e6d8763b43870654db1218f4abe339f8f40675f7f0b128321e02b83bdf20b5",
+      "mtime_ns": 1793680279908113338
+    },
+    "gentactix/resource_readiness.py": {
+      "sha256": "fb961307faa999328a7e84342fc22cd17e41319cad211edc3ce96d68e19f5f3d",
+      "mtime_ns": 1793680351556150198
+    },
+    "gentactix/scenario_basis.py": {
+      "sha256": "7b3f337e686c7d3d34469e1e082bdc47365eb53bfd96f4be2d2cbdeeff94e94a",
+      "mtime_ns": 1793080513570661720
+    },
+    "gentactix/scenario_constraints.py": {
+      "sha256": "bc699fca9ede8e1ca6d0d6f054f412443210dfbd6f626d5255627464bcdf23a4",
+      "mtime_ns": 1793680450716080353
+    },
+    "gentactix/sim_clock.py": {
+      "sha256": "253b7bd4ab96e188bd172e4e2df45b29795a8721c70c2b7360175c956f955312",
+      "mtime_ns": 1793538931295074837
+    },
+    "gentactix/split_supply.py": {
+      "sha256": "06393080502cc9e6bbabaf3d734b2ba760cadcee48f060f554bb9e70f75f63b3",
+      "mtime_ns": 1793525665815027721
+    },
+    "gentactix/state.py": {
+      "sha256": "45700aed3bea46fb4a8d200038abc2e6a3a6088959412a12cc1448890dcf38ca",
+      "mtime_ns": 1792573878057339925
+    },
+    "gentactix/supply.py": {
+      "sha256": "3c3854ae28149b282c36f5275536c8631f38460e0d49fcfe687309223c2fb4f7",
+      "mtime_ns": 1793523571642917761
+    },
+    "gentactix/supply_schedule.py": {
+      "sha256": "adce7a485fb5a8f92763491f29fc8143ca5ca357839a94486daf2531345d4ba6",
+      "mtime_ns": 1793705391333511054
+    },
+    "gentactix/support_dynamics.py": {
+      "sha256": "2eb9c50fe2fc896392788edc6bed29aef50480a3802af6ce4d42ef2e7fe141a8",
+      "mtime_ns": 1793706348339816644
+    },
+    "gentactix/sustainment.py": {
+      "sha256": "5318f30b69b040cb3c7b948bb6daffe8eb6da6b11777e53d75aa7bf8109df243",
+      "mtime_ns": 1793680318718505719
+    },
+    "gentactix/synthetic_history.py": {
+      "sha256": "d3a4f5165a49ef4a81d4e6a94ca4c11328546b25d75609b9ef047a7aba6cafb8",
+      "mtime_ns": 1793455807017089749
+    },
+    "gentactix/terrain_process.py": {
+      "sha256": "c7257970bd1240da09a8888cdeda90a4cb9fa43fcba95b6efed57ba6f5da7beb",
+      "mtime_ns": 1793315728862498102
+    },
+    "gentactix/turn_settlement.py": {
+      "sha256": "5973dfb88a0a92b09650df734c9bf9f26a5bf32693c1655a688ed4d4ddb8ca90",
+      "mtime_ns": 1793635224995429139
+    },
+    "gentactix/unit_participation.py": {
+      "sha256": "4a12c4268b269a998b75b687d9df97ddbdb358a7cf5fd6a9ec83228ed36f3c7c",
+      "mtime_ns": 1793567656212291342
+    },
+    "gentactix/unit_types.json": {
+      "sha256": "d7752dd37c7a983c0a95efff5d27898edf4352a67bc90b4d6de66ad83379dea4",
+      "mtime_ns": 1793138551984336253
+    },
+    "gentactix/unit_types.py": {
+      "sha256": "272b38ed2f77d088b3fd76bdc1cf2901e9e000ef6366e1cc4e347f7ae1c8d879",
+      "mtime_ns": 1793138551988336114
+    },
+    "gentactix/viz.py": {
+      "sha256": "5a5a6041f27550803918bd273eaab59eeb81a0e06ecd9e018e1b6269f0cc8132",
+      "mtime_ns": 1793629025758429152
+    },
+    "live_adjudication_probe.py": {
+      "sha256": "6b33c1f88be489633fd34da7a484e528ba43d62ea1329f28db319bd029c68861",
+      "mtime_ns": 1792555114375965881
+    },
+    "live_workflow_probe.py": {
+      "sha256": "345dc4e8bd03575917a3ad5939f5c34453ee8a9917ce214bdc1df4e5631a6885",
+      "mtime_ns": 1792562027867853145
+    },
+    "measure_turn_degradation.py": {
+      "sha256": "cbd6670f910261d82f79d10d2e12f1aef1276fbce971b2bf9c71645115f2c1f8",
+      "mtime_ns": 1793065909549886682
+    },
+    "package-lock.json": {
+      "sha256": "917cff64e5731fbd3a29c7e105e2309161a0ce5734d0cd20c3ba86296f2ba24d",
+      "mtime_ns": 1792861885412490491
+    },
+    "package.json": {
+      "sha256": "c54e9f8283bcc89b8296f6da9c05d07cbfc69b18ab951eedcc90d46835f5e5ed",
+      "mtime_ns": 1792861880921575713
+    },
+    "plugins/dsh-afsim/README.md": {
+      "sha256": "63a321b700092075c88eb77e2cc2247eb1b407ab9bbf32fa08290f80bb50aaf5",
+      "mtime_ns": 1793552464449133075
+    },
+    "plugins/dsh-afsim/index.mjs": {
+      "sha256": "dee533d73bcd37b3dd7fda71b84ed80fbc4563979671c5a0208bd50e956a47b0",
+      "mtime_ns": 1793035056471977027
+    },
+    "plugins/dsh-afsim/package.json": {
+      "sha256": "a4b5eaf1e709676dc47213988e9741a49ffa5727b4b42bf1d9cc2c006f0a499d",
+      "mtime_ns": 1793033375512011766
+    },
+    "plugins/dsh-afsim/protocol.mjs": {
+      "sha256": "28fd1c94358fd487432a3d46df9912a8a1b140064bd024dcc472de8e6ee94124",
+      "mtime_ns": 1793480268754299917
+    },
+    "plugins/dsh-afsim/scenario-schema.mjs": {
+      "sha256": "923696d4e0893d0babf4afc0921750029d689a3503027a22f6a1b90d36a95866",
+      "mtime_ns": 1793680450716080353
+    },
+    "plugins/dsh-afsim/skills/historical-scenario/SKILL.md": {
+      "sha256": "1657420fa631c74db8c291c4732fc8d8258ccae119bd335e417859d37d0b20c2",
+      "mtime_ns": 1793238884376172531
+    },
+    "plugins/dsh-afsim/skills/historical-units/SKILL.md": {
+      "sha256": "560a34b134747564b7d0a92ff8368587d9ebaf5701e0839e518f69cc859c03ea",
+      "mtime_ns": 1793680536537582634
+    },
+    "plugins/dsh-gentactix/effect-schema.json": {
+      "sha256": "3afb7bbebdd658b9deed70dfe3bea2537e5bc22e4e6c5f5e04068a1c7b430acb",
+      "mtime_ns": 1793668170153278294
+    },
+    "plugins/dsh-gentactix/effect-schema.mjs": {
+      "sha256": "17d9dccb0f76d2637adac5f3bea65a07dffe10d488a719f7b213bc948cc58bf1",
+      "mtime_ns": 1793649917717742715
+    },
+    "plugins/dsh-gentactix/index.mjs": {
+      "sha256": "268369cfe046a012ef978255d4d9e44047aca6887a62284c64c0e8d9bc4eff96",
+      "mtime_ns": 1793694425482536736
+    },
+    "plugins/dsh-gentactix/package.json": {
+      "sha256": "f2fc35d5b06353497afb12551ec73171d3251b1ed0df12b52e6dd554e9175c8c",
+      "mtime_ns": 1792594017635666204
+    },
+    "plugins/dsh-gentactix/report-evidence.mjs": {
+      "sha256": "a1bfdef327bdbef94b52c3a22668b45b603869eb86afeaab6a4aaf476731b458",
+      "mtime_ns": 1793650327642058848
+    },
+    "plugins/dsh-gentactix/tool-visibility.mjs": {
+      "sha256": "45863c368b13a02872af6e3c9b98f14b047896764ccf1d5f47242b692f0c2abc",
+      "mtime_ns": 1793133866963479364
+    },
+    "plugins/dsh-gentactix/unit-order-schema.mjs": {
+      "sha256": "bf43ad14ef2e3536c1e17728a3fdeb64be7b121a57d47ed1464c720d8476a7d4",
+      "mtime_ns": 1793620612831114148
+    },
+    "plugins/dsh-military-plotting/definitions.mjs": {
+      "sha256": "e86b53aa8443c0a038d547b05ea85a92ddccd37e2fb48c01834a7bbe146b2efc",
+      "mtime_ns": 1793093759609945554
+    },
+    "plugins/dsh-military-plotting/skills/military-plotting/SKILL.md": {
+      "sha256": "ccd12a03b4095e7e65ef1a8bd1c14b2586b27f8107df5f6649c66e2794b4ccc7",
+      "mtime_ns": 1793093759608945566
+    },
+    "plugins/runtime.json": {
+      "sha256": "8daea55f611812052ed9b3e511d75a154fe45787b6cfc62a41a98bb0f17e1b77",
+      "mtime_ns": 1792594266148407672
+    },
+    "requirements-dsh.txt": {
+      "sha256": "2466e9f4a08075173f504dbb2cab0fd16053a548460900659aa2d35de2e58e50",
+      "mtime_ns": 1792601960391242091
+    },
+    "requirements.txt": {
+      "sha256": "fc2aad8e92b0ea1069284bfb9847ae52347fbef34a54a764c10745e87373ea34",
+      "mtime_ns": 1792555114378965903
+    },
+    "tools/qa/deferred_support_live.py": {
+      "sha256": "8111b04cd9f564fed91b274a15b37064a4f5eadae2d9ddf059850c5b7dbc746e",
+      "mtime_ns": 1793706667937330956
+    },
+    "verify_adjudication_lib.py": {
+      "sha256": "7037e7eebc4fcfb4d1c5976982170f8c722f89df2031a8b4a3ca20c9c082fa0f",
+      "mtime_ns": 1792598960900544547
+    },
+    "verify_adjudicator.py": {
+      "sha256": "1e464f4930ea9ac2738a0a6454cdbcf36de7ab72338272747be19ddbbcc60840",
+      "mtime_ns": 1792672574988311203
+    },
+    "verify_afsim_air.py": {
+      "sha256": "b739966abee4ad401a35956e5d4ae710d65e0a460a96dcf7f94aa604a7d51c0e",
+      "mtime_ns": 1793173603014494427
+    },
+    "verify_afsim_backend.py": {
+      "sha256": "8dbf6c0f55a9f39fb28d82d4882c017787bb8cd6c06b8efd505c90cec3c8b541",
+      "mtime_ns": 1793563129764805522
+    },
+    "verify_afsim_components.py": {
+      "sha256": "d74c3b31511121360110bddd993e02291275ba93f539e3591be4edf913595001",
+      "mtime_ns": 1793032486324994685
+    },
+    "verify_afsim_crossing.py": {
+      "sha256": "811ad737a2472d14adeaab93b4c46ecf8576a1f2f03ac6583c6ce5cb7c0ab65a",
+      "mtime_ns": 1793185456548175727
+    },
+    "verify_afsim_literals.py": {
+      "sha256": "1327ea213aecf59e27d41fff994f2b7ce95ac1feac7757b64bf0adcd4db1e063",
+      "mtime_ns": 1793274720966579202
+    },
+    "verify_afsim_native.py": {
+      "sha256": "1f21822f35a9484264449920c2ca86e8ffe4b08eb1d19965fa30a626f24cb5a5",
+      "mtime_ns": 1793057240191676584
+    },
+    "verify_afsim_observation.py": {
+      "sha256": "d74294aefd1de3d1e24740a7c8c81c6fb7af52ed5120270b109779a4a67f1d42",
+      "mtime_ns": 1793286982939383338
+    },
+    "verify_afsim_paging.py": {
+      "sha256": "cebb2578fe2e631b5cf763a4fc2da80ed3aa0815c1af33edf9c5565e099272b7",
+      "mtime_ns": 1793150382630949216
+    },
+    "verify_afsim_summary.py": {
+      "sha256": "30911f866822296b095c9661896a2df9739ee2d66a9469a94cbfb3e6aad9b964",
+      "mtime_ns": 1793287644023647464
+    },
+    "verify_afsim_world.py": {
+      "sha256": "bcaed0fc01b29de9da1b1a0e06cbe4bf5edb0b74db4dc44b16080de8920fc49d",
+      "mtime_ns": 1793151867646974795
+    },
+    "verify_agent_tools.py": {
+      "sha256": "7e1d5911ae58fd864ebdb9f586c03cdda120d7d0ce34a9c77299960d6354f12f",
+      "mtime_ns": 1792672653432230053
+    },
+    "verify_air_assets.py": {
+      "sha256": "13fdb2668e0a008340ba1aa9e5476c8f0247e0bd203d37654b2cba601836d7ac",
+      "mtime_ns": 1793173273886447996
+    },
+    "verify_air_availability.py": {
+      "sha256": "5db546e3e5d3b0c9c54488440b439335c03472cb60fabce5f9f93cc782ccb9b7",
+      "mtime_ns": 1793539758358775883
+    },
+    "verify_all.py": {
+      "sha256": "57d49e9fda3479f995e2a217a43b2df0a9b1cd7547eb86bf32710790666c5bb5",
+      "mtime_ns": 1792862166283281813
+    },
+    "verify_anchors.py": {
+      "sha256": "c96b515ab09345c3193051f28713c23689c694982032f7f57d6295d774e4c6d3",
+      "mtime_ns": 1792592858089844592
+    },
+    "verify_anti_japanese_war.py": {
+      "sha256": "77d45408d99727a428ab769f10fcced9f66aedded8c49463c4be15502dd7b1a6",
+      "mtime_ns": 1793232690076814723
+    },
+    "verify_app_integration.py": {
+      "sha256": "4ef265158b087146afd7e81fec6291369c8b02cef8b973c44e93e939514f6cfa",
+      "mtime_ns": 1792649528741885826
+    },
+    "verify_aviation_feedback.py": {
+      "sha256": "832a360037056177255d58a7d6a4baeb53acd028107a4dbea35295856da49cf9",
+      "mtime_ns": 1793580554920935072
+    },
+    "verify_baozuo_initial.py": {
+      "sha256": "cc03097903ce3ba2c1bf4e5d401f2ba097164a5de3bff92d799b40a140fa8288",
+      "mtime_ns": 1793269479948408681
+    },
+    "verify_battlefield.py": {
+      "sha256": "c32f1476db098125d82113fefde81448becc56769fedbd2c19ba0c458ac996df",
+      "mtime_ns": 1792648910989673856
+    },
+    "verify_boundary_lifecycle.py": {
+      "sha256": "9491e77452b172224a045e0c2e23fb30ee9ee8990c86fc65ae4be6f3cef3f8a6",
+      "mtime_ns": 1793559048065640796
+    },
+    "verify_branch_identity.py": {
+      "sha256": "56eb42aa5be6d2168d13f72ebefdde74f3cf40fc59b9f99d4344006f47471f1f",
+      "mtime_ns": 1793701288193109548
+    },
+    "verify_c2_observation.py": {
+      "sha256": "aed8547d355c048c1ab51b4770b7b2544c8ce81484a92d1a06a1ca43da502b5d",
+      "mtime_ns": 1793463760814521387
+    },
+    "verify_campaign_contracts.py": {
+      "sha256": "75ba79e2b3836b514c1f603262083e39379fd71eeb1b24747b0650b33bc40f3c",
+      "mtime_ns": 1793424403374148809
+    },
+    "verify_campaign_delay.py": {
+      "sha256": "7d61d8454888f5f0c70f43f528e3cc1ff83928e7cb110911fa19fd727590dc83",
+      "mtime_ns": 1793545748360294049
+    },
+    "verify_campaign_estimates.py": {
+      "sha256": "83caed8f3f85daa8a99d92ecf518d8433399aee36360560074ad1f3bfd0c2b5a",
+      "mtime_ns": 1793625876996362775
+    },
+    "verify_campaign_global_goals.py": {
+      "sha256": "5bfe259d09bd50de185ce294c98dcc8289b8d080cea050f97bc7c71774860dad",
+      "mtime_ns": 1793677976264289647
+    },
+    "verify_campaign_lifecycle.py": {
+      "sha256": "6e8665a8e372fc4a2f7a31ec53a1deea95e1b062808ab4d22bf8fa1738fafa8d",
+      "mtime_ns": 1793458047868064371
+    },
+    "verify_campaign_model.py": {
+      "sha256": "afa152c480d8dd19753d27af660dc25559b202c0a4df577382feea998d675108",
+      "mtime_ns": 1793458926705565790
+    },
+    "verify_campaign_outputs.py": {
+      "sha256": "8d69b4248fa6fe3f02f2800636567d99d01905ba707e9937a2e2267cbfd43455",
+      "mtime_ns": 1792643746253068208
+    },
+    "verify_campaign_partitions.py": {
+      "sha256": "f01e35f82dcf8c0f7613f04220c2b8bf4abcd447600533a7981d62487280fd22",
+      "mtime_ns": 1793417242752761251
+    },
+    "verify_campaign_plan.py": {
+      "sha256": "27bacb48f50300f8416455e87eecc321c256d78450abd41578d6870d6f3b49f1",
+      "mtime_ns": 1793443711967980571
+    },
+    "verify_campaign_plan_backends.py": {
+      "sha256": "3d583c51e664e4ec41795da0c9d1e1692bf3645cf10a7c7a7ffbe59f816c9af0",
+      "mtime_ns": 1793445203676281335
+    },
+    "verify_campaign_scope.py": {
+      "sha256": "5c322012fc2d5bf85f97344f747916860716451102a12e4d03085a624b45823c",
+      "mtime_ns": 1793418345400666875
+    },
+    "verify_campaign_windows.py": {
+      "sha256": "6853000ad8779341b28e41fe88ffcb945666b361ca239b36f713760f1d541f59",
+      "mtime_ns": 1793493321138025351
+    },
+    "verify_candidate_constraints.py": {
+      "sha256": "57442d9129b21d52591538843e42cedb2243caffaa17014cdedd0d1384b28066",
+      "mtime_ns": 1793668385373243025
+    },
+    "verify_causal.py": {
+      "sha256": "3e765bbb192db843e9b2f976fd1501aaebf64b6176654426f69b9a29ae6a1d2d",
+      "mtime_ns": 1792647300860992274
+    },
+    "verify_checkpoint_definitions.py": {
+      "sha256": "523532e7db52610ad40a9f61469e7c8d96092b366b1133d20fd28e749ecde11f",
+      "mtime_ns": 1793665881166012412
+    },
+    "verify_checkpoint_scope.py": {
+      "sha256": "0cfcb8528267530c1ae2a00390c39b733348c072eaaa0df72e830d86eb581092",
+      "mtime_ns": 1793315405718569242
+    },
+    "verify_cheqiao_campaign.py": {
+      "sha256": "8dad8ddd49a68ee4a81648b13d40a5c791b6d276fea6e69b8a1f04b1ada6d22d",
+      "mtime_ns": 1793261704630391887
+    },
+    "verify_clock.py": {
+      "sha256": "47c6aeb541817668a72de6056c363a888653ed1701ed069b3b5060920250aaae",
+      "mtime_ns": 1792598693421958825
+    },
+    "verify_combat_effects.py": {
+      "sha256": "065eaa05e87e59acf31d8a28758b64a41d63b62826eb76655faf2260c33db5e7",
+      "mtime_ns": 1793462164200065114
+    },
+    "verify_combined_arms.py": {
+      "sha256": "06d1d35002f23141717f2ec8f1121f162578b25c68a2251816b37b94b0673987",
+      "mtime_ns": 1793063635587533537
+    },
+    "verify_command_backend.py": {
+      "sha256": "68f27bd47ffff82f892751db7780a84530ce5ac270170bf87e0f904b01dafca4",
+      "mtime_ns": 1793263650245891127
+    },
+    "verify_command_recovery.py": {
+      "sha256": "766df1236c507c1f2ed708a148e57f5bad14d756eaa8f8836de715ddbdebfcdf",
+      "mtime_ns": 1793166988746868823
+    },
+    "verify_commands.py": {
+      "sha256": "2648ef377ff59b62ec4f15fbb2bc7f1019d958d107c4d4016a762017f9591d8a",
+      "mtime_ns": 1793287644023647464
+    },
+    "verify_converted_phases.py": {
+      "sha256": "1071af3d94d6d5273687cc44459d1f9c1a4197c8c512ae49ce20af488f78c772",
+      "mtime_ns": 1793701288193109548
+    },
+    "verify_crossing_control.py": {
+      "sha256": "391ad244de8c6c14e1e79aa9327c647a059c7a6782d162280b581d6c602b5a83",
+      "mtime_ns": 1793187802569096219
+    },
+    "verify_crossing_network.py": {
+      "sha256": "1c27111dbca21d53b699c5b956ac76af4a6f12070d3e30462b319137099929c4",
+      "mtime_ns": 1793273956097020088
+    },
+    "verify_crossings.py": {
+      "sha256": "782f9c8eab3edcd3848ef710ec300488c8f1aa54ac8fc98f690b4e39227e02a1",
+      "mtime_ns": 1793185062365596330
+    },
+    "verify_deferred_support.py": {
+      "sha256": "041907167fc0c12582020fd29e4d95b8140a6834c7be760b131d6fec976d3428",
+      "mtime_ns": 1793706652038829782
+    },
+    "verify_deployment.py": {
+      "sha256": "0463b0c018f33475d3a6e4ed2ab60414b2ac21028b02f0791bf6a817e69f7b46",
+      "mtime_ns": 1793134734968568254
+    },
+    "verify_desktop_backend.py": {
+      "sha256": "bf25a55b459ce9a78ed525904886822a617cb886cad6238beb207d072e060a32",
+      "mtime_ns": 1793631937410568235
+    },
+    "verify_dsh_aviation.py": {
+      "sha256": "87929b6bf670cb2955ae047598e63918fec235e52b72fec970148d1b8afaefaf",
+      "mtime_ns": 1793176498479782977
+    },
+    "verify_dsh_command_effects.py": {
+      "sha256": "d733d7fc260c2cbb76b18a99bbcffb99f94268a7c13b46cfeaecf093197e4be6",
+      "mtime_ns": 1793580470841895500
+    },
+    "verify_dsh_crossing.py": {
+      "sha256": "90a9bcc3cc40612af93251189df121b6ba76f62a4274f0c0f86a328acefd65b9",
+      "mtime_ns": 1793462930711291663
+    },
+    "verify_dsh_output_recovery.py": {
+      "sha256": "3562aec49563d08df36ca512bba4f964938b214e016144d01e7127d5ebc6bb18",
+      "mtime_ns": 1793484299278717718
+    },
+    "verify_dsh_resources.py": {
+      "sha256": "4174e1ad2a4f384b47952a8c52fe60ffbd064efce5abbb7e50d15d0749b7e62b",
+      "mtime_ns": 1793462164179099385
+    },
+    "verify_effect_amendments.py": {
+      "sha256": "e8ce6189d4b8f96a5f0182be4ae4d964fd79bc3cf286cec531dfd6460cfeb81a",
+      "mtime_ns": 1793650427401039438
+    },
+    "verify_effect_contract.py": {
+      "sha256": "bd1eef0b73a1928c525b9b38eb7bc9982b4cf0dbbbd9876ea8440c068b8a7cfd",
+      "mtime_ns": 1793651674583606425
+    },
+    "verify_engine.py": {
+      "sha256": "78d7c6b0a5f294da7ff2631429bdc527910781adf10b5a1d3e6bc985ae0cb8c8",
+      "mtime_ns": 1792561973766865885
+    },
+    "verify_execution_modes.py": {
+      "sha256": "637b9568c1e8eaea1d0fdc7c34a19a7232c0d6def7c06cb7ba40edd098551b5d",
+      "mtime_ns": 1793462930719295340
+    },
+    "verify_features.py": {
+      "sha256": "db3032da049175374b4e0fda65a3d1fdcfe753b320f4136203d8cf6ad91a0b48",
+      "mtime_ns": 1792672574955311637
+    },
+    "verify_ferries.py": {
+      "sha256": "4810facc7559049634b3b69694bfd95762a5eb8f1d9b9ef1579ae730f3665121",
+      "mtime_ns": 1793230749195253319
+    },
+    "verify_fire_effect_bounds.py": {
+      "sha256": "ee6c076a4ba2b6b89ef526b7488bc9b356ce0a6b92fa22bd9445668786915088",
+      "mtime_ns": 1793577738909117009
+    },
+    "verify_fire_process.py": {
+      "sha256": "a21c4279b24002297dc5ba1dc9a9a00f0997d51de5aa85a986ed19489abb7834",
+      "mtime_ns": 1793597730870562899
+    },
+    "verify_fixed_scenario_inputs.py": {
+      "sha256": "ef44e28a519f70324a9d4f1aac13b06ad1c1de7237ec4fe277353a2c4ce83878",
+      "mtime_ns": 1793533367828617823
+    },
+    "verify_force_hierarchy.py": {
+      "sha256": "9a69d7bcbacfd9f09f9655aec8c0e99274830aed403253ceddeae7c2807adca8",
+      "mtime_ns": 1793425259175529915
+    },
+    "verify_force_observation.py": {
+      "sha256": "6eea8dbad06429d80b6b304c4d45c43902bdd4af8cc9d682f2b76327b72fef08",
+      "mtime_ns": 1793437141788787527
+    },
+    "verify_force_organization.py": {
+      "sha256": "1e54134b1113e538bc9e0dc2c70d02f0c29398018270579da95c312b55bc239c",
+      "mtime_ns": 1793417755359462450
+    },
+    "verify_force_routes.py": {
+      "sha256": "43ee2d6e5d64645a44ee715b039bb291041de696416abd0f7c1a02d15662509d",
+      "mtime_ns": 1793450040119816371
+    },
+    "verify_force_task_execution.py": {
+      "sha256": "32d1e1e5194436511f5903daa38407c83fc7d0a0901532734c2272b7f93db1c6",
+      "mtime_ns": 1793642131188128823
+    },
+    "verify_force_tasks.py": {
+      "sha256": "827090c83a1ecb7cc98624bdc61ba505a9d911c16e35e738647afaba8113252b",
+      "mtime_ns": 1793426788500652366
+    },
+    "verify_formation_commit.py": {
+      "sha256": "7eb5391d0a5d32711c59fc9119eccf49d072d198dda6ddb44767f52a346fe0c0",
+      "mtime_ns": 1793701288193109548
+    },
+    "verify_formation_continuity.py": {
+      "sha256": "783fc17c8d1bec218589a75c887183ea8ffaf4fec76cde99af155c71e25879e8",
+      "mtime_ns": 1793568616742028850
+    },
+    "verify_formation_conversion.py": {
+      "sha256": "ea171792f5313e3a63359ff5eb288374155257417ab4a26611d0e773acf12411",
+      "mtime_ns": 1793570782011961460
+    },
+    "verify_formation_execution.py": {
+      "sha256": "c70071d07d7bb39af6d1ff601f85cca9ce664f30614dd3c3c7285509b27a8f8f",
+      "mtime_ns": 1793575650616358866
+    },
+    "verify_formation_parts.py": {
+      "sha256": "69dc7b86069ca8c8d5010b4c7433f42388cee81e7a3a39e764122f854696b636",
+      "mtime_ns": 1793229009152177917
+    },
+    "verify_formation_registry.py": {
+      "sha256": "e9fed9980657f559ed6044e8586efb9563fe1cda0096b782a5830deaa606f6c8",
+      "mtime_ns": 1793564645658540332
+    },
+    "verify_formation_session.py": {
+      "sha256": "84a84a6dc1df3be984fd06d6d8a788a5aee202cc41306d33fc41ae194017b87c",
+      "mtime_ns": 1793592195795058481
+    },
+    "verify_geometry_documentation.py": {
+      "sha256": "ca7604f9f705682afd01584beabc8e25c1d49031b36566cb2adebb712825a173",
+      "mtime_ns": 1793488141694089867
+    },
+    "verify_harness_engine.py": {
+      "sha256": "a30be1c38f519112c55ecadd60a22d694dd84406d72bba430db832c32d5663e6",
+      "mtime_ns": 1793521701170852943
+    },
+    "verify_historical_admission.py": {
+      "sha256": "0433f8c7b0e739e7cccb7acf571164989726f247ef82afe59328b625aeb548ba",
+      "mtime_ns": 1793540493680064228
+    },
+    "verify_historical_attendance.py": {
+      "sha256": "0393723da0578827939a822689a03fa23fb54a6b5401b1e1bcc042da0dfaeac1",
+      "mtime_ns": 1793173817510030097
+    },
+    "verify_historical_catalog.py": {
+      "sha256": "c8e80875d4b43a3987d1ba6a79b980330b695d2cc5c9da1ba2d5c23b40652a4d",
+      "mtime_ns": 1793233153034365733
+    },
+    "verify_historical_initial.py": {
+      "sha256": "a8f55d970b3d488798ec467c67232bc66646d08a62ee4afb46b53048ee036ad9",
+      "mtime_ns": 1793287116827093526
+    },
+    "verify_historical_links.py": {
+      "sha256": "697628e61526c0d882dedc83fc0a59eb6797b628c6adac8c4ae427aa58044f03",
+      "mtime_ns": 1793431268941027435
+    },
+    "verify_historical_measurements.py": {
+      "sha256": "550c2ab1775fa24ecd5758df47908fe534e29c0bbbd70c38db2bd64c179025fb",
+      "mtime_ns": 1793608377989911665
+    },
+    "verify_historical_operations.py": {
+      "sha256": "28ddc90fb6fe3c4bf37d939ce10cb6b7a4dfe7f5233231893f5f62d401201182",
+      "mtime_ns": 1793173724907552408
+    },
+    "verify_historical_replay_v2.py": {
+      "sha256": "bfaae0ae26f6df8cd11801367c964994450b271d72ebabf926fae2c556b46492",
+      "mtime_ns": 1793431516215010547
+    },
+    "verify_historical_scenario_builder.py": {
+      "sha256": "df900865f69622a245a4584b9c834213d69e06e88a6333766c016d11d1d9dff5",
+      "mtime_ns": 1793287644020646084
+    },
+    "verify_historical_step.py": {
+      "sha256": "3a4a2126d68972f0e08ca7eb4f73dfe9837c37ab50adb76313e438e2bd9d2d8c",
+      "mtime_ns": 1793343033584420313
+    },
+    "verify_history_commentary.py": {
+      "sha256": "e8668e5a5f013eba1e952e8f49d72c31a97d102117e377b3ca0e000e719ac4be",
+      "mtime_ns": 1793431230326754113
+    },
+    "verify_history_replay.py": {
+      "sha256": "8424b60b11e5c6dd3a9fb07361f4fcdda8305f7d05a05f4626c896dab986e575",
+      "mtime_ns": 1793066002189097546
+    },
+    "verify_initial_command.py": {
+      "sha256": "3aef21bc9047c6b16d26fee9c4b62b5c7ffd1752e4eee384b31683710e85cf9f",
+      "mtime_ns": 1793432696194948998
+    },
+    "verify_integrity.py": {
+      "sha256": "b78b6defc2aeec414538a8547bdd8f4549d7d830ae385db6cc7eabda5b579fd1",
+      "mtime_ns": 1792585764872715019
+    },
+    "verify_integrity_panel.py": {
+      "sha256": "31c96f9dd09ca0f0ffc75cc1da77a1758f8c366e43d9d189ad820f10de243f13",
+      "mtime_ns": 1792555114378965903
+    },
+    "verify_inventory_claims.py": {
+      "sha256": "32870dc957c094b28fb2ece3dd23740fd12c533e06fdd77433a82687b8d765dd",
+      "mtime_ns": 1793658879323479915
+    },
+    "verify_jialing_initial.py": {
+      "sha256": "c54aee42d58e34360f4f23e055f61a5f0b26426372a7f06b2ade511b7ccc5d08",
+      "mtime_ns": 1793271568940272886
+    },
+    "verify_korean_campaigns.py": {
+      "sha256": "912458a68d0320e4a449229df905d72f6800497be09f94b6fd858c95fb53d1a3",
+      "mtime_ns": 1792602617044811241
+    },
+    "verify_korean_initial.py": {
+      "sha256": "493cb044ea4a85c1874ac1acafba617eefe7fbae1928e9c671049c3e4fa82d8e",
+      "mtime_ns": 1793136508778800021
+    },
+    "verify_korean_series.py": {
+      "sha256": "b788588f43d3e6e8ff521cb4dee99ba68a6403a45b19b6a665453924641c33ce",
+      "mtime_ns": 1793157557177507563
+    },
+    "verify_legacy_sustainment.py": {
+      "sha256": "354fdf40b2f3a80675ad4a264a812fd6ac0b139dadc51fae032faae9f04aa419",
+      "mtime_ns": 1793582300861399248
+    },
+    "verify_long_march.py": {
+      "sha256": "0d8d15272ab511b88a13d11c61b7b5cd6a57499bff247d1bda61d2b36f741021",
+      "mtime_ns": 1793227781990589896
+    },
+    "verify_long_march_initial.py": {
+      "sha256": "545349908c2f8043fd8a564c57b2a6cf2d20b35edef0a4211bcf70f9e48673d6",
+      "mtime_ns": 1793170435529169012
+    },
+    "verify_map_units.py": {
+      "sha256": "80d1135aa21bf0ce2d6f28d70605de35373b16f6f3048993ce36b8bc6f4d5cf0",
+      "mtime_ns": 1793549078608539375
+    },
+    "verify_markdown.py": {
+      "sha256": "6154b26293939a7f40941b65e4461507047256f0fbefea11cada2aadcc566541",
+      "mtime_ns": 1793154590332912717
+    },
+    "verify_military_plotting.py": {
+      "sha256": "9ca56d37a44985cb8bce3aa8ce0fe767676391adf3f4e305d5791da061e96c3c",
+      "mtime_ns": 1793279478925851781
+    },
+    "verify_mission_backend.py": {
+      "sha256": "4a0bdb481d7765d11db4c671b86e2493f98a021fcfbee7c7c624a7a1001df05c",
+      "mtime_ns": 1793063289236286633
+    },
+    "verify_missions.py": {
+      "sha256": "9bfef134d16231ad37425354477e0f59d4c20c11044fce94978f768d663a7b11",
+      "mtime_ns": 1793065602984262302
+    },
+    "verify_model_settings.py": {
+      "sha256": "d645b382bac795c9f7d5b88116d83fa441929f7db853d8535342c98d3507dfe2",
+      "mtime_ns": 1793337887629940153
+    },
+    "verify_movement_feedback.py": {
+      "sha256": "e6daa1829dd96ed7acb7227f593f4ac1ec8e56ef1bd69ffe7908f650ed892136",
+      "mtime_ns": 1793629170514361968
+    },
+    "verify_native_report_submission.py": {
+      "sha256": "ad55bf56900f786e455aaf47838c05fd60d9d20efe60027996d274fc642f32c8",
+      "mtime_ns": 1793557185949979595
+    },
+    "verify_noncontact_history.py": {
+      "sha256": "e11af6357b28e446bcd05a2bd7278f089fc246d22b064601872bc5df59f224f2",
+      "mtime_ns": 1793530094991132938
+    },
+    "verify_objective_completion.py": {
+      "sha256": "2db4810e77a992f37245b2677333c4dd0943b14e9f27e4797f79da184c995a4b",
+      "mtime_ns": 1793342963060058288
+    },
+    "verify_objective_team.py": {
+      "sha256": "cc70d59d968bbc519e01a7064ac8addc3480e9c176ae5a3f59221cf15cbf41b6",
+      "mtime_ns": 1793163267392499301
+    },
+    "verify_observation_provenance.py": {
+      "sha256": "cac1ea750d518f1b73f192f0bfd0d0d5b0fd852d54c84d426d7e82a734ff891c",
+      "mtime_ns": 1793661185898601377
+    },
+    "verify_operation_boundary.py": {
+      "sha256": "5d73128d5cadadc1bc3af5a9ae2941348c68c0a7eecdd199ed72aeeafd0ebe84",
+      "mtime_ns": 1793552464388163580
+    },
+    "verify_operation_progress.py": {
+      "sha256": "83fddd12dd1b84c7e261366b3682b27ee3246a11cc1208595fa402c0cf28baf6",
+      "mtime_ns": 1793655816294170035
+    },
+    "verify_output_consistency.py": {
+      "sha256": "fbbecd6b3f89f70947d35a3912bab33a32a770534ca289b7b06c3dd8a1fb5a0f",
+      "mtime_ns": 1793454332661437537
+    },
+    "verify_personnel_continuity.py": {
+      "sha256": "19de5726daf78bd39626c32b32a9a5a6082805795b212f2aa6ba8c276821d914",
+      "mtime_ns": 1793705576689734238
+    },
+    "verify_personnel_projection.py": {
+      "sha256": "0d45fd464637315f04ec4408f576c1419a90732109d373209e98e2e611b46da9",
+      "mtime_ns": 1793635205583775136
+    },
+    "verify_personnel_rations.py": {
+      "sha256": "c1c161365e3f96b18a6d12d39d1190e5a70d815c0f942ce1603fe8218cf7f12d",
+      "mtime_ns": 1793682354797360975
+    },
+    "verify_phase_continuity.py": {
+      "sha256": "f10ef48b60ecfd9ca96763b1ed9103b4330ee94a8f4b9cfd78b8f029b76fe1a4",
+      "mtime_ns": 1793625830701649481
+    },
+    "verify_phase_routes.py": {
+      "sha256": "d27698e8260ee0eb5d0f977d31f5f8c2b332dba18811e7ddaaa0bb082da081c7",
+      "mtime_ns": 1793667407424931409
+    },
+    "verify_quiet_suppression.py": {
+      "sha256": "d7a81b0b644abb5da7288a1695a853c578218b7e8f7e4833f73b21f4939ee18d",
+      "mtime_ns": 1793702632120374544
+    },
+    "verify_receipt_constraints.py": {
+      "sha256": "824efcbdb32f2e2216a900494f1d71068a8e7d38bca2298e26363128d329600e",
+      "mtime_ns": 1793670945627165762
+    },
+    "verify_release_boundaries.py": {
+      "sha256": "5b7f9686afec309b52e648afe14a0e3e3c7fbd606919810f4cc7603dfd5fdbed",
+      "mtime_ns": 1793522789218894748
+    },
+    "verify_remaining_initial.py": {
+      "sha256": "e3f1f1b48d5d6f883645ee980220d20e0c04a257d211e52cc3d1e2e877954ab4",
+      "mtime_ns": 1793286520534645015
+    },
+    "verify_report_claims.py": {
+      "sha256": "5059e75ff0323297de37c3b2a23e27a26a030762d21ecbcc3dea1a376909ab48",
+      "mtime_ns": 1793556709714510477
+    },
+    "verify_resource_readiness.py": {
+      "sha256": "d39a9991d828eeac527c8a68661a9006f190448c2d57ed629dd629238ab8d440",
+      "mtime_ns": 1793316788653551126
+    },
+    "verify_roundtrip_guard.py": {
+      "sha256": "f23d0b9b9ab4de874c689aaf00c3146b478dec32c060627a1688649418d0a313",
+      "mtime_ns": 1792599073142564096
+    },
+    "verify_runtime_plugins.py": {
+      "sha256": "1abe24a1099bdd6027489d557be4c582d481ef900d918c9e0441031bff5d4327",
+      "mtime_ns": 1792678328605174541
+    },
+    "verify_runtime_tools.py": {
+      "sha256": "dda960da1e9a95008d85ace250321908341598a9576e28a5312cd0a74d337d83",
+      "mtime_ns": 1793159108020808684
+    },
+    "verify_scenario_assembly.py": {
+      "sha256": "33aa7d45139f6f1995e8774cb6462ff3edbd84cec04cc7081be9db28a44ab190",
+      "mtime_ns": 1793680878830795883
+    },
+    "verify_scenario_builder.py": {
+      "sha256": "8afda0f605dd48a3131ab54f8b440ec6403f63374b5c32815da1c71281e57810",
+      "mtime_ns": 1793279478926852281
+    },
+    "verify_scenario_resume.py": {
+      "sha256": "8d7e4ac75915fac6cbe319decc71b24653fc6b8e08d1dfc54655eb613d8fdf03",
+      "mtime_ns": 1793545826890405718
+    },
+    "verify_source_locators.py": {
+      "sha256": "77b5cab456e0a9a380ee80c324b3856b43d897d004aa1d9e5ae3ef6aa359f2b1",
+      "mtime_ns": 1793489732000423330
+    },
+    "verify_split_supply.py": {
+      "sha256": "9de05256183a24a79efc4120304f2686282aa30d98f6de0d8eebc37469b3c511",
+      "mtime_ns": 1793283280674359065
+    },
+    "verify_staging_support.py": {
+      "sha256": "7cd6a23d39c13bcc48c7dee23f85fc303a1fade9e25eb5969b894405df950ead",
+      "mtime_ns": 1793276413872451229
+    },
+    "verify_supply_binding.py": {
+      "sha256": "3e895c93a081fa768eb27308e2ab255cac6ef74d580a15b5f02cb29fb4b0f558",
+      "mtime_ns": 1793523695453746598
+    },
+    "verify_supply_geometry.py": {
+      "sha256": "4ef391ef8e0bfa0c2933030e63a860bbfebbec2dffadc52441fcb018c78dc65a",
+      "mtime_ns": 1793700400584479640
+    },
+    "verify_supply_indices.py": {
+      "sha256": "18439416eddd22c49b7ca042c8778b83b2bbd356ab5ca895b4211df805198fb7",
+      "mtime_ns": 1793447671169300273
+    },
+    "verify_supply_receipts.py": {
+      "sha256": "d096f27a6be67da7b79babfa3ad34657fc2a0fe15a2c9b718c09732f18432c5d",
+      "mtime_ns": 1793290327333412284
+    },
+    "verify_supply_schedule.py": {
+      "sha256": "b07c1aef422d1c80a63a67eb3c2eff7446099ab03b6702cf10ccd58a97ec9a41",
+      "mtime_ns": 1793527359842768964
+    },
+    "verify_support_dynamics.py": {
+      "sha256": "05c496fa7b3d9d38308228bb32ca4aca189df9ac82b2ac197035368b0697a458",
+      "mtime_ns": 1793278948878227076
+    },
+    "verify_sustainment.py": {
+      "sha256": "e75951b776a703d5e7f52bbdb119cf9e60ef63e0f3eb853789add63b09963adf",
+      "mtime_ns": 1793276739028514505
+    },
+    "verify_synthetic_campaign.py": {
+      "sha256": "6c91e5887f33a394faf64809ff004648fa7059e79e1d60a274c87052faa6a90b",
+      "mtime_ns": 1793433881595260729
+    },
+    "verify_synthetic_configuration.py": {
+      "sha256": "9ab0f147a2e0f16c22357bc6ffb002dd53a4a3f095f40b71169e9c22612b816e",
+      "mtime_ns": 1793079219425674806
+    },
+    "verify_synthetic_history.py": {
+      "sha256": "13f7d7576d0c7fd2b6330cc445b1fa8827457d76f4bbf11481797e0d2bdde8f3",
+      "mtime_ns": 1793150922618014699
+    },
+    "verify_terrain_process.py": {
+      "sha256": "bbb80da3727ce51ece210dc48fa22349f91859c601a55377ce2a8ab61246f7c3",
+      "mtime_ns": 1793315879551384184
+    },
+    "verify_transfer_campaign.py": {
+      "sha256": "48406ad26f92f76f9a22e080480ad47550faf24866f0f9a1cd0211af1646a56b",
+      "mtime_ns": 1793676390021172080
+    },
+    "verify_turn_preview_pages.py": {
+      "sha256": "a68e2e5053027fded0e7d76fd7a7274d77971305eff37dc56041bf43b37411bb",
+      "mtime_ns": 1793639066062203938
+    },
+    "verify_turn_settlement.py": {
+      "sha256": "9206593075ff6008489eedb592dd1ec47f40bafef31e56fa86f3d1d4ea55ea18",
+      "mtime_ns": 1793472495664477714
+    },
+    "verify_unit_order_submission.py": {
+      "sha256": "358980633348b200b358460051a374f62d0fae6e9a8ed1f1d9ce370985552ede",
+      "mtime_ns": 1793622087024546888
+    },
+    "verify_unit_output_recovery.py": {
+      "sha256": "e2cfe3f2ac0a075fc8a2d8b9dfdaf9821b6c6c1c3589b520ef088b591cd99979",
+      "mtime_ns": 1793699179475934085
+    },
+    "verify_unit_participation.py": {
+      "sha256": "321aa2fb4fe4e9379cb843bd0dd1dd3989e21ac1a1e3ddb89faa34ae3e268816",
+      "mtime_ns": 1793481799186900806
+    },
+    "verify_unit_participation_integration.py": {
+      "sha256": "e7ed05590a75b23e6bb71a48692230ee38e5d6c3d7824b1284875dbe58aef81a",
+      "mtime_ns": 1793480674576433956
+    },
+    "verify_unit_participation_routes.py": {
+      "sha256": "f33dd8f2bd4a0c17e49b0de9955bd6c739c4f2535c51f73656cf0bb005fcb901",
+      "mtime_ns": 1793480359089709289
+    },
+    "verify_unit_situation_index.py": {
+      "sha256": "9f7ce253897cc139d419c1bc0b2ffb07f0ba48985b1442990c9b0b9b2dc9b096",
+      "mtime_ns": 1793645932216908588
+    },
+    "verify_unit_types.py": {
+      "sha256": "673a89e103a0f5bc687151e73bc530637571445f9ef819d011bd49a34856499a",
+      "mtime_ns": 1793138551992335977
+    },
+    "verify_wanjialing_campaign_sources.py": {
+      "sha256": "85fa4e0a704f29248d8579f6daeae89a3f4de987aa4ffe3b81ef71b0adc0efa4",
+      "mtime_ns": 1793476264763969128
+    },
+    "verify_wanjialing_revision.py": {
+      "sha256": "1a3ec44d9348a538d0c19091904a130044c89e6428bf304ef75f8eaa61bb5553",
+      "mtime_ns": 1793440459280199105
+    },
+    "verify_weapon_ranges.py": {
+      "sha256": "cc927cbade25825e181855d7967c2d9a7a094d3a798a2fd6c1a2f71b0385eaa7",
+      "mtime_ns": 1793141227685749714
+    },
+    "verify_workflow.py": {
+      "sha256": "6b8b325bb81bb146d6dadf067123528a56c2272d201fcac4c360607514f906c2",
+      "mtime_ns": 1792599073142564096
+    },
+    "verify_ww2_initial.py": {
+      "sha256": "f09d0d4f8a53223ab469bea0ab23fd31ee70517af1b19ddf2a7f0091f66dd3d9",
+      "mtime_ns": 1793144672448627320
+    }
+  },
+  "prior_gate": {
+    "frozen_file_count": 544,
+    "changed_files": [
+      "backend/afsim_combined.py",
+      "backend/afsim_supply_schedule.py",
+      "backend/afsim_sustainment.py",
+      "gentactix/formation_conversion.py",
+      "gentactix/supply_schedule.py",
+      "gentactix/support_dynamics.py",
+      "verify_personnel_continuity.py"
+    ]
+  },
+  "previous_protected_files": {
+    "count": 35,
+    "changed": []
+  },
+  "qa_venv_packages": {
+    "deepseek-harness-sdk": "0.2.1rc5",
+    "deepseek-harness-runtime-bin": "0.2.1rc5"
+  },
+  "methods": [
+    "GET /api/health",
+    "GET /api/sessions/{id}/export",
+    "GET /api/sessions/{id}/progress",
+    "file SHA256 and mtime; no key values retained"
+  ],
+  "catalogue": {
+    "profile_count": 45,
+    "source_version_count": 58,
+    "latest_reference_units": 611,
+    "latest_phases": 114,
+    "latest_unit_nonnull_fact_counts": {
+      "personnel": 0,
+      "equipment": 0,
+      "position": 1
+    },
+    "all_three_coverage_complete": 0,
+    "campaign_window_count": 2,
+    "campaign_window_version_count": 7,
+    "fact_count_method": "Read facts.<field>.value, not the enclosing provenance object; latest version per indexed profile."
+  },
+  "snapshot_enriched_at": "2026-11-03T19:58:00.661094+08:00",
+  "after_at": "2026-11-03T20:01:12.385804+08:00",
+  "final_readonly_review": {
+    "selected_file_count": 584,
+    "changed_selected_files": [],
+    "sessions": {
+      "19358:2c51981789fd": {
+        "whole_session_unchanged": true,
+        "progress_unchanged": true,
+        "turn_count": 3,
+        "active": false
+      },
+      "19358:041fe52b2b8d": {
+        "whole_session_unchanged": true,
+        "progress_unchanged": true,
+        "turn_count": 1,
+        "active": false
+      },
+      "19368:cbb95b02630c": {
+        "whole_session_unchanged": true,
+        "progress_unchanged": true,
+        "turn_count": 7,
+        "active": false
+      },
+      "19368:fb11ed13786b": {
+        "whole_session_unchanged": true,
+        "progress_unchanged": true,
+        "turn_count": 9,
+        "active": false
+      },
+      "19368:5f55ddd507a7": {
+        "whole_session_unchanged": true,
+        "progress_unchanged": true,
+        "turn_count": 3,
+        "active": false
+      },
+      "19378:24f1946c7010": {
+        "whole_session_unchanged": true,
+        "progress_unchanged": true,
+        "turn_count": 0,
+        "active": false
+      }
+    },
+    "processes": {
+      "19358": {
+        "status": "ok",
+        "pid": 186277,
+        "same_process": true,
+        "loaded_revision_unchanged": true,
+        "restart_required": true
+      },
+      "19368": {
+        "status": "ok",
+        "pid": 474702,
+        "same_process": true,
+        "loaded_revision_unchanged": true,
+        "restart_required": true
+      },
+      "19378": {
+        "status": "ok",
+        "pid": 597629,
+        "same_process": true,
+        "loaded_revision_unchanged": true,
+        "restart_required": false
+      }
+    },
+    "document_links_checked": 10,
+    "broken_document_links": [],
+    "agreed_document_only_writes": [
+      "docs/项目交接说明-2026-11-03-运行保护版.md",
+      "docs/项目交接运行保护核对-2026-11-03.json"
+    ],
+    "not_executed": [
+      "model probe",
+      "battle init/advance",
+      "code or config edits",
+      "test suite",
+      "server restart",
+      "build/install",
+      "git commit/push"
+    ],
+    "passed": true
+  }
+}

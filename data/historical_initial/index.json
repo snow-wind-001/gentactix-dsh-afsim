@@ -1,0 +1,229 @@
+{
+  "profiles": [
+    {
+      "battle": "抗日战争-武汉会战-1938.06至1938.10",
+      "id": "AJ06-wuhan",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-徐州会战总览-1938.01至1938.05",
+      "id": "AJ04-xuzhou",
+      "default_version": "1.2.0"
+    },
+    {
+      "battle": "抗日战争-冀中五一反扫荡-1942.05.01至1942.06.20",
+      "id": "AJ15-jizhong",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-平型关伏击战-1937.09.25",
+      "id": "AJ03-pingxingguan",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗美援朝-第一次战役-1950.10.25至1950.11.05",
+      "id": "KW01-first",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-直罗镇战役-1935.11.20至1935.11.24",
+      "id": "LM14-zhiluo",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-台儿庄战役-1938.03.23至1938.04.07",
+      "id": "AJ05-taierzhuang",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-万家岭战役-1938.09下旬至1938.10",
+      "id": "AJ07-wanjialing",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗美援朝-第二次战役-1950.11.07至1950.12.24",
+      "id": "KW02-second",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗美援朝-第三次战役-1950.12.31至1951.01.08",
+      "id": "KW03-third",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗美援朝-第四次战役-1951.01.25至1951.04.21",
+      "id": "KW04-fourth",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗美援朝-第五次战役-1951.04.22至1951.06.10",
+      "id": "KW05-fifth",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22",
+      "id": "KW06-autumn1951",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31",
+      "id": "KW07-counter1952",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗美援朝-上甘岭战役-1952.10.14至1952.11.25",
+      "id": "KW08-sangganling",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27",
+      "id": "KW09-summer1953",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-湘江战役-1934.11.25至1934.12.01",
+      "id": "LM01-xiangjiang",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-湘西会战-1945.04.09至1945.06.07",
+      "id": "AJ18-xiangxi",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-强渡乌江-1935.01.01至1935.01.06",
+      "id": "LM02-wujiang",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-淞沪会战-1937.08.13至1937.11.12",
+      "id": "AJ01-shanghai",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-太原会战-1937.09至1937.11",
+      "id": "AJ02-taiyuan",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-第一次长沙会战-1939.09.14至1939.10",
+      "id": "AJ08-changsha1",
+      "default_version": "1.1.0"
+    },
+    {
+      "battle": "抗日战争-第二次长沙会战-1941.09.07至1941.10.09",
+      "id": "AJ09-changsha2",
+      "default_version": "1.1.0"
+    },
+    {
+      "battle": "抗日战争-第三次长沙会战-1941.12.24至1942.01.16",
+      "id": "AJ10-changsha3",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-桂南会战与昆仑关攻坚-1939.11至1940.01",
+      "id": "AJ11-kunlun",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-豫湘桂战役总览-1944.04至1944.12",
+      "id": "AJ12-ichigo",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-衡阳保卫战-1944.06至1944.08.08",
+      "id": "AJ13-hengyang",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-百团大战-1940.08.20至1941.01.24",
+      "id": "AJ14-hundred",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-敌后局部反攻总览-1944",
+      "id": "AJ16-counter1944",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-车桥战役-1944.03.05至1944.03.06",
+      "id": "AJ17-cheqiao",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-缅北滇西反攻总览-1943.10至1945.03",
+      "id": "AJ19-burma",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "抗日战争-全面反攻与受降总览-1945.08至1945.09",
+      "id": "AJ20-reception",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-中央红军巧渡金沙江-1935.05.03至1935.05.09",
+      "id": "LM04-jinsha1935",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-红二六军团抢渡金沙江-1936.04.25至1936.04.28",
+      "id": "LM13-jinsha1936",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-包座战役-1935.08.29至1935.09.01",
+      "id": "LM07-baozuo",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-嘉陵江战役-1935.03.28至1935.04.21",
+      "id": "LM10-jialing",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-四渡赤水-1935.01.19至1935.03.22",
+      "id": "LM03-chishui",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-强渡大渡河与飞夺泸定桥-1935.05.24至1935.05.29",
+      "id": "LM05-dadu",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-懋功会师与雪山草地转移-1935.06.12至1935.09.12",
+      "id": "LM06-maogong",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-腊子口战斗-1935.09.16至1935.09.17",
+      "id": "LM08-lazikou",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-红二十五军长征-1934.11.16至1935.09.16",
+      "id": "LM09-red25",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-百丈关战役-1935.11",
+      "id": "LM11-baizhang",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-乌蒙山回旋战-1936.02.27至1936.03.28",
+      "id": "LM12-wumeng",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "红军长征-甘孜会师至三大主力会师-1936.07.01至1936.10.22",
+      "id": "LM15-reunion",
+      "default_version": "1.0.0"
+    },
+    {
+      "battle": "长平之战",
+      "id": "CP01-changping",
+      "default_version": "1.0.0"
+    }
+  ]
+}

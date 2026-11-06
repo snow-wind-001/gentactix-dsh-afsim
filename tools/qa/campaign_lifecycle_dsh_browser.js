@@ -1,0 +1,30 @@
+async page=>{
+ const API='http://127.0.0.1:19116',checks=[],errors=[];
+ const check=(ok,label)=>{if(!ok)throw Error(label);checks.push(label);};
+ const get=async path=>{const r=await page.request.get(API+'/api'+path);if(!r.ok())throw Error(await r.text());return r.json();};
+ const entry=(await get('/sessions')).sessions.find(s=>s.scenario.startsWith('单世界十阶段验收 narrative；'));if(!entry)throw Error('Complete actual DSH case first');
+ const base='/sessions/'+entry.session_id,before=await get(base);check(before.turn_count===12,'Actual DSH case has twelve committed physical rounds');
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.addInitScript(id=>{window.gentactix={backendUrl:'http://127.0.0.1:19116'};localStorage.setItem('gentactix-session',id);},entry.session_id);
+ await page.setViewportSize({width:1440,height:1000});await page.goto('http://127.0.0.1:19088');
+ await page.getByRole('button',{name:'返回当前战局',exact:true}).click();await page.getByRole('button',{name:/目标与运行/}).click();
+ const panel=page.getByTestId('campaign-lifecycle');await panel.waitFor({state:'visible'});
+ check((await panel.getByTestId('lifecycle-current').innerText()).includes('全部阶段已完成'),'Restored DSH completion is displayed');
+ await panel.getByRole('button',{name:'显示全部 10 个阶段',exact:true}).click();
+ check(await panel.locator('[data-phase-id]').count()===10,'All ten DSH milestones are queryable in the UI');
+ check(await panel.locator('[data-phase-id]').filter({hasText:'未完成'}).count()===0,'No completed stage is displayed as unfinished');
+ check(await page.getByRole('button',{name:'推进一轮',exact:true}).isDisabled(),'Completed case cannot silently execute another turn');
+ await panel.scrollIntoViewIfNeeded();await page.screenshot({path:'.cache/qa/campaign-lifecycle-2026-10-31/narrative/final-ui-1440.png'});
+ await page.getByRole('tab',{name:'兵团指挥与编组',exact:true}).click();
+ const tasks=page.getByTestId('force-task-execution');await tasks.waitFor({state:'visible'});
+ check((await tasks.innerText()).includes('跨十阶段保持'),'Original persistent task survives the entire stage chain');
+ await tasks.getByRole('button',{name:'查看下级状态',exact:true}).click();
+ const members=tasks.getByRole('region',{name:'持续任务成员状态'});await members.waitFor({state:'visible'});
+ check((await members.innerText()).includes('实际执行 12次'),'Member execution count is twelve rather than replayed on reload');
+ await page.setViewportSize({width:900,height:1000});await members.scrollIntoViewIfNeeded();
+ check((await members.innerText()).includes('第159师'),'Actual assigned historical identity is shown');
+ await page.screenshot({path:'.cache/qa/campaign-lifecycle-2026-10-31/narrative/task-ui-900.png'});
+ const after=await get(base);check(JSON.stringify(before.war_state)===JSON.stringify(after.war_state)&&JSON.stringify(before.history)===JSON.stringify(after.history),'Read-only final verification preserves physical world and history');
+ check(errors.length===0,'No browser page errors');
+ return {passed:true,session_id:entry.session_id,checks,actual_dsh_input:true,model_calls:false,api_mocks:false,scope:'restored final state, not another twelve-round execution'};
+}

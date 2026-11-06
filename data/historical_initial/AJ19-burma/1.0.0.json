@@ -1,0 +1,319 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ19-burma",
+  "version": "1.0.0",
+  "battle": "抗日战争-缅北滇西反攻总览-1943.10至1945.03",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "总览仅绑定松山初攻新28师与当地日军守备；缅北密支那、腾冲、龙陵各轴未合并，也不提前加入第8军。",
+      "仅提供有来源的具名参战框架。人数、分类装备、库存和逐单位阵地缺载，保持null；参数化配置须独立说明估计。",
+      "阶段时钟、区域半径和胜负阈值是计算假设；不代表已完成全会战复现、航空舰炮/后续增援或历史战损标定。"
+    ]
+  },
+  "sources": {
+    "SS_REVIEW": {
+      "title": "松山遗址：一寸山河一寸血",
+      "url": "https://www.81.cn/2020zt/2020-09/02/content_9895232.htm",
+      "publisher": "解放军报／中国军网",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    },
+    "SS_YUNNAN": {
+      "title": "松山喋血 腾冲光复",
+      "url": "https://m.yunnan.cn/system/2025/06/26/033525852.shtml",
+      "publisher": "云南网",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    }
+  },
+  "phases": [
+    {
+      "id": "reference",
+      "label": "全战役参战参考（非同日部署）",
+      "date": {
+        "label": "1943.10至1945.03",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "SS_REVIEW",
+            "locator": "1944年6月开始，第71军新28师与后续第8军先后投入"
+          }
+        ]
+      },
+      "scope": "保留累计参战身份；不宣称所有单位在战役开端同时到场。",
+      "evidence": [
+        {
+          "source_id": "SS_REVIEW",
+          "locator": "1944年6月开始，第71军新28师与后续第8军先后投入"
+        }
+      ]
+    },
+    {
+      "id": "songshan_june4",
+      "label": "6月4日松山初攻",
+      "date": {
+        "label": "1944-06-04",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "SS_REVIEW",
+            "locator": "1944年6月开始，第71军新28师与后续第8军先后投入"
+          }
+        ]
+      },
+      "scope": "总览仅绑定松山初攻新28师与当地日军守备；缅北密支那、腾冲、龙陵各轴未合并，也不提前加入第8军。",
+      "evidence": [
+        {
+          "source_id": "SS_REVIEW",
+          "locator": "1944年6月开始，第71军新28师与后续第8军先后投入"
+        }
+      ],
+      "execution_window": {
+        "start": "1944-06-04T08:00",
+        "end": "1944-06-04T14:00",
+        "kind": "model_scope_limit",
+        "note": "本日局部计算假设窗口，钟点不作史实命令；超窗须另核后续部队与兵种，不能自动继承为全会战。",
+        "evidence": [
+          {
+            "source_id": "SS_REVIEW",
+            "locator": "1944年6月开始，第71军新28师与后续第8军先后投入"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 24.7508,
+          "lng": 98.8899
+        },
+        "radius_km": 12,
+        "kind": "model_scope_limit",
+        "note": "地名附近的计算区域假设，以现代参考点或文字地域为中心；不是已测绘的历史阵地、战线或射界。",
+        "evidence": [
+          {
+            "source_id": "SS_REVIEW",
+            "locator": "1944年6月开始，第71军新28师与后续第8军先后投入"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.corps71",
+      "name": "第71军指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "SS_REVIEW",
+          "locator": "第71军新编28师先攻松山"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "SS_REVIEW",
+              "locator": "第71军新编28师先攻松山"
+            }
+          ]
+        },
+        {
+          "phase_id": "songshan_june4",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "SS_REVIEW",
+              "locator": "第71军新编28师先攻松山"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.new_division28",
+      "name": "新编第28师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.corps71",
+      "evidence": [
+        {
+          "source_id": "SS_REVIEW",
+          "locator": "1944年6月新28师进攻松山；实到和配属未全核"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "SS_REVIEW",
+              "locator": "1944年6月新28师进攻松山；实到和配属未全核"
+            }
+          ]
+        },
+        {
+          "phase_id": "songshan_june4",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "SS_REVIEW",
+              "locator": "1944年6月新28师进攻松山；实到和配属未全核"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.songshan_garrison",
+      "name": "日军松山守备队（下级番号未核）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "守备队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "SS_YUNNAN",
+          "locator": "松山日军据守工事；不采用有分歧的联队全员人数"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "SS_YUNNAN",
+              "locator": "松山日军据守工事；不采用有分歧的联队全员人数"
+            }
+          ]
+        },
+        {
+          "phase_id": "songshan_june4",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "SS_YUNNAN",
+              "locator": "松山日军据守工事；不采用有分歧的联队全员人数"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.corps8",
+      "name": "第8军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "SS_REVIEW",
+          "locator": "第8军为后续攻坚投入，不提前到6月4日"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "SS_REVIEW",
+              "locator": "第8军为后续攻坚投入，不提前到6月4日"
+            }
+          ]
+        },
+        {
+          "phase_id": "songshan_june4",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "SS_REVIEW",
+              "locator": "第8军为后续攻坚投入，不提前到6月4日"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    }
+  ]
+}

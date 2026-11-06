@@ -1,0 +1,319 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ13-hengyang",
+  "version": "1.0.0",
+  "battle": "抗日战争-衡阳保卫战-1944.06至1944.08.08",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "仅张家山第30团防御片段；日军攻击分队下级番号未核，不用全师团充当一个山头实到兵力。",
+      "仅提供有来源的具名参战框架。人数、分类装备、库存和逐单位阵地缺载，保持null；参数化配置须独立说明估计。",
+      "阶段时钟、区域半径和胜负阈值是计算假设；不代表已完成全会战复现、航空舰炮/后续增援或历史战损标定。"
+    ]
+  },
+  "sources": {
+    "HY_LOCAL": {
+      "title": "衡阳保卫战纪念园启动规划建设",
+      "url": "https://www.hnrd.gov.cn/content/2014/12/09/7262373.html",
+      "publisher": "湖南日报／湖南人大网",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    },
+    "HY_ARCHIVE": {
+      "title": "衡阳保卫战（档案专题）",
+      "url": "https://www.saac.gov.cn/zt/2014-09/15/content_67066.htm",
+      "publisher": "国家档案局",
+      "evidence_kind": "archive_publication",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    }
+  },
+  "phases": [
+    {
+      "id": "reference",
+      "label": "全战役参战参考（非同日部署）",
+      "date": {
+        "label": "1944.06至1944.08.08",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "HY_LOCAL",
+            "locator": "张家山：6月28日至7月14日预备10师30团防御"
+          }
+        ]
+      },
+      "scope": "保留累计参战身份；不宣称所有单位在战役开端同时到场。",
+      "evidence": [
+        {
+          "source_id": "HY_LOCAL",
+          "locator": "张家山：6月28日至7月14日预备10师30团防御"
+        }
+      ]
+    },
+    {
+      "id": "zhangjiashan_june28",
+      "label": "6月28日张家山局部防御",
+      "date": {
+        "label": "1944-06-28",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "HY_LOCAL",
+            "locator": "张家山：6月28日至7月14日预备10师30团防御"
+          }
+        ]
+      },
+      "scope": "仅张家山第30团防御片段；日军攻击分队下级番号未核，不用全师团充当一个山头实到兵力。",
+      "evidence": [
+        {
+          "source_id": "HY_LOCAL",
+          "locator": "张家山：6月28日至7月14日预备10师30团防御"
+        }
+      ],
+      "execution_window": {
+        "start": "1944-06-28T06:00",
+        "end": "1944-06-28T14:00",
+        "kind": "model_scope_limit",
+        "note": "本日局部计算假设窗口，钟点不作史实命令；超窗须另核后续部队与兵种，不能自动继承为全会战。",
+        "evidence": [
+          {
+            "source_id": "HY_LOCAL",
+            "locator": "张家山：6月28日至7月14日预备10师30团防御"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 26.88946,
+          "lng": 112.61888
+        },
+        "radius_km": 12,
+        "kind": "model_scope_limit",
+        "note": "地名附近的计算区域假设，以现代参考点或文字地域为中心；不是已测绘的历史阵地、战线或射界。",
+        "evidence": [
+          {
+            "source_id": "HY_LOCAL",
+            "locator": "张家山：6月28日至7月14日预备10师30团防御"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.corps10",
+      "name": "第10军指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "HY_LOCAL",
+          "locator": "第10军预备10师30团所属关系"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "HY_LOCAL",
+              "locator": "第10军预备10师30团所属关系"
+            }
+          ]
+        },
+        {
+          "phase_id": "zhangjiashan_june28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "HY_LOCAL",
+              "locator": "第10军预备10师30团所属关系"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.reserve_division10",
+      "name": "预备第10师指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "师",
+      "parent_id": "ww2.cn.corps10",
+      "evidence": [
+        {
+          "source_id": "HY_LOCAL",
+          "locator": "葛先才预备第10师"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "HY_LOCAL",
+              "locator": "葛先才预备第10师"
+            }
+          ]
+        },
+        {
+          "phase_id": "zhangjiashan_june28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "HY_LOCAL",
+              "locator": "葛先才预备第10师"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.regiment30",
+      "name": "预备第10师第30团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.reserve_division10",
+      "evidence": [
+        {
+          "source_id": "HY_LOCAL",
+          "locator": "6月28日至7月14日第30团守张家山"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "HY_LOCAL",
+              "locator": "6月28日至7月14日第30团守张家山"
+            }
+          ]
+        },
+        {
+          "phase_id": "zhangjiashan_june28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "HY_LOCAL",
+              "locator": "6月28日至7月14日第30团守张家山"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.zhangjiashan_attack",
+      "name": "日军张家山攻击部队（下级番号未核）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "攻击部队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "HY_LOCAL",
+          "locator": "张家山连续遭日军攻击；材料未给该轴线逐日下级番号"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "HY_LOCAL",
+              "locator": "张家山连续遭日军攻击；材料未给该轴线逐日下级番号"
+            }
+          ]
+        },
+        {
+          "phase_id": "zhangjiashan_june28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "HY_LOCAL",
+              "locator": "张家山连续遭日军攻击；材料未给该轴线逐日下级番号"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "unit_updates",
+    "orders"
+  ],
+  "description": "完整候选效果；不是观察快照。unit_updates和各收支账用unit选择精确编组，勿附team/name/unit_name等观察字段。结构通过后仍完整校验世界、命令、物资、火力、时钟和目标。",
+  "properties": {
+    "unit_updates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "unit": {
+            "type": "string",
+            "minLength": 1,
+            "description": "当前编组精确名称。选择字段只能叫unit，不用name/unit_name，不在更新行填写team。"
+          },
+          "lat": {
+            "type": "number"
+          },
+          "lng": {
+            "type": "number"
+          },
+          "hp": {
+            "type": "number"
+          },
+          "personnel": {
+            "type": "object",
+            "properties": {
+              "current": {
+                "type": "integer"
+              },
+              "casualties": {
+                "type": "integer"
+              },
+              "noncombat_losses": {
+                "type": "integer"
+              },
+              "killed": {
+                "type": "integer"
+              },
+              "wounded": {
+                "type": "integer"
+              },
+              "missing": {
+                "type": "integer"
+              },
+              "captured": {
+                "type": "integer"
+              }
+            },
+            "additionalProperties": true
+          },
+          "equipment": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "category"
+              ],
+              "additionalProperties": true
+            }
+          },
+          "logistics": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "formation": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "fatigue": {
+                "type": "integer",
+                "description": "0至100整数；沿用编组状态校验，不将浮点自动取整。"
+              },
+              "suppression": {
+                "type": "integer",
+                "description": "0至100整数；沿用编组状态校验，不将浮点自动取整。"
+              },
+              "entrenchment": {
+                "type": "integer",
+                "description": "0至100整数；沿用编组状态校验，不将浮点自动取整。"
+              },
+              "signal": {
+                "type": "integer",
+                "description": "0至100整数；沿用编组状态校验，不将浮点自动取整。"
+              }
+            }
+          },
+          "morale": {
+            "type": "number"
+          },
+          "supply": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string"
+          },
+          "crossing": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "sustainment": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "required": [
+          "unit"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "orders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "unit": {
+            "type": "string",
+            "minLength": 1,
+            "description": "当前编组精确名称。选择字段只能叫unit，不用name/unit_name，不在更新行填写team。"
+          },
+          "action": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "lat": {
+            "type": "number"
+          },
+          "lng": {
+            "type": "number"
+          },
+          "air_pool": {
+            "type": "string"
+          },
+          "participation": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "required": [
+          "unit",
+          "action"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "resource_ledger": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "unit": {
+                "type": "string",
+                "minLength": 1,
+                "description": "当前编组精确名称。选择字段只能叫unit，不用name/unit_name，不在更新行填写team。"
+              },
+              "delivery": {
+                "type": "number"
+              },
+              "food_spent": {
+                "type": "number"
+              },
+              "ammo_spent": {
+                "type": "number"
+              },
+              "food_received": {
+                "type": "number"
+              },
+              "ammo_received": {
+                "type": "number"
+              },
+              "supply_status": {
+                "type": "string",
+                "enum": [
+                  "未切断",
+                  "已切断",
+                  "未知"
+                ]
+              },
+              "received": {
+                "type": "object",
+                "additionalProperties": true
+              },
+              "spent": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            },
+            "required": [
+              "unit",
+              "delivery",
+              "food_spent",
+              "ammo_spent",
+              "supply_status",
+              "received",
+              "spent"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "version",
+        "units"
+      ],
+      "additionalProperties": false
+    },
+    "fire_ledger": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "unit": {
+                "type": "string",
+                "minLength": 1,
+                "description": "当前编组精确名称。选择字段只能叫unit，不用name/unit_name，不在更新行填写team。"
+              },
+              "delay_s": {
+                "type": "number"
+              },
+              "active_fire_s": {
+                "type": "number"
+              },
+              "reload_remaining_s": {
+                "type": "number"
+              },
+              "action": {
+                "type": "string"
+              },
+              "target": {
+                "type": "string"
+              },
+              "first_fire_s": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "last_fire_s": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "fire_cycles": {
+                "type": "integer"
+              },
+              "stop_reason": {
+                "type": "string"
+              },
+              "assumptions": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "unit",
+              "action",
+              "target",
+              "delay_s",
+              "first_fire_s",
+              "last_fire_s",
+              "fire_cycles",
+              "active_fire_s",
+              "reload_remaining_s",
+              "stop_reason",
+              "assumptions"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "version",
+        "units"
+      ],
+      "additionalProperties": false
+    },
+    "sustainment_ledger": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "unit": {
+                "type": "string",
+                "minLength": 1,
+                "description": "当前编组精确名称。选择字段只能叫unit，不用name/unit_name，不在更新行填写team。"
+              },
+              "demand": {
+                "type": "number"
+              },
+              "consumed": {
+                "type": "number"
+              },
+              "unmet": {
+                "type": "number"
+              },
+              "shortage_hours": {
+                "type": "number"
+              },
+              "noncombat_remainder": {
+                "type": "number"
+              },
+              "fatigue_floor": {
+                "type": "number"
+              },
+              "noncombat_delta": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "unit"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "version",
+        "units"
+      ],
+      "additionalProperties": false
+    },
+    "supply_schedule_ledger": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "unit": {
+                "type": "string",
+                "minLength": 1,
+                "description": "当前编组精确名称。选择字段只能叫unit，不用name/unit_name，不在更新行填写team。"
+              },
+              "events": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            },
+            "required": [
+              "unit",
+              "events"
+            ],
+            "additionalProperties": true
+          }
+        }
+      },
+      "required": [
+        "version",
+        "units"
+      ],
+      "additionalProperties": false
+    },
+    "engagements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "supply_nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "combined_arms": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "objective_state": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "aviation": {},
+    "campaign": {},
+    "report": {},
+    "source_note": {}
+  }
+}

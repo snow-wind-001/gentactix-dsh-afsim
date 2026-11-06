@@ -1,0 +1,975 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ03-pingxingguan",
+  "version": "1.0.0",
+  "battle": "抗日战争-平型关伏击战-1937.09.25",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "整理乔沟地面伏击四个主力/预备团与两支日军辎重队；外围阻援保留场外参考，日机保留后续参考。",
+      "未掌握全部配属、外围日军番号、逐单位人数、武器库存和精确部署；不能代表完整平型关防御战。",
+      "地面计算窗口到13时，未绑定的航空过程不能静默越过。",
+      "现代POI只作粗区域约束，不把纪念碑或灵丘县城当作部队阵地。"
+    ]
+  },
+  "sources": {
+    "PXG_DEPLOY": {
+      "title": "八路军于平型关首战告捷",
+      "url": "https://www.pgm.org.cn/pgm/xxdt/202108/37d69929c37c425f956438806a97b89b.shtml",
+      "publisher": "文化和旅游部恭王府博物馆转载学习强国",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开作战部署叙述，非逐份原始命令；团级部署与战果不能反推精确人数。"
+    },
+    "PXG_JAPAN": {
+      "title": "平型关：板垣“钢军”的绝望深谷",
+      "url": "https://dangshi.people.com.cn/n/2015/0807/c85037-27427094.html",
+      "publisher": "解放军报／人民网",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "报道引用日方资料辨识两支辎重队；中队番号及人数有不同考证，未逐页核原件，不将报道编制数当实到数。"
+    },
+    "PXG_SITE": {
+      "title": "平型关大捷景区",
+      "url": "https://www.lingqiu.gov.cn/lqxrmzfz/lyggn/202307/090372e440934f5d91dc830fe983c05f.shtml",
+      "publisher": "灵丘县人民政府",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "当代遗址介绍，证明乔沟、老爷庙和指挥所相对关系；不能证明现代道路等同1937年路线。"
+    },
+    "PXG_MAP": {
+      "title": "平型关大捷纪念碑",
+      "url": "https://www.amap.com/place/B0JRHCK412",
+      "publisher": "高德地图",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代POI原坐标为GCJ-02；39.34/113.98仅为粗区域参考，3公里工作误差包含坐标系差异，不是WGS84测量阵地。"
+    }
+  },
+  "phases": [
+    {
+      "id": "preparation",
+      "label": "战前动员与进入伏击区",
+      "date": {
+        "label": "1937年9月23日至24日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "PXG_DEPLOY",
+            "locator": "部署段：685截头、686分割、687断尾、688预备；独立团和骑兵营在灵丘外围阻援"
+          }
+        ]
+      },
+      "scope": "进入阵地过程；不把25日各团部署提前断言在23日已到场",
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "部署段：685截头、686分割、687断尾、688预备；独立团和骑兵营在灵丘外围阻援"
+        }
+      ]
+    },
+    {
+      "id": "qiaogou",
+      "label": "乔沟地面伏击：航空介入前窗口",
+      "date": {
+        "label": "1937-09-25",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "PXG_DEPLOY",
+            "locator": "部署段：685截头、686分割、687断尾、688预备；独立团和骑兵营在灵丘外围阻援"
+          }
+        ]
+      },
+      "scope": "地面主战场及预备队；外围阻援另保留参战参考。小时存在7时、8时等记载差异，不冒充统一校准时刻。",
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "部署段：685截头、686分割、687断尾、688预备；独立团和骑兵营在灵丘外围阻援"
+        }
+      ],
+      "execution_window": {
+        "end": "1937-09-25T13:00",
+        "kind": "model_scope_limit",
+        "note": "暂仅绑定公开叙述航空介入前的地面过程；13时是该叙述的分界而非统一考证时刻，不能越过后静默遗漏航空。",
+        "evidence": [
+          {
+            "source_id": "PXG_DEPLOY",
+            "locator": "过程段：约13时出现飞机支援，当前未绑定航空资源"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.division115",
+      "name": "八路军第115师指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "师长林彪、副师长聂荣臻组织部署"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "师长林彪、副师长聂荣臻组织部署"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "师长林彪、副师长聂荣臻组织部署"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.brigade343",
+      "name": "八路军第343旅指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "旅",
+      "parent_id": "ww2.cn.division115",
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "343旅两个团主攻，344旅687团与688团分别受领任务"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "343旅两个团主攻，344旅687团与688团分别受领任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "343旅两个团主攻，344旅687团与688团分别受领任务"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.brigade344",
+      "name": "八路军第344旅指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "旅",
+      "parent_id": "ww2.cn.division115",
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "343旅两个团主攻，344旅687团与688团分别受领任务"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "343旅两个团主攻，344旅687团与688团分别受领任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "343旅两个团主攻，344旅687团与688团分别受领任务"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.regiment685",
+      "name": "八路军第685团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.brigade343",
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "关沟至老爷庙以南高地截头并阻回援"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "关沟至老爷庙以南高地截头并阻回援"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "关沟至老爷庙以南高地截头并阻回援"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.regiment686",
+      "name": "八路军第686团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.brigade343",
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "老爷庙至小寨以南高地分割公路纵队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "老爷庙至小寨以南高地分割公路纵队"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "老爷庙至小寨以南高地分割公路纵队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": {
+            "kind": "deployment_area_reference",
+            "lat": 39.34,
+            "lng": 113.98,
+            "uncertainty_km": 3,
+            "phase_id": "qiaogou"
+          },
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "老爷庙至小寨以南高地分割公路纵队"
+            },
+            {
+              "source_id": "PXG_SITE",
+              "locator": "686团指挥所附近山坡下是乔沟，对面为老爷庙"
+            },
+            {
+              "source_id": "PXG_MAP",
+              "locator": "现代纪念碑POI约39.341260,113.978561；仅取两位小数并留3公里工作范围"
+            }
+          ],
+          "scope": "现代遗址附近粗区域；含坐标系差异及地名对应不确定性，不是686团精确历史坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.regiment687",
+      "name": "八路军第687团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.brigade344",
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "蔡家峪至西沟以南高地断尾阻援"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "蔡家峪至西沟以南高地断尾阻援"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "蔡家峪至西沟以南高地断尾阻援"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.regiment688",
+      "name": "八路军第688团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.brigade344",
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "东长城、黑山一带作为师预备队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "东长城、黑山一带作为师预备队"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "东长城、黑山一带作为师预备队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.115.independent",
+      "name": "八路军第115师独立团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.division115",
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "在灵丘、涞源、广灵方向活动，腰站阻援；不在本乔沟局部计算地域"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "在灵丘、涞源、广灵方向活动，腰站阻援；不在本乔沟局部计算地域"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "在灵丘、涞源、广灵方向活动，腰站阻援；不在本乔沟局部计算地域"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.115.cavalry",
+      "name": "八路军第115师骑兵营",
+      "team": "red",
+      "role": "formation",
+      "echelon": "营",
+      "parent_id": "ww2.cn.division115",
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "与独立团在灵丘外围阻援；不能把外围兵力叠入沟内"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "与独立团在灵丘外围阻援；不能把外围兵力叠入沟内"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "与独立团在灵丘外围阻援；不能把外围兵力叠入沟内"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.north_china",
+      "name": "日军华北方面军指挥机构",
+      "team": "blue",
+      "role": "command",
+      "echelon": "方面军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "PXG_JAPAN",
+          "locator": "第6兵站自动车队为兵站系统；不强归入第5师团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_JAPAN",
+              "locator": "第6兵站自动车队为兵站系统；不强归入第5师团"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PXG_JAPAN",
+              "locator": "第6兵站自动车队为兵站系统；不强归入第5师团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division5",
+      "name": "日军第5师团指挥部",
+      "team": "blue",
+      "role": "command",
+      "echelon": "师团",
+      "parent_id": "ww2.jp.north_china",
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "第5师团与第21旅团主线"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "第5师团与第21旅团主线"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "第5师团与第21旅团主线"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.brigade21",
+      "name": "日军第21旅团指挥部",
+      "team": "blue",
+      "role": "command",
+      "echelon": "旅团",
+      "parent_id": "ww2.jp.division5",
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "第21旅团及其后续、辎重部队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "第21旅团及其后续、辎重部队"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "第21旅团及其后续、辎重部队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.regiment21",
+      "name": "日军步兵第21联队指挥部",
+      "team": "blue",
+      "role": "command",
+      "echelon": "联队",
+      "parent_id": "ww2.jp.brigade21",
+      "evidence": [
+        {
+          "source_id": "PXG_JAPAN",
+          "locator": "步兵第21联队辎重队，不等同联队主力全部在沟内"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_JAPAN",
+              "locator": "步兵第21联队辎重队，不等同联队主力全部在沟内"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PXG_JAPAN",
+              "locator": "步兵第21联队辎重队，不等同联队主力全部在沟内"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.motor_transport6",
+      "name": "日军第6兵站自动车队乔沟部",
+      "team": "blue",
+      "role": "support",
+      "echelon": "车队",
+      "parent_id": "ww2.jp.north_china",
+      "evidence": [
+        {
+          "source_id": "PXG_JAPAN",
+          "locator": "两支遭伏击部队之一；实际搭载、伤员与中队编号仍有争议"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_JAPAN",
+              "locator": "两支遭伏击部队之一；实际搭载、伤员与中队编号仍有争议"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PXG_JAPAN",
+              "locator": "两支遭伏击部队之一；实际搭载、伤员与中队编号仍有争议"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.regiment21.train",
+      "name": "日军步兵第21联队辎重部",
+      "team": "blue",
+      "role": "support",
+      "echelon": "辎重队",
+      "parent_id": "ww2.jp.regiment21",
+      "evidence": [
+        {
+          "source_id": "PXG_JAPAN",
+          "locator": "运送粮弹衣物的大小行李及护送兵；随行夫役身份人数不能计作已确证战斗兵"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_JAPAN",
+              "locator": "运送粮弹衣物的大小行李及护送兵；随行夫役身份人数不能计作已确证战斗兵"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PXG_JAPAN",
+              "locator": "运送粮弹衣物的大小行李及护送兵；随行夫役身份人数不能计作已确证战斗兵"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.qiaogou.air_reference",
+      "name": "乔沟援战日机（部队番号未载）",
+      "team": "blue",
+      "role": "aviation",
+      "echelon": "航空参战参考",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "PXG_DEPLOY",
+          "locator": "约13时叙述有飞机援战；仅保留参战参考，不虚构航空番号或加载固定教学飞机池"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "preparation",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "约13时叙述有飞机援战；仅保留参战参考，不虚构航空番号或加载固定教学飞机池"
+            }
+          ]
+        },
+        {
+          "phase_id": "qiaogou",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "PXG_DEPLOY",
+              "locator": "约13时叙述有飞机援战；仅保留参战参考，不虚构航空番号或加载固定教学飞机池"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段逐单位实到人数；不由全师总数摊分"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用装备与库存；不按番号默认配坦克或炮兵"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺已配准的1937年单位阵地坐标"
+        }
+      }
+    }
+  ]
+}

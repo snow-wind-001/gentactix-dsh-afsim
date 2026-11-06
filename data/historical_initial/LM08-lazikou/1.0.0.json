@@ -1,0 +1,244 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "LM08-lazikou",
+  "version": "1.0.0",
+  "battle": "红军长征-腊子口战斗-1935.09.16至1935.09.17",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "有出处的阶段参战身份，不是完整战斗序列。未知实到人数、装备与部队坐标留空；计算值必须单独说明估计依据。",
+      "战役总伤亡、出发兵力和战后残部不能替代阶段初态；不得按回合平摊伤亡或固定史实结局。",
+      "守军只核到鲁大昌新编第14师守备部，不填未经核定的营番号。",
+      "腊子口镇不是峡口木桥；原草稿103.50°E不可沿用。十五人迂回分队不当成全团人数或额外增兵。"
+    ]
+  },
+  "sources": {
+    "XINHUA": {
+      "title": "攻克腊子口天险 打通红军北上通道",
+      "url": "https://www.xinhuanet.com/politics/2019-08/16/c_1124885996.htm",
+      "publisher": "新华社，梁军、王若辰，2019-08-16",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "公开回顾，未核原始名册、逐时命令及实到兵力；仅支持所列身份与过程。"
+    },
+    "GEO_lazikou": {
+      "title": "红军长征-腊子口镇",
+      "url": "https://www.geonames.org/1804264/",
+      "publisher": "GeoNames；项目2026-10-22地名核验",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代聚落点。不是历史渡口、桥面或阵地；计算半径与部署是模型假设。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "腊子口过程参考",
+      "date": {
+        "label": "1935年9月16日至17日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "XINHUA",
+            "locator": "夜攻、正面牵制、攀崖与突破"
+          }
+        ]
+      },
+      "scope": "腊子口过程参考",
+      "evidence": [
+        {
+          "source_id": "XINHUA",
+          "locator": "夜攻、正面牵制、攀崖与突破"
+        }
+      ]
+    },
+    {
+      "id": "night_assault",
+      "label": "腊子口夜间攻坚",
+      "date": {
+        "label": "1935年9月16日至17日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "XINHUA",
+            "locator": "16日晚进攻至17日突破"
+          }
+        ]
+      },
+      "scope": "比较正面压制与侧后机动；18时为夜间窗口离散化估计。二维通行模型未证明悬崖可攀。",
+      "evidence": [
+        {
+          "source_id": "XINHUA",
+          "locator": "16日晚进攻至17日突破"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 34.06634,
+          "lng": 103.89402
+        },
+        "radius_km": 25,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_lazikou",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1935-09-16T18:00",
+        "end": "1935-09-17T12:00",
+        "kind": "model_scope_limit",
+        "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。",
+        "evidence": [
+          {
+            "source_id": "XINHUA",
+            "locator": "16日晚进攻至17日突破"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "lz.red.reg4",
+      "name": "红4团腊子口参战部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XINHUA",
+          "locator": "红4团与迂回突击队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XINHUA",
+              "locator": "红4团与迂回突击队"
+            }
+          ]
+        },
+        {
+          "phase_id": "night_assault",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XINHUA",
+              "locator": "红4团与迂回突击队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "XINHUA",
+              "locator": "红4团与迂回突击队"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "XINHUA",
+              "locator": "红4团与迂回突击队"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "XINHUA",
+              "locator": "红4团与迂回突击队"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "lz.blue.div14",
+      "name": "鲁大昌新编第14师腊子口守备部",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师属守备部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XINHUA",
+          "locator": "新编第14师调兵守隘，未核各营实到"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XINHUA",
+              "locator": "新编第14师调兵守隘，未核各营实到"
+            }
+          ]
+        },
+        {
+          "phase_id": "night_assault",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XINHUA",
+              "locator": "新编第14师调兵守隘，未核各营实到"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "XINHUA",
+              "locator": "新编第14师调兵守隘，未核各营实到"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "XINHUA",
+              "locator": "新编第14师调兵守隘，未核各营实到"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "XINHUA",
+              "locator": "新编第14师调兵守隘，未核各营实到"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    }
+  ]
+}

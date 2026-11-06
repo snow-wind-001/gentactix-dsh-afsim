@@ -1,0 +1,596 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "KW09-summer1953",
+  "version": "1.0.0",
+  "battle": "抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "5—7月总战役与金城子战役不混用；当前只登记13日晚白虎团方向穿插地面单位。",
+      "两支真实突击分队保留实际层级，不以泛称红方代表旅替代；全战役炮弹、土地及损失不能成为本局固定配额。",
+      "公开资料身份、参战和工作范围不等于实到人数、完好装备或精确部署已核。来源原始档案未逐件查验，缺载事实保持null。",
+      "仅登记的地面局部阶段可另填计算参数；未完成全战役航空、海军、坑道、冻伤或跨阶段增援模型，不把缺项静默换成普通步兵。"
+    ]
+  },
+  "sources": {
+    "KW9_CN": {
+      "title": "金城战役：一场准且狠的虎口掏心战",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4843489.html?big=fan",
+      "publisher": "国防部公开战例，2019",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "记203师609团2营与607团侦察班穿插，敌为首都师1团；侦察班12名是叙述，不能把营、班及全师相加。"
+    },
+    "KW9_OVERVIEW": {
+      "title": "抗美援朝战争收局之战：金城战役",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/16235847.html",
+      "publisher": "国防部转载军史，2023",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "总战役、分集团和局部行动不同层级；部分对先头连、侦察班表述与战例有粒度差别。"
+    },
+    "KW9_US": {
+      "title": "Truce Tent and Fighting Front,ChapterXXI:The Last Offensive",
+      "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/korea/truce/ch21.htm",
+      "publisher": "美国陆军官方军史，哥廷根镜像",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "金城攻势及477—478页月度统计在21章；22章Finale是停战谈判，不能互换。月度敌损估计不是本方自报或白虎团局部损失。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "战役参战参考（非同日部署）",
+      "date": {
+        "label": "1953年5月13日至7月27日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "KW9_CN",
+            "locator": "战役范围与过程"
+          }
+        ]
+      },
+      "scope": "累计参战身份参考，不能作为同一时刻战斗部署。",
+      "evidence": [
+        {
+          "source_id": "KW9_CN",
+          "locator": "战役范围与过程"
+        }
+      ]
+    },
+    {
+      "id": "white_tiger_july13",
+      "label": "金城西集团：白虎团方向穿插",
+      "date": {
+        "label": "1953-07-13",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "KW9_CN",
+            "locator": "203师609团2营与607团侦察班穿插"
+          }
+        ]
+      },
+      "scope": "工作地域为金城以西突出部，不以首都山同名字样证明团部精确坐标；潜入、指挥中断与全部炮火准备尚未完整建模。",
+      "evidence": [
+        {
+          "source_id": "KW9_CN",
+          "locator": "203师609团2营与607团侦察班穿插"
+        }
+      ],
+      "execution_window": {
+        "start": "1953-07-13T21:00",
+        "end": "1953-07-14T01:00",
+        "kind": "model_scope_limit",
+        "note": "钟点窗口为局部模型边界；史料未载的分钟不视为历史准确时刻。工作地域为金城以西突出部，不以首都山同名字样证明团部精确坐标；潜入、指挥中断与全部炮火准备尚未完整建模。",
+        "evidence": [
+          {
+            "source_id": "KW9_CN",
+            "locator": "203师609团2营与607团侦察班穿插"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 38.4,
+          "lng": 127.55
+        },
+        "radius_km": 25,
+        "kind": "model_scope_limit",
+        "note": "既有地名/地形参考与人为工作半径，不是历史部队点位或测绘边界。工作地域为金城以西突出部，不以首都山同名字样证明团部精确坐标；潜入、指挥中断与全部炮火准备尚未完整建模。",
+        "evidence": [
+          {
+            "source_id": "KW9_CN",
+            "locator": "203师609团2营与607团侦察班穿插"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "kw.cn.corps68",
+      "name": "志愿军第68军",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW9_CN",
+          "locator": "68军203师右翼"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "68军203师右翼"
+            }
+          ]
+        },
+        {
+          "phase_id": "white_tiger_july13",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "68军203师右翼"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.division203",
+      "name": "志愿军第203师",
+      "team": "red",
+      "role": "command",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps68",
+      "evidence": [
+        {
+          "source_id": "KW9_CN",
+          "locator": "203师组织穿插"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "203师组织穿插"
+            }
+          ]
+        },
+        {
+          "phase_id": "white_tiger_july13",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "203师组织穿插"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.regiment609",
+      "name": "志愿军第609团",
+      "team": "red",
+      "role": "command",
+      "echelon": "团",
+      "parent_id": "kw.cn.division203",
+      "evidence": [
+        {
+          "source_id": "KW9_CN",
+          "locator": "609团2营"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "609团2营"
+            }
+          ]
+        },
+        {
+          "phase_id": "white_tiger_july13",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "609团2营"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.regiment609.battalion2",
+      "name": "志愿军第609团第2营",
+      "team": "red",
+      "role": "formation",
+      "echelon": "营",
+      "parent_id": "kw.cn.regiment609",
+      "evidence": [
+        {
+          "source_id": "KW9_CN",
+          "locator": "穿插分队主要部队"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "穿插分队主要部队"
+            }
+          ]
+        },
+        {
+          "phase_id": "white_tiger_july13",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "穿插分队主要部队"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.regiment607",
+      "name": "志愿军第607团",
+      "team": "red",
+      "role": "command",
+      "echelon": "团",
+      "parent_id": "kw.cn.division203",
+      "evidence": [
+        {
+          "source_id": "KW9_CN",
+          "locator": "607团侦察班"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "607团侦察班"
+            }
+          ]
+        },
+        {
+          "phase_id": "white_tiger_july13",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "607团侦察班"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.regiment607.recon_squad",
+      "name": "志愿军第607团侦察班",
+      "team": "red",
+      "role": "formation",
+      "echelon": "侦察班",
+      "parent_id": "kw.cn.regiment607",
+      "evidence": [
+        {
+          "source_id": "KW9_CN",
+          "locator": "杨育才率侦察班"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "来源称率12名侦察兵；是否含带队人员须核原始记录，不当成精确全班实到数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "杨育才率侦察班"
+            }
+          ]
+        },
+        {
+          "phase_id": "white_tiger_july13",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "杨育才率侦察班"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.rok.capital_division",
+      "name": "韩军首都师",
+      "team": "blue",
+      "role": "command",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW9_CN",
+          "locator": "203师正面敌"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "203师正面敌"
+            }
+          ]
+        },
+        {
+          "phase_id": "white_tiger_july13",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "203师正面敌"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.rok.capital.regiment1",
+      "name": "韩军首都师第1团（白虎团）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "kw.rok.capital_division",
+      "evidence": [
+        {
+          "source_id": "KW9_CN",
+          "locator": "白虎团及指挥所",
+          "note": "包括该团地面部队的聚合参数，不把指挥所全部人员当成全团总量。"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "白虎团及指挥所",
+              "note": "包括该团地面部队的聚合参数，不把指挥所全部人员当成全团总量。"
+            }
+          ]
+        },
+        {
+          "phase_id": "white_tiger_july13",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "白虎团及指挥所",
+              "note": "包括该团地面部队的聚合参数，不把指挥所全部人员当成全团总量。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.us.artillery555",
+      "name": "美第555榴弹炮兵营",
+      "team": "blue",
+      "role": "support",
+      "echelon": "营",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW9_CN",
+          "locator": "文中支援参考，未核该夜实际位置和全部支援过程"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "文中支援参考，未核该夜实际位置和全部支援过程"
+            }
+          ]
+        },
+        {
+          "phase_id": "white_tiger_july13",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW9_CN",
+              "locator": "文中支援参考，未核该夜实际位置和全部支援过程"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

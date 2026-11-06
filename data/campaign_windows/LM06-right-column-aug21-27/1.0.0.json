@@ -1,0 +1,180 @@
+{
+  "format": "gentactix-campaign-window-1",
+  "id": "LM06-right-column-aug21-27",
+  "version": "1.0.0",
+  "label": "长征右路军：8月21—27日四军草地转移",
+  "battle": "红军长征-懋功会师与雪山草地转移-1935.06.12至1935.09.12",
+  "historical_initial": {
+    "profile_id": "LM06-maogong",
+    "version": "1.1.0",
+    "definition_hash": "65bc999c9ae09dc52625a0529b802d13f4ef8148f0b6dc30ae7c5a3e5e0c1237"
+  },
+  "start_phase_id": "right_column_grassland",
+  "phase_ids": [
+    "right_column_grassland"
+  ],
+  "bounds": {
+    "start": "1935-08-21T00:00",
+    "end": "1935-08-28T00:00",
+    "kind": "model_scope_limit",
+    "note": "8月21—27日来源过程的计算范围；零时和末日边界为离散化估计，不是逐军出发/抵达钟点。开放模式按目标可延伸，不能据此补造包座敌军或战果。"
+  },
+  "units": {
+    "mg.red.army1": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "只计算该军所声明投入载荷；未核下级与余部，不能宣称完整军实力。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "LM06-Aug21-depart",
+        "LM06-Aug27-baxi"
+      ],
+      "operational_reference": "LM06-right-command-1",
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "右路军四个军的编成"
+        }
+      ]
+    },
+    "mg.red.army3": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "只计算该军所声明投入载荷；未核下级与余部，不能宣称完整军实力。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "LM06-Aug21-depart",
+        "LM06-Aug27-baxi"
+      ],
+      "operational_reference": "LM06-right-command-2",
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "右路军四个军的编成"
+        }
+      ]
+    },
+    "mg.red.army4": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "只计算该军所声明投入载荷；未核下级与余部，不能宣称完整军实力。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "LM06-Aug21-depart",
+        "LM06-Aug27-baxi"
+      ],
+      "operational_reference": "LM06-right-command-3",
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "右路军四个军的编成"
+        }
+      ]
+    },
+    "mg.red.army30": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "只计算该军所声明投入载荷；未核下级与余部，不能宣称完整军实力。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "LM06-Aug21-depart",
+        "LM06-Aug27-baxi"
+      ],
+      "operational_reference": "LM06-right-command-4",
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "右路军四个军的编成"
+        }
+      ]
+    },
+    "mg.red.front1": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "指挥参考，不投入人员、库存或单独步兵实体。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+        }
+      ]
+    },
+    "mg.red.front4": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "指挥参考，不投入人员、库存或单独步兵实体。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+        }
+      ]
+    },
+    "mg.red.right_column": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "指挥参考，不投入人员、库存或单独步兵实体。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "LM06-Aug21-depart",
+        "LM06-Aug27-baxi"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+        }
+      ]
+    }
+  },
+  "sectors": [
+    {
+      "id": "right-column-route",
+      "label": "毛儿盖—草地—巴西方向参考",
+      "position": null,
+      "unit_ids": [
+        "mg.red.army1",
+        "mg.red.army3",
+        "mg.red.army4",
+        "mg.red.army30"
+      ],
+      "operation_ids": [
+        "LM06-Aug21-depart",
+        "LM06-Aug27-baxi"
+      ],
+      "evidence": [
+        {
+          "source_id": "CROSS",
+          "locator": "8月21日出发、8月下旬到达班佑方向"
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "operation_id": "LM06-Aug21-depart",
+      "phase_id": "right_column_grassland",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "LM06-Aug27-baxi",
+      "phase_id": "right_column_grassland",
+      "policy": "reference_only"
+    }
+  ],
+  "limitations": "仅四军转移计算窗口，非整个长征或完整右路军编制；不生成蓝方敌军。人数、装备、出发位置、路线、实到时点、补给与保存阈值均未逐军标定，须显式估计。历史节点是资料参考，开放推演不强迫按日期移动；回溯资料亦不把估计路线冒称史实。"
+}

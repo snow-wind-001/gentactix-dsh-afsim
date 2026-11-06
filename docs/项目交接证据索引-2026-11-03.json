@@ -1,0 +1,347 @@
+{
+  "format": "gentactix-handoff-evidence-1",
+  "created_at": "2026-11-03T16:20:58.524059+08:00",
+  "timezone": "Asia/Shanghai",
+  "repository": "/home/spikebai/gitcode/Gentactix",
+  "handoff_document": "docs/项目交接说明-2026-11-03.md",
+  "scope": {
+    "documentation_only": true,
+    "production_code_changed_by_handoff": false,
+    "configuration_values_read": false,
+    "services_started_stopped_or_restarted_by_handoff": false,
+    "simulation_advanced_by_handoff": false,
+    "live_model_calls_by_handoff": false,
+    "tests_or_build_rerun_by_handoff": false,
+    "installed_or_uploaded_by_handoff": false
+  },
+  "original_goal": {
+    "active": true,
+    "complete": false,
+    "scenario_count": 45,
+    "full_history_mode_engine_cells": 270,
+    "full_history_cells_accepted": false
+  },
+  "worktree_before_handoff": {
+    "branch": "main",
+    "head": "b5a38a5",
+    "tracked_modified_entries": 131,
+    "untracked_entries": 950,
+    "counts_are_entries_not_recursive_file_count": true,
+    "head_does_not_capture_current_work": true
+  },
+  "runtime_observation": {
+    "first_checked_at": "2026-11-03T16:16:12+08:00",
+    "rechecked_at": "2026-11-03T16:20:58.524059+08:00",
+    "ports": {
+      "8700": {
+        "listening": false,
+        "initial_http": "connection_refused"
+      },
+      "19348": {
+        "listening": false,
+        "initial_http": "connection_refused"
+      },
+      "19349": {
+        "listening": false,
+        "initial_http": "connection_refused"
+      }
+    },
+    "historical_qa_ports_are_not_current_live_services": true,
+    "whole_machine_runtime_audited": false,
+    "frontend_static_fallback_api_port": 8700
+  },
+  "environment": {
+    "tested_python_environment": ".cache/qa/release-v3.2.0/venv",
+    "installed_sdk": "0.2.1rc5",
+    "installed_runtime_bin": "0.2.1rc5",
+    "requirements_dsh_sdk": "0.2.1rc2",
+    "requirements_dsh_runtime_bin": "0.2.1rc2",
+    "frontend_source_version": "3.7.2",
+    "installed_application_version_verified": false
+  },
+  "current_source_check": {
+    "freeze_path": ".cache/qa/personnel-rations-2026-11-03/stable-source-freeze.json",
+    "checked_files": 106,
+    "changed_files": [],
+    "entire_worktree_freeze": false
+  },
+  "fresh_catalogue": {
+    "scenarios": 45,
+    "source_versions": 58,
+    "latest_reference_units": 611,
+    "latest_phases": 114,
+    "latest_non_null_unit_historical_facts": {
+      "personnel": 0,
+      "equipment": 0,
+      "position": 1
+    },
+    "complete_oob_opening_strength_flags_all_true": 0,
+    "distinct_campaign_windows": 2,
+    "campaign_window_versions": 7,
+    "counts_do_not_prove_historical_acceptance": true
+  },
+  "recorded_validation": {
+    "report": "docs/按人员耗粮与运输质量一致性验收-2026-11-03.md",
+    "evidence": ".cache/qa/personnel-rations-2026-11-03",
+    "status": "PROGRESS",
+    "model_version": "personnel-rations-1",
+    "default_unchanged": true,
+    "new_regressions": 16,
+    "related": {
+      "groups": 8,
+      "cases": 118,
+      "overlapping_not_additive": true
+    },
+    "full_gate": {
+      "groups": 166,
+      "cases": 1967,
+      "failed": 0,
+      "skipped": 0,
+      "sum_seconds": 1100.84,
+      "final_source_same_snapshot": true
+    },
+    "source_freeze_files": 106,
+    "actual_afsim_cases": 5,
+    "frontend_checks": {
+      "edit_init": 18,
+      "accepted_turns": [
+        21,
+        21
+      ],
+      "post_cold_readonly": 12
+    },
+    "actual_dsh": {
+      "source_session": "2c51981789fd",
+      "source_turn1_ms": 93733,
+      "source_turn2_failed_ms": 540924,
+      "independent_session": "4658af78f14f",
+      "independent_turn2_ms": 181134,
+      "native_unit_decisions_committed": 2,
+      "permanent_completion_loop_fix": false,
+      "failed_source_unchanged": true
+    },
+    "physical_accounts_match_native": true,
+    "cold_restore_exact": true,
+    "post_cold_readonly_numeric_fields_passed": true,
+    "post_cold_full_explanation_accepted": false,
+    "estimated_personnel": 33500,
+    "estimated_engineer_resources": 1160,
+    "food_kg": [
+      7750,
+      1468.75,
+      0
+    ],
+    "original_goal_complete": false,
+    "complete_historical_cells_accepted": false,
+    "historical_calibration": false,
+    "uploaded": false,
+    "installed": false,
+    "next": [
+      "DSH native report completion phase/control",
+      "real from-zero new mass model generation",
+      "combat-loss and physical split/merge/phase transport continuity",
+      "historical ration and terrain/environment calibration",
+      "separate LM15 windows and further large campaigns"
+    ],
+    "post_cold_actual_readonly_ms": 31783,
+    "post_cold_runtime_ui_checks": 12,
+    "protected_old_files_unchanged": 72,
+    "previous_objective_binding_unchanged": true,
+    "source_cells_270_still_unaccepted": true
+  },
+  "highest_priority": {
+    "priority": "P0",
+    "problem": "DSH repeats successful preview/report tools until domain-step error",
+    "evidence": ".cache/qa/personnel-rations-2026-11-03/t2-failed-canonical.json",
+    "failed_operation_id": "02d5a17d79ac4fa6957177b4c83bc47c",
+    "approach": "Use existing DSH Agent tool visibility / supported runtime phase semantics; no new executor or world cache",
+    "tests": [
+      "failed reports retain authoring tools",
+      "accepted report proceeds to normal completion acknowledgement rather than repeated candidates",
+      "new operation restores original tools",
+      "unit/chat/scenario roles and global AFSIM controller unaffected",
+      "cancel/runtime error never commits",
+      "repeat actual source T2 without extra user finish instructions"
+    ],
+    "constraints": [
+      "do not accept finish_reason=error even with valid intermediate receipts",
+      "do not lower reasoning or limits or manually compact DSH",
+      "retain failed-source world and complete public evidence"
+    ],
+    "remaining_original_goal": [
+      "45-campaign data and full multilevel OOB",
+      "cross-stage/formation/resource/contact/combat source calibration",
+      "270 full historical cells remain unaccepted"
+    ]
+  },
+  "evidence_transfer": {
+    "cache_normally_git_ignored": true,
+    "this_index_is_not_a_backup": true,
+    "public_transfer_requires_secret_and_private_reasoning_review": true,
+    "do_not_rewrite_original_failures": true
+  },
+  "evidence_files": [
+    {
+      "path": "docs/按人员耗粮与运输质量一致性验收-2026-11-03.md",
+      "bytes": 8955,
+      "sha256": "3126f146e7d4331fb7933dbc66ef1e49ff658b22a413513269b492ac144bf99a",
+      "mtime_ns": 1793684713477885151
+    },
+    {
+      "path": "docs/长征原生配置生成与纯DSH过程验收-2026-11-03.md",
+      "bytes": 8296,
+      "sha256": "ad93d3f99896e7af489a6d08b8abb95edf9c87e4ebfc573e6a8eb0a8a19c151c",
+      "mtime_ns": 1793679775784371245
+    },
+    {
+      "path": "docs/长征多军转移窗口与原生会话续推验收-2026-11-03.md",
+      "bytes": 9168,
+      "sha256": "d1d075cc8798ed8606022cc497a45dabee98fe1d82e32a072424ee57d510411c",
+      "mtime_ns": 1793676771482854528
+    },
+    {
+      "path": "docs/会战级多层编制与分合兵改造规划-2026-10-31.md",
+      "bytes": 70858,
+      "sha256": "6f02ff97591aa7531f144a8490c7cbbe3a2b11daa22b9537d6e959621f438733",
+      "mtime_ns": 1793684713516883676
+    },
+    {
+      "path": "docs/会战级改造验收矩阵-2026-10-31.md",
+      "bytes": 74816,
+      "sha256": "7464b9092e4094a2987a924d14c4fb5b7b4cab4db296f42c340340959a100676",
+      "mtime_ns": 1793684713517883638
+    },
+    {
+      "path": "docs/会战级改造执行任务与检测基线-2026-11-01.json",
+      "bytes": 276668,
+      "sha256": "08359c76440a339604ee3d605dca151a73918a1d2bf61bdb6982f26864cfaa75",
+      "mtime_ns": 1793684999663359150
+    },
+    {
+      "path": "docs/会战级深度复核执行基线-2026-11-01.json",
+      "bytes": 119141,
+      "sha256": "85cef29f840f8b5274a32ce2bb9d5fd278beb8414b779c5447ac8cac6cd6373d",
+      "mtime_ns": 1793684999654359415
+    },
+    {
+      "path": "docs/会战级资料逐场清单-2026-10-31.csv",
+      "bytes": 133465,
+      "sha256": "07cfed02b9a986fd99357fd1398b852014842b61c777d2e11a2e454ab7e6e8ff",
+      "mtime_ns": 1793555849459688011
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/validation-summary.json",
+      "bytes": 1994,
+      "sha256": "bf774a3701ba911462b88e62327bdaf9827e0c53f75bdc151e5cc41b1512556c",
+      "mtime_ns": 1793684999649359563
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/stable-source-freeze.json",
+      "bytes": 11492,
+      "sha256": "baad08d2630bb1049e69e28dc8cd135a33f62db8b94e0fdb94c297e72a995e91",
+      "mtime_ns": 1793682487367901913
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/stable-gate/results.json",
+      "bytes": 44637,
+      "sha256": "383775f793ccb050f106a173e9140c2d447a02e9691be3f1fa1628342cbf0cea",
+      "mtime_ns": 1793683589498773015
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/next-native-completion-action.json",
+      "bytes": 1199,
+      "sha256": "3a2c7d6ebf4fb7501a55190d7b978e458adf67c3cc2c152248d88d6dd3c49e84",
+      "mtime_ns": 1793684999663359150
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/physical-parity-review.json",
+      "bytes": 925,
+      "sha256": "06babba84ecad69c52bcb2e48be52a4bc1a0f91658c6dceaaa1ed7c601e632e8",
+      "mtime_ns": 1793683924704410921
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/cold-review.json",
+      "bytes": 381,
+      "sha256": "7f8891ebb943f55e65e3557cf6ae053c0f877626e7a4c86ef2aa6b5a7b683bf9",
+      "mtime_ns": 1793684085195406241
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/readonly-analysis-review.json",
+      "bytes": 416,
+      "sha256": "4852223b383609df19e9f36aa5ee9e7d4c476203404b591658877128111c7e48",
+      "mtime_ns": 1793684387195747035
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/protected-current-review.json",
+      "bytes": 834,
+      "sha256": "eba55c3fa38b90aeb8b31661274f5da5b5baa188c197b14239fff7694762b3d7",
+      "mtime_ns": 1793682896646054980
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/native-r3/result.json",
+      "bytes": 9458,
+      "sha256": "de71d9ee2d4f8235ef65a71d4c73c0f371426af9eff780ae630854a865011da9",
+      "mtime_ns": 1793681384194712224
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/browser-r6/result.json",
+      "bytes": 1361,
+      "sha256": "b2b2729d6fdc3afc6fc664868d6cf3fa7cbdeaffa419e09222d70607f3f3aed7",
+      "mtime_ns": 1793682407852493739
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/readonly-browser/result.json",
+      "bytes": 632,
+      "sha256": "72d7df42c61939021f7067b6636dedcbdd8b1f94e672009b6b422b27a3fa4142",
+      "mtime_ns": 1793684478398002503
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/t1-canonical.json",
+      "bytes": 3004955,
+      "sha256": "0d491c486a22baf847423943aa04587a30f861050dbe4c79e20d7125809a803f",
+      "mtime_ns": 1793682675020618199
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/t2-failed-canonical.json",
+      "bytes": 3405111,
+      "sha256": "f195e6bc36ff90dfef4bb5f3b9f75bf47a123c978e448f02a6b5ac512388057f",
+      "mtime_ns": 1793683247534309163
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/t2-independent/final-canonical.json",
+      "bytes": 4231553,
+      "sha256": "e6d11e85708aa5b371697a013be074aa614a387e1fd430dc00c13b929c534e40",
+      "mtime_ns": 1793683853874372330
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/api/sessions/2c51981789fd.json",
+      "bytes": 1476924,
+      "sha256": "e24ce08c3d4dc4d69f19f4f247538a1169a8fa4bc1c12ae14cb339e0120b0b00",
+      "mtime_ns": 1793683225269050915
+    },
+    {
+      "path": ".cache/qa/personnel-rations-2026-11-03/api/sessions/4658af78f14f.json",
+      "bytes": 1566558,
+      "sha256": "13a9599645eb9674e6037fb7d4bb558707f2d6b6d4a8a4119e8c9d88d36a8e3f",
+      "mtime_ns": 1793684170801612600
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 3215,
+      "sha256": "7843b4d3d32b423430e97a840e273dc237f8db262b19208a1521e32bb4414be0",
+      "mtime_ns": 1792555387587313037
+    },
+    {
+      "path": "requirements-dsh.txt",
+      "bytes": 217,
+      "sha256": "2466e9f4a08075173f504dbb2cab0fd16053a548460900659aa2d35de2e58e50",
+      "mtime_ns": 1792601960391242091
+    },
+    {
+      "path": "frontend/package.json",
+      "bytes": 2344,
+      "sha256": "266372388e1b620c0d578c37b0be2e669ddb8daf6a6f993f39984a4a637a1335",
+      "mtime_ns": 1793342836046060503
+    }
+  ]
+}

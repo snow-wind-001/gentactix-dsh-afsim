@@ -1,0 +1,28 @@
+{
+  "components": [
+    {
+      "component": "afsim-skill",
+      "source": "https://github.com/qingzhoupro/afsim-skill",
+      "commit": "23db4fad241fb6a462bc0ca960cd56d8ebaa5f44",
+      "license": "MIT",
+      "license_file": "afsim-skill/LICENSE.md",
+      "modified": false
+    },
+    {
+      "component": "afsim-mcp",
+      "source": "https://github.com/Yookio-Z/AFSIM_MCP",
+      "commit": "cb7e3ae015e1149c0b27d560e5d8e720d8532be2",
+      "license": "MIT",
+      "license_file": "afsim-mcp/LICENSE",
+      "modified": false
+    },
+    {
+      "component": "AFSIM",
+      "source": "user-supplied local Windows archive",
+      "version": "2.9.0",
+      "runtime": "local/afsim/runtime/afsim-2.9.0-win64",
+      "redistribution": "not covered by MIT references; separate distribution conditions",
+      "public_repository_payload": false
+    }
+  ]
+}

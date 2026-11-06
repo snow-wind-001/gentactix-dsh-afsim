@@ -1,0 +1,31 @@
+async page=>{
+ const base='http://127.0.0.1:18988',checks=[];
+ const check=(ok,label)=>{if(!ok)throw Error(label);checks.push(label)};
+ const sessions=await(await page.request.get(base+'/api/sessions')).json(),sid=sessions.sessions[0].session_id;
+ const endpoint=base+'/api/sessions/'+sid;
+ const initial=await(await page.request.get(endpoint)).json();
+ const panel=page.getByTestId('command-panel');
+ const natural=panel.locator('details').filter({has:page.getByText('自然语言：单位／全局控制',{exact:true})});
+ if(await natural.getAttribute('open')===null)await natural.locator('summary').click();
+ await panel.getByLabel('指挥内容').fill('选中炮兵待命两回合，然后交回规划器。其余部队自行决策，不修改全军禁止射击开关。');
+ const resolved=page.waitForResponse(r=>r.url()===endpoint+'/commands/resolve'&&r.request().method()==='POST',{timeout:900000});
+ await panel.getByRole('button',{name:'DSH 解析为草稿',exact:true}).click();
+ const raw=await resolved,draft=await raw.json();check(raw.ok()&&draft.status==='draft','real DSH returned a confirmable draft');
+ await panel.locator('.proposal').waitFor();
+ check((await panel.locator('.proposal').innerText()).includes('持续至T+2结束 · 1944-03-05 02:50:00'),'proposal review shows exact cutoff and local time');
+ let view=await(await page.request.get(endpoint+'/commands')).json();check(view.orders.length===0,'draft has not silently entered queue');
+ await panel.getByRole('button',{name:'丢弃草稿',exact:true}).click();
+ await panel.getByLabel('指挥内容').fill('选中炮兵待命到1944-03-05 04:00，然后交回规划器。');
+ const timing=page.waitForResponse(r=>r.url()===endpoint+'/commands/resolve'&&r.request().method()==='POST',{timeout:900000});
+ await panel.getByRole('button',{name:'DSH 解析为草稿',exact:true}).click();
+ const response=await timing,clarified=await response.json();
+ check(response.ok()&&clarified.status!=='draft'&&clarified.clarifications.length>0,'non-boundary cutoff requires clarification');
+ await page.waitForFunction(()=>document.querySelector('.proposal')?.textContent.includes('需要澄清，未下令'));
+ check(await panel.getByRole('button',{name:'确认草稿并入队',exact:true}).isDisabled(),'unresolved time cannot be confirmed');
+ view=await(await page.request.get(endpoint+'/commands')).json();check(view.orders.length===0,'invalid time leaves queue empty');
+ const final=await(await page.request.get(endpoint)).json();
+ check(JSON.stringify(initial.war_state)===JSON.stringify(final.war_state),'both interpretations leave battlefield unchanged');
+ await panel.locator('.proposal').scrollIntoViewIfNeeded();
+ await page.screenshot({path:'.cache/qa/bounded-preparation-2026-10-29/browser/clarification.png'});
+ return {passed:true,checks,api_mocks:false,draft,clarified};
+}

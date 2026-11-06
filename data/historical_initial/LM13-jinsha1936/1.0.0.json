@@ -1,0 +1,512 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "LM13-jinsha1936",
+  "version": "1.0.0",
+  "battle": "红军长征-红二六军团抢渡金沙江-1936.04.25至1936.04.28",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "仅红4师第12团首夜起渡；公开叙述指出新筑碉堡无人驻守。其他渡口、后续军团和场外追兵不生成在场敌军；不是全军四天渡江复原。",
+      "仅绑定已核身份与阶段；实到人数、装备和阵地未载，保持null。",
+      "时钟、河线、岸点、容量、投入及后勤值须独立声明计算假设；没有核定的在场对手不虚构蓝方。",
+      "仅本地渡运，不覆盖场外追阻、其他渡口、后续增援、江流、沉船或全军分批调度与历史战损标定。"
+    ]
+  },
+  "sources": {
+    "JS36_MCT": {
+      "title": "彩旗飘扬迎红军 红旗直指金沙江",
+      "url": "https://zhuanti.mct.gov.cn/history_detail/776.html",
+      "publisher": "文化和旅游部，2021-09-29",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "机构公开历史回顾，未核战时原始命令及逐时名册；文内统计不作为局部人数、船舶容量或战损配额。"
+    },
+    "JS36_YN": {
+      "title": "追寻红色记忆 传承革命精神",
+      "url": "https://www.ynrd.gov.cn/html/2021/bainiandangshi_0512/12435.html",
+      "publisher": "云南日报／云南人大网，2021-05-12",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "机构公开历史回顾，未核战时原始命令及逐时名册；文内统计不作为局部人数、船舶容量或战损配额。；红4师抵石鼓时段与另一来源有差异，不据此编造准确钟点。"
+    },
+    "GEO": {
+      "title": "Shigu，GeoNames 1280006",
+      "url": "https://www.geonames.org/1280006/",
+      "publisher": "GeoNames",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "沿用已登记现代石鼓地名；未核木瓜寨具体历史泊岸，不能把镇中心当作渡口阵地。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "累计参战及关联部队参考（非同时到场）",
+      "date": {
+        "label": "1936.04.25至1936.04.28",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "JS36_MCT",
+            "locator": "第30—35段；红4师12团起渡与守备撤离"
+          }
+        ]
+      },
+      "scope": "保留其他方向和先后参战关系，不能整表部署。",
+      "evidence": [
+        {
+          "source_id": "JS36_MCT",
+          "locator": "第30—35段；红4师12团起渡与守备撤离"
+        }
+      ]
+    },
+    {
+      "id": "regiment12_apr25_night",
+      "label": "红12团木瓜寨首夜渡运（局部）",
+      "date": {
+        "label": "1936年4月25日至26日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "JS36_MCT",
+            "locator": "第30—35段；红4师12团起渡与守备撤离"
+          }
+        ]
+      },
+      "scope": "仅红4师第12团首夜起渡；公开叙述指出新筑碉堡无人驻守。其他渡口、后续军团和场外追兵不生成在场敌军；不是全军四天渡江复原。",
+      "evidence": [
+        {
+          "source_id": "JS36_MCT",
+          "locator": "第30—35段；红4师12团起渡与守备撤离"
+        }
+      ],
+      "interaction": {
+        "kind": "non_contact_transfer",
+        "active_teams": [
+          "red"
+        ],
+        "scope": "仅红4师第12团首夜起渡；公开叙述指出新筑碉堡无人驻守。其他渡口、后续军团和场外追兵不生成在场敌军；不是全军四天渡江复原。",
+        "evidence": [
+          {
+            "source_id": "JS36_MCT",
+            "locator": "第30—35段；红4师12团起渡与守备撤离"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1936-04-25T18:00",
+        "end": "1936-04-26T00:00",
+        "kind": "model_scope_limit",
+        "note": "夜间六小时为局部计算假设；起止钟点不是史实准确命令或渡完时刻。",
+        "evidence": [
+          {
+            "source_id": "JS36_MCT",
+            "locator": "第30—35段；红4师12团起渡与守备撤离"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 26.86852,
+          "lng": 99.95628
+        },
+        "radius_km": 8,
+        "kind": "model_scope_limit",
+        "note": "沿用已登记现代地名的8公里计算范围假设；不是历史岸线、渡口或单位阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO",
+            "locator": "已有地名索引及其不确定度"
+          }
+        ]
+      },
+      "process_requirements": [
+        {
+          "kind": "formation_crossing",
+          "scope": "须有渡运过程；不能以无河流占点冒充过江。",
+          "evidence": [
+            {
+              "source_id": "JS36_MCT",
+              "locator": "第30—35段；红4师12团起渡与守备撤离"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "lm.red.command26",
+      "name": "红二、六军团总指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "指挥机关",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JS36_MCT",
+          "locator": "第29、36段；统一指挥"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS36_MCT",
+              "locator": "第29、36段；统一指挥"
+            }
+          ]
+        },
+        {
+          "phase_id": "regiment12_apr25_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "JS36_MCT",
+              "locator": "第29、36段；统一指挥"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.corps2",
+      "name": "红2军团指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "军团",
+      "parent_id": "lm.red.command26",
+      "evidence": [
+        {
+          "source_id": "JS36_MCT",
+          "locator": "第27、30段；红4师先遣"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS36_MCT",
+              "locator": "第27、30段；红4师先遣"
+            }
+          ]
+        },
+        {
+          "phase_id": "regiment12_apr25_night",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "JS36_MCT",
+              "locator": "第27、30段；红4师先遣"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.division4.corps2",
+      "name": "红2军团第4师指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "师",
+      "parent_id": "lm.red.corps2",
+      "evidence": [
+        {
+          "source_id": "JS36_MCT",
+          "locator": "第30—32段；卢冬生指挥"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS36_MCT",
+              "locator": "第30—32段；卢冬生指挥"
+            }
+          ]
+        },
+        {
+          "phase_id": "regiment12_apr25_night",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "JS36_MCT",
+              "locator": "第30—32段；卢冬生指挥"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.regiment12.corps2",
+      "name": "红2军团第4师第12团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "lm.red.division4.corps2",
+      "evidence": [
+        {
+          "source_id": "JS36_MCT",
+          "locator": "第32段；木瓜寨起渡"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS36_MCT",
+              "locator": "第32段；木瓜寨起渡"
+            }
+          ]
+        },
+        {
+          "phase_id": "regiment12_apr25_night",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "JS36_MCT",
+              "locator": "第32段；木瓜寨起渡"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.corps6",
+      "name": "红6军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JS36_YN",
+          "locator": "云南人大第46段；后续到场"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS36_YN",
+              "locator": "云南人大第46段；后续到场"
+            }
+          ]
+        },
+        {
+          "phase_id": "regiment12_apr25_night",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "JS36_YN",
+              "locator": "云南人大第46段；后续到场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.division5.corps2",
+      "name": "红2军团第5师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "lm.red.corps2",
+      "evidence": [
+        {
+          "source_id": "JS36_MCT",
+          "locator": "第33段；士可渡口的另一路过程"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS36_MCT",
+              "locator": "第33段；士可渡口的另一路过程"
+            }
+          ]
+        },
+        {
+          "phase_id": "regiment12_apr25_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "JS36_MCT",
+              "locator": "第33段；士可渡口的另一路过程"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.kmt.jinsha1936_pursuit",
+      "name": "追击红二、六军团的部队（本来源未载当地番号）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "场外追击部队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JS36_MCT",
+          "locator": "第35—36段；追兵未列入首夜渡口"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS36_MCT",
+              "locator": "第35—36段；追兵未列入首夜渡口"
+            }
+          ]
+        },
+        {
+          "phase_id": "regiment12_apr25_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "JS36_MCT",
+              "locator": "第35—36段；追兵未列入首夜渡口"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+async page => {
+  const base='http://127.0.0.1:18900', out='.cache/qa/afsim-audit-20261027', checks=[], errors=[];
+  const assert=(ok,message)=>{if(!ok)throw new Error(message);checks.push(message);};
+  page.on('pageerror',e=>errors.push(String(e)));
+  await page.addInitScript(()=>{window.gentactix={backendUrl:'http://127.0.0.1:18900'};localStorage.removeItem('gentactix-session');});
+  await page.setViewportSize({width:1366,height:900}); await page.goto('http://127.0.0.1:18901/?afsim_audit='+Date.now());
+  await page.getByRole('textbox',{name:'搜索战役'}).fill('冀中');
+  await page.locator('.battle-option').first().click();
+  await page.getByRole('button',{name:/继续配置/}).click();
+  await page.getByTestId('execution-backend').selectOption('afsim');
+  await page.locator('#draft-mission').selectOption('AJ15-local-v1');
+  assert(await page.getByText('初始化和每回合会自动生成并载入AFSIM场景',{exact:false}).isVisible(),'automatic import is explained before starting');
+  await page.getByRole('checkbox',{name:/本地史料约束/}).uncheck();
+  const initReady=page.waitForResponse(r=>r.url().endsWith('/init'),{timeout:90000});
+  await page.getByRole('button',{name:'创建并进入推演',exact:true}).click();
+  const init=await initReady, initial=await init.json();
+  assert(init.ok() && initial.afsim.phase==='initial_state_validation','UI creation loads the actual external engine');
+  const path=base+'/api/sessions/'+initial.session_id;
+  let view=await (await page.request.get(path+'/commands')).json();
+  assert(view.enabled && view.orders.length===0,'fresh external battle requires batches before any command has been saved');
+  await page.getByLabel('本轮决策意图').fill('本轮所有单位待命，不主动开火。');
+  const nextReady=page.waitForResponse(r=>r.url().endsWith('/next'),{timeout:180000});
+  await page.getByRole('button',{name:'⏩ 下一轮推演',exact:true}).click();
+  const next=await nextReady, snapshot=await next.json();
+  assert(next.ok() && snapshot.turn_count===1,'first Next click succeeds with a real model and no saved queue');
+  assert(snapshot.afsim.source==='dsh_native_mcp_controller' && snapshot.war_state.simulation_clock.elapsed_seconds===1800,'native execution and the program clock agree');
+  await page.getByRole('button',{name:'红方 红方教学编组1',exact:true}).click();
+  await page.getByTestId('command-panel').waitFor({state:'visible'}).catch(e=>{throw new Error('after unit selection: '+e);});
+  await page.getByTestId('unit-action').selectOption('move');
+  await page.getByRole('button',{name:'地图选目的地',exact:true}).click();
+  await page.locator('.pick-banner').waitFor({state:'visible'});
+  assert(await page.locator('.leaflet-popup').count()===0 || !await page.locator('.leaflet-popup').first().isVisible(),'unit popups cannot intercept destination picking');
+  const marker=await page.getByRole('button',{name:'红方 红方教学编组1',exact:true}).boundingBox();
+  await page.evaluate(m=>{
+    window.afsimPickProbe={marker:m,map:document.querySelector('.leaflet-container')?.getBoundingClientRect().toJSON()};
+    document.addEventListener('click',e=>Object.assign(window.afsimPickProbe,{x:e.clientX,y:e.clientY,detail:e.detail,
+      target:e.target.outerHTML.slice(0,180),blocked:e.target.closest('.leaflet-control,.leaflet-popup,button,input,select')?.className}),{capture:true,once:true});
+  },marker);
+  await page.mouse.click(marker.x-20,marker.y-20);
+  await page.getByTestId('command-panel').waitFor({state:'visible'}).catch(async e=>{throw new Error('after map destination: '+JSON.stringify(await page.evaluate(()=>window.afsimPickProbe))+' '+e);});
+  await page.getByTestId('enqueue-order').click(); await page.locator('[data-command-id]').waitFor();
+  view=await (await page.request.get(path+'/commands')).json();
+  assert(view.orders.length===1 && view.orders[0].action==='move','visual destination becomes a saved move command');
+  assert(await page.locator('.leaflet-container').count()===1,'Vue picking state preserves Leaflet container classes');
+  const before=await (await page.request.get(path)).json();
+  assert(JSON.stringify(before.war_state)===JSON.stringify(snapshot.war_state),'saving an order never advances or modifies the world');
+  await page.getByRole('button',{name:'因果与轨迹',exact:true}).click();
+  await page.getByTestId('causal-panel').waitFor();
+  assert(await page.getByRole('button',{name:/运行成对反事实/}).isDisabled(),'incompatible narrative state branches are visibly disabled');
+  await page.getByTestId('command-toggle').click();
+  await page.screenshot({path:out+'/browser-wide.png'});
+  await page.setViewportSize({width:900,height:1000});
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),'900px viewport has no page overflow');
+  await page.screenshot({path:out+'/browser-narrow.png'});
+  assert(errors.length===0,'no uncaught JavaScript exceptions');
+  return {passed:true,session_id:initial.session_id,checks};
+}

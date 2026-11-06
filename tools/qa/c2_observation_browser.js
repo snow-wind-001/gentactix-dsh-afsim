@@ -1,0 +1,34 @@
+async page=>{
+ const API='http://127.0.0.1:19117',checks=[],errors=[];
+ const check=(ok,label)=>{if(!ok)throw Error(label);checks.push(label);};
+ const get=async path=>{const r=await page.request.get(API+'/api'+path);if(!r.ok())throw Error(await r.text());return r.json();};
+ const sessions=(await get('/sessions')).sessions;
+ const entry=sessions.find(s=>s.scenario.startsWith('情报时间最终源码验收；'))??sessions.find(s=>s.scenario.startsWith('情报时间原生验收；'));if(!entry)throw Error('Run actual HTTP case first');
+ const base='/sessions/'+entry.session_id,before=await get(base),commands=await get(base+'/commands');
+ const tag=entry.scenario.startsWith('情报时间最终源码验收；')?'final-':'';
+ const unit=before.war_state.red_units[0],age=unit.formation.intel_age_min,rounded=Number(age.toFixed(2));
+ check(before.turn_count===3&&!Number.isInteger(age),'Actual three-round case contains a fractional observation age');
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.addInitScript(id=>{window.gentactix={backendUrl:'http://127.0.0.1:19117'};localStorage.setItem('gentactix-session',id);},entry.session_id);
+ await page.setViewportSize({width:1440,height:1000});await page.goto('http://127.0.0.1:19088');
+ await page.getByRole('button',{name:'返回当前战局',exact:true}).click();await page.getByRole('tab',{name:'兵种与保障',exact:true}).click();
+ const panel=page.getByTestId('combined-arms');await panel.waitFor({state:'visible'});
+ const row=panel.getByTestId('combined-unit').filter({hasText:unit.name}).first();
+ check((await row.innerText()).includes('情报年龄 约'+rounded+'分钟'),'Support panel rounds display and labels its approximation');
+ check((await row.innerText()).includes('恢复联络不刷新情报'),'Link recovery is distinguished from new intelligence');
+ check((await row.innerText()).includes('置信值约 '+Number(unit.formation.intel_confidence.toFixed(2))),'Confidence uses display rounding without integer state truncation');
+ check(!(await row.innerText()).includes(String(age)),'Raw twelve-decimal telemetry is not dumped into the panel');
+ await page.waitForFunction(()=>document.querySelectorAll('.leaflet-tile-loaded').length>0&&document.querySelectorAll('.leaflet-tile:not(.leaflet-tile-loaded)').length===0,{},{timeout:15000});
+ await row.scrollIntoViewIfNeeded();await page.screenshot({path:'.cache/qa/c2-observation-2026-10-31/ui-'+tag+'support-1440.png'});
+ await page.getByTestId('command-toggle').click();const command=page.getByTestId('command-panel');await command.waitFor({state:'visible'});
+ const selected=commands.units.find(u=>u.name===unit.name);await command.getByLabel('单位名单（含无坐标单位）').selectOption(selected.id);
+ check((await command.innerText()).includes('情报年龄 约'+rounded+'分钟'),'Selected-unit panel uses the same rounded observation age');
+ await page.setViewportSize({width:900,height:1000});
+ await page.waitForFunction(()=>document.querySelectorAll('.leaflet-tile-loaded').length>0&&document.querySelectorAll('.leaflet-tile:not(.leaflet-tile-loaded)').length===0,{},{timeout:15000});
+ check(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'No horizontal page overflow at 900px');
+ await page.screenshot({path:'.cache/qa/c2-observation-2026-10-31/ui-'+tag+'command-900.png'});
+ const after=await get(base);check(JSON.stringify(before.war_state)===JSON.stringify(after.war_state),'Display rounding does not alter precise host world');
+ check(JSON.stringify(before.history)===JSON.stringify(after.history)&&JSON.stringify(commands)===JSON.stringify(await get(base+'/commands')),'Reading and selecting a unit does not change history or command queue');
+ check(errors.length===0,'No browser page errors');
+ return {passed:true,checks,session_id:entry.session_id,actual_afsim_input:true,api_mocks:false,model_calls:false,scope:'Read-only rendering of a completed local QA case, not another three-turn execution'};
+}

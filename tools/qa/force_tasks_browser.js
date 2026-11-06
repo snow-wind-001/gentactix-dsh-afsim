@@ -1,0 +1,62 @@
+async page=>{
+ const base='http://127.0.0.1:19095/api/sessions/cccccccccccc',checks=[],errors=[];
+ const check=(ok,msg)=>{if(!ok)throw Error(msg);checks.push(msg);};
+ const get=async path=>{const r=await page.request.get(path);if(!r.ok())throw Error(await r.text());return r.json();};
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.addInitScript(()=>{window.gentactix={backendUrl:'http://127.0.0.1:19095'};});
+ await page.goto('http://127.0.0.1:19084');await page.evaluate(()=>localStorage.setItem('gentactix-session','cccccccccccc'));
+ await page.reload();await page.getByRole('button',{name:'返回当前战局',exact:true}).click();
+ await page.getByTestId('analysis-tab-forces').click();const panel=page.getByTestId('force-organization');
+ await panel.locator('[data-task-group]').first().waitFor();
+ const org=await get(base+'/force-organization'),group=org.groups[0],view=await get(base+'/commands');
+ const own=view.units.filter(u=>group.member_ids.includes(u.id));
+ const blue=view.units.find(u=>u.team==='blue'),before=await get(base);
+ await panel.getByLabel('兵团下令对象',{exact:true}).selectOption(group.id);
+ await panel.getByLabel('兵团任务方式',{exact:true}).selectOption('assault');
+ await panel.getByLabel('兵团任务敌方目标',{exact:true}).selectOption(blue.id);
+ await panel.getByRole('button',{name:'在地图选择行军目标',exact:true}).click();
+ await page.locator('.leaflet-container').click({position:{x:220,y:250}});await panel.waitFor({state:'visible'});
+ await panel.getByRole('button',{name:'预览兵团任务',exact:true}).click();
+ const preview=panel.getByTestId('force-task-preview');await preview.waitFor();
+ check((await preview.innerText()).includes('保留原命令：侦察'),'Default preview keeps prior human reconnaissance');
+ check((await get(base+'/commands')).orders.length===1,'Preview does not write queue');
+ for(const [i,role] of [[1,'fire_support'],[2,'engineer'],[3,'reserve']])
+  await preview.getByLabel('任务分工'+own[i].name,{exact:true}).selectOption(role);
+ check(await preview.getByRole('button',{name:'确认暂存兵团任务',exact:true}).isDisabled(),'Changing roles invalidates prior preview');
+ await panel.getByRole('button',{name:'预览兵团任务',exact:true}).click();
+ await preview.getByRole('button',{name:'确认暂存兵团任务',exact:true}).waitFor({state:'visible'});
+ await preview.getByRole('button',{name:'确认暂存兵团任务',exact:true}).click();
+ await panel.getByRole('status').filter({hasText:'群命令已暂存'}).waitFor();
+ let cs=await get(base+'/commands'),orders=new Map(cs.orders.map(o=>[o.unit_id,o]));
+ check(orders.get(own[0].id).action==='recon','Confirmation preserves original manual order');
+ check(orders.get(own[1].id).action==='bombard','Fire-support role queues artillery');
+ check(orders.get(own[2].id).action==='hold'&&orders.get(own[3].id).action==='hold','Engineer and reserve remain available without invented actions');
+ check(JSON.stringify((await get(base)).war_state)===JSON.stringify(before.war_state),'Task confirmation never mutates physical world');
+ await panel.getByLabel('允许覆盖已有人工命令',{exact:true}).check();
+ await panel.getByRole('button',{name:'预览兵团任务',exact:true}).click();
+ await preview.getByRole('button',{name:'确认暂存兵团任务',exact:true}).click();
+ await panel.getByRole('status').filter({hasText:'群命令已暂存'}).waitFor();
+ cs=await get(base+'/commands');check(cs.orders.find(o=>o.unit_id===own[0].id).action==='fire','Explicit override applies reviewed assault order');
+ await page.setViewportSize({width:1440,height:1000});
+ await panel.getByRole('button',{name:'预览兵团任务',exact:true}).click();await preview.waitFor();
+ await preview.scrollIntoViewIfNeeded();await page.screenshot({path:'.cache/qa/force-tasks-2026-10-31/browser/preview-1440.png'});
+ await page.setViewportSize({width:900,height:1000});await page.screenshot({path:'.cache/qa/force-tasks-2026-10-31/browser/preview-900.png'});
+ const fields=['id','unit_id','action','duration','destination','target_id','air_pool','end_turn'];
+ const draft=o=>Object.fromEntries(Object.entries(o).filter(([k])=>fields.includes(k)));
+ const selected=new Set(cs.orders.map(o=>o.unit_id));
+ const r=await page.request.put(base+'/commands',{data:{expected_turn:cs.turn,revision:cs.revision,world_version:cs.world_version,
+  control_team:'red',director:true,no_fire:false,intent:'QA分工任务；其他单位明确待命，完整人工批次不调用模型',
+  orders:[...cs.orders.map(draft),...cs.units.filter(u=>!selected.has(u.id)).map(u=>({unit_id:u.id,action:'hold',duration:'next'}))]}});
+ if(!r.ok())throw Error(await r.text());
+ await page.reload();await page.getByRole('button',{name:'返回当前战局',exact:true}).click();
+ const response=page.waitForResponse(r=>r.url()===base+'/next'&&r.request().method()==='POST',{timeout:120000});
+ await page.getByRole('button',{name:'推进一轮',exact:true}).click();const next=await response;
+ if(!next.ok())throw Error(await next.text());const after=await next.json();
+ check(after.turn_count===1,'Actual frontend advances one native round');
+ check(after.war_state.red_units.length+after.war_state.blue_units.length===79,'Native round retains all 79 units');
+ check(after.war_state.blue_units.some(u=>u.personnel.casualties>0),'Reviewed fire task produces native casualties');
+ const records=await get(base+'/unit-decisions?unit_id='+own[1].id);
+ check(records.items.some(r=>r.task_context?.role==='fire_support'),'Committed decision receipt retains task role');
+ check(errors.length===0,'No browser page errors');
+ return {passed:true,checks,actual_afsim:true,api_mocks:false,model_calls:false};
+}

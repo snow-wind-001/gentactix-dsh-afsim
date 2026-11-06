@@ -1,0 +1,34 @@
+async page=>{
+ const base='http://127.0.0.1:18998',checks=[],errors=[];
+ const check=(v,s)=>{if(!v)throw new Error(s);checks.push(s)};page.on('pageerror',e=>errors.push(e.message));
+ const c=page.getByTestId('historical-setup'),editor=c.getByTestId('formation-parts-editor'),rows=editor.getByTestId('formation-part-row');
+ await page.waitForFunction(()=>document.querySelectorAll('.nato-marker').length===6);
+ check(await rows.count()===2,'actual generated UI still has two explicitly detached leaves');
+ check(await rows.nth(0).getByLabel('人员 人',{exact:true}).inputValue()==='1595'&&await rows.nth(1).getByLabel('人员 人',{exact:true}).inputValue()==='5','UI parent count remains conserved');
+ const leaf=rows.nth(1),originalPosition=await leaf.locator('p').first().innerText();
+ await leaf.getByRole('button',{name:/^地图部署/}).click();await page.getByRole('button',{name:'返回配置',exact:true}).waitFor();
+ const map=page.locator('.launch-map .leaflet-container'),box=await map.boundingBox();
+ if(!box)throw Error('no map bounds');await map.click({position:{x:box.width*.48,y:box.height*.45}});
+ await c.waitFor({state:'visible'});
+ check(await leaf.locator('p').first().innerText()!==originalPosition,'actual map pointer changes only selected leaf deployment');
+ await leaf.getByLabel('人员 人',{exact:true}).fill('6');await leaf.getByLabel('人员 人',{exact:true}).blur();
+ check(await c.getByTestId('validate-historical-scenario').isDisabled(),'nonconserved personnel blocks validation');
+ check((await editor.innerText()).includes('人员合计须为1600人'),'sum error explained inline');
+ await leaf.getByLabel('人员 人',{exact:true}).fill('5');await leaf.getByLabel('人员 人',{exact:true}).blur();
+ check(await c.getByTestId('validate-historical-scenario').isEnabled(),'restored conserved allocation can validate');
+ await page.screenshot({path:'.cache/qa/formation-partitions/editor-1440.png'});
+ await page.setViewportSize({width:900,height:1000});check(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'partition editor fits 900px');
+ await page.screenshot({path:'.cache/qa/formation-partitions/editor-900.png'});
+ let response=page.waitForResponse(r=>r.url().endsWith('/api/historical-scenarios/validate')&&r.request().method()==='POST',{timeout:120000});
+ await c.getByTestId('validate-historical-scenario').click();const result=await response;check(result.ok(),'edited split actually validates and loads AFSIM');const validated=await result.json();
+ check(validated.validation.scope==='native_load'&&validated.preview_world.red_units.length===3,'native validated world has three red leaves, two original parents');
+ const parts=validated.preview_world.red_units.filter(u=>u.formation_part);check(parts.reduce((n,u)=>n+u.personnel.current,0)===1600,'native load conserves parent count');
+ check(parts.find(u=>u.formation_part.part_id==='part1').lat!==parts.find(u=>u.formation_part.part_id==='main').lat,'map placement survives native validation');
+ check(validated.initial.definition.units.every(u=>Object.values(u.facts).every(f=>f.value===null)),'UI estimates leave missing historical facts unknown');
+ await page.getByTestId('launch-start').click();await page.getByTestId('map-workbench').waitFor({timeout:180000});await page.waitForFunction(()=>!document.querySelector('.desktop-root.operation-running'));
+ check(await page.locator('.nato-marker').count()===6,'normal launch enters actual six-leaf workbench');
+ await page.getByTestId('analysis-tab-combined').click();check((await page.getByTestId('formation-group-row').innerText()).includes('1600 / 投入 1600'),'workbench preserves edited parent ledger');
+ const sid=await page.evaluate(()=>localStorage.getItem('gentactix-session'));const saved=await(await page.request.get(base+'/api/sessions/'+sid)).json();
+ check(saved.war_state.formation_groups.groups.length===1&&saved.settings.execution_backend==='afsim','normal launched session commits actual partition world');
+ check(!errors.length,'no application page exceptions');return{passed:true,checks,route_mocks:false,original_draft_id:result.request().postDataJSON().parent_draft_id,edited_draft_id:validated.id,session_id:sid};
+}

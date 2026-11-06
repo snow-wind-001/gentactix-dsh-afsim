@@ -1,0 +1,51 @@
+/** Edit a real generated parent through normal UI; estimated new ration basis. */
+import fs from 'node:fs';import {createRequire} from 'node:module';
+const require=createRequire('/home/spikebai/.nvm/versions/node/v22.20.0/lib/node_modules/@playwright/cli/package.json'),{chromium}=require('playwright-core');
+const base='.cache/qa/personnel-rations-2026-11-03',attempt=process.argv[2]??'browser';if(!/^[a-z0-9-]+$/.test(attempt))throw Error('Invalid evidence name');const root=base+'/'+attempt;if(fs.existsSync(root))throw Error('Preserve evidence');fs.mkdirSync(root);
+const api='http://127.0.0.1:19348',ui='http://127.0.0.1:19349',parent='48c2c8f668294214960d541de59dcf9d';
+const browser=await chromium.launch({channel:'chrome',headless:true}),page=await browser.newPage({viewport:{width:1440,height:1000}}),checks=[],errors=[],posts=[];
+const check=(v,m)=>{if(!v)throw Error(m);checks.push(m);};page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(r.method()==='POST')posts.push(new URL(r.url()).pathname);});
+await page.addInitScript(api=>window.gentactix={backendUrl:api},api);
+try{
+ await page.goto(ui,{waitUntil:'domcontentloaded'});await page.getByRole('textbox',{name:'搜索战役',exact:true}).fill('雪山草地');await page.locator('.battle-option').first().click();
+ await page.getByRole('button',{name:/继续配置/}).click();await page.locator('#draft-mode').selectOption('historical');await page.locator('#draft-executor').selectOption('narrative');await page.locator('#draft-step').selectOption('30分钟');
+ await page.getByLabel('编制范围',{exact:true}).selectOption('campaign');await page.getByLabel('会战窗口',{exact:true}).selectOption('LM06-right-column-aug21-27@1.0.0');
+ await page.getByLabel('生成时必须校验运动与疲劳反馈',{exact:true}).check();
+ await page.getByTestId('completed-historical-configurations').locator('summary').click();await page.locator(`[data-open-configuration="${parent}"]`).click();
+ await page.getByTestId('historical-validation').waitFor();
+ check(await page.getByLabel('生成时采用的耗粮模型',{exact:true}).inputValue()==='time-sustainment-1','opening old draft preserves legacy model');
+ await page.locator('#draft-step').selectOption('6小时');
+ const editor=page.getByTestId('support-dynamics-editor');await editor.locator('summary').click();
+ await editor.getByLabel('耗粮模型',{exact:true}).selectOption('personnel-rations-1');
+ check(await page.getByLabel('生成时采用的耗粮模型',{exact:true}).inputValue()==='personnel-rations-1','explicit editor selection updates required model');
+ const fixed=page.getByTestId('fixed-parameter-inputs');await fixed.locator('summary').click();
+ await fixed.getByLabel('固定参数配置对象',{exact:true}).selectOption('战役目标');
+ await fixed.getByLabel('固定参数数值项目',{exact:true}).selectOption(JSON.stringify(['goal','deadline_turn']));
+ await fixed.getByLabel('固定参数指定数值',{exact:true}).fill('28');await fixed.getByTestId('add-fixed-parameter').click();
+ check(await fixed.locator('li[data-fixed-path] input').inputValue()==='28','seven-day rolling reference fixed explicitly through existing parameter editor');
+ check(!(await page.getByTestId('historical-validation').innerText()).includes('可创建'),'changed model and seven-day rolling horizon require validation');
+ const validating=page.waitForResponse(r=>r.request().method()==='POST'&&r.url().endsWith('/historical-scenarios/validate'),{timeout:0});
+ await page.getByTestId('validate-historical-scenario').click();const response=await validating;
+ fs.writeFileSync(root+'/validate-request.json',response.request().postData()??'');fs.writeFileSync(root+'/validate-response.txt',await response.text());
+ check(response.ok(),'normal edited-ration validation succeeds');const draft=await response.json();
+ fs.writeFileSync(root+'/draft.json',JSON.stringify(draft));
+ check(draft.parameters.support_dynamics.version==='personnel-rations-1','personnel model persisted');
+ check(draft.construction.required_models.includes('personnel-rations-1')&&!draft.construction.required_models.includes('time-sustainment-1'),'saved current model requirements match selected version');
+ check(draft.construction.generated_required_models.includes('time-sustainment-1'),'original generation requirements retained as provenance');
+ check(draft.sustainment.teams.red.on_hand_food_kg===7750,'four-army initial food mass displayed from sole existing stock');
+ check(draft.sustainment.teams.red.minimum_hold_food_kg===175875,'seven-day demand scales all33500estimatedpeople');
+ check((await page.getByTestId('personnel-ration-basis').innerText()).includes('0.75'),'ration basis shown with kg/person/day');
+ check((await page.getByTestId('ration-mass-red').innerText()).includes('7,750'),'actual mass shown separately from work units');
+ await page.screenshot({path:root+'/validated-mass-1440.png'});
+ const initialized=page.waitForResponse(r=>r.request().method()==='POST'&&r.url().endsWith('/init'),{timeout:0});
+ await page.getByTestId('launch-start').click();const init=await initialized;check(init.ok(),'new ration scenario enters workbench normally');const snap=await init.json();
+ await page.getByTestId('map-workbench').waitFor();
+ check(snap.war_state.red_units.length===4&&!snap.war_state.blue_units.length,'all four source armies and no invented opponent');
+ check(snap.war_state.red_units.reduce((n,u)=>n+u.personnel.current,0)===33500,'personnel preserved during model switch');
+ check(snap.war_state.red_units.every(u=>u.sustainment.version==='personnel-rations-1'),'each runtime unit uses selected receipt version');
+ fs.writeFileSync(base+'/live-case.json',JSON.stringify({api,ui,session_id:snap.session_id,turn:1,actor_count:4,step_seconds:21600,native_decision_count:0,draft_id:draft.id,parent_draft_id:parent},null,2));
+ await page.setViewportSize({width:900,height:1000});await page.screenshot({path:root+'/initialized-mass-900.png'});
+ check(!posts.some(p=>p.endsWith('/historical-scenarios/build')),'manual estimated model change does not claim new LLM generation');check(errors.length===0,'no application exceptions');
+ fs.writeFileSync(root+'/result.json',JSON.stringify({passed:true,checks,count:checks.length,posts,errors,scope:'Normal UI editing of prior real Native generated parent; new ration numbers are explicit teaching estimates, not model-generated or historical calibration.'},null,2));console.log('PASS',checks.length,'ration editor and mass checks',snap.session_id);
+}catch(error){fs.writeFileSync(root+'/result.json',JSON.stringify({passed:false,error:String(error),checks,posts,errors},null,2));await page.screenshot({path:root+'/failure.png'}).catch(()=>{});throw error;}
+finally{await browser.close();}

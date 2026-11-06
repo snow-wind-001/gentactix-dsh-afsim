@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import { previewEvidence } from '../../plugins/dsh-gentactix/report-evidence.mjs';
+const call = { type:'tool/call',seq:4,data:{name:'preview_turn_effects',callId:'one',arguments:{candidate:{orders:[]}}} };
+const result = { type:'tool/result',seq:5,data:{message:{toolCallId:'one',content:[{type:'text',text:JSON.stringify({ok:true,readonly:true,version:'turn-effects-preview-1',digest:'expected'})}]}} };
+const privateEvent = {type:'assistant/message',seq:6,data:{message:{content:[{type:'reasoning',text:'PRIVATE_REASONING'}]}}};
+const events=[call,result,privateEvent];
+const selected=previewEvidence(events,'expected');
+assert.deepEqual(selected,[call,result]);
+assert(!JSON.stringify(selected).includes('PRIVATE_REASONING'));
+selected[0].data.callId='changed';assert.equal(call.data.callId,'one');
+assert.deepEqual(previewEvidence(events,'another'),[]);
+assert.deepEqual(previewEvidence([result],'expected'),[]);
+assert.deepEqual(previewEvidence([call,{...result,data:{message:{toolCallId:'one',isError:true,content:result.data.message.content}}}],'expected'),[]);
+console.log('PASS exact public Native preview selection, immutable input and no reasoning');

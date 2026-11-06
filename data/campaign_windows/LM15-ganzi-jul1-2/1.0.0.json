@@ -1,0 +1,274 @@
+{
+  "format": "gentactix-campaign-window-1",
+  "id": "LM15-ganzi-jul1-2",
+  "version": "1.0.0",
+  "label": "甘孜：7月1—2日两军团集结",
+  "battle": "红军长征-甘孜会师至三大主力会师-1936.07.01至1936.10.22",
+  "historical_initial": {
+    "profile_id": "LM15-reunion",
+    "version": "1.1.0",
+    "definition_hash": "e46296bd4cc2416808c208d0c94ea2636da87f06db83992303f0e067ba9104b1"
+  },
+  "start_phase_id": "ganzi_assembly",
+  "phase_ids": [
+    "ganzi_assembly"
+  ],
+  "bounds": {
+    "start": "1936-07-01T00:00",
+    "end": "1936-07-03T00:00",
+    "kind": "model_scope_limit",
+    "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。"
+  },
+  "units": {
+    "re.red.corps2": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "只计本地已说明投入载荷；未核人数装备与余部，不能宣称整军同点。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "LM15-Jul1-assembly",
+        "LM15-Jul2-celebration"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "甘孜集结与7月5日整编"
+        }
+      ]
+    },
+    "re.red.corps6": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "只计本地已说明投入载荷；未核人数装备与余部，不能宣称整军同点。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "LM15-Jul1-assembly",
+        "LM15-Jul2-celebration"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "甘孜集结与7月5日整编"
+        }
+      ]
+    },
+    "re.red.army32": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "保留历史身份参考，不额外投入人员、装备、粮弹或单位位置。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "由红四方面军划归并编入红二方面军"
+        }
+      ]
+    },
+    "re.red.front1": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "保留历史身份参考，不额外投入人员、装备、粮弹或单位位置。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "GUANGMANG",
+          "locator": "第23页：会宁到达与接应序列，第4军第10师；只列已核身份，不代表下级完整"
+        }
+      ]
+    },
+    "re.red.front2": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "保留历史身份参考，不额外投入人员、装备、粮弹或单位位置。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "PLA_LIUPAN",
+          "locator": "第三节：将台堡总部及红一军团第2师会合"
+        }
+      ]
+    },
+    "re.red.front4": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "保留历史身份参考，不额外投入人员、装备、粮弹或单位位置。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "GUANGMANG",
+          "locator": "第23页：会宁到达与接应序列，第4军第10师；只列已核身份，不代表下级完整"
+        }
+      ]
+    },
+    "re.red.corps1": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "保留历史身份参考，不额外投入人员、装备、粮弹或单位位置。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "PLA_LIUPAN",
+          "locator": "第三节：将台堡总部及红一军团第2师会合"
+        }
+      ]
+    },
+    "re.red.corps15": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "保留历史身份参考，不额外投入人员、装备、粮弹或单位位置。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "GUANGMANG",
+          "locator": "第23页：会宁到达与接应序列，第4军第10师；只列已核身份，不代表下级完整"
+        }
+      ]
+    },
+    "re.red.division1": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "保留历史身份参考，不额外投入人员、装备、粮弹或单位位置。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "GUANGMANG",
+          "locator": "第23页：会宁到达与接应序列，第4军第10师；只列已核身份，不代表下级完整"
+        }
+      ]
+    },
+    "re.red.division2": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "保留历史身份参考，不额外投入人员、装备、粮弹或单位位置。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "GUANGMANG",
+          "locator": "第23页：会宁到达与接应序列，第4军第10师；只列已核身份，不代表下级完整"
+        }
+      ]
+    },
+    "re.red.division73": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "保留历史身份参考，不额外投入人员、装备、粮弹或单位位置。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "GUANGMANG",
+          "locator": "第23页：会宁到达与接应序列，第4军第10师；只列已核身份，不代表下级完整"
+        }
+      ]
+    },
+    "re.red.army4": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "保留历史身份参考，不额外投入人员、装备、粮弹或单位位置。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "GUANGMANG",
+          "locator": "第23页：会宁到达与接应序列，第4军第10师；只列已核身份，不代表下级完整"
+        }
+      ]
+    },
+    "re.red.army31": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "保留历史身份参考，不额外投入人员、装备、粮弹或单位位置。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "GUANGMANG",
+          "locator": "第23页：会宁到达与接应序列，第4军第10师；只列已核身份，不代表下级完整"
+        }
+      ]
+    },
+    "re.red.army4.division10": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "保留历史身份参考，不额外投入人员、装备、粮弹或单位位置。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "GUANGMANG",
+          "locator": "第23页：会宁到达与接应序列，第4军第10师；只列已核身份，不代表下级完整"
+        }
+      ]
+    }
+  },
+  "sectors": [
+    {
+      "id": "LM15-ganzi-jul1-2-assembly",
+      "label": "甘孜：7月1—2日两军团集结的来源方向",
+      "position": null,
+      "unit_ids": [
+        "re.red.corps2",
+        "re.red.corps6"
+      ],
+      "operation_ids": [
+        "LM15-Jul1-assembly",
+        "LM15-Jul2-celebration"
+      ],
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "红2、6军团1日全部集结、2日庆祝"
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "operation_id": "LM15-Jul1-assembly",
+      "phase_id": "ganzi_assembly",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "LM15-Jul2-celebration",
+      "phase_id": "ganzi_assembly",
+      "policy": "reference_only"
+    }
+  ],
+  "limitations": "独立本地会合窗口，不是全方面军、全长征或消灭敌军任务。史实仅约束来源身份、节点和精度；部署、人数、装备、路线、库存与会合阈值须显式估计，开放过程不强迫历史结果。"
+}

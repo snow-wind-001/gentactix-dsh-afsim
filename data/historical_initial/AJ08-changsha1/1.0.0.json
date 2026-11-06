@@ -1,0 +1,478 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ08-changsha1",
+  "version": "1.0.0",
+  "battle": "抗日战争-第一次长沙会战-1939.09.14至1939.10",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "只计新墙河正面首日；赣北、鄂南另轴与22日到场兵力不提前合并。",
+      "仅提供有来源的具名参战框架。人数、分类装备、库存和逐单位阵地缺载，保持null；参数化配置须独立说明估计。",
+      "阶段时钟、区域半径和胜负阈值是计算假设；不代表已完成全会战复现、航空舰炮/后续增援或历史战损标定。"
+    ]
+  },
+  "sources": {
+    "CS_STUDY": {
+      "title": "试论长沙会战的历史意义",
+      "url": "https://css.hunan.gov.cn/css/tslm/hxws/wssy/201503/hxwhyj_3/201609/t20160905_3253202.html",
+      "publisher": "湖南省文史研究馆",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    },
+    "CS_PREFACE": {
+      "title": "《湖南战场史料》前言",
+      "url": "https://css.hunan.gov.cn/css/tslm/hxws/wssy/201204/sxrj_52819_13/201609/t20160905_3253626.html",
+      "publisher": "湖南省文史研究馆",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    }
+  },
+  "phases": [
+    {
+      "id": "reference",
+      "label": "全战役参战参考（非同日部署）",
+      "date": {
+        "label": "1939.09.14至1939.10",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "CS_STUDY",
+            "locator": "第一次会战段：18日6、13师团进攻52军2、195师"
+          }
+        ]
+      },
+      "scope": "保留累计参战身份；不宣称所有单位在战役开端同时到场。",
+      "evidence": [
+        {
+          "source_id": "CS_STUDY",
+          "locator": "第一次会战段：18日6、13师团进攻52军2、195师"
+        }
+      ]
+    },
+    {
+      "id": "xinqiang_sep18",
+      "label": "9月18日新墙河方向",
+      "date": {
+        "label": "1939-09-18",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "CS_STUDY",
+            "locator": "第一次会战段：18日6、13师团进攻52军2、195师"
+          }
+        ]
+      },
+      "scope": "只计新墙河正面首日；赣北、鄂南另轴与22日到场兵力不提前合并。",
+      "evidence": [
+        {
+          "source_id": "CS_STUDY",
+          "locator": "第一次会战段：18日6、13师团进攻52军2、195师"
+        }
+      ],
+      "execution_window": {
+        "start": "1939-09-18T06:00",
+        "end": "1939-09-18T14:00",
+        "kind": "model_scope_limit",
+        "note": "本日局部计算假设窗口，钟点不作史实命令；超窗须另核后续部队与兵种，不能自动继承为全会战。",
+        "evidence": [
+          {
+            "source_id": "CS_STUDY",
+            "locator": "第一次会战段：18日6、13师团进攻52军2、195师"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 29.1275,
+          "lng": 113.20222
+        },
+        "radius_km": 25,
+        "kind": "model_scope_limit",
+        "note": "地名附近的计算区域假设，以现代参考点或文字地域为中心；不是已测绘的历史阵地、战线或射界。",
+        "evidence": [
+          {
+            "source_id": "CS_STUDY",
+            "locator": "第一次会战段：18日6、13师团进攻52军2、195师"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.corps52",
+      "name": "第52军指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CS_STUDY",
+          "locator": "新墙河防御的52军"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "新墙河防御的52军"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinqiang_sep18",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "新墙河防御的52军"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division2",
+      "name": "第2师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.corps52",
+      "evidence": [
+        {
+          "source_id": "CS_STUDY",
+          "locator": "52军2、195师在新墙河防御"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "52军2、195师在新墙河防御"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinqiang_sep18",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "52军2、195师在新墙河防御"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division195",
+      "name": "第195师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.corps52",
+      "evidence": [
+        {
+          "source_id": "CS_STUDY",
+          "locator": "52军2、195师在新墙河防御"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "52军2、195师在新墙河防御"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinqiang_sep18",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "52军2、195师在新墙河防御"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division6",
+      "name": "日军第6师团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CS_STUDY",
+          "locator": "18日6、13师团新墙河方向攻击"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "18日6、13师团新墙河方向攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinqiang_sep18",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "18日6、13师团新墙河方向攻击"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division13",
+      "name": "日军第13师团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CS_STUDY",
+          "locator": "18日6、13师团新墙河方向攻击"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "18日6、13师团新墙河方向攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinqiang_sep18",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "18日6、13师团新墙河方向攻击"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division33",
+      "name": "日军第33师团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CS_STUDY",
+          "locator": "22日通城方向行动，非18日本局部到场"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "22日通城方向行动，非18日本局部到场"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinqiang_sep18",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "22日通城方向行动，非18日本局部到场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division101",
+      "name": "日军第101师团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CS_STUDY",
+          "locator": "赣北另轴，不作新墙河已部署兵力"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "赣北另轴，不作新墙河已部署兵力"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinqiang_sep18",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CS_STUDY",
+              "locator": "赣北另轴，不作新墙河已部署兵力"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    }
+  ]
+}

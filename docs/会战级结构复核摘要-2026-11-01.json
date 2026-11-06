@@ -1,0 +1,163 @@
+{
+  "format": "campaign-review-baseline-1",
+  "review_date": "2026-11-01",
+  "generated_at": "2026-10-31T17:40:32.630767+00:00",
+  "scope": "当前本地工作区只读源码与全版本资料结构复核；不是历史原件、真实模型、前端或安装包验收",
+  "all_version_count": 55,
+  "defaults": {
+    "profiles": 45,
+    "nodes": 559,
+    "phases": 103,
+    "template_ready_phases": 57,
+    "profiles_with_local_template": 43,
+    "campaign_selection_ready": 42,
+    "coverage_all_true": 0,
+    "non_null_facts": {
+      "personnel": 0,
+      "equipment": 0,
+      "position": 1
+    },
+    "roles": {
+      "command": 135,
+      "formation": 404,
+      "support": 17,
+      "aviation": 3
+    },
+    "local_actor_distribution": {
+      "1": 6,
+      "2": 19,
+      "3": 15,
+      "4": 9,
+      "5": 3,
+      "6": 2,
+      "9": 2,
+      "12": 1
+    }
+  },
+  "latest": {
+    "profiles": 45,
+    "nodes": 601,
+    "phases": 110,
+    "template_ready_phases": 59,
+    "profiles_with_local_template": 43,
+    "campaign_selection_ready": 43,
+    "coverage_all_true": 0,
+    "non_null_facts": {
+      "personnel": 0,
+      "equipment": 0,
+      "position": 1
+    },
+    "roles": {
+      "command": 136,
+      "formation": 443,
+      "support": 19,
+      "aviation": 3
+    },
+    "local_actor_distribution": {
+      "1": 6,
+      "2": 19,
+      "3": 15,
+      "4": 8,
+      "5": 3,
+      "6": 3,
+      "9": 2,
+      "12": 1,
+      "15": 2
+    }
+  },
+  "editorial": {
+    "anti_japanese_war": {
+      "forces.csv": 52,
+      "timeline.csv": 124,
+      "figures.csv": 60,
+      "verification_gaps.csv": 55,
+      "sources": 46
+    },
+    "long_march": {
+      "forces.csv": 45,
+      "timeline.csv": 116,
+      "figures.csv": 52,
+      "verification_gaps.csv": 49,
+      "sources": 37
+    }
+  },
+  "extended_counts": {
+    "all_versions": 55,
+    "latest_profiles": 45,
+    "corpus_markdown": 49,
+    "profiles_with_child_coverage": 1,
+    "profiles_with_event_links": 1,
+    "profiles_with_phase_relations": 1
+  },
+  "profiles_with_explicit_coverage_or_links": [
+    {
+      "id": "AJ07-wanjialing",
+      "version": "1.2.0",
+      "max_reference_depth": 3,
+      "coverage_declared_nodes": 10,
+      "linked_operations": 17,
+      "phase_relations": 4,
+      "original_archive_examined": 0,
+      "source_kinds": {
+        "archive_publication": 1,
+        "published_secondary": 4
+      }
+    }
+  ],
+  "unexpected_template_errors": [],
+  "offline_gate": {
+    "groups": 116,
+    "failed_groups": 0,
+    "unittest_cases": 1261,
+    "skipped": 0,
+    "live_model_calls": false,
+    "seconds": 500.04,
+    "protected_input_files": 814,
+    "changed_protected_inputs": []
+  },
+  "generated_document_checks": {
+    "anti_japanese_war": "passed",
+    "long_march": "passed",
+    "wanjialing_120": "passed"
+  },
+  "batch_counts": {
+    "B0": 3,
+    "B1": 1,
+    "B2": 1,
+    "B3": 12,
+    "B4": 9,
+    "B5": 14,
+    "B6": 5
+  },
+  "current_native_mode": {
+    "mode": "native",
+    "ptc": false,
+    "basis": "plugins/dsh-gentactix and backend/harness_engine role/tool policy"
+  },
+  "new_turn_preview": {
+    "code_wired": true,
+    "offline_unittest_cases": 17,
+    "live_model_test_this_review": "not_run",
+    "browser_test_this_review": "not_run"
+  },
+  "not_run_this_review": [
+    "全部原始史料重新核读",
+    "45场完整历史过程",
+    "真实DSH与AFSIM会战流程",
+    "真实浏览器操作",
+    "前端生产构建",
+    "桌面包与安装验证"
+  ],
+  "interpretation": [
+    "默认与最新是不同集合；最新不自动晋升默认。",
+    "参考节点和累计地面候选不等于同时在场兵力。",
+    "事实null不等于0；文本总量不能直接分配给局部单位。",
+    "模板健康仅检查非预期异常，预期拒绝不算完整功能通过。",
+    "readiness固定未认证不作为45场实际推演成功率。",
+    "已知历史失败保留，恢复成功与无中断通过分别记录。"
+  ],
+  "evidence_directory": ".cache/qa/campaign-review-2026-11-01",
+  "plan": "docs/会战级多层编制与分合兵改造规划-2026-10-31.md",
+  "matrix": "docs/会战级改造验收矩阵-2026-10-31.md",
+  "per_scenario": "docs/会战级资料逐场清单-2026-10-31.csv"
+}

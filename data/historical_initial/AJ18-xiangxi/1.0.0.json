@@ -1,0 +1,454 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ18-xiangxi",
+  "version": "1.0.0",
+  "battle": "抗日战争-湘西会战-1945.04.09至1945.06.07",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "仅覆盖洞口方向局部有关身份，不是湘西会战全部地空序列、援军、航空支援分配或完整初态。",
+      "航空支援只有4月下旬区域活动证据；25日06—18时为计算窗口，不能称为该日真实空袭回放。",
+      "地面实到人数、飞机库存、分类装备、油弹与精确部署均缺载为null；输入估计与史实分开冻结。",
+      "开放推演不强制历史战果；无DEM、实际航路、传感器、火控或弹道标定。"
+    ]
+  },
+  "sources": {
+    "XX_AIR": {
+      "title": "中美空军湘西会战轰炸（第2页：第五大队作战叙述）",
+      "url": "https://www.xinhuanet.com/mil/2015-07/06/c_127990326_2.htm",
+      "publisher": "中国国防报／新华网，2015-07-06",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "记者采访和晚年回忆，非当日任务命令、飞机实力表或战果核验。只采用第五大队支援身份与4月下旬区域活动；12架是某任务出动数，不是总库存；未采用其单次1.6万遗骸说法作为损失参数。"
+    },
+    "XX_GROUND": {
+      "title": "湘西会战",
+      "url": "https://www.huangpu.org.cn/hpzz/hpzz201601/201602/t20160216_11387154.html",
+      "publisher": "黄埔军校同学会《黄埔》，2016-02-16",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开会战回顾，未核原始战斗详报；文内个别其他师番号和作战结果有待交叉核验，本档仅采用第74军、第57师、第116师团及4月下旬方向关系，不扩展为全部序列。"
+    },
+    "XX_ARCHIVE": {
+      "title": "浴血奋战——档案里的中国抗战：湘西会战",
+      "url": "https://www.saac.gov.cn/zt/2014-09/15/content_67076.htm",
+      "publisher": "国家档案局，2014-09-15",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "档案专题的文字说明支持第四方面军与日第20军层级和保卫芷江的目标；未逐页核阅所附原始电报，不据此填入局部实力或小时命令。"
+    },
+    "XX_GEO": {
+      "title": "GeoNames 1812420：Dongkou",
+      "url": "https://www.geonames.org/1812420/",
+      "publisher": "GeoNames；项目既有洞口现代地名参考",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "27.05272,110.53610为现代县城参考，非1945年阵地、机场、炮位；计算地域半径为模型范围估计。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "湘西会战累计参战参考（非完整部署）",
+      "date": {
+        "label": "1945年4月至6月",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "XX_ARCHIVE",
+            "locator": "湘西会战概述"
+          }
+        ]
+      },
+      "scope": "仅列局部有关的地面部队、上级和航空支援单位；不能同时同地部署全部会战兵力。",
+      "evidence": [
+        {
+          "source_id": "XX_ARCHIVE",
+          "locator": "湘西会战概述"
+        }
+      ]
+    },
+    {
+      "id": "dongkou_late_april",
+      "label": "4月下旬洞口方向局部防御与航空支援",
+      "date": {
+        "label": "1945年4月下旬",
+        "precision": "period",
+        "evidence": [
+          {
+            "source_id": "XX_GROUND",
+            "locator": "4月21日高沙市和山门镇，第57师抵抗；25日第116师团主力进攻"
+          }
+        ]
+      },
+      "scope": "第57师与日第116师团当地投入部分；第五大队为区域航空资源，不是同日某次任务或全部航空序列的复原。窗口内不自动加入5月反攻与援军。",
+      "evidence": [
+        {
+          "source_id": "XX_GROUND",
+          "locator": "4月21日高沙市和山门镇，第57师抵抗；25日第116师团主力进攻"
+        },
+        {
+          "source_id": "XX_AIR",
+          "locator": "第五大队配合第四方面军；4月下旬洞口至雪峰山区域地面攻击"
+        }
+      ],
+      "execution_window": {
+        "start": "1945-04-25T06:00",
+        "end": "1945-04-25T18:00",
+        "kind": "model_scope_limit",
+        "note": "25日来自地面主力投入日期；06—18时为日间计算窗口估计，不是确证开火或航空出动钟点。第五大队仅有下旬区域活动证据，不主张25日实到架数和具体任务。",
+        "evidence": [
+          {
+            "source_id": "XX_GROUND",
+            "locator": "4月21日高沙市和山门镇，第57师抵抗；25日第116师团主力进攻"
+          },
+          {
+            "source_id": "XX_AIR",
+            "locator": "4月下旬区域任务，未载日时"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 27.05272,
+          "lng": 110.5361
+        },
+        "radius_km": 35,
+        "kind": "model_scope_limit",
+        "note": "以现代洞口县城为参考的35公里计算范围估计，非1945年战线或部署坐标；不含整场湘西会战或芷江机场地面作战。",
+        "evidence": [
+          {
+            "source_id": "XX_GEO",
+            "locator": "现代地名参考"
+          },
+          {
+            "source_id": "XX_GROUND",
+            "locator": "4月21日高沙市和山门镇，第57师抵抗；25日第116师团主力进攻"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.army4",
+      "name": "第四方面军",
+      "team": "red",
+      "role": "command",
+      "echelon": "方面军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XX_ARCHIVE",
+          "locator": "王耀武第四方面军"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XX_ARCHIVE",
+              "locator": "王耀武第四方面军"
+            }
+          ]
+        },
+        {
+          "phase_id": "dongkou_late_april",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XX_ARCHIVE",
+              "locator": "王耀武第四方面军"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.corps74",
+      "name": "第74军",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": "ww2.cn.army4",
+      "evidence": [
+        {
+          "source_id": "XX_GROUND",
+          "locator": "第74军施中诚部及所属第57师"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XX_GROUND",
+              "locator": "第74军施中诚部及所属第57师"
+            }
+          ]
+        },
+        {
+          "phase_id": "dongkou_late_april",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XX_GROUND",
+              "locator": "第74军施中诚部及所属第57师"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division57",
+      "name": "第57师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.corps74",
+      "evidence": [
+        {
+          "source_id": "XX_GROUND",
+          "locator": "4月21日—25日高沙市、山门镇方向"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XX_GROUND",
+              "locator": "4月21日—25日高沙市、山门镇方向"
+            }
+          ]
+        },
+        {
+          "phase_id": "dongkou_late_april",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XX_GROUND",
+              "locator": "4月21日—25日高沙市、山门镇方向"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cacw.group5",
+      "name": "中美空军混合联队第五大队",
+      "team": "red",
+      "role": "aviation",
+      "echelon": "航空大队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XX_AIR",
+          "locator": "图注与第五大队配合第四方面军、4月下旬区域攻击"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XX_AIR",
+              "locator": "图注与第五大队配合第四方面军、4月下旬区域攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "dongkou_late_april",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XX_AIR",
+              "locator": "图注与第五大队配合第四方面军、4月下旬区域攻击"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.army20",
+      "name": "日军第20军",
+      "team": "blue",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XX_ARCHIVE",
+          "locator": "日第20军指挥湘西攻势"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XX_ARCHIVE",
+              "locator": "日第20军指挥湘西攻势"
+            }
+          ]
+        },
+        {
+          "phase_id": "dongkou_late_april",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XX_ARCHIVE",
+              "locator": "日第20军指挥湘西攻势"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division116",
+      "name": "日军第116师团当地投入部分",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师团",
+      "parent_id": "ww2.jp.army20",
+      "evidence": [
+        {
+          "source_id": "XX_GROUND",
+          "locator": "4月25日第116师团主力向第57师方向进攻"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "XX_GROUND",
+              "locator": "4月25日第116师团主力向第57师方向进攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "dongkou_late_april",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XX_GROUND",
+              "locator": "4月25日第116师团主力向第57师方向进攻"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本阶段局部实到数、分类装备和精确阵地/机场未核得；航空任务出动数不等于库存，地面上级兵力不平摊。"
+        }
+      }
+    }
+  ]
+}

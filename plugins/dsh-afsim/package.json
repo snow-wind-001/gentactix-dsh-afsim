@@ -1,0 +1,8 @@
+{
+  "name": "gentactix-dsh-afsim",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "GenTactix domain adapter over DSH's native MCP client and AFSIM_MCP",
+  "exports": "./index.mjs"
+}

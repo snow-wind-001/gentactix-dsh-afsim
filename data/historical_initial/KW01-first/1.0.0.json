@@ -1,0 +1,4128 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "KW01-first",
+  "version": "1.0.0",
+  "battle": "抗美援朝-第一次战役-1950.10.25至1950.11.05",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "战役累计序列含西、东两线和后续部队，不是10月25日全部已到场；局部计算阶段只绑定有日期依据的单位。",
+      "两水洞前期只覆盖第354团与韩第2团加强第3营；353团部分和韩军后续救援不提前出现，12时后须另绑增援过程。",
+      "云山晚间使用39军三师与美韩具名营、团及配属分队；未核39军全部炮兵番号、配属数量和航空，非全战役完整模型。",
+      "第9野炮营与DPAA第99野炮营C连不得合并；第6坦克营早期支援韩军与第70坦克营B连配属排是不同任务、不同粒度，不能互换或视为全部同时到场。",
+      "部队身份与阶段依据不等于已核实实到人数、完好装备和阵地坐标；未知保留null，地名锚点另作参考。",
+      "两水洞484、480余与325毙161俘等报告有异文；战果不是开局人数，阵亡与被俘不混用。"
+    ]
+  },
+  "sources": {
+    "KW1_OOB": {
+      "title": "抗美援朝战争第一次战役",
+      "url": "https://www.gfbzb.gov.cn/zbbm/gfzs/201403/20140314/819930541.html",
+      "publisher": "全国征兵网",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "公开军史和战斗序列表，存在文字笔误与统计范围问题；不是逐日到场名册。只作为战役层级参考，不能证明10月25日全部到场。"
+    },
+    "KW1_LSD": {
+      "title": "两水洞遭遇战",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4874430.html",
+      "publisher": "国防部转载解放军报，褚杨，2020-11-22",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "公开军史叙述提供小时节点；与其他公开报道对开火时间、战果细项有异文。未核原始战斗详报，不把报道战果反推为开局实到人数。"
+    },
+    "KW1_LSD_ALT": {
+      "title": "抗美援朝第一仗",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4923276.html?big=fan",
+      "publisher": "国防部公开军史，2022-11-05",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "区分354团前期行动、353团14时30分增援和17时韩军团主力退却；该文一小时与全程数小时指不同片段，不合成统一耗时。"
+    },
+    "KW1_UNSAN": {
+      "title": "激战云山城",
+      "url": "https://dangshi.people.com.cn/n1/2020/1214/c85037-31965015.html",
+      "publisher": "人民网转载学习时报，2020-12-14",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "记载39军三师任务、提前到17时总攻等；第9野炮营、第6坦克营等表述不能与DPAA99野炮营C连、70坦克营B连配属排混成同一番号。未核全部原始命令。"
+    },
+    "KW1_DPAA_BATTLE": {
+      "title": "Battle of Unsan",
+      "url": "https://dpaa-mil.sites.crmforce.mil/dpaaFamWebInBattleOfUnsan",
+      "publisher": "美国国防部国防战俘／失踪人员核查局（DPAA）",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "官方回顾证明8骑兵团三营、韩15团及救援经过；概述中的地理距离等不可当测绘依据，失踪初报不能直接换成阵亡。"
+    },
+    "KW1_DPAA_BERRY": {
+      "title": "Cpl. Robert Harmon Berry — Service Member Profile",
+      "url": "https://dpaa-mil.sites.crmforce.mil/dpaaProfile?id=a0Jt0000000ce7nEAA",
+      "publisher": "美国国防部DPAA",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "11月1日8骑兵团1、2、3营所在方向与预备任务的公开摘要；没有可直接用于本局的精确坐标或各营实到人数。"
+    },
+    "KW1_DPAA_TANK70": {
+      "title": "Cpl. Robert Louis Paulley — Service Member Profile",
+      "url": "https://dpaa-mil.sites.crmforce.mil/dpaaProfile?id=a0Jt0000000ceMOEAY",
+      "publisher": "美国国防部DPAA",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "证明第70坦克营B连一个排配属8骑兵团第3营；不能扩大为整个B连或全营同地到场，排号和坦克数量未载。"
+    },
+    "KW1_DPAA_ARTY99": {
+      "title": "Cpl. Robert Frank Miller — Service Member Profile",
+      "url": "https://dpaa-mil.sites.crmforce.mil/dpaaProfile?id=a0Jt0000001fuNJEAY",
+      "publisher": "美国国防部DPAA",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "证明11月1日第99野战炮兵营C连在云山南侧提供支援；没有C连实到人数、炮数与库存，不能将9与99视为同一编号。"
+    },
+    "KW1_LSD_ARMY": {
+      "title": "首战两水洞：由此开始抗美援朝战争第一次战役",
+      "url": "https://www.81.mil.cn/js_208592/16286048.html",
+      "publisher": "中国军网公开战史，2024",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "载韩第2团第1、2营在前卫第3营后徒步跟进；与其他报道开火时刻、战果有异文，不能合并为精确统一统计。"
+    },
+    "KW1_GEONAMES": {
+      "title": "GeoNames朝鲜地名数据：旧温井与云山旧城分列",
+      "url": "https://www.geonames.org/",
+      "publisher": "GeoNames，项目既有朝鲜地名锚点",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "地名点与别名用于区分今日行政地名和历史地名；不证明历史阵地、道路或逐单位部署；半径是计算范围假设。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "第一次战役累计序列参考（非同日部署）",
+      "date": {
+        "label": "1950年10月25日至11月5日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "KW1_OOB",
+            "locator": "中国人民志愿军与“联合国军”战斗序列及分阶段经过"
+          }
+        ]
+      },
+      "scope": "只保留公开战役参战序列，不提供全军同时到场的计算初态。",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "中国人民志愿军与“联合国军”战斗序列及分阶段经过"
+        }
+      ]
+    },
+    {
+      "id": "liangshuidong_opening",
+      "label": "两水洞：主力接敌，后续援兵到场前",
+      "date": {
+        "label": "1950-10-25",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "KW1_LSD",
+            "locator": "10时20分主力进入设伏地段；中午开始韩第2团主力救援；14时30分353团部分兵力参战"
+          }
+        ]
+      },
+      "scope": "354团与韩军第2团加强第3营的前期接触；炮兵分队包含在加强营内，后续353团与韩军其他营不提前部署。",
+      "evidence": [
+        {
+          "source_id": "KW1_LSD",
+          "locator": "10时20分主力进入设伏地段；中午开始韩第2团主力救援；14时30分353团部分兵力参战"
+        }
+      ],
+      "execution_window": {
+        "end": "1950-10-25T12:00",
+        "kind": "model_scope_limit",
+        "note": "12时是避免跨越尚未绑定的韩军后续增援过程的模型边界，并非首战结束时刻。开火另有8时、10时等异文；本片采用10时20分叙述。",
+        "evidence": [
+          {
+            "source_id": "KW1_LSD",
+            "locator": "10时20分主力进入设伏地段；中午开始韩第2团主力救援；14时30分353团部分兵力参战"
+          }
+        ],
+        "start": "1950-10-25T10:20"
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 40.11083,
+          "lng": 125.89694
+        },
+        "radius_km": 12,
+        "kind": "model_scope_limit",
+        "note": "抗美援朝-西线-温井地名参考周边12公里为当前模型范围，不是实测战区边界或部队阵地；不得将今日Unsan（旧温井）与1950年云山旧城混用。",
+        "evidence": [
+          {
+            "source_id": "KW1_GEONAMES",
+            "locator": "https://www.geonames.org/2039520/；项目既有korean_anchors.json对应地名与别名"
+          }
+        ]
+      }
+    },
+    {
+      "id": "unsan_evening",
+      "label": "云山：11月1日晚地面主攻与防御",
+      "date": {
+        "label": "1950-11-01",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "KW1_UNSAN",
+            "locator": "39军115、116、117师的三路任务；总攻提前至17时；中文配属番号与美方分项交叉核对"
+          }
+        ]
+      },
+      "scope": "39军三个师按来源方向聚合，8骑兵团三营、韩15团、99野炮营C连与70坦克营B连配属排独立绑定；未核全配属与航空，不代表完整云山战斗。",
+      "evidence": [
+        {
+          "source_id": "KW1_UNSAN",
+          "locator": "39军115、116、117师的三路任务；总攻提前至17时；中文配属番号与美方分项交叉核对"
+        }
+      ],
+      "execution_window": {
+        "end": "1950-11-01T21:00",
+        "kind": "model_scope_limit",
+        "note": "只提供11月1日晚四小时范围的地面参数化窗口。21时是人为计算截止，不是史实停火；不跨入2日救援、航空和后续突围过程。",
+        "evidence": [
+          {
+            "source_id": "KW1_UNSAN",
+            "locator": "39军115、116、117师的三路任务；总攻提前至17时；中文配属番号与美方分项交叉核对"
+          }
+        ],
+        "start": "1950-11-01T17:00"
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 39.97278,
+          "lng": 125.80528
+        },
+        "radius_km": 12,
+        "kind": "model_scope_limit",
+        "note": "抗美援朝-西线-云山旧城地名参考周边12公里为当前模型范围，不是实测战区边界或部队阵地；不得将今日Unsan（旧温井）与1950年云山旧城混用。",
+        "evidence": [
+          {
+            "source_id": "KW1_GEONAMES",
+            "locator": "https://www.geonames.org/6270237/；项目既有korean_anchors.json对应地名与别名"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "kw.cn.hq",
+      "name": "中国人民志愿军总部",
+      "team": "red",
+      "role": "command",
+      "echelon": "总部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.corps38",
+      "name": "志愿军第38军指挥机关",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": "kw.cn.hq",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division112",
+      "name": "志愿军第112师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps38",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division113",
+      "name": "志愿军第113师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps38",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division114",
+      "name": "志愿军第114师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps38",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.corps39",
+      "name": "志愿军第39军指挥机关",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": "kw.cn.hq",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division115",
+      "name": "志愿军第115师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps39",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_UNSAN",
+              "locator": "第115师11月1日分路进攻、阻援与切断退路的任务；配属火力数量另作估计"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division116",
+      "name": "志愿军第116师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps39",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_UNSAN",
+              "locator": "第116师11月1日分路进攻、阻援与切断退路的任务；配属火力数量另作估计"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division117",
+      "name": "志愿军第117师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps39",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_UNSAN",
+              "locator": "第117师11月1日分路进攻、阻援与切断退路的任务；配属火力数量另作估计"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.corps40",
+      "name": "志愿军第40军指挥机关",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": "kw.cn.hq",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division118",
+      "name": "志愿军第118师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps40",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "118师前卫354团开进与两水洞接敌；上级不与团重复计算"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division119",
+      "name": "志愿军第119师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps40",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division120",
+      "name": "志愿军第120师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps40",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.corps42",
+      "name": "志愿军第42军指挥机关",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": "kw.cn.hq",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division124",
+      "name": "志愿军第124师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps42",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division125",
+      "name": "志愿军第125师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps42",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division126",
+      "name": "志愿军第126师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps42",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.corps50",
+      "name": "志愿军第50军指挥机关",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": "kw.cn.hq",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division148",
+      "name": "志愿军第148师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps50",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division149",
+      "name": "志愿军第149师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps50",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division150",
+      "name": "志愿军第150师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps50",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.corps66",
+      "name": "志愿军第66军指挥机关",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": "kw.cn.hq",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division196",
+      "name": "志愿军第196师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps66",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division197",
+      "name": "志愿军第197师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps66",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.division198",
+      "name": "志愿军第198师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps66",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.artillery_division1",
+      "name": "志愿军炮兵第1师",
+      "team": "red",
+      "role": "support",
+      "echelon": "师",
+      "parent_id": "kw.cn.hq",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.artillery_division2",
+      "name": "志愿军炮兵第2师",
+      "team": "red",
+      "role": "support",
+      "echelon": "师",
+      "parent_id": "kw.cn.hq",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.artillery_division8",
+      "name": "志愿军炮兵第8师",
+      "team": "red",
+      "role": "support",
+      "echelon": "师",
+      "parent_id": "kw.cn.hq",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.regiment354",
+      "name": "志愿军第354团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "kw.cn.division118",
+      "evidence": [
+        {
+          "source_id": "KW1_LSD",
+          "locator": "118师前卫团；1、2、3营分别突击、阻援和预备的任务，团级聚合包含其下属营"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "118师前卫团；1、2、3营分别突击、阻援和预备的任务，团级聚合包含其下属营"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "25日10时20分354团向进入伏击地段的韩军加强营射击"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.cn.regiment353",
+      "name": "志愿军第353团参战部分",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团的一部",
+      "parent_id": "kw.cn.division118",
+      "evidence": [
+        {
+          "source_id": "KW1_LSD",
+          "locator": "353团第1、3营各一部于14时30分协同354团，不能算全团实到"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "353团第1、3营各一部于14时30分协同354团，不能算全团实到"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "14时30分部分兵力加入，晚于当前12时计算边界"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.army8",
+      "name": "美第8集团军指挥机关",
+      "team": "blue",
+      "role": "command",
+      "echelon": "集团军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.corps1",
+      "name": "美第1军指挥机关",
+      "team": "blue",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": "kw.us.army8",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.corps2",
+      "name": "韩国第2军团指挥机关",
+      "team": "blue",
+      "role": "command",
+      "echelon": "军团",
+      "parent_id": "kw.us.army8",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.corps10",
+      "name": "美第10军指挥机关",
+      "team": "blue",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.corps1",
+      "name": "韩国第1军团指挥机关",
+      "team": "blue",
+      "role": "command",
+      "echelon": "军团",
+      "parent_id": "kw.us.corps10",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.division24",
+      "name": "美第24步兵师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.us.corps1",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.uk.brigade27",
+      "name": "英第27旅",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "旅",
+      "parent_id": "kw.us.corps1",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.airborne187",
+      "name": "美第187空降团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "kw.us.corps1",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.capital_division",
+      "name": "韩国首都师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.rok.corps1",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.division3",
+      "name": "韩国第3师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.rok.corps1",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.marine_division1",
+      "name": "美陆战第1师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.us.corps10",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.division7",
+      "name": "美第7步兵师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.us.corps10",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.division2",
+      "name": "美第2步兵师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.us.army8",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.division6",
+      "name": "韩国第6师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.rok.corps2",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "韩国第6师第2团前卫加强第3营北进；上级不与子建制重复计算"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.division7",
+      "name": "韩国第7师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.rok.corps2",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.division8",
+      "name": "韩国第8师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.rok.corps2",
+      "evidence": [
+        {
+          "source_id": "KW1_OOB",
+          "locator": "公开战斗序列表"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "公开战斗序列表"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_OOB",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.regiment2",
+      "name": "韩国第6师第2团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "kw.rok.division6",
+      "evidence": [
+        {
+          "source_id": "KW1_LSD",
+          "locator": "第3营为汽车搭载的前卫加强营；团主力后续救援"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "第3营为汽车搭载的前卫加强营；团主力后续救援"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "第3营先接敌；上级团仅作隶属和后续跟进参考，不与第3营重复计数"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.regiment2.battalion1",
+      "name": "韩国第2团第1营",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "营",
+      "parent_id": "kw.rok.regiment2",
+      "evidence": [
+        {
+          "source_id": "KW1_LSD_ARMY",
+          "locator": "过程：第3营汽车搭载步兵，团第1、2营在后面徒步跟进"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD_ALT",
+              "locator": "加强第3营及跟进的团主力；跟进1、2营番号另见中国军网公开叙述"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "中午以后团主力救援，本片到12时前，不提前加入后续营"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD_ALT",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.regiment2.battalion2",
+      "name": "韩国第2团第2营",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "营",
+      "parent_id": "kw.rok.regiment2",
+      "evidence": [
+        {
+          "source_id": "KW1_LSD_ARMY",
+          "locator": "过程：第3营汽车搭载步兵，团第1、2营在后面徒步跟进"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD_ALT",
+              "locator": "加强第3营及跟进的团主力；跟进1、2营番号另见中国军网公开叙述"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "中午以后团主力救援，本片到12时前，不提前加入后续营"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD_ALT",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.regiment2.battalion3",
+      "name": "韩国第2团第3营（含配属炮兵）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "加强营",
+      "parent_id": "kw.rok.regiment2",
+      "evidence": [
+        {
+          "source_id": "KW1_LSD",
+          "locator": "加强第3营及跟进的团主力；跟进1、2营番号另见中国军网公开叙述"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "加强第3营及跟进的团主力；跟进1、2营番号另见中国军网公开叙述"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "10时20分第3营及配属炮兵进入设伏地域，作为一个加强营聚合计算"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_LSD",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.cavalry_division1",
+      "name": "美骑兵第1师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.us.corps1",
+      "evidence": [
+        {
+          "source_id": "KW1_DPAA_BERRY",
+          "locator": "8骑兵团1、2、3营11月1日部署，骑兵番号不代表骑马作战"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BERRY",
+              "locator": "8骑兵团1、2、3营11月1日部署，骑兵番号不代表骑马作战"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_UNSAN",
+              "locator": "10月底向云山接防，不能提前到25日两水洞"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BERRY",
+              "locator": "所属8骑兵团三营已在云山一带部署"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.cavalry_regiment8",
+      "name": "美骑兵第8团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "kw.us.cavalry_division1",
+      "evidence": [
+        {
+          "source_id": "KW1_DPAA_BERRY",
+          "locator": "8骑兵团下属三营的1日部署"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BERRY",
+              "locator": "8骑兵团下属三营的1日部署"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_UNSAN",
+              "locator": "10月底到云山接防"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BERRY",
+              "locator": "三营分别在云山北、西侧河谷与南端预备，不重复累计团与营"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.cavalry8.battalion1",
+      "name": "美骑兵第8团第1营",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "营",
+      "parent_id": "kw.us.cavalry_regiment8",
+      "evidence": [
+        {
+          "source_id": "KW1_DPAA_BERRY",
+          "locator": "11月1日第1营云山以北；此为相对方位，非经纬度"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BERRY",
+              "locator": "11月1日第1营云山以北；此为相对方位，非经纬度"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_UNSAN",
+              "locator": "8骑兵团10月底向云山接防，非25日两水洞当面部队"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BERRY",
+              "locator": "11月1日第1营云山以北"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.cavalry8.battalion2",
+      "name": "美骑兵第8团第2营",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "营",
+      "parent_id": "kw.us.cavalry_regiment8",
+      "evidence": [
+        {
+          "source_id": "KW1_DPAA_BERRY",
+          "locator": "11月1日第2营城西南面江河谷；此为相对方位，非经纬度"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BERRY",
+              "locator": "11月1日第2营城西南面江河谷；此为相对方位，非经纬度"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_UNSAN",
+              "locator": "8骑兵团10月底向云山接防，非25日两水洞当面部队"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BERRY",
+              "locator": "11月1日第2营城西南面江河谷"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.cavalry8.battalion3",
+      "name": "美骑兵第8团第3营",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "营",
+      "parent_id": "kw.us.cavalry_regiment8",
+      "evidence": [
+        {
+          "source_id": "KW1_DPAA_BERRY",
+          "locator": "11月1日第3营河谷南端为预备队；此为相对方位，非经纬度"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BERRY",
+              "locator": "11月1日第3营河谷南端为预备队；此为相对方位，非经纬度"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_UNSAN",
+              "locator": "8骑兵团10月底向云山接防，非25日两水洞当面部队"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BERRY",
+              "locator": "11月1日第3营河谷南端为预备队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.division1",
+      "name": "韩国第1师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.us.corps1",
+      "evidence": [
+        {
+          "source_id": "KW1_DPAA_BATTLE",
+          "locator": "云山方向韩国第1师与第15团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BATTLE",
+              "locator": "云山方向韩国第1师与第15团"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BATTLE",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BATTLE",
+              "locator": "11月1日晚第15团仍在云山防线，不与师重复计数"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.regiment15",
+      "name": "韩国第15团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "kw.rok.division1",
+      "evidence": [
+        {
+          "source_id": "KW1_DPAA_BATTLE",
+          "locator": "11月1日与美8骑兵团协同行动及夜间遭到打击"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BATTLE",
+              "locator": "11月1日与美8骑兵团协同行动及夜间遭到打击"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BATTLE",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_BATTLE",
+              "locator": "11月1日晚在8骑兵团右翼防御"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.rok.regiment12",
+      "name": "韩国第12团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "kw.rok.division1",
+      "evidence": [
+        {
+          "source_id": "KW1_UNSAN",
+          "locator": "8骑兵团与韩12团接防背景；不将换防前后韩12、韩15视为同一团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_UNSAN",
+              "locator": "8骑兵团与韩12团接防背景；不将换防前后韩12、韩15视为同一团"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_UNSAN",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_UNSAN",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.artillery99",
+      "name": "美第99野战炮兵营编制上级",
+      "team": "blue",
+      "role": "command",
+      "echelon": "营",
+      "parent_id": "kw.us.cavalry_division1",
+      "evidence": [
+        {
+          "source_id": "KW1_DPAA_ARTY99",
+          "locator": "C连所属编制上级，不将整个营当作该连的额外火力"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_ARTY99",
+              "locator": "C连所属编制上级，不将整个营当作该连的额外火力"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_ARTY99",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_ARTY99",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.artillery99.battery_c",
+      "name": "美第99野战炮兵营C连",
+      "team": "blue",
+      "role": "support",
+      "echelon": "炮兵连",
+      "parent_id": "kw.us.artillery99",
+      "evidence": [
+        {
+          "source_id": "KW1_DPAA_ARTY99",
+          "locator": "11月1日在云山南侧支援8骑兵团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_ARTY99",
+              "locator": "11月1日在云山南侧支援8骑兵团"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_ARTY99",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_ARTY99",
+              "locator": "11月1日C连在云山南侧火力支援，实到炮数未载"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.tank70",
+      "name": "美第70坦克营编制上级",
+      "team": "blue",
+      "role": "command",
+      "echelon": "营",
+      "parent_id": "kw.us.cavalry_division1",
+      "evidence": [
+        {
+          "source_id": "KW1_DPAA_TANK70",
+          "locator": "B连一个排配属第3营；编制上级不当作额外全营到场"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_TANK70",
+              "locator": "B连一个排配属第3营；编制上级不当作额外全营到场"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_TANK70",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_TANK70",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    },
+    {
+      "id": "kw.us.tank70.company_b.attached_platoon",
+      "name": "美第70坦克营B连配属排",
+      "team": "blue",
+      "role": "support",
+      "echelon": "坦克排",
+      "parent_id": "kw.us.tank70",
+      "evidence": [
+        {
+          "source_id": "KW1_DPAA_TANK70",
+          "locator": "B连一个排配属8骑兵团第3营，未载排号与实到车辆数"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_TANK70",
+              "locator": "B连一个排配属8骑兵团第3营，未载排号与实到车辆数"
+            }
+          ]
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_TANK70",
+              "locator": "本计算窗口仅使用该方向已核单位；本条是其余战区或未独立绑定的战役参考，不断言具体位置或已离开战场"
+            }
+          ]
+        },
+        {
+          "phase_id": "unsan_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW1_DPAA_TANK70",
+              "locator": "11月1日配属第3营的B连一排"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段此建制的实到人数；战果、缴获数或编制表不是本阶段人员基数"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核逐类实到装备、完好率和库存；配属关系不等于可用数量，缴获火炮不能反推开局炮数"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有地名、方向或相对部署叙述；未提供可当作部队阵地的测绘坐标"
+        }
+      }
+    }
+  ]
+}

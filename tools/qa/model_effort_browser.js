@@ -1,0 +1,30 @@
+async page=>{
+ const base='http://127.0.0.1:18992',checks=[],errors=[];const check=(v,s)=>{if(!v)throw Error(s);checks.push(s)};
+ const sessions=await(await page.request.get(base+'/api/sessions')).json();const sid=sessions.sessions[0].session_id;
+ const before=await(await page.request.get(base+'/api/sessions/'+sid)).json();
+ await page.addInitScript(({base,sid})=>{window.gentactix={backendUrl:base};localStorage.setItem('gentactix-session',sid)},{base,sid});
+ page.on('pageerror',e=>errors.push(e.message));await page.setViewportSize({width:1200,height:1000});
+ await page.goto('http://127.0.0.1:18993/');await page.getByRole('button',{name:'返回当前战局',exact:true}).click();
+ await page.getByRole('button',{name:/推演操作/}).click();
+ await page.getByRole('button',{name:'模型配置',exact:true}).click();
+ const dialog=page.getByRole('dialog',{name:'DSH · LLM配置'}),effort=dialog.getByLabel('思考强度（统一设置）');
+ await effort.waitFor();check(await effort.inputValue()==='medium','persisted medium default visible');
+ check(await dialog.locator('#llm-context').inputValue()==='262144','256K context visible');
+ await effort.selectOption('high');await dialog.locator('.llm-advanced summary').click();
+ check(await dialog.locator('#effort-scenario-builder').inputValue()==='high','native builder included in global setting');
+ check(await dialog.locator('#effort-map-annotator').inputValue()==='high','native plotting included in global setting');
+ await dialog.locator('#effort-chat').selectOption('medium');check(await effort.inputValue()==='custom','role override visible');
+ await effort.selectOption('medium');
+ const saved=page.waitForResponse(r=>r.url().endsWith('/api/llm/config')&&r.request().method()==='PUT');
+ await dialog.getByRole('button',{name:'保存配置',exact:true}).click();const response=await saved;check(response.ok(),'real configuration API saved');
+ const config=await response.json();check(Object.values(config.role_policies).every(p=>p.reasoning_effort==='medium'),'all roles saved medium');
+ check(config.api_key_configured&&!('api_key' in config),'existing key retained without response disclosure');
+ await dialog.getByRole('button',{name:'关闭模型配置'}).click();await page.getByRole('button',{name:'模型配置',exact:true}).click();
+ check(await effort.inputValue()==='medium','reopening retains saved value');
+ check((await dialog.innerText()).includes('DSH 原生上下文管理'),'native compaction ownership visible');
+ await dialog.locator('.llm-advanced summary').click();
+ await effort.scrollIntoViewIfNeeded();
+ await page.screenshot({path:'.cache/qa/model-policy-medium-2026-10-29/settings.png'});
+ const after=await(await page.request.get(base+'/api/sessions/'+sid)).json();check(JSON.stringify(after.war_state)===JSON.stringify(before.war_state),'settings preserve current world');
+ check(!errors.length,'no component exceptions');return{passed:true,checks,api_mocks:false};
+}

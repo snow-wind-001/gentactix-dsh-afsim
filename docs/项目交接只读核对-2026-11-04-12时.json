@@ -1,0 +1,2077 @@
+{
+  "format": "gentactix-readonly-handoff-1",
+  "snapshot_started_at": "2026-11-04T12:34:38.390619+08:00",
+  "purpose": "Write handoff only; no tests/model calls/round advances/restarts/config edits/build/install/push",
+  "head": "b5a38a5d0c440cb41f77edb5ce6261cff1020082",
+  "worktree_status_counts_before": {
+    " M": 132,
+    "??": 1033
+  },
+  "worktree_status_sha256_before": "c2cda9424204395295497c73e794e13935bc99b83995ff09d6bbd6d751e81df2",
+  "AGENTS_sha256_before": "7843b4d3d32b423430e97a840e273dc237f8db262b19208a1521e32bb4414be0",
+  "frozen_source_hashes_before": {
+    "adjudication/README.md": "2fd5396c5895d02913716613a681ebea910c111e35e80600edca772de94ab5f2",
+    "adjudication/_template.md": "98317c0466bc68a3a15fdeba76a4d0d301fca123e291b6826c9b8e33c4ccde97",
+    "adjudication/抗日战争-万家岭战役-1938.09下旬至1938.10.md": "e4437e16c784cbbf22df2d0467df2aa69363882acc3ff708bd3829a5a812ffed",
+    "adjudication/抗日战争-全面反攻与受降总览-1945.08至1945.09.md": "860a6540da46ecea42c08c61007a2435f0e6ea9f369b87cfd85b237639231d5d",
+    "adjudication/抗日战争-冀中五一反扫荡-1942.05.01至1942.06.20.md": "4757a6a0b40d7e741101213440527c6fbf5599725559e171754b6361a9684d8b",
+    "adjudication/抗日战争-台儿庄战役-1938.03.23至1938.04.07.md": "2c4bdb72c049c99105f350aa7b603d5196f7569b26bf332f261679c3d92e85da",
+    "adjudication/抗日战争-太原会战-1937.09至1937.11.md": "e52a32230a2ac39c7b615906370b1cad2e072cad9afd0719d94f572532e192f4",
+    "adjudication/抗日战争-平型关伏击战-1937.09.25.md": "3805061d965d8d3c0247ac121ea9814badb92ff6a2609d10ac20896b28edb633",
+    "adjudication/抗日战争-徐州会战总览-1938.01至1938.05.md": "78927fca409be7a2c4edd2134d8e5cddf74ff065811236762c6bede59824ec58",
+    "adjudication/抗日战争-敌后局部反攻总览-1944.md": "3a131f3016a8260b00bf2e7df3309397888b8c7f7ac3c8ee9e3b62d4e86e1723",
+    "adjudication/抗日战争-桂南会战与昆仑关攻坚-1939.11至1940.01.md": "79b8ae3eac823501fcbd4ee26d3da537c305012b4131ec796fb4517bffc13e6b",
+    "adjudication/抗日战争-武汉会战-1938.06至1938.10.md": "5f4e1dfff0981dc87eb3aa02c1e8ad89d00ab2cce9db896d372a3f67629d44ad",
+    "adjudication/抗日战争-淞沪会战-1937.08.13至1937.11.12.md": "9cafd8775048f767028f9ef5d1e0d12c73b8f1267f7488778b16a59ddf6a56c7",
+    "adjudication/抗日战争-湘西会战-1945.04.09至1945.06.07.md": "dbad7b80012d152530819c2ad6dc19a01f96093ba9e2f159a7392415598564e8",
+    "adjudication/抗日战争-百团大战-1940.08.20至1941.01.24.md": "82f91e061fc669997e3da89344d1af781a8608e08d7293e2361be065e44d4122",
+    "adjudication/抗日战争-第一次长沙会战-1939.09.14至1939.10.md": "e71384c349f8d8724efa4464f12bde9ec6140754e7495a0f4119d88c9fd88c85",
+    "adjudication/抗日战争-第三次长沙会战-1941.12.24至1942.01.16.md": "f6ff8c86f329cfe837a6b3d1cbf528bc6779e9d52e13347bde3f49a8cbf006ca",
+    "adjudication/抗日战争-第二次长沙会战-1941.09.07至1941.10.09.md": "91149701069ec996ec29808fefa28ee35604039abc0e6a740570662fb1140ce5",
+    "adjudication/抗日战争-缅北滇西反攻总览-1943.10至1945.03.md": "000a8e28fae897cf86843eb483caab0051cfd98a0f828bdba9731ce22aa1d155",
+    "adjudication/抗日战争-衡阳保卫战-1944.06至1944.08.08.md": "62d8392fd2aa44c0c09f8f18dcfbe3340a8706994b8cbf2d8547c353a8cfd769",
+    "adjudication/抗日战争-豫湘桂战役总览-1944.04至1944.12.md": "0003bdb02b5fcb302141d0509e0f2191f6c6f32fe00a0833ff11b31320cdec76",
+    "adjudication/抗日战争-车桥战役-1944.03.05至1944.03.06.md": "c637fea0b038485c40c1afb201f6eee0f224518face69b76d43e1f5756d408a0",
+    "adjudication/抗美援朝-上甘岭战役-1952.10.14至1952.11.25.md": "6b5b8620b4d5d970d1b68187c1bda0581efb9e24ec1f87a74a2c8c66421ac68f",
+    "adjudication/抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27.md": "cb5ab7491a81647c3203bd4385bad0c3cad1b1a0b2d85829eb9fc78231e98e87",
+    "adjudication/抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22.md": "21608ba050b159144689638780d5eb24cbabe06005c6356dccf23179d2006e8b",
+    "adjudication/抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31.md": "a3ec604390d00949198c3ce4b2a0f67dba71bc4cf1d4b891edd6214fabc5293a",
+    "adjudication/抗美援朝-第一次战役-1950.10.25至1950.11.05.md": "0a40fd10d0803dfda8cc327cae31a482b90b9922c13295307a308c2a76f6470d",
+    "adjudication/抗美援朝-第三次战役-1950.12.31至1951.01.08.md": "71b0d07f443686927a70459855b6fc77948619565e32caecc565eb138137ad13",
+    "adjudication/抗美援朝-第二次战役-1950.11.07至1950.12.24.md": "75e93564845a0092339f5afeb9fb04487a1ccdf2cd4ee59af9f8530c5185056c",
+    "adjudication/抗美援朝-第五次战役-1951.04.22至1951.06.10.md": "a2a10531a9187d1985ef41ab99cde3d063914452a77164178fcdb0451d088ef9",
+    "adjudication/抗美援朝-第四次战役-1951.01.25至1951.04.21.md": "1da04bfc935ab91277bc5c52f38db7c2488261136d2945f8472e215cc0d57850",
+    "adjudication/红军长征-中央红军巧渡金沙江-1935.05.03至1935.05.09.md": "9861ff4cd7fb1c586e784f321eb285cb4d183e614c1a726f1d4105df66ed0bc2",
+    "adjudication/红军长征-乌蒙山回旋战-1936.02.27至1936.03.28.md": "f63d37ad9b51552a0aa7f1361a3603b07e8acdce683817fdda4296f0a2590170",
+    "adjudication/红军长征-包座战役-1935.08.29至1935.09.01.md": "f3c0259dbdec3d004b84ddc4411184ed7ecd2d783d9e1ac5fa7a9d8caab7065a",
+    "adjudication/红军长征-嘉陵江战役-1935.03.28至1935.04.21.md": "e18d40ebafeb9775cc2a9e3ff10bab4f23c975cdb021147e7b3e699b70cd996a",
+    "adjudication/红军长征-四渡赤水-1935.01.19至1935.03.22.md": "ae6e7ae052d452d106f6907cc491e09f2bfb64f1742039816e8797aa2791669d",
+    "adjudication/红军长征-强渡乌江-1935.01.01至1935.01.06.md": "5e375424421b438dd989b55658c95eb00cba27bcb5a7e22a531a4e5c0e0f5025",
+    "adjudication/红军长征-强渡大渡河与飞夺泸定桥-1935.05.24至1935.05.29.md": "e4ea52eee3ee6458bd849ebb3f81321517b070733a214d228efedb5c7726f07b",
+    "adjudication/红军长征-懋功会师与雪山草地转移-1935.06.12至1935.09.12.md": "31afb627c8b8c260be00931550fe1a9fb7b71a1cd8d9c60ba0231ad5146c01d0",
+    "adjudication/红军长征-湘江战役-1934.11.25至1934.12.01.md": "ccd5e271adda646141a0d8714a070d1d4ecf409ccdf4c77f81e8a872ac721a4d",
+    "adjudication/红军长征-甘孜会师至三大主力会师-1936.07.01至1936.10.22.md": "4ff1812ff7979858996a604dc2d61f74845a97d6cd247205c7315df863cb3e23",
+    "adjudication/红军长征-百丈关战役-1935.11.md": "ff51812ad28734f2b38c36f987599c79172ca406d7933e0d94d29b1d79535fce",
+    "adjudication/红军长征-直罗镇战役-1935.11.20至1935.11.24.md": "076f40a158f9937c75b99341cf349fb4aa62c204b818104604b00afe88486b04",
+    "adjudication/红军长征-红二六军团抢渡金沙江-1936.04.25至1936.04.28.md": "7f8230ea388dab8ae3a4a21c085e438fa8f9454777468ae643161bde39f344d3",
+    "adjudication/红军长征-红二十五军长征-1934.11.16至1935.09.16.md": "b45aab170ea60b5c21d3ef94ae81f949e34b7da4ee18118929130305685b601d",
+    "adjudication/红军长征-腊子口战斗-1935.09.16至1935.09.17.md": "6f57fcb2e622cd388c70c663765684388f3940e0c73a616966fc663004722f01",
+    "adjudication/长平之战.md": "776dd34b52bc3f4300bba89b9ca0464a367936c96bd017c6e8fb18157c15e478",
+    "app.py": "563049cda426219df1d744f789ad770578733888b5ede92f624110e36886ea1a",
+    "backend/__init__.py": "ec44a28848b9eb218e0aa1dd5ac420efb3ed307524a04f8fd8839794addbf088",
+    "backend/afsim_air.py": "5ef98999db60afd68e3d0f910f29346466f342ab6071566ce00d28c59fcaf5ae",
+    "backend/afsim_campaign.py": "65c12882c67d69fbe05fcf33df5ba4e7d6d6760790b6491a004307b3bf605a1f",
+    "backend/afsim_combined.py": "6ba0e313fa043ab894d79f81b0aeb5001bb0a19741ab8c3b2aa1eb5a95848ab4",
+    "backend/afsim_comparison.py": "27aa7d16cc37bed306b94887ccf83c09e924bcca20603bfcf4131a65deba2fe6",
+    "backend/afsim_crossing.py": "9a5504bfdcca784d38eca31f172262de1444a25235909d1c4545cd3b95ae08f2",
+    "backend/afsim_crossing_network.py": "3a4389909642c77b51a22dde033f4a2dafa555294ce6f40af94e87df0a854f98",
+    "backend/afsim_ferries.py": "bc004af81536fc1a03dfa6d6e483b1a332ddd8b79c6e9a5559f3cc0efdd131f8",
+    "backend/afsim_formation_parts.py": "74656c740083f7853d3f1814334f01ad11b2168fdc0b87823f08a651dc5264bf",
+    "backend/afsim_history.py": "6a730e109635526be1356657b4a28fcb69e3af4229272221f3baf724676ba658",
+    "backend/afsim_literals.py": "c9f8fb061f9949c2bbb44f656a340cc81d0159f6cb86167ce9000f5f36ef2ffe",
+    "backend/afsim_movement.py": "7d5e6f1ff2b557803ec863b8a35bf6ab77a70b5095d644a61945736804b46334",
+    "backend/afsim_rules.py": "cf6655b00b4affef93b5244b01ac938ac5fbb2215c17526ba221b85a7a52f3f7",
+    "backend/afsim_split_supply.py": "fcf9f7778786846c0859cfed89d87c3ec5ca856e566e6ae67845617d9c4f1215",
+    "backend/afsim_state.py": "5ea7179652659deb1b5e87fa590c92adceb5a7c72627c484a08e515df717c434",
+    "backend/afsim_summary.py": "c17f8b654db30b369c6f759e82c2b6063229bd99c29778b3de49fe4bc1be6f21",
+    "backend/afsim_supply_schedule.py": "2272d1e3affdea9392423217a81928ffbec00d91762f7ed75aca52863979cdb8",
+    "backend/afsim_sustainment.py": "cae77934c42d6068780237174d8ed12c2a16818128be85cb4b94839bbae75081",
+    "backend/afsim_terrain.py": "42a4fdb637dd3dd031ce6b622b797dcf66731542484b9601b459016835910d3d",
+    "backend/afsim_turns.py": "448a9feea996f57d7717f70bb522e0c648360ce2954a08a114178c08da2a4151",
+    "backend/afsim_world.py": "6391d98666872a45260bae306df9621058fa4a8787e8a93985eb5698b8cc827a",
+    "backend/agent_tools.py": "f2062316ca6fe2142ac147d84a2af546d8992d7a3cbf089c39e79e82f9f02366",
+    "backend/analysis_routes.py": "50bd71c9f6dd921d5a017493ef5643a3ec48be77c67ad73d5a65e1b5b1f64a2d",
+    "backend/campaign_model.py": "3bf59010d865729aca839711aa7d3a61bd6b0e2926a4aeac9936e215e2d27023",
+    "backend/checkpoint_codec.py": "bdf548e6fe37849bbbb70ce9f0929ffc203706244188e4bc2ddb17ddbd723696",
+    "backend/command_routes.py": "9c9871343d39a9533839a2d312db694bd74c8efad5a9bf33daeae4817f914abb",
+    "backend/dsh_simulation.py": "081720085f008ddb884505aac87834d382f770ca3dcc5744bf2fb928a88c5713",
+    "backend/effect_amendments.py": "a7eae2079f905664adf347102d6d699b69bdd3f9efd7ea859f5920eba54c4eb2",
+    "backend/effect_constraints.py": "8dd4f778d39a84877bc34ac5f5c4c84bd4e63b88187543e8235c226d49edf6bd",
+    "backend/effect_contract.py": "ca767fb1888d6d6d74334291692c3d9302e68f43a1e4ccf12fe08f915e7b61d3",
+    "backend/extensions.py": "bb16d35fc6fb64bf227ddf93edafb10096ffb8fb12abf012db47f6ee2e70e0e2",
+    "backend/force_routes.py": "3ff70b2c9d49a9040f86e16e4b35d994654e3866b83f8732046846cfef9fb5e4",
+    "backend/formation_commit.py": "9747e64634e5862e53abdf4818ed5662bdaad79063eef7b6214af5d92e625929",
+    "backend/formation_execution.py": "59c8636992ed7e900f2e92a971dc04dfe57405db63a92fc0a589ba2dc28e3b96",
+    "backend/harness_engine.py": "648b919ac251b276e2210c2ab83a680a0c0e56e697e156d59f61102f7e5501df",
+    "backend/llm_settings.py": "054131837215a43db9e5f6e4051665d6dc09b28dcdf6a046117d8100ee7476e6",
+    "backend/llm_transport.py": "cf7a2a1bad7da44a82e844971c9371dddfbf00dfc1f3b6ea1bac8c0e51c0f46c",
+    "backend/main.py": "7012c116541f21207f8e6d9b57427f11bd17313fcf13c12cee0ff82f1f24297c",
+    "backend/operation_status.py": "0337e9ca7be519f7d58ebf0c3eb504eba9cd5e5629eaa5cf157bae2836a1f5a5",
+    "backend/phase_routes.py": "eb17032e516e29b76a23c337815f488630d7c84823b43ff19159b6999dab8ef6",
+    "backend/plotting_routes.py": "b088b2d212639f5094d61be338333e8bf1cf32fb753fed3c432a748e7296ea7e",
+    "backend/runtime_bridge.py": "3c93d766c3cd8beb3163e592758de8ace94e0aee1962f3795a6d44547e024feb",
+    "backend/runtime_identity.py": "d62edd78bdb648a39c0a6d9e3e6d3e67af1d8f8a82c94117b5f06301126e5455",
+    "backend/scenario_assembly.py": "ba88fc8134638f8dfb6c7be01dd68c0a8063aee791bb4def32659639eb161e38",
+    "backend/scenario_builder.py": "b4d977f701fd33fe51901bfebec43a1151221e37a7aa6f4599f2ddc834b28919",
+    "backend/scenario_checkpoints.py": "46b44c07ea950619bb7ae61c4710bf6711b2d683d6b0dd8f4a594bca7e6a26c6",
+    "backend/scenario_routes.py": "7adf039135e783785877abe308df9ee5cf5d6feb6aed7b451dad212ba851819f",
+    "backend/session_branch.py": "7898ee37b77faed31d746d869b4bca1643aba559ff075dda4042de07d781d2ea",
+    "backend/session_store.py": "6ab26197a1febc91ad7a44545a54b369873141ed7e222aa4730321e930748e8d",
+    "backend/turn_preview.py": "4d3b15ff452399f2ee41cfd72319c92b121a92a6ddaab182cde302d21a6b74aa",
+    "backend/unit_order_submission.py": "dabee916ed1ac1e13baf9e17fbcfac4cc21237b1a6f4508d1b96140ec760f8b2",
+    "backend/unit_planning.py": "5516058195c0a750948d4ec9f4091dc3839d4a0709e6d27342f1dcd7dde811c2",
+    "corpus/README.md": "985b9832061d185bb81bd673d0cf73519cbe11c17827edb0cbe4c4cac4f9432c",
+    "corpus/抗日战争-万家岭战役-1938.09下旬至1938.10.md": "20be3eb57a63594b3c2e7ef3d1d2a7841b179dfc27a1d7d2e67354ee2e09e092",
+    "corpus/抗日战争-全面反攻与受降总览-1945.08至1945.09.md": "e3916a666715fc51eddb22e04a0b58d4754419c1832f8debd1f0049d7e8b5f6a",
+    "corpus/抗日战争-冀中五一反扫荡-1942.05.01至1942.06.20.md": "034a1058d9744abfeb1e4e856a66f10fbbb5d76cc645212e5d9f676457e115b7",
+    "corpus/抗日战争-台儿庄战役-1938.03.23至1938.04.07.md": "451bde3c2cd3406f89232c7152bb9d4dc3e108e3cebb0d87129227bde52ae316",
+    "corpus/抗日战争-太原会战-1937.09至1937.11.md": "4a3acc763d522ccba97b2f46a07614b7bfad59cd39493e45f9aa4660477c406a",
+    "corpus/抗日战争-平型关伏击战-1937.09.25.md": "43e4df3fcf61af7ab614b8d8d4480569fe97fe5cb050e4996117568b9ef941ca",
+    "corpus/抗日战争-徐州会战总览-1938.01至1938.05.md": "cf53b1cf86bf449e8c8853b789cd3e38e729361acea2513ad27cdda39b742788",
+    "corpus/抗日战争-敌后局部反攻总览-1944.md": "d8da1d31c3d80ab3d619a6363c5c7101426782adf31c916b7641fbc1678c07f0",
+    "corpus/抗日战争-桂南会战与昆仑关攻坚-1939.11至1940.01.md": "1e3a377f0911e665455c73ee4de397328b5548368da1ffb2fd716da8f20cd969",
+    "corpus/抗日战争-武汉会战-1938.06至1938.10.md": "55c6ad546bf8796192c8aee5589968aef3a2c518a0dd1e216ab512a511093cb7",
+    "corpus/抗日战争-淞沪会战-1937.08.13至1937.11.12.md": "c0074430f4a611ad374865e76572cc3ed4b66aee32bf1371c05feef829f4370c",
+    "corpus/抗日战争-湘西会战-1945.04.09至1945.06.07.md": "d810429a24d9581454af7f36dba596d7ef9daa4f3a0ed08b8a585ce5e5382c04",
+    "corpus/抗日战争-百团大战-1940.08.20至1941.01.24.md": "d0fe9840e87fc034401736e4a72279728a9ee39379c9e1e34916a52ce7d90f1c",
+    "corpus/抗日战争-第一次长沙会战-1939.09.14至1939.10.md": "8ee1db6b09ee195a45d12653976e24f15ec13a86c5dd4addbfa0048d3bcadcf8",
+    "corpus/抗日战争-第三次长沙会战-1941.12.24至1942.01.16.md": "fd2445346dcfeb60405c532cd7ccfda8d22d651690123eaa668a0c5ff20a3172",
+    "corpus/抗日战争-第二次长沙会战-1941.09.07至1941.10.09.md": "c067c9fe75a88c75acb46bfe7bc59bd07b51ead7ae104bae0072e2da180f246c",
+    "corpus/抗日战争-缅北滇西反攻总览-1943.10至1945.03.md": "83ab6e34e6b29546f6ce1672b765cf7d1c79e2bf395184fd159cc66dc9a68236",
+    "corpus/抗日战争-衡阳保卫战-1944.06至1944.08.08.md": "254257faa6db20e1be10233b6888602366a4e3e20387badd3970b5d6f0f5dea9",
+    "corpus/抗日战争-豫湘桂战役总览-1944.04至1944.12.md": "c1ec51911eaa7b8cdaa35e679f499cdc468afbfcc7f48d58ae209b308e588b70",
+    "corpus/抗日战争-车桥战役-1944.03.05至1944.03.06.md": "e5bb88805429e502b9a0d9ccee6bad351365f0cf3a6eb7fb631a299408ffd2af",
+    "corpus/抗日战争/阶段战场与证据边界.md": "a3ab6f898806ece3cf06e8f47a4c352a5bfc28b33e8a164fce99cb7a8c06651c",
+    "corpus/抗美援朝-上甘岭战役-1952.10.14至1952.11.25.md": "5031cb0c573dba148b15f483f0add4f08700bd2658f1225ba6f0eff0d79ee9d9",
+    "corpus/抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27.md": "0d8a918e13f685d6123604def9acd403429208642b697718c0e702e1aa76cf2d",
+    "corpus/抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22.md": "590d63a33a74bd6b7316c0041a6906d0ebdfc2dcc3ec373fb71b228d4aaec914",
+    "corpus/抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31.md": "027dfad29f54f8671624471852d74efbad7873a966bf040b6b98bfa3e844f666",
+    "corpus/抗美援朝-第一次战役-1950.10.25至1950.11.05.md": "68c54986b593ba82b4caf35413d4bcb602dca2521a86042983665f08d5f304d5",
+    "corpus/抗美援朝-第三次战役-1950.12.31至1951.01.08.md": "eb2d5233a71627aa45e28eb190de891084399a375366b8c27b90ad7d366a136f",
+    "corpus/抗美援朝-第二次战役-1950.11.07至1950.12.24.md": "d92dc5facfafb75b2750ff1b290880af439b14f85c47ef40f9f2fbc5947e7ec3",
+    "corpus/抗美援朝-第五次战役-1951.04.22至1951.06.10.md": "70106e8f47e376b4c13e1cb6aa1c3a63b682aec8f29329c4abc9085017d90b9c",
+    "corpus/抗美援朝-第四次战役-1951.01.25至1951.04.21.md": "c92b257cbb43168d5c113bd220d9f600203cbe83d59a197578142e2a9e0baa8b",
+    "corpus/抗美援朝/兵种与统计口径.md": "9163c11af8fa3b972679ec444f0c9e9e9ad12e5829cecc439fa1c0a300933368",
+    "corpus/红军长征-中央红军巧渡金沙江-1935.05.03至1935.05.09.md": "b432cd9c05c0225fdf9a47fc340f961e6813b58ab2c9f6b711dfe401fad80aa6",
+    "corpus/红军长征-乌蒙山回旋战-1936.02.27至1936.03.28.md": "7d826d166b09f29315f7b73f9a5180b00a9a9d46508c371c080e5adf82d9bcdb",
+    "corpus/红军长征-包座战役-1935.08.29至1935.09.01.md": "9bf058b0258f8d213c8ac5d167a2440b8164a4f59107e42c585d5ca8f5b7eeb0",
+    "corpus/红军长征-嘉陵江战役-1935.03.28至1935.04.21.md": "417c642e14660b9c63d98ab45ac46736912e2ccddce2377c858b75948c782297",
+    "corpus/红军长征-四渡赤水-1935.01.19至1935.03.22.md": "64a5df43bd725bfaeccb30f4da283964316bb1cf210ce09982eb423a41bd1547",
+    "corpus/红军长征-强渡乌江-1935.01.01至1935.01.06.md": "d8e647bb2a845dd0dff9f3709c2248cdd9360383ab5e54737f5707276fafde21",
+    "corpus/红军长征-强渡大渡河与飞夺泸定桥-1935.05.24至1935.05.29.md": "e843a0faae102e4f118314a6bbbd3eb1aecc561ed66bcc3d3e6683f9129af88c",
+    "corpus/红军长征-懋功会师与雪山草地转移-1935.06.12至1935.09.12.md": "11201f0337d5f651cd7334c17711035a2f0b79565dc718e2870e4c251b2dcc53",
+    "corpus/红军长征-湘江战役-1934.11.25至1934.12.01.md": "a1553c83e15f051bf0770c4560823b26c6e10fb0658417b3fe25f72a31e6ca7d",
+    "corpus/红军长征-甘孜会师至三大主力会师-1936.07.01至1936.10.22.md": "715a34a0d7e419f3f00898d2364c40907b084b7dbf4337323c5cbf7c9c450ca1",
+    "corpus/红军长征-百丈关战役-1935.11.md": "9e72e456c5307cb706fe54e090d22c1f91dfa347f3f2f47cbc927e60bb2f52e2",
+    "corpus/红军长征-直罗镇战役-1935.11.20至1935.11.24.md": "4cba877da9fabbeb0c78f64631c4dbb7c4f9a73343e08cbdc2d3a3c97342aed0",
+    "corpus/红军长征-红二六军团抢渡金沙江-1936.04.25至1936.04.28.md": "06a4b7ec81510af45d1004cd6cebba78beb22f32c54ec7f906a7c383476f2de8",
+    "corpus/红军长征-红二十五军长征-1934.11.16至1935.09.16.md": "93d66571741417fa667b9639b17b42951953de676f33a8c28aa260eb6e2d5b2a",
+    "corpus/红军长征-腊子口战斗-1935.09.16至1935.09.17.md": "e9d9740ddddd7125b072d2ac806d0472a59f16abeaf12132cad8b1922353fcb1",
+    "corpus/红军长征/建模与统计口径.md": "64bc09c1108c09be20a8726c68270d35c5ba8bdbcdfe1210a3bd42a8fc37a12c",
+    "corpus/长平之战.md": "82d62c0a76d6ad63643115b1d302a88141cf067e929d4cbae5a8064f090ba0c2",
+    "data/campaign_windows/LM06-right-column-aug21-27/1.0.0.json": "5d3fd5bf0254b45e08c7772fe542b58e52ec152f1847f5acfe72c1b16e314ff0",
+    "data/campaign_windows/LM15-ganzi-jul1-2/1.0.0.json": "56823b7cda9b1d7bd1f8f89e4b642f69d5530f0c30a4270285a6c0bdb10bac07",
+    "data/campaign_windows/LM15-huining-oct9-10/1.0.0.json": "d4d842147ca59873deba68af006871164b775867cd315732d2062c52914cbf63",
+    "data/campaign_windows/LM15-jiangtaibao-oct22/1.0.0.json": "74d7a49a6f4c36682841ce3994616c3dfd627b5048217c4cdd04ca3aa80b12ca",
+    "data/campaign_windows/WH-northern-sep17-18/1.0.0.json": "413c7b0f9fd8278049ee1457102ad3b90bf066eed5a00bff366600d9ff307c3a",
+    "data/campaign_windows/WH-northern-sep17-18/1.1.0.json": "ea7e5b6f99bebbabe9c3d0e73285b2b9b1f5149fab4f980c818108713705d224",
+    "data/campaign_windows/WH-northern-sep17-18/1.2.0.json": "9c266f16a665c354ec1db1f5d6762041d48a57739e409cb7e2a1b13500335c84",
+    "data/campaign_windows/WJL-oct6-10/1.0.0.json": "bf5368a66168bea1cdbf2f901879f617649bccdc2674cb0f0b8273f75214a800",
+    "data/campaign_windows/WJL-oct6-10/1.1.0.json": "6cf27fd2e98f4a744ff4e222bcd55fd1c133b73d67d761f2d4d4d9ada43090fd",
+    "data/campaign_windows/WJL-oct6-10/1.2.0.json": "e35d1c1b76e2c2c888477fa8a1e68befdeee4666642dba0fac5db85d2fa7d74a",
+    "data/campaign_windows/WJL-oct6-10/1.3.0.json": "b0d90f2a071463e6a49eaa417d2c66d5262c96efcfd2d972729ba38cdaf6062f",
+    "data/campaign_windows/WJL-oct6-10/1.4.0.json": "fac6ee7a74544011eaf002def0122a382cb7114b1185182c0740540859729b4b",
+    "data/campaign_windows/WJL-oct6-10/1.5.0.json": "22698c81450053480474dfa5e5250a976c25de29a9563b6495d89a502b395f54",
+    "data/campaign_windows/WJL-oct6-10/1.6.0.json": "abe759f066b534339af6d0f7f59b5b24992d262031a3b2c3b3a4693b6cadf4fd",
+    "data/historical_initial/AJ01-shanghai/1.0.0.json": "bd82c9761bf00566a2437b3d1b7c258954ec749add8bc129028d02b99cd85660",
+    "data/historical_initial/AJ02-taiyuan/1.0.0.json": "6dff1fed04e442f0edc171fdc5e41b945d86cad12a49e71fafe9b7ce23d704bb",
+    "data/historical_initial/AJ03-pingxingguan/1.0.0.json": "2c05497ed65c6fb119f250d116c352fe21549af170bda564164493370916cc2d",
+    "data/historical_initial/AJ04-xuzhou/1.0.0.json": "67a6a420209ea0663a1ef0f1487f4b0591695156b2bc974836e16eff593b130f",
+    "data/historical_initial/AJ04-xuzhou/1.1.0.json": "d5195787bd20056cbd7e7f43d40acd6a38a01ab9b1ca87213fd52aea924a9ce4",
+    "data/historical_initial/AJ04-xuzhou/1.2.0.json": "ba390fadb6f27f61cc0787a823e2869a06f0c66e12cd40c7b9e7f5e54b6f2ba3",
+    "data/historical_initial/AJ05-taierzhuang/1.0.0.json": "2643cf392735566856338487543c2f0657d63f774d401ab103d4b7bf51ff18d6",
+    "data/historical_initial/AJ06-wuhan/1.0.0.json": "c5efd6296c7b1ec4208296599016e53de89a016be953427447a85df62c305c60",
+    "data/historical_initial/AJ06-wuhan/1.1.0.json": "381ce58ac1c8ee07dfdc124dc487fcaedcba00bca20f66d8696ecf05438fe367",
+    "data/historical_initial/AJ06-wuhan/1.2.0.json": "473be5bd2e4b5eafb12ab1790c212f98c6d28b05f07fe83b3923d1456ec84723",
+    "data/historical_initial/AJ07-wanjialing/1.0.0.json": "b67c0e1c725d379bd2c358b9e26c573d08d388985eb46f525a7008a10d38c6ff",
+    "data/historical_initial/AJ07-wanjialing/1.1.0.json": "4c06a58947c3819b870087ef0f55e8f192e86155d3051ed4833aed88b889d968",
+    "data/historical_initial/AJ07-wanjialing/1.2.0.json": "7834b74c058e585fd0ae90441947b1f7c19a4ecc931663be109790a5b9e45d5f",
+    "data/historical_initial/AJ07-wanjialing/1.3.0.json": "0e9e23293ab867ba267f170f50ac1ea1f54706118c210847644b910f620e8bad",
+    "data/historical_initial/AJ07-wanjialing/1.4.0.json": "99f591cef71f338b0c1491d7ff93485754384aedee2b69da058f171fe9ff11b2",
+    "data/historical_initial/AJ07-wanjialing/1.5.0.json": "f01e4dbdb4dc62c2612b3a1732d7dee5601fa0da8d7d184ef3a61d1fb0311328",
+    "data/historical_initial/AJ08-changsha1/1.0.0.json": "9e1481632dbf8a2e2614e752899d3a959d15b7809cf107d388ad510cd1742aa0",
+    "data/historical_initial/AJ08-changsha1/1.1.0.json": "ccfe241614f5675820a15292b8392b17743d34643389d3c0e74a7c611176839e",
+    "data/historical_initial/AJ09-changsha2/1.0.0.json": "866e3ca36fc5993a772a857c49fc2015f2aa009ff0f0ae66555a8787cd964ddd",
+    "data/historical_initial/AJ09-changsha2/1.1.0.json": "0730b965c70d280e84f31077ba93368972e389224822895bed587975fd8e2413",
+    "data/historical_initial/AJ10-changsha3/1.0.0.json": "ec684e07ce0cbffe20f02aaccdc0917f8b4606866086139ff3ad1ed6d6692cff",
+    "data/historical_initial/AJ11-kunlun/1.0.0.json": "b8182fae5fb27ee1518168c4d04e3cec766e14c9b4dcfb9e17568ee48d010266",
+    "data/historical_initial/AJ12-ichigo/1.0.0.json": "52a379197611702272d4a93c95dab1e2a572707c16b478a895c6ac2aaa5f9899",
+    "data/historical_initial/AJ13-hengyang/1.0.0.json": "ea4c6bba4199079c10d6bfd37c2c13dc7e787a37eb175e0866c209657651c421",
+    "data/historical_initial/AJ14-hundred/1.0.0.json": "499b16d0309c9affcce9ea67db8a8b2d6488e2f6e4a79232a8b5ea2f15a103c4",
+    "data/historical_initial/AJ15-jizhong/1.0.0.json": "84087815f1f6f9a63ecde230ab7c42a85324d500671f408c21efbce9e744d2ea",
+    "data/historical_initial/AJ16-counter1944/1.0.0.json": "b3e43ee87680667574c8b14ce4e5c2620487b5cf77f288a31237b0ceed1f342c",
+    "data/historical_initial/AJ17-cheqiao/1.0.0.json": "7dd87a78a74795c2c45a935e61ce00adf9ffd136808ccbebc1883efa475b2994",
+    "data/historical_initial/AJ17-cheqiao/1.1.0.json": "47288b2aa86402d5dc127484e74f0cba00838a0467c26cd5333de118f44a7bb0",
+    "data/historical_initial/AJ17-cheqiao/1.2.0.json": "31905eed34423126a4d0304c45f0406e38aa2cf5a6d7d2e95fec404efca483e2",
+    "data/historical_initial/AJ17-cheqiao/1.3.0.json": "9da3defc13ef97325f07c1ba036459372ef6582eebcb646f4ae6ee0ce1bb4de7",
+    "data/historical_initial/AJ18-xiangxi/1.0.0.json": "7e8d42f623e5ad9037f38c7eee898bdc3a31006db521e182ebd6ae6b14c66d95",
+    "data/historical_initial/AJ19-burma/1.0.0.json": "48e5c58a73a5e27a6e32cfb200a9ac4f72783c2dbec01494a1720957f122b572",
+    "data/historical_initial/AJ20-reception/1.0.0.json": "956c1f27128aedfcb93239a29f7f0e6dde13f4b414e74f631e1125af84508fbd",
+    "data/historical_initial/CP01-changping/1.0.0.json": "4f3baef4b4086d92bdc39289cacbfb1a8e11cb50544fdb7015b751cc745d649c",
+    "data/historical_initial/KW01-first/1.0.0.json": "579744550cde33fb7810b65a7340f21ab4f6aca28413596398d28fa94a482a60",
+    "data/historical_initial/KW02-second/1.0.0.json": "dc6981f7663daff66ac2852190877c827b4a7cc011390e3ae1fc6cf641a0ece9",
+    "data/historical_initial/KW03-third/1.0.0.json": "c4a1c11e1571177898e47e32cddb7700d68a2ef565ca7846494fde31ddc6bb27",
+    "data/historical_initial/KW04-fourth/1.0.0.json": "2752be8a4d8d4b601d1d8a821bc31090e2a52a92d261059669f73e4b151404eb",
+    "data/historical_initial/KW05-fifth/1.0.0.json": "40cbac2ddc548d910ca41f92f5a5de8bcbd0e4824629051569ee5cc085f78abd",
+    "data/historical_initial/KW06-autumn1951/1.0.0.json": "8164d6970381adddf1a3e9debd2af69ccc9e54c4d1817a168218de8b89ea4a0d",
+    "data/historical_initial/KW07-counter1952/1.0.0.json": "c9b0a3d82e7f7c45355b3b769cbde049bd752209e3eab207cf4d50592300ea78",
+    "data/historical_initial/KW08-sangganling/1.0.0.json": "9df031c73a774fac037117165cfb935671c13c334d1808300bb9128474cfdd38",
+    "data/historical_initial/KW09-summer1953/1.0.0.json": "6401183cc4441be096ecfccbfffc2d1e1dfc137caffc89083859431ec3f87891",
+    "data/historical_initial/LM01-xiangjiang/1.0.0.json": "6eb6a904329ec427f40ebcd6e6df830936748a97427df8cd451a1f0c9f37002e",
+    "data/historical_initial/LM01-xiangjiang/1.1.0.json": "8f817e44afc4fdf4657bc5d3b602574bef67a93d5f9fa2e7806cc9f9e62055b4",
+    "data/historical_initial/LM01-xiangjiang/1.2.0.json": "8e8ef455d2a35cbd0eb65531513843cda70bece062165e85ae1f0f441a6106db",
+    "data/historical_initial/LM02-wujiang/1.0.0.json": "1f012a06c19afdd72c55f2bc077d7b6d4f3b260f4381210e97cb1690788a024d",
+    "data/historical_initial/LM03-chishui/1.0.0.json": "a2ad42deda90c56655b894c833ac3ee1992423fbe495845ae2149972fbe434a3",
+    "data/historical_initial/LM04-jinsha1935/1.0.0.json": "49daabaa6a457a6a505fa2c760d4284782e8856b3c30ea7831f60282ea20e0a4",
+    "data/historical_initial/LM05-dadu/1.0.0.json": "eaa3b45861bef39ed16ddd6f420e5b4a4dc88840b262db9272529c9797304340",
+    "data/historical_initial/LM06-maogong/1.0.0.json": "baf144ae920c68c91aac40456a840f7e60996c2ff6f2586269a4f4d7c19a6b39",
+    "data/historical_initial/LM06-maogong/1.1.0.json": "f8075307266c5118eae135bbdb96db93537bf49cc5d73bcca30e1dcdd5e9d462",
+    "data/historical_initial/LM07-baozuo/1.0.0.json": "69546eaa932c5304d0fed84c5fa176537091c2ecb6893b5c331a04f9fa293857",
+    "data/historical_initial/LM08-lazikou/1.0.0.json": "1f95a44b598635d054bdf899ac13ed0a945985f9a0487a7c4fe1659a706cd45a",
+    "data/historical_initial/LM09-red25/1.0.0.json": "9be2df24db341c9d47fbd022faf759c0df01f7047980e1759ca6a6cd971efec5",
+    "data/historical_initial/LM10-jialing/1.0.0.json": "0f300967c1f5745869132af888167f9ba4b3295ad6b776017fb3a259c029df58",
+    "data/historical_initial/LM11-baizhang/1.0.0.json": "e55f93696f01bc893ccc0b63a267a7dd99746666fd9ae11e47ee7ee5ee43c787",
+    "data/historical_initial/LM12-wumeng/1.0.0.json": "e151b7c05053c4816d751f100a3b902144531285150db9f98ee6f66416b4e8dc",
+    "data/historical_initial/LM13-jinsha1936/1.0.0.json": "f0aed8a54d8c0ffeb429157612fa8dad55da84288c763851858cb82369f05a19",
+    "data/historical_initial/LM14-zhiluo/1.0.0.json": "9065717621d0523bfba9ee9522f5edcb335b121068abcc4c2f8308553b6ac3e8",
+    "data/historical_initial/LM15-reunion/1.0.0.json": "9a3af6d51ed75d83f6c3004aafd928bc865b8ad90a6b0c40db1ffe15473a77c9",
+    "data/historical_initial/LM15-reunion/1.1.0.json": "895ee357e1133f2fc69c1423114e8d4adefc91bc1347d4174cd07e45a2a16493",
+    "data/historical_initial/README.md": "4b57090204aae2c332cbfdfbbb392114b3526cca3f050a10c9dfe29daa6e46d1",
+    "data/historical_initial/index.json": "8a025747955e16500d1b3ff06631121693ea90171373709ac91a06c1c928a70d",
+    "data/long_march/figures.csv": "f067dc2b9d2d6c81cb546cd9916638f81d3c47ef60d1c00817d1ac8544f8ea97",
+    "data/long_march/forces.csv": "0b122303a4e0f6a576aad8cff7805fbcd0e6d22c14aab118f53b645d2f3517f7",
+    "data/long_march/scenarios.json": "60437542deed3d021dc266bc49c0495c883a31f51847f202d24c1847dc6561de",
+    "data/long_march/sources.json": "1da26b97280b04b6c6bda4064ff72e4ac5d327d25f88a196b55b788ece2916ad",
+    "data/long_march/timeline.csv": "41d570b8313acf8307ca9d29a19e364dda194896324e1c809a2dc17adad1cdaa",
+    "data/long_march/verification_gaps.csv": "e7ed1c843685870fefc70f60370d1b60604e59986a075d0c2afa146cd82b5be3",
+    "frontend/package-lock.json": "cc6eb3ac5e2e8f3a5f8e9c24eeb58405bce2e02dfaf7ef0dc4f2ee09ce4efafd",
+    "frontend/package.json": "266372388e1b620c0d578c37b0be2e669ddb8daf6a6f993f39984a4a637a1335",
+    "frontend/src/App.vue": "9793819bc03365ef92153d5f7fb8043dc6af085bceaaa7bf36da3a46b907e7df",
+    "frontend/src/api.ts": "d675f1b80d94feef1713a4268bafb561b46baf73d6f902c5d4fe6111669e999e",
+    "frontend/src/assets.d.ts": "381a6fe9fc9d96dfbb5db96650870001edcf24f5396975d86e6a1e3ac620e999",
+    "frontend/src/components/AFSimPanel.vue": "216442d4e2550af22e4c9ccc792c4e94a42c1c7e94ba0e8f990e7f1635c2847f",
+    "frontend/src/components/AdjudicationPanel.vue": "2d289a6e39dc5f694833bb23e739aba47192f0b470d24b93fbb7b391bc4715aa",
+    "frontend/src/components/AirOperationsPanel.vue": "d8f27368b2bccf9f892ea7ed6238ad7a2b6f96858ca1dcfc300ceec854a85ac7",
+    "frontend/src/components/ArrivalScheduleEditor.vue": "ba04981cf095bd23ca8259f3a4ba1305e44dfb0b3e251f5cea1ce79f5d5a30a1",
+    "frontend/src/components/AviationParametersEditor.vue": "3b3c478f2714ff5033c8e971487496ea02258feae0be5c72f7eb6ccf9a1760c0",
+    "frontend/src/components/BattlefieldPanel.vue": "3336cebfa61b9536d499c788dfe2e2df82040dffe3fe214a35441730bebeaf9e",
+    "frontend/src/components/CampaignGoalInputs.vue": "999eebd9e6ac13609c184533907ff6d2ac6bdfd43e1e1ff1a52ea0c39f8357b9",
+    "frontend/src/components/CampaignLifecycle.vue": "a7d1a08266c6387f7ad103eeb5c360ddd7711721a4c627060e62a4b795cfcae7",
+    "frontend/src/components/CampaignObjectives.vue": "122f67b354bf430d8497aff67da294a439acc8973c1e028b340a7acd87dc11a8",
+    "frontend/src/components/CampaignParametersEditor.vue": "57ed4bfb81b290d30260d0da035387e95223a3cea8fdddcd1ba4b07e048a26d5",
+    "frontend/src/components/CausalPanel.vue": "d7b12213ba30aa4d5618453a5563ff71d5247d813f1bacbcf0bf75af85a4afed",
+    "frontend/src/components/CombinedArmsPanel.vue": "b1a1904dc6d5500df2042ecab64d70d110f78fa5a4f18739dfda99aa79c751b1",
+    "frontend/src/components/CommandCenter.vue": "78bed4c3d3f85952458c80adff18981ce205ff30a6c1f5622805601c963c27ab",
+    "frontend/src/components/CrossingParametersEditor.vue": "e0c34758741295154208c64f2959b77da7ffc603d329affdb2de617d3711193d",
+    "frontend/src/components/FixedParameterInputs.vue": "0a99354934a19297a471b944066cd763a470666a1182441c682c1d048c81a2a4",
+    "frontend/src/components/ForceOrganizationPanel.vue": "2de0c1f53aea578be8793507c74312cf7dffad8aa7b8ceac65ea4540904e3696",
+    "frontend/src/components/ForceTaskExecutionPanel.vue": "c104b8b97f77d22a10ed116f4571f7c507dab842870aae987023a28ba7f6c80b",
+    "frontend/src/components/FormationConversionPanel.vue": "d72201de7624ad4a0b1c667a5c80d584bf98efafd289e704a49eaf81dadeefd4",
+    "frontend/src/components/FormationPartsEditor.vue": "418ca291db549fa2eea430dd00a7a25f7cc43230d254ba44653fde02ee4697ac",
+    "frontend/src/components/HistoricalRosterPanel.vue": "cc0395f8518bad4132f66351dc2102148e14644458133664a9049a600d4ad305",
+    "frontend/src/components/HistoricalScenarioComposer.vue": "a11c5d456c769e8aaa2c42ebbf102ccadd12b4d215537b421961549775ac36e3",
+    "frontend/src/components/HistoryReplayPanel.vue": "960e6930cafb23d49ee9a8219b81a56cbdc7bfc3ad8d5f1d553622a62bbcadd9",
+    "frontend/src/components/ImportSession.vue": "e8bf57a6238afbdbab05eaa0804f0c3d9225906f368106067194baefa1630361",
+    "frontend/src/components/LaunchScreen.vue": "a58349b98f0ac2a3f3d5502b6e593e68449d47c4aa1af4460b4ef1feabb583c4",
+    "frontend/src/components/LlmSettings.vue": "8761e5120269ec718a1f88f6a96f2459d0fd70dae760388acfd240d860c1a23d",
+    "frontend/src/components/MapUnitLocator.vue": "b7b5b0bee7fd78c6b99c24718c96ea0e490371054a5d0acea9e7fd3ad25d2a15",
+    "frontend/src/components/MapView.vue": "cb97b9a1fcb5351b224bdbe5c41cd76670461280830c95fb97d23bbe61560d42",
+    "frontend/src/components/MapWorkbench.vue": "f5e421a0bdb93d3e2b26bcf462b90f92a2db5d04c98f8abf3ccd4357a41779ea",
+    "frontend/src/components/MilitaryPlottingPanel.vue": "9d2918762ea3da24a4e0939c5d58ff42310a564555506ddf8467f47ad18ffd1e",
+    "frontend/src/components/MissionPanel.vue": "7dc1168f1007fd6b2c84b0cc08614d4a24c944aaad17323dffe40bb90546035b",
+    "frontend/src/components/OperationBoundaryEditor.vue": "58b1e023300585ca6e1901a483546bf554dd99411a5945e5f5ff4972e376d414",
+    "frontend/src/components/OperationProgress.vue": "80153a63e0b04f8d834341694494c37761953908b024ab9e59da44f85a67eb1d",
+    "frontend/src/components/PhaseContinuation.vue": "5ad32421b98c81d04d01a3b312c3dee2ba693192f447c246c1783220433eb393",
+    "frontend/src/components/ScenarioComposer.vue": "9b558b437e6b8b48abedf05e5da05471d545480a57cbf354b43e3b26ffceb41e",
+    "frontend/src/components/SplitSupplyEditor.vue": "062dccfecd04a998b1efbddd963ba6d84a569a7c06543d4f58a564f97a5f2e7c",
+    "frontend/src/components/SupplyScheduleEditor.vue": "27ec952b5060fdbb447a4257d13cdbd3f9c00e71ce3356932c843e800b6f1f7a",
+    "frontend/src/components/SupportDynamicsEditor.vue": "d4cf078cea0f136c96673e7829ac1240800df795f84423ef9331d1234c2d2742",
+    "frontend/src/components/SustainmentPanel.vue": "c090449b15e8fbcdd0642d49e5659394ec864b07a96f2948baa49efaa08e7158",
+    "frontend/src/formation-parts.ts": "8aa390a2ea793c77a437d28224ce6fce1d4cab3dd03b2246e7dd4217d0fb6e21",
+    "frontend/src/historicalGoals.ts": "71b6cf020948e7b685e29d301b161cd59944a716265428fccc8b8f2663e9494d",
+    "frontend/src/main.ts": "1066054c8b94b3179806a0f3b7d62c6bf436e3add8787fdbf83ff6e494b466cd",
+    "frontend/src/mapPlotting.ts": "0686591666ab59b735bdc3779b28428c31781a9862b02b009fb93f3673cc661b",
+    "frontend/src/mapUnits.ts": "08878d80775253bcc8830adb0fd88e49442492faa69f0b1e6fcdb4bc5aafbde4",
+    "frontend/src/markdown.ts": "39c8336a0e66479b95039634f9d94ae7bcd0a17f42aaa8259aae2eaf55fdb11d",
+    "frontend/src/militarySymbols.ts": "19f0182ca3d16d12229c90329df520c73758f8c10a998b1744c417376ca53314",
+    "frontend/src/operationClock.ts": "748c7e49b2dd57103ce7490bff7b1095584729c21b19006d64d8d7167194fa0d",
+    "frontend/src/personnelProjection.ts": "ea644554eab776e4bb7d994675b333644b7b89652bc108104154704ff3ff642d",
+    "frontend/src/styles.css": "ace8814bba5176a9f21eaa2120922e3d58eee57573a6a24d4cfc7b446d5f0807",
+    "frontend/src/tactical.ts": "e8dd4b2dbfc5ad0ac5076de353f2b9c6334152bbd928b62a1b7c02c30b1d05a7",
+    "frontend/src/timeSteps.ts": "b798aaf28496a192996472548891d28ae97a7af261f912fbc30f34ddc0014a28",
+    "frontend/src/types.ts": "ae18da0f7374f5082d3294667cff9c74ada20f046144d37da4574807c0730e97",
+    "frontend/src/unitTypes.ts": "8c151acc76e96d0d81ddea93f9caa7526c6603e11432510e407c211df12fb36c",
+    "frontend/src/weaponRanges.ts": "3f5995993092a44e06e58ead132bc60545a16785ee8decb8cc81c8348a2e9feb",
+    "gentactix/__init__.py": "27f4cbb5fc9a0d9c1f6246bde3842fc001ea1ee0c51b909c576de058a4e43748",
+    "gentactix/adjudication_lib.py": "8a014f724c53a2bee474750a12eb05f84a2c807918acc949ce275956e3ea50e1",
+    "gentactix/adjudicator.py": "88d6e6e0f2ba54ac9a9ab5a7bb96778cedfc0f67772f3f08e7d201a3045b24fb",
+    "gentactix/air_assets.py": "0140af186e7e6cd8086a2f1efd4798ef6e4dfb7455aca3cf543455aeb27bfdc6",
+    "gentactix/air_availability.py": "3afe9c0be3813a51dfa66f473cc453cbdc63a43ce92fae357f23473268a31f94",
+    "gentactix/air_model_receipts.py": "e64b6777292075dc60b32580c9bd46cb406f782f9b7b2224407dcd32d3716c8c",
+    "gentactix/anchors.py": "eed955dd0c884604337e2c2ecab6683fa5486ca9f8b08eb49063edb5b359c44c",
+    "gentactix/anti_japanese_war_anchors.json": "fc27776479f2da14e24b64a037c14f129fa8023f3e3a30974f06ad8ec697bb66",
+    "gentactix/battle_scope.py": "c31ed8adbe33197e219ffda3d839b31b057808ad30a3bb4e7b8b66bfade0bda0",
+    "gentactix/battlefield.py": "fa5b9d29a22dda26a0be7b24b2c312693266ff5f15042e9c55f8b892050db1cf",
+    "gentactix/battlefield_viz.py": "a80dd84bdd38848c3de7e88b458acd78c53798ebf6da9debd0c274f5f3e73b70",
+    "gentactix/c2_observation.py": "474b72259ce7ad96b047f4bbd0a5152413cdf2309458f71491f9cd92b1b88385",
+    "gentactix/campaign.py": "85fc9c1dd04bd756428cd1f53e291c71042c06a4065d49f3e3413cbc6d235226",
+    "gentactix/campaign_estimates.py": "3d1d2aacec698269f0e4cf0377dd009698f8e3e0341e44906e03a9cbeee65060",
+    "gentactix/campaign_lifecycle.py": "bd52b6f78b2c7c70544b288fd3d986375da986dc22b2822538a96a0ef49c0f96",
+    "gentactix/campaign_plan.py": "93b83de45ef3fcd69032527fc3d751018fa543186634e591a5f25bdcd679301c",
+    "gentactix/campaign_scope.py": "1293089f669017627b9775d3467c6b4d8f7017aff3e789b14410b17a1b76be26",
+    "gentactix/campaign_windows.py": "411134bc54308023d86cb95cb66d3d44188d9418dbd96859a27a0358b4a76615",
+    "gentactix/causal.py": "c903e3e1e1a33c9e32bff47e5b9f9f1ce716320b2d92f77e318285ef6f083a2f",
+    "gentactix/combat_effects.py": "c475f1de4b1feadfb7c18f06393b6dbf35401ab3ef417fbace8f58b81c68a698",
+    "gentactix/combined_arms.py": "7a590af12df0a306d930959d69ecfb2c90df81f0eab9427660e4ff13d33417b0",
+    "gentactix/commands.py": "85f511d3d4c47db818584ce69c6a6ad4c3db39982241dcc48d7e1ce1b1b648a6",
+    "gentactix/config.py": "294537a4c71130e0250601b2f7427ad24fb5995666284faea38b4e0d30a27a1d",
+    "gentactix/crossing_network.py": "908eda75c519cf548bd00c6440b62fe240562e8f13a11dc06ac92a2efc49b4f8",
+    "gentactix/crossings.py": "62156fa3b1a9445f53eb49207b565671636909b46c691004806e95d91c169edc",
+    "gentactix/engine.py": "b1f9d3f27d3bad1b5daac9ca3e87dfa97dc7b556186ef80a8f899e898b83f846",
+    "gentactix/ferries.py": "06cca0c724eeb587e270b06f5a6bc6858ea3b42f9666e31167289e44f223629f",
+    "gentactix/fire_control.py": "91adfb320be30a9a7a6ddca565b2b877de7a9d772f00df231120631a790ed3f8",
+    "gentactix/fire_effect_bounds.py": "e6c59f957c019cf7a689846ba636d313db9ffa696e7dbee54c89c3b43782b2ee",
+    "gentactix/fire_process.py": "9c51022b65d3f41ce0a1fa10f8c37a15832107cef909a2ab2df1fbbea6700311",
+    "gentactix/force_organization.py": "d8f1ebf52c4423117c2ddfe06fe364ac8212395de8e2045ee24bff86f86f6971",
+    "gentactix/force_task_execution.py": "31ad9fa87af0b76f15e07f6824cdad492ca36b32ab775e4eb1c3be6af22f83a6",
+    "gentactix/force_tasks.py": "9637ded274b07e910ac7c498239678e37c89e755e2aaa578b6607d106faa3359",
+    "gentactix/formation_continuity.py": "2a1f43f639c532a6f3860b381dd9146e162dab2762d1524026281745f68b2b0a",
+    "gentactix/formation_conversion.py": "d223eb181f02112686d053700810558c6195453a7fa7f3b2bbbf2ce8308b7fe6",
+    "gentactix/formation_parts.py": "7d1730ea7b32245ca84b8d2c50e134a9e55cdb0a81f619c4585e2ec5ea7e9a27",
+    "gentactix/formation_registry.py": "43b56c44d4a42f58134b156d946bb54bb700698044444edb6754658d87a698cf",
+    "gentactix/formation_runtime.py": "6fcc332c07d32df367524cdffa453d2c25171f52626e50c14f0f93f11ea00836",
+    "gentactix/formation_session.py": "b3905b90292894226ad635233bf9da3993630e48a89e5b4b1f288c37830a4229",
+    "gentactix/geo.py": "967dc9e97cb1a8005c894416bf176b83448d247a05408b8ab3d5437b3d294f61",
+    "gentactix/historical_constraints.py": "3108f40c5824a8cb7dcb533680081fac8b5b2192293d25d7a501a359ac44421d",
+    "gentactix/historical_initial.py": "30ae77b71ace9626e34e476f2c0fa970c07b724e75c7b3f9f1e4ab014b0f34db",
+    "gentactix/historical_links.py": "ce1b2c5b683c2a4555e4788e82dbc57e8cc6b368c6a91f071d44814c5092c6bd",
+    "gentactix/historical_operations.py": "6a87b6738163e87714711661831db64cb69330a4a9fad4caafca9b40aa8ed955",
+    "gentactix/history_replay.py": "b47bdf98071a65db460471258012f269e4b1c3ccdf024efeb4ae14e2f4a76215",
+    "gentactix/initial_command.py": "2249ba32c3aba850c4d6443a9620fce69bda760e867dec6bb50d20901714b4dc",
+    "gentactix/integrity.py": "60128db5b0792834a57e25c6fbf8397996e8a0a19065d207fc129dd3f7eb8151",
+    "gentactix/json_numbers.py": "72d0e678861990f2c31e4d23f99aedd153d429a514a31d539f23272d1d0d3f89",
+    "gentactix/korean_anchors.json": "56ef90760a1c7235b6e3c60161001fff6147783f0ba4ee59f89a078247d0a9b2",
+    "gentactix/long_march_anchors.json": "66ee9b5211ccd75fa62d9c3cc80067a340a1908484c6525669c55c45235396c7",
+    "gentactix/military_symbol_reference.json": "5e58515885812855c180de5d58c5c44cf1cde7f08d76d8556e8c18e7c9400f90",
+    "gentactix/military_symbols.json": "bb393d5fa76da4e656750addceaa2050b31084a66b047ce4742470bb9d5b70db",
+    "gentactix/military_symbols.py": "c4edcc9df58699fbe0be80656bb28f11791e8bd921da2b6163fd24ad056ac955",
+    "gentactix/mission_termination.py": "0bcf3cdef26c2c6e5905afcfc7c8163a97d7a0201987937e8a81906059c24322",
+    "gentactix/missions.json": "939c8739787f38d50588e3c43a885c9dfb902a837f81f1233723ded7512fa7b2",
+    "gentactix/missions.py": "d0f20c03d386c1da99bf0b6d369b72cc2c6f60ba644afd7d4f0095ae76eb07cd",
+    "gentactix/movement_feedback.py": "dfc1ba31af578dabf0d40bd0a485d3bf6612a3ce76c659108d6ed17e78860cb7",
+    "gentactix/observation_codec.py": "3c846cd24cdbd0ef95520a89b0bc71ece4edbc84457743c172d73b85c3fea0ed",
+    "gentactix/operation_boundary.py": "29c440196d227cac6f7450cd11a1709c6c1e94c4a04116aea75630b3c8d7af0f",
+    "gentactix/personnel_projection.py": "27cae8c8c5934082848b8563ae2b3a0c18dc4e133da928ce8103b8b220acce6a",
+    "gentactix/phase_continuity.py": "b1334ed0d2429d6b26d8cbcbf84896195cc8ea521fb6c5d2f1a0cff08b74cbff",
+    "gentactix/prompts.py": "045431a2db13247f5c0009ae5e1be8f0d00b2b8b4e8addee7aa4d9f0f286b221",
+    "gentactix/rag.py": "3b71df142b862cb6accf8ed1578657231c9041d5390026deb67216d188ef0752",
+    "gentactix/reporting.py": "3947f210f7dd4b4abaf47e4e2bfa88014aec81f0aba209c6043cf64737d0981f",
+    "gentactix/resource_accounts.py": "a1e6d8763b43870654db1218f4abe339f8f40675f7f0b128321e02b83bdf20b5",
+    "gentactix/resource_readiness.py": "fb961307faa999328a7e84342fc22cd17e41319cad211edc3ce96d68e19f5f3d",
+    "gentactix/scenario_basis.py": "7b3f337e686c7d3d34469e1e082bdc47365eb53bfd96f4be2d2cbdeeff94e94a",
+    "gentactix/scenario_constraints.py": "f12ffdeb21322b4f2f4ce39143fe5c3c072b56ef3c767df5371a0796d755f115",
+    "gentactix/sim_clock.py": "253b7bd4ab96e188bd172e4e2df45b29795a8721c70c2b7360175c956f955312",
+    "gentactix/split_supply.py": "06393080502cc9e6bbabaf3d734b2ba760cadcee48f060f554bb9e70f75f63b3",
+    "gentactix/state.py": "45700aed3bea46fb4a8d200038abc2e6a3a6088959412a12cc1448890dcf38ca",
+    "gentactix/supply.py": "3c3854ae28149b282c36f5275536c8631f38460e0d49fcfe687309223c2fb4f7",
+    "gentactix/supply_schedule.py": "90bd3c75e4f0c991d7cde25965462bc655af212f418459f465bd670760149a56",
+    "gentactix/support_dynamics.py": "696ba070bbeebd52992d65b2fb8d4328feff156691580460995593f4b00a8165",
+    "gentactix/sustainment.py": "5318f30b69b040cb3c7b948bb6daffe8eb6da6b11777e53d75aa7bf8109df243",
+    "gentactix/synthetic_history.py": "d3a4f5165a49ef4a81d4e6a94ca4c11328546b25d75609b9ef047a7aba6cafb8",
+    "gentactix/terrain_process.py": "c7257970bd1240da09a8888cdeda90a4cb9fa43fcba95b6efed57ba6f5da7beb",
+    "gentactix/turn_settlement.py": "5973dfb88a0a92b09650df734c9bf9f26a5bf32693c1655a688ed4d4ddb8ca90",
+    "gentactix/unit_participation.py": "4a12c4268b269a998b75b687d9df97ddbdb358a7cf5fd6a9ec83228ed36f3c7c",
+    "gentactix/unit_types.json": "d7752dd37c7a983c0a95efff5d27898edf4352a67bc90b4d6de66ad83379dea4",
+    "gentactix/unit_types.py": "272b38ed2f77d088b3fd76bdc1cf2901e9e000ef6366e1cc4e347f7ae1c8d879",
+    "gentactix/viz.py": "5a5a6041f27550803918bd273eaab59eeb81a0e06ecd9e018e1b6269f0cc8132",
+    "live_adjudication_probe.py": "6b33c1f88be489633fd34da7a484e528ba43d62ea1329f28db319bd029c68861",
+    "live_workflow_probe.py": "345dc4e8bd03575917a3ad5939f5c34453ee8a9917ce214bdc1df4e5631a6885",
+    "measure_turn_degradation.py": "cbd6670f910261d82f79d10d2e12f1aef1276fbce971b2bf9c71645115f2c1f8",
+    "package-lock.json": "917cff64e5731fbd3a29c7e105e2309161a0ce5734d0cd20c3ba86296f2ba24d",
+    "package.json": "c54e9f8283bcc89b8296f6da9c05d07cbfc69b18ab951eedcc90d46835f5e5ed",
+    "plugins/dsh-afsim/README.md": "63a321b700092075c88eb77e2cc2247eb1b407ab9bbf32fa08290f80bb50aaf5",
+    "plugins/dsh-afsim/index.mjs": "dee533d73bcd37b3dd7fda71b84ed80fbc4563979671c5a0208bd50e956a47b0",
+    "plugins/dsh-afsim/package.json": "a4b5eaf1e709676dc47213988e9741a49ffa5727b4b42bf1d9cc2c006f0a499d",
+    "plugins/dsh-afsim/protocol.mjs": "28fd1c94358fd487432a3d46df9912a8a1b140064bd024dcc472de8e6ee94124",
+    "plugins/dsh-afsim/scenario-schema.mjs": "923696d4e0893d0babf4afc0921750029d689a3503027a22f6a1b90d36a95866",
+    "plugins/dsh-afsim/skills/historical-scenario/SKILL.md": "1657420fa631c74db8c291c4732fc8d8258ccae119bd335e417859d37d0b20c2",
+    "plugins/dsh-afsim/skills/historical-units/SKILL.md": "22d94b372d681418e089d1db7d0402b228adaa9300454dbba00477d5ba87a85d",
+    "plugins/dsh-gentactix/effect-schema.json": "3afb7bbebdd658b9deed70dfe3bea2537e5bc22e4e6c5f5e04068a1c7b430acb",
+    "plugins/dsh-gentactix/effect-schema.mjs": "17d9dccb0f76d2637adac5f3bea65a07dffe10d488a719f7b213bc948cc58bf1",
+    "plugins/dsh-gentactix/index.mjs": "134747cf15ca2a2362cb47d6588d5d3a43392f73ff440a6e04388101c4b65664",
+    "plugins/dsh-gentactix/package.json": "f2fc35d5b06353497afb12551ec73171d3251b1ed0df12b52e6dd554e9175c8c",
+    "plugins/dsh-gentactix/report-evidence.mjs": "a1bfdef327bdbef94b52c3a22668b45b603869eb86afeaab6a4aaf476731b458",
+    "plugins/dsh-gentactix/tool-visibility.mjs": "45863c368b13a02872af6e3c9b98f14b047896764ccf1d5f47242b692f0c2abc",
+    "plugins/dsh-gentactix/unit-order-schema.mjs": "bf43ad14ef2e3536c1e17728a3fdeb64be7b121a57d47ed1464c720d8476a7d4",
+    "plugins/dsh-military-plotting/definitions.mjs": "e86b53aa8443c0a038d547b05ea85a92ddccd37e2fb48c01834a7bbe146b2efc",
+    "plugins/dsh-military-plotting/skills/military-plotting/SKILL.md": "ccd12a03b4095e7e65ef1a8bd1c14b2586b27f8107df5f6649c66e2794b4ccc7",
+    "plugins/runtime.json": "8daea55f611812052ed9b3e511d75a154fe45787b6cfc62a41a98bb0f17e1b77",
+    "requirements-dsh.txt": "2466e9f4a08075173f504dbb2cab0fd16053a548460900659aa2d35de2e58e50",
+    "requirements.txt": "fc2aad8e92b0ea1069284bfb9847ae52347fbef34a54a764c10745e87373ea34",
+    "tools/build_defensive_campaign.py": "f51fbe8d1b9c3058e7e7a172d2639e63348e7adf20f8d9028afbf3896143278b",
+    "tools/qa/campaign_readiness_audit.py": "5ac7ef195d74c2316fd4620cc38d951890d6fe74d78fefeee612c38ef1f20b31",
+    "tools/qa/runtime_policy_lifecycle.mjs": "adc336cd09104b7ac509f3bad848a1b2b9938beeb7fdbf4f405f687be628bd8e",
+    "tools/qa/transfer_generation_browser.mjs": "2c7efce76951b5df64886428cc71144bda1ec249951267c167a9dc352d21de98",
+    "tools/render_long_march.py": "f7974e9788e1097143a476016f261c3e3049b3defdafdb2a92482f442ac42145",
+    "tools/render_missions.py": "55a1e216d52ccd1b29f7554ba44834ce5fb673925648478ec00e330b357ae046",
+    "tools/upgrade_long_march_reunion.py": "4b8aece30019516dd18fe4abd3783619b5fd03c3af57e6bb761e8bbf9f7595ef",
+    "tools/upgrade_long_march_strengths.py": "1dd5dfe9d5d78ed74148ff05c5439891f2e18247693e644b578afb49e63a6d1c",
+    "tools/upgrade_northern_campaign.py": "f467b011dd8cab8d0ee3fb097485807692de9d8fd0a5d29ca045dab636e9cd9c",
+    "tools/upgrade_xiangjiang_campaign.py": "980766d97318352dabd316cd97c86c7fd66a29d8c0967278dd73bfcc59b248a7",
+    "verify_adjudication_lib.py": "7037e7eebc4fcfb4d1c5976982170f8c722f89df2031a8b4a3ca20c9c082fa0f",
+    "verify_adjudicator.py": "1e464f4930ea9ac2738a0a6454cdbcf36de7ab72338272747be19ddbbcc60840",
+    "verify_afsim_air.py": "b739966abee4ad401a35956e5d4ae710d65e0a460a96dcf7f94aa604a7d51c0e",
+    "verify_afsim_backend.py": "8dbf6c0f55a9f39fb28d82d4882c017787bb8cd6c06b8efd505c90cec3c8b541",
+    "verify_afsim_components.py": "d74c3b31511121360110bddd993e02291275ba93f539e3591be4edf913595001",
+    "verify_afsim_crossing.py": "811ad737a2472d14adeaab93b4c46ecf8576a1f2f03ac6583c6ce5cb7c0ab65a",
+    "verify_afsim_literals.py": "1327ea213aecf59e27d41fff994f2b7ce95ac1feac7757b64bf0adcd4db1e063",
+    "verify_afsim_native.py": "1f21822f35a9484264449920c2ca86e8ffe4b08eb1d19965fa30a626f24cb5a5",
+    "verify_afsim_observation.py": "d74294aefd1de3d1e24740a7c8c81c6fb7af52ed5120270b109779a4a67f1d42",
+    "verify_afsim_paging.py": "cebb2578fe2e631b5cf763a4fc2da80ed3aa0815c1af33edf9c5565e099272b7",
+    "verify_afsim_status_ui.py": "f6b3734eb06534d80109bf0b0707ef6dff19ae023b00a6903bec407a47effed5",
+    "verify_afsim_summary.py": "30911f866822296b095c9661896a2df9739ee2d66a9469a94cbfb3e6aad9b964",
+    "verify_afsim_world.py": "bcaed0fc01b29de9da1b1a0e06cbe4bf5edb0b74db4dc44b16080de8920fc49d",
+    "verify_agent_tools.py": "7e1d5911ae58fd864ebdb9f586c03cdda120d7d0ce34a9c77299960d6354f12f",
+    "verify_air_assets.py": "13fdb2668e0a008340ba1aa9e5476c8f0247e0bd203d37654b2cba601836d7ac",
+    "verify_air_availability.py": "5db546e3e5d3b0c9c54488440b439335c03472cb60fabce5f9f93cc782ccb9b7",
+    "verify_all.py": "57d49e9fda3479f995e2a217a43b2df0a9b1cd7547eb86bf32710790666c5bb5",
+    "verify_analysis_dynamics.py": "c5f164b98117773966b54d068f4469b975ac6280a240bde804e45aff9f734875",
+    "verify_anchors.py": "c96b515ab09345c3193051f28713c23689c694982032f7f57d6295d774e4c6d3",
+    "verify_anti_japanese_war.py": "77d45408d99727a428ab769f10fcced9f66aedded8c49463c4be15502dd7b1a6",
+    "verify_app_integration.py": "4ef265158b087146afd7e81fec6291369c8b02cef8b973c44e93e939514f6cfa",
+    "verify_aviation_feedback.py": "832a360037056177255d58a7d6a4baeb53acd028107a4dbea35295856da49cf9",
+    "verify_baozuo_initial.py": "cc03097903ce3ba2c1bf4e5d401f2ba097164a5de3bff92d799b40a140fa8288",
+    "verify_battlefield.py": "c32f1476db098125d82113fefde81448becc56769fedbd2c19ba0c458ac996df",
+    "verify_boundary_lifecycle.py": "9491e77452b172224a045e0c2e23fb30ee9ee8990c86fc65ae4be6f3cef3f8a6",
+    "verify_branch_identity.py": "56eb42aa5be6d2168d13f72ebefdde74f3cf40fc59b9f99d4344006f47471f1f",
+    "verify_c2_observation.py": "aed8547d355c048c1ab51b4770b7b2544c8ce81484a92d1a06a1ca43da502b5d",
+    "verify_campaign_contracts.py": "75ba79e2b3836b514c1f603262083e39379fd71eeb1b24747b0650b33bc40f3c",
+    "verify_campaign_delay.py": "75185f092e20f96855359f23d19b11deec728ba48d7d532797c3853b30e2c2a6",
+    "verify_campaign_estimates.py": "85af030ef55b27b1c724aaff2fee19a9d0264fb2e152cdfce70225c33711b88e",
+    "verify_campaign_global_goals.py": "5bfe259d09bd50de185ce294c98dcc8289b8d080cea050f97bc7c71774860dad",
+    "verify_campaign_lifecycle.py": "6e8665a8e372fc4a2f7a31ec53a1deea95e1b062808ab4d22bf8fa1738fafa8d",
+    "verify_campaign_model.py": "afa152c480d8dd19753d27af660dc25559b202c0a4df577382feea998d675108",
+    "verify_campaign_outputs.py": "8d69b4248fa6fe3f02f2800636567d99d01905ba707e9937a2e2267cbfd43455",
+    "verify_campaign_partitions.py": "f01e35f82dcf8c0f7613f04220c2b8bf4abcd447600533a7981d62487280fd22",
+    "verify_campaign_plan.py": "27bacb48f50300f8416455e87eecc321c256d78450abd41578d6870d6f3b49f1",
+    "verify_campaign_plan_backends.py": "3d583c51e664e4ec41795da0c9d1e1692bf3645cf10a7c7a7ffbe59f816c9af0",
+    "verify_campaign_scope.py": "5c322012fc2d5bf85f97344f747916860716451102a12e4d03085a624b45823c",
+    "verify_campaign_windows.py": "8ec80f5e054c747b8d16db7ff48b44ac27ee0c322831eceb24b688749a9abdf6",
+    "verify_candidate_constraints.py": "57442d9129b21d52591538843e42cedb2243caffaa17014cdedd0d1384b28066",
+    "verify_causal.py": "3e765bbb192db843e9b2f976fd1501aaebf64b6176654426f69b9a29ae6a1d2d",
+    "verify_checkpoint_definitions.py": "523532e7db52610ad40a9f61469e7c8d96092b366b1133d20fd28e749ecde11f",
+    "verify_checkpoint_scope.py": "0cfcb8528267530c1ae2a00390c39b733348c072eaaa0df72e830d86eb581092",
+    "verify_cheqiao_campaign.py": "8dad8ddd49a68ee4a81648b13d40a5c791b6d276fea6e69b8a1f04b1ada6d22d",
+    "verify_clock.py": "47c6aeb541817668a72de6056c363a888653ed1701ed069b3b5060920250aaae",
+    "verify_combat_effects.py": "065eaa05e87e59acf31d8a28758b64a41d63b62826eb76655faf2260c33db5e7",
+    "verify_combined_arms.py": "06d1d35002f23141717f2ec8f1121f162578b25c68a2251816b37b94b0673987",
+    "verify_command_backend.py": "68f27bd47ffff82f892751db7780a84530ce5ac270170bf87e0f904b01dafca4",
+    "verify_command_recovery.py": "766df1236c507c1f2ed708a148e57f5bad14d756eaa8f8836de715ddbdebfcdf",
+    "verify_commands.py": "2648ef377ff59b62ec4f15fbb2bc7f1019d958d107c4d4016a762017f9591d8a",
+    "verify_converted_phases.py": "1071af3d94d6d5273687cc44459d1f9c1a4197c8c512ae49ce20af488f78c772",
+    "verify_crossing_control.py": "391ad244de8c6c14e1e79aa9327c647a059c7a6782d162280b581d6c602b5a83",
+    "verify_crossing_network.py": "1c27111dbca21d53b699c5b956ac76af4a6f12070d3e30462b319137099929c4",
+    "verify_crossings.py": "782f9c8eab3edcd3848ef710ec300488c8f1aa54ac8fc98f690b4e39227e02a1",
+    "verify_dated_strengths.py": "d61bf97dc6f1f1a571945569352a978fe857a34133c28b8ebbddf3e1c5530410",
+    "verify_defensive_goals.py": "493d3aff972e8dd2f46ab2d2b4bbd70550858ce651e49fa93d3645e954fea60a",
+    "verify_deferred_support.py": "041907167fc0c12582020fd29e4d95b8140a6834c7be760b131d6fec976d3428",
+    "verify_deployment.py": "0463b0c018f33475d3a6e4ed2ab60414b2ac21028b02f0791bf6a817e69f7b46",
+    "verify_desktop_backend.py": "bf25a55b459ce9a78ed525904886822a617cb886cad6238beb207d072e060a32",
+    "verify_dsh_aviation.py": "87929b6bf670cb2955ae047598e63918fec235e52b72fec970148d1b8afaefaf",
+    "verify_dsh_command_effects.py": "d733d7fc260c2cbb76b18a99bbcffb99f94268a7c13b46cfeaecf093197e4be6",
+    "verify_dsh_crossing.py": "90a9bcc3cc40612af93251189df121b6ba76f62a4274f0c0f86a328acefd65b9",
+    "verify_dsh_output_recovery.py": "3562aec49563d08df36ca512bba4f964938b214e016144d01e7127d5ebc6bb18",
+    "verify_dsh_resources.py": "4174e1ad2a4f384b47952a8c52fe60ffbd064efce5abbb7e50d15d0749b7e62b",
+    "verify_effect_amendments.py": "e8ce6189d4b8f96a5f0182be4ae4d964fd79bc3cf286cec531dfd6460cfeb81a",
+    "verify_effect_contract.py": "bd1eef0b73a1928c525b9b38eb7bc9982b4cf0dbbbd9876ea8440c068b8a7cfd",
+    "verify_engine.py": "78d7c6b0a5f294da7ff2631429bdc527910781adf10b5a1d3e6bc985ae0cb8c8",
+    "verify_execution_modes.py": "637b9568c1e8eaea1d0fdc7c34a19a7232c0d6def7c06cb7ba40edd098551b5d",
+    "verify_failed_configuration_revision.py": "8aaa2eb8b9f95402fbcd2c0750e877e9681fbd928c5c7afb82bd29cc38898513",
+    "verify_features.py": "db3032da049175374b4e0fda65a3d1fdcfe753b320f4136203d8cf6ad91a0b48",
+    "verify_ferries.py": "4810facc7559049634b3b69694bfd95762a5eb8f1d9b9ef1579ae730f3665121",
+    "verify_fire_effect_bounds.py": "ee6c076a4ba2b6b89ef526b7488bc9b356ce0a6b92fa22bd9445668786915088",
+    "verify_fire_process.py": "a21c4279b24002297dc5ba1dc9a9a00f0997d51de5aa85a986ed19489abb7834",
+    "verify_fixed_scenario_inputs.py": "ef44e28a519f70324a9d4f1aac13b06ad1c1de7237ec4fe277353a2c4ce83878",
+    "verify_force_hierarchy.py": "9a69d7bcbacfd9f09f9655aec8c0e99274830aed403253ceddeae7c2807adca8",
+    "verify_force_observation.py": "6eea8dbad06429d80b6b304c4d45c43902bdd4af8cc9d682f2b76327b72fef08",
+    "verify_force_organization.py": "1e54134b1113e538bc9e0dc2c70d02f0c29398018270579da95c312b55bc239c",
+    "verify_force_routes.py": "43ee2d6e5d64645a44ee715b039bb291041de696416abd0f7c1a02d15662509d",
+    "verify_force_task_execution.py": "32d1e1e5194436511f5903daa38407c83fc7d0a0901532734c2272b7f93db1c6",
+    "verify_force_tasks.py": "827090c83a1ecb7cc98624bdc61ba505a9d911c16e35e738647afaba8113252b",
+    "verify_formation_commit.py": "7eb5391d0a5d32711c59fc9119eccf49d072d198dda6ddb44767f52a346fe0c0",
+    "verify_formation_continuity.py": "783fc17c8d1bec218589a75c887183ea8ffaf4fec76cde99af155c71e25879e8",
+    "verify_formation_conversion.py": "ea171792f5313e3a63359ff5eb288374155257417ab4a26611d0e773acf12411",
+    "verify_formation_execution.py": "c70071d07d7bb39af6d1ff601f85cca9ce664f30614dd3c3c7285509b27a8f8f",
+    "verify_formation_parts.py": "69dc7b86069ca8c8d5010b4c7433f42388cee81e7a3a39e764122f854696b636",
+    "verify_formation_registry.py": "e9fed9980657f559ed6044e8586efb9563fe1cda0096b782a5830deaa606f6c8",
+    "verify_formation_session.py": "84a84a6dc1df3be984fd06d6d8a788a5aee202cc41306d33fc41ae194017b87c",
+    "verify_geometry_documentation.py": "ca7604f9f705682afd01584beabc8e25c1d49031b36566cb2adebb712825a173",
+    "verify_harness_engine.py": "a30be1c38f519112c55ecadd60a22d694dd84406d72bba430db832c32d5663e6",
+    "verify_historical_admission.py": "0433f8c7b0e739e7cccb7acf571164989726f247ef82afe59328b625aeb548ba",
+    "verify_historical_attendance.py": "0393723da0578827939a822689a03fa23fb54a6b5401b1e1bcc042da0dfaeac1",
+    "verify_historical_catalog.py": "c8e80875d4b43a3987d1ba6a79b980330b695d2cc5c9da1ba2d5c23b40652a4d",
+    "verify_historical_initial.py": "a8f55d970b3d488798ec467c67232bc66646d08a62ee4afb46b53048ee036ad9",
+    "verify_historical_links.py": "697628e61526c0d882dedc83fc0a59eb6797b628c6adac8c4ae427aa58044f03",
+    "verify_historical_measurements.py": "550c2ab1775fa24ecd5758df47908fe534e29c0bbbd70c38db2bd64c179025fb",
+    "verify_historical_operations.py": "28ddc90fb6fe3c4bf37d939ce10cb6b7a4dfe7f5233231893f5f62d401201182",
+    "verify_historical_replay_v2.py": "bfaae0ae26f6df8cd11801367c964994450b271d72ebabf926fae2c556b46492",
+    "verify_historical_scenario_builder.py": "df77716c4300c2909302507043b6adab620d730e104567746843b08bdc0a373b",
+    "verify_historical_step.py": "3a4a2126d68972f0e08ca7eb4f73dfe9837c37ab50adb76313e438e2bd9d2d8c",
+    "verify_history_commentary.py": "52c20aa3a899a2442d873c661ad5a4f7a72845e5b5aeac7f993adf6d3cd3387d",
+    "verify_history_replay.py": "8424b60b11e5c6dd3a9fb07361f4fcdda8305f7d05a05f4626c896dab986e575",
+    "verify_initial_command.py": "3aef21bc9047c6b16d26fee9c4b62b5c7ffd1752e4eee384b31683710e85cf9f",
+    "verify_integrity.py": "b78b6defc2aeec414538a8547bdd8f4549d7d830ae385db6cc7eabda5b579fd1",
+    "verify_integrity_panel.py": "31c96f9dd09ca0f0ffc75cc1da77a1758f8c366e43d9d189ad820f10de243f13",
+    "verify_inventory_claims.py": "32870dc957c094b28fb2ece3dd23740fd12c533e06fdd77433a82687b8d765dd",
+    "verify_jialing_initial.py": "c54aee42d58e34360f4f23e055f61a5f0b26426372a7f06b2ade511b7ccc5d08",
+    "verify_korean_campaigns.py": "912458a68d0320e4a449229df905d72f6800497be09f94b6fd858c95fb53d1a3",
+    "verify_korean_initial.py": "493cb044ea4a85c1874ac1acafba617eefe7fbae1928e9c671049c3e4fa82d8e",
+    "verify_korean_series.py": "b788588f43d3e6e8ff521cb4dee99ba68a6403a45b19b6a665453924641c33ce",
+    "verify_legacy_sustainment.py": "354fdf40b2f3a80675ad4a264a812fd6ac0b139dadc51fae032faae9f04aa419",
+    "verify_long_march.py": "0d8d15272ab511b88a13d11c61b7b5cd6a57499bff247d1bda61d2b36f741021",
+    "verify_long_march_initial.py": "545349908c2f8043fd8a564c57b2a6cf2d20b35edef0a4211bcf70f9e48673d6",
+    "verify_map_units.py": "80d1135aa21bf0ce2d6f28d70605de35373b16f6f3048993ce36b8bc6f4d5cf0",
+    "verify_markdown.py": "6154b26293939a7f40941b65e4461507047256f0fbefea11cada2aadcc566541",
+    "verify_military_plotting.py": "9ca56d37a44985cb8bce3aa8ce0fe767676391adf3f4e305d5791da061e96c3c",
+    "verify_mission_backend.py": "4a0bdb481d7765d11db4c671b86e2493f98a021fcfbee7c7c624a7a1001df05c",
+    "verify_missions.py": "546f2cfda0f6543fe82c1122553c84ae5efc8d20ea3850ce2742b959cba780b3",
+    "verify_model_settings.py": "d645b382bac795c9f7d5b88116d83fa441929f7db853d8535342c98d3507dfe2",
+    "verify_movement_feedback.py": "e6daa1829dd96ed7acb7227f593f4ac1ec8e56ef1bd69ffe7908f650ed892136",
+    "verify_native_report_submission.py": "ad55bf56900f786e455aaf47838c05fd60d9d20efe60027996d274fc642f32c8",
+    "verify_noncontact_history.py": "e11af6357b28e446bcd05a2bd7278f089fc246d22b064601872bc5df59f224f2",
+    "verify_northern_campaign.py": "8f9d1fcd30261c44d8de759cee36eff06fe2a312154cc130c0cb473862ab472d",
+    "verify_objective_completion.py": "2db4810e77a992f37245b2677333c4dd0943b14e9f27e4797f79da184c995a4b",
+    "verify_objective_team.py": "cc70d59d968bbc519e01a7064ac8addc3480e9c176ae5a3f59221cf15cbf41b6",
+    "verify_observation_provenance.py": "cac1ea750d518f1b73f192f0bfd0d0d5b0fd852d54c84d426d7e82a734ff891c",
+    "verify_operation_boundary.py": "5d73128d5cadadc1bc3af5a9ae2941348c68c0a7eecdd199ed72aeeafd0ebe84",
+    "verify_operation_progress.py": "83fddd12dd1b84c7e261366b3682b27ee3246a11cc1208595fa402c0cf28baf6",
+    "verify_output_consistency.py": "fbbecd6b3f89f70947d35a3912bab33a32a770534ca289b7b06c3dd8a1fb5a0f",
+    "verify_personnel_continuity.py": "19de5726daf78bd39626c32b32a9a5a6082805795b212f2aa6ba8c276821d914",
+    "verify_personnel_projection.py": "0d45fd464637315f04ec4408f576c1419a90732109d373209e98e2e611b46da9",
+    "verify_personnel_rations.py": "c1c161365e3f96b18a6d12d39d1190e5a70d815c0f942ce1603fe8218cf7f12d",
+    "verify_phase_continuity.py": "f10ef48b60ecfd9ca96763b1ed9103b4330ee94a8f4b9cfd78b8f029b76fe1a4",
+    "verify_phase_routes.py": "cf7f32d271c2b345cbd49e4a317a54a73f94ac734982ae5f905fc7fa5c8b8b9b",
+    "verify_phase_rule_contracts.py": "82515040a7f29cd436e66e0385803bacd747d162ea13869bc7d9e4e40a8f90aa",
+    "verify_quiet_suppression.py": "d7a81b0b644abb5da7288a1695a853c578218b7e8f7e4833f73b21f4939ee18d",
+    "verify_receipt_constraints.py": "824efcbdb32f2e2216a900494f1d71068a8e7d38bca2298e26363128d329600e",
+    "verify_release_boundaries.py": "5b7f9686afec309b52e648afe14a0e3e3c7fbd606919810f4cc7603dfd5fdbed",
+    "verify_remaining_initial.py": "e3f1f1b48d5d6f883645ee980220d20e0c04a257d211e52cc3d1e2e877954ab4",
+    "verify_report_claims.py": "5059e75ff0323297de37c3b2a23e27a26a030762d21ecbcc3dea1a376909ab48",
+    "verify_resource_readiness.py": "d39a9991d828eeac527c8a68661a9006f190448c2d57ed629dd629238ab8d440",
+    "verify_reunion_windows.py": "c6d34b77c1aa01260db15761e4fdbf745beba5cc2b70542856d8cb595d0bfc2c",
+    "verify_roundtrip_guard.py": "f23d0b9b9ab4de874c689aaf00c3146b478dec32c060627a1688649418d0a313",
+    "verify_runtime_plugins.py": "1abe24a1099bdd6027489d557be4c582d481ef900d918c9e0441031bff5d4327",
+    "verify_runtime_tools.py": "dda960da1e9a95008d85ace250321908341598a9576e28a5312cd0a74d337d83",
+    "verify_scenario_assembly.py": "33aa7d45139f6f1995e8774cb6462ff3edbd84cec04cc7081be9db28a44ab190",
+    "verify_scenario_builder.py": "8afda0f605dd48a3131ab54f8b440ec6403f63374b5c32815da1c71281e57810",
+    "verify_scenario_food_capacity.py": "62907c2b4380809c236115adf4f2edf4af7a53ced8db5309d860948f0e9d7b65",
+    "verify_scenario_resume.py": "8d7e4ac75915fac6cbe319decc71b24653fc6b8e08d1dfc54655eb613d8fdf03",
+    "verify_schedule_constraint_pages.py": "965eb449f868fee202eeeb3333902849412ca2137fd63f755960ebe389d2906f",
+    "verify_schedule_constraints.py": "38fd03427c1b894127bbf71baa672a33e4990fd56733b957304a77d90db1aa81",
+    "verify_source_locators.py": "77b5cab456e0a9a380ee80c324b3856b43d897d004aa1d9e5ae3ef6aa359f2b1",
+    "verify_split_supply.py": "9de05256183a24a79efc4120304f2686282aa30d98f6de0d8eebc37469b3c511",
+    "verify_staging_support.py": "7cd6a23d39c13bcc48c7dee23f85fc303a1fade9e25eb5969b894405df950ead",
+    "verify_supply_binding.py": "3e895c93a081fa768eb27308e2ab255cac6ef74d580a15b5f02cb29fb4b0f558",
+    "verify_supply_geometry.py": "4ef391ef8e0bfa0c2933030e63a860bbfebbec2dffadc52441fcb018c78dc65a",
+    "verify_supply_indices.py": "18439416eddd22c49b7ca042c8778b83b2bbd356ab5ca895b4211df805198fb7",
+    "verify_supply_receipts.py": "d096f27a6be67da7b79babfa3ad34657fc2a0fe15a2c9b718c09732f18432c5d",
+    "verify_supply_schedule.py": "a6c8bd74b13068c83099eba29b60aaf5bd623ed5f0e1d70d08e8104b21ed7fb5",
+    "verify_support_dynamics.py": "05c496fa7b3d9d38308228bb32ca4aca189df9ac82b2ac197035368b0697a458",
+    "verify_sustainment.py": "e75951b776a703d5e7f52bbdb119cf9e60ef63e0f3eb853789add63b09963adf",
+    "verify_synthetic_campaign.py": "6c91e5887f33a394faf64809ff004648fa7059e79e1d60a274c87052faa6a90b",
+    "verify_synthetic_configuration.py": "9ab0f147a2e0f16c22357bc6ffb002dd53a4a3f095f40b71169e9c22612b816e",
+    "verify_synthetic_history.py": "13f7d7576d0c7fd2b6330cc445b1fa8827457d76f4bbf11481797e0d2bdde8f3",
+    "verify_terrain_process.py": "bbb80da3727ce51ece210dc48fa22349f91859c601a55377ce2a8ab61246f7c3",
+    "verify_transfer_campaign.py": "48406ad26f92f76f9a22e080480ad47550faf24866f0f9a1cd0211af1646a56b",
+    "verify_turn_preview_pages.py": "a68e2e5053027fded0e7d76fd7a7274d77971305eff37dc56041bf43b37411bb",
+    "verify_turn_settlement.py": "9206593075ff6008489eedb592dd1ec47f40bafef31e56fa86f3d1d4ea55ea18",
+    "verify_unit_order_submission.py": "0443317ed82dd5bf9f5248355e42af9357e32ed0dab5ea60669d677e4eccb601",
+    "verify_unit_output_recovery.py": "e2cfe3f2ac0a075fc8a2d8b9dfdaf9821b6c6c1c3589b520ef088b591cd99979",
+    "verify_unit_participation.py": "321aa2fb4fe4e9379cb843bd0dd1dd3989e21ac1a1e3ddb89faa34ae3e268816",
+    "verify_unit_participation_integration.py": "e7ed05590a75b23e6bb71a48692230ee38e5d6c3d7824b1284875dbe58aef81a",
+    "verify_unit_participation_routes.py": "f33dd8f2bd4a0c17e49b0de9955bd6c739c4f2535c51f73656cf0bb005fcb901",
+    "verify_unit_situation_index.py": "9f7ce253897cc139d419c1bc0b2ffb07f0ba48985b1442990c9b0b9b2dc9b096",
+    "verify_unit_types.py": "673a89e103a0f5bc687151e73bc530637571445f9ef819d011bd49a34856499a",
+    "verify_wanjialing_campaign_sources.py": "85fa4e0a704f29248d8579f6daeae89a3f4de987aa4ffe3b81ef71b0adc0efa4",
+    "verify_wanjialing_revision.py": "1a3ec44d9348a538d0c19091904a130044c89e6428bf304ef75f8eaa61bb5553",
+    "verify_weapon_ranges.py": "cc927cbade25825e181855d7967c2d9a7a094d3a798a2fd6c1a2f71b0385eaa7",
+    "verify_workflow.py": "6b8b325bb81bb146d6dadf067123528a56c2272d201fcac4c360607514f906c2",
+    "verify_ww2_initial.py": "f09d0d4f8a53223ab469bea0ab23fd31ee70517af1b19ddf2a7f0091f66dd3d9",
+    "verify_xiangjiang_campaign_sources.py": "9b43034bcb215361e478e1d178d454dc21019862d21479223824747e527e9c12"
+  },
+  "protection_metadata_before": {
+    "protected": {
+      ".cache/qa/deferred-support-2026-11-03/api/roles.json": {
+        "bytes": 566,
+        "mtime_ns": 1793708506469698494
+      },
+      ".cache/qa/deferred-support-2026-11-03/api/sessions/24f1946c7010.json": {
+        "bytes": 3723630,
+        "mtime_ns": 1793708036735030074
+      },
+      ".cache/qa/deferred-support-2026-11-03/api/sessions/91ee5e8bf177.json": {
+        "bytes": 3662655,
+        "mtime_ns": 1793708506443698278
+      },
+      ".cache/qa/native-completion-2026-11-03/api/roles.json": {
+        "bytes": 852,
+        "mtime_ns": 1793696385536038176
+      },
+      ".cache/qa/native-completion-2026-11-03/api/sessions/041fe52b2b8d.json": {
+        "bytes": 1088751,
+        "mtime_ns": 1793696385530038342
+      },
+      ".cache/qa/native-completion-2026-11-03/api/sessions/2c51981789fd.json": {
+        "bytes": 2176605,
+        "mtime_ns": 1793695503728380808
+      },
+      ".cache/qa/personnel-continuity-2026-11-03/api/roles.json": {
+        "bytes": 950,
+        "mtime_ns": 1793703403443838965
+      },
+      ".cache/qa/personnel-continuity-2026-11-03/api/sessions/5f55ddd507a7.json": {
+        "bytes": 731138,
+        "mtime_ns": 1793703403436838851
+      },
+      ".cache/qa/personnel-continuity-2026-11-03/api/sessions/cbb95b02630c.json": {
+        "bytes": 4160924,
+        "mtime_ns": 1793701384726630881
+      },
+      ".cache/qa/personnel-continuity-2026-11-03/api/sessions/fb11ed13786b.json": {
+        "bytes": 4961795,
+        "mtime_ns": 1793702196061668635
+      },
+      ".cache/qa/personnel-rations-2026-11-03/api/roles.json": {
+        "bytes": 852,
+        "mtime_ns": 1793683692322104943
+      },
+      ".cache/qa/personnel-rations-2026-11-03/api/sessions/2c51981789fd.json": {
+        "bytes": 1476924,
+        "mtime_ns": 1793683225269050915
+      },
+      ".cache/qa/personnel-rations-2026-11-03/api/sessions/4658af78f14f.json": {
+        "bytes": 1566558,
+        "mtime_ns": 1793684170801612600
+      },
+      ".cache/qa/personnel-rations-2026-11-03/browser-r6/result.json": {
+        "bytes": 1361,
+        "mtime_ns": 1793682407852493739
+      },
+      ".cache/qa/personnel-rations-2026-11-03/cold-review.json": {
+        "bytes": 381,
+        "mtime_ns": 1793684085195406241
+      },
+      ".cache/qa/personnel-rations-2026-11-03/native-r3/result.json": {
+        "bytes": 9458,
+        "mtime_ns": 1793681384194712224
+      },
+      ".cache/qa/personnel-rations-2026-11-03/next-native-completion-action.json": {
+        "bytes": 1199,
+        "mtime_ns": 1793684999663359150
+      },
+      ".cache/qa/personnel-rations-2026-11-03/physical-parity-review.json": {
+        "bytes": 925,
+        "mtime_ns": 1793683924704410921
+      },
+      ".cache/qa/personnel-rations-2026-11-03/protected-current-review.json": {
+        "bytes": 834,
+        "mtime_ns": 1793682896646054980
+      },
+      ".cache/qa/personnel-rations-2026-11-03/readonly-analysis-review.json": {
+        "bytes": 416,
+        "mtime_ns": 1793684387195747035
+      },
+      ".cache/qa/personnel-rations-2026-11-03/readonly-browser/result.json": {
+        "bytes": 632,
+        "mtime_ns": 1793684478398002503
+      },
+      ".cache/qa/personnel-rations-2026-11-03/stable-gate/results.json": {
+        "bytes": 44637,
+        "mtime_ns": 1793683589498773015
+      },
+      ".cache/qa/personnel-rations-2026-11-03/stable-source-freeze.json": {
+        "bytes": 11492,
+        "mtime_ns": 1793682487367901913
+      },
+      ".cache/qa/personnel-rations-2026-11-03/t1-canonical.json": {
+        "bytes": 3004955,
+        "mtime_ns": 1793682675020618199
+      },
+      ".cache/qa/personnel-rations-2026-11-03/t2-failed-canonical.json": {
+        "bytes": 3405111,
+        "mtime_ns": 1793683247534309163
+      },
+      ".cache/qa/personnel-rations-2026-11-03/t2-independent/final-canonical.json": {
+        "bytes": 4231553,
+        "mtime_ns": 1793683853874372330
+      },
+      ".cache/qa/personnel-rations-2026-11-03/validation-summary.json": {
+        "bytes": 1994,
+        "mtime_ns": 1793684999649359563
+      },
+      ".env.wargame": {
+        "bytes": 332,
+        "mtime_ns": 1792602106932166789
+      },
+      ".gentactix-llm.enc": {
+        "bytes": 1295,
+        "mtime_ns": 1793279619573895292
+      },
+      "/home/spikebai/.config/GenTactix-DSH/vault.key": {
+        "bytes": 44,
+        "mtime_ns": 1792602106926166917
+      },
+      "AGENTS.md": {
+        "bytes": 3215,
+        "mtime_ns": 1792555387587313037
+      },
+      "data/campaign_windows/LM06-right-column-aug21-27/1.0.0.json": {
+        "bytes": 5931,
+        "mtime_ns": 1793674455030973636
+      },
+      "data/campaign_windows/WJL-oct6-10/1.0.0.json": {
+        "bytes": 31778,
+        "mtime_ns": 1793492000340204557
+      },
+      "data/campaign_windows/WJL-oct6-10/1.1.0.json": {
+        "bytes": 83293,
+        "mtime_ns": 1793494028652639291
+      },
+      "data/campaign_windows/WJL-oct6-10/1.2.0.json": {
+        "bytes": 142891,
+        "mtime_ns": 1793495412737858868
+      },
+      "data/campaign_windows/WJL-oct6-10/1.3.0.json": {
+        "bytes": 181553,
+        "mtime_ns": 1793496106791515670
+      },
+      "data/campaign_windows/WJL-oct6-10/1.4.0.json": {
+        "bytes": 181691,
+        "mtime_ns": 1793608251917885131
+      },
+      "data/campaign_windows/WJL-oct6-10/1.5.0.json": {
+        "bytes": 182265,
+        "mtime_ns": 1793625877230366035
+      },
+      "data/historical_initial/AJ01-shanghai/1.0.0.json": {
+        "bytes": 14449,
+        "mtime_ns": 1793232599910311137
+      },
+      "data/historical_initial/AJ02-taiyuan/1.0.0.json": {
+        "bytes": 11550,
+        "mtime_ns": 1793232599912311171
+      },
+      "data/historical_initial/AJ03-pingxingguan/1.0.0.json": {
+        "bytes": 29178,
+        "mtime_ns": 1793124533186357117
+      },
+      "data/historical_initial/AJ04-xuzhou/1.0.0.json": {
+        "bytes": 17772,
+        "mtime_ns": 1793109096427464118
+      },
+      "data/historical_initial/AJ04-xuzhou/1.1.0.json": {
+        "bytes": 24162,
+        "mtime_ns": 1793124533184357132
+      },
+      "data/historical_initial/AJ04-xuzhou/1.2.0.json": {
+        "bytes": 25955,
+        "mtime_ns": 1793144749989034782
+      },
+      "data/historical_initial/AJ05-taierzhuang/1.0.0.json": {
+        "bytes": 22712,
+        "mtime_ns": 1793144699514964471
+      },
+      "data/historical_initial/AJ06-wuhan/1.0.0.json": {
+        "bytes": 150398,
+        "mtime_ns": 1793108728550834866
+      },
+      "data/historical_initial/AJ06-wuhan/1.1.0.json": {
+        "bytes": 199777,
+        "mtime_ns": 1793416441232540138
+      },
+      "data/historical_initial/AJ07-wanjialing/1.0.0.json": {
+        "bytes": 20210,
+        "mtime_ns": 1793144699515964266
+      },
+      "data/historical_initial/AJ07-wanjialing/1.1.0.json": {
+        "bytes": 91365,
+        "mtime_ns": 1793428499520652800
+      },
+      "data/historical_initial/AJ07-wanjialing/1.2.0.json": {
+        "bytes": 132325,
+        "mtime_ns": 1793438999546356845
+      },
+      "data/historical_initial/AJ07-wanjialing/1.3.0.json": {
+        "bytes": 218877,
+        "mtime_ns": 1793475069863850675
+      },
+      "data/historical_initial/AJ07-wanjialing/1.4.0.json": {
+        "bytes": 225922,
+        "mtime_ns": 1793608251913884620
+      },
+      "data/historical_initial/AJ08-changsha1/1.0.0.json": {
+        "bytes": 14420,
+        "mtime_ns": 1793232599913311188
+      },
+      "data/historical_initial/AJ08-changsha1/1.1.0.json": {
+        "bytes": 14884,
+        "mtime_ns": 1793233195775053177
+      },
+      "data/historical_initial/AJ09-changsha2/1.0.0.json": {
+        "bytes": 7255,
+        "mtime_ns": 1793232599914311204
+      },
+      "data/historical_initial/AJ09-changsha2/1.1.0.json": {
+        "bytes": 8340,
+        "mtime_ns": 1793233195776053193
+      },
+      "data/historical_initial/AJ10-changsha3/1.0.0.json": {
+        "bytes": 10075,
+        "mtime_ns": 1793232599915311221
+      },
+      "data/historical_initial/AJ11-kunlun/1.0.0.json": {
+        "bytes": 12103,
+        "mtime_ns": 1793232599917311254
+      },
+      "data/historical_initial/AJ12-ichigo/1.0.0.json": {
+        "bytes": 8969,
+        "mtime_ns": 1793232599918311271
+      },
+      "data/historical_initial/AJ13-hengyang/1.0.0.json": {
+        "bytes": 10116,
+        "mtime_ns": 1793232599919311288
+      },
+      "data/historical_initial/AJ14-hundred/1.0.0.json": {
+        "bytes": 11427,
+        "mtime_ns": 1793232599920311305
+      },
+      "data/historical_initial/AJ15-jizhong/1.0.0.json": {
+        "bytes": 59508,
+        "mtime_ns": 1793108728555834764
+      },
+      "data/historical_initial/AJ16-counter1944/1.0.0.json": {
+        "bytes": 12561,
+        "mtime_ns": 1793232599921311322
+      },
+      "data/historical_initial/AJ17-cheqiao/1.0.0.json": {
+        "bytes": 16380,
+        "mtime_ns": 1793232599922311338
+      },
+      "data/historical_initial/AJ17-cheqiao/1.1.0.json": {
+        "bytes": 52578,
+        "mtime_ns": 1793250633569524018
+      },
+      "data/historical_initial/AJ17-cheqiao/1.2.0.json": {
+        "bytes": 63487,
+        "mtime_ns": 1793257405441340472
+      },
+      "data/historical_initial/AJ17-cheqiao/1.3.0.json": {
+        "bytes": 66142,
+        "mtime_ns": 1793261741520627061
+      },
+      "data/historical_initial/AJ18-xiangxi/1.0.0.json": {
+        "bytes": 16064,
+        "mtime_ns": 1793173955996693348
+      },
+      "data/historical_initial/AJ19-burma/1.0.0.json": {
+        "bytes": 10196,
+        "mtime_ns": 1793232599924311372
+      },
+      "data/historical_initial/AJ20-reception/1.0.0.json": {
+        "bytes": 13808,
+        "mtime_ns": 1793232599925311389
+      },
+      "data/historical_initial/CP01-changping/1.0.0.json": {
+        "bytes": 14265,
+        "mtime_ns": 1793286858485276127
+      },
+      "data/historical_initial/KW01-first/1.0.0.json": {
+        "bytes": 135745,
+        "mtime_ns": 1793136508831791136
+      },
+      "data/historical_initial/KW02-second/1.0.0.json": {
+        "bytes": 36309,
+        "mtime_ns": 1793156456880474671
+      },
+      "data/historical_initial/KW03-third/1.0.0.json": {
+        "bytes": 24158,
+        "mtime_ns": 1793156456882474597
+      },
+      "data/historical_initial/KW04-fourth/1.0.0.json": {
+        "bytes": 22330,
+        "mtime_ns": 1793156456883474560
+      },
+      "data/historical_initial/KW05-fifth/1.0.0.json": {
+        "bytes": 21080,
+        "mtime_ns": 1793156456886474449
+      },
+      "data/historical_initial/KW06-autumn1951/1.0.0.json": {
+        "bytes": 15249,
+        "mtime_ns": 1793156456887474412
+      },
+      "data/historical_initial/KW07-counter1952/1.0.0.json": {
+        "bytes": 14914,
+        "mtime_ns": 1793156456889474337
+      },
+      "data/historical_initial/KW08-sangganling/1.0.0.json": {
+        "bytes": 20217,
+        "mtime_ns": 1793156456890474300
+      },
+      "data/historical_initial/KW09-summer1953/1.0.0.json": {
+        "bytes": 18910,
+        "mtime_ns": 1793156456892474226
+      },
+      "data/historical_initial/LM01-xiangjiang/1.0.0.json": {
+        "bytes": 44300,
+        "mtime_ns": 1793169408396755440
+      },
+      "data/historical_initial/LM02-wujiang/1.0.0.json": {
+        "bytes": 18066,
+        "mtime_ns": 1793181189344954020
+      },
+      "data/historical_initial/LM03-chishui/1.0.0.json": {
+        "bytes": 30566,
+        "mtime_ns": 1793286858476168070
+      },
+      "data/historical_initial/LM04-jinsha1935/1.0.0.json": {
+        "bytes": 18609,
+        "mtime_ns": 1793238632187242043
+      },
+      "data/historical_initial/LM05-dadu/1.0.0.json": {
+        "bytes": 8868,
+        "mtime_ns": 1793286858477180077
+      },
+      "data/historical_initial/LM06-maogong/1.0.0.json": {
+        "bytes": 12225,
+        "mtime_ns": 1793286858478192083
+      },
+      "data/historical_initial/LM06-maogong/1.1.0.json": {
+        "bytes": 26498,
+        "mtime_ns": 1793674455029973674
+      },
+      "data/historical_initial/LM07-baozuo/1.0.0.json": {
+        "bytes": 49644,
+        "mtime_ns": 1793268627655483980
+      },
+      "data/historical_initial/LM08-lazikou/1.0.0.json": {
+        "bytes": 7632,
+        "mtime_ns": 1793286858479204089
+      },
+      "data/historical_initial/LM09-red25/1.0.0.json": {
+        "bytes": 28485,
+        "mtime_ns": 1793286858480216095
+      },
+      "data/historical_initial/LM10-jialing/1.0.0.json": {
+        "bytes": 59435,
+        "mtime_ns": 1793271653055331824
+      },
+      "data/historical_initial/LM11-baizhang/1.0.0.json": {
+        "bytes": 22330,
+        "mtime_ns": 1793286858482240108
+      },
+      "data/historical_initial/LM12-wumeng/1.0.0.json": {
+        "bytes": 12236,
+        "mtime_ns": 1793286858483252114
+      },
+      "data/historical_initial/LM13-jinsha1936/1.0.0.json": {
+        "bytes": 15722,
+        "mtime_ns": 1793238632188242044
+      },
+      "data/historical_initial/LM14-zhiluo/1.0.0.json": {
+        "bytes": 20074,
+        "mtime_ns": 1793142997877286472
+      },
+      "data/historical_initial/LM15-reunion/1.0.0.json": {
+        "bytes": 12806,
+        "mtime_ns": 1793286858484264120
+      },
+      "data/historical_initial/index.json": {
+        "bytes": 6660,
+        "mtime_ns": 1793286858486288132
+      },
+      "docs/会战级多层编制与分合兵改造规划-2026-10-31.md": {
+        "bytes": 70858,
+        "mtime_ns": 1793684713516883676
+      },
+      "docs/会战级资料逐场清单-2026-10-31.csv": {
+        "bytes": 133465,
+        "mtime_ns": 1793555849459688011
+      },
+      "docs/按人员耗粮与运输质量一致性验收-2026-11-03.md": {
+        "bytes": 8955,
+        "mtime_ns": 1793684713477885151
+      },
+      "docs/长征原生配置生成与纯DSH过程验收-2026-11-03.md": {
+        "bytes": 8296,
+        "mtime_ns": 1793679775784371245
+      },
+      "docs/长征多军转移窗口与原生会话续推验收-2026-11-03.md": {
+        "bytes": 9168,
+        "mtime_ns": 1793676771482854528
+      },
+      "frontend/package.json": {
+        "bytes": 2344,
+        "mtime_ns": 1793342836046060503
+      },
+      "requirements-dsh.txt": {
+        "bytes": 217,
+        "mtime_ns": 1792601960391242091
+      },
+      ".cache/qa/reunion-windows-2026-11-03/api/scenario-drafts/0770a860499444c1b7aa66cabd4eea3f.json": {
+        "bytes": 162371,
+        "mtime_ns": 1793711704910533622
+      },
+      "docs/项目交接说明-2026-11-03-21时只读快照.md": {
+        "bytes": 19632,
+        "mtime_ns": 1793712286346897771
+      },
+      "docs/项目交接只读核对-2026-11-03-21时.json": {
+        "bytes": 7758,
+        "mtime_ns": 1793712400489461519
+      },
+      "data/historical_initial/LM15-reunion/1.1.0.json": {
+        "bytes": 71936,
+        "mtime_ns": 1793710745829483885
+      },
+      "data/campaign_windows/LM15-huining-oct9-10/1.0.0.json": {
+        "bytes": 10043,
+        "mtime_ns": 1793710745829483885
+      },
+      "data/campaign_windows/LM15-jiangtaibao-oct22/1.0.0.json": {
+        "bytes": 9840,
+        "mtime_ns": 1793710745829483885
+      },
+      "data/campaign_windows/LM15-ganzi-jul1-2/1.0.0.json": {
+        "bytes": 9642,
+        "mtime_ns": 1793710745829483885
+      },
+      ".cache/qa/reunion-validation-2026-11-03/api/sessions/e1536577f91f.json": {
+        "bytes": 2566423,
+        "mtime_ns": 1793714082588545833
+      },
+      ".cache/qa/reunion-validation-2026-11-03/api/sessions/bbf384efebe6.json": {
+        "bytes": 2580334,
+        "mtime_ns": 1793714170731790115
+      },
+      ".cache/qa/reunion-validation-2026-11-03/api/roles.json": {
+        "bytes": 796,
+        "mtime_ns": 1793714170741790346
+      }
+    },
+    "prior_E7_raw": {
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/roles.json": {
+        "bytes": 2043,
+        "mtime_ns": 1793754607235811680
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/5b9a046f9781/epoch-0/turn-000000.json": {
+        "bytes": 2244164,
+        "mtime_ns": 1793750828930758736
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/c48dcc014f18/epoch-0/turn-000004.json": {
+        "bytes": 4753070,
+        "mtime_ns": 1793750466237421094
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/c48dcc014f18/epoch-0/turn-000001.json": {
+        "bytes": 4845398,
+        "mtime_ns": 1793749039295290625
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/c48dcc014f18/epoch-0/turn-000002.json": {
+        "bytes": 4922490,
+        "mtime_ns": 1793749388041074976
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/c48dcc014f18/epoch-0/turn-000003.json": {
+        "bytes": 4755157,
+        "mtime_ns": 1793750027497607828
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/c48dcc014f18/epoch-0/turn-000005.json": {
+        "bytes": 4753334,
+        "mtime_ns": 1793750491779234193
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/c48dcc014f18/epoch-0/turn-000000.json": {
+        "bytes": 2244164,
+        "mtime_ns": 1793748307269545068
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/c48dcc014f18/epoch-0/turn-000006.json": {
+        "bytes": 4753613,
+        "mtime_ns": 1793750520687022531
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/c48dcc014f18/epoch-0/turn-000007.json": {
+        "bytes": 4753945,
+        "mtime_ns": 1793750553659780946
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/c48dcc014f18/epoch-0/failed-operations/2b776862c68a40a8b8f735e18cb2597b.json": {
+        "bytes": 263183,
+        "mtime_ns": 1793748549437570858
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/5d20ad533bce/epoch-1/turn-000004.json": {
+        "bytes": 4749190,
+        "mtime_ns": 1793751167269293709
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/5d20ad533bce/epoch-1/turn-000001.json": {
+        "bytes": 4755021,
+        "mtime_ns": 1793751112028557930
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/5d20ad533bce/epoch-1/turn-000002.json": {
+        "bytes": 4751188,
+        "mtime_ns": 1793751127199486546
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/5d20ad533bce/epoch-1/turn-000003.json": {
+        "bytes": 4749855,
+        "mtime_ns": 1793751145526399104
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/5d20ad533bce/epoch-1/turn-000005.json": {
+        "bytes": 4749128,
+        "mtime_ns": 1793751192043171526
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/5d20ad533bce/epoch-1/turn-000006.json": {
+        "bytes": 4749141,
+        "mtime_ns": 1793751220200030074
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/5d20ad533bce/epoch-1/turn-000007.json": {
+        "bytes": 4749439,
+        "mtime_ns": 1793751251465869955
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/7d740c49c91c/epoch-1/turn-000004.json": {
+        "bytes": 4751656,
+        "mtime_ns": 1793751008365019155
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/7d740c49c91c/epoch-1/turn-000001.json": {
+        "bytes": 4755902,
+        "mtime_ns": 1793750952484246241
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/7d740c49c91c/epoch-1/turn-000002.json": {
+        "bytes": 4752002,
+        "mtime_ns": 1793750967665186186
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/7d740c49c91c/epoch-1/turn-000003.json": {
+        "bytes": 4751440,
+        "mtime_ns": 1793750986269110901
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/7d740c49c91c/epoch-1/turn-000005.json": {
+        "bytes": 4751577,
+        "mtime_ns": 1793751033642911222
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/7d740c49c91c/epoch-1/turn-000006.json": {
+        "bytes": 4751557,
+        "mtime_ns": 1793751062027786424
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/7d740c49c91c/epoch-1/turn-000007.json": {
+        "bytes": 4751549,
+        "mtime_ns": 1793751093931641855
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/f682f0ba0a71/epoch-0/turn-000004.json": {
+        "bytes": 4701230,
+        "mtime_ns": 1793754065544649971
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/f682f0ba0a71/epoch-0/turn-000001.json": {
+        "bytes": 4970271,
+        "mtime_ns": 1793749826590043732
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/f682f0ba0a71/epoch-0/turn-000002.json": {
+        "bytes": 4942284,
+        "mtime_ns": 1793753589675821758
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/f682f0ba0a71/epoch-0/turn-000003.json": {
+        "bytes": 4729230,
+        "mtime_ns": 1793753927872798294
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/f682f0ba0a71/epoch-0/turn-000005.json": {
+        "bytes": 4703671,
+        "mtime_ns": 1793754262502482924
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/f682f0ba0a71/epoch-0/turn-000000.json": {
+        "bytes": 2243461,
+        "mtime_ns": 1793748190813515868
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/f682f0ba0a71/epoch-0/turn-000006.json": {
+        "bytes": 4702284,
+        "mtime_ns": 1793754406499620243
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/f682f0ba0a71/epoch-0/turn-000007.json": {
+        "bytes": 4704219,
+        "mtime_ns": 1793754603752876321
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/d99b6861c0b3/epoch-1/turn-000004.json": {
+        "bytes": 4753055,
+        "mtime_ns": 1793750260054925122
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/d99b6861c0b3/epoch-1/turn-000005.json": {
+        "bytes": 4753358,
+        "mtime_ns": 1793750285655738893
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/d99b6861c0b3/epoch-1/turn-000006.json": {
+        "bytes": 4753921,
+        "mtime_ns": 1793750314412529514
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/traces/d99b6861c0b3/epoch-1/turn-000007.json": {
+        "bytes": 4754107,
+        "mtime_ns": 1793750346560295216
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/sessions/daa0758af8e1.json": {
+        "bytes": 5413472,
+        "mtime_ns": 1793753122391053666
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/sessions/c48dcc014f18.json": {
+        "bytes": 5772755,
+        "mtime_ns": 1793750557507752742
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/sessions/d99b6861c0b3.json": {
+        "bytes": 5647451,
+        "mtime_ns": 1793750350077269570
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/sessions/5d20ad533bce.json": {
+        "bytes": 5381526,
+        "mtime_ns": 1793751255202850612
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/sessions/7d740c49c91c.json": {
+        "bytes": 5406392,
+        "mtime_ns": 1793751494394535525
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/sessions/f682f0ba0a71.json": {
+        "bytes": 5645016,
+        "mtime_ns": 1793754607186812589
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/sessions/5b9a046f9781.json": {
+        "bytes": 2269943,
+        "mtime_ns": 1793750829334755762
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/gentactix-afsim.patch.json": {
+        "bytes": 417,
+        "mtime_ns": 1793749036346308173
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/gentactix-runtime.patch.yml": {
+        "bytes": 347,
+        "mtime_ns": 1793753033356852140
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/gentactix-transport.patch.json": {
+        "bytes": 755,
+        "mtime_ns": 1793753033357852082
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/profiles/sdk-minimal/package.json": {
+        "bytes": 186,
+        "mtime_ns": 1793747785493075732
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/profiles/sdk-minimal/cordis.patch.yml": {
+        "bytes": 217,
+        "mtime_ns": 1793747785493075732
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/profiles/sdk-minimal/cordis.yml": {
+        "bytes": 223,
+        "mtime_ns": 1793753033703832287
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/profiles/sdk-minimal/pnpm-workspace.yaml": {
+        "bytes": 61,
+        "mtime_ns": 1793747785493075732
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-c48dcc014f18-e0-7931661f2e205212952a3b56d994ffa3-75b88e079c934eb7920de5eb7922149c/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793748483151106323
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-c48dcc014f18-e0-7931661f2e205212952a3b56d994ffa3-75b88e079c934eb7920de5eb7922149c/session.v4.jsonl": {
+        "bytes": 161497,
+        "mtime_ns": 1793748513479860926
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-f682f0ba0a71-e0-a96c6c8c890654d9accc653f136ba25e-f61230a864854487a018d58301c2f7b2/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793753277549905772
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-f682f0ba0a71-e0-a96c6c8c890654d9accc653f136ba25e-f61230a864854487a018d58301c2f7b2/session.v4.jsonl": {
+        "bytes": 372875,
+        "mtime_ns": 1793753327505875204
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-c48dcc014f18-e0-c12fc213cc5153c08e0f35e5bb2c5a7f-9bde0645ccc24897b134273262d70a0e/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793748514610851788
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-c48dcc014f18-e0-c12fc213cc5153c08e0f35e5bb2c5a7f-9bde0645ccc24897b134273262d70a0e/session.v4.jsonl": {
+        "bytes": 182058,
+        "mtime_ns": 1793748547086589795
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-c48dcc014f18-e0-7931661f2e205212952a3b56d994ffa3-646967a318cc4ba8b1a781a3170c83ee/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793749285005754191
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-c48dcc014f18-e0-7931661f2e205212952a3b56d994ffa3-646967a318cc4ba8b1a781a3170c83ee/session.v4.jsonl": {
+        "bytes": 320235,
+        "mtime_ns": 1793749323869499994
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-a19c2f57ff404381b8326ffb69e3059b-chat/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793753034403792270
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-a19c2f57ff404381b8326ffb69e3059b-chat/session.v4.jsonl": {
+        "bytes": 488487,
+        "mtime_ns": 1793753120339157939
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-scenario-d2d6cd757a2046a19660a4b4287fd40d-2c51436682344ed7ba9637fb80830468/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793747786145069691
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-scenario-d2d6cd757a2046a19660a4b4287fd40d-2c51436682344ed7ba9637fb80830468/session.v4.jsonl": {
+        "bytes": 632755,
+        "mtime_ns": 1793748187601542892
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-f682f0ba0a71e0-engine/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793753218127482070
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-f682f0ba0a71e0-engine/session.v4.jsonl": {
+        "bytes": 3321221,
+        "mtime_ns": 1793754599774950204
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-f682f0ba0a71-e0-68744cb19ed05de985fb62476d8e0e55-167d91031e854772a0165bc600a67bc1/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793753218179479735
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-f682f0ba0a71-e0-68744cb19ed05de985fb62476d8e0e55-167d91031e854772a0165bc600a67bc1/session.v4.jsonl": {
+        "bytes": 384018,
+        "mtime_ns": 1793753276242960491
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-scenario-d2d6cd757a2046a19660a4b4287fd40d-ed662197476440fab39195475e603e63/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793748009171069449
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-scenario-d2d6cd757a2046a19660a4b4287fd40d-ed662197476440fab39195475e603e63/session.v4.jsonl": {
+        "bytes": 206342,
+        "mtime_ns": 1793748058709640177
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-scenario-d2d6cd757a2046a19660a4b4287fd40d-113d714a1a2d4747b293e45756c16ef8/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793748058884638669
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-scenario-d2d6cd757a2046a19660a4b4287fd40d-113d714a1a2d4747b293e45756c16ef8/session.v4.jsonl": {
+        "bytes": 322841,
+        "mtime_ns": 1793748165902725829
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-c48dcc014f18-e0-c12fc213cc5153c08e0f35e5bb2c5a7f-127e87975a084779a5dce297209e2ddc/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793749324779494012
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-unit-c48dcc014f18-e0-c12fc213cc5153c08e0f35e5bb2c5a7f-127e87975a084779a5dce297209e2ddc/session.v4.jsonl": {
+        "bytes": 435635,
+        "mtime_ns": 1793749384533098370
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-d612572ded824971a375e0430b38e465-chat/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793751431145896375
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-defensive-goals-2026-11-04-api-workspace--/gentactix-d612572ded824971a375e0430b38e465-chat/session.v4.jsonl": {
+        "bytes": 403209,
+        "mtime_ns": 1793751492618545767
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/scenario-drafts/3df2f0f1dd40456f8990f47a7289efbc.json": {
+        "bytes": 901810,
+        "mtime_ns": 1793748305357560876
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/scenario-drafts/374423bb41d947d385d4e2a0b8b953c6.json": {
+        "bytes": 909867,
+        "mtime_ns": 1793748188986531237
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/scenario-drafts/d2d6cd757a2046a19660a4b4287fd40d.json": {
+        "bytes": 686264,
+        "mtime_ns": 1793748189030530867
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/scenario-drafts/a2e9591b707d479aada49245aaff9227.json": {
+        "bytes": 940809,
+        "mtime_ns": 1793748305350560934
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/api/scenario-drafts/ce8e4f44c72445abb29e53a337c53850.json": {
+        "bytes": 901759,
+        "mtime_ns": 1793748188993531178
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/runtime-llm.enc": {
+        "bytes": 1295,
+        "mtime_ns": 1793718761974056843
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/defensive-goals-2026-11-04/runtime-vault.key": {
+        "bytes": 44,
+        "mtime_ns": 1793718761974056843
+      }
+    },
+    "prior_E8_raw": {
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/home/gentactix-afsim.patch.json": {
+        "bytes": 417,
+        "mtime_ns": 1793758062626418740
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/home/gentactix-runtime.patch.yml": {
+        "bytes": 343,
+        "mtime_ns": 1793758062626418740
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/home/gentactix-transport.patch.json": {
+        "bytes": 755,
+        "mtime_ns": 1793758062626418740
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/home/profiles/sdk-minimal/cordis.patch.yml": {
+        "bytes": 217,
+        "mtime_ns": 1793758062845417216
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/home/profiles/sdk-minimal/cordis.yml": {
+        "bytes": 223,
+        "mtime_ns": 1793758062850417181
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/home/profiles/sdk-minimal/package.json": {
+        "bytes": 186,
+        "mtime_ns": 1793758062845417216
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/home/profiles/sdk-minimal/pnpm-workspace.yaml": {
+        "bytes": 61,
+        "mtime_ns": 1793758062845417216
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-timed-supply-feedback-2026-11-04-api-workspace--/gentactix-3f3bec2e4da548e381346dc2f586c8e3-chat/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793758343970329211
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-timed-supply-feedback-2026-11-04-api-workspace--/gentactix-3f3bec2e4da548e381346dc2f586c8e3-chat/session.v4.jsonl": {
+        "bytes": 495773,
+        "mtime_ns": 1793758453280462150
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-timed-supply-feedback-2026-11-04-api-workspace--/gentactix-4216c1231752e0-engine/session.lock": {
+        "bytes": 0,
+        "mtime_ns": 1793759352641596420
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/home/sessions/--home-spikebai-gitcode-Gentactix-.cache-qa-timed-supply-feedback-2026-11-04-api-workspace--/gentactix-4216c1231752e0-engine/session.v4.jsonl": {
+        "bytes": 1908382,
+        "mtime_ns": 1793760471913636892
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/roles.json": {
+        "bytes": 712,
+        "mtime_ns": 1793760593139777896
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/sessions/4216c1231752.json": {
+        "bytes": 4098251,
+        "mtime_ns": 1793760478048593831
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/sessions/7d740c49c91c.json": {
+        "bytes": 5406392,
+        "mtime_ns": 1793758081980283307
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/sessions/a574cd9aee19.json": {
+        "bytes": 5423626,
+        "mtime_ns": 1793758455059447843
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/sessions/edce4b5b29aa.json": {
+        "bytes": 4142145,
+        "mtime_ns": 1793760593112778089
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/traces/4216c1231752/epoch-0/turn-000000.json": {
+        "bytes": 2243460,
+        "mtime_ns": 1793758072798347741
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/traces/4216c1231752/epoch-0/turn-000001.json": {
+        "bytes": 4854542,
+        "mtime_ns": 1793759725811262841
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/traces/4216c1231752/epoch-0/turn-000002.json": {
+        "bytes": 4705528,
+        "mtime_ns": 1793759976798890723
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/traces/4216c1231752/epoch-0/turn-000003.json": {
+        "bytes": 4702865,
+        "mtime_ns": 1793760271238015561
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/traces/4216c1231752/epoch-0/turn-000004.json": {
+        "bytes": 4721719,
+        "mtime_ns": 1793760475695610352
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/traces/edce4b5b29aa/epoch-0/turn-000000.json": {
+        "bytes": 2244163,
+        "mtime_ns": 1793758066902388944
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/traces/edce4b5b29aa/epoch-0/turn-000001.json": {
+        "bytes": 4761079,
+        "mtime_ns": 1793758558013610604
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/traces/edce4b5b29aa/epoch-0/turn-000002.json": {
+        "bytes": 4762778,
+        "mtime_ns": 1793760553274062175
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/traces/edce4b5b29aa/epoch-0/turn-000003.json": {
+        "bytes": 4761668,
+        "mtime_ns": 1793760570430940033
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/api/traces/edce4b5b29aa/epoch-0/turn-000004.json": {
+        "bytes": 4761909,
+        "mtime_ns": 1793760590248798566
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/public-tools.jsonl": {
+        "bytes": 306736,
+        "mtime_ns": 1793760458377731731
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/runtime-llm.enc": {
+        "bytes": 1295,
+        "mtime_ns": 1793757852884778353
+      },
+      "/home/spikebai/gitcode/Gentactix/.cache/qa/timed-supply-feedback-2026-11-04/runtime-vault.key": {
+        "bytes": 44,
+        "mtime_ns": 1793757852884778353
+      }
+    }
+  },
+  "reference_metadata_differences": {
+    "protected": [],
+    "prior_E7_raw": [],
+    "prior_E8_raw": []
+  },
+  "processes_before": {
+    "186277": {
+      "start_ticks": 373069,
+      "rss_pages": 243551,
+      "state": "S"
+    },
+    "474702": {
+      "start_ticks": 1076352,
+      "rss_pages": 353874,
+      "state": "S"
+    },
+    "807848": {
+      "start_ticks": 1817135,
+      "rss_pages": 241364,
+      "state": "S"
+    },
+    "1550193": {
+      "start_ticks": 3553135,
+      "rss_pages": 373731,
+      "state": "S"
+    },
+    "1698428": {
+      "start_ticks": 3901781,
+      "rss_pages": 250582,
+      "state": "S"
+    },
+    "1821928": {
+      "start_ticks": 4167840,
+      "rss_pages": 246710,
+      "state": "S"
+    },
+    "2009849": {
+      "start_ticks": 4615241,
+      "rss_pages": 335476,
+      "state": "S"
+    },
+    "2222880": {
+      "start_ticks": 5094543,
+      "rss_pages": 330015,
+      "state": "S"
+    },
+    "2375966": {
+      "start_ticks": 5458684,
+      "rss_pages": 3488,
+      "state": "S"
+    },
+    "2702609": {
+      "start_ticks": 6199092,
+      "rss_pages": 374805,
+      "state": "S"
+    },
+    "2832829": {
+      "start_ticks": 6495976,
+      "rss_pages": 375076,
+      "state": "S"
+    },
+    "3091813": {
+      "start_ticks": 7092928,
+      "rss_pages": 315511,
+      "state": "S"
+    }
+  },
+  "listener_ports_before": [
+    "LISTEN 0      2048                                127.0.0.1:19438      0.0.0.0:*    users:((\"python\",pid=2009849,fd=7))",
+    "LISTEN 0      2048                                127.0.0.1:19428      0.0.0.0:*    users:((\"python\",pid=1821928,fd=7))",
+    "LISTEN 0      2048                                127.0.0.1:19448      0.0.0.0:*    users:((\"python\",pid=2222880,fd=7))",
+    "LISTEN 0      2048                                127.0.0.1:19418      0.0.0.0:*    users:((\"python\",pid=1698428,fd=7))",
+    "LISTEN 0      2048                                127.0.0.1:19408      0.0.0.0:*    users:((\"python\",pid=1550193,fd=7))",
+    "LISTEN 0      2048                                127.0.0.1:19368      0.0.0.0:*    users:((\"python\",pid=474702,fd=7))",
+    "LISTEN 0      2048                                127.0.0.1:19388      0.0.0.0:*    users:((\"python\",pid=807848,fd=7))",
+    "LISTEN 0      2048                                127.0.0.1:19358      0.0.0.0:*    users:((\"python\",pid=186277,fd=7))",
+    "LISTEN 0      5                                   127.0.0.1:19489      0.0.0.0:*    users:((\"python\",pid=2375966,fd=3))",
+    "LISTEN 0      2048                                127.0.0.1:19468      0.0.0.0:*    users:((\"python\",pid=2832829,fd=7))",
+    "LISTEN 0      2048                                127.0.0.1:19458      0.0.0.0:*    users:((\"python\",pid=2702609,fd=7))",
+    "LISTEN 0      2048                                127.0.0.1:19478      0.0.0.0:*    users:((\"python\",pid=3091813,fd=7))"
+  ],
+  "health_before": {
+    "19458": {
+      "status": "ok",
+      "profile": "sdk-minimal",
+      "harness_started": false,
+      "session_count": 7,
+      "build": {
+        "loaded_revision": "cfb29a38f2781392",
+        "disk_revision": "f5fdad5ce079cbfe",
+        "restart_required": true,
+        "pid": 2702609,
+        "started_at": "2026-11-04T01:14:58.707338+00:00"
+      }
+    },
+    "19468": {
+      "status": "ok",
+      "profile": "sdk-minimal",
+      "harness_started": true,
+      "session_count": 4,
+      "build": {
+        "loaded_revision": "5cb3d4eac00e4afc",
+        "disk_revision": "f5fdad5ce079cbfe",
+        "restart_required": true,
+        "pid": 2832829,
+        "started_at": "2026-11-04T02:04:27.662338+00:00"
+      }
+    },
+    "19478": {
+      "status": "ok",
+      "profile": "sdk-minimal",
+      "harness_started": true,
+      "session_count": 2,
+      "build": {
+        "loaded_revision": "f5fdad5ce079cbfe",
+        "disk_revision": "f5fdad5ce079cbfe",
+        "restart_required": false,
+        "pid": 3091813,
+        "started_at": "2026-11-04T03:43:57.592935+00:00"
+      }
+    }
+  },
+  "sessions_before": {
+    "19458": [
+      {
+        "session_id": "daa0758af8e1",
+        "turn_count": 7,
+        "initialized": true
+      },
+      {
+        "session_id": "c48dcc014f18",
+        "turn_count": 7,
+        "initialized": true
+      },
+      {
+        "session_id": "d99b6861c0b3",
+        "turn_count": 7,
+        "initialized": true
+      },
+      {
+        "session_id": "5d20ad533bce",
+        "turn_count": 7,
+        "initialized": true
+      },
+      {
+        "session_id": "7d740c49c91c",
+        "turn_count": 7,
+        "initialized": true
+      },
+      {
+        "session_id": "f682f0ba0a71",
+        "turn_count": 7,
+        "initialized": true
+      },
+      {
+        "session_id": "5b9a046f9781",
+        "turn_count": 0,
+        "initialized": true
+      }
+    ],
+    "19468": [
+      {
+        "session_id": "edce4b5b29aa",
+        "turn_count": 4,
+        "initialized": true
+      },
+      {
+        "session_id": "4216c1231752",
+        "turn_count": 4,
+        "initialized": true
+      },
+      {
+        "session_id": "7d740c49c91c",
+        "turn_count": 7,
+        "initialized": true
+      },
+      {
+        "session_id": "a574cd9aee19",
+        "turn_count": 7,
+        "initialized": true
+      }
+    ],
+    "19478": [
+      {
+        "session_id": "fdc3b057b29a",
+        "turn_count": 6,
+        "initialized": true
+      },
+      {
+        "session_id": "5d1fb7bc0fc1",
+        "turn_count": 8,
+        "initialized": true
+      }
+    ]
+  },
+  "progress_before": {
+    "daa0758af8e1": {
+      "port": 19458,
+      "active": false,
+      "operation_id": null,
+      "error_type": null
+    },
+    "c48dcc014f18": {
+      "port": 19458,
+      "active": false,
+      "operation_id": null,
+      "error_type": null
+    },
+    "d99b6861c0b3": {
+      "port": 19458,
+      "active": false,
+      "operation_id": null,
+      "error_type": null
+    },
+    "5d20ad533bce": {
+      "port": 19458,
+      "active": false,
+      "operation_id": null,
+      "error_type": null
+    },
+    "7d740c49c91c": {
+      "port": 19468,
+      "active": false,
+      "operation_id": null,
+      "error_type": null
+    },
+    "f682f0ba0a71": {
+      "port": 19458,
+      "active": false,
+      "operation_id": null,
+      "error_type": null
+    },
+    "5b9a046f9781": {
+      "port": 19458,
+      "active": false,
+      "operation_id": null,
+      "error_type": null
+    },
+    "edce4b5b29aa": {
+      "port": 19468,
+      "active": false,
+      "operation_id": null,
+      "error_type": null
+    },
+    "4216c1231752": {
+      "port": 19468,
+      "active": false,
+      "operation_id": null,
+      "error_type": null
+    },
+    "a574cd9aee19": {
+      "port": 19468,
+      "active": false,
+      "operation_id": null,
+      "error_type": null
+    },
+    "fdc3b057b29a": {
+      "port": 19478,
+      "active": false,
+      "operation_id": null,
+      "error_type": null
+    },
+    "5d1fb7bc0fc1": {
+      "port": 19478,
+      "active": false,
+      "operation_id": null,
+      "error_type": null
+    }
+  },
+  "latest_gate": {
+    "passed_groups": 182,
+    "failed_groups": 0,
+    "groups": 182,
+    "unittest_cases": 2155,
+    "unittest_skipped": 0,
+    "sum_group_seconds": 1188.41,
+    "live_model_calls": false,
+    "source_freeze_count": 588,
+    "frozen_content_mismatches": []
+  },
+  "full_history_45_by_3_by_2_accepted": false,
+  "limits": [
+    "Tests are existing results, not newly run for this document.",
+    "Protected games/config/SDK files checked for size and mtime only, no private content decoded or byte-level completeness claim.",
+    "API health/list/progress GET only; no full session export or model connection test.",
+    "This document does not synchronize older README, task baselines or work notes."
+  ],
+  "after_review": {
+    "snapshot_finished_at": "2026-11-04T12:38:13.673444+08:00",
+    "source_count": 588,
+    "source_content_changes": [],
+    "protected_metadata_changes": {
+      "protected": [],
+      "prior_E7_raw": [],
+      "prior_E8_raw": []
+    },
+    "protected_metadata_checked_count": 225,
+    "AGENTS_unchanged": true,
+    "processes_after": {
+      "186277": {
+        "start_ticks": 373069,
+        "rss_pages": 243487,
+        "state": "S"
+      },
+      "474702": {
+        "start_ticks": 1076352,
+        "rss_pages": 353874,
+        "state": "S"
+      },
+      "807848": {
+        "start_ticks": 1817135,
+        "rss_pages": 232084,
+        "state": "S"
+      },
+      "1550193": {
+        "start_ticks": 3553135,
+        "rss_pages": 373731,
+        "state": "S"
+      },
+      "1698428": {
+        "start_ticks": 3901781,
+        "rss_pages": 250582,
+        "state": "S"
+      },
+      "1821928": {
+        "start_ticks": 4167840,
+        "rss_pages": 246710,
+        "state": "S"
+      },
+      "2009849": {
+        "start_ticks": 4615241,
+        "rss_pages": 335476,
+        "state": "S"
+      },
+      "2222880": {
+        "start_ticks": 5094543,
+        "rss_pages": 330015,
+        "state": "S"
+      },
+      "2375966": {
+        "start_ticks": 5458684,
+        "rss_pages": 3488,
+        "state": "S"
+      },
+      "2702609": {
+        "start_ticks": 6199092,
+        "rss_pages": 374805,
+        "state": "S"
+      },
+      "2832829": {
+        "start_ticks": 6495976,
+        "rss_pages": 375076,
+        "state": "S"
+      },
+      "3091813": {
+        "start_ticks": 7092928,
+        "rss_pages": 315511,
+        "state": "S"
+      }
+    },
+    "service_start_identity_changes": [],
+    "listener_ports_after": [
+      "LISTEN 0      2048                                127.0.0.1:19438      0.0.0.0:*    users:((\"python\",pid=2009849,fd=7))",
+      "LISTEN 0      2048                                127.0.0.1:19428      0.0.0.0:*    users:((\"python\",pid=1821928,fd=7))",
+      "LISTEN 0      2048                                127.0.0.1:19448      0.0.0.0:*    users:((\"python\",pid=2222880,fd=7))",
+      "LISTEN 0      2048                                127.0.0.1:19418      0.0.0.0:*    users:((\"python\",pid=1698428,fd=7))",
+      "LISTEN 0      2048                                127.0.0.1:19408      0.0.0.0:*    users:((\"python\",pid=1550193,fd=7))",
+      "LISTEN 0      2048                                127.0.0.1:19368      0.0.0.0:*    users:((\"python\",pid=474702,fd=7))",
+      "LISTEN 0      2048                                127.0.0.1:19388      0.0.0.0:*    users:((\"python\",pid=807848,fd=7))",
+      "LISTEN 0      2048                                127.0.0.1:19358      0.0.0.0:*    users:((\"python\",pid=186277,fd=7))",
+      "LISTEN 0      5                                   127.0.0.1:19489      0.0.0.0:*    users:((\"python\",pid=2375966,fd=3))",
+      "LISTEN 0      2048                                127.0.0.1:19468      0.0.0.0:*    users:((\"python\",pid=2832829,fd=7))",
+      "LISTEN 0      2048                                127.0.0.1:19458      0.0.0.0:*    users:((\"python\",pid=2702609,fd=7))",
+      "LISTEN 0      2048                                127.0.0.1:19478      0.0.0.0:*    users:((\"python\",pid=3091813,fd=7))"
+    ],
+    "listener_ownership_unchanged": true,
+    "health_after": {
+      "19458": {
+        "status": "ok",
+        "profile": "sdk-minimal",
+        "harness_started": false,
+        "session_count": 7,
+        "build": {
+          "loaded_revision": "cfb29a38f2781392",
+          "disk_revision": "f5fdad5ce079cbfe",
+          "restart_required": true,
+          "pid": 2702609,
+          "started_at": "2026-11-04T01:14:58.707338+00:00"
+        }
+      },
+      "19468": {
+        "status": "ok",
+        "profile": "sdk-minimal",
+        "harness_started": true,
+        "session_count": 4,
+        "build": {
+          "loaded_revision": "5cb3d4eac00e4afc",
+          "disk_revision": "f5fdad5ce079cbfe",
+          "restart_required": true,
+          "pid": 2832829,
+          "started_at": "2026-11-04T02:04:27.662338+00:00"
+        }
+      },
+      "19478": {
+        "status": "ok",
+        "profile": "sdk-minimal",
+        "harness_started": true,
+        "session_count": 2,
+        "build": {
+          "loaded_revision": "f5fdad5ce079cbfe",
+          "disk_revision": "f5fdad5ce079cbfe",
+          "restart_required": false,
+          "pid": 3091813,
+          "started_at": "2026-11-04T03:43:57.592935+00:00"
+        }
+      }
+    },
+    "sessions_after": {
+      "19458": [
+        {
+          "session_id": "daa0758af8e1",
+          "turn_count": 7,
+          "initialized": true
+        },
+        {
+          "session_id": "c48dcc014f18",
+          "turn_count": 7,
+          "initialized": true
+        },
+        {
+          "session_id": "d99b6861c0b3",
+          "turn_count": 7,
+          "initialized": true
+        },
+        {
+          "session_id": "5d20ad533bce",
+          "turn_count": 7,
+          "initialized": true
+        },
+        {
+          "session_id": "7d740c49c91c",
+          "turn_count": 7,
+          "initialized": true
+        },
+        {
+          "session_id": "f682f0ba0a71",
+          "turn_count": 7,
+          "initialized": true
+        },
+        {
+          "session_id": "5b9a046f9781",
+          "turn_count": 0,
+          "initialized": true
+        }
+      ],
+      "19468": [
+        {
+          "session_id": "edce4b5b29aa",
+          "turn_count": 4,
+          "initialized": true
+        },
+        {
+          "session_id": "4216c1231752",
+          "turn_count": 4,
+          "initialized": true
+        },
+        {
+          "session_id": "7d740c49c91c",
+          "turn_count": 7,
+          "initialized": true
+        },
+        {
+          "session_id": "a574cd9aee19",
+          "turn_count": 7,
+          "initialized": true
+        }
+      ],
+      "19478": [
+        {
+          "session_id": "fdc3b057b29a",
+          "turn_count": 6,
+          "initialized": true
+        },
+        {
+          "session_id": "5d1fb7bc0fc1",
+          "turn_count": 8,
+          "initialized": true
+        }
+      ]
+    },
+    "session_identity_turns_unchanged": true,
+    "progress_after": {
+      "daa0758af8e1": {
+        "port": 19458,
+        "active": false,
+        "operation_id": null
+      },
+      "c48dcc014f18": {
+        "port": 19458,
+        "active": false,
+        "operation_id": null
+      },
+      "d99b6861c0b3": {
+        "port": 19458,
+        "active": false,
+        "operation_id": null
+      },
+      "5d20ad533bce": {
+        "port": 19458,
+        "active": false,
+        "operation_id": null
+      },
+      "7d740c49c91c": {
+        "port": 19468,
+        "active": false,
+        "operation_id": null
+      },
+      "f682f0ba0a71": {
+        "port": 19458,
+        "active": false,
+        "operation_id": null
+      },
+      "5b9a046f9781": {
+        "port": 19458,
+        "active": false,
+        "operation_id": null
+      },
+      "edce4b5b29aa": {
+        "port": 19468,
+        "active": false,
+        "operation_id": null
+      },
+      "4216c1231752": {
+        "port": 19468,
+        "active": false,
+        "operation_id": null
+      },
+      "a574cd9aee19": {
+        "port": 19468,
+        "active": false,
+        "operation_id": null
+      },
+      "fdc3b057b29a": {
+        "port": 19478,
+        "active": false,
+        "operation_id": null
+      },
+      "5d1fb7bc0fc1": {
+        "port": 19478,
+        "active": false,
+        "operation_id": null
+      }
+    },
+    "active_operation_ids": [],
+    "git_status_unchanged_except_two_new_handoff_files": true,
+    "written_files": [
+      "docs/项目交接说明-2026-11-04-12时只读快照.md",
+      "docs/项目交接只读核对-2026-11-04-12时.json"
+    ],
+    "document_checks": {
+      "utf8_readable": true,
+      "missing_local_links": [],
+      "markdown_sha256": "7352a0012a2480e4a8bc804b3869612ffeb13a232f780a9f9ff5ff36abe077c2"
+    },
+    "commands_performed": "Local read-only file/metadata/process checks and GET health/list/progress; no tests/model calls/round advances/config writes/restarts/build/install/push",
+    "private_content_decoded": false
+  }
+}

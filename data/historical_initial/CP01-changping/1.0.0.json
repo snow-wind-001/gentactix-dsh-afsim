@@ -1,0 +1,415 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "CP01-changping",
+  "version": "1.0.0",
+  "battle": "长平之战",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "有出处的阶段参战身份，不是完整战斗序列。未知实到人数、装备与部队坐标留空；计算值必须单独说明估计依据。",
+      "战役总伤亡、出发兵力和战后残部不能替代阶段初态；不得按回合平摊伤亡或固定史实结局。",
+      "使用传世文献可辨识的作战集合，不虚构现代团旅番号；秦军壁垒部、迂回部、骑兵断路部互不重复。",
+      "二万五千奇兵与五千骑为文献叙述数，未作为精确人数锁定；40万降卒、45万前后斩首虏不是开局兵力，也不能算作本轮战死。",
+      "公元前260年不转为公元260年；只用阶段标签与T+相对时钟，具体月份和天数另列史料精度。",
+      "当前通用地面模型尚无经标定的弩阵、近战与古代伤病参数；可测机动、封锁和资源，不宣称真实杀伤率已验证。"
+    ]
+  },
+  "sources": {
+    "SHIJI": {
+      "title": "史记卷73：白起王翦列传",
+      "url": "https://zh.wikisource.org/wiki/史記/卷073",
+      "publisher": "司马迁著，维基文库公开文本",
+      "evidence_kind": "archive_publication",
+      "original_archive_examined": false,
+      "limitations": "传世文献而非当日军报；叙述数与年代需与考古、异文参校，不据此认定点名实到人数或准确公历日。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "长平前后过程参考",
+      "date": {
+        "label": "公元前260年",
+        "precision": "period",
+        "evidence": [
+          {
+            "source_id": "SHIJI",
+            "locator": "秦昭王四十七年四月至九月叙述"
+          }
+        ]
+      },
+      "scope": "长平前后过程参考",
+      "evidence": [
+        {
+          "source_id": "SHIJI",
+          "locator": "秦昭王四十七年四月至九月叙述"
+        }
+      ]
+    },
+    {
+      "id": "encirclement",
+      "label": "赵括出击后秦军分割与断粮",
+      "date": {
+        "label": "公元前260年（赵括出击后，确日未载）",
+        "precision": "period",
+        "evidence": [
+          {
+            "source_id": "SHIJI",
+            "locator": "赵军追至秦壁、奇兵绝后、五千骑分割、粮道断绝"
+          }
+        ]
+      },
+      "scope": "赤色为赵军出击部与壁中部，蓝色为秦军三个互不重复的战术集合；不固定历史包围结果。",
+      "evidence": [
+        {
+          "source_id": "SHIJI",
+          "locator": "赵军追至秦壁、奇兵绝后、五千骑分割、粮道断绝"
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "cp.zhao_attack",
+      "name": "赵军出击部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "文献战术集合",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "SHIJI",
+          "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ]
+        },
+        {
+          "phase_id": "encirclement",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "cp.zhao_wall",
+      "name": "赵军壁中部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "文献战术集合",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "SHIJI",
+          "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ]
+        },
+        {
+          "phase_id": "encirclement",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "cp.qin_wall",
+      "name": "秦军壁垒守备部",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "文献战术集合",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "SHIJI",
+          "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ]
+        },
+        {
+          "phase_id": "encirclement",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "cp.qin_flank",
+      "name": "秦军绝后奇兵",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "文献战术集合",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "SHIJI",
+          "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ]
+        },
+        {
+          "phase_id": "encirclement",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "cp.qin_cavalry",
+      "name": "秦军断路骑兵",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "文献战术集合",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "SHIJI",
+          "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ]
+        },
+        {
+          "phase_id": "encirclement",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "SHIJI",
+              "locator": "赵军分为二、秦壁与两支奇兵；名称为文献职能标识，不是已知建制番号"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    }
+  ]
+}

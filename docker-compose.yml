@@ -1,0 +1,26 @@
+# https://github.com/snow-wind-001/gentactix-dsh-afsim
+# AFSIM teaching image; restricted runtime retains its own terms and notices.
+name: ${GENTACTIX_COMPOSE_PROJECT_NAME:-gentactix-dsh-afsim}
+services:
+  gentactix:
+    image: ${GENTACTIX_IMAGE:-snowwind001/gentactix-dsh-afsim:3.7.6-beta.1-afsim}
+    platform: linux/amd64
+    init: false
+    ports:
+      - "127.0.0.1:${GENTACTIX_HTTP_PORT:-8080}:8080"
+    volumes:
+      - gentactix-data:/data
+    environment:
+      GENTACTIX_LLM_BASE_URL: ${GENTACTIX_LLM_BASE_URL:-http://192.168.2.111:8081/v1}
+      GENTACTIX_LLM_MODEL: ${GENTACTIX_LLM_MODEL:-qwen3.8-flash-next-iq3_s}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    read_only: true
+    tmpfs:
+      - /tmp:rw,nosuid,nodev,size=256m
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+    stop_grace_period: 30s
+volumes:
+  gentactix-data:

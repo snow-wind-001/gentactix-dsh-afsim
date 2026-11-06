@@ -1,0 +1,30 @@
+async page=>{
+ const base='http://127.0.0.1:18998',checks=[],errors=[],operations=[];
+ const check=(v,s)=>{if(!v)throw Error(s);checks.push(s)};page.on('pageerror',e=>errors.push(e.message));
+ page.on('request',r=>{if(r.method()==='POST'&&r.url().endsWith('/api/historical-scenarios/validate')){const b=r.postDataJSON();if(b.operation_id)operations.push(b.operation_id)}});
+ const c=page.getByTestId('historical-setup'),editor=c.getByTestId('crossing-editor'),row=editor.getByTestId('ferry-config-row');
+ check(await c.getByLabel('生成时必须配置舟艇',{exact:true}).isChecked(),'explicit ferry requirement retained');
+ check(await row.count()===1&&await editor.getByLabel('使用舟艇运输',{exact:true}).isChecked(),'actual DSH-built ferry remains in ordinary editor');
+ check(await row.getByLabel('座位 人',{exact:true}).inputValue()==='6'&&await row.getByLabel('船速 m/s',{exact:true}).inputValue()==='0.6','actual edits retained after rejected zero seats');
+ await row.getByRole('combobox',{name:'初始岸',exact:true}).selectOption('b');
+ await editor.getByRole('button',{name:'增加计算舟艇',exact:true}).click();check(await editor.getByTestId('ferry-config-row').count()===2,'normal editor adds separate boat');
+ await editor.getByTestId('ferry-config-row').nth(1).getByRole('button',{name:'移除此艇',exact:true}).click();
+ check(await editor.getByTestId('ferry-config-row').count()===1,'normal editor removes only selected boat');
+ await page.screenshot({path:'.cache/qa/ferry-model/editor-1440.png'});await page.setViewportSize({width:900,height:1000});
+ check(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'boat editor fits 900px');await page.screenshot({path:'.cache/qa/ferry-model/editor-900.png'});
+ const response=page.waitForResponse(r=>r.url().endsWith('/api/historical-scenarios/validate')&&r.request().method()==='POST',{timeout:180000});
+ await c.getByTestId('validate-historical-scenario').click();const result=await response;check(result.ok(),'edited boat configuration actually loads AFSIM');const validated=await result.json();
+ check(result.request().postDataJSON().required_models.includes('formation-ferry-1'),'manual validation carries explicit model requirement');
+ check(validated.construction.required_models.includes('formation-ferry-1'),'actual staged DSH construction preserves required model');
+ const names=new Set(validated.construction.runs.flatMap(r=>r.events.filter(e=>e.type==='tool/call').map(e=>e.name)));
+ check(['read_scenario_skill','get_scenario_basis','update_scenario_configuration'].every(n=>names.has(n)),'native skill and staged draft tools actually called');
+ const spec=validated.parameters.facility.crossing_model.ferry.boats[0],boat=validated.preview_world.combined_arms.bridge.ferry_state.boats[0];
+ check(spec.seats===6&&spec.speed_mps===0.6&&spec.initial_bank==='b','edited capacity speed and bank survive native validation');
+ check(boat.bank==='b'&&boat.lat===validated.parameters.facility.crossing_model.banks.b.lat,'native state starts at edited bank');
+ check(validated.initial.definition.units.every(u=>Object.values(u.facts).every(f=>f.value===null)),'boat estimates do not overwrite unknown source facts');
+ await page.getByTestId('launch-start').click();await page.getByTestId('map-workbench').waitFor({timeout:180000});await page.waitForFunction(()=>!document.querySelector('.desktop-root.operation-running'));
+ check(await page.locator('.nato-marker').count()===6&&await page.locator('.ferry-boat-marker').count()===1,'normal launch has six ground leaves and separate boat');
+ const sid=await page.evaluate(()=>localStorage.getItem('gentactix-session'));const state=await(await page.request.get(base+'/api/sessions/'+sid)).json();
+ check(state.turn_count===0&&state.war_state.combined_arms.bridge.ferry_state.boats[0].bank==='b','normal created world retains edited boat input');
+ check(!errors.length,'no application page exceptions');return{passed:true,checks,operations,route_mocks:false,edited_draft_id:validated.id,session_id:sid};
+}

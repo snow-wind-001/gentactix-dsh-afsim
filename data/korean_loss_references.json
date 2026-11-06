@@ -1,0 +1,78 @@
+{
+  "format": "gentactix-published-unit-loss-references-v1",
+  "checked_on": "2026-10-28",
+  "scope": "同番号公开史料参照；数值均有各自统计窗口，不是本局必达战果、逐小时损失率或杀伤系数标定。",
+  "battles": {
+    "抗美援朝-第五次战役-1951.04.22至1951.06.10": [
+      {
+        "historical_unit_id": "kw.uk.gloucestershire.battalion1",
+        "name": "英军格洛斯特郡团第1营",
+        "metric": "reported_aggregate_losses_including_capture",
+        "committed_approx": null,
+        "casualties_approx": null,
+        "reported_aggregate_losses": 622,
+        "reported_killed": null,
+        "duration_hours": null,
+        "hourly_rate_available": false,
+        "scope": "1951-04-22至1951-04-25临津江战斗全程；不是4月25日08—12时局部窗口",
+        "metric_summary": "英国国家陆军博物馆记该营损失622人，叙述包含大批被俘；622不能称为阵亡，也不能作最后四小时必扣减员。",
+        "note": "博物馆该页未分列本营阵亡、负伤、被俘及交叉关系，保持未知；未将全旅1091人或广域中方损失估计转嫁给本营/560团。当前原生模型尚不生成投降被俘，不能据死伤模型宣称重现该营历史结局。",
+        "source": {
+          "title": "National Army Museum — Battle of the Imjin River",
+          "url": "https://www.nam.ac.uk/explore/battle-imjin",
+          "scope": "Capture段的全程损失与被俘叙述；未核原始名册，不能解释为全数战死"
+        }
+      }
+    ],
+    "抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22": [
+      {
+        "historical_unit_id": "kw.au.rar3",
+        "name": "澳大利亚皇家团第3营（3RAR）",
+        "metric": "reported_killed_and_wounded_with_duty_status",
+        "committed_approx": null,
+        "casualties_approx": null,
+        "reported_killed": 20,
+        "reported_wounded": 104,
+        "reported_wounded_remained_on_duty": 15,
+        "alternate_reported_wounded": 89,
+        "duration_hours": null,
+        "hourly_rate_available": false,
+        "scope": "1951-10-03至1951-10-08马良山行动全程；不是10月5日04—12时局部进攻",
+        "metric_summary": "澳退伍军人事务部记20人阵亡、104人负伤，其中15名伤者继续执勤；澳战争纪念馆展览另记20人阵亡、89人负伤。保留两种口径，不把15人再次相加，不把全部负伤自动视为脱离战斗的减员。",
+        "note": "公开网页未给本局局部小时窗口的损失分项和实到人数；数字差额与继续执勤人数相等，尚不足以证明所有来源采用同一去重规则。中国部队损失估计不作为571团已核自报。",
+        "source": {
+          "title": "Australian DVA Anzac Portal — Battle of Maryang San 3 to 8 October 1951",
+          "url": "https://anzacportal.dva.gov.au/wars-and-missions/korean-war/operations/battle-maryang-san-1951",
+          "scope": "Outcome and casualties：20 killed、104 wounded，包括15名继续执勤者"
+        },
+        "alternate_source": {
+          "title": "Australian War Memorial — Maryang San: Operation Commando",
+          "url": "https://www.awm.gov.au/visit/exhibitions/korea/operations/maryang_san",
+          "scope": "展览文字记20 killed、89 wounded；未提供去重名册"
+        }
+      }
+    ],
+    "抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31": [
+      {
+        "historical_unit_id": "kw.us.division3.koyangdae_garrison",
+        "name": "美第3师高阳垈西山守备分队（下级番号未核）",
+        "metric": "reported_enemy_losses_over_assault_and_counterattacks",
+        "committed_approx": null,
+        "casualties_approx": null,
+        "reported_initial_guard": 135,
+        "reported_enemy_losses": 600,
+        "qualifier": "全程歼敌600余人（中方报道）",
+        "duration_hours": null,
+        "hourly_rate_available": false,
+        "scope": "1952-09-18至1952-09-24夺取、移交与后续反扑累计；非9月18日首20分钟或首夜同一守备分队的损失",
+        "metric_summary": "中国军网记开局守军135人、全程歼敌600余人，后者含连续反扑，未分列毙伤俘；不能据600反推首夜人数或阵亡。",
+        "note": "135为中方报道的开局守军人数，未与美方原始名册交叉核实；本条仅保留报道，不自动填入本局事实人数。后续增援未加入时，禁止把累计战果扣到开局分队。",
+        "source": {
+          "title": "中国军网 — 强袭高阳垈西山拉开志愿军1952年秋季战术反击作战序幕",
+          "url": "https://www.81.cn/zt/2023nzt/mjwdsltjwdsyjnkmycsl70zn/jsgc/16237038.html",
+          "scope": "第348团第2营进攻、8连接防及9月20—24日反扑段；中方报道，非美方自报伤亡名册"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,982 @@
+{
+  "format": "gentactix-local-task-guidance-v1",
+  "scope": "史料任务到已支持地面规则的配置建议；点位、持续回合和胜负阈值须另作明确模型输入，不是史实结果或全战役验收。",
+  "profiles": {
+    "KW02-second": {
+      "samsori_blocking": {
+        "team": "blue",
+        "profile": "breakout",
+        "objective_label": "三所里以南退却通路",
+        "scope_note": "以蓝方能否通过出口检验红方阻击效果；不是默认全歼美骑1师。出口为估计通路点，不能用同名异地村庄坐标。",
+        "not_covered": [
+          "多道路并行迂回与后续接替",
+          "全集团军撤退与航空支援"
+        ],
+        "evidence": [
+          {
+            "source_id": "KW2_CN",
+            "locator": "11月28—29日113师阻击美骑1师"
+          }
+        ]
+      },
+      "chosin_east_nov30": {
+        "team": "blue",
+        "profile": "breakout",
+        "objective_label": "长津湖东岸向南突围通路",
+        "scope_note": "蓝方突围与红方封锁可形成不同结果；不得把第31团级战斗队历史结局固定为本局必达战果。",
+        "not_covered": [
+          "冻伤与医疗后送",
+          "分阶段增援与空地协同",
+          "投降被俘"
+        ],
+        "evidence": [
+          {
+            "source_id": "KW2_CN",
+            "locator": "11月30日晚东岸80、81师主攻与美军退却"
+          },
+          {
+            "source_id": "KW2_US",
+            "locator": "31RCT在东岸的包围与突围"
+          }
+        ]
+      }
+    },
+    "KW03-third": {
+      "corps40_breakthrough": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "第40军方向的局部突破口",
+        "scope_note": "地域控制只检验本轴线突破；不等于已经占领汉城或全线突破。",
+        "not_covered": [
+          "全部渡河工程与纵深追击",
+          "全战役补给继承"
+        ],
+        "evidence": [
+          {
+            "source_id": "KW3_CN",
+            "locator": "12月31日晚118、119师突破韩6师防御方向"
+          }
+        ]
+      }
+    },
+    "KW04-fourth": {
+      "chipyong_second_night": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "砥平里第二夜局部防御地域",
+        "scope_note": "检验红方能否在当前窗口夺控地域，蓝方可保持防御；不将围而未歼改写为固定红方胜利。",
+        "not_covered": [
+          "15日坦克增援",
+          "完整航空与火力体系",
+          "全部包围道路"
+        ],
+        "evidence": [
+          {
+            "source_id": "KW4_CN",
+            "locator": "2月14日119师全部、115师两团及126师一团继续攻击"
+          }
+        ]
+      }
+    },
+    "KW05-fifth": {
+      "gloster_final_morning": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "雪马里235高地局部地域",
+        "scope_note": "本阶段可计算地面控制，不能以622人含被俘损失作为占领条件或首四小时伤亡配额。",
+        "not_covered": [
+          "投降被俘与人员去重",
+          "外围解围及后续撤退全过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "KW5_CN",
+            "locator": "4月25日晨560团攻击235高地"
+          },
+          {
+            "source_id": "KW5_UK",
+            "locator": "格洛斯特营包围、撤退与被俘"
+          }
+        ]
+      }
+    },
+    "KW06-autumn1951": {
+      "maryang_oct5": {
+        "team": "blue",
+        "profile": "assault",
+        "objective_label": "马良山前沿第一线（10月5日局部）",
+        "scope_note": "3RAR于10月5日发起攻击，次日主峰巩固；本窗口以估计前沿地域为目标，不把10月6日战果提前。",
+        "not_covered": [
+          "真实山脊与雾中视线遮蔽",
+          "完整坦炮协同",
+          "10月6—8日巩固及反扑"
+        ],
+        "evidence": [
+          {
+            "source_id": "KW6_AWM",
+            "locator": "5日04时接近、10时雾散与第一线；次日山顶及6—8日巩固"
+          }
+        ]
+      }
+    },
+    "KW07-counter1952": {
+      "koyangdae_sep18": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "高阳垈西山首夜阵地",
+        "scope_note": "先夺控并按模型阈值保持；20—24日后续反扑未在本夜出现，不自动扣除600余敌军。",
+        "not_covered": [
+          "次日接防和后续增援",
+          "全部35门支援炮的实际部署"
+        ],
+        "evidence": [
+          {
+            "source_id": "KW7_CN",
+            "locator": "第348团2营9月18日夜强袭、8连接防与后续反扑"
+          }
+        ]
+      }
+    },
+    "KW08-sangganling": {
+      "triangle_oct14": {
+        "team": "blue",
+        "profile": "assault",
+        "objective_label": "597.9高地表面地域（不含坑道控制）",
+        "scope_note": "首日蓝方攻击、红方防御反击；现有地域控制仅描述地表，不能判定坑道消灭或整个上甘岭战役胜负。",
+        "not_covered": [
+          "坑道与表面双层存续",
+          "全部炮火航空密度",
+          "后续逐阶段换防与反击"
+        ],
+        "evidence": [
+          {
+            "source_id": "KW8_US",
+            "locator": "SHOWDOWN，10月14日31团1、3营对Triangle Hill的攻击"
+          },
+          {
+            "source_id": "KW8_CN",
+            "locator": "597.9与537.7高地、坑道体系及逐次投入"
+          }
+        ]
+      }
+    },
+    "KW09-summer1953": {
+      "white_tiger_july13": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "白虎团方向的局部地域（辅助目标）",
+        "scope_note": "地域夺控仅为可计算辅助条件；未建模的潜入、识别与指挥瘫痪不能凭此宣称已重现突袭关键过程。",
+        "not_covered": [
+          "侦察分队潜入与身份欺骗",
+          "指挥所失能传播",
+          "全线突破及停战期限"
+        ],
+        "evidence": [
+          {
+            "source_id": "KW9_CN",
+            "locator": "609团2营与607团侦察班配合白虎团方向穿插"
+          }
+        ]
+      }
+    },
+    "LM01-xiangjiang": {
+      "xinxu_nov28": {
+        "team": "red",
+        "profile": "delay",
+        "objective_label": "新圩向北通道",
+        "scope_note": "检验本地域阻击是否使北进受阻；出口为显式估计点，不代表军委纵队已通过湘江或全战役胜利。",
+        "not_covered": [
+          "全部渡场流量、辎重与后卫过江",
+          "后续接替及真实山地通视",
+          "航空遮断与逐口径弹道、历史伤亡率标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "XJ_GX",
+            "locator": "新圩及光华铺掩护任务"
+          }
+        ]
+      },
+      "guanghuapu_nov30_morning": {
+        "team": "red",
+        "profile": "delay",
+        "objective_label": "光华铺至界首接近通路",
+        "scope_note": "检验本地域阻击是否使北进受阻；出口为显式估计点，不代表军委纵队已通过湘江或全战役胜利。",
+        "not_covered": [
+          "全部渡场流量、辎重与后卫过江",
+          "后续接替及真实山地通视",
+          "航空遮断与逐口径弹道、历史伤亡率标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "XJ_GX",
+            "locator": "新圩及光华铺掩护任务"
+          }
+        ]
+      }
+    },
+    "AJ18-xiangxi": {
+      "dongkou_late_april": {
+        "team": "red",
+        "profile": "delay",
+        "objective_label": "洞口方向向雪峰山接近通路",
+        "scope_note": "局部迟滞与本方存续，不代表保住芷江机场或全会战获胜；航空库存与路线均为显式计算假设。",
+        "not_covered": [
+          "全部会战序列及5月反攻",
+          "真实地空通信、DEM遮蔽与机场吞吐",
+          "历史伤亡率与具体航空任务日期核验"
+        ],
+        "evidence": [
+          {
+            "source_id": "XX_GROUND",
+            "locator": "4月21日高沙市和山门镇，第57师抵抗；25日第116师团主力进攻"
+          },
+          {
+            "source_id": "XX_ARCHIVE",
+            "locator": "进攻芷江与地面防御目标"
+          }
+        ]
+      }
+    },
+    "LM02-wujiang": {
+      "follow_on_jan3": {
+        "team": "red",
+        "profile": "crossing",
+        "objective_label": "后续编组完成江界河通行并在北岸集结",
+        "scope_note": "桥头已打开后的局部通行；军委纵队与红5军团的数量、确切起点和通道能力为估计。不是先遣渡江战斗或整个乌江战役验收。",
+        "not_covered": [
+          "舟艇突击、泅渡及先遣分队分岸",
+          "此前桥头争夺和其他渡口",
+          "逐单位实到、真实河槽道路、追兵和历史战损标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "WJ_MEMOIR",
+            "locator": "编者导语：至3日军委纵队和红5军团由江界河过江；再强渡、猛追两节"
+          }
+        ]
+      }
+    },
+    "AJ01-shanghai": {
+      "city_aug13": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "8月13日上海市区地面接触局部地域/通路",
+        "scope_note": "仅截取上海市区首日地面双方；后续登陆师团保留后续参考，不代表吴淞、罗店或金山卫全线。；目标点、出口和回合阈值需单独估计，不能把历史结局或累计伤亡设为必达结果。",
+        "not_covered": [
+          "全战役连续阶段与全部援军到场",
+          "历史伤亡率及武器效能校准",
+          "完整空海火力、工事地形与政治终止过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "SH_ARCHIVE",
+            "locator": "专题开端：第9集团军87、88师与驻沪海军陆战队交战"
+          }
+        ]
+      }
+    },
+    "AJ02-taiyuan": {
+      "xinkou_oct13": {
+        "team": "red",
+        "profile": "delay",
+        "objective_label": "10月13日忻口正面局部局部地域/通路",
+        "scope_note": "仅忻口正面第9军及独立第5旅的已识别部分；不混同娘子关、平型关和19日阳明堡。；目标点、出口和回合阈值需单独估计，不能把历史结局或累计伤亡设为必达结果。",
+        "not_covered": [
+          "全战役连续阶段与全部援军到场",
+          "历史伤亡率及武器效能校准",
+          "完整空海火力、工事地形与政治终止过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "TY_ARCHIVE",
+            "locator": "第5师团向忻口进攻与10月17日朱彭电目录"
+          }
+        ]
+      }
+    },
+    "AJ08-changsha1": {
+      "xinqiang_sep18": {
+        "team": "red",
+        "profile": "delay",
+        "objective_label": "9月18日新墙河方向局部地域/通路",
+        "scope_note": "只绑定新墙河第6师团方向与52军两师；第13师团/奈良支队投入范围待核，其他轴线与后续援军不提前部署。；计算阈值另作假设，不固定历史结局。",
+        "not_covered": [
+          "全战役连续阶段与全部援军到场",
+          "历史伤亡率及武器效能校准",
+          "完整空海火力、工事地形与政治终止过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "CS_STUDY",
+            "locator": "第一次会战段：18日6、13师团进攻52军2、195师"
+          }
+        ]
+      }
+    },
+    "AJ09-changsha2": {
+      "dayun_sep7": {
+        "team": "red",
+        "profile": "delay",
+        "objective_label": "9月7日大云山局部接触局部地域/通路",
+        "scope_note": "仅第4军大云山方向与日第6师团；未核地方分队数量，岳阳只作粗地域参考。；仅地面局部参数化，不代表完整空炮协同或历史结局。",
+        "not_covered": [
+          "全战役连续阶段与全部援军到场",
+          "历史伤亡率及武器效能校准",
+          "完整空海火力、工事地形与政治终止过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "DAYUN_PUBLISHER",
+            "locator": "大云山序战段：9月7日第6师团进攻，欧震第4军防御；不是第40军"
+          }
+        ]
+      }
+    },
+    "AJ10-changsha3": {
+      "city_jan1": {
+        "team": "red",
+        "profile": "delay",
+        "objective_label": "1月1日长沙南郊攻防局部地域/通路",
+        "scope_note": "仅长沙南郊地面轴线；新墙河20、58军及外围合围不作为城内额外部队。；目标点、出口和回合阈值需单独估计，不能把历史结局或累计伤亡设为必达结果。",
+        "not_covered": [
+          "全战役连续阶段与全部援军到场",
+          "历史伤亡率及武器效能校准",
+          "完整空海火力、工事地形与政治终止过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "CS_STUDY",
+            "locator": "第三次会战段：1月1日3师团抵长沙南郊与10军守城"
+          }
+        ]
+      }
+    },
+    "AJ11-kunlun": {
+      "kunlun_dec18": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "12月18日昆仑关正面反攻局部地域/通路",
+        "scope_note": "仅荣誉第1师正面方向与当地日军守备；五塘六塘阻援、增援及末期第159师另列参考。；目标点、出口和回合阈值需单独估计，不能把历史结局或累计伤亡设为必达结果。",
+        "not_covered": [
+          "全战役连续阶段与全部援军到场",
+          "历史伤亡率及武器效能校准",
+          "完整空海火力、工事地形与政治终止过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "KL_ARCHIVE",
+            "locator": "18日第5军反攻；目录中荣誉1师17至26日经过要图"
+          }
+        ]
+      }
+    },
+    "AJ12-ichigo": {
+      "hengyang_june28": {
+        "team": "red",
+        "profile": "delay",
+        "objective_label": "豫湘桂中的衡阳首轮地面攻防局部地域/通路",
+        "scope_note": "豫湘桂总览目前只绑定衡阳一段，与衡阳专场有重叠；不是新增一场独立会战，也未覆盖河南、桂柳。；目标点、出口和回合阈值需单独估计，不能把历史结局或累计伤亡设为必达结果。",
+        "not_covered": [
+          "全战役连续阶段与全部援军到场",
+          "历史伤亡率及武器效能校准",
+          "完整空海火力、工事地形与政治终止过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "HY_ARCHIVE",
+            "locator": "衡阳阶段第10军与68、116师团；非全一号作战编制"
+          }
+        ]
+      }
+    },
+    "AJ13-hengyang": {
+      "zhangjiashan_june28": {
+        "team": "red",
+        "profile": "delay",
+        "objective_label": "6月28日张家山局部防御局部地域/通路",
+        "scope_note": "仅张家山第30团防御片段；日军攻击分队下级番号未核，不用全师团充当一个山头实到兵力。；目标点、出口和回合阈值需单独估计，不能把历史结局或累计伤亡设为必达结果。",
+        "not_covered": [
+          "全战役连续阶段与全部援军到场",
+          "历史伤亡率及武器效能校准",
+          "完整空海火力、工事地形与政治终止过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "HY_LOCAL",
+            "locator": "张家山：6月28日至7月14日预备10师30团防御"
+          }
+        ]
+      }
+    },
+    "AJ14-hundred": {
+      "shinaoshan_aug21": {
+        "team": "red",
+        "profile": "delay",
+        "objective_label": "8月21日狮脑山掩护破袭局部地域/通路",
+        "scope_note": "仅狮脑山阻击掩护交通破袭；不能用本山头控制替代全部铁路瘫痪或根据地反扫荡胜负。；目标点、出口和回合阈值需单独估计，不能把历史结局或累计伤亡设为必达结果。",
+        "not_covered": [
+          "全战役连续阶段与全部援军到场",
+          "历史伤亡率及武器效能校准",
+          "完整空海火力、工事地形与政治终止过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "BT_YANGQUAN",
+            "locator": "狮脑山14、769团与阳泉独立混成4旅团有关部队"
+          }
+        ]
+      }
+    },
+    "AJ16-counter1944": {
+      "gaogou_apr19": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "4月19日晚高沟初攻局部地域/通路",
+        "scope_note": "1944局部反攻总览只绑定高沟四支队局部；杨口和其他地区不作为同一据点。；目标点、出口和回合阈值需单独估计，不能把历史结局或累计伤亡设为必达结果。",
+        "not_covered": [
+          "全战役连续阶段与全部援军到场",
+          "历史伤亡率及武器效能校准",
+          "完整空海火力、工事地形与政治终止过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "GY_MEMOIR",
+            "locator": "11团1、2连等19日晚初攻及张庄行动；不据20日晚突破改写19日结局"
+          }
+        ]
+      }
+    },
+    "AJ17-cheqiao": {
+      "cheqiao_mar5": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "3月5日车桥据点初攻局部地域/通路",
+        "scope_note": "仅车桥镇初攻地面及炮兵；援敌尚未在镇内，不把全65师团或南侧52团提前灌入。；目标点、出口和回合阈值需单独估计，不能把历史结局或累计伤亡设为必达结果。",
+        "not_covered": [
+          "全战役连续阶段与全部援军到场",
+          "历史伤亡率及武器效能校准",
+          "完整空海火力、工事地形与政治终止过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "CQ_HISTORY",
+            "locator": "主攻7团与师炮兵大队；西北打援和南侧警戒分工另列"
+          }
+        ]
+      },
+      "core_march5_6": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "车桥核心攻坚、西北及南侧阻援与有生力量保存",
+        "scope_note": "从5日01:50初攻至6日晨所选公开叙述窗口。攻坚、分批援军、南侧警戒、预备队分别部署；采用combined_operation联合目标，在截止回合检查据点与全部阻援区域控制及人员保存，不提前按单点判胜。入场钟点、工事系数、目标阈值与地图几何的缺载部分单列估计；不强制历史伤亡或胜负。",
+        "not_covered": [
+          "全部下级名册、真实装备库存与历史阵地精确配准",
+          "夜暗、侦察突然性及武器效能的完整历史标定",
+          "至13日后续扩展战果，以及与当前来源窗口不同的撤离叙述"
+        ],
+        "evidence": [
+          {
+            "source_id": "CQ_HISTORY",
+            "locator": "攻坚、芦家滩打援、崔河方向警戒、预备队和北侧策应分工；6日晨撤逃记述"
+          },
+          {
+            "source_id": "CQ_LOCAL2024",
+            "locator": "5日01:50初攻、炮兵接近、午后与次晨多批援军；7日结束叙述，与6日口径分开"
+          }
+        ]
+      },
+      "core_march5_7": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "车桥核心攻坚、西北及南侧阻援与有生力量保存",
+        "scope_note": "从5日01:50初攻至7日所选公开叙述窗口。攻坚、分批援军、南侧警戒、预备队分别部署；采用combined_operation联合目标，在截止回合检查据点与全部阻援区域控制及人员保存，不提前按单点判胜。入场钟点、工事系数、目标阈值与地图几何的缺载部分单列估计；不强制历史伤亡或胜负。",
+        "not_covered": [
+          "全部下级名册、真实装备库存与历史阵地精确配准",
+          "夜暗、侦察突然性及武器效能的完整历史标定",
+          "至13日后续扩展战果，以及与当前来源窗口不同的撤离叙述"
+        ],
+        "evidence": [
+          {
+            "source_id": "CQ_HISTORY",
+            "locator": "攻坚、芦家滩打援、崔河方向警戒、预备队和北侧策应分工；6日晨撤逃记述"
+          },
+          {
+            "source_id": "CQ_LOCAL2024",
+            "locator": "5日01:50初攻、炮兵接近、午后与次晨多批援军；7日结束叙述，与6日口径分开"
+          }
+        ]
+      }
+    },
+    "AJ19-burma": {
+      "songshan_june4": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "6月4日松山初攻局部地域/通路",
+        "scope_note": "总览仅绑定松山初攻新28师与当地日军守备；缅北密支那、腾冲、龙陵各轴未合并，也不提前加入第8军。；目标点、出口和回合阈值需单独估计，不能把历史结局或累计伤亡设为必达结果。",
+        "not_covered": [
+          "全战役连续阶段与全部援军到场",
+          "历史伤亡率及武器效能校准",
+          "完整空海火力、工事地形与政治终止过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "SS_REVIEW",
+            "locator": "1944年6月开始，第71军新28师与后续第8军先后投入"
+          }
+        ]
+      }
+    },
+    "AJ20-reception": {
+      "zhangjiakou_aug20": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "8月20日张家口进攻局部局部地域/通路",
+        "scope_note": "只绑定张家口一段地面进攻；日本宣布投降不等于当地全员自动缴械，接收和投降清点仍需独立过程。；目标点、出口和回合阈值需单独估计，不能把历史结局或累计伤亡设为必达结果。",
+        "not_covered": [
+          "全战役连续阶段与全部援军到场",
+          "历史伤亡率及武器效能校准",
+          "完整空海火力、工事地形与政治终止过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "ZJK_REVIEW",
+            "locator": "20至23日对拒降部队攻坚；平北10、40团进军"
+          }
+        ]
+      }
+    },
+    "LM04-jinsha1935": {
+      "column_may3_night": {
+        "team": "red",
+        "profile": "crossing",
+        "objective_label": "皎平渡控制后军委纵队续渡（夜间局部）",
+        "scope_note": "以登记通道的完成与抵岸集结判定，不以消灭不存在的对手或战损配额判定。",
+        "not_covered": [
+          "全军多批分流调度",
+          "场外追兵与自动增援",
+          "历史船舶容量、水文及沉船事故",
+          "其他渡口及全战役损耗"
+        ],
+        "evidence": [
+          {
+            "source_id": "JS35_DS",
+            "locator": "出其不意巧取皎平节，第91—98段"
+          }
+        ]
+      }
+    },
+    "LM13-jinsha1936": {
+      "regiment12_apr25_night": {
+        "team": "red",
+        "profile": "crossing",
+        "objective_label": "红12团木瓜寨首夜渡运（局部）",
+        "scope_note": "以登记通道的完成与抵岸集结判定，不以消灭不存在的对手或战损配额判定。",
+        "not_covered": [
+          "全军多批分流调度",
+          "场外追兵与自动增援",
+          "历史船舶容量、水文及沉船事故",
+          "其他渡口及全战役损耗"
+        ],
+        "evidence": [
+          {
+            "source_id": "JS36_MCT",
+            "locator": "第30—35段；红4师12团起渡与守备撤离"
+          }
+        ]
+      }
+    },
+    "LM07-baozuo": {
+      "baozuo_core": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "攻点与阻援打开北上通路，保留续行兵力",
+        "scope_note": "使用combined_operation在截止窗口检查据点、阻援地域与兵力保存；攻点/打援决策可改变过程，不以史载歼敌数强制判胜。求吉寺有停止进攻改围困的记述，北上通路目标应与寺内守军分开，不得把消灭该守军写成必达条件。地图、人数、装备、入场具体时刻和目标阈值单列估计。",
+        "not_covered": [
+          "两方完整名册、精确历史部署及火力效能标定",
+          "林地遮蔽/发现、夜暗、真实河桥与山道通行",
+          "求吉寺结局与师团隶属异文的最终史料裁定、9月3日后续增援"
+        ],
+        "evidence": [
+          {
+            "source_id": "BZ_PLA2025",
+            "locator": "作战部署、攻点与援军过程"
+          },
+          {
+            "source_id": "BZ_PEOPLE2016",
+            "locator": "29日晚至9月1日的包座作战叙述"
+          }
+        ]
+      }
+    },
+    "LM10-jialing": {
+      "tazishan_opening": {
+        "team": "red",
+        "profile": "crossing",
+        "objective_label": "塔子山先遣渡江局部（不含后续梯队）：完成登记通道渡运并集结",
+        "scope_note": "先遣第263团、总部教导营与炮兵支援；不含29日拂晓后续两团和思依场增援，不强制偷袭成功。",
+        "not_covered": [
+          "多渡点并行、预备队互援与跨阶段状态继承",
+          "真实河槽/山脊通视、隐蔽侦察与原始装备效能标定",
+          "全部后续梯队、江油方向及完整历史过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "JL_PEOPLE2025",
+            "locator": "第三、四节：三路突破、后续梯队与剑门关部队"
+          }
+        ]
+      },
+      "yuankou_opening": {
+        "team": "red",
+        "profile": "crossing",
+        "objective_label": "鸳溪口—火烧寺方向局部（下级番号未核）：完成登记通道渡运并集结",
+        "scope_note": "红31军本方向参战部分与火烧寺守备旅；现代苍溪点只是范围中心，不是鸳溪口的精确位置。",
+        "not_covered": [
+          "多渡点并行、预备队互援与跨阶段状态继承",
+          "真实河槽/山脊通视、隐蔽侦察与原始装备效能标定",
+          "全部后续梯队、江油方向及完整历史过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "JL_PEOPLE2025",
+            "locator": "第三、四节：三路突破、后续梯队与剑门关部队"
+          }
+        ]
+      },
+      "jianxikou_langzhong": {
+        "team": "red",
+        "profile": "crossing",
+        "objective_label": "涧溪口渡江—阆中方向局部：完成登记通道渡运并集结",
+        "scope_note": "红9军渡江与阆中守备分别布置；守军存在不能推定其直接在渡口射击，偷渡不自动等于无敌军。渡运目标不代表已攻占阆中。",
+        "not_covered": [
+          "多渡点并行、预备队互援与跨阶段状态继承",
+          "真实河槽/山脊通视、隐蔽侦察与原始装备效能标定",
+          "全部后续梯队、江油方向及完整历史过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "JL_PEOPLE2025",
+            "locator": "第三、四节：三路突破、后续梯队与剑门关部队"
+          }
+        ]
+      },
+      "jianmen_apr2": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "剑门关局部目标控制",
+        "scope_note": "第88师、第93师和第91师一个团与刁文俊所率三个团；保留山地攻坚阶段，未建模真实峭壁通行与骑兵完整序列。",
+        "not_covered": [
+          "多渡点并行、预备队互援与跨阶段状态继承",
+          "真实河槽/山脊通视、隐蔽侦察与原始装备效能标定",
+          "全部后续梯队、江油方向及完整历史过程"
+        ],
+        "evidence": [
+          {
+            "source_id": "JL_PEOPLE2025",
+            "locator": "第三、四节：三路突破、后续梯队与剑门关部队"
+          }
+        ]
+      }
+    },
+    "LM03-chishui": {
+      "tucheng_jan28": {
+        "team": "red",
+        "profile": "breakout",
+        "objective_label": "土城青杠坡局部接战局部目标",
+        "scope_note": "红军攻击后发现敌情规模超出预判；局部脱离与保存兵力，不能默认完成围歼。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "全部战役过程与跨阶段兵力账继承",
+          "缺载人数、地形细节和武器效能标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "TUCHENG",
+            "locator": "红3、5军团与郭勋祺部；红2师投入"
+          }
+        ]
+      },
+      "crossing_one": {
+        "team": "red",
+        "profile": "crossing",
+        "objective_label": "一渡赤水：土城渡河片段局部目标",
+        "scope_note": "所选河段的运输片段；敌主力在外围追堵，不推定在本渡口接敌。二、四渡需在太平渡、二郎滩一带另绘通道，不能以土城镇点充作渡口。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "全部战役过程与跨阶段兵力账继承",
+          "缺载人数、地形细节和武器效能标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "crossing_two": {
+        "team": "red",
+        "profile": "crossing",
+        "objective_label": "二渡赤水：回师黔北局部目标",
+        "scope_note": "所选河段的运输片段；敌主力在外围追堵，不推定在本渡口接敌。二、四渡需在太平渡、二郎滩一带另绘通道，不能以土城镇点充作渡口。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "全部战役过程与跨阶段兵力账继承",
+          "缺载人数、地形细节和武器效能标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "crossing_three": {
+        "team": "red",
+        "profile": "crossing",
+        "objective_label": "三渡赤水：茅台西渡局部目标",
+        "scope_note": "所选河段的运输片段；敌主力在外围追堵，不推定在本渡口接敌。二、四渡需在太平渡、二郎滩一带另绘通道，不能以土城镇点充作渡口。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "全部战役过程与跨阶段兵力账继承",
+          "缺载人数、地形细节和武器效能标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "crossing_four": {
+        "team": "red",
+        "profile": "crossing",
+        "objective_label": "四渡赤水：折向东岸局部目标",
+        "scope_note": "所选河段的运输片段；敌主力在外围追堵，不推定在本渡口接敌。二、四渡需在太平渡、二郎滩一带另绘通道，不能以土城镇点充作渡口。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "全部战役过程与跨阶段兵力账继承",
+          "缺载人数、地形细节和武器效能标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      }
+    },
+    "LM05-dadu": {
+      "luding_may29": {
+        "team": "red",
+        "profile": "crossing",
+        "objective_label": "泸定桥夺桥与渡运局部目标",
+        "scope_note": "红4团与川军第38团泸定桥守备部；突击、铺板和编组通过分别观察。共享通道不能代替铁索攀爬的微观物理。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "安顺场船渡与双岸纵队完整过程",
+          "铁索攀爬、桥板损坏与修复效能",
+          "全军通过和逐小时战损"
+        ],
+        "evidence": [
+          {
+            "source_id": "XINHUA",
+            "locator": "29日6时到桥、16时突击及红4团连级分工"
+          }
+        ]
+      }
+    },
+    "LM06-maogong": {
+      "right_column_grassland": {
+        "team": "red",
+        "profile": "breakout",
+        "objective_label": "右路军穿越草地至班佑局部目标",
+        "scope_note": "毛儿盖至班佑方向的右路军转移。现代巴西聚落只作广域参考；路线需另绘，湿地不默认可直线通过。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "沼泽通行性、天气和逐日非战斗损失的历史标定",
+          "左路军、懋功先头会师和9月分途",
+          "包座接敌阶段（另有战役档案）"
+        ],
+        "evidence": [
+          {
+            "source_id": "CROSS",
+            "locator": "8月21日出发、8月下旬到达班佑方向"
+          }
+        ]
+      }
+    },
+    "LM08-lazikou": {
+      "night_assault": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "腊子口夜间攻坚局部目标",
+        "scope_note": "比较正面压制与侧后机动；18时为夜间窗口离散化估计。二维通行模型未证明悬崖可攀。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "真实峡口桥位与攀崖通道",
+          "攀登耗时、暴露及失败概率",
+          "逐时损失标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "XINHUA",
+            "locator": "16日晚进攻至17日突破"
+          }
+        ]
+      }
+    },
+    "LM09-red25": {
+      "dushu_first_contact": {
+        "team": "red",
+        "profile": "delay",
+        "objective_label": "独树镇前梯队初遇局部目标",
+        "scope_note": "仅先头224团与已据公路的115旅、骑兵团。14时为限制援军未绑定的保守计算边界，不断言后续部队准确到场钟点。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "全部战役过程与跨阶段兵力账继承",
+          "缺载人数、地形细节和武器效能标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "DUSHU",
+            "locator": "26日13时第224团接敌，第225团随后赶到，第223团更晚到达"
+          }
+        ]
+      },
+      "dushu_evening": {
+        "team": "red",
+        "profile": "breakout",
+        "objective_label": "独树镇黄昏脱离与夜间突围局部目标",
+        "scope_note": "三个团已投入后的夜间脱离；18时和06时为时段模型边界，不能称确证钟点。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "全部战役过程与跨阶段兵力账继承",
+          "缺载人数、地形细节和武器效能标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "DUSHU",
+            "locator": "223团到达后、黄昏三次冲击未成，改由间隙绕行"
+          }
+        ]
+      },
+      "yongping_reunion": {
+        "team": "red",
+        "profile": "breakout",
+        "objective_label": "永坪会师集结局部目标",
+        "scope_note": "采用会师整编前的三个军身份，不与整编后75、78、81师重复。无本地敌军战斗。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "全部战役过程与跨阶段兵力账继承",
+          "缺载人数、地形细节和武器效能标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "红25、26、27军会师后编成15军团"
+          }
+        ]
+      }
+    },
+    "LM11-baizhang": {
+      "baizhang_contest": {
+        "team": "red",
+        "profile": "delay",
+        "objective_label": "百丈地区争夺与转入防御局部目标",
+        "scope_note": "百丈地区区域级消耗与退却通路；不当作一个关口内所有师同时接战。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "各师逐时投入与各方向阵地",
+          "不同分期战损口径的对照",
+          "11月13日以来完整进攻及后续撤退"
+        ],
+        "evidence": [
+          {
+            "source_id": "LOCAL",
+            "locator": "11月中下旬参战师与川军部队"
+          }
+        ]
+      }
+    },
+    "LM12-wumeng": {
+      "western_blockade": {
+        "team": "red",
+        "profile": "breakout",
+        "objective_label": "毕威走廊：南向受阻后的机动选择局部目标",
+        "scope_note": "区域级走廊，不断言两个堵截纵队在赫章城接敌；各部部署为有界位置估计。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "三进奎香各次路线与侦察信息变化",
+          "逐山口到场序列和地形通行",
+          "粮源、群众支援与连续转移耗损标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "BLOCKADE",
+            "locator": "李觉、郭汝栋堵南向安顺道路；红军转入乌蒙"
+          }
+        ]
+      }
+    },
+    "LM15-reunion": {
+      "ganzi_assembly": {
+        "team": "red",
+        "profile": "breakout",
+        "objective_label": "甘孜会师集结局部目标",
+        "scope_note": "已核集结的两个军团；红30军接应发生于绒坝岔，不自动搬入甘孜。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "全部战役过程与跨阶段兵力账继承",
+          "缺载人数、地形细节和武器效能标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "红2、6军团1日全部集结、2日庆祝"
+          }
+        ]
+      },
+      "second_front_formation": {
+        "team": "red",
+        "profile": "breakout",
+        "objective_label": "红二方面军整编集结局部目标",
+        "scope_note": "保留三个不重叠组成单位，不另添加方面军本体；本地整编集结不等同全部北上过程。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "全部战役过程与跨阶段兵力账继承",
+          "缺载人数、地形细节和武器效能标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "5日红2、6军团与红32军组成红二方面军"
+          }
+        ]
+      }
+    },
+    "CP01-changping": {
+      "encirclement": {
+        "team": "red",
+        "profile": "breakout",
+        "objective_label": "赵括出击后秦军分割与断粮局部目标",
+        "scope_note": "赤色为赵军出击部与壁中部，蓝色为秦军三个互不重复的战术集合；不固定历史包围结果。；计算阈值不是已核历史战果。",
+        "not_covered": [
+          "古代武器、防护与阵形杀伤标定",
+          "实际兵力、日历及逐日粮运",
+          "全程46日围困与历史投降结局"
+        ],
+        "evidence": [
+          {
+            "source_id": "SHIJI",
+            "locator": "赵军追至秦壁、奇兵绝后、五千骑分割、粮道断绝"
+          }
+        ]
+      }
+    },
+    "AJ07-wanjialing": {
+      "oct7_attack": {
+        "team": "red",
+        "profile": "assault",
+        "objective_label": "分方向合围及突破要点（局部已核投入部）",
+        "scope_note": "只覆盖7日已核师级投入部；石堡山、长岭—张古山和第4军方向须分别设置，坐标与目标阈值需明确估计。不得把7日包围、8日争夺或10日战果压成同轮必达。",
+        "not_covered": [
+          "未知余部与完整军建制",
+          "逐联队日方编制及配属火力",
+          "全役连续阶段与历史效能标定"
+        ],
+        "evidence": [
+          {
+            "source_id": "WJL_GUO",
+            "locator": "第118—119页：各军师任务、10月7日总攻及8日反攻"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+async page=>{
+ const API='http://127.0.0.1:19105',base=API+'/api/sessions/'+'e'.repeat(12),checks=[],errors=[];
+ const check=(ok,label)=>{if(!ok)throw Error(label);checks.push(label);};
+ const get=async url=>{const r=await page.request.get(url);if(!r.ok())throw Error(await r.text());return r.json();};
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.setViewportSize({width:1440,height:1000});
+ await page.addInitScript(()=>window.gentactix={backendUrl:'http://127.0.0.1:19105'});
+ await page.goto('http://127.0.0.1:19088');await page.evaluate(()=>localStorage.setItem('gentactix-session','e'.repeat(12)));
+ await page.reload();await page.getByRole('button',{name:'返回当前战局',exact:true}).click();
+ await page.getByTestId('analysis-tab-forces').click();const panel=page.getByTestId('force-organization');
+ await panel.getByLabel('任务群名称',{exact:true}).waitFor();
+ const initial=await get(base),original=JSON.stringify(initial.war_state),v=await get(base+'/force-organization');
+ check(v.execution_ids.length===79,'All 79 execution leaves visible in command structure');
+ const identities=new Set(initial.war_state.red_units.map(u=>u.historical_unit_id));
+ const nodes=v.nodes.filter(n=>identities.has(n.id)&&n.execution_ids.length===1).slice(0,4);
+ check(nodes.length===4,'Four distinct sourced leaves selected for hierarchy');
+ const form=async label=>{await panel.getByLabel('任务群名称',{exact:true}).fill(label);
+  await panel.getByLabel('配属依据',{exact:true}).fill('隔离软件QA临时配属，资源与历史身份不变');};
+ const detach=async(label,selected,parent='')=>{
+  for(const n of selected)await panel.getByLabel(`选择${n.name}及已部署下级`,{exact:true}).check();
+  await form(label);await panel.getByLabel('临时上级',{exact:true}).selectOption(parent);
+  await panel.getByRole('button',{name:'分出所选下级为任务群',exact:true}).click();
+  await panel.getByRole('status').filter({hasText:'临时配属已保存'}).waitFor();
+  return (await get(base+'/force-organization')).groups.find(g=>g.label===label).id;
+ };
+ const a=await detach('主攻群',nodes.slice(0,2)),b=await detach('阻援群',nodes.slice(2,4));
+ check(a==='task:1'&&b==='task:2','UI accepts exact session-local short references');
+ for(const label of ['主攻群','阻援群'])await panel.getByLabel('合编选择'+label,{exact:true}).check();
+ await form('方向总指挥');await panel.getByRole('button',{name:'保留下级并建立共同上级',exact:true}).click();
+ await panel.getByRole('status').filter({hasText:'临时配属已保存'}).waitFor();
+ let state=await get(base+'/force-organization'),top=state.groups.find(g=>g.label==='方向总指挥').id;
+ const scout=await detach('先遣群',nodes.slice(0,1),a);state=await get(base+'/force-organization');
+ check(state.groups.find(g=>g.id===scout).depth===2,'Three command levels created through UI');
+ check(state.groups.find(g=>g.id===top).member_ids.length===4,'HQ counts four unique leaves');
+ await panel.getByLabel('兵团下令对象',{exact:true}).selectOption(top);
+ await panel.getByLabel('兵团行动',{exact:true}).selectOption('hold');
+ await panel.getByRole('button',{name:'预览兵团任务',exact:true}).click();
+ await panel.getByRole('button',{name:'确认暂存兵团任务',exact:true}).waitFor();
+ await panel.getByRole('button',{name:'确认暂存兵团任务',exact:true}).click();
+ await panel.getByRole('status').filter({hasText:'群命令已暂存'}).waitFor();
+ const commands=await get(base+'/commands');
+ check(commands.orders.length===4&&new Set(commands.orders.map(o=>o.unit_id)).size===4,'Confirmed HQ task queues four unique unit orders');
+ check(commands.orders.every(o=>o.task_context?.command_chain[0]===top),'Receipts-to-be retain exact local command chain');
+ check(JSON.stringify((await get(base)).war_state)===original,'Organization and planning do not alter physical world');
+ await page.screenshot({path:'.cache/qa/force-observation-2026-10-31/browser/hierarchy-1440.png'});
+ await page.reload();await page.getByRole('button',{name:'返回当前战局',exact:true}).click();
+ await page.getByTestId('analysis-tab-forces').click();await panel.locator('[data-task-group]').first().waitFor();
+ check((await panel.innerText()).includes('先遣群'),'Short references and nested organization survive UI reload');
+ check(errors.length===0,'No browser page errors');
+ return {passed:true,checks,session_id:'e'.repeat(12),actual_browser:true,api_mocks:false,
+  scope:'79 numerical QA leaves; hierarchy and explicit task confirmation, no UI combat claim'};
+}

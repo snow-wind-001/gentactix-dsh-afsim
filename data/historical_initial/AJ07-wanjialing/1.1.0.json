@@ -1,0 +1,2991 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ07-wanjialing",
+  "version": "1.1.0",
+  "battle": "抗日战争-万家岭战役-1938.09下旬至1938.10",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "1.1.0补充有页码的时段任务与已核下级；旧1.0.0及默认入口不变，不宣称完整会战序列。",
+      "10月7日只配置已核第90、第159、第51、第58师、第161师本地投入部和106师团被围部；编制内缺载直属和余部须显式排除，不能宣称投入整军。",
+      "161师一部在66军方向执行任务，不据此把全161师永久改隶66军；实际配属记在本阶段relations，历史树仍保持未知。",
+      "10月6日与8日的任务片段用于有来源回溯；不足以建立这些日期完整可计算部署，相关phase故意不通过到场准入。",
+      "军、师、投入部、炮兵营/连的累计身份不能同时重复计算；地名、命令、接敌与实际部署分开。",
+      "现代磨溪乡点仅限定计算工作区域，张古山、石堡山、扁担山等精确坐标仍未知；不把县城纪念园放成阵位。",
+      "实到兵额、分类装备、粮弹与逐日战损均未核，仍保持null；开放推演参数须独立估计，不能从武汉总数倒分。"
+    ]
+  },
+  "sources": {
+    "WJL_ARCHIVE": {
+      "title": "第十五集 万家岭大捷",
+      "url": "https://www.saac.gov.cn/zt/2014-09/05/content_65502.htm",
+      "publisher": "国家档案局／中国第二历史档案馆",
+      "evidence_kind": "archive_publication",
+      "original_archive_examined": false,
+      "limitations": "已核公开检索正文与档案目录定位，网站当前直读失败；未辨读电报和详报扫描原件。“遗尸数万”不作为确定阵亡数。"
+    },
+    "WJL_ACCOUNT": {
+      "title": "万家岭大捷的前前后后",
+      "url": "https://cpc.people.com.cn/n1/2023/1221/c443712-40143730.html",
+      "publisher": "中国共产党新闻网转载人民政协报，张莘，2023-12-21",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "作者为德安县文旅局工作人员；公开历史叙述提供10月7日三军任务，不是逐时战斗日志。具体伤亡、空投人数等没有独立校核，不写入本档数值事实。"
+    },
+    "GEO": {
+      "title": "OpenStreetMap：磨溪乡 node 3182886774 v4",
+      "url": "https://api.openstreetmap.org/api/0.6/node/3182886774.json",
+      "publisher": "OpenStreetMap contributors；2026-10-28核读node v4",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代乡镇地名，不是1938年战术阵地；8公里工作误差圈和12公里阶段计算边界均为估计。"
+    },
+    "WJL_LOCATION": {
+      "title": "万家岭下，从“地狱谷”到“幸福乡”的沧桑巨变",
+      "url": "https://www.jjcbw.com/v2/news/article/342306.html",
+      "publisher": "九江日报／掌中九江，2025-09-08",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现场报道确认磨溪乡万家岭战场地域；不提供逐阵地精确坐标，也不据其战果数字作效能标定。"
+    },
+    "WJL_GUO": {
+      "title": "郭代习：万家岭战役述评，《抗日战争研究》1996年第2期，111—126页",
+      "url": "https://www.krzzjn.com/uploadfile/2018/0604/20180604092232868.pdf",
+      "publisher": "《抗日战争研究》；抗日战争纪念网提供PDF",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "2026-10-31视觉核读PDF第8、9页（印刷118、119页）。论文转引档案7878033、7878201及回忆；未辨读馆藏原件。其兵额与歼敌判断未作为精确事实采用。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "包围与阻援累计序列参考",
+      "date": {
+        "label": "1938年9月下旬至10月",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "WJL_ARCHIVE",
+            "locator": "导言与9月25日至10月16日档案目录范围"
+          }
+        ]
+      },
+      "scope": "累计身份参考；已列下级仍不完整，不能把全部部队视为同日在场。",
+      "evidence": [
+        {
+          "source_id": "WJL_ARCHIVE",
+          "locator": "导言与9月25日至10月16日档案目录范围"
+        }
+      ]
+    },
+    {
+      "id": "oct6_orders",
+      "label": "10月6日调兵与反攻命令（资料片段）",
+      "date": {
+        "label": "1938-10-06",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "WJL_GUO",
+            "locator": "第118—119页：10月5—8日调整及作战经过；属于论文转引，不是原始作战日志"
+          }
+        ]
+      },
+      "scope": "资料回溯片段；尚未核齐当日完整投入、部署与到场，不开放为完整计算初态。",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118—119页：10月5—8日调整及作战经过；属于论文转引，不是原始作战日志"
+        }
+      ],
+      "operations": [
+        {
+          "id": "WJL-Oct6-redeployment",
+          "kind": "concentration",
+          "date": {
+            "label": "1938-10-06，当日",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "ww2.cn.army66",
+            "ww2.cn.division159",
+            "ww2.cn.division160",
+            "ww2.cn.army74",
+            "ww2.cn.division51",
+            "ww2.cn.division58"
+          ],
+          "places": [
+            {
+              "name": "金娥殿",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第118页：10月5日调兵电、6日66军转用与74军调动段"
+                }
+              ]
+            },
+            {
+              "name": "公母岭",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第118页：10月5日调兵电、6日66军转用与74军调动段"
+                }
+              ]
+            },
+            {
+              "name": "白槎西北",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第118页：10月5日调兵电、6日66军转用与74军调动段"
+                }
+              ]
+            },
+            {
+              "name": "长岭",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第118页：10月5日调兵电、6日66军转用与74军调动段"
+                }
+              ]
+            },
+            {
+              "name": "张古山",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第118页：10月5日调兵电、6日66军转用与74军调动段"
+                }
+              ]
+            }
+          ],
+          "description": "66军接防后调向北侧攻击准备；51师随74军调动，58师回归74军并守备原方向。",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：10月5日调兵电、6日66军转用与74军调动段"
+            }
+          ],
+          "limitations": "论文转引和公开叙述；未核原始命令正文、精确阵位及逐单位兵额。时间是来源记录精度，不是本局强制执行时刻。"
+        },
+        {
+          "id": "WJL-Oct6-orders",
+          "kind": "command",
+          "date": {
+            "label": "1938-10-06；13时下反攻令，15时指挥所命令（论文转引）",
+            "precision": "hour"
+          },
+          "unit_ids": [
+            "ww2.cn.corps1",
+            "ww2.cn.army4",
+            "ww2.cn.army66",
+            "ww2.cn.army74",
+            "ww2.jp.division106"
+          ],
+          "places": [
+            {
+              "name": "白槎",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：6日13时薛岳下反攻令、15时吴奇伟白槎指挥所命令；引档案7878201及张秉均记述"
+                }
+              ]
+            },
+            {
+              "name": "石堡山",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：6日13时薛岳下反攻令、15时吴奇伟白槎指挥所命令；引档案7878201及张秉均记述"
+                }
+              ]
+            },
+            {
+              "name": "石头岭",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：6日13时薛岳下反攻令、15时吴奇伟白槎指挥所命令；引档案7878201及张秉均记述"
+                }
+              ]
+            }
+          ],
+          "description": "命令分别安排66军突击、4军掩护侧翼与74军向北攻击；这是命令记录，不等于当时已经攻占。",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：6日13时薛岳下反攻令、15时吴奇伟白槎指挥所命令；引档案7878201及张秉均记述"
+            }
+          ],
+          "limitations": "论文转引和公开叙述；未核原始命令正文、精确阵位及逐单位兵额。时间是来源记录精度，不是本局强制执行时刻。"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "oct7_attack",
+      "label": "10月7日分方向总攻：已核师级投入部",
+      "date": {
+        "label": "1938-10-07",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "WJL_ACCOUNT",
+            "locator": "10月7日66军、74军及4军任务段；与档案目录的总攻日期对应"
+          }
+        ]
+      },
+      "scope": "第4军90师、第66军159师及作战配属161师投入部、第74军51/58师；未核余部明确不投入。日方仅106师团被围部，未完成逐联队序列。",
+      "evidence": [
+        {
+          "source_id": "WJL_ACCOUNT",
+          "locator": "10月7日66军、74军及4军任务段；与档案目录的总攻日期对应"
+        },
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118—119页：第4军90师、74军51/58师及66军159师和161师一部"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 29.365246,
+          "lng": 115.581335
+        },
+        "radius_km": 12,
+        "kind": "model_scope_limit",
+        "note": "磨溪乡现代行政地名参考及12公里局部计算边界假设；不把约17公里外的德安县城纪念园当成战场。此点不是万家岭高地或1938年阵地坐标。",
+        "evidence": [
+          {
+            "source_id": "GEO",
+            "locator": "OSM node 3182886774 v4的磨溪乡地名坐标"
+          },
+          {
+            "source_id": "WJL_LOCATION",
+            "locator": "磨溪乡万家岭、南田村旧址的地域关联"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1938-10-07T00:00",
+        "end": "1938-10-08T00:00",
+        "kind": "model_scope_limit",
+        "note": "按日级史料设置计算窗口的离散化假设；00时只界定计算日期，不表示此时发布命令或发起攻击，也不强制窗口内出现历史战果。",
+        "evidence": [
+          {
+            "source_id": "WJL_ACCOUNT",
+            "locator": "10月7日66军、74军及4军任务段；与档案目录的总攻日期对应"
+          }
+        ]
+      },
+      "process_requirements": [
+        {
+          "kind": "combined_operation",
+          "scope": "分别表达石堡山、长岭—张古山及第4军方向的合围任务；目标和地域参数仍为显式估计，不强制历史战果。",
+          "evidence": [
+            {
+              "source_id": "WJL_ACCOUNT",
+              "locator": "10月7日66军、74军及4军任务段；与档案目录的总攻日期对应"
+            },
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：第4军90师、74军51/58师及66军159师和161师一部"
+            }
+          ]
+        }
+      ],
+      "operations": [
+        {
+          "id": "WJL-Oct7-shibao",
+          "kind": "attack",
+          "date": {
+            "label": "1938-10-07，当日",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "ww2.cn.army66",
+            "ww2.cn.division159",
+            "ww2.cn.division161.wjl_part",
+            "ww2.jp.division106"
+          ],
+          "places": [
+            {
+              "name": "金娥殿",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：10月7日66军159师及161师之一部攻击段"
+                }
+              ]
+            },
+            {
+              "name": "公母岭",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：10月7日66军159师及161师之一部攻击段"
+                }
+              ]
+            },
+            {
+              "name": "石堡山",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：10月7日66军159师及161师之一部攻击段"
+                }
+              ]
+            }
+          ],
+          "description": "159师与161师投入部向石堡山推进；不推定整个161师到场或全师改隶。",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：10月7日66军159师及161师之一部攻击段"
+            }
+          ],
+          "limitations": "论文转引和公开叙述；未核原始命令正文、精确阵位及逐单位兵额。时间是来源记录精度，不是本局强制执行时刻。"
+        },
+        {
+          "id": "WJL-Oct7-eastern",
+          "kind": "combat",
+          "date": {
+            "label": "1938-10-07；7时（论文记述）",
+            "precision": "hour"
+          },
+          "unit_ids": [
+            "ww2.cn.army4",
+            "ww2.jp.division106"
+          ],
+          "places": [
+            {
+              "name": "刘家岭",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：4军游击部队7时刘家岭遭遇段"
+                }
+              ]
+            }
+          ],
+          "description": "4军游击部队发生接触；不能把该分队人数或位置推广到整个军。",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：4军游击部队7时刘家岭遭遇段"
+            }
+          ],
+          "limitations": "论文转引和公开叙述；未核原始命令正文、精确阵位及逐单位兵额。时间是来源记录精度，不是本局强制执行时刻。"
+        },
+        {
+          "id": "WJL-Oct7-changling",
+          "kind": "attack",
+          "date": {
+            "label": "1938-10-07，当日",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "ww2.cn.army74",
+            "ww2.jp.division106"
+          ],
+          "places": [
+            {
+              "name": "长岭",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：74军长岭克复与张古山包围段"
+                }
+              ]
+            },
+            {
+              "name": "张古山",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：74军长岭克复与张古山包围段"
+                }
+              ]
+            }
+          ],
+          "description": "74军收复长岭并围住张古山；阵地控制仍会变化，不把包围写成日军已全歼。",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：74军长岭克复与张古山包围段"
+            }
+          ],
+          "limitations": "论文转引和公开叙述；未核原始命令正文、精确阵位及逐单位兵额。时间是来源记录精度，不是本局强制执行时刻。"
+        }
+      ],
+      "relations": [
+        {
+          "id": "WJL-Oct7-command-army4",
+          "kind": "operational_command",
+          "parent_id": "ww2.cn.corps1",
+          "child_id": "ww2.cn.army4",
+          "scope": "本阶段第一兵团协同任务参考；未重写永久行政隶属。",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：第一兵团部署与各军攻击任务"
+            }
+          ]
+        },
+        {
+          "id": "WJL-Oct7-command-army66",
+          "kind": "operational_command",
+          "parent_id": "ww2.cn.corps1",
+          "child_id": "ww2.cn.army66",
+          "scope": "本阶段第一兵团协同任务参考；未重写永久行政隶属。",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：第一兵团部署与各军攻击任务"
+            }
+          ]
+        },
+        {
+          "id": "WJL-Oct7-command-army74",
+          "kind": "operational_command",
+          "parent_id": "ww2.cn.corps1",
+          "child_id": "ww2.cn.army74",
+          "scope": "本阶段第一兵团协同任务参考；未重写永久行政隶属。",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：第一兵团部署与各军攻击任务"
+            }
+          ]
+        },
+        {
+          "id": "WJL-Oct7-161-part",
+          "kind": "operational_command",
+          "parent_id": "ww2.cn.army66",
+          "child_id": "ww2.cn.division161.wjl_part",
+          "scope": "只关联文献所记161师一部的当前作战方向；不是全师永久改隶。",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：66军以159师及161师之一部展开"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oct8_counterattacks",
+      "label": "10月8日反攻与阵地争夺（资料片段）",
+      "date": {
+        "label": "1938-10-08",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "WJL_GUO",
+            "locator": "第118—119页：10月5—8日调整及作战经过；属于论文转引，不是原始作战日志"
+          }
+        ]
+      },
+      "scope": "资料回溯片段；尚未核齐当日完整投入、部署与到场，不开放为完整计算初态。",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118—119页：10月5—8日调整及作战经过；属于论文转引，不是原始作战日志"
+        }
+      ],
+      "operations": [
+        {
+          "id": "WJL-Oct8-zhanggu",
+          "kind": "counterattack",
+          "date": {
+            "label": "1938-10-08，拂晓至天明后",
+            "precision": "period"
+          },
+          "unit_ids": [
+            "ww2.cn.division51",
+            "ww2.jp.division106"
+          ],
+          "places": [
+            {
+              "name": "张古山",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：8日拂晓51师攻克、天明后日军反攻段"
+                }
+              ]
+            }
+          ],
+          "description": "51师一度夺取最高点，随后日军在航空支援下反攻夺回；两次控制权变化均保留。",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：8日拂晓51师攻克、天明后日军反攻段"
+            }
+          ],
+          "limitations": "论文转引和公开叙述；未核原始命令正文、精确阵位及逐单位兵额。时间是来源记录精度，不是本局强制执行时刻。"
+        },
+        {
+          "id": "WJL-Oct8-hills",
+          "kind": "attack",
+          "date": {
+            "label": "1938-10-08，当日；部分动作记11时",
+            "precision": "period"
+          },
+          "unit_ids": [
+            "ww2.cn.army66",
+            "ww2.cn.army4",
+            "ww2.cn.division142",
+            "ww2.jp.division106"
+          ],
+          "places": [
+            {
+              "name": "石堡山",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：8日66军进占、协同4军与142师11时出击段"
+                }
+              ]
+            },
+            {
+              "name": "老虎尖",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：8日66军进占、协同4军与142师11时出击段"
+                }
+              ]
+            },
+            {
+              "name": "狮子崖西北高地",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：8日66军进占、协同4军与142师11时出击段"
+                }
+              ]
+            },
+            {
+              "name": "城门山",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：8日66军进占、协同4军与142师11时出击段"
+                }
+              ]
+            },
+            {
+              "name": "桶汉傅",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：8日66军进占、协同4军与142师11时出击段"
+                }
+              ]
+            },
+            {
+              "name": "周家",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "WJL_GUO",
+                  "locator": "第119页：8日66军进占、协同4军与142师11时出击段"
+                }
+              ]
+            }
+          ],
+          "description": "66军与4军继续高地攻击；142师欠一团出击。具体余部、地名异写与阵位待补核。",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：8日66军进占、协同4军与142师11时出击段"
+            }
+          ],
+          "limitations": "论文转引和公开叙述；未核原始命令正文、精确阵位及逐单位兵额。时间是来源记录精度，不是本局强制执行时刻。"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.warzone9",
+      "name": "第九战区司令部",
+      "team": "red",
+      "role": "command",
+      "echelon": "战区",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ARCHIVE",
+          "locator": "第九战区调集部队围攻万家岭"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "oct7_attack",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "第九战区调集部队围攻万家岭"
+            }
+          ]
+        },
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "第九战区调集部队围攻万家岭"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "第九战区调集部队围攻万家岭"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "第九战区调集部队围攻万家岭"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺10月7日本地投入实到数；总兵力与战后损失不能分摊为逐军或师团开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段完好装备与库存；不能按理论满编或武汉全战役总量补齐。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有方向、高地与地名，未核逐单位阵地；现代德安县城参考不是万家岭阵地坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.corps1",
+      "name": "第1兵团",
+      "team": "red",
+      "role": "command",
+      "echelon": "兵团",
+      "parent_id": "ww2.cn.warzone9",
+      "evidence": [
+        {
+          "source_id": "WJL_ARCHIVE",
+          "locator": "第一兵团部署与10月6日兵力部署电报目录"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "oct7_attack",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "第一兵团部署与10月6日兵力部署电报目录"
+            }
+          ]
+        },
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "第一兵团部署与10月6日兵力部署电报目录"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "第一兵团部署与10月6日兵力部署电报目录"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "第一兵团部署与10月6日兵力部署电报目录"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺10月7日本地投入实到数；总兵力与战后损失不能分摊为逐军或师团开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段完好装备与库存；不能按理论满编或武汉全战役总量补齐。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有方向、高地与地名，未核逐单位阵地；现代德安县城参考不是万家岭阵地坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.army4",
+      "name": "第4军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ACCOUNT",
+          "locator": "10月7日扁担山方向的第4军任务"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "oct7_attack",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJL_ACCOUNT",
+              "locator": "10月7日扁担山方向的第4军任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ACCOUNT",
+              "locator": "10月7日扁担山方向的第4军任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ACCOUNT",
+              "locator": "10月7日扁担山方向的第4军任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ACCOUNT",
+              "locator": "10月7日扁担山方向的第4军任务"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺10月7日本地投入实到数；总兵力与战后损失不能分摊为逐军或师团开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段完好装备与库存；不能按理论满编或武汉全战役总量补齐。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有方向、高地与地名，未核逐单位阵地；现代德安县城参考不是万家岭阵地坐标。"
+        }
+      },
+      "children_coverage": {
+        "status": "partial",
+        "scope": "仅列已核下级或本地投入部；全建制、直属与其余投入状态未核，不能称完整覆盖。",
+        "evidence": [
+          {
+            "source_id": "WJL_ACCOUNT",
+            "locator": "10月7日扁担山方向的第4军任务"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ww2.cn.army66",
+      "name": "第66军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ACCOUNT",
+          "locator": "10月7日石堡山方向的第66军任务"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "oct7_attack",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJL_ACCOUNT",
+              "locator": "10月7日石堡山方向的第66军任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ACCOUNT",
+              "locator": "10月7日石堡山方向的第66军任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ACCOUNT",
+              "locator": "10月7日石堡山方向的第66军任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ACCOUNT",
+              "locator": "10月7日石堡山方向的第66军任务"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺10月7日本地投入实到数；总兵力与战后损失不能分摊为逐军或师团开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段完好装备与库存；不能按理论满编或武汉全战役总量补齐。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有方向、高地与地名，未核逐单位阵地；现代德安县城参考不是万家岭阵地坐标。"
+        }
+      },
+      "children_coverage": {
+        "status": "partial",
+        "scope": "仅列已核下级或本地投入部；全建制、直属与其余投入状态未核，不能称完整覆盖。",
+        "evidence": [
+          {
+            "source_id": "WJL_ACCOUNT",
+            "locator": "10月7日石堡山方向的第66军任务"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ww2.cn.army74",
+      "name": "第74军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ACCOUNT",
+          "locator": "10月7日长岭和张古山方向的第74军任务"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "oct7_attack",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJL_ACCOUNT",
+              "locator": "10月7日长岭和张古山方向的第74军任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ACCOUNT",
+              "locator": "10月7日长岭和张古山方向的第74军任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ACCOUNT",
+              "locator": "10月7日长岭和张古山方向的第74军任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ACCOUNT",
+              "locator": "10月7日长岭和张古山方向的第74军任务"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺10月7日本地投入实到数；总兵力与战后损失不能分摊为逐军或师团开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段完好装备与库存；不能按理论满编或武汉全战役总量补齐。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有方向、高地与地名，未核逐单位阵地；现代德安县城参考不是万家岭阵地坐标。"
+        }
+      },
+      "children_coverage": {
+        "status": "partial",
+        "scope": "仅列已核下级或本地投入部；全建制、直属与其余投入状态未核，不能称完整覆盖。",
+        "evidence": [
+          {
+            "source_id": "WJL_ACCOUNT",
+            "locator": "10月7日长岭和张古山方向的第74军任务"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ww2.cn.army32",
+      "name": "第32军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ARCHIVE",
+          "locator": "白水街方向阻击27师团援军的外线任务"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "白水街方向阻击27师团援军的外线任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "白水街方向阻击27师团援军的外线任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "白水街方向阻击27师团援军的外线任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "白水街方向阻击27师团援军的外线任务"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺10月7日本地投入实到数；总兵力与战后损失不能分摊为逐军或师团开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段完好装备与库存；不能按理论满编或武汉全战役总量补齐。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有方向、高地与地名，未核逐单位阵地；现代德安县城参考不是万家岭阵地坐标。"
+        }
+      },
+      "children_coverage": {
+        "status": "partial",
+        "scope": "仅列已核下级或本地投入部；全建制、直属与其余投入状态未核，不能称完整覆盖。",
+        "evidence": [
+          {
+            "source_id": "WJL_ARCHIVE",
+            "locator": "白水街方向阻击27师团援军的外线任务"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ww2.jp.army11",
+      "name": "日军第11军",
+      "team": "blue",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ARCHIVE",
+          "locator": "第11军106师团主力进入万家岭"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "oct7_attack",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "第11军106师团主力进入万家岭"
+            }
+          ]
+        },
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "第11军106师团主力进入万家岭"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "第11军106师团主力进入万家岭"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "第11军106师团主力进入万家岭"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺10月7日本地投入实到数；总兵力与战后损失不能分摊为逐军或师团开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段完好装备与库存；不能按理论满编或武汉全战役总量补齐。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有方向、高地与地名，未核逐单位阵地；现代德安县城参考不是万家岭阵地坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division106",
+      "name": "日军第106师团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师团",
+      "parent_id": "ww2.jp.army11",
+      "evidence": [
+        {
+          "source_id": "WJL_ARCHIVE",
+          "locator": "被围106师团及10月7日总攻对象"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "oct7_attack",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "被围106师团及10月7日总攻对象"
+            }
+          ]
+        },
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "被围106师团及10月7日总攻对象"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "被围106师团及10月7日总攻对象"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "被围106师团及10月7日总攻对象"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺10月7日本地投入实到数；总兵力与战后损失不能分摊为逐军或师团开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段完好装备与库存；不能按理论满编或武汉全战役总量补齐。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有方向、高地与地名，未核逐单位阵地；现代德安县城参考不是万家岭阵地坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division27",
+      "name": "日军第27师团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_ARCHIVE",
+          "locator": "白水街方向的27师团一部，非106师团被围主力"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "白水街方向的27师团一部，非106师团被围主力"
+            }
+          ]
+        },
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "白水街方向的27师团一部，非106师团被围主力"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "白水街方向的27师团一部，非106师团被围主力"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_ARCHIVE",
+              "locator": "白水街方向的27师团一部，非106师团被围主力"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺10月7日本地投入实到数；总兵力与战后损失不能分摊为逐军或师团开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段完好装备与库存；不能按理论满编或武汉全战役总量补齐。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只有方向、高地与地名，未核逐单位阵地；现代德安县城参考不是万家岭阵地坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.army18",
+      "name": "第18军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      },
+      "children_coverage": {
+        "status": "partial",
+        "scope": "仅列已核下级或本地投入部；全建制、直属与其余投入状态未核，不能称完整覆盖。",
+        "evidence": [
+          {
+            "source_id": "WJL_GUO",
+            "locator": "第118页参战部队段"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ww2.cn.army64",
+      "name": "第64军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      },
+      "children_coverage": {
+        "status": "partial",
+        "scope": "仅列已核下级或本地投入部；全建制、直属与其余投入状态未核，不能称完整覆盖。",
+        "evidence": [
+          {
+            "source_id": "WJL_GUO",
+            "locator": "第118页参战部队段"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ww2.cn.army72",
+      "name": "第72军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      },
+      "children_coverage": {
+        "status": "partial",
+        "scope": "仅列已核下级或本地投入部；全建制、直属与其余投入状态未核，不能称完整覆盖。",
+        "evidence": [
+          {
+            "source_id": "WJL_GUO",
+            "locator": "第118页参战部队段"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ww2.cn.army78",
+      "name": "第78军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      },
+      "children_coverage": {
+        "status": "partial",
+        "scope": "仅列已核下级或本地投入部；全建制、直属与其余投入状态未核，不能称完整覆盖。",
+        "evidence": [
+          {
+            "source_id": "WJL_GUO",
+            "locator": "第118页参战部队段"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ww2.cn.division90",
+      "name": "第90师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.army4",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页：第4军90师从东面攻击"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：第4军90师从东面攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：第4军90师从东面攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：第4军90师从东面攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：第4军90师从东面攻击"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division159",
+      "name": "第159师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.army66",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118—119页：调入159师，7日向石堡山攻击"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：调入159师，7日向石堡山攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：调入159师，7日向石堡山攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：调入159师，7日向石堡山攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：调入159师，7日向石堡山攻击"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division160",
+      "name": "第160师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.army66",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页：10月5日调159、160师；不能据此证明7日全160师到场"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：10月5日调159、160师；不能据此证明7日全160师到场"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：10月5日调159、160师；不能据此证明7日全160师到场"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：10月5日调159、160师；不能据此证明7日全160师到场"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：10月5日调159、160师；不能据此证明7日全160师到场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division161",
+      "name": "第161师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第119页：161师一部在66军方向投入，不据此确定全师行政上级"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：161师一部在66军方向投入，不据此确定全师行政上级"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：161师一部在66军方向投入，不据此确定全师行政上级"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：161师一部在66军方向投入，不据此确定全师行政上级"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：161师一部在66军方向投入，不据此确定全师行政上级"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      },
+      "children_coverage": {
+        "status": "partial",
+        "scope": "仅列已核下级或本地投入部；全建制、直属与其余投入状态未核，不能称完整覆盖。",
+        "evidence": [
+          {
+            "source_id": "WJL_GUO",
+            "locator": "第119页：161师一部在66军方向投入，不据此确定全师行政上级"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ww2.cn.division161.wjl_part",
+      "name": "第161师万家岭投入部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师之一部",
+      "parent_id": "ww2.cn.division161",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第119页：161师之一部；下级番号、规模缺载，不补造一个新团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：161师之一部；下级番号、规模缺载，不补造一个新团"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：161师之一部；下级番号、规模缺载，不补造一个新团"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：161师之一部；下级番号、规模缺载，不补造一个新团"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第119页：161师之一部；下级番号、规模缺载，不补造一个新团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division51",
+      "name": "第51师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.army74",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页：74军率51师到白槎西北；第119页8日拂晓张古山争夺"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：74军率51师到白槎西北；第119页8日拂晓张古山争夺"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：74军率51师到白槎西北；第119页8日拂晓张古山争夺"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：74军率51师到白槎西北；第119页8日拂晓张古山争夺"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：74军率51师到白槎西北；第119页8日拂晓张古山争夺"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division58",
+      "name": "第58师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.army74",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页：58师归还74军建制，仍任长岭、张古山守备"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：58师归还74军建制，仍任长岭、张古山守备"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：58师归还74军建制，仍任长岭、张古山守备"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：58师归还74军建制，仍任长岭、张古山守备"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页：58师归还74军建制，仍任长岭、张古山守备"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division60",
+      "name": "第60师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.army18",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division139",
+      "name": "第139师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.army32",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division141",
+      "name": "第141师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.army32",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division142",
+      "name": "第142师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.army32",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division187",
+      "name": "第187师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.army64",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division_new15",
+      "name": "新编第15师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.army72",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division_new13",
+      "name": "新编第13师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.army78",
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division91",
+      "name": "第91师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118—119页：南田铺攻击后抽调阻援；全程行政隶属未由此核定"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：南田铺攻击后抽调阻援；全程行政隶属未由此核定"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：南田铺攻击后抽调阻援；全程行政隶属未由此核定"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：南田铺攻击后抽调阻援；全程行政隶属未由此核定"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：南田铺攻击后抽调阻援；全程行政隶属未由此核定"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division_reserve6",
+      "name": "预备第6师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118—119页：西面攻击与抽调阻援，不确定全程行政上级"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：西面攻击与抽调阻援，不确定全程行政上级"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：西面攻击与抽调阻援，不确定全程行政上级"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：西面攻击与抽调阻援，不确定全程行政上级"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118—119页：西面攻击与抽调阻援，不确定全程行政上级"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.artillery2.battalion3",
+      "name": "炮兵第2团第3营",
+      "team": "red",
+      "role": "support",
+      "echelon": "营",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段：炮2团3营；无实有火炮数及逐日阵位"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段：炮2团3营；无实有火炮数及逐日阵位"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段：炮2团3营；无实有火炮数及逐日阵位"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段：炮2团3营；无实有火炮数及逐日阵位"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段：炮2团3营；无实有火炮数及逐日阵位"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.artillery4.company6",
+      "name": "炮兵第4团第6连",
+      "team": "red",
+      "role": "support",
+      "echelon": "连",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "WJL_GUO",
+          "locator": "第118页参战部队段：炮4团6连；无实有火炮数及逐日阵位"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段：炮4团6连；无实有火炮数及逐日阵位"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct6_orders",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段：炮4团6连；无实有火炮数及逐日阵位"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct7_attack",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段：炮4团6连；无实有火炮数及逐日阵位"
+            }
+          ]
+        },
+        {
+          "phase_id": "oct8_counterattacks",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "WJL_GUO",
+              "locator": "第118页参战部队段：炮4团6连；无实有火炮数及逐日阵位"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段实到兵额；不从全军、会战或战后减员倒分。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段分类完好装备、库存与配属火力数。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核历史地名与任务方向；无配准后的战术阵位坐标。"
+        }
+      }
+    }
+  ]
+}

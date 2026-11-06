@@ -1,0 +1,426 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ20-reception",
+  "version": "1.0.0",
+  "battle": "抗日战争-全面反攻与受降总览-1945.08至1945.09",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "只绑定张家口一段地面进攻；日本宣布投降不等于当地全员自动缴械，接收和投降清点仍需独立过程。",
+      "仅提供有来源的具名参战框架。人数、分类装备、库存和逐单位阵地缺载，保持null；参数化配置须独立说明估计。",
+      "阶段时钟、区域半径和胜负阈值是计算假设；不代表已完成全会战复现、航空舰炮/后续增援或历史战损标定。",
+      "“全面反攻与受降”总览当前不等于完整受降算法：此局部目标为夺控，未用地域占领冒充完成缴械、俘虏登记或全国接收。"
+    ]
+  },
+  "sources": {
+    "ZJK_REVIEW": {
+      "title": "收复张家口：胜利之光耀山河",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/16402483.html",
+      "publisher": "解放军报／国防部",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    },
+    "ZJK_UNITS": {
+      "title": "八路军收复张家口",
+      "url": "https://dangshi.people.com.cn/BIG5/n1/2018/0816/c85037-30231704.html",
+      "publisher": "人民政协报／人民网",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    }
+  },
+  "phases": [
+    {
+      "id": "reference",
+      "label": "全战役参战参考（非同日部署）",
+      "date": {
+        "label": "1945.08至1945.09",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "ZJK_REVIEW",
+            "locator": "20至23日对拒降部队攻坚；平北10、40团进军"
+          }
+        ]
+      },
+      "scope": "保留累计参战身份；不宣称所有单位在战役开端同时到场。",
+      "evidence": [
+        {
+          "source_id": "ZJK_REVIEW",
+          "locator": "20至23日对拒降部队攻坚；平北10、40团进军"
+        }
+      ]
+    },
+    {
+      "id": "zhangjiakou_aug20",
+      "label": "8月20日张家口进攻局部",
+      "date": {
+        "label": "1945-08-20",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "ZJK_REVIEW",
+            "locator": "20至23日对拒降部队攻坚；平北10、40团进军"
+          }
+        ]
+      },
+      "scope": "只绑定张家口一段地面进攻；日本宣布投降不等于当地全员自动缴械，接收和投降清点仍需独立过程。",
+      "evidence": [
+        {
+          "source_id": "ZJK_REVIEW",
+          "locator": "20至23日对拒降部队攻坚；平北10、40团进军"
+        }
+      ],
+      "execution_window": {
+        "start": "1945-08-20T08:00",
+        "end": "1945-08-20T14:00",
+        "kind": "model_scope_limit",
+        "note": "本日局部计算假设窗口，钟点不作史实命令；超窗须另核后续部队与兵种，不能自动继承为全会战。",
+        "evidence": [
+          {
+            "source_id": "ZJK_REVIEW",
+            "locator": "20至23日对拒降部队攻坚；平北10、40团进军"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 40.78341,
+          "lng": 114.87139
+        },
+        "radius_km": 22,
+        "kind": "model_scope_limit",
+        "note": "地名附近的计算区域假设，以现代参考点或文字地域为中心；不是已测绘的历史阵地、战线或射界。",
+        "evidence": [
+          {
+            "source_id": "ZJK_REVIEW",
+            "locator": "20至23日对拒降部队攻坚；平北10、40团进军"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.pingbei_command",
+      "name": "八路军平北军分区指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "军分区",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "ZJK_UNITS",
+          "locator": "段苏权、詹大南率平北部队进军"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "ZJK_UNITS",
+              "locator": "段苏权、詹大南率平北部队进军"
+            }
+          ]
+        },
+        {
+          "phase_id": "zhangjiakou_aug20",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "ZJK_UNITS",
+              "locator": "段苏权、詹大南率平北部队进军"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.pingbei_regiment10",
+      "name": "八路军平北军分区第10团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.pingbei_command",
+      "evidence": [
+        {
+          "source_id": "ZJK_UNITS",
+          "locator": "进军张家口的10、40团及后续市区作战"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "ZJK_UNITS",
+              "locator": "进军张家口的10、40团及后续市区作战"
+            }
+          ]
+        },
+        {
+          "phase_id": "zhangjiakou_aug20",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "ZJK_UNITS",
+              "locator": "进军张家口的10、40团及后续市区作战"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.pingbei_regiment40",
+      "name": "八路军平北军分区第40团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.pingbei_command",
+      "evidence": [
+        {
+          "source_id": "ZJK_UNITS",
+          "locator": "进军张家口的10、40团及后续市区作战"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "ZJK_UNITS",
+              "locator": "进军张家口的10、40团及后续市区作战"
+            }
+          ]
+        },
+        {
+          "phase_id": "zhangjiakou_aug20",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "ZJK_UNITS",
+              "locator": "进军张家口的10、40团及后续市区作战"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.zhangjiakou_garrison",
+      "name": "日军张家口地区部队（下级番号未核）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "地区部队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "ZJK_REVIEW",
+          "locator": "20至23日对拒不投降日伪军攻坚；不以全驻蒙军为初始实体"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "ZJK_REVIEW",
+              "locator": "20至23日对拒不投降日伪军攻坚；不以全驻蒙军为初始实体"
+            }
+          ]
+        },
+        {
+          "phase_id": "zhangjiakou_aug20",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "ZJK_REVIEW",
+              "locator": "20至23日对拒不投降日伪军攻坚；不以全驻蒙军为初始实体"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.puppet.zhangjiakou_garrison",
+      "name": "张家口伪军部队（下级番号未核）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "守备部队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "ZJK_UNITS",
+          "locator": "伪军守备、撤退与最后少数抵抗，不强制复制历史投降数量"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "ZJK_UNITS",
+              "locator": "伪军守备、撤退与最后少数抵抗，不强制复制历史投降数量"
+            }
+          ]
+        },
+        {
+          "phase_id": "zhangjiakou_aug20",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "ZJK_UNITS",
+              "locator": "伪军守备、撤退与最后少数抵抗，不强制复制历史投降数量"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.pingbei_new_regiment6",
+      "name": "八路军平北军分区新编第6团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "ZJK_UNITS",
+          "locator": "宣化至南口间破击交通，非本局部市区部队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "ZJK_UNITS",
+              "locator": "宣化至南口间破击交通，非本局部市区部队"
+            }
+          ]
+        },
+        {
+          "phase_id": "zhangjiakou_aug20",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "ZJK_UNITS",
+              "locator": "宣化至南口间破击交通，非本局部市区部队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    }
+  ]
+}

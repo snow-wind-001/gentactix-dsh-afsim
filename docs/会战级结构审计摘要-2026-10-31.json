@@ -1,0 +1,375 @@
+{
+  "format": "campaign-structural-audit-1",
+  "created_at": "2026-10-31T04:21:27.080334+00:00",
+  "scope": "只检查本地来源结构与模板入口；未联网复核原件，未运行真实模型或完整历史会战；不读取存档和配置。",
+  "readiness_warning": "hi.readiness固定返回过程未认证，不能把该字段当全场景实测成绩；本表另计模板准入。",
+  "all_version_count": 53,
+  "defaults": {
+    "profiles": 45,
+    "nodes": 559,
+    "phases": 103,
+    "template_ready_phases": 57,
+    "profiles_with_local_template": 43,
+    "campaign_selection_ready": 42,
+    "coverage_all_true": 0,
+    "non_null_facts": {
+      "personnel": 0,
+      "equipment": 0,
+      "position": 1
+    },
+    "roles": {
+      "command": 135,
+      "formation": 404,
+      "support": 17,
+      "aviation": 3
+    },
+    "local_actor_distribution": {
+      "1": 6,
+      "2": 19,
+      "3": 15,
+      "4": 9,
+      "5": 3,
+      "6": 2,
+      "9": 2,
+      "12": 1
+    }
+  },
+  "latest": {
+    "profiles": 45,
+    "nodes": 578,
+    "phases": 106,
+    "template_ready_phases": 59,
+    "profiles_with_local_template": 43,
+    "campaign_selection_ready": 43,
+    "coverage_all_true": 0,
+    "non_null_facts": {
+      "personnel": 0,
+      "equipment": 0,
+      "position": 1
+    },
+    "roles": {
+      "command": 136,
+      "formation": 422,
+      "support": 17,
+      "aviation": 3
+    },
+    "local_actor_distribution": {
+      "1": 6,
+      "2": 19,
+      "3": 15,
+      "4": 9,
+      "5": 3,
+      "6": 2,
+      "9": 2,
+      "12": 1,
+      "15": 2
+    }
+  },
+  "editorial": {
+    "anti_japanese_war": {
+      "forces.csv": 48,
+      "timeline.csv": 109,
+      "figures.csv": 60,
+      "verification_gaps.csv": 55,
+      "sources": 45
+    },
+    "long_march": {
+      "forces.csv": 45,
+      "timeline.csv": 116,
+      "figures.csv": 52,
+      "verification_gaps.csv": 49,
+      "sources": 37
+    }
+  },
+  "unexpected_template_errors": [
+    {
+      "profile": "AJ09-changsha2",
+      "version": "1.0.0",
+      "phase": "dayun_sep7",
+      "type": "KeyError",
+      "error": "'DAYUN_PUBLISHER'"
+    }
+  ],
+  "input_sha256": {
+    "data/historical_initial/AJ01-shanghai/1.0.0.json": "bd82c9761bf00566a2437b3d1b7c258954ec749add8bc129028d02b99cd85660",
+    "data/historical_initial/AJ02-taiyuan/1.0.0.json": "6dff1fed04e442f0edc171fdc5e41b945d86cad12a49e71fafe9b7ce23d704bb",
+    "data/historical_initial/AJ03-pingxingguan/1.0.0.json": "2c05497ed65c6fb119f250d116c352fe21549af170bda564164493370916cc2d",
+    "data/historical_initial/AJ04-xuzhou/1.0.0.json": "67a6a420209ea0663a1ef0f1487f4b0591695156b2bc974836e16eff593b130f",
+    "data/historical_initial/AJ04-xuzhou/1.1.0.json": "d5195787bd20056cbd7e7f43d40acd6a38a01ab9b1ca87213fd52aea924a9ce4",
+    "data/historical_initial/AJ04-xuzhou/1.2.0.json": "ba390fadb6f27f61cc0787a823e2869a06f0c66e12cd40c7b9e7f5e54b6f2ba3",
+    "data/historical_initial/AJ05-taierzhuang/1.0.0.json": "2643cf392735566856338487543c2f0657d63f774d401ab103d4b7bf51ff18d6",
+    "data/historical_initial/AJ06-wuhan/1.0.0.json": "c5efd6296c7b1ec4208296599016e53de89a016be953427447a85df62c305c60",
+    "data/historical_initial/AJ06-wuhan/1.1.0.json": "381ce58ac1c8ee07dfdc124dc487fcaedcba00bca20f66d8696ecf05438fe367",
+    "data/historical_initial/AJ07-wanjialing/1.0.0.json": "b67c0e1c725d379bd2c358b9e26c573d08d388985eb46f525a7008a10d38c6ff",
+    "data/historical_initial/AJ08-changsha1/1.0.0.json": "9e1481632dbf8a2e2614e752899d3a959d15b7809cf107d388ad510cd1742aa0",
+    "data/historical_initial/AJ08-changsha1/1.1.0.json": "ccfe241614f5675820a15292b8392b17743d34643389d3c0e74a7c611176839e",
+    "data/historical_initial/AJ09-changsha2/1.0.0.json": "866e3ca36fc5993a772a857c49fc2015f2aa009ff0f0ae66555a8787cd964ddd",
+    "data/historical_initial/AJ09-changsha2/1.1.0.json": "0730b965c70d280e84f31077ba93368972e389224822895bed587975fd8e2413",
+    "data/historical_initial/AJ10-changsha3/1.0.0.json": "ec684e07ce0cbffe20f02aaccdc0917f8b4606866086139ff3ad1ed6d6692cff",
+    "data/historical_initial/AJ11-kunlun/1.0.0.json": "b8182fae5fb27ee1518168c4d04e3cec766e14c9b4dcfb9e17568ee48d010266",
+    "data/historical_initial/AJ12-ichigo/1.0.0.json": "52a379197611702272d4a93c95dab1e2a572707c16b478a895c6ac2aaa5f9899",
+    "data/historical_initial/AJ13-hengyang/1.0.0.json": "ea4c6bba4199079c10d6bfd37c2c13dc7e787a37eb175e0866c209657651c421",
+    "data/historical_initial/AJ14-hundred/1.0.0.json": "499b16d0309c9affcce9ea67db8a8b2d6488e2f6e4a79232a8b5ea2f15a103c4",
+    "data/historical_initial/AJ15-jizhong/1.0.0.json": "84087815f1f6f9a63ecde230ab7c42a85324d500671f408c21efbce9e744d2ea",
+    "data/historical_initial/AJ16-counter1944/1.0.0.json": "b3e43ee87680667574c8b14ce4e5c2620487b5cf77f288a31237b0ceed1f342c",
+    "data/historical_initial/AJ17-cheqiao/1.0.0.json": "7dd87a78a74795c2c45a935e61ce00adf9ffd136808ccbebc1883efa475b2994",
+    "data/historical_initial/AJ17-cheqiao/1.1.0.json": "47288b2aa86402d5dc127484e74f0cba00838a0467c26cd5333de118f44a7bb0",
+    "data/historical_initial/AJ17-cheqiao/1.2.0.json": "31905eed34423126a4d0304c45f0406e38aa2cf5a6d7d2e95fec404efca483e2",
+    "data/historical_initial/AJ17-cheqiao/1.3.0.json": "9da3defc13ef97325f07c1ba036459372ef6582eebcb646f4ae6ee0ce1bb4de7",
+    "data/historical_initial/AJ18-xiangxi/1.0.0.json": "7e8d42f623e5ad9037f38c7eee898bdc3a31006db521e182ebd6ae6b14c66d95",
+    "data/historical_initial/AJ19-burma/1.0.0.json": "48e5c58a73a5e27a6e32cfb200a9ac4f72783c2dbec01494a1720957f122b572",
+    "data/historical_initial/AJ20-reception/1.0.0.json": "956c1f27128aedfcb93239a29f7f0e6dde13f4b414e74f631e1125af84508fbd",
+    "data/historical_initial/CP01-changping/1.0.0.json": "4f3baef4b4086d92bdc39289cacbfb1a8e11cb50544fdb7015b751cc745d649c",
+    "data/historical_initial/KW01-first/1.0.0.json": "579744550cde33fb7810b65a7340f21ab4f6aca28413596398d28fa94a482a60",
+    "data/historical_initial/KW02-second/1.0.0.json": "dc6981f7663daff66ac2852190877c827b4a7cc011390e3ae1fc6cf641a0ece9",
+    "data/historical_initial/KW03-third/1.0.0.json": "c4a1c11e1571177898e47e32cddb7700d68a2ef565ca7846494fde31ddc6bb27",
+    "data/historical_initial/KW04-fourth/1.0.0.json": "2752be8a4d8d4b601d1d8a821bc31090e2a52a92d261059669f73e4b151404eb",
+    "data/historical_initial/KW05-fifth/1.0.0.json": "40cbac2ddc548d910ca41f92f5a5de8bcbd0e4824629051569ee5cc085f78abd",
+    "data/historical_initial/KW06-autumn1951/1.0.0.json": "8164d6970381adddf1a3e9debd2af69ccc9e54c4d1817a168218de8b89ea4a0d",
+    "data/historical_initial/KW07-counter1952/1.0.0.json": "c9b0a3d82e7f7c45355b3b769cbde049bd752209e3eab207cf4d50592300ea78",
+    "data/historical_initial/KW08-sangganling/1.0.0.json": "9df031c73a774fac037117165cfb935671c13c334d1808300bb9128474cfdd38",
+    "data/historical_initial/KW09-summer1953/1.0.0.json": "6401183cc4441be096ecfccbfffc2d1e1dfc137caffc89083859431ec3f87891",
+    "data/historical_initial/LM01-xiangjiang/1.0.0.json": "6eb6a904329ec427f40ebcd6e6df830936748a97427df8cd451a1f0c9f37002e",
+    "data/historical_initial/LM02-wujiang/1.0.0.json": "1f012a06c19afdd72c55f2bc077d7b6d4f3b260f4381210e97cb1690788a024d",
+    "data/historical_initial/LM03-chishui/1.0.0.json": "a2ad42deda90c56655b894c833ac3ee1992423fbe495845ae2149972fbe434a3",
+    "data/historical_initial/LM04-jinsha1935/1.0.0.json": "49daabaa6a457a6a505fa2c760d4284782e8856b3c30ea7831f60282ea20e0a4",
+    "data/historical_initial/LM05-dadu/1.0.0.json": "eaa3b45861bef39ed16ddd6f420e5b4a4dc88840b262db9272529c9797304340",
+    "data/historical_initial/LM06-maogong/1.0.0.json": "baf144ae920c68c91aac40456a840f7e60996c2ff6f2586269a4f4d7c19a6b39",
+    "data/historical_initial/LM07-baozuo/1.0.0.json": "69546eaa932c5304d0fed84c5fa176537091c2ecb6893b5c331a04f9fa293857",
+    "data/historical_initial/LM08-lazikou/1.0.0.json": "1f95a44b598635d054bdf899ac13ed0a945985f9a0487a7c4fe1659a706cd45a",
+    "data/historical_initial/LM09-red25/1.0.0.json": "9be2df24db341c9d47fbd022faf759c0df01f7047980e1759ca6a6cd971efec5",
+    "data/historical_initial/LM10-jialing/1.0.0.json": "0f300967c1f5745869132af888167f9ba4b3295ad6b776017fb3a259c029df58",
+    "data/historical_initial/LM11-baizhang/1.0.0.json": "e55f93696f01bc893ccc0b63a267a7dd99746666fd9ae11e47ee7ee5ee43c787",
+    "data/historical_initial/LM12-wumeng/1.0.0.json": "e151b7c05053c4816d751f100a3b902144531285150db9f98ee6f66416b4e8dc",
+    "data/historical_initial/LM13-jinsha1936/1.0.0.json": "f0aed8a54d8c0ffeb429157612fa8dad55da84288c763851858cb82369f05a19",
+    "data/historical_initial/LM14-zhiluo/1.0.0.json": "9065717621d0523bfba9ee9522f5edcb335b121068abcc4c2f8308553b6ac3e8",
+    "data/historical_initial/LM15-reunion/1.0.0.json": "9a3af6d51ed75d83f6c3004aafd928bc865b8ad90a6b0c40db1ffe15473a77c9",
+    "data/historical_initial/index.json": "8a025747955e16500d1b3ff06631121693ea90171373709ac91a06c1c928a70d",
+    "data/historical_objectives.json": "803a1926bcf07d00571813fe9345fec6479eed98034c62c5745fe4a34b27d652",
+    "gentactix/historical_initial.py": "37be968af87f3eb93faeae97fb2e13d9fdf7324cd08943116eae7e03914d7883",
+    "gentactix/historical_operations.py": "ea6ce80a826636318680866b6c32eae8bc280e69924e20fb8e0d1233a3f78fb4",
+    "gentactix/campaign_scope.py": "56c5b2bea9e20f217efb5b61ff2f31a01165c2644aa6823efc1e3363d5fa2b9c",
+    "gentactix/force_organization.py": "1452136d3e3d9dd2560aed8942a4c05946ccf3e998226e347de4649e06a4b5a4",
+    "gentactix/phase_continuity.py": "191bce96ef81bb8ad53e74e32f6bd5ee85ef782b067899701331aac40f7d3075",
+    "backend/phase_routes.py": "61190b2b962ca10e27a3b2b55e6eec47d79448680a2c4c70b538cc5d43266246",
+    "backend/afsim_state.py": "9e3bb4fae5e3e6b9cd7d2a8d3fd182dc3246e98df495e99cd933d61d65e4966d",
+    "backend/scenario_builder.py": "3b281906863b13172cd457a42f3421928b1345308c80e5a38d9ac67674316390",
+    "backend/scenario_assembly.py": "4c40c5d8a19a638c792ca59c89dd03442c63581602f772f5937b4227e08abfba",
+    "tools/qa/campaign_readiness_audit.py": "f76d2ea4393aa47ca1236d2e40a204611b9ab9b6cec6336de982643a60f919c1",
+    "data/anti_japanese_war/sources.json": "ba86871bed94a3953a6b3ebe3343c0d16ff78d8ba2227321f77173b8df78a6b2",
+    "data/anti_japanese_war/scenarios.json": "31a7f2b091b53a40d6f74f3f73982c6069bf0155f9d86822cd792870d97abd7f",
+    "data/anti_japanese_war/forces.csv": "193ae495bf5a75b4c84c4d1069344c9f852ee814b47c16fcc03167fde6f28459",
+    "data/anti_japanese_war/timeline.csv": "d37597169308acc999dc99c40eed89346a044637d1a99810933ae77660f050f0",
+    "data/anti_japanese_war/figures.csv": "89ef9daa2ee355508acb89f7ce0aed50e4abe6861049122d85016d8f24be33a0",
+    "data/anti_japanese_war/verification_gaps.csv": "1f78bd9656fcfe7e492995af223185c94ec943e010bfd89a6017ea65b5b29be6",
+    "data/long_march/sources.json": "53afc001e1555513d898da18d67f2c12fc02569972b08806300a0cef3cd6bdb8",
+    "data/long_march/scenarios.json": "ad3a8f11febaaac59925a259cb5e0de6c994847b06665305c28e27b12317a6c0",
+    "data/long_march/forces.csv": "aa59889a86ee0cc47ed3bcd229bd910a3db417868312064cb27e6ab74c3bab67",
+    "data/long_march/timeline.csv": "d1afb82fc702b0a8cbd107cadd8d94a306690885840716344adcfafaeef54a9f",
+    "data/long_march/figures.csv": "0423ef1ae39b7af483eee354d4f915a8a114ba07cd2eca441abc27a5086b03f5",
+    "data/long_march/verification_gaps.csv": "c8bd968138c02fd83b1c25ddbd43cbe95873844f768942b4b426c05f81144cee"
+  },
+  "verification": {
+    "targeted_modules": 9,
+    "targeted_cases": 83,
+    "status": "passed",
+    "new_readiness_gate": "failed",
+    "group_observation_probe": "confirmed_ambiguity",
+    "source_render_checks": {
+      "anti_japanese_war": "passed",
+      "long_march": "passed"
+    },
+    "live_model_this_audit": "not_run",
+    "full_campaign_this_audit": "not_run"
+  },
+  "formation_conversion_update": {
+    "date": "2026-11-02",
+    "status": "allocation_preview_verified_runtime_admission_incomplete",
+    "report": "docs/有损实态分合兵预览与准入契约-2026-11-02.md",
+    "new_regression_cases": 27,
+    "related_tests": {
+      "cases": 53,
+      "passed": true,
+      "evidence": ".cache/qa/formation-conversion-2026-11-02/native-epoch-green.log"
+    },
+    "actual_turns": [
+      {
+        "engine": "afsim",
+        "session_id": "8fe460db60ff",
+        "turn": 1,
+        "losses": 1339,
+        "preview_only": true,
+        "runtime_admitted": false
+      },
+      {
+        "engine": "narrative",
+        "session_id": "b052e09aaa15",
+        "turn": 1,
+        "losses": 1106,
+        "preview_only": true,
+        "runtime_admitted": false
+      }
+    ],
+    "actual_nonzero_equipment": {
+      "session_id": "593ebb19e334",
+      "committed": 164,
+      "operational": 143,
+      "damaged": 12,
+      "destroyed": 9,
+      "passed": true,
+      "historically_calibrated": false
+    },
+    "actual_native_queries": {
+      "afsim": {
+        "passed": true,
+        "seconds": 22.55,
+        "evidence": ".cache/qa/formation-conversion-2026-11-02/afsim/chat-contextfixed-review.json"
+      },
+      "narrative": {
+        "passed": true,
+        "seconds": 24.89,
+        "evidence": ".cache/qa/formation-conversion-2026-11-02/narrative/chat-finalcold-review.json"
+      },
+      "public_tool_evidence": ".cache/qa/formation-conversion-2026-11-02/native-tool-audit.json",
+      "original_failed_query_preserved": true,
+      "general_prose_accuracy_accepted": false
+    },
+    "cold_restore": {
+      "case_count": 3,
+      "includes_nonzero_equipment_debts": true,
+      "whole_world_history_chat_commands_organization_exact": true,
+      "two_page_preview_exact": true,
+      "evidence": ".cache/qa/formation-conversion-2026-11-02/cold-three-review.json"
+    },
+    "fixes": [
+      "Native operation context carries product_mode and role_epoch",
+      "new allocation core handles native combat receipt and equipment carry provenance without duplication"
+    ],
+    "runtime_entity_replacement": false,
+    "command_task_goal_migration": false,
+    "physical_split_merge_ui": false,
+    "full_offline_gate_pending": false,
+    "complete_history_cells_remain_not_run": 270,
+    "installed_or_published": false,
+    "next_contracts": [
+      "unique root ownership and active leaf roster",
+      "commands, persistent tasks and goal selector continuity",
+      "AFSIM/DSH identity and scale integration",
+      "physical split/merge UI and actual workflow acceptance"
+    ],
+    "offline_gate": {
+      "status": "passed_with_explicit_targeted_rerun",
+      "groups": 138,
+      "passed_groups": 138,
+      "failed_groups": 0,
+      "unittest_cases": 1569,
+      "skipped": 0,
+      "summed_seconds": 852.05,
+      "raw_full_gate_failed_groups": 1,
+      "targeted_rerun_cases": 25,
+      "live_model_calls": false,
+      "evidence": ".cache/qa/formation-conversion-2026-11-02/final-offline-gate/acceptance-results.json",
+      "raw_evidence": ".cache/qa/formation-conversion-2026-11-02/final-offline-gate/results.json",
+      "scope": "Full gate plus explicit test-only whitelist remediation; original failure retained, eight frozen sources unchanged"
+    },
+    "preservation": {
+      "protected_files": 68,
+      "protected_unchanged": true,
+      "frozen_sources": 8,
+      "followup_test_files": 1,
+      "source_unchanged": true
+    }
+  },
+  "formation_ownership_update": {
+    "date": "2026-11-02",
+    "status": "exclusive_ownership_and_detached_identity_verified_runtime_migration_incomplete",
+    "report": "docs/运行中编组唯一归属与身份候选验收-2026-11-02.md",
+    "new_registry_tests": 25,
+    "new_conversion_tests": 2,
+    "related_tests": {
+      "passed": true,
+      "cases": 140,
+      "evidence": ".cache/qa/formation-ownership-2026-11-02/related-final.log"
+    },
+    "whole_checkpoint_old_guard_acceptance_reproduced": ".cache/qa/formation-ownership-2026-11-02/legacy-checkpoint-ab.json",
+    "recorded_execution_state_verification": {
+      "cases": 3,
+      "new_turns_executed": 0,
+      "world_history_commands_organization_and_disk_unchanged": true,
+      "candidate_only_json_restore": true,
+      "evidence": ".cache/qa/formation-ownership-2026-11-02/actual-preview-review.json"
+    },
+    "native_chat": {
+      "passed": true,
+      "seconds": 24.74,
+      "public_tool_evidence": ".cache/qa/formation-ownership-2026-11-02/native-tool-review.json",
+      "answer": {
+        "turn": 1,
+        "personnel_current": 8661,
+        "casualties": 1339,
+        "gear_committed": 164,
+        "ownership_verified": true,
+        "current_entities": 6,
+        "candidate_entities": 7,
+        "preview_rows": 2,
+        "runtime_admitted": false,
+        "executed": false
+      },
+      "general_model_prose_accepted": false
+    },
+    "historical_parent_fixture": {
+      "source_version": "1.3.0",
+      "phase": "oct7_attack",
+      "actor": "ww2.cn.army74",
+      "children": [
+        "ww2.cn.division51",
+        "ww2.cn.division58"
+      ],
+      "estimated_residual": true,
+      "published_window_changed": false,
+      "historical_strength_calibrated": false
+    },
+    "source_structure_audit": {
+      "profiles": 45,
+      "valid_versions": 56,
+      "invalid_versions": [],
+      "default_profiles_with_parent_candidates": 5,
+      "default_parent_phase_pairs": 13,
+      "default_complete_coverage_pairs": 0,
+      "any_version_profiles_with_parent_candidates": 6,
+      "evidence": "docs/会战级分合兵资料结构盘点-2026-11-02.json",
+      "scope": "Local source structure only; not historical verification, deployment, loaded roster or complete-runtime acceptance"
+    },
+    "runtime_roster_admitted": false,
+    "shared_identity_reference_integrated_in_all_validators": false,
+    "commands_tasks_goals_platforms_migrated": false,
+    "full_offline_gate_pending": false,
+    "complete_history_cells_not_run": 270,
+    "installed_or_published": false,
+    "next": [
+      "shared immutable reference in frozen identity validators",
+      "participation/campaign actor migration",
+      "command and task ownership, frozen goal selectors",
+      "AFSIM/DSH scale and identity, transaction persistence",
+      "interactive physical split/merge and complete history acceptance"
+    ],
+    "offline_gate": {
+      "groups": 139,
+      "passed_groups": 139,
+      "failed_groups": 0,
+      "unittest_cases": 1596,
+      "skipped": 0,
+      "summed_seconds": 964.06,
+      "status": "passed",
+      "live_model_calls": false,
+      "evidence": ".cache/qa/formation-ownership-2026-11-02/final-offline-gate/results.json",
+      "scope": "Full completed canonical gate, seven frozen sources unchanged; model/state-source evidence separate"
+    },
+    "preservation": {
+      "protected_files": 68,
+      "source_checkpoints": 3,
+      "frozen_sources": 7,
+      "unchanged": true
+    }
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ11-kunlun",
+  "version": "1.0.0",
+  "battle": "抗日战争-桂南会战与昆仑关攻坚-1939.11至1940.01",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "仅荣誉第1师正面方向与当地日军守备；五塘六塘阻援、增援及末期第159师另列参考。",
+      "仅提供有来源的具名参战框架。人数、分类装备、库存和逐单位阵地缺载，保持null；参数化配置须独立说明估计。",
+      "阶段时钟、区域半径和胜负阈值是计算假设；不代表已完成全会战复现、航空舰炮/后续增援或历史战损标定。"
+    ]
+  },
+  "sources": {
+    "KL_ARCHIVE": {
+      "title": "昆仑关大捷（档案专题）",
+      "url": "https://www.saac.gov.cn/zt/2014-09/09/content_65801_2.htm",
+      "publisher": "国家档案局",
+      "evidence_kind": "archive_publication",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    },
+    "KL_MEMOIR": {
+      "title": "忆抗战二事",
+      "url": "https://www.huangpu.org.cn/hpsy/201209/t20120921_3112111.html",
+      "publisher": "黄埔军校同学会",
+      "evidence_kind": "published_memoir",
+      "original_archive_examined": false,
+      "limitations": "参战者回忆，未逐页核战时日志；只取18日荣誉1师与战车支援身份，不据此确认库存、战损或全旅团覆灭。"
+    },
+    "KL_LATER": {
+      "title": "1939年12月4日 昆仑关失陷",
+      "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11737797.html",
+      "publisher": "盐田档案与史志信息网",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    }
+  },
+  "phases": [
+    {
+      "id": "reference",
+      "label": "全战役参战参考（非同日部署）",
+      "date": {
+        "label": "1939.11至1940.01",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "KL_ARCHIVE",
+            "locator": "18日第5军反攻；目录中荣誉1师17至26日经过要图"
+          }
+        ]
+      },
+      "scope": "保留累计参战身份；不宣称所有单位在战役开端同时到场。",
+      "evidence": [
+        {
+          "source_id": "KL_ARCHIVE",
+          "locator": "18日第5军反攻；目录中荣誉1师17至26日经过要图"
+        }
+      ]
+    },
+    {
+      "id": "kunlun_dec18",
+      "label": "12月18日昆仑关正面反攻",
+      "date": {
+        "label": "1939-12-18",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "KL_ARCHIVE",
+            "locator": "18日第5军反攻；目录中荣誉1师17至26日经过要图"
+          }
+        ]
+      },
+      "scope": "仅荣誉第1师正面方向与当地日军守备；五塘六塘阻援、增援及末期第159师另列参考。",
+      "evidence": [
+        {
+          "source_id": "KL_ARCHIVE",
+          "locator": "18日第5军反攻；目录中荣誉1师17至26日经过要图"
+        }
+      ],
+      "execution_window": {
+        "start": "1939-12-18T06:00",
+        "end": "1939-12-18T14:00",
+        "kind": "model_scope_limit",
+        "note": "本日局部计算假设窗口，钟点不作史实命令；超窗须另核后续部队与兵种，不能自动继承为全会战。",
+        "evidence": [
+          {
+            "source_id": "KL_ARCHIVE",
+            "locator": "18日第5军反攻；目录中荣誉1师17至26日经过要图"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 23.08333,
+          "lng": 108.7
+        },
+        "radius_km": 12,
+        "kind": "model_scope_limit",
+        "note": "地名附近的计算区域假设，以现代参考点或文字地域为中心；不是已测绘的历史阵地、战线或射界。",
+        "evidence": [
+          {
+            "source_id": "KL_ARCHIVE",
+            "locator": "18日第5军反攻；目录中荣誉1师17至26日经过要图"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.corps5",
+      "name": "第5军指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KL_ARCHIVE",
+          "locator": "杜聿明第5军反攻"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "KL_ARCHIVE",
+              "locator": "杜聿明第5军反攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "kunlun_dec18",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KL_ARCHIVE",
+              "locator": "杜聿明第5军反攻"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.honor_division1",
+      "name": "荣誉第1师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.corps5",
+      "evidence": [
+        {
+          "source_id": "KL_MEMOIR",
+          "locator": "18日荣誉1师在炮兵和战车掩护下向昆仑关攻击"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "KL_MEMOIR",
+              "locator": "18日荣誉1师在炮兵和战车掩护下向昆仑关攻击"
+            }
+          ]
+        },
+        {
+          "phase_id": "kunlun_dec18",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KL_MEMOIR",
+              "locator": "18日荣誉1师在炮兵和战车掩护下向昆仑关攻击"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.kunlun_garrison",
+      "name": "日军昆仑关守备部队（下级番号未核）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "守备部队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KL_ARCHIVE",
+          "locator": "昆仑关守敌；介绍的第5师团不等于全师同时处于关口"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "KL_ARCHIVE",
+              "locator": "昆仑关守敌；介绍的第5师团不等于全师同时处于关口"
+            }
+          ]
+        },
+        {
+          "phase_id": "kunlun_dec18",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KL_ARCHIVE",
+              "locator": "昆仑关守敌；介绍的第5师团不等于全师同时处于关口"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division5",
+      "name": "日军第5师团指挥系统",
+      "team": "blue",
+      "role": "command",
+      "echelon": "师团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KL_ARCHIVE",
+          "locator": "昆仑关方向第5师团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "KL_ARCHIVE",
+              "locator": "昆仑关方向第5师团"
+            }
+          ]
+        },
+        {
+          "phase_id": "kunlun_dec18",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KL_ARCHIVE",
+              "locator": "昆仑关方向第5师团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division159",
+      "name": "第159师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KL_LATER",
+          "locator": "28日至31日反攻中出现159师，不能提前到18日"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "KL_LATER",
+              "locator": "28日至31日反攻中出现159师，不能提前到18日"
+            }
+          ]
+        },
+        {
+          "phase_id": "kunlun_dec18",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "KL_LATER",
+              "locator": "28日至31日反攻中出现159师，不能提前到18日"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    }
+  ]
+}

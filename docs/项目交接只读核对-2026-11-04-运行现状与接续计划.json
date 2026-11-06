@@ -1,0 +1,321 @@
+{
+  "format": "gentactix-readonly-handover-1",
+  "generated_at": "2026-11-04T07:01:08.468324+08:00",
+  "scope": "仅文档与只读运行保护核对；不是新一轮功能测试、发布或完整历史验收。",
+  "inspection_started_at": "2026-11-04T06:57:34.735166+08:00",
+  "inspection_ended_at": "2026-11-04T07:00:26.895613+08:00",
+  "branch": "main",
+  "head": "b5a38a5d0c440cb41f77edb5ce6261cff1020082",
+  "worktree_start": {
+    "tracked_changed": 132,
+    "untracked_entries": 1018
+  },
+  "worktree_after_markdown": {
+    "tracked_changed": 132,
+    "untracked_entries": 1019
+  },
+  "source_freeze_count": 581,
+  "original_selected_file_count": 1382,
+  "protected_file_count": 114,
+  "changed_original_selected_files": [],
+  "changed_protected_files": [],
+  "changed_frozen_source_files": [],
+  "final_gate_source_differences": [],
+  "services_unchanged": true,
+  "changed_services": [],
+  "readable_session_count": 17,
+  "changed_sessions": [],
+  "active_sessions_at_end": [],
+  "services": [
+    {
+      "port": 19358,
+      "readable": true,
+      "pid": 186277,
+      "loaded_revision": "a4a94121b09d081c",
+      "restart_required": true,
+      "session_count": 2,
+      "error_class": null,
+      "unchanged_during_handover": true
+    },
+    {
+      "port": 19368,
+      "readable": true,
+      "pid": 474702,
+      "loaded_revision": "a54b60df09972c07",
+      "restart_required": true,
+      "session_count": 3,
+      "error_class": null,
+      "unchanged_during_handover": true
+    },
+    {
+      "port": 19378,
+      "readable": false,
+      "pid": null,
+      "loaded_revision": null,
+      "restart_required": null,
+      "session_count": null,
+      "error_class": "URLError",
+      "unchanged_during_handover": true
+    },
+    {
+      "port": 19388,
+      "readable": true,
+      "pid": 807848,
+      "loaded_revision": "a30e7949ab0f0b8e",
+      "restart_required": true,
+      "session_count": 0,
+      "error_class": null,
+      "unchanged_during_handover": true
+    },
+    {
+      "port": 19398,
+      "readable": true,
+      "pid": 943892,
+      "loaded_revision": "01cff3337cb12b5e",
+      "restart_required": true,
+      "session_count": 2,
+      "error_class": null,
+      "unchanged_during_handover": true
+    },
+    {
+      "port": 19408,
+      "readable": true,
+      "pid": 1550193,
+      "loaded_revision": "93820d313d09a5f2",
+      "restart_required": true,
+      "session_count": 3,
+      "error_class": null,
+      "unchanged_during_handover": true
+    },
+    {
+      "port": 19418,
+      "readable": true,
+      "pid": 1698428,
+      "loaded_revision": "548d0551cfb4ca30",
+      "restart_required": true,
+      "session_count": 1,
+      "error_class": null,
+      "unchanged_during_handover": true
+    },
+    {
+      "port": 19428,
+      "readable": true,
+      "pid": 1821928,
+      "loaded_revision": "461427bed03f631f",
+      "restart_required": true,
+      "session_count": 0,
+      "error_class": null,
+      "unchanged_during_handover": true
+    },
+    {
+      "port": 19438,
+      "readable": true,
+      "pid": 2009849,
+      "loaded_revision": "079d6f746cd9f77a",
+      "restart_required": true,
+      "session_count": 2,
+      "error_class": null,
+      "unchanged_during_handover": true
+    },
+    {
+      "port": 19448,
+      "readable": true,
+      "pid": 2222880,
+      "loaded_revision": "ef281ce201b11fd0",
+      "restart_required": false,
+      "session_count": 4,
+      "error_class": null,
+      "unchanged_during_handover": true
+    }
+  ],
+  "sessions": [
+    {
+      "key": "19358:2c51981789fd",
+      "turn": 3,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 4,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19358:041fe52b2b8d",
+      "turn": 1,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 4,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19368:cbb95b02630c",
+      "turn": 7,
+      "active": false,
+      "mission_status": "completed",
+      "unit_count": 7,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19368:fb11ed13786b",
+      "turn": 9,
+      "active": false,
+      "mission_status": "completed",
+      "unit_count": 7,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19368:5f55ddd507a7",
+      "turn": 3,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 3,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19398:bbf384efebe6",
+      "turn": 5,
+      "active": false,
+      "mission_status": "completed",
+      "unit_count": 5,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19398:e1536577f91f",
+      "turn": 5,
+      "active": false,
+      "mission_status": "completed",
+      "unit_count": 5,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19408:50ea78eb1255",
+      "turn": 0,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 8,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19408:49e4e54e39b8",
+      "turn": 6,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 8,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19408:d158461b68cf",
+      "turn": 6,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 8,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19418:47e4c84e7f58",
+      "turn": 0,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 5,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19438:62b07e5ec496",
+      "turn": 26,
+      "active": false,
+      "mission_status": null,
+      "unit_count": 39,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19438:25d97750e762",
+      "turn": 26,
+      "active": false,
+      "mission_status": null,
+      "unit_count": 39,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19448:5ff8ea9a8f51",
+      "turn": 0,
+      "active": false,
+      "mission_status": null,
+      "unit_count": 0,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19448:6eb03d94d778",
+      "turn": 26,
+      "active": false,
+      "mission_status": null,
+      "unit_count": 39,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19448:d6cc3b4b7219",
+      "turn": 0,
+      "active": false,
+      "mission_status": null,
+      "unit_count": 39,
+      "export_and_progress_unchanged": true
+    },
+    {
+      "key": "19448:eeb11a3d896d",
+      "turn": 1,
+      "active": false,
+      "mission_status": null,
+      "unit_count": 39,
+      "export_and_progress_unchanged": true
+    }
+  ],
+  "preexisting_offline": {
+    "port": 19378,
+    "last_known_sessions": [
+      "24f1946c7010",
+      "91ee5e8bf177"
+    ],
+    "fresh_online_verification": false
+  },
+  "prior_final_offline_gate": {
+    "passed": true,
+    "groups": 177,
+    "groups_total": 177,
+    "unittest_cases": 2096,
+    "skips": 0,
+    "summed_seconds": 1178.6,
+    "live_model_calls": false,
+    "frozen_files": 581,
+    "changed": []
+  },
+  "prior_gate_not_rerun_this_task": true,
+  "full_history_270_cells_accepted": false,
+  "preservation_checks_passed": true,
+  "evidence": {
+    "before.json": {
+      "path": ".cache/qa/handover-2026-11-04-06h/before.json",
+      "sha256": "6503ff2b6236e0612ea535b4f48b2547e725aa6f164104bf97f244fa8fab8144"
+    },
+    "after.json": {
+      "path": ".cache/qa/handover-2026-11-04-06h/after.json",
+      "sha256": "1782f043ff4b95fdf7e9d6ba8193818b6d53768c7756ea9d7ca8b7bc98234724"
+    },
+    "capture.py": {
+      "path": ".cache/qa/handover-2026-11-04-06h/capture.py",
+      "sha256": "7788a82d704c9de47ef6187b26b4abcd3643df236e9128eff5ba4088bd6e4f70"
+    }
+  },
+  "actions_performed": [
+    "新增交接Markdown",
+    "只读GET health/sessions/export/progress",
+    "文件SHA256/mtime/bytes前后比较",
+    "新增只读证据与摘要",
+    "文档本地链接与辅助脚本语法检查"
+  ],
+  "actions_not_performed": [
+    "业务或配置修改",
+    "推进已有对局",
+    "模型调用",
+    "重启或停止服务",
+    "编译打包安装",
+    "Git提交或同步",
+    "读取私有推理或凭据正文"
+  ]
+}

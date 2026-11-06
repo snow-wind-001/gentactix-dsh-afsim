@@ -1,0 +1,372 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ02-taiyuan",
+  "version": "1.0.0",
+  "battle": "抗日战争-太原会战-1937.09至1937.11",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "仅忻口正面第9军及独立第5旅的已识别部分；不混同娘子关、平型关和19日阳明堡。",
+      "仅提供有来源的具名参战框架。人数、分类装备、库存和逐单位阵地缺载，保持null；参数化配置须独立说明估计。",
+      "阶段时钟、区域半径和胜负阈值是计算假设；不代表已完成全会战复现、航空舰炮/后续增援或历史战损标定。"
+    ]
+  },
+  "sources": {
+    "TY_ARCHIVE": {
+      "title": "忻口战役（档案专题）",
+      "url": "https://www.saac.gov.cn/zt/2014-08/29/content_64747.htm",
+      "publisher": "国家档案局",
+      "evidence_kind": "archive_publication",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    },
+    "TY_REVIEW": {
+      "title": "追忆太原会战烽烟",
+      "url": "https://www.news.cn/politics/20250723/127634db575747b6bcfc943a435706ad/c.html",
+      "publisher": "新华社",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    }
+  },
+  "phases": [
+    {
+      "id": "reference",
+      "label": "全战役参战参考（非同日部署）",
+      "date": {
+        "label": "1937.09至1937.11",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "TY_ARCHIVE",
+            "locator": "第5师团向忻口进攻与10月17日朱彭电目录"
+          }
+        ]
+      },
+      "scope": "保留累计参战身份；不宣称所有单位在战役开端同时到场。",
+      "evidence": [
+        {
+          "source_id": "TY_ARCHIVE",
+          "locator": "第5师团向忻口进攻与10月17日朱彭电目录"
+        }
+      ]
+    },
+    {
+      "id": "xinkou_oct13",
+      "label": "10月13日忻口正面局部",
+      "date": {
+        "label": "1937-10-13",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "TY_ARCHIVE",
+            "locator": "第5师团向忻口进攻与10月17日朱彭电目录"
+          }
+        ]
+      },
+      "scope": "仅忻口正面第9军及独立第5旅的已识别部分；不混同娘子关、平型关和19日阳明堡。",
+      "evidence": [
+        {
+          "source_id": "TY_ARCHIVE",
+          "locator": "第5师团向忻口进攻与10月17日朱彭电目录"
+        }
+      ],
+      "execution_window": {
+        "start": "1937-10-13T06:00",
+        "end": "1937-10-13T14:00",
+        "kind": "model_scope_limit",
+        "note": "本日局部计算假设窗口，钟点不作史实命令；超窗须另核后续部队与兵种，不能自动继承为全会战。",
+        "evidence": [
+          {
+            "source_id": "TY_ARCHIVE",
+            "locator": "第5师团向忻口进攻与10月17日朱彭电目录"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 38.6025,
+          "lng": 112.73333
+        },
+        "radius_km": 18,
+        "kind": "model_scope_limit",
+        "note": "地名附近的计算区域假设，以现代参考点或文字地域为中心；不是已测绘的历史阵地、战线或射界。",
+        "evidence": [
+          {
+            "source_id": "TY_ARCHIVE",
+            "locator": "第5师团向忻口进攻与10月17日朱彭电目录"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.corps9",
+      "name": "第9军指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "TY_REVIEW",
+          "locator": "郝梦龄第9军参战"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "TY_REVIEW",
+              "locator": "郝梦龄第9军参战"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinkou_oct13",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "TY_REVIEW",
+              "locator": "郝梦龄第9军参战"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division54",
+      "name": "第54师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.corps9",
+      "evidence": [
+        {
+          "source_id": "TY_REVIEW",
+          "locator": "第54师刘家麒在忻口正面作战"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "TY_REVIEW",
+              "locator": "第54师刘家麒在忻口正面作战"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinkou_oct13",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "TY_REVIEW",
+              "locator": "第54师刘家麒在忻口正面作战"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.independent_brigade5",
+      "name": "独立第5旅",
+      "team": "red",
+      "role": "formation",
+      "echelon": "旅",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "TY_REVIEW",
+          "locator": "郑廷珍第5旅；此处不由联合指挥推断其为第9军建制下级"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "TY_REVIEW",
+              "locator": "郑廷珍第5旅；此处不由联合指挥推断其为第9军建制下级"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinkou_oct13",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "TY_REVIEW",
+              "locator": "郑廷珍第5旅；此处不由联合指挥推断其为第9军建制下级"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division5",
+      "name": "日军第5师团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "TY_ARCHIVE",
+          "locator": "专题：第5师团向忻口、太原进攻"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "TY_ARCHIVE",
+              "locator": "专题：第5师团向忻口、太原进攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinkou_oct13",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "TY_ARCHIVE",
+              "locator": "专题：第5师团向忻口、太原进攻"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.regiment769",
+      "name": "八路军第129师第769团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "TY_REVIEW",
+          "locator": "阳明堡夜袭属另一时间和地域，不作为忻口阵地实体"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "TY_REVIEW",
+              "locator": "阳明堡夜袭属另一时间和地域，不作为忻口阵地实体"
+            }
+          ]
+        },
+        {
+          "phase_id": "xinkou_oct13",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "TY_REVIEW",
+              "locator": "阳明堡夜袭属另一时间和地域，不作为忻口阵地实体"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    }
+  ]
+}

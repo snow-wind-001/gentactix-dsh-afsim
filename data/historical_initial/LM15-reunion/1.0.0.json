@@ -1,0 +1,416 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "LM15-reunion",
+  "version": "1.0.0",
+  "battle": "红军长征-甘孜会师至三大主力会师-1936.07.01至1936.10.22",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "有出处的阶段参战身份，不是完整战斗序列。未知实到人数、装备与部队坐标留空；计算值必须单独说明估计依据。",
+      "战役总伤亡、出发兵力和战后残部不能替代阶段初态；不得按回合平摊伤亡或固定史实结局。",
+      "会师日期、庆祝日期和整编日期不是一个事件。7月1日用红2、6军团，7月5日整编才纳入红32军。",
+      "将台堡位置尚未可靠核定，保留既有史料事件但不自动放到会宁。会宁会师只核总部及部队总称，本版不造团级名单。"
+    ]
+  },
+  "sources": {
+    "REUNION": {
+      "title": "红军长征中的会师",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/jt_214147/16418520.html",
+      "publisher": "中国国防报／国防部",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "公开回顾，未核原始名册、逐时命令及实到兵力；仅支持所列身份与过程。"
+    },
+    "GEO_ganzi": {
+      "title": "红军长征-甘孜",
+      "url": "https://www.geonames.org/1810271/",
+      "publisher": "GeoNames；项目2026-10-22地名核验",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代聚落点。不是历史渡口、桥面或阵地；计算半径与部署是模型假设。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "甘孜至三大主力会师参考",
+      "date": {
+        "label": "1936年7月1日至10月22日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "甘孜、会宁、将台堡分述"
+          }
+        ]
+      },
+      "scope": "甘孜至三大主力会师参考",
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "甘孜、会宁、将台堡分述"
+        }
+      ]
+    },
+    {
+      "id": "ganzi_assembly",
+      "label": "甘孜会师集结",
+      "date": {
+        "label": "1936年7月1日至2日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "红2、6军团1日全部集结、2日庆祝"
+          }
+        ]
+      },
+      "scope": "已核集结的两个军团；红30军接应发生于绒坝岔，不自动搬入甘孜。",
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "红2、6军团1日全部集结、2日庆祝"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 31.62744,
+          "lng": 99.99413
+        },
+        "radius_km": 25,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_ganzi",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1936-07-01T00:00",
+        "end": "1936-07-03T00:00",
+        "kind": "model_scope_limit",
+        "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。",
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "红2、6军团1日全部集结、2日庆祝"
+          }
+        ]
+      },
+      "interaction": {
+        "kind": "non_contact_transfer",
+        "active_teams": [
+          "red"
+        ],
+        "scope": "只计算所列红军转移、集结与供给；不表示全战区无敌军，不生成虚构对手。",
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "红2、6军团1日全部集结、2日庆祝"
+          }
+        ]
+      }
+    },
+    {
+      "id": "second_front_formation",
+      "label": "红二方面军整编集结",
+      "date": {
+        "label": "1936年7月5日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "5日红2、6军团与红32军组成红二方面军"
+          }
+        ]
+      },
+      "scope": "保留三个不重叠组成单位，不另添加方面军本体；本地整编集结不等同全部北上过程。",
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "5日红2、6军团与红32军组成红二方面军"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 31.62744,
+          "lng": 99.99413
+        },
+        "radius_km": 25,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_ganzi",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1936-07-05T00:00",
+        "end": "1936-07-06T00:00",
+        "kind": "model_scope_limit",
+        "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。",
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "5日红2、6军团与红32军组成红二方面军"
+          }
+        ]
+      },
+      "interaction": {
+        "kind": "non_contact_transfer",
+        "active_teams": [
+          "red"
+        ],
+        "scope": "只计算所列红军转移、集结与供给；不表示全战区无敌军，不生成虚构对手。",
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "5日红2、6军团与红32军组成红二方面军"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "re.red.corps2",
+      "name": "红2军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "甘孜集结与7月5日整编"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "甘孜集结与7月5日整编"
+            }
+          ]
+        },
+        {
+          "phase_id": "ganzi_assembly",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "甘孜集结与7月5日整编"
+            }
+          ]
+        },
+        {
+          "phase_id": "second_front_formation",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "甘孜集结与7月5日整编"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "甘孜集结与7月5日整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "甘孜集结与7月5日整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "甘孜集结与7月5日整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "re.red.corps6",
+      "name": "红6军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "甘孜集结与7月5日整编"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "甘孜集结与7月5日整编"
+            }
+          ]
+        },
+        {
+          "phase_id": "ganzi_assembly",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "甘孜集结与7月5日整编"
+            }
+          ]
+        },
+        {
+          "phase_id": "second_front_formation",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "甘孜集结与7月5日整编"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "甘孜集结与7月5日整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "甘孜集结与7月5日整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "甘孜集结与7月5日整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "re.red.army32",
+      "name": "红32军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "由红四方面军划归并编入红二方面军"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "由红四方面军划归并编入红二方面军"
+            }
+          ]
+        },
+        {
+          "phase_id": "ganzi_assembly",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "由红四方面军划归并编入红二方面军"
+            }
+          ]
+        },
+        {
+          "phase_id": "second_front_formation",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "由红四方面军划归并编入红二方面军"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "由红四方面军划归并编入红二方面军"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "由红四方面军划归并编入红二方面军"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "由红四方面军划归并编入红二方面军"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    }
+  ]
+}

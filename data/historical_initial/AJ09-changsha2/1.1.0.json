@@ -1,0 +1,223 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ09-changsha2",
+  "version": "1.1.0",
+  "battle": "抗日战争-第二次长沙会战-1941.09.07至1941.10.09",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "仅第4军大云山方向与日第6师团；未核地方分队数量，岳阳只作粗地域参考。",
+      "仅提供有来源的具名参战框架。人数、分类装备、库存和逐单位阵地缺载，保持null；参数化配置须独立说明估计。",
+      "阶段时钟、区域半径和胜负阈值是计算假设；不代表已完成全会战复现、航空舰炮/后续增援或历史战损标定。",
+      "大云山缺已核山体坐标，80公里范围是粗计算约束；模型部署须按史料地名另行复核，不能声称高精地形。",
+      "番号复核为欧震第4军，勿与后来日第40师团换防或其他战区第40军混用。1.0.0的转录错误已由本版纠正；旧局源快照不自动改写。"
+    ]
+  },
+  "sources": {
+    "CS_STUDY": {
+      "title": "试论长沙会战的历史意义",
+      "url": "https://css.hunan.gov.cn/css/tslm/hxws/wssy/201503/hxwhyj_3/201609/t20160905_3253202.html",
+      "publisher": "湖南省文史研究馆",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    },
+    "CS_PREFACE": {
+      "title": "《湖南战场史料》前言",
+      "url": "https://css.hunan.gov.cn/css/tslm/hxws/wssy/201204/sxrj_52819_13/201609/t20160905_3253626.html",
+      "publisher": "湖南省文史研究馆",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    },
+    "DAYUN_PUBLISHER": {
+      "title": "第三节 第二次长沙会战",
+      "url": "https://www.tjpress.com/folder231/folder232/folder242/folder383/folder475/2015-03-12/1577.html",
+      "publisher": "团结出版社",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "出版社公开历史叙述，支持欧震第4军与第6师团大云山序战；未核原始作战命令，联队/师团人数与小时不得由此补成确数。"
+    }
+  },
+  "phases": [
+    {
+      "id": "reference",
+      "label": "全战役参战参考（非同日部署）",
+      "date": {
+        "label": "1941.09.07至1941.10.09",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "DAYUN_PUBLISHER",
+            "locator": "大云山序战段：9月7日第6师团进攻，欧震第4军防御；不是第40军"
+          }
+        ]
+      },
+      "scope": "保留累计参战身份；不宣称所有单位在战役开端同时到场。",
+      "evidence": [
+        {
+          "source_id": "DAYUN_PUBLISHER",
+          "locator": "大云山序战段：9月7日第6师团进攻，欧震第4军防御；不是第40军"
+        }
+      ]
+    },
+    {
+      "id": "dayun_sep7",
+      "label": "9月7日大云山局部接触",
+      "date": {
+        "label": "1941-09-07",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "DAYUN_PUBLISHER",
+            "locator": "大云山序战段：9月7日第6师团进攻，欧震第4军防御；不是第40军"
+          }
+        ]
+      },
+      "scope": "仅第4军大云山方向与日第6师团；未核地方分队数量，岳阳只作粗地域参考。",
+      "evidence": [
+        {
+          "source_id": "DAYUN_PUBLISHER",
+          "locator": "大云山序战段：9月7日第6师团进攻，欧震第4军防御；不是第40军"
+        }
+      ],
+      "execution_window": {
+        "start": "1941-09-07T06:00",
+        "end": "1941-09-07T14:00",
+        "kind": "model_scope_limit",
+        "note": "本日局部计算假设窗口，钟点不作史实命令；超窗须另核后续部队与兵种，不能自动继承为全会战。",
+        "evidence": [
+          {
+            "source_id": "DAYUN_PUBLISHER",
+            "locator": "大云山序战段：9月7日第6师团进攻，欧震第4军防御；不是第40军"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 29.36778,
+          "lng": 113.12019
+        },
+        "radius_km": 80,
+        "kind": "model_scope_limit",
+        "note": "地名附近的计算区域假设，以现代参考点或文字地域为中心；不是已测绘的历史阵地、战线或射界。",
+        "evidence": [
+          {
+            "source_id": "DAYUN_PUBLISHER",
+            "locator": "大云山序战段：9月7日第6师团进攻，欧震第4军防御；不是第40军"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.corps4.dayun",
+      "name": "第4军大云山方向部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "DAYUN_PUBLISHER",
+          "locator": "大云山序战段：9月7日第6师团进攻，欧震第4军防御；不是第40军"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "DAYUN_PUBLISHER",
+              "locator": "大云山序战段：9月7日第6师团进攻，欧震第4军防御；不是第40军"
+            }
+          ]
+        },
+        {
+          "phase_id": "dayun_sep7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "DAYUN_PUBLISHER",
+              "locator": "大云山序战段：9月7日第6师团进攻，欧震第4军防御；不是第40军"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division6",
+      "name": "日军第6师团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "DAYUN_PUBLISHER",
+          "locator": "大云山序战段：9月7日第6师团进攻，欧震第4军防御；不是第40军"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "DAYUN_PUBLISHER",
+              "locator": "大云山序战段：9月7日第6师团进攻，欧震第4军防御；不是第40军"
+            }
+          ]
+        },
+        {
+          "phase_id": "dayun_sep7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "DAYUN_PUBLISHER",
+              "locator": "大云山序战段：9月7日第6师团进攻，欧震第4军防御；不是第40军"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+# ---- Node / Worker 侧 ----
+node_modules/
+.wrangler/
+.dev.vars
+.env
+.env.*
+!.env.example
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# ---- 密钥与本地凭据（务必不要提交）----
+*.pem
+*.key
+.gentactix-llm.*
+.secrets
+CLOUDFLARE_API_TOKEN
+# Streamlit 的密钥文件：本地一旦创建，`git add -A` 就会带上去，必须先忽略
+.streamlit/secrets.toml
+.streamlit/secrets.*.toml
+
+# ---- 备份与临时产物 ----
+*.orig_backup
+*.bak
+.pytest_cache/
+# 实测探针的存档：含模型整段输出，属于一次性的运行产物，不进版本库
+probe_result.json
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 本地 SRTM 高程瓦片缓存 ----
+.cache/
+.playwright-cli/
+.firecrawl/
+release/
+dist-backend/
+build-backend/
+.packaging-venv/
+.packaging-py310/
+*.spec
+
+# ---- dsh harness 版推演：独立 home / workspace（绝不与 ~/.dsh 混用）----
+.dsh-wargame-home/
+.dsh-wargame-workspace/
+
+# AFSIM user-supplied runtime, source archive, compatibility layer and outputs.
+# Public integration code and MIT reference components remain reviewable.
+vendor/afsim/local/
+
+# Locally built matched DSH SDK/runtime wheels and build intermediates.
+vendor/dsh/local/
+
+# User-provided book conversion: local reference only; not redistribution assets.
+/data/military-symbols-v2/
+
+# Local browser QA captures may contain user data.
+.playwright-mcp/

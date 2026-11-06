@@ -1,0 +1,388 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "LM12-wumeng",
+  "version": "1.0.0",
+  "battle": "红军长征-乌蒙山回旋战-1936.02.27至1936.03.28",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "有出处的阶段参战身份，不是完整战斗序列。未知实到人数、装备与部队坐标留空；计算值必须单独说明估计依据。",
+      "战役总伤亡、出发兵力和战后残部不能替代阶段初态；不得按回合平摊伤亡或固定史实结局。",
+      "围堵战区总兵力不能作为同一山口接敌兵力；未核财神堂对手的具体营团，不冒名配置。",
+      "本地支持毕威走廊南向阻断与红军择路，不能用一次直线行军代替三进奎香的完整过程。"
+    ]
+  },
+  "sources": {
+    "HISTORY": {
+      "title": "乌蒙山回旋战：长征中的又一次神来之笔",
+      "url": "https://www.rmzxw.com.cn/c/2021-08-23/2938908.shtml?n2m=1",
+      "publisher": "人民政协报，刘焕性，2021-08-23",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开回顾，未核原始名册、逐时命令及实到兵力；仅支持所列身份与过程。"
+    },
+    "BLOCKADE": {
+      "title": "解读长征（38）：毛泽东为何说乌蒙山回旋战是个奇迹",
+      "url": "https://wcm1.cnr.cn/preview/en_US/js2014/ycdj/20160920/t20160920_523148598.html",
+      "publisher": "央广网，姜廷玉，2016-09-20",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "公开回顾，未核原始名册、逐时命令及实到兵力；仅支持所列身份与过程。"
+    },
+    "GEO_hezhang": {
+      "title": "红军长征-赫章",
+      "url": "https://www.geonames.org/1808195/",
+      "publisher": "GeoNames；项目2026-10-22地名核验",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代聚落点。不是历史渡口、桥面或阵地；计算半径与部署是模型假设。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "乌蒙回旋全程参考",
+      "date": {
+        "label": "1936年2月27日至3月28日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "撤毕节、野马川、三进奎香、财神堂脱离和亦资孔"
+          }
+        ]
+      },
+      "scope": "乌蒙回旋全程参考",
+      "evidence": [
+        {
+          "source_id": "HISTORY",
+          "locator": "撤毕节、野马川、三进奎香、财神堂脱离和亦资孔"
+        }
+      ]
+    },
+    {
+      "id": "western_blockade",
+      "label": "毕威走廊：南向受阻后的机动选择",
+      "date": {
+        "label": "1936年3月2日至6日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "BLOCKADE",
+            "locator": "李觉、郭汝栋堵南向安顺道路；红军转入乌蒙"
+          }
+        ]
+      },
+      "scope": "区域级走廊，不断言两个堵截纵队在赫章城接敌；各部部署为有界位置估计。",
+      "evidence": [
+        {
+          "source_id": "BLOCKADE",
+          "locator": "李觉、郭汝栋堵南向安顺道路；红军转入乌蒙"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 27.12222,
+          "lng": 104.72389
+        },
+        "radius_km": 160,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_hezhang",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1936-03-02T00:00",
+        "end": "1936-03-07T00:00",
+        "kind": "model_scope_limit",
+        "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。",
+        "evidence": [
+          {
+            "source_id": "BLOCKADE",
+            "locator": "李觉、郭汝栋堵南向安顺道路；红军转入乌蒙"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "wm.red.corps2",
+      "name": "红2军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "HISTORY",
+          "locator": "3月2日野马川后转向、3月6日到奎香"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "3月2日野马川后转向、3月6日到奎香"
+            }
+          ]
+        },
+        {
+          "phase_id": "western_blockade",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "3月2日野马川后转向、3月6日到奎香"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "3月2日野马川后转向、3月6日到奎香"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "3月2日野马川后转向、3月6日到奎香"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "3月2日野马川后转向、3月6日到奎香"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "wm.red.corps6",
+      "name": "红6军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "HISTORY",
+          "locator": "3月2日野马川后转向、3月6日到奎香"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "3月2日野马川后转向、3月6日到奎香"
+            }
+          ]
+        },
+        {
+          "phase_id": "western_blockade",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "3月2日野马川后转向、3月6日到奎香"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "3月2日野马川后转向、3月6日到奎香"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "3月2日野马川后转向、3月6日到奎香"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "3月2日野马川后转向、3月6日到奎香"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "wm.blue.li",
+      "name": "李觉纵队南向堵截部",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "纵队参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "BLOCKADE",
+          "locator": "两纵队阻断南进安顺道路"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "BLOCKADE",
+              "locator": "两纵队阻断南进安顺道路"
+            }
+          ]
+        },
+        {
+          "phase_id": "western_blockade",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "BLOCKADE",
+              "locator": "两纵队阻断南进安顺道路"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "BLOCKADE",
+              "locator": "两纵队阻断南进安顺道路"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "BLOCKADE",
+              "locator": "两纵队阻断南进安顺道路"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "BLOCKADE",
+              "locator": "两纵队阻断南进安顺道路"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "wm.blue.guo",
+      "name": "郭汝栋纵队南向堵截部",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "纵队参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "BLOCKADE",
+          "locator": "两纵队阻断南进安顺道路"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "BLOCKADE",
+              "locator": "两纵队阻断南进安顺道路"
+            }
+          ]
+        },
+        {
+          "phase_id": "western_blockade",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "BLOCKADE",
+              "locator": "两纵队阻断南进安顺道路"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "BLOCKADE",
+              "locator": "两纵队阻断南进安顺道路"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "BLOCKADE",
+              "locator": "两纵队阻断南进安顺道路"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "BLOCKADE",
+              "locator": "两纵队阻断南进安顺道路"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    }
+  ]
+}

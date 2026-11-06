@@ -1,0 +1,4 @@
+# Optional lighter deployment without the AFSIM runtime.
+services:
+  gentactix:
+    image: ${GENTACTIX_CORE_IMAGE:-snowwind001/gentactix-dsh-afsim:3.7.6-beta.1-core}

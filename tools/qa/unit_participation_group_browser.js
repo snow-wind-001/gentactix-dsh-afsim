@@ -1,0 +1,50 @@
+async page=>{
+ const API='http://127.0.0.1:19120',checks=[];
+ const check=(ok,label)=>{if(!ok)throw Error(label);checks.push(label);};
+ const get=async path=>{const r=await page.request.get(API+'/api'+path);if(!r.ok())throw Error(await r.text());return r.json();};
+ await page.addInitScript(()=>window.gentactix={backendUrl:'http://127.0.0.1:19120'});
+ const entry=(await get('/sessions')).sessions.find(s=>s.scenario.startsWith('单位参与状态验收 afsim-multi；'));
+ if(!entry)throw Error('Prepare the two-unit native withdrawal first');
+ const base='/sessions/'+entry.session_id,before=await get(base),actors=before.war_state.unit_participation.actors;
+ check(before.turn_count===1&&Object.values(actors).filter(r=>r.status==='reserve').length===2,'Both real entities are already in rear waiting');
+ await page.setViewportSize({width:1440,height:1000});await page.goto('http://127.0.0.1:19089');
+ await page.evaluate(id=>localStorage.setItem('gentactix-session',id),entry.session_id);await page.reload();
+ await page.getByRole('button',{name:'返回当前战局',exact:true}).click();
+ await page.locator('.nato-marker[data-unit-participation="reserve"]').first().waitFor();
+ check(await page.locator('.operation-participation').count()===2,'Both rear markers have status text without being hidden');
+ await page.locator('.leaflet-control-zoom-in').click();await page.locator('.leaflet-control-zoom-in').click();
+ await page.screenshot({path:'.cache/qa/unit-participation-2026-11-01/integration/group-rear-1440.png'});
+ await page.setViewportSize({width:900,height:1000});
+ check(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Rear markers fit the narrow map workspace');
+ await page.screenshot({path:'.cache/qa/unit-participation-2026-11-01/integration/group-rear-900.png'});
+ await page.setViewportSize({width:1440,height:1000});
+ const panel=page.getByTestId('force-organization');if(!await panel.isVisible())await page.getByTestId('analysis-tab-forces').click();
+ const organization=await get(base+'/force-organization'),group=organization.groups.find(g=>g.label==='双单位参与状态QA群');
+ check(group.member_ids.length===2,'Displayed command group has the two actual controlled members');
+ await panel.getByLabel('兵团下令对象',{exact:true}).selectOption(group.id);
+ await panel.getByLabel('兵团任务方式',{exact:true}).selectOption('advance');
+ await panel.getByTestId('force-participation').selectOption('reenter');
+ // Zoom back to retain the original stationary formation for the pointer goal.
+ await page.locator('.leaflet-control-zoom-out').click();await page.locator('.leaflet-control-zoom-out').click();
+ const marker=page.locator('.nato-marker[aria-label^="红方 第51师"]'),box=await marker.boundingBox();
+ if(!box)throw Error('Original return-region reference is not visible');
+ await panel.getByRole('button',{name:'在地图选择行军目标',exact:true}).click();
+ await page.mouse.click(box.x+box.width/2,box.y+box.height/2);await panel.waitFor({state:'visible'});
+ const waitPreview=page.waitForResponse(r=>r.url()===API+'/api'+base+'/force-organization/task-preview'&&r.request().method()==='POST');
+ await panel.getByRole('button',{name:'预览兵团任务',exact:true}).click();
+ const previewResponse=await waitPreview,preview=await previewResponse.json();if(!previewResponse.ok())throw Error(JSON.stringify(preview));
+ check(preview.candidate_count===2&&preview.rows.every(r=>r.order.participation==='reenter'),'Preview assigns explicit reentry to both members');
+ check(JSON.stringify((await get(base)).war_state)===JSON.stringify(before.war_state),'Group preview does not change world positions or stocks');
+ const waitSave=page.waitForResponse(r=>r.url()===API+'/api'+base+'/force-organization/tasks'&&r.request().method()==='POST');
+ await panel.getByRole('button',{name:'确认暂存兵团任务',exact:true}).click();const saved=await waitSave;if(!saved.ok())throw Error(await saved.text());
+ const queued=(await get(base+'/commands')).orders.filter(o=>group.member_ids.includes(o.unit_id));
+ check(queued.length===2&&queued.every(o=>o.participation==='reenter')&&new Set(queued.map(o=>o.id)).size===2,'Both members retain separate command identities');
+ const next=page.waitForResponse(r=>r.url()===API+'/api'+base+'/next'&&r.request().method()==='POST',{timeout:180000});
+ await page.getByRole('button',{name:'推进一轮',exact:true}).click();const response=await next,after=await response.json();if(!response.ok())throw Error(JSON.stringify(after));
+ check(after.turn_count===2&&after.war_state.afsim.model_skipped,'Confirmed group reentry executes through real AFSIM without another model call');
+ check(Object.values(after.war_state.unit_participation.actors).every(r=>r.status==='deployed'),'Both entities have actually reentered');
+ check(Object.keys(after.war_state.unit_participation.actors).sort().join()===Object.keys(actors).sort().join(),'Group operation neither duplicates nor drops an entity');
+ check(after.war_state.red_units.concat(after.war_state.blue_units).every(u=>u.personnel.current===300),'Group operation preserves all personnel');
+ return {passed:true,session_id:entry.session_id,checks,actual_afsim:true,actual_model:false,api_mocks:false,
+  scope:'Two-member actual command group and visual reentry, not full historical campaign or runtime physical repartition'};
+}

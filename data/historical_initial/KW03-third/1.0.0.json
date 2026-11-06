@@ -1,0 +1,804 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "KW03-third",
+  "version": "1.0.0",
+  "battle": "抗美援朝-第三次战役-1950.12.31至1951.01.08",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "累计序列不是全军同时压到一个点；当前计算仅40军突破方向，英军后续接触不提前进入。",
+      "公开资料身份、参战和工作范围不等于实到人数、完好装备或精确部署已核。来源原始档案未逐件查验，缺载事实保持null。",
+      "仅登记的地面局部阶段可另填计算参数；未完成全战役航空、海军、坑道、冻伤或跨阶段增援模型，不把缺项静默换成普通步兵。"
+    ]
+  },
+  "sources": {
+    "KW3_CN": {
+      "title": "抗美援朝战争第三次战役：争得战略主动权之战",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4924314.html?big=fan",
+      "publisher": "国防部转载解放军报，2022-10-25",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "记40军118、119师与韩6师突破；战果是报告，不证明精确位置与实到数。"
+    },
+    "KW3_LOG": {
+      "title": "抗美援朝大事记：1950年6月—1950年12月",
+      "url": "https://news.12371.cn/2014/10/23/ARTI1414065228514997.shtml",
+      "publisher": "共产党员网公开大事记，2014",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "30日进攻准备地域及两纵队；区域性部署不能直接成为逐单位精确阵地。"
+    },
+    "KW3_UK": {
+      "title": "Battle of Chaegunghyon (Happy Valley)",
+      "url": "https://www.royal-irish.org/stories/battle-of-chaegunghyon-happy-valley",
+      "publisher": "Royal Irish团史资料馆",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "参战方团史摘录，记1月3日夜撤退及4日重新集结；不能把中方歼敌报告当英军全营死亡。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "战役参战参考（非同日部署）",
+      "date": {
+        "label": "1950年12月31日至1951年1月8日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "KW3_CN",
+            "locator": "战役范围与过程"
+          }
+        ]
+      },
+      "scope": "累计参战身份参考，不能作为同一时刻战斗部署。",
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "战役范围与过程"
+        }
+      ]
+    },
+    {
+      "id": "corps40_breakthrough",
+      "label": "第40军突破方向：除夕晚间",
+      "date": {
+        "label": "1950-12-31",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "KW3_CN",
+            "locator": "17时发起攻势，第118、119师突破韩第6师"
+          }
+        ]
+      },
+      "scope": "工作中心为议政府以北的临津江东段方向，不是已配准渡口；后续汉城占领和英军撤退不提前发生。",
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "17时发起攻势，第118、119师突破韩第6师"
+        }
+      ],
+      "execution_window": {
+        "start": "1950-12-31T17:00",
+        "end": "1951-01-01T00:00",
+        "kind": "model_scope_limit",
+        "note": "钟点窗口为局部模型边界；史料未载的分钟不视为历史准确时刻。工作中心为议政府以北的临津江东段方向，不是已配准渡口；后续汉城占领和英军撤退不提前发生。",
+        "evidence": [
+          {
+            "source_id": "KW3_CN",
+            "locator": "17时发起攻势，第118、119师突破韩第6师"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 37.95,
+          "lng": 127.03
+        },
+        "radius_km": 35,
+        "kind": "model_scope_limit",
+        "note": "既有地名/地形参考与人为工作半径，不是历史部队点位或测绘边界。工作中心为议政府以北的临津江东段方向，不是已配准渡口；后续汉城占领和英军撤退不提前发生。",
+        "evidence": [
+          {
+            "source_id": "KW3_CN",
+            "locator": "17时发起攻势，第118、119师突破韩第6师"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "kw.cn.corps40",
+      "name": "志愿军第40军",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "第40军突破方向"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "第40军突破方向"
+            }
+          ]
+        },
+        {
+          "phase_id": "corps40_breakthrough",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "第40军突破方向"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.division118",
+      "name": "志愿军第118师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps40",
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "与韩第6师主力交战"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "与韩第6师主力交战"
+            }
+          ]
+        },
+        {
+          "phase_id": "corps40_breakthrough",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "与韩第6师主力交战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.division119",
+      "name": "志愿军第119师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps40",
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "临津江突破、纵深迂回"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "临津江突破、纵深迂回"
+            }
+          ]
+        },
+        {
+          "phase_id": "corps40_breakthrough",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "临津江突破、纵深迂回"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.corps38",
+      "name": "志愿军第38军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "右纵队其他方向"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "右纵队其他方向"
+            }
+          ]
+        },
+        {
+          "phase_id": "corps40_breakthrough",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "右纵队其他方向"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.corps39",
+      "name": "志愿军第39军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "右纵队其他方向"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "右纵队其他方向"
+            }
+          ]
+        },
+        {
+          "phase_id": "corps40_breakthrough",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "右纵队其他方向"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.corps50",
+      "name": "志愿军第50军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "右纵队其他方向及后续追击"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "右纵队其他方向及后续追击"
+            }
+          ]
+        },
+        {
+          "phase_id": "corps40_breakthrough",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "右纵队其他方向及后续追击"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.corps42",
+      "name": "志愿军第42军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "左纵队"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "左纵队"
+            }
+          ]
+        },
+        {
+          "phase_id": "corps40_breakthrough",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "左纵队"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.corps66",
+      "name": "志愿军第66军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "左纵队"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "左纵队"
+            }
+          ]
+        },
+        {
+          "phase_id": "corps40_breakthrough",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "左纵队"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.rok.division6",
+      "name": "韩军第6师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "第40军突破当面守军"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "第40军突破当面守军"
+            }
+          ]
+        },
+        {
+          "phase_id": "corps40_breakthrough",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "第40军突破当面守军"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.rok.division1",
+      "name": "韩军第1师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "相邻防线，非本局同一防区"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "相邻防线，非本局同一防区"
+            }
+          ]
+        },
+        {
+          "phase_id": "corps40_breakthrough",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "相邻防线，非本局同一防区"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.rok.division2",
+      "name": "韩军第2师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "左纵队当面之敌"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "左纵队当面之敌"
+            }
+          ]
+        },
+        {
+          "phase_id": "corps40_breakthrough",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "左纵队当面之敌"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.rok.division5",
+      "name": "韩军第5师",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW3_CN",
+          "locator": "左纵队当面一部"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "左纵队当面一部"
+            }
+          ]
+        },
+        {
+          "phase_id": "corps40_breakthrough",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW3_CN",
+              "locator": "左纵队当面一部"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.uk.ulster.battalion1",
+      "name": "英皇家奥斯特来复枪团第1营",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "营",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW3_UK",
+          "locator": "1月3日夜撤退与4日集结"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_UK",
+              "locator": "1月3日夜撤退与4日集结"
+            }
+          ]
+        },
+        {
+          "phase_id": "corps40_breakthrough",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "KW3_UK",
+              "locator": "1月3日夜撤退与4日集结"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

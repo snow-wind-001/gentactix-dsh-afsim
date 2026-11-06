@@ -1,0 +1,273 @@
+{
+  "kind": "read_only_handover_snapshot",
+  "document": "docs/项目交接说明-2026-11-04-02时更新.md",
+  "document_sha256": "19bdc694b30f9c6177cccc041b8f1d6b34dd867b53af4838b368a6fa4d8db21e",
+  "before_at": "2026-11-04T02:26:26.058446+08:00",
+  "after_at": "2026-11-04T02:29:32.993001+08:00",
+  "head": "b5a38a5d0c440cb41f77edb5ce6261cff1020082",
+  "branch": "main",
+  "git_status_counts_at_start": {
+    "tracked_changed": 132,
+    "untracked_entries": 997
+  },
+  "actions": "Only local file reads, GET health/sessions/export/progress and new documentation/audit artifacts; no simulation/model/mutation, restart, build, install or upload.",
+  "changes_by_this_task": [
+    "docs/项目交接说明-2026-11-04-02时更新.md",
+    "docs/项目交接只读核对-2026-11-04-02时.json",
+    ".cache/qa/handover-2026-11-04-02h/"
+  ],
+  "existing_selected_files": {
+    "count": 1359,
+    "changed": [],
+    "sha256_mtime_size_all_exact": true
+  },
+  "protected_files": {
+    "count": 114,
+    "unchanged_during_task": true,
+    "match_prior_protected_baseline": true
+  },
+  "services": {
+    "19358": {
+      "status": "ok",
+      "build": {
+        "loaded_revision": "a4a94121b09d081c",
+        "disk_revision": "93820d313d09a5f2",
+        "restart_required": true,
+        "pid": 186277,
+        "started_at": "2026-11-03T09:03:58.457042+00:00"
+      },
+      "runtime": {
+        "connected": false,
+        "ptc": false
+      },
+      "session_count": 2
+    },
+    "19368": {
+      "status": "ok",
+      "build": {
+        "loaded_revision": "a54b60df09972c07",
+        "disk_revision": "93820d313d09a5f2",
+        "restart_required": true,
+        "pid": 474702,
+        "started_at": "2026-11-03T11:01:11.306587+00:00"
+      },
+      "runtime": {
+        "connected": false,
+        "ptc": false
+      },
+      "session_count": 3
+    },
+    "19378": {
+      "status": "ok",
+      "build": {
+        "loaded_revision": "1119bbf318e3cfa5",
+        "disk_revision": "93820d313d09a5f2",
+        "restart_required": true,
+        "pid": 690071,
+        "started_at": "2026-11-03T12:22:25.723841+00:00"
+      },
+      "runtime": {
+        "connected": false,
+        "ptc": false
+      },
+      "session_count": 2
+    },
+    "19388": {
+      "status": "ok",
+      "build": {
+        "loaded_revision": "a30e7949ab0f0b8e",
+        "disk_revision": "93820d313d09a5f2",
+        "restart_required": true,
+        "pid": 807848,
+        "started_at": "2026-11-03T13:04:39.170750+00:00"
+      },
+      "runtime": {
+        "connected": true,
+        "ptc": false,
+        "mode": "native"
+      },
+      "session_count": 0
+    },
+    "19398": {
+      "status": "ok",
+      "build": {
+        "loaded_revision": "01cff3337cb12b5e",
+        "disk_revision": "93820d313d09a5f2",
+        "restart_required": true,
+        "pid": 943892,
+        "started_at": "2026-11-03T14:00:52.069531+00:00"
+      },
+      "runtime": {
+        "connected": false,
+        "ptc": false
+      },
+      "session_count": 2
+    },
+    "19408": {
+      "status": "ok",
+      "build": {
+        "loaded_revision": "93820d313d09a5f2",
+        "disk_revision": "93820d313d09a5f2",
+        "restart_required": false,
+        "pid": 1550193,
+        "started_at": "2026-11-03T17:53:59.169895+00:00"
+      },
+      "runtime": {
+        "connected": true,
+        "ptc": false,
+        "mode": "native"
+      },
+      "session_count": 3
+    }
+  },
+  "services_unchanged_during_task": true,
+  "sessions": {
+    "19358:2c51981789fd": {
+      "export_sha256": "136766bef084d17ba86ccc7ec345a8ddf8c932e714c9d982b9f3633931df0d94",
+      "session_sha256": "278071f87d9c959d1d744e62d5efd590a8696d7cda5f3ba0754cefbce33fe568",
+      "progress_sha256": "f7a06ea798460978783fac2136ac7cf520e517176003bd7b3cb48c1241e853e4",
+      "turn": 3,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 4
+    },
+    "19358:041fe52b2b8d": {
+      "export_sha256": "c7bb2be2e109e3d01f729685bfbc4d89d9f40e2898272ee39a694f95df9baf7f",
+      "session_sha256": "b99d0a4bed208bd718ffa95b9d918e92b4e3f4248e5b083f171dc6880ba639de",
+      "progress_sha256": "deb2a653c3437a7450ba541c39689929b1f03bbd41af3df296eaf772825e9528",
+      "turn": 1,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 4
+    },
+    "19368:cbb95b02630c": {
+      "export_sha256": "4bd3025577137489ef2c97a4557095af6d883ca113c3f7e7a69a1a4e83346763",
+      "session_sha256": "73d85fe61607a817799c8776d635b53fa4462b53218a2dcb278c009de7329600",
+      "progress_sha256": "e74d5d0d4dd299bfcba6370bfa44f290280dbed892338c9d61b50b47bbadca02",
+      "turn": 7,
+      "active": false,
+      "mission_status": "completed",
+      "unit_count": 7
+    },
+    "19368:fb11ed13786b": {
+      "export_sha256": "2aa928ea9800d109000babe159d3ec77d75fc7e37b61a14a82a34b8ca7558af0",
+      "session_sha256": "05ce71e77ac90318d889b2c16794e5aeabf18483bc67e0b5e65fa85e297ee908",
+      "progress_sha256": "69a3fe62f6f2aca040ff49f338cb0a4a54d9ad61783fa17f193ee51dc16ea8b0",
+      "turn": 9,
+      "active": false,
+      "mission_status": "completed",
+      "unit_count": 7
+    },
+    "19368:5f55ddd507a7": {
+      "export_sha256": "d1434cb9fbdde89db97623f4cfd64f48e56d584099863f71f7ca5019b16a9f02",
+      "session_sha256": "340c892bab7fb30429c7cc1b16912a0fb204f71bea5e2a1260f6785080893233",
+      "progress_sha256": "d17d2c7b69c20553be0dfaad385a55f4011981f68ece5d42a24b07fc76d1a15a",
+      "turn": 3,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 3
+    },
+    "19378:91ee5e8bf177": {
+      "export_sha256": "f5f8bd271f8b5ebf7bf43a6f2408f7681074f8d655f9754e8bd77506eeb76651",
+      "session_sha256": "49266b61604286a735c8cec61399e01e9e2706e0a36237cb2bc78b49ec3c7eb8",
+      "progress_sha256": "873f515ecc7bea5f705e84dcb55d969000472e6a714bf2148cc6a00adcaad5f9",
+      "turn": 6,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 6
+    },
+    "19378:24f1946c7010": {
+      "export_sha256": "dc15bb96efb4c1b1f7af7d370887f719970b93cbd50f97a6a8780c9478751d36",
+      "session_sha256": "0c2bc98ca23df6d38dea1c319c554e0ff5cedac5c69fe53934ba108229d74523",
+      "progress_sha256": "fe9896948ed3f4d79f63e5622e743b8a03b18e728d2c588e5eb226077cffbd25",
+      "turn": 6,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 6
+    },
+    "19398:bbf384efebe6": {
+      "export_sha256": "74c3994835094894c9b3f739c589d7f9043147b8c4f7f5aa3212b86bdc220504",
+      "session_sha256": "5bb5069f402d6d6554a7d638a853a66f783f2996b71b8eb73ff8c7440b18cc99",
+      "progress_sha256": "bf6fa446e0c88d099ab8884a6471b80d3c7c9d7cd3659affa2f28f963090ed1c",
+      "turn": 5,
+      "active": false,
+      "mission_status": "completed",
+      "unit_count": 5
+    },
+    "19398:e1536577f91f": {
+      "export_sha256": "c40a7a600157051a741bf047d3ba6731ba39747ccad6c22038547451d1201560",
+      "session_sha256": "2d87b983c8c29d0367dc2f744a4e273fd3bc5f59aa3b7113e66a3d11daa9fd16",
+      "progress_sha256": "11087849968547c76c3a539b139e246c8ed59d662f60f1bc900c170ee399f572",
+      "turn": 5,
+      "active": false,
+      "mission_status": "completed",
+      "unit_count": 5
+    },
+    "19408:50ea78eb1255": {
+      "export_sha256": "0bbb25d0e9478cd76eb4142c1f3f6b265e19e350591de34733402648230d3c42",
+      "session_sha256": "480ef6848573113546e8a4c8aaccc04d62032754384637b6e0171b6c46fbe0c9",
+      "progress_sha256": "738c20940723278fe27ddf56cdc2e51974b07407a40e42a6baf8061f427e0c65",
+      "turn": 0,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 8
+    },
+    "19408:49e4e54e39b8": {
+      "export_sha256": "f6428bb281cd31cbffe66e4d9b24d922af3b1c18141bc8262bae081c92b3cbda",
+      "session_sha256": "781c26bc630060f0302bf71cb0584e062d6db94f1fe006a82a43e44a7cca5430",
+      "progress_sha256": "1a64480678e6febf1c53b9cf2fceb18987b243ab0f202842d7c152f6d1c131e7",
+      "turn": 6,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 8
+    },
+    "19408:d158461b68cf": {
+      "export_sha256": "61859d2ab1ff9f02438a7f87d53457d6c92882e63bf5a4db55836b37e9296a07",
+      "session_sha256": "f63baf148c63d05ad8973a8cfc39eeb6761ca05e8afb7c66b1e0bc28c2684ecf",
+      "progress_sha256": "e58f97d0d6c961dff4b34d42e654c90e09c556e353c2cc43ece5123b60109bf2",
+      "turn": 6,
+      "active": false,
+      "mission_status": "active",
+      "unit_count": 8
+    }
+  },
+  "all_twelve_export_session_progress_hashes_exact_during_task": true,
+  "original_nine_match_prior_handover": {
+    "count": 9,
+    "exact": true
+  },
+  "previous_completed_offline_gate": {
+    "evidence": ".cache/qa/northern-campaign-2026-11-03/stable-gate-v6/results.json",
+    "groups_passed": 174,
+    "groups_failed": 0,
+    "unittest_cases": 2052,
+    "unittest_skipped": 0,
+    "live_model_calls": false,
+    "source_files_checked": 573,
+    "source_fingerprint_changes": [],
+    "rerun_in_this_handover": false
+  },
+  "latest_t6_frontend": {
+    "afsim": {
+      "passed": true,
+      "checks": 18,
+      "turn": 6,
+      "wall_ms": 116609,
+      "source": ".cache/qa/wuhan-window-continuation-2026-11-04/afsim/turn6/result.json",
+      "sha256": "a0eee5854a34944e019ec5aa1dc1af6457d69ea1d3060fcc13441d691b10fc07",
+      "scope": "Frontend T6 checks; full same-scope per-account/native-request/cold-recovery follow-up remains pending."
+    },
+    "narrative": {
+      "passed": true,
+      "checks": 18,
+      "turn": 6,
+      "wall_ms": 231579,
+      "source": ".cache/qa/wuhan-window-continuation-2026-11-04/narrative/turn6/result.json",
+      "sha256": "57415a608d957b751753304aa5ade93a271ea1f40480c944dd885788a6978cba",
+      "scope": "Frontend T6 checks; full same-scope per-account/native-request/cold-recovery follow-up remains pending."
+    }
+  },
+  "full_historical_acceptance_45_scenarios_270_cells": false,
+  "credentials_or_private_reasoning_included": false,
+  "local_evidence": ".cache/qa/handover-2026-11-04-02h"
+}

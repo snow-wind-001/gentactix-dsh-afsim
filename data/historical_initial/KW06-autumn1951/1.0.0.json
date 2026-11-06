@@ -1,0 +1,487 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "KW06-autumn1951",
+  "version": "1.0.0",
+  "battle": "抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "本档局部覆盖10月5日马良山，不把不同日期、不同高地和11月反击合为一次开局。",
+      "炮兵与装甲支援参考另列为未绑定范围；不能声称本局两地面编组已经完成全部诸兵种协同。",
+      "公开资料身份、参战和工作范围不等于实到人数、完好装备或精确部署已核。来源原始档案未逐件查验，缺载事实保持null。",
+      "仅登记的地面局部阶段可另填计算参数；未完成全战役航空、海军、坑道、冻伤或跨阶段增援模型，不把缺项静默换成普通步兵。"
+    ]
+  },
+  "sources": {
+    "KW6_CN": {
+      "title": "马良山战斗：志愿军进行的一次多兵种协同作战",
+      "url": "https://www.81.mil.cn/js_208592/16361657.html",
+      "publisher": "中国军网-解放军报，2024-12-30",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "明确10月3—8日防御和11月4日反击是两段；11月坦克炮兵数据不能套入10月5日开局。"
+    },
+    "KW6_AWM": {
+      "title": "Battle for Maryang San",
+      "url": "https://www.awm.gov.au/articles/encyclopedia/korea/maryang_san",
+      "publisher": "澳大利亚战争纪念馆",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "专题将317高地与355高地分开，记3RAR10月5日攻317；同站概览有高地混称，不沿用。"
+    },
+    "KW6_DVA": {
+      "title": "Battle of Maryang San,3 to8 October1951",
+      "url": "https://anzacportal.dva.gov.au/wars-and-missions/korean-war/operations/battle-maryang-san-1951",
+      "publisher": "澳大利亚退伍军人事务部Anzac Portal",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "提供571团/191师/64军与3RAR身份；正文19thDivision及KOSB展开等有编辑问题，兵力约数和战果不是已核原始名册。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "战役参战参考（非同日部署）",
+      "date": {
+        "label": "1951年8月18日至10月22日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "KW6_CN",
+            "locator": "战役范围与过程"
+          }
+        ]
+      },
+      "scope": "累计参战身份参考，不能作为同一时刻战斗部署。",
+      "evidence": [
+        {
+          "source_id": "KW6_CN",
+          "locator": "战役范围与过程"
+        }
+      ]
+    },
+    {
+      "id": "maryang_oct5",
+      "label": "马良山317高地：10月5日攻击日",
+      "date": {
+        "label": "1951-10-05",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "KW6_AWM",
+            "locator": "Operation Commando，5日进攻317高地"
+          }
+        ]
+      },
+      "scope": "不把355高地称为马良山，不把11月4日反击或11月坦克配属放到10月。",
+      "evidence": [
+        {
+          "source_id": "KW6_AWM",
+          "locator": "Operation Commando，5日进攻317高地"
+        }
+      ],
+      "execution_window": {
+        "start": "1951-10-05T04:00",
+        "end": "1951-10-05T12:00",
+        "kind": "model_scope_limit",
+        "note": "钟点窗口为局部模型边界；史料未载的分钟不视为历史准确时刻。不把355高地称为马良山，不把11月4日反击或11月坦克配属放到10月。",
+        "evidence": [
+          {
+            "source_id": "KW6_AWM",
+            "locator": "Operation Commando，5日进攻317高地"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 38.13419,
+          "lng": 126.9207
+        },
+        "radius_km": 8,
+        "kind": "model_scope_limit",
+        "note": "既有地名/地形参考与人为工作半径，不是历史部队点位或测绘边界。不把355高地称为马良山，不把11月4日反击或11月坦克配属放到10月。",
+        "evidence": [
+          {
+            "source_id": "KW6_AWM",
+            "locator": "Operation Commando，5日进攻317高地"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "kw.cn.corps64",
+      "name": "志愿军第64军",
+      "team": "red",
+      "role": "command",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW6_CN",
+          "locator": "马良山防御"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW6_CN",
+              "locator": "马良山防御"
+            }
+          ]
+        },
+        {
+          "phase_id": "maryang_oct5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW6_CN",
+              "locator": "马良山防御"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.division191",
+      "name": "志愿军第191师",
+      "team": "red",
+      "role": "command",
+      "echelon": "师",
+      "parent_id": "kw.cn.corps64",
+      "evidence": [
+        {
+          "source_id": "KW6_CN",
+          "locator": "191师防御任务"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW6_CN",
+              "locator": "191师防御任务"
+            }
+          ]
+        },
+        {
+          "phase_id": "maryang_oct5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW6_CN",
+              "locator": "191师防御任务"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.cn.regiment571",
+      "name": "志愿军第571团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "kw.cn.division191",
+      "evidence": [
+        {
+          "source_id": "KW6_DVA",
+          "locator": "Forces involved：571团防线"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW6_DVA",
+              "locator": "Forces involved：571团防线"
+            }
+          ]
+        },
+        {
+          "phase_id": "maryang_oct5",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW6_DVA",
+              "locator": "Forces involved：571团防线"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.au.rar3",
+      "name": "澳大利亚皇家澳大利亚团第3营（3RAR）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "营",
+      "parent_id": "kw.uk.commonwealth_brigade28",
+      "evidence": [
+        {
+          "source_id": "KW6_AWM",
+          "locator": "5日攻击317高地"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW6_AWM",
+              "locator": "5日攻击317高地"
+            }
+          ]
+        },
+        {
+          "phase_id": "maryang_oct5",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "KW6_AWM",
+              "locator": "5日攻击317高地"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.uk.commonwealth_brigade28",
+      "name": "英联邦第28旅",
+      "team": "blue",
+      "role": "command",
+      "echelon": "旅",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW6_DVA",
+          "locator": "3RAR旅级协同"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW6_DVA",
+              "locator": "3RAR旅级协同"
+            }
+          ]
+        },
+        {
+          "phase_id": "maryang_oct5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW6_DVA",
+              "locator": "3RAR旅级协同"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.nz.artillery16",
+      "name": "新西兰第16野战炮兵团",
+      "team": "blue",
+      "role": "support",
+      "echelon": "团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW6_DVA",
+          "locator": "火力支援参考，未绑定全部炮兵过程"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW6_DVA",
+              "locator": "火力支援参考，未绑定全部炮兵过程"
+            }
+          ]
+        },
+        {
+          "phase_id": "maryang_oct5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW6_DVA",
+              "locator": "火力支援参考，未绑定全部炮兵过程"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kw.uk.hussars8",
+      "name": "英第8皇家爱尔兰骠骑兵团支援部队",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "坦克支援部队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "KW6_DVA",
+          "locator": "坦克支援参考，未核配属数量"
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段实到人数；战果、全师总量或编制表不能当作本局实到人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "未核本阶段五类装备可用量与库存；支援数量和累计投入不能均摊给每个单位。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "只核参战地域与相对任务，没有已配准的逐单位精确阵地；计算位置须另标估计。"
+        }
+      },
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "KW6_DVA",
+              "locator": "坦克支援参考，未核配属数量"
+            }
+          ]
+        },
+        {
+          "phase_id": "maryang_oct5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "KW6_DVA",
+              "locator": "坦克支援参考，未核配属数量"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ16-counter1944",
+  "version": "1.0.0",
+  "battle": "抗日战争-敌后局部反攻总览-1944",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "1944局部反攻总览只绑定高沟四支队局部；杨口和其他地区不作为同一据点。",
+      "仅提供有来源的具名参战框架。人数、分类装备、库存和逐单位阵地缺载，保持null；参数化配置须独立说明估计。",
+      "阶段时钟、区域半径和胜负阈值是计算假设；不代表已完成全会战复现、航空舰炮/后续增援或历史战损标定。",
+      "来源冲突：淮安政协一篇文章标题1944、正文1943；本阶段采用另篇回忆的1944年4月19日，并保留冲突来源供复核。"
+    ]
+  },
+  "sources": {
+    "GY_MEMOIR": {
+      "title": "高杨战役率先突破高沟圩壕",
+      "url": "https://zx.huaian.gov.cn/col/13970_116131/art/17329824/1735608234368gs5ZXWhQ.html",
+      "publisher": "淮安市政协文史",
+      "evidence_kind": "published_memoir",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    },
+    "GY_STUDY": {
+      "title": "高杨战役中军民协作的壮丽赞歌",
+      "url": "https://www.qunzh.com/qzxlk/dzxt/2025/202504/202509/t20250904_110504.html",
+      "publisher": "中共江苏省委《群众》杂志社",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    },
+    "GY_CONFLICT": {
+      "title": "淮安政协文史：高杨战役",
+      "url": "https://zx.huaian.gov.cn/col/13970_116131/art/17303904/1730700801850xHYSOlSR.html",
+      "publisher": "淮安市政协文史",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "同页标题1944与正文1943发生年份冲突，不采用该正文作为发令日；由另两份公开材料交叉识别1944。"
+    }
+  },
+  "phases": [
+    {
+      "id": "reference",
+      "label": "全战役参战参考（非同日部署）",
+      "date": {
+        "label": "1944",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "GY_MEMOIR",
+            "locator": "11团1、2连等19日晚初攻及张庄行动；不据20日晚突破改写19日结局"
+          }
+        ]
+      },
+      "scope": "保留累计参战身份；不宣称所有单位在战役开端同时到场。",
+      "evidence": [
+        {
+          "source_id": "GY_MEMOIR",
+          "locator": "11团1、2连等19日晚初攻及张庄行动；不据20日晚突破改写19日结局"
+        }
+      ]
+    },
+    {
+      "id": "gaogou_apr19",
+      "label": "4月19日晚高沟初攻",
+      "date": {
+        "label": "1944-04-19",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "GY_MEMOIR",
+            "locator": "11团1、2连等19日晚初攻及张庄行动；不据20日晚突破改写19日结局"
+          }
+        ]
+      },
+      "scope": "1944局部反攻总览只绑定高沟四支队局部；杨口和其他地区不作为同一据点。",
+      "evidence": [
+        {
+          "source_id": "GY_MEMOIR",
+          "locator": "11团1、2连等19日晚初攻及张庄行动；不据20日晚突破改写19日结局"
+        }
+      ],
+      "execution_window": {
+        "start": "1944-04-19T18:00",
+        "end": "1944-04-20T00:00",
+        "kind": "model_scope_limit",
+        "note": "本日局部计算假设窗口，钟点不作史实命令；超窗须另核后续部队与兵种，不能自动继承为全会战。",
+        "evidence": [
+          {
+            "source_id": "GY_MEMOIR",
+            "locator": "11团1、2连等19日晚初攻及张庄行动；不据20日晚突破改写19日结局"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 34.0175,
+          "lng": 119.18861
+        },
+        "radius_km": 12,
+        "kind": "model_scope_limit",
+        "note": "地名附近的计算区域假设，以现代参考点或文字地域为中心；不是已测绘的历史阵地、战线或射界。",
+        "evidence": [
+          {
+            "source_id": "GY_MEMOIR",
+            "locator": "11团1、2连等19日晚初攻及张庄行动；不据20日晚突破改写19日结局"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.huaihai_detachment4",
+      "name": "淮海军分区第4支队指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "支队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "GY_MEMOIR",
+          "locator": "钟伟命令袭击高沟"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "GY_MEMOIR",
+              "locator": "钟伟命令袭击高沟"
+            }
+          ]
+        },
+        {
+          "phase_id": "gaogou_apr19",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "GY_MEMOIR",
+              "locator": "钟伟命令袭击高沟"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.huaihai_regiment11",
+      "name": "淮海军分区第4支队第11团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.huaihai_detachment4",
+      "evidence": [
+        {
+          "source_id": "GY_MEMOIR",
+          "locator": "11团沿革及团长彭金高指挥1、2连初攻"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "GY_MEMOIR",
+              "locator": "11团沿革及团长彭金高指挥1、2连初攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "gaogou_apr19",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "GY_MEMOIR",
+              "locator": "11团沿革及团长彭金高指挥1、2连初攻"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.puppet.regiment144",
+      "name": "伪第36师第72旅第144团高沟部",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团部分",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "GY_STUDY",
+          "locator": "高沟144团及保安部队守备；不据据点总数给各团定人数"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "GY_STUDY",
+              "locator": "高沟144团及保安部队守备；不据据点总数给各团定人数"
+            }
+          ]
+        },
+        {
+          "phase_id": "gaogou_apr19",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "GY_STUDY",
+              "locator": "高沟144团及保安部队守备；不据据点总数给各团定人数"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.huaihai_detachment1",
+      "name": "淮海军分区第1支队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "支队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "GY_CONFLICT",
+          "locator": "高杨整体参与部队；非本阶段11团高沟初攻实际部署"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "GY_CONFLICT",
+              "locator": "高杨整体参与部队；非本阶段11团高沟初攻实际部署"
+            }
+          ]
+        },
+        {
+          "phase_id": "gaogou_apr19",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "GY_CONFLICT",
+              "locator": "高杨整体参与部队；非本阶段11团高沟初攻实际部署"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.puppet.regiment143",
+      "name": "伪第36师第72旅第143团杨口部",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团部分",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "GY_STUDY",
+          "locator": "杨口143团守备，不能放到高沟"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "GY_STUDY",
+              "locator": "杨口143团守备，不能放到高沟"
+            }
+          ]
+        },
+        {
+          "phase_id": "gaogou_apr19",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "GY_STUDY",
+              "locator": "杨口143团守备，不能放到高沟"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    }
+  ]
+}

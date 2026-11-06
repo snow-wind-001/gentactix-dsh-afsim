@@ -1,0 +1,937 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "LM09-red25",
+  "version": "1.0.0",
+  "battle": "红军长征-红二十五军长征-1934.11.16至1935.09.16",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "有出处的阶段参战身份，不是完整战斗序列。未知实到人数、装备与部队坐标留空；计算值必须单独说明估计依据。",
+      "战役总伤亡、出发兵力和战后残部不能替代阶段初态；不得按回合平摊伤亡或固定史实结局。",
+      "独树镇13时前梯队与后梯队后续到场分开；不从出发2900余人推算各团当日人数。",
+      "庾家河、四坡等中途过程仍需独立配置，独树镇与永坪不能同图按小时交战。"
+    ]
+  },
+  "sources": {
+    "DUSHU": {
+      "title": "红二十五军鏖战独树镇",
+      "url": "https://cpc.people.com.cn/n1/2024/1126/c443712-40369199.html",
+      "publisher": "人民政协报，胡遵远，2024-11-26",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "公开回顾，未核原始名册、逐时命令及实到兵力；仅支持所列身份与过程。"
+    },
+    "REUNION": {
+      "title": "红军长征中的会师",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/jt_214147/16418520.html",
+      "publisher": "中国国防报／国防部",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "公开回顾，未核原始名册、逐时命令及实到兵力；仅支持所列身份与过程。"
+    },
+    "GEO_dushu": {
+      "title": "红军长征-独树镇",
+      "url": "https://www.geonames.org/1811783/",
+      "publisher": "GeoNames；项目2026-10-22地名核验",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代聚落点。不是历史渡口、桥面或阵地；计算半径与部署是模型假设。"
+    },
+    "GEO_yongping": {
+      "title": "红军长征-永坪",
+      "url": "https://www.geonames.org/1786276/",
+      "publisher": "GeoNames；项目2026-10-22地名核验",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代聚落点。不是历史渡口、桥面或阵地；计算半径与部署是模型假设。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "红25军全程参考",
+      "date": {
+        "label": "1934年11月16日至1935年9月16日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "红25军转移及永坪会师"
+          }
+        ]
+      },
+      "scope": "红25军全程参考",
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "红25军转移及永坪会师"
+        }
+      ]
+    },
+    {
+      "id": "dushu_first_contact",
+      "label": "独树镇前梯队初遇",
+      "date": {
+        "label": "1934年11月26日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "DUSHU",
+            "locator": "26日13时第224团接敌，第225团随后赶到，第223团更晚到达"
+          }
+        ]
+      },
+      "scope": "仅先头224团与已据公路的115旅、骑兵团。14时为限制援军未绑定的保守计算边界，不断言后续部队准确到场钟点。",
+      "evidence": [
+        {
+          "source_id": "DUSHU",
+          "locator": "26日13时第224团接敌，第225团随后赶到，第223团更晚到达"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 33.32543,
+          "lng": 113.15969
+        },
+        "radius_km": 25,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_dushu",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1934-11-26T13:00",
+        "end": "1934-11-26T14:00",
+        "kind": "model_scope_limit",
+        "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。",
+        "evidence": [
+          {
+            "source_id": "DUSHU",
+            "locator": "26日13时第224团接敌，第225团随后赶到，第223团更晚到达"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dushu_evening",
+      "label": "独树镇黄昏脱离与夜间突围",
+      "date": {
+        "label": "1934年11月26日至27日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "DUSHU",
+            "locator": "223团到达后、黄昏三次冲击未成，改由间隙绕行"
+          }
+        ]
+      },
+      "scope": "三个团已投入后的夜间脱离；18时和06时为时段模型边界，不能称确证钟点。",
+      "evidence": [
+        {
+          "source_id": "DUSHU",
+          "locator": "223团到达后、黄昏三次冲击未成，改由间隙绕行"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 33.32543,
+          "lng": 113.15969
+        },
+        "radius_km": 25,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_dushu",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1934-11-26T18:00",
+        "end": "1934-11-27T06:00",
+        "kind": "model_scope_limit",
+        "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。",
+        "evidence": [
+          {
+            "source_id": "DUSHU",
+            "locator": "223团到达后、黄昏三次冲击未成，改由间隙绕行"
+          }
+        ]
+      }
+    },
+    {
+      "id": "yongping_reunion",
+      "label": "永坪会师集结",
+      "date": {
+        "label": "1935年9月16日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "红25、26、27军会师后编成15军团"
+          }
+        ]
+      },
+      "scope": "采用会师整编前的三个军身份，不与整编后75、78、81师重复。无本地敌军战斗。",
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "红25、26、27军会师后编成15军团"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 37.00444,
+          "lng": 109.81278
+        },
+        "radius_km": 25,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_yongping",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1935-09-16T00:00",
+        "end": "1935-09-17T00:00",
+        "kind": "model_scope_limit",
+        "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。",
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "红25、26、27军会师后编成15军团"
+          }
+        ]
+      },
+      "interaction": {
+        "kind": "non_contact_transfer",
+        "active_teams": [
+          "red"
+        ],
+        "scope": "只计算所列红军转移、集结与供给；不表示全战区无敌军，不生成虚构对手。",
+        "evidence": [
+          {
+            "source_id": "REUNION",
+            "locator": "红25、26、27军会师后编成15军团"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "r25.red.reg224",
+      "name": "红25军第224团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "DUSHU",
+          "locator": "独树镇梯队编成、接敌及后续投入"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_first_contact",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "yongping_reunion",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "r25.red.reg225",
+      "name": "红25军第225团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "DUSHU",
+          "locator": "独树镇梯队编成、接敌及后续投入"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_first_contact",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "yongping_reunion",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "r25.red.reg223",
+      "name": "红25军第223团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "DUSHU",
+          "locator": "独树镇梯队编成、接敌及后续投入"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_first_contact",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "yongping_reunion",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "独树镇梯队编成、接敌及后续投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "r25.blue.brig115",
+      "name": "国民党第40军第115旅",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "旅",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "DUSHU",
+          "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_first_contact",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ]
+        },
+        {
+          "phase_id": "yongping_reunion",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "r25.blue.cavalry",
+      "name": "国民党第40军骑兵团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "DUSHU",
+          "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_first_contact",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_evening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ]
+        },
+        {
+          "phase_id": "yongping_reunion",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "DUSHU",
+              "locator": "第115旅和骑兵团据七里岗等地堵击；不与尾追骑5师混同"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "r25.red.army25",
+      "name": "红25军永坪会师部队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "9月16日会师及后续整编"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_first_contact",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ]
+        },
+        {
+          "phase_id": "yongping_reunion",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "r25.red.army26",
+      "name": "红26军永坪会师部队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "9月16日会师及后续整编"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_first_contact",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ]
+        },
+        {
+          "phase_id": "yongping_reunion",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "r25.red.army27",
+      "name": "红27军永坪会师部队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "REUNION",
+          "locator": "9月16日会师及后续整编"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_first_contact",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ]
+        },
+        {
+          "phase_id": "dushu_evening",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ]
+        },
+        {
+          "phase_id": "yongping_reunion",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "REUNION",
+              "locator": "9月16日会师及后续整编"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    }
+  ]
+}

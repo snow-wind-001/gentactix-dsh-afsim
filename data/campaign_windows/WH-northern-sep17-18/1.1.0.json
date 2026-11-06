@@ -1,0 +1,2898 @@
+{
+  "format": "gentactix-campaign-window-1",
+  "id": "WH-northern-sep17-18",
+  "version": "1.1.0",
+  "label": "武汉北线：9月17—18日山地／潢川并行窗口 · 目标按方向约束",
+  "battle": "抗日战争-武汉会战-1938.06至1938.10",
+  "historical_initial": {
+    "profile_id": "AJ06-wuhan",
+    "version": "1.2.0",
+    "definition_hash": "6a3343dc6bf6fab4a08d482815b997ad0d8c19a3aee403c8db59b56b5579973c"
+  },
+  "start_phase_id": "northern_sep17_18",
+  "phase_ids": [
+    "northern_sep17_18"
+  ],
+  "bounds": {
+    "start": "1938-09-17T00:00:00",
+    "end": "1938-09-19T00:00:00",
+    "kind": "model_scope_limit",
+    "note": "按两个日级记录日离散化；零时仅作模型日期边界，不声称发令或全员实到。开放模式目标未达可继续，援军不自动补入。"
+  },
+  "units": {
+    "ww2.cn.warzone5": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ARCHIVE",
+          "locator": "导言：中国第五、第九战区；第五战区作战命令目录"
+        }
+      ]
+    },
+    "ww2.cn.warzone9": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ARCHIVE",
+          "locator": "导言：中国第五、第九战区；7月14日第九战区部署电目录"
+        }
+      ]
+    },
+    "ww2.jp.army2": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ARCHIVE",
+          "locator": "导言：日军第2、第11军"
+        }
+      ]
+    },
+    "ww2.jp.army11": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ARCHIVE",
+          "locator": "导言：日军第2、第11军"
+        }
+      ]
+    },
+    "ww2.cn.corps1": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第九战区序列：1、第1兵团"
+        }
+      ]
+    },
+    "ww2.cn.group20": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（1）：第20集团军"
+        }
+      ]
+    },
+    "ww2.cn.army32": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（1）：第32军及139、141、142师"
+        }
+      ]
+    },
+    "ww2.cn.division139": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（1）：第32军及139、141、142师"
+        }
+      ]
+    },
+    "ww2.cn.division141": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（1）：第32军及139、141、142师"
+        }
+      ]
+    },
+    "ww2.cn.division142": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（1）：第32军及139、141、142师"
+        }
+      ]
+    },
+    "ww2.cn.army18": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（1）：第18军及11、60、16师"
+        }
+      ]
+    },
+    "ww2.cn.division11": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（1）：第18军及11、60、16师"
+        }
+      ]
+    },
+    "ww2.cn.division60": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（1）：第18军及11、60、16师"
+        }
+      ]
+    },
+    "ww2.cn.division16": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（1）：第18军及11、60、16师"
+        }
+      ]
+    },
+    "ww2.cn.tax_police_brigade": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（1）：税警旅"
+        }
+      ]
+    },
+    "ww2.cn.group9": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（2）：第9集团军"
+        }
+      ]
+    },
+    "ww2.cn.army4": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（2）：第9集团军、第4军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division59": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（2）：第9集团军、第4军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division90": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（2）：第9集团军、第4军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.army8": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（2）：第9集团军、第8军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division3": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（2）：第9集团军、第8军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division15": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（2）：第9集团军、第8军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.army66": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（2）：第9集团军、第66军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division159": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（2）：第9集团军、第66军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division160": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（2）：第9集团军、第66军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.corps29": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（2）排版中的第29军团；与集团军／兵团的隶属待核"
+        }
+      ]
+    },
+    "ww2.cn.army64": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第29军团后列第64军及155、187、预备第9师"
+        }
+      ]
+    },
+    "ww2.cn.division155": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第29军团后列第64军及155、187、预备第9师"
+        }
+      ]
+    },
+    "ww2.cn.division187": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第29军团后列第64军及155、187、预备第9师"
+        }
+      ]
+    },
+    "ww2.cn.divisionreserve9": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第29军团后列第64军及155、187、预备第9师"
+        }
+      ]
+    },
+    "ww2.cn.army70": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第70军及所属师明确；上级在连排文本中待核"
+        }
+      ]
+    },
+    "ww2.cn.division19": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第70军及所属师明确；上级在连排文本中待核"
+        }
+      ]
+    },
+    "ww2.cn.division128": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第70军及所属师明确；上级在连排文本中待核"
+        }
+      ]
+    },
+    "ww2.cn.division91": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第70军及所属师明确；上级在连排文本中待核"
+        }
+      ]
+    },
+    "ww2.cn.divisionreserve6": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第70军及所属师明确；上级在连排文本中待核"
+        }
+      ]
+    },
+    "ww2.cn.corps37": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第37军团；与集团军／兵团的隶属待核"
+        }
+      ]
+    },
+    "ww2.cn.army25": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第37军团后列第25军及52、190师"
+        }
+      ]
+    },
+    "ww2.cn.division52": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第37军团后列第25军及52、190师"
+        }
+      ]
+    },
+    "ww2.cn.division190": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第37军团后列第25军及52、190师"
+        }
+      ]
+    },
+    "ww2.cn.army74": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（3）：第74军及51、58师"
+        }
+      ]
+    },
+    "ww2.cn.division51": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（3）：第74军及51、58师"
+        }
+      ]
+    },
+    "ww2.cn.division58": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（3）：第74军及51、58师"
+        }
+      ]
+    },
+    "ww2.cn.army29": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（4）：第29军及40、79师"
+        }
+      ]
+    },
+    "ww2.cn.division40": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（4）：第29军及40、79师"
+        }
+      ]
+    },
+    "ww2.cn.division79": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（4）：第29军及40、79师"
+        }
+      ]
+    },
+    "ww2.cn.division167": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（5）—（7）：167、预备第2、预备第11师"
+        }
+      ]
+    },
+    "ww2.cn.divisionreserve2": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（5）—（7）：167、预备第2、预备第11师"
+        }
+      ]
+    },
+    "ww2.cn.divisionreserve11": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第1兵团（5）—（7）：167、预备第2、预备第11师"
+        }
+      ]
+    },
+    "ww2.cn.corps2": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第九战区序列：2、第2兵团"
+        }
+      ]
+    },
+    "ww2.cn.group30": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第30集团军"
+        }
+      ]
+    },
+    "ww2.cn.army72": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第30集团军、第72军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.divisionnew13": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第30集团军、第72军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.divisionnew14": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第30集团军、第72军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.army78": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第30集团军、第78军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.divisionnew15": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第30集团军、第78军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.divisionnew16": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第30集团军、第78军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.group3": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第3集团军"
+        }
+      ]
+    },
+    "ww2.cn.army12": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第3集团军、第12军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division20": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第3集团军、第12军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division22": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第3集团军、第12军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division81": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第3集团军、第12军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.group31": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第31集团军"
+        }
+      ]
+    },
+    "ww2.cn.army13": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第31集团军、第13军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division23": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第31集团军、第13军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division89": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第31集团军、第13军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.divisionnew35": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第31集团军、第13军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.army85": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第31集团军、第85军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division4": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第31集团军、第85军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division110": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第31集团军、第85军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.army98": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第31集团军、第98军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division82": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第31集团军、第98军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division193": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第31集团军、第98军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division195": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第31集团军、第98军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.divisionreserve13": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第31集团军、第98军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.group32": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第32集团军"
+        }
+      ]
+    },
+    "ww2.cn.army52": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第32集团军、第52军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division2": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第32集团军、第52军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division25": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第32集团军、第52军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.army92": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第32集团军、第92军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division21": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第32集团军、第92军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.division95": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团：第32集团军、第92军及所属师"
+        }
+      ]
+    },
+    "ww2.cn.corps11": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第2兵团（5）：第11军团"
+        }
+      ]
+    },
+    "ww2.cn.army2": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第11军团：第2军（兼田北要塞）、第9／57师"
+        }
+      ]
+    },
+    "ww2.cn.division9": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第11军团：第2军（兼田北要塞）、第9／57师"
+        }
+      ]
+    },
+    "ww2.cn.division57": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第11军团：第2军（兼田北要塞）、第9／57师"
+        }
+      ]
+    },
+    "ww2.cn.army54": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第11军团：第54军（兼田南要塞）及14／18／43师"
+        }
+      ]
+    },
+    "ww2.cn.division14": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第11军团：第54军（兼田南要塞）及14／18／43师"
+        }
+      ]
+    },
+    "ww2.cn.division18": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第11军团：第54军（兼田南要塞）及14／18／43师"
+        }
+      ]
+    },
+    "ww2.cn.division43": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第11军团：第54军（兼田南要塞）及14／18／43师"
+        }
+      ]
+    },
+    "ww2.cn.wuhan_garrison": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第九战区序列：3、武汉卫戍区"
+        }
+      ]
+    },
+    "ww2.cn.wuhan_north": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（1）：江北区指挥官"
+        }
+      ]
+    },
+    "ww2.cn.army6": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（1）：第6军及93、118师"
+        }
+      ]
+    },
+    "ww2.cn.division93": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（1）：第6军及93、118师"
+        }
+      ]
+    },
+    "ww2.cn.division118": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（1）：第6军及93、118师"
+        }
+      ]
+    },
+    "ww2.cn.army46": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（1）：第46军及28师"
+        }
+      ]
+    },
+    "ww2.cn.division28": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（1）：第46军及28师"
+        }
+      ]
+    },
+    "ww2.cn.wuhan_south": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（2）：江南区指挥官"
+        }
+      ]
+    },
+    "ww2.cn.army75": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（2）：第75军及6、13、50师"
+        }
+      ]
+    },
+    "ww2.cn.division6": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（2）：第75军及6、13、50师"
+        }
+      ]
+    },
+    "ww2.cn.division13": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（2）：第75军及6、13、50师"
+        }
+      ]
+    },
+    "ww2.cn.division50": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（2）：第75军及6、13、50师"
+        }
+      ]
+    },
+    "ww2.cn.wuhan_security": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（3）：武汉警备司令部"
+        }
+      ]
+    },
+    "ww2.cn.army94": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（3）：第94军及55、185师"
+        }
+      ]
+    },
+    "ww2.cn.division55": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（3）：第94军及55、185师"
+        }
+      ]
+    },
+    "ww2.cn.division185": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（3）：第94军及55、185师"
+        }
+      ]
+    },
+    "ww2.cn.army37": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（4）：第37军及92师"
+        }
+      ]
+    },
+    "ww2.cn.division92": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "武汉卫戍区（4）：第37军及92师"
+        }
+      ]
+    },
+    "ww2.cn.corps30": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第九战区序列：4、第30军团"
+        }
+      ]
+    },
+    "ww2.cn.army60": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第30军团：第60军及182、183、184师"
+        }
+      ]
+    },
+    "ww2.cn.division182": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第30军团：第60军及182、183、184师"
+        }
+      ]
+    },
+    "ww2.cn.division183": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第30军团：第60军及182、183、184师"
+        }
+      ]
+    },
+    "ww2.cn.division184": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第30军团：第60军及182、183、184师"
+        }
+      ]
+    },
+    "ww2.cn.division49": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第30军团段落末第49、102师；隶属待核"
+        }
+      ]
+    },
+    "ww2.cn.division102": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第30军团段落末第49、102师；隶属待核"
+        }
+      ]
+    },
+    "ww2.cn.corps26": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第九战区序列：5、第26军团"
+        }
+      ]
+    },
+    "ww2.cn.army53": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第26军团：第53军及116、130师"
+        }
+      ]
+    },
+    "ww2.cn.division116": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第26军团：第53军及116、130师"
+        }
+      ]
+    },
+    "ww2.cn.division130": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_OOB9",
+          "locator": "第26军团：第53军及116、130师"
+        }
+      ]
+    },
+    "ww2.jp.division3": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_WUXI",
+          "locator": "第2军第10师团进攻与第3师团增援信阳段"
+        }
+      ]
+    },
+    "ww2.jp.division10": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "reported_action",
+      "extent": "本窗口当地投入载荷；不宣称整军／师团满编或精确开局部署。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WH-N17-plain",
+        "WH-N17-city-hours"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_WUXI",
+          "locator": "第2军第10师团攻固始、潢川及信阳段"
+        }
+      ]
+    },
+    "ww2.jp.division6": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_JIUJIANG",
+          "locator": "7月19日第11军攻九江、黄梅的部署段"
+        }
+      ]
+    },
+    "ww2.jp.division9": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_WUXI",
+          "locator": "第11军主力、瑞昌投入第9师团行动段"
+        }
+      ]
+    },
+    "ww2.jp.division27": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_WUXI",
+          "locator": "第11军主力沿长江南岸，第27师团经箬溪向咸宁行动段"
+        }
+      ]
+    },
+    "ww2.jp.division101": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_JIUJIANG",
+          "locator": "第11军指挥下第101师团湖口接防段"
+        }
+      ]
+    },
+    "ww2.jp.division106": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_JIUJIANG",
+          "locator": "第11军指挥下第106师团姑塘上岸、七里湖行动段"
+        }
+      ]
+    },
+    "ww2.jp.division13": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_ANQING",
+          "locator": "第13师团凤台、寿县行动段；本条不据此推定各日期上级"
+        }
+      ]
+    },
+    "ww2.jp.hata_detachment": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "not_applicable",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_JIUJIANG",
+          "locator": "第11军攻九江部署中波田支队姑塘登陆段"
+        }
+      ]
+    },
+    "ww2.cn.group2": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷33页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.corps27": {
+      "representation": "command_reference",
+      "represented_by": null,
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE8",
+          "locator": "印刷41页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.army71": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "reported_action",
+      "extent": "本窗口当地投入载荷；不宣称整军／师团满编或精确开局部署。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WH-N17-mountain"
+      ],
+      "operational_reference": "WH-N17-command-army71",
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷31、33页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.army59": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.division38",
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WH-N17-plain"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE8",
+          "locator": "印刷40—41页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.army30": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "reported_action",
+      "extent": "本窗口当地投入载荷；不宣称整军／师团满编或精确开局部署。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WH-N17-mountain"
+      ],
+      "operational_reference": "WH-N17-command-army30",
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷33页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.army42": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "reported_action",
+      "extent": "本窗口当地投入载荷；不宣称整军／师团满编或精确开局部署。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WH-N17-mountain"
+      ],
+      "operational_reference": "WH-N17-command-army42",
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷33页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.army51": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "reported_action",
+      "extent": "本窗口当地投入载荷；不宣称整军／师团满编或精确开局部署。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WH-N17-mountain"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷33页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.division36": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.army71",
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷31—33页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.division88": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.army71",
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷31、33页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.division87": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.army71",
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷34—35页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.division113": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "prior_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷31页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.division114": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "prior_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷31页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.division61": {
+      "representation": "outside_window",
+      "represented_by": null,
+      "presence_basis": "prior_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷33页；与下篇40页的归属记述需另核；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.division38": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "reported_action",
+      "extent": "本窗口当地投入载荷；不宣称整军／师团满编或精确开局部署。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WH-N17-plain",
+        "WH-N17-city-hours"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE8",
+          "locator": "印刷40—41页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.division180": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "reported_action",
+      "extent": "本窗口当地投入载荷；不宣称整军／师团满编或精确开局部署。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WH-N17-plain",
+        "WH-N17-city-hours"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE8",
+          "locator": "印刷40—41页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.division30": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.army30",
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷33页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.division31": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.army30",
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷33页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.cn.division27": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.cn.army42",
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷33页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.jp.division16": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.jp.shinohara_detachment",
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷31—33页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.jp.shinohara_detachment": {
+      "representation": "actor",
+      "represented_by": null,
+      "presence_basis": "reported_action",
+      "extent": "本窗口当地投入载荷；不宣称整军／师团满编或精确开局部署。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [
+        "WH-N17-mountain"
+      ],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷33页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "ww2.jp.okada_detachment": {
+      "representation": "covered_reference",
+      "represented_by": "ww2.jp.division10",
+      "presence_basis": "window_reference",
+      "extent": "仅作来源／编制参考，不另计兵力；未知余部与其他战线不得视为零。",
+      "opening": "requires_explicit_estimate",
+      "operation_ids": [],
+      "operational_reference": null,
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE8",
+          "locator": "印刷39—41页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    }
+  },
+  "sectors": [
+    {
+      "id": "mountain",
+      "label": "大别山山地迟滞",
+      "position": null,
+      "unit_ids": [
+        "ww2.cn.army71",
+        "ww2.cn.army30",
+        "ww2.cn.army42",
+        "ww2.cn.army51",
+        "ww2.jp.shinohara_detachment"
+      ],
+      "operation_ids": [
+        "WH-N17-mountain"
+      ],
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "33页"
+        }
+      ]
+    },
+    {
+      "id": "plain",
+      "label": "潢川河流与后路",
+      "position": null,
+      "unit_ids": [
+        "ww2.cn.division38",
+        "ww2.cn.division180",
+        "ww2.jp.division10"
+      ],
+      "operation_ids": [
+        "WH-N17-plain"
+      ],
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE8",
+          "locator": "40—41页"
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "operation_id": "WH-N17-mountain",
+      "phase_id": "northern_sep17_18",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WH-N17-plain",
+      "phase_id": "northern_sep17_18",
+      "policy": "reference_only"
+    },
+    {
+      "operation_id": "WH-N17-city-hours",
+      "phase_id": "northern_sep17_18",
+      "policy": "reference_only"
+    }
+  ],
+  "limitations": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。 仅北线两个方向；未纳入长江南北其他战场。16师团只由已记前出支队表示，余部不补造；10师团载荷包含冈田支队，不额外复制。 1.1.0增加目标地域方向约束，避免山地目标错放潢川方向；旧1.0.0及其已生成配置保持原样。",
+  "parameter_estimates": {
+    "version": "campaign-estimates-1",
+    "historically_calibrated": false,
+    "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。",
+    "area": {
+      "center": {
+        "lat": 32.0,
+        "lng": 115.4
+      },
+      "radius_km": 100,
+      "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。",
+      "evidence": [
+        {
+          "source_id": "WH_ZX_DABIE7",
+          "locator": "印刷33页；下篇40—41页潢川同时段；公开研究转述，非本次亲阅原始军令"
+        },
+        {
+          "source_id": "WH_ZX_DABIE8",
+          "locator": "印刷40—41页；公开研究转述，非本次亲阅原始军令"
+        }
+      ]
+    },
+    "actors": {
+      "ww2.cn.army71": {
+        "personnel": {
+          "minimum": 5000,
+          "maximum": 22000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 31.7,
+            "lng": 115.7
+          },
+          "radius_km": 35,
+          "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。 区域中心和35km半径是方向包络估计，不是部队阵位。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1800
+        },
+        "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+      },
+      "ww2.cn.army30": {
+        "personnel": {
+          "minimum": 5000,
+          "maximum": 22000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 31.7,
+            "lng": 115.7
+          },
+          "radius_km": 35,
+          "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。 区域中心和35km半径是方向包络估计，不是部队阵位。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1800
+        },
+        "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+      },
+      "ww2.cn.army42": {
+        "personnel": {
+          "minimum": 5000,
+          "maximum": 22000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 31.7,
+            "lng": 115.7
+          },
+          "radius_km": 35,
+          "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。 区域中心和35km半径是方向包络估计，不是部队阵位。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1800
+        },
+        "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+      },
+      "ww2.cn.army51": {
+        "personnel": {
+          "minimum": 5000,
+          "maximum": 22000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 31.7,
+            "lng": 115.7
+          },
+          "radius_km": 35,
+          "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。 区域中心和35km半径是方向包络估计，不是部队阵位。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1800
+        },
+        "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+      },
+      "ww2.cn.division38": {
+        "personnel": {
+          "minimum": 2000,
+          "maximum": 10000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 32.1,
+            "lng": 115.1
+          },
+          "radius_km": 35,
+          "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。 区域中心和35km半径是方向包络估计，不是部队阵位。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1800
+        },
+        "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+      },
+      "ww2.cn.division180": {
+        "personnel": {
+          "minimum": 2000,
+          "maximum": 10000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 32.1,
+            "lng": 115.1
+          },
+          "radius_km": 35,
+          "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。 区域中心和35km半径是方向包络估计，不是部队阵位。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1800
+        },
+        "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+      },
+      "ww2.jp.division10": {
+        "personnel": {
+          "minimum": 5000,
+          "maximum": 22000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 32.1,
+            "lng": 115.1
+          },
+          "radius_km": 35,
+          "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。 区域中心和35km半径是方向包络估计，不是部队阵位。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1800
+        },
+        "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+      },
+      "ww2.jp.shinohara_detachment": {
+        "personnel": {
+          "minimum": 2000,
+          "maximum": 10000
+        },
+        "equipment": {
+          "armor": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "artillery": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "air_defense": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "engineer": {
+            "minimum": 0,
+            "maximum": 50
+          },
+          "transport": {
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "position": {
+          "center": {
+            "lat": 31.7,
+            "lng": 115.7
+          },
+          "radius_km": 35,
+          "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。 区域中心和35km半径是方向包络估计，不是部队阵位。"
+        },
+        "role": "infantry",
+        "direct_range_m": {
+          "minimum": 100,
+          "maximum": 1800
+        },
+        "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+      }
+    },
+    "goal_template": {
+      "version": "campaign-objectives-1",
+      "nodes": [
+        {
+          "id": "red_mountain",
+          "label": "保持山地迟滞方向",
+          "team": "red",
+          "unit_ids": [
+            "ww2.cn.army71",
+            "ww2.cn.army30",
+            "ww2.cn.army42",
+            "ww2.cn.army51"
+          ],
+          "after": {
+            "mode": "all",
+            "node_ids": []
+          },
+          "not_before_seconds": 0,
+          "condition": {
+            "kind": "control",
+            "region": {
+              "center": {
+                "lat": null,
+                "lng": null
+              },
+              "radius_km": null
+            },
+            "minimum_personnel": null
+          },
+          "hold_seconds": null,
+          "latch": false,
+          "operation_ids": [
+            "WH-N17-mountain"
+          ],
+          "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+        },
+        {
+          "id": "red_plain",
+          "label": "保持潢川撤退通道",
+          "team": "red",
+          "unit_ids": [
+            "ww2.cn.division38",
+            "ww2.cn.division180"
+          ],
+          "after": {
+            "mode": "all",
+            "node_ids": []
+          },
+          "not_before_seconds": 0,
+          "condition": {
+            "kind": "control",
+            "region": {
+              "center": {
+                "lat": null,
+                "lng": null
+              },
+              "radius_km": null
+            },
+            "minimum_personnel": null
+          },
+          "hold_seconds": null,
+          "latch": false,
+          "operation_ids": [
+            "WH-N17-plain"
+          ],
+          "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+        },
+        {
+          "id": "red_preserve",
+          "label": "双方向保存投入兵力",
+          "team": "red",
+          "unit_ids": [
+            "ww2.cn.army71",
+            "ww2.cn.army30",
+            "ww2.cn.army42",
+            "ww2.cn.army51",
+            "ww2.cn.division38",
+            "ww2.cn.division180"
+          ],
+          "after": {
+            "mode": "all",
+            "node_ids": [
+              "red_mountain",
+              "red_plain"
+            ]
+          },
+          "not_before_seconds": 0,
+          "condition": {
+            "kind": "preserve",
+            "minimum_fraction": null
+          },
+          "hold_seconds": 0,
+          "latch": true,
+          "operation_ids": [
+            "WH-N17-mountain",
+            "WH-N17-plain"
+          ],
+          "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+        },
+        {
+          "id": "blue_mountain",
+          "label": "突破山地纵深",
+          "team": "blue",
+          "unit_ids": [
+            "ww2.jp.shinohara_detachment"
+          ],
+          "after": {
+            "mode": "all",
+            "node_ids": []
+          },
+          "not_before_seconds": 0,
+          "condition": {
+            "kind": "reach",
+            "region": {
+              "center": {
+                "lat": null,
+                "lng": null
+              },
+              "radius_km": null
+            },
+            "minimum_personnel": null
+          },
+          "hold_seconds": null,
+          "latch": true,
+          "operation_ids": [
+            "WH-N17-mountain"
+          ],
+          "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+        },
+        {
+          "id": "blue_plain",
+          "label": "威胁平原后路",
+          "team": "blue",
+          "unit_ids": [
+            "ww2.jp.division10"
+          ],
+          "after": {
+            "mode": "all",
+            "node_ids": []
+          },
+          "not_before_seconds": 0,
+          "condition": {
+            "kind": "reach",
+            "region": {
+              "center": {
+                "lat": null,
+                "lng": null
+              },
+              "radius_km": null
+            },
+            "minimum_personnel": null
+          },
+          "hold_seconds": null,
+          "latch": true,
+          "operation_ids": [
+            "WH-N17-plain"
+          ],
+          "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+        }
+      ],
+      "outcomes": {
+        "red": {
+          "mode": "all",
+          "node_ids": [
+            "red_preserve"
+          ]
+        },
+        "blue": {
+          "mode": "any",
+          "node_ids": [
+            "blue_mountain",
+            "blue_plain"
+          ]
+        }
+      },
+      "elimination_ends": false,
+      "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。"
+    },
+    "goal_regions": {
+      "red_mountain": {
+        "center": {
+          "lat": 31.7,
+          "lng": 115.7
+        },
+        "radius_km": 35,
+        "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。 此35km方向包络与单位估计地域一致；约束整个目标圆，不是历史阵地测绘。"
+      },
+      "red_plain": {
+        "center": {
+          "lat": 32.1,
+          "lng": 115.1
+        },
+        "radius_km": 35,
+        "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。 此35km方向包络与单位估计地域一致；约束整个目标圆，不是历史阵地测绘。"
+      },
+      "blue_mountain": {
+        "center": {
+          "lat": 31.7,
+          "lng": 115.7
+        },
+        "radius_km": 35,
+        "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。 此35km方向包络与单位估计地域一致；约束整个目标圆，不是历史阵地测绘。"
+      },
+      "blue_plain": {
+        "center": {
+          "lat": 32.1,
+          "lng": 115.1
+        },
+        "radius_km": 35,
+        "assumption": "北线已核身份与公开行动之上的探索计算范围；人数、装备、库存、坐标及目标阈值均为待填估计，不是历史实编或历史效能标定。不得将整个武汉会战总数均摊，不以既定历史战果自动扣人或判胜。 此35km方向包络与单位估计地域一致；约束整个目标圆，不是历史阵地测绘。"
+      }
+    }
+  }
+}

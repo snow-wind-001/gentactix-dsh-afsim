@@ -1,0 +1,618 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "LM04-jinsha1935",
+  "version": "1.0.0",
+  "battle": "红军长征-中央红军巧渡金沙江-1935.05.03至1935.05.09",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "干部团控制渡口后，仅军委纵队本窗参渡部分，不含先遣干部团；通安阻击、石板河掩护、另两渡口和后续军团不在本窗。非接敌限定是计算范围，不表示整个战役没有敌军。",
+      "仅绑定已核身份与阶段；实到人数、装备和阵地未载，保持null。",
+      "时钟、河线、岸点、容量、投入及后勤值须独立声明计算假设；没有核定的在场对手不虚构蓝方。",
+      "仅本地渡运，不覆盖场外追阻、其他渡口、后续增援、江流、沉船或全军分批调度与历史战损标定。"
+    ]
+  },
+  "sources": {
+    "JS35_DS": {
+      "title": "中央红军巧渡金沙江",
+      "url": "https://www.dswxyjy.org.cn/n1/2026/0723/c244516-40766567.html",
+      "publisher": "中共云南省委党史研究室／中共中央党史和文献研究院，2026-07-23",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "机构公开历史回顾，未核战时原始命令及逐时名册；文内统计不作为局部人数、船舶容量或战损配额。"
+    },
+    "JS35_SH": {
+      "title": "金沙流水响叮当 英勇红军来渡江",
+      "url": "https://www.ccphistory.org.cn/shds/shhm/content/5e7f0fdb-9865-42cd-be8b-62e5a16da692.html",
+      "publisher": "上海党史网",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "机构公开历史回顾，未核战时原始命令及逐时名册；文内统计不作为局部人数、船舶容量或战损配额。"
+    },
+    "GEO": {
+      "title": "Jiaopingdu，GeoNames 1806028",
+      "url": "https://www.geonames.org/1806028/",
+      "publisher": "GeoNames",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "沿用已登记现代地名；5公里误差为工作估计，水库岸线不能回填历史阵地。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "累计参战及关联部队参考（非同时到场）",
+      "date": {
+        "label": "1935.05.03至1935.05.09",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "JS35_DS",
+            "locator": "出其不意巧取皎平节，第91—98段"
+          }
+        ]
+      },
+      "scope": "保留其他方向和先后参战关系，不能整表部署。",
+      "evidence": [
+        {
+          "source_id": "JS35_DS",
+          "locator": "出其不意巧取皎平节，第91—98段"
+        }
+      ]
+    },
+    {
+      "id": "column_may3_night",
+      "label": "皎平渡控制后军委纵队续渡（夜间局部）",
+      "date": {
+        "label": "1935年5月3日至4日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "JS35_DS",
+            "locator": "出其不意巧取皎平节，第91—98段"
+          }
+        ]
+      },
+      "scope": "干部团控制渡口后，仅军委纵队本窗参渡部分，不含先遣干部团；通安阻击、石板河掩护、另两渡口和后续军团不在本窗。非接敌限定是计算范围，不表示整个战役没有敌军。",
+      "evidence": [
+        {
+          "source_id": "JS35_DS",
+          "locator": "出其不意巧取皎平节，第91—98段"
+        }
+      ],
+      "interaction": {
+        "kind": "non_contact_transfer",
+        "active_teams": [
+          "red"
+        ],
+        "scope": "干部团控制渡口后，仅军委纵队本窗参渡部分，不含先遣干部团；通安阻击、石板河掩护、另两渡口和后续军团不在本窗。非接敌限定是计算范围，不表示整个战役没有敌军。",
+        "evidence": [
+          {
+            "source_id": "JS35_DS",
+            "locator": "出其不意巧取皎平节，第91—98段"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1935-05-03T20:00",
+        "end": "1935-05-04T02:00",
+        "kind": "model_scope_limit",
+        "note": "夜间六小时为局部计算假设；起止钟点不是史实准确命令或渡完时刻。",
+        "evidence": [
+          {
+            "source_id": "JS35_DS",
+            "locator": "出其不意巧取皎平节，第91—98段"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 26.29554,
+          "lng": 102.42422
+        },
+        "radius_km": 8,
+        "kind": "model_scope_limit",
+        "note": "沿用已登记现代地名的8公里计算范围假设；不是历史岸线、渡口或单位阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO",
+            "locator": "已有地名索引及其不确定度"
+          }
+        ]
+      },
+      "process_requirements": [
+        {
+          "kind": "formation_crossing",
+          "scope": "须有渡运过程；不能以无河流占点冒充过江。",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "出其不意巧取皎平节，第91—98段"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "lm.red.cmc",
+      "name": "中革军委",
+      "team": "red",
+      "role": "command",
+      "echelon": "指挥机关",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JS35_DS",
+          "locator": "第95段；渡江统一指挥"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第95段；渡江统一指挥"
+            }
+          ]
+        },
+        {
+          "phase_id": "column_may3_night",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第95段；渡江统一指挥"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.cmc_column.follow_on",
+      "name": "军委纵队本窗参渡部分（不含先遣干部团）",
+      "team": "red",
+      "role": "formation",
+      "echelon": "纵队参渡部分",
+      "parent_id": "lm.red.cmc",
+      "evidence": [
+        {
+          "source_id": "JS35_DS",
+          "locator": "第95—98段；续渡组织"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第95—98段；续渡组织"
+            }
+          ]
+        },
+        {
+          "phase_id": "column_may3_night",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第95—98段；续渡组织"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.cadre_regiment",
+      "name": "干部团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JS35_DS",
+          "locator": "第95段；控制渡口后向通安发展"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第95段；控制渡口后向通安发展"
+            }
+          ]
+        },
+        {
+          "phase_id": "column_may3_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第95段；控制渡口后向通安发展"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.corps1",
+      "name": "红1军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JS35_DS",
+          "locator": "第101、108段；由龙街转皎平，后续集结"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第101、108段；由龙街转皎平，后续集结"
+            }
+          ]
+        },
+        {
+          "phase_id": "column_may3_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第101、108段；由龙街转皎平，后续集结"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.corps3",
+      "name": "红3军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JS35_DS",
+          "locator": "第101、108段；洪门及后续转皎平"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第101、108段；洪门及后续转皎平"
+            }
+          ]
+        },
+        {
+          "phase_id": "column_may3_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第101、108段；洪门及后续转皎平"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.corps5",
+      "name": "红5军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JS35_DS",
+          "locator": "第109段；石板河掩护"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第109段；石板河掩护"
+            }
+          ]
+        },
+        {
+          "phase_id": "column_may3_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第109段；石板河掩护"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.red.corps9",
+      "name": "红9军团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JS35_DS",
+          "locator": "第88段；侧翼行动"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第88段；侧翼行动"
+            }
+          ]
+        },
+        {
+          "phase_id": "column_may3_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第88段；侧翼行动"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.kmt.liu_yuantang",
+      "name": "刘元塘部",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "旅及江防相关部队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JS35_DS",
+          "locator": "第91、105、108段；江防与通安方向"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第91、105、108段；江防与通安方向"
+            }
+          ]
+        },
+        {
+          "phase_id": "column_may3_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第91、105、108段；江防与通安方向"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    },
+    {
+      "id": "lm.kmt.wan_yaohuang",
+      "name": "万耀煌部",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "追击部队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JS35_DS",
+          "locator": "第108段；团街追兵不作为渡口在场部队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第108段；团街追兵不作为渡口在场部队"
+            }
+          ]
+        },
+        {
+          "phase_id": "column_may3_night",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "JS35_DS",
+              "locator": "第108段；团街追兵不作为渡口在场部队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗本单位实到数；全军总数不是局部开局人数。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本窗分类可用装备及库存；不由名称自动配发。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；现代地名和计算岸点不是部队坐标。"
+        }
+      }
+    }
+  ]
+}

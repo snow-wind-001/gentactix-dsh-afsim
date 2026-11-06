@@ -1,0 +1,49 @@
+# Docker 构建上下文排除项 —— 只让 Streamlit 运行时真正需要的文件进镜像
+# 位置要求：必须放在构建上下文的根目录（即项目根）
+
+# Worker 侧
+node_modules
+.wrangler
+src
+package.json
+package-lock.json
+tsconfig.json
+wrangler.jsonc
+
+# 版本控制 / 编辑器
+.git
+.gitignore
+.vscode
+
+# 文档与测试产物
+# ⚠️ corpus/ 下的 .md 是**运行时史料语料**，不是文档。
+#    一旦被排除，镜像里史料库为空，线上 RAG 会退化成「模型自由发挥」——
+#    界面虽然会提示「史料库为空」，但排查时很难想到根因在构建上下文。
+#    下面两行例外即使在 `*` 跨目录匹配的实现下也能保住语料。
+*.md
+!corpus/*.md
+!corpus/**/*.md
+!adjudication/*.md
+!adjudication/**/*.md
+*.orig_backup
+__pycache__
+*.pyc
+.pytest_cache
+
+# 本地虚拟环境（若有）
+.venv
+venv
+.cache
+.playwright-cli
+.env
+.env.*
+.gentactix-llm.*
+*.key
+.packaging-venv
+.dsh-wargame-home
+.dsh-wargame-workspace
+release
+dist-backend
+build-backend
+frontend/node_modules
+.firecrawl

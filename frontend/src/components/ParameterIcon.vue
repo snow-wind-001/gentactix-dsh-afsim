@@ -1,0 +1,6 @@
+<script setup lang="ts">
+defineProps<{name:string}>();
+const paths:Record<string,string>={overview:'M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z',people:'M9 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M2 21v-3a6 6 0 0 1 12 0v3 M16 5a3 3 0 0 1 0 6 M18 15a5 5 0 0 1 4 5',equipment:'M4 8h16l2 8H2z M5 20h14 M7 8V4h10v4 M6 12h2 M16 12h2',fire:'M12 2v5 M12 17v5 M2 12h5 M17 12h5 M12 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14 M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6',logistics:'M3 7l9-4 9 4-9 5z M3 7v11l9 4 9-4V7 M12 12v10 M7 5l10 5',command:'M8 19h8 M12 11v8 M12 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4 M6 5a9 9 0 0 0 0 10 M18 5a9 9 0 0 1 0 10 M3 2a13 13 0 0 0 0 16 M21 2a13 13 0 0 1 0 16',source:'M4 3h12l4 4v14H4z M16 3v5h4 M8 12h8 M8 16h8 M8 8h4',all:'M3 4h18v16H3z M8 4v16 M3 9h18 M3 14h18',move:'M3 20l5-5 M4 4l16 5-7 4-4 7z',clock:'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18 M12 7v5l3 2',shield:'M12 3l8 3v6c0 5-8 9-8 9s-8-4-8-9V6z',info:'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18 M12 11v6 M12 7v1'};
+</script>
+<template><svg class="parameter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path :d="paths[name]??paths.info"/></svg></template>
+<style scoped>.parameter-icon{width:18px;height:18px;flex:none;vertical-align:middle}</style>

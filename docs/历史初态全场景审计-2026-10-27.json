@@ -1,0 +1,3065 @@
+{
+  "generated_at": "2026-10-27T13:04:37.907856+00:00",
+  "summary": {
+    "saved_files": 6,
+    "initialized_files": 4,
+    "source_replays_without_units": 3,
+    "uninitialized_files": 2,
+    "reference_rows": 99,
+    "replay_zero_units": 45,
+    "teaching_template_unit_counts": {
+      "6": 45
+    },
+    "derived_seed_unit_counts": {
+      "2": 45
+    },
+    "same_3000_personnel_each_side": 45,
+    "verified_historical_initial_states": 0
+  },
+  "catalog": [
+    {
+      "battle": "抗日战争-万家岭战役-1938.09下旬至1938.10",
+      "mission_id": "CA-f5e7124ea995-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "第九战区第1兵团相关部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "第106师团及第27师团增援部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 1,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1938年9月下旬 · 旬",
+      "template_start": "1938-10-07 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-全面反攻与受降总览-1945.08至1945.09",
+      "mission_id": "CA-003c0c2590be-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "晋察冀军区冀察部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "各地驻军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 1,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1945-08-09 · 当日",
+      "template_start": "1945-08-09 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-冀中五一反扫荡-1942.05.01至1942.06.20",
+      "mission_id": "CA-1d29179aba8a-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "冀中军区、地方武装与机关",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "华北方面军相关部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1942-05-01 · 当日",
+      "template_start": "1942-05-01 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-台儿庄战役-1938.03.23至1938.04.07",
+      "mission_id": "CA-4be93230a529-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "第2集团军、第31师及外围汤恩伯部",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "第10师团濑谷支队及第5师团坂本支队一部",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1938-03-23 · 当日",
+      "template_start": "1938-03-23 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-太原会战-1937.09至1937.11",
+      "mission_id": "CA-8df20b9112a6-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "忻口守军与八路军各部",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "北路与正太路进攻部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 3,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1937-09-25 · 当日",
+      "template_start": "1937-09-25 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-平型关伏击战-1937.09.25",
+      "mission_id": "CA-f8e4ed0b25d6-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "八路军第115师",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "第5师团第21旅团一部及运输队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 1,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1937年9月 · 战前",
+      "template_start": "1937-09-25 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-徐州会战总览-1938.01至1938.05",
+      "mission_id": "CA-cdea8d586d1b-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "第五战区",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "南北两线日军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 3,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1938年初 · 阶段",
+      "template_start": "1938-03-23 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-敌后局部反攻总览-1944",
+      "mission_id": "CA-0990b23188d8-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "八路军、新四军及华南抗日武装",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "各地守备与机动部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1944年1—2月 · 阶段",
+      "template_start": "1944-04-12 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-桂南会战与昆仑关攻坚-1939.11至1940.01",
+      "mission_id": "CA-901c20e66eac-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "第5军及相关增援",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "第5师团第21旅团等",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1939年11月 · 月内",
+      "template_start": "1939-12-04 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-武汉会战-1938.06至1938.10",
+      "mission_id": "CA-80ab93b4f0db-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "武汉外围中国陆军与中苏航空力量",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "沿长江及大别山方向进攻部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 3,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1938年6月 · 月内",
+      "template_start": "1938-10-24 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-淞沪会战-1937.08.13至1937.11.12",
+      "mission_id": "CA-3c5de8592db2-v1",
+      "reference_rows": 4,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "第9集团军第87、第88师等",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "red",
+          "name": "第88师及各参战部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-2",
+          "team": "blue",
+          "name": "驻沪海军陆战队、第10军等",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-3",
+          "team": "blue",
+          "name": "上海派遣军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 1,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1937-08-13 · 9时30分",
+      "template_start": "1937-08-13 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-湘西会战-1945.04.09至1945.06.07",
+      "mission_id": "CA-AJ18-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "陆军第四方面军等",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "第20军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1945-04-09 · 当日",
+      "template_start": "1945-04-09 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-百团大战-1940.08.20至1941.01.24",
+      "mission_id": "CA-76e954174f09-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "八路军总部及晋察冀、第120、第129师等",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "华北铁路守备与增援、扫荡部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 3,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1940-07-22 · 当日",
+      "template_start": "1940-07-22 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-第一次长沙会战-1939.09.14至1939.10",
+      "mission_id": "CA-183fce51b0f0-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "第九战区",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "第11军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1939-09-14 · 当日",
+      "template_start": "1939-09-14 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-第三次长沙会战-1941.12.24至1942.01.16",
+      "mission_id": "CA-5737bca9bd3f-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "第九战区、第10军等",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "第11军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1941-12-24 · 当日",
+      "template_start": "1941-12-24 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-第二次长沙会战-1941.09.07至1941.10.09",
+      "mission_id": "CA-d2eb841ff224-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "第九战区",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "第11军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1941-09-07 · 当日",
+      "template_start": "1941-09-07 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-缅北滇西反攻总览-1943.10至1945.03",
+      "mission_id": "CA-253e001be5f5-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "中国驻印军、远征军及协同力量",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "缅北与滇西守备部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1943年10月 · 月内",
+      "template_start": "1945-01-27 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-衡阳保卫战-1944.06至1944.08.08",
+      "mission_id": "CA-40cc547f3c5e-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "第10军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "衡阳进攻部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 1,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1944-06-22 · 当日",
+      "template_start": "1944-06-22 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-豫湘桂战役总览-1944.04至1944.12",
+      "mission_id": "CA-1b63e8e4c907-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "豫、湘、桂各战区部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "实施一号作战的部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 6,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1944年4月中旬 · 旬",
+      "template_start": "1944-01-01 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗日战争-车桥战役-1944.03.05至1944.03.06",
+      "mission_id": "CA-377b4e726e6f-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "新四军第1师兼苏中军区",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "车桥守备与周边增援部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1944-03-05 · 1时50分",
+      "template_start": "1944-03-05 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗美援朝-上甘岭战役-1952.10.14至1952.11.25",
+      "mission_id": "CA-1c43c18babc4-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "志愿军第45师第135团",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "美第7师",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 3,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1952-10-14",
+      "template_start": "1952-10-14 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27",
+      "mission_id": "CA-a9d5dbc89c8f-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "志愿军第20兵团",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "韩国首都师",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 3,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1953年5月起",
+      "template_start": "1953-05-13 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22",
+      "mission_id": "CA-cc22c2ddc184-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "志愿军参战部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "联合国军参战部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 3,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1951年8月起",
+      "template_start": "1951-08-18 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31",
+      "mission_id": "CA-9059ede08fb6-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "志愿军第39军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "联合国军前沿守备部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 5,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1952-09-18起",
+      "template_start": "1952-09-18 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗美援朝-第一次战役-1950.10.25至1950.11.05",
+      "mission_id": "CA-f83f58bb6f77-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "志愿军第39军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "美骑兵第1师",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 4,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1950-10-19起",
+      "template_start": "1950-10-25 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗美援朝-第三次战役-1950.12.31至1951.01.08",
+      "mission_id": "CA-7de6b7b293a1-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "志愿军第50军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "美第8集团军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 3,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1950-12-31晚",
+      "template_start": "1950-12-31 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗美援朝-第二次战役-1950.11.07至1950.12.24",
+      "mission_id": "CA-3ce2604d09e4-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "志愿军第38军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "美第8集团军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 7,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1950年11月上中旬",
+      "template_start": "1950-11-07 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗美援朝-第五次战役-1951.04.22至1951.06.10",
+      "mission_id": "CA-441cdffe1816-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "志愿军第63军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "美第8集团军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 5,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1951-04-22",
+      "template_start": "1951-04-22 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "抗美援朝-第四次战役-1951.01.25至1951.04.21",
+      "mission_id": "CA-b23125e4f478-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "志愿军第50军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "美第8集团军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 4,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1951-01-25起",
+      "template_start": "1951-01-25 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-中央红军巧渡金沙江-1935.05.03至1935.05.09",
+      "mission_id": "CA-7cda1e6c3c63-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "中革军委及三路纵队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "滇军与追击部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 1,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1935-04-29 · 前置；未载钟点",
+      "template_start": "1935-05-03 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-乌蒙山回旋战-1936.02.27至1936.03.28",
+      "mission_id": "CA-3876cd83ec97-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "红2、红6军团",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "中央军、川军和滇军追堵部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1936-02-27 · 未载钟点",
+      "template_start": "1936-02-27 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-包座战役-1935.08.29至1935.09.01",
+      "mission_id": "CA-02b22e5eb9b8-v1",
+      "reference_rows": 3,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "红30军及红4军一部",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "胡宗南部守军与第49师援军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-2",
+          "team": "red",
+          "name": "红4军第10师",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1935-08-25 · 前置；未载钟点",
+      "template_start": "1935-08-29 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-嘉陵江战役-1935.03.28至1935.04.21",
+      "mission_id": "CA-52232a78c0f6-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "红四方面军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "邓锡侯、田颂尧部等川军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 1,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1935-03-28 · 晚间",
+      "template_start": "1935-03-28 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-四渡赤水-1935.01.19至1935.03.22",
+      "mission_id": "CA-bf0686cb2f1f-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "中革军委、红1与红3军团等",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "中央军及川、黔、滇等部",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 3,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1935-01-15至1935-01-17 · 前置；会议期间",
+      "template_start": "1935-01-19 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-强渡乌江-1935.01.01至1935.01.06",
+      "mission_id": "CA-9f8fff84fcf7-v1",
+      "reference_rows": 3,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "红1军团第1师第1团、红1军团第2师第4团等",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "黔军江防部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-2",
+          "team": "red",
+          "name": "红4团第3连及竹筏突击人员",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 1,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1934-12-31至1935-01-01 · 前置；晚间至凌晨",
+      "template_start": "1935-01-01 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-强渡大渡河与飞夺泸定桥-1935.05.24至1935.05.29",
+      "mission_id": "CA-bd5eb3c49eeb-v1",
+      "reference_rows": 3,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "红1团与红4团",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "red",
+          "name": "军委、左右两路部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-2",
+          "team": "blue",
+          "name": "川军渡口守军及泸定桥守军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1935-05-24 · 未核钟点",
+      "template_start": "1935-05-24 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-懋功会师与雪山草地转移-1935.06.12至1935.09.12",
+      "mission_id": "CA-0150ecd41cdf-v1",
+      "reference_rows": 4,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "中央红军与红四方面军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "川甘方向堵截部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-2",
+          "team": "red",
+          "name": "右路军（1935年8月3日编组）",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-3",
+          "team": "red",
+          "name": "左路军（1935年8月3日编组）",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1935-06-12 · 未载钟点",
+      "template_start": "1935-06-12 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-湘江战役-1934.11.25至1934.12.01",
+      "mission_id": "CA-f6a86e23239a-v1",
+      "reference_rows": 3,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "中革军委与中央纵队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "red",
+          "name": "红1、红3、红5军团等",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-2",
+          "team": "blue",
+          "name": "湘军、桂军及追击部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 4,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1934-11-25 · 未载钟点",
+      "template_start": "1934-11-25 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-甘孜会师至三大主力会师-1936.07.01至1936.10.22",
+      "mission_id": "CA-a35786f55e7a-v1",
+      "reference_rows": 3,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "红2、红6军团及红32军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "red",
+          "name": "红四方面军与红一方面军接应部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-2",
+          "team": "blue",
+          "name": "甘南及会师通道的堵截力量",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 2,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1936-07-01 · 未载钟点",
+      "template_start": "1936-07-01 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-百丈关战役-1935.11",
+      "mission_id": "CA-59a6ec982034-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "红四方面军红4、红30军等",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "刘湘所部及川军增援",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 1,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1935-11-13 · 未载钟点；S18时间线",
+      "template_start": "1935-11-01 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-直罗镇战役-1935.11.20至1935.11.24",
+      "mission_id": "CA-b6662dc4afaf-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "红1方面军第1、第15军团",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "东北军第109师及两侧援军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 1,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1935-11-20 · 未载钟点",
+      "template_start": "1935-11-20 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-红二六军团抢渡金沙江-1936.04.25至1936.04.28",
+      "mission_id": "CA-3a504c54e4b3-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "红2、红6军团",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "追击及沿途地方守备",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 1,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1936-04-25 · 日内；凌晨、中午、下午有异文",
+      "template_start": "1936-04-25 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-红二十五军长征-1934.11.16至1935.09.16",
+      "mission_id": "CA-e61db6c235c3-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "红25军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "河南堵截部队、追击军和陕西地方军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 3,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1934-11-16 · 未载钟点",
+      "template_start": "1934-11-16 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "红军长征-腊子口战斗-1935.09.16至1935.09.17",
+      "mission_id": "CA-99a4db6e93d2-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "红4团",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "鲁大昌新编第14师部队",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 1,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "1935-09-16 · 晚间",
+      "template_start": "1935-09-16 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    },
+    {
+      "battle": "长平之战",
+      "mission_id": "CA-54ad85635764-v1",
+      "reference_rows": 2,
+      "references": [
+        {
+          "id": "force-0",
+          "team": "red",
+          "name": "秦军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        },
+        {
+          "id": "force-1",
+          "team": "blue",
+          "name": "赵军",
+          "actual_personnel": null,
+          "actual_equipment": null,
+          "actual_tactical_position": null
+        }
+      ],
+      "replay_units": 0,
+      "replay_geo_references": 0,
+      "teaching_template_units": 6,
+      "derived_seed_units": 2,
+      "seed_personnel": [
+        3000,
+        3000
+      ],
+      "seed_equipment": [
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        },
+        {
+          "armor": 0,
+          "artillery": 0,
+          "air_defense": 0,
+          "engineer": 6,
+          "transport": 12
+        }
+      ],
+      "source_first_event": "公元前260年决战阶段 · 相对顺序1",
+      "template_start": "公元前260年 08:00",
+      "verified_historical_initial_state": false,
+      "reasons": [
+        "史料帧没有作战单位",
+        "历史入口复用局部教学种子",
+        "缺少同一时点逐部队部署与数量绑定",
+        "三种用途未共享历史初态"
+      ]
+    }
+  ],
+  "native_imports": [
+    {
+      "battle": "抗日战争-万家岭战役-1938.09下旬至1938.10",
+      "session_id": "5823f8e6dfbd",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 1,
+      "geo_reference_count": 1,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-全面反攻与受降总览-1945.08至1945.09",
+      "session_id": "762b38a4d8f0",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 1,
+      "geo_reference_count": 1,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-冀中五一反扫荡-1942.05.01至1942.06.20",
+      "session_id": "7e533016d7e2",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-台儿庄战役-1938.03.23至1938.04.07",
+      "session_id": "af727d6dfcab",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-太原会战-1937.09至1937.11",
+      "session_id": "288f9980b74f",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 3,
+      "geo_reference_count": 3,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-平型关伏击战-1937.09.25",
+      "session_id": "d6074a281cfc",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 1,
+      "geo_reference_count": 1,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-徐州会战总览-1938.01至1938.05",
+      "session_id": "b20b363f19ec",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 3,
+      "geo_reference_count": 3,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-敌后局部反攻总览-1944",
+      "session_id": "f2788c886069",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-桂南会战与昆仑关攻坚-1939.11至1940.01",
+      "session_id": "74c0f27a1cf4",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-武汉会战-1938.06至1938.10",
+      "session_id": "d5a960421d0a",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 3,
+      "geo_reference_count": 3,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-淞沪会战-1937.08.13至1937.11.12",
+      "session_id": "74e7f75c753e",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 1,
+      "geo_reference_count": 1,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-湘西会战-1945.04.09至1945.06.07",
+      "session_id": "53fa3f9222d7",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-百团大战-1940.08.20至1941.01.24",
+      "session_id": "e46659b1a532",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 3,
+      "geo_reference_count": 3,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-第一次长沙会战-1939.09.14至1939.10",
+      "session_id": "7794bef9c764",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-第三次长沙会战-1941.12.24至1942.01.16",
+      "session_id": "316578fa1418",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-第二次长沙会战-1941.09.07至1941.10.09",
+      "session_id": "bd69305b5e2f",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-缅北滇西反攻总览-1943.10至1945.03",
+      "session_id": "f861f43c6bbf",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-衡阳保卫战-1944.06至1944.08.08",
+      "session_id": "2b3ac1360d50",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 1,
+      "geo_reference_count": 1,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-豫湘桂战役总览-1944.04至1944.12",
+      "session_id": "7c52a507c2d4",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 6,
+      "geo_reference_count": 6,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗日战争-车桥战役-1944.03.05至1944.03.06",
+      "session_id": "396fcda01a45",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗美援朝-上甘岭战役-1952.10.14至1952.11.25",
+      "session_id": "51103f3a9026",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 3,
+      "geo_reference_count": 3,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27",
+      "session_id": "bd40a8661399",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 3,
+      "geo_reference_count": 3,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22",
+      "session_id": "e51de857bf1f",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 3,
+      "geo_reference_count": 3,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31",
+      "session_id": "620b59afaa82",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 5,
+      "geo_reference_count": 5,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗美援朝-第一次战役-1950.10.25至1950.11.05",
+      "session_id": "fa61f87afb12",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 4,
+      "geo_reference_count": 4,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗美援朝-第三次战役-1950.12.31至1951.01.08",
+      "session_id": "bba26b397e9b",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 3,
+      "geo_reference_count": 3,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗美援朝-第二次战役-1950.11.07至1950.12.24",
+      "session_id": "ee1374622cef",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 7,
+      "geo_reference_count": 7,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗美援朝-第五次战役-1951.04.22至1951.06.10",
+      "session_id": "61a6a47f97a6",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 5,
+      "geo_reference_count": 5,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "抗美援朝-第四次战役-1951.01.25至1951.04.21",
+      "session_id": "de098bddeef3",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 4,
+      "geo_reference_count": 4,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-中央红军巧渡金沙江-1935.05.03至1935.05.09",
+      "session_id": "81ade39a24a6",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 1,
+      "geo_reference_count": 1,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-乌蒙山回旋战-1936.02.27至1936.03.28",
+      "session_id": "f979636edc3c",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-包座战役-1935.08.29至1935.09.01",
+      "session_id": "466d77bc4e2e",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-嘉陵江战役-1935.03.28至1935.04.21",
+      "session_id": "c918642ebe2a",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 1,
+      "geo_reference_count": 1,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-四渡赤水-1935.01.19至1935.03.22",
+      "session_id": "664201d30247",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 3,
+      "geo_reference_count": 3,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-强渡乌江-1935.01.01至1935.01.06",
+      "session_id": "45dc0ddaacda",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 1,
+      "geo_reference_count": 1,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-强渡大渡河与飞夺泸定桥-1935.05.24至1935.05.29",
+      "session_id": "6e52dded733e",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-懋功会师与雪山草地转移-1935.06.12至1935.09.12",
+      "session_id": "54bbefa1ed31",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-湘江战役-1934.11.25至1934.12.01",
+      "session_id": "e1d93459e76b",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 4,
+      "geo_reference_count": 4,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-甘孜会师至三大主力会师-1936.07.01至1936.10.22",
+      "session_id": "e470876b1cff",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 2,
+      "geo_reference_count": 2,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-百丈关战役-1935.11",
+      "session_id": "20897085bce7",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 1,
+      "geo_reference_count": 1,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-直罗镇战役-1935.11.20至1935.11.24",
+      "session_id": "bbd050ad6e76",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 1,
+      "geo_reference_count": 1,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-红二六军团抢渡金沙江-1936.04.25至1936.04.28",
+      "session_id": "96a01ab7a396",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 1,
+      "geo_reference_count": 1,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-红二十五军长征-1934.11.16至1935.09.16",
+      "session_id": "897180173c4c",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 3,
+      "geo_reference_count": 3,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "红军长征-腊子口战斗-1935.09.16至1935.09.17",
+      "session_id": "1a6c41ed8555",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 1,
+      "geo_reference_count": 1,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    },
+    {
+      "battle": "长平之战",
+      "session_id": "250a7e7b245c",
+      "status": "completed",
+      "unit_count": 0,
+      "native_entity_count": 0,
+      "geo_reference_count": 0,
+      "source": "dsh_native_mcp_controller",
+      "model_skipped": true
+    }
+  ]
+}

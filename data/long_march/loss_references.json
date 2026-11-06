@@ -1,0 +1,31 @@
+{
+  "format": "gentactix-published-unit-loss-references-v1",
+  "checked_on": "2026-10-28",
+  "scope": "同番号伤亡参照，统计窗口和范围分别保存；不生成历史配额或已标定伤亡率。",
+  "battles": {
+    "红军长征-湘江战役-1934.11.25至1934.12.01": [
+      {
+        "historical_unit_id": "lm.red.regiment10",
+        "name": "红三军团第4师第10团",
+        "metric": "reported_killed_and_wounded",
+        "committed_approx": null,
+        "casualties_approx": 400,
+        "duration_hours": null,
+        "hourly_rate_available": false,
+        "scope": "光华铺29日夜至30日前后叙述；精确损失起止和实到量未核，不等同于30日上午计算窗口",
+        "metric_summary": "2006年回顾转引地方志记红10团伤亡400余；2026年省党史机构回顾称数百。均不是阵亡分项，也不是本局必达数。",
+        "note": "未核原始名册和逐小时损失；人数、坐标为计算估计时仅作范围参照。红4师全师及红5师损失不能再计入本团。",
+        "source": {
+          "title": "湘江战役：鲜血与生命写就的英雄史诗（2）",
+          "url": "https://cpc.people.com.cn/GB/67481/68751/68760/4873839.html",
+          "scope": "2006-09-29公开回顾光华铺段，转引《兴安县志》；原件未阅"
+        },
+        "alternate_source": {
+          "title": "红军长征过广西",
+          "url": "https://www.dswxyjy.org.cn/n1/2026/0702/c244516-40752274.html",
+          "scope": "中共广西壮族自治区委员会党史研究室2026-07-02，光华铺段数百伤亡"
+        }
+      }
+    ]
+  }
+}

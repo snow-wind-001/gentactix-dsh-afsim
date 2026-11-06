@@ -1,0 +1,1588 @@
+{
+  "scope": "Local source structure only; not historical verification, deployment, loaded roster or complete-runtime acceptance",
+  "profile_count": 45,
+  "valid_version_count": 56,
+  "invalid_versions": [],
+  "default_profiles_with_parent_candidates": 5,
+  "any_version_profiles_with_parent_candidates": 6,
+  "default_parent_phase_pairs": 13,
+  "default_complete_coverage_pairs": 0,
+  "nonphysical_present_children": [],
+  "profiles": [
+    {
+      "profile_id": "AJ07-wanjialing",
+      "battle": "抗日战争-万家岭战役-1938.09下旬至1938.10",
+      "default_version": "1.0.0",
+      "default_definition_hash": "ec535e5cea80dbd89fbfde8db4a3741141e26308a9f1ec371fba92602029325f",
+      "reference_units": 9,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 9,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ20-reception",
+      "battle": "抗日战争-全面反攻与受降总览-1945.08至1945.09",
+      "default_version": "1.0.0",
+      "default_definition_hash": "d7daedea870bbea59298dbbca764dc8d60431382e8559d5e2e2bb2ee71f5c200",
+      "reference_units": 6,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ15-jizhong",
+      "battle": "抗日战争-冀中五一反扫荡-1942.05.01至1942.06.20",
+      "default_version": "1.0.0",
+      "default_definition_hash": "6efbdd446413a55d1c389ed43eeaf71ea546f6cecd3b9484382417dfd02c7fdd",
+      "reference_units": 45,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ05-taierzhuang",
+      "battle": "抗日战争-台儿庄战役-1938.03.23至1938.04.07",
+      "default_version": "1.0.0",
+      "default_definition_hash": "9b11432370b7f0d9e1ac34671308a990b65ae9cb89aa68eecc50b8e8451980a1",
+      "reference_units": 10,
+      "default_parent_phase_pairs": 1,
+      "any_version_parent_phase_pairs": 1,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 1,
+      "default_requires_residual_pairs": 1,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "复核已列下级与余部，准备显式父级窗口；逐单位兵额、装备和部署仍需来源或估计"
+    },
+    {
+      "profile_id": "AJ02-taiyuan",
+      "battle": "抗日战争-太原会战-1937.09至1937.11",
+      "default_version": "1.0.0",
+      "default_definition_hash": "a330d9f4137799aacf99a68c8c7eead0f830bbaea1a48f4cce4bc8d1c3bce82b",
+      "reference_units": 5,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ03-pingxingguan",
+      "battle": "抗日战争-平型关伏击战-1937.09.25",
+      "default_version": "1.0.0",
+      "default_definition_hash": "ecc5227078aa848bfbc31fb6933cffad38c2a5ec30978ac40df30220dea4c8b8",
+      "reference_units": 16,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ04-xuzhou",
+      "battle": "抗日战争-徐州会战总览-1938.01至1938.05",
+      "default_version": "1.2.0",
+      "default_definition_hash": "f39b6c2332718ba69d85cf420f7dda9a0f8cd5ecfcfc37826256f9a5c0a8047f",
+      "reference_units": 10,
+      "default_parent_phase_pairs": 3,
+      "any_version_parent_phase_pairs": 8,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 3,
+      "default_requires_residual_pairs": 3,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "复核已列下级与余部，准备显式父级窗口；逐单位兵额、装备和部署仍需来源或估计"
+    },
+    {
+      "profile_id": "AJ16-counter1944",
+      "battle": "抗日战争-敌后局部反攻总览-1944",
+      "default_version": "1.0.0",
+      "default_definition_hash": "d7a891de471a1a027903661068fb9ce9348e9b158aaf0ed066ab6a2a7a7d2410",
+      "reference_units": 5,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ11-kunlun",
+      "battle": "抗日战争-桂南会战与昆仑关攻坚-1939.11至1940.01",
+      "default_version": "1.0.0",
+      "default_definition_hash": "c52d17950e1a5e8e51e75a924b3f5cf55a56741ea6129cb2366166c06c9430ff",
+      "reference_units": 5,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ06-wuhan",
+      "battle": "抗日战争-武汉会战-1938.06至1938.10",
+      "default_version": "1.0.0",
+      "default_definition_hash": "1a76329fa80ecfd83b65d938758f9a6f98f8be99cfe22ec462b13341c8a57845",
+      "reference_units": 118,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ01-shanghai",
+      "battle": "抗日战争-淞沪会战-1937.08.13至1937.11.12",
+      "default_version": "1.0.0",
+      "default_definition_hash": "2bb62be5db780000888157547fca3666892b16f092836fa2e3a2bceecfeaec72",
+      "reference_units": 7,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ18-xiangxi",
+      "battle": "抗日战争-湘西会战-1945.04.09至1945.06.07",
+      "default_version": "1.0.0",
+      "default_definition_hash": "418e434523f21a12a02d76c5ba3698a8694e35512e8f1ae58d50416e01bdee8e",
+      "reference_units": 6,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ14-hundred",
+      "battle": "抗日战争-百团大战-1940.08.20至1941.01.24",
+      "default_version": "1.0.0",
+      "default_definition_hash": "c966c4255a764fde731e6d4331850d488baa6fd9190886044a5b8139aa7ca71d",
+      "reference_units": 5,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ08-changsha1",
+      "battle": "抗日战争-第一次长沙会战-1939.09.14至1939.10",
+      "default_version": "1.1.0",
+      "default_definition_hash": "c77c524b9bb2a8c59c5446fc374a6c4e3729702421d22ad6032cf98bfdc3fe5a",
+      "reference_units": 7,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ10-changsha3",
+      "battle": "抗日战争-第三次长沙会战-1941.12.24至1942.01.16",
+      "default_version": "1.0.0",
+      "default_definition_hash": "d6d43be1ef3540aa1935c28b369286768a0b921340c2ad3c646b6ff65cbb7a40",
+      "reference_units": 4,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ09-changsha2",
+      "battle": "抗日战争-第二次长沙会战-1941.09.07至1941.10.09",
+      "default_version": "1.1.0",
+      "default_definition_hash": "da76b080d595002428fe88e34dbd0f660feedbbce6d8f9b10ee30ea24ab68a15",
+      "reference_units": 2,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ19-burma",
+      "battle": "抗日战争-缅北滇西反攻总览-1943.10至1945.03",
+      "default_version": "1.0.0",
+      "default_definition_hash": "dd8a6745579694e3a8da1cd1006a41841e7347fc659aa593a22645b8c50e6ef1",
+      "reference_units": 4,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ13-hengyang",
+      "battle": "抗日战争-衡阳保卫战-1944.06至1944.08.08",
+      "default_version": "1.0.0",
+      "default_definition_hash": "66e5b8f61ef07e8bb9a0468d6cc20f4b295f70e453334e51838a973c14444590",
+      "reference_units": 4,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ12-ichigo",
+      "battle": "抗日战争-豫湘桂战役总览-1944.04至1944.12",
+      "default_version": "1.0.0",
+      "default_definition_hash": "d5662d9286918751856f0eed90580b529c370083dd0abeaf076ff1195e86bf33",
+      "reference_units": 3,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "AJ17-cheqiao",
+      "battle": "抗日战争-车桥战役-1944.03.05至1944.03.06",
+      "default_version": "1.0.0",
+      "default_definition_hash": "82e09f17fcb0b6ccfe25fd5fca096f2c9cd43b88cbeea4f5171a96038b3af8cd",
+      "reference_units": 8,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "KW08-sangganling",
+      "battle": "抗美援朝-上甘岭战役-1952.10.14至1952.11.25",
+      "default_version": "1.0.0",
+      "default_definition_hash": "bbc463371aa5327ecb90b376ca9969d5679e1a00244ebd22a621559a7babe89d",
+      "reference_units": 10,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "KW09-summer1953",
+      "battle": "抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27",
+      "default_version": "1.0.0",
+      "default_definition_hash": "1f238744e16029c4cbea743f89d82b8d4e78291e44e86332485e2224499b7f67",
+      "reference_units": 9,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "KW06-autumn1951",
+      "battle": "抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22",
+      "default_version": "1.0.0",
+      "default_definition_hash": "f519ba8cc41e8fd21dffb410b1395bc5ff0701d7df38910e05965150a03d0ae5",
+      "reference_units": 7,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "KW07-counter1952",
+      "battle": "抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31",
+      "default_version": "1.0.0",
+      "default_definition_hash": "ff01f47f2ae4fd7d27061eb66f6f1c884341d63c8c1ab81aef33f33126f58507",
+      "reference_units": 7,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "KW01-first",
+      "battle": "抗美援朝-第一次战役-1950.10.25至1950.11.05",
+      "default_version": "1.0.0",
+      "default_definition_hash": "4ca877de5a8efb8672561a9d6390c0ed65ec7d776ec431f38c9ec4591e75a84e",
+      "reference_units": 62,
+      "default_parent_phase_pairs": 6,
+      "any_version_parent_phase_pairs": 6,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 6,
+      "default_requires_residual_pairs": 6,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "复核已列下级与余部，准备显式父级窗口；逐单位兵额、装备和部署仍需来源或估计"
+    },
+    {
+      "profile_id": "KW03-third",
+      "battle": "抗美援朝-第三次战役-1950.12.31至1951.01.08",
+      "default_version": "1.0.0",
+      "default_definition_hash": "268beb2ca6f7eada1eae20cfaf2d7d8539825c631748da396ea3135abe7f5cd7",
+      "reference_units": 13,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "KW02-second",
+      "battle": "抗美援朝-第二次战役-1950.11.07至1950.12.24",
+      "default_version": "1.0.0",
+      "default_definition_hash": "237ad95d5ac4438df8c0ff1c6ddabd1398cf662fce2d6151d5709cadab58d256",
+      "reference_units": 16,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "KW05-fifth",
+      "battle": "抗美援朝-第五次战役-1951.04.22至1951.06.10",
+      "default_version": "1.0.0",
+      "default_definition_hash": "3b30522b4fbbb06d1c4be2a4f7006896a1f2b9d646cce56448123dac3cd5c850",
+      "reference_units": 11,
+      "default_parent_phase_pairs": 1,
+      "any_version_parent_phase_pairs": 1,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 1,
+      "default_requires_residual_pairs": 1,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "复核已列下级与余部，准备显式父级窗口；逐单位兵额、装备和部署仍需来源或估计"
+    },
+    {
+      "profile_id": "KW04-fourth",
+      "battle": "抗美援朝-第四次战役-1951.01.25至1951.04.21",
+      "default_version": "1.0.0",
+      "default_definition_hash": "509b0e084f78c0e7525f2fc3f15c6f68241024e3a22e29f86fdc2d8fea1129b5",
+      "reference_units": 11,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM04-jinsha1935",
+      "battle": "红军长征-中央红军巧渡金沙江-1935.05.03至1935.05.09",
+      "default_version": "1.0.0",
+      "default_definition_hash": "72984395689accb5f26032bbb4e39694f505b9981920328c32f9685d16ffa53c",
+      "reference_units": 9,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM12-wumeng",
+      "battle": "红军长征-乌蒙山回旋战-1936.02.27至1936.03.28",
+      "default_version": "1.0.0",
+      "default_definition_hash": "a0107225cf03865bbf21760e91b05a1981eeb05916bb4be92f850b990bf29ba2",
+      "reference_units": 4,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM07-baozuo",
+      "battle": "红军长征-包座战役-1935.08.29至1935.09.01",
+      "default_version": "1.0.0",
+      "default_definition_hash": "82cf11c15860d7801eda6c59f729560b0987c79f4bd077c12cac914dd5c34b89",
+      "reference_units": 23,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM10-jialing",
+      "battle": "红军长征-嘉陵江战役-1935.03.28至1935.04.21",
+      "default_version": "1.0.0",
+      "default_definition_hash": "d36fa3d990970c9c7476800d2f34589a0d1056b673e532e7e015923d767be504",
+      "reference_units": 18,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM03-chishui",
+      "battle": "红军长征-四渡赤水-1935.01.19至1935.03.22",
+      "default_version": "1.0.0",
+      "default_definition_hash": "7dc19bb38ebff76f1de08d4b8d568e09fcdab4c0798b1bdcbc3e626d1cd03dfc",
+      "reference_units": 5,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM02-wujiang",
+      "battle": "红军长征-强渡乌江-1935.01.01至1935.01.06",
+      "default_version": "1.0.0",
+      "default_definition_hash": "0a7b15f59f129798a843becacd6b6eb9df70139b7be601d08c2ecb0c9b143921",
+      "reference_units": 7,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM05-dadu",
+      "battle": "红军长征-强渡大渡河与飞夺泸定桥-1935.05.24至1935.05.29",
+      "default_version": "1.0.0",
+      "default_definition_hash": "5d14483dc70ba7eb3faa43d64a908b8b3e3f436f9f7c4df8a8b30336c150cbf3",
+      "reference_units": 2,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM06-maogong",
+      "battle": "红军长征-懋功会师与雪山草地转移-1935.06.12至1935.09.12",
+      "default_version": "1.0.0",
+      "default_definition_hash": "4dbbd0d470562fb72c61a0224e6f105001457e13fa4b58a87adb90805e4101bb",
+      "reference_units": 4,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM01-xiangjiang",
+      "battle": "红军长征-湘江战役-1934.11.25至1934.12.01",
+      "default_version": "1.0.0",
+      "default_definition_hash": "ce2fc5cc41b6c2337ba07276fbba7c70d30932b7b283fcc13b4c7bec79b9aa7a",
+      "reference_units": 20,
+      "default_parent_phase_pairs": 2,
+      "any_version_parent_phase_pairs": 2,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 2,
+      "default_requires_residual_pairs": 2,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "复核已列下级与余部，准备显式父级窗口；逐单位兵额、装备和部署仍需来源或估计"
+    },
+    {
+      "profile_id": "LM15-reunion",
+      "battle": "红军长征-甘孜会师至三大主力会师-1936.07.01至1936.10.22",
+      "default_version": "1.0.0",
+      "default_definition_hash": "879a6a55d84cd2ec3ea588b0f0c3728f379895b2d9b3c899e85ca5acdc179325",
+      "reference_units": 3,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM11-baizhang",
+      "battle": "红军长征-百丈关战役-1935.11",
+      "default_version": "1.0.0",
+      "default_definition_hash": "696be80645d4559856d4db2c06aafc85f78ce92b4d5833e1b519624f035fee98",
+      "reference_units": 9,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM14-zhiluo",
+      "battle": "红军长征-直罗镇战役-1935.11.20至1935.11.24",
+      "default_version": "1.0.0",
+      "default_definition_hash": "53f6118e283b7fd5456a7c783154d4abac14304c7f97dc766d980e23334f77d7",
+      "reference_units": 8,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM13-jinsha1936",
+      "battle": "红军长征-红二六军团抢渡金沙江-1936.04.25至1936.04.28",
+      "default_version": "1.0.0",
+      "default_definition_hash": "f695941d7203cd845bb438624239defd18692e4d55da0e966305329393e06def",
+      "reference_units": 7,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM09-red25",
+      "battle": "红军长征-红二十五军长征-1934.11.16至1935.09.16",
+      "default_version": "1.0.0",
+      "default_definition_hash": "ab0a9b772f5c64866819483ba34e379f7d811456f56a8ba602373fc753e4ecbe",
+      "reference_units": 8,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "LM08-lazikou",
+      "battle": "红军长征-腊子口战斗-1935.09.16至1935.09.17",
+      "default_version": "1.0.0",
+      "default_definition_hash": "db44d3654b1430cf8e7190665df2b655060eac4225be1842a4f6a3870da8fdd0",
+      "reference_units": 2,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    },
+    {
+      "profile_id": "CP01-changping",
+      "battle": "长平之战",
+      "default_version": "1.0.0",
+      "default_definition_hash": "fd0d8425be70b4904bd0de7500729dcd50afc0471e53d8cb783f069d19166926",
+      "reference_units": 5,
+      "default_parent_phase_pairs": 0,
+      "any_version_parent_phase_pairs": 0,
+      "complete_coverage_pairs": 0,
+      "partial_coverage_pairs": 0,
+      "unknown_coverage_pairs": 0,
+      "default_requires_residual_pairs": 0,
+      "local_entry_includes_parent_pairs": 0,
+      "source_task": "若需历史分兵，补下级番号、隶属、逐阶段在场和覆盖边界；非交战场景按任务适配"
+    }
+  ],
+  "versions": [
+    {
+      "profile_id": "AJ07-wanjialing",
+      "battle": "抗日战争-万家岭战役-1938.09下旬至1938.10",
+      "version": "1.0.0",
+      "definition_hash": "ec535e5cea80dbd89fbfde8db4a3741141e26308a9f1ec371fba92602029325f",
+      "reference_units": 9,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ07-wanjialing",
+      "battle": "抗日战争-万家岭战役-1938.09下旬至1938.10",
+      "version": "1.1.0",
+      "definition_hash": "d350d1c85f4c402e5d4938e886c53f2a8532020f117016ad6ac0dc8c0e8333be",
+      "reference_units": 31,
+      "parent_phase_candidates": [
+        {
+          "phase_id": "oct7_attack",
+          "parent_id": "ww2.cn.army4",
+          "parent_name": "第4军",
+          "child_ids": [
+            "ww2.cn.division90"
+          ],
+          "coverage": "partial",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "oct7_attack",
+          "parent_id": "ww2.cn.army66",
+          "parent_name": "第66军",
+          "child_ids": [
+            "ww2.cn.division159"
+          ],
+          "coverage": "partial",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "oct7_attack",
+          "parent_id": "ww2.cn.army74",
+          "parent_name": "第74军",
+          "child_ids": [
+            "ww2.cn.division51",
+            "ww2.cn.division58"
+          ],
+          "coverage": "partial",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        }
+      ],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ07-wanjialing",
+      "battle": "抗日战争-万家岭战役-1938.09下旬至1938.10",
+      "version": "1.2.0",
+      "definition_hash": "4a532e77285a00b01516ad8ce3bd5a372f10b2818600b16e19f9bbca4a334290",
+      "reference_units": 32,
+      "parent_phase_candidates": [
+        {
+          "phase_id": "oct7_attack",
+          "parent_id": "ww2.cn.army4",
+          "parent_name": "第4军",
+          "child_ids": [
+            "ww2.cn.division90"
+          ],
+          "coverage": "partial",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "oct7_attack",
+          "parent_id": "ww2.cn.army66",
+          "parent_name": "第66军",
+          "child_ids": [
+            "ww2.cn.division159"
+          ],
+          "coverage": "partial",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "oct7_attack",
+          "parent_id": "ww2.cn.army74",
+          "parent_name": "第74军",
+          "child_ids": [
+            "ww2.cn.division51",
+            "ww2.cn.division58"
+          ],
+          "coverage": "partial",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        }
+      ],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ07-wanjialing",
+      "battle": "抗日战争-万家岭战役-1938.09下旬至1938.10",
+      "version": "1.3.0",
+      "definition_hash": "8d213c6c58f8ff74e9bc181cfcd9646de0589ef9bcec3deff2056e75d0a9d873",
+      "reference_units": 39,
+      "parent_phase_candidates": [
+        {
+          "phase_id": "oct7_attack",
+          "parent_id": "ww2.cn.army4",
+          "parent_name": "第4军",
+          "child_ids": [
+            "ww2.cn.division90"
+          ],
+          "coverage": "partial",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "oct7_attack",
+          "parent_id": "ww2.cn.army66",
+          "parent_name": "第66军",
+          "child_ids": [
+            "ww2.cn.division159"
+          ],
+          "coverage": "partial",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "oct7_attack",
+          "parent_id": "ww2.cn.army74",
+          "parent_name": "第74军",
+          "child_ids": [
+            "ww2.cn.division51",
+            "ww2.cn.division58"
+          ],
+          "coverage": "partial",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        }
+      ],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ20-reception",
+      "battle": "抗日战争-全面反攻与受降总览-1945.08至1945.09",
+      "version": "1.0.0",
+      "definition_hash": "d7daedea870bbea59298dbbca764dc8d60431382e8559d5e2e2bb2ee71f5c200",
+      "reference_units": 6,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ15-jizhong",
+      "battle": "抗日战争-冀中五一反扫荡-1942.05.01至1942.06.20",
+      "version": "1.0.0",
+      "definition_hash": "6efbdd446413a55d1c389ed43eeaf71ea546f6cecd3b9484382417dfd02c7fdd",
+      "reference_units": 45,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ05-taierzhuang",
+      "battle": "抗日战争-台儿庄战役-1938.03.23至1938.04.07",
+      "version": "1.0.0",
+      "definition_hash": "9b11432370b7f0d9e1ac34671308a990b65ae9cb89aa68eecc50b8e8451980a1",
+      "reference_units": 10,
+      "parent_phase_candidates": [
+        {
+          "phase_id": "urban_opening",
+          "parent_id": "ww2.jp.division10",
+          "parent_name": "日军第10师团",
+          "child_ids": [
+            "ww2.jp.seya_detachment"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        }
+      ],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ02-taiyuan",
+      "battle": "抗日战争-太原会战-1937.09至1937.11",
+      "version": "1.0.0",
+      "definition_hash": "a330d9f4137799aacf99a68c8c7eead0f830bbaea1a48f4cce4bc8d1c3bce82b",
+      "reference_units": 5,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ03-pingxingguan",
+      "battle": "抗日战争-平型关伏击战-1937.09.25",
+      "version": "1.0.0",
+      "definition_hash": "ecc5227078aa848bfbc31fb6933cffad38c2a5ec30978ac40df30220dea4c8b8",
+      "reference_units": 16,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ04-xuzhou",
+      "battle": "抗日战争-徐州会战总览-1938.01至1938.05",
+      "version": "1.0.0",
+      "definition_hash": "86ec930845572f8165793ab446db4a42185c1e4ffe5a0032b51172772fe5a71a",
+      "reference_units": 10,
+      "parent_phase_candidates": [
+        {
+          "phase_id": "taierzhuang",
+          "parent_id": "ww2.jp.division5",
+          "parent_name": "日军第5师团",
+          "child_ids": [
+            "ww2.jp.sakamoto_detachment"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "taierzhuang",
+          "parent_id": "ww2.jp.division10",
+          "parent_name": "日军第10师团",
+          "child_ids": [
+            "ww2.jp.seya_detachment"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        }
+      ],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ04-xuzhou",
+      "battle": "抗日战争-徐州会战总览-1938.01至1938.05",
+      "version": "1.1.0",
+      "definition_hash": "82299641d2cd1021597d0f1c8ae2cbde352d32fccdb23075381b84be15b50c77",
+      "reference_units": 10,
+      "parent_phase_candidates": [
+        {
+          "phase_id": "taierzhuang_opening",
+          "parent_id": "ww2.jp.division10",
+          "parent_name": "日军第10师团",
+          "child_ids": [
+            "ww2.jp.seya_detachment"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "taierzhuang",
+          "parent_id": "ww2.jp.division5",
+          "parent_name": "日军第5师团",
+          "child_ids": [
+            "ww2.jp.sakamoto_detachment"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "taierzhuang",
+          "parent_id": "ww2.jp.division10",
+          "parent_name": "日军第10师团",
+          "child_ids": [
+            "ww2.jp.seya_detachment"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        }
+      ],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ04-xuzhou",
+      "battle": "抗日战争-徐州会战总览-1938.01至1938.05",
+      "version": "1.2.0",
+      "definition_hash": "f39b6c2332718ba69d85cf420f7dda9a0f8cd5ecfcfc37826256f9a5c0a8047f",
+      "reference_units": 10,
+      "parent_phase_candidates": [
+        {
+          "phase_id": "taierzhuang_opening",
+          "parent_id": "ww2.jp.division10",
+          "parent_name": "日军第10师团",
+          "child_ids": [
+            "ww2.jp.seya_detachment"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "taierzhuang",
+          "parent_id": "ww2.jp.division5",
+          "parent_name": "日军第5师团",
+          "child_ids": [
+            "ww2.jp.sakamoto_detachment"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "taierzhuang",
+          "parent_id": "ww2.jp.division10",
+          "parent_name": "日军第10师团",
+          "child_ids": [
+            "ww2.jp.seya_detachment"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        }
+      ],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ16-counter1944",
+      "battle": "抗日战争-敌后局部反攻总览-1944",
+      "version": "1.0.0",
+      "definition_hash": "d7a891de471a1a027903661068fb9ce9348e9b158aaf0ed066ab6a2a7a7d2410",
+      "reference_units": 5,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ11-kunlun",
+      "battle": "抗日战争-桂南会战与昆仑关攻坚-1939.11至1940.01",
+      "version": "1.0.0",
+      "definition_hash": "c52d17950e1a5e8e51e75a924b3f5cf55a56741ea6129cb2366166c06c9430ff",
+      "reference_units": 5,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ06-wuhan",
+      "battle": "抗日战争-武汉会战-1938.06至1938.10",
+      "version": "1.0.0",
+      "definition_hash": "1a76329fa80ecfd83b65d938758f9a6f98f8be99cfe22ec462b13341c8a57845",
+      "reference_units": 118,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ06-wuhan",
+      "battle": "抗日战争-武汉会战-1938.06至1938.10",
+      "version": "1.1.0",
+      "definition_hash": "65f55501550d8125fa08c993549d05ad58be9dada1343099d3f244bc7bb6a95f",
+      "reference_units": 127,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ01-shanghai",
+      "battle": "抗日战争-淞沪会战-1937.08.13至1937.11.12",
+      "version": "1.0.0",
+      "definition_hash": "2bb62be5db780000888157547fca3666892b16f092836fa2e3a2bceecfeaec72",
+      "reference_units": 7,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ18-xiangxi",
+      "battle": "抗日战争-湘西会战-1945.04.09至1945.06.07",
+      "version": "1.0.0",
+      "definition_hash": "418e434523f21a12a02d76c5ba3698a8694e35512e8f1ae58d50416e01bdee8e",
+      "reference_units": 6,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ14-hundred",
+      "battle": "抗日战争-百团大战-1940.08.20至1941.01.24",
+      "version": "1.0.0",
+      "definition_hash": "c966c4255a764fde731e6d4331850d488baa6fd9190886044a5b8139aa7ca71d",
+      "reference_units": 5,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ08-changsha1",
+      "battle": "抗日战争-第一次长沙会战-1939.09.14至1939.10",
+      "version": "1.0.0",
+      "definition_hash": "ec4671a3fa3d5464ac67deaf8ba27f9263f8c18fb1139a50bf61df212b3bb467",
+      "reference_units": 7,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ08-changsha1",
+      "battle": "抗日战争-第一次长沙会战-1939.09.14至1939.10",
+      "version": "1.1.0",
+      "definition_hash": "c77c524b9bb2a8c59c5446fc374a6c4e3729702421d22ad6032cf98bfdc3fe5a",
+      "reference_units": 7,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ10-changsha3",
+      "battle": "抗日战争-第三次长沙会战-1941.12.24至1942.01.16",
+      "version": "1.0.0",
+      "definition_hash": "d6d43be1ef3540aa1935c28b369286768a0b921340c2ad3c646b6ff65cbb7a40",
+      "reference_units": 4,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ09-changsha2",
+      "battle": "抗日战争-第二次长沙会战-1941.09.07至1941.10.09",
+      "version": "1.0.0",
+      "definition_hash": "8db91ab4dbee46b42b69a08b8562ebea5e370fc8050a5dbe5ff4d4f1cf8d2e5a",
+      "reference_units": 2,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ09-changsha2",
+      "battle": "抗日战争-第二次长沙会战-1941.09.07至1941.10.09",
+      "version": "1.1.0",
+      "definition_hash": "da76b080d595002428fe88e34dbd0f660feedbbce6d8f9b10ee30ea24ab68a15",
+      "reference_units": 2,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ19-burma",
+      "battle": "抗日战争-缅北滇西反攻总览-1943.10至1945.03",
+      "version": "1.0.0",
+      "definition_hash": "dd8a6745579694e3a8da1cd1006a41841e7347fc659aa593a22645b8c50e6ef1",
+      "reference_units": 4,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ13-hengyang",
+      "battle": "抗日战争-衡阳保卫战-1944.06至1944.08.08",
+      "version": "1.0.0",
+      "definition_hash": "66e5b8f61ef07e8bb9a0468d6cc20f4b295f70e453334e51838a973c14444590",
+      "reference_units": 4,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ12-ichigo",
+      "battle": "抗日战争-豫湘桂战役总览-1944.04至1944.12",
+      "version": "1.0.0",
+      "definition_hash": "d5662d9286918751856f0eed90580b529c370083dd0abeaf076ff1195e86bf33",
+      "reference_units": 3,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ17-cheqiao",
+      "battle": "抗日战争-车桥战役-1944.03.05至1944.03.06",
+      "version": "1.0.0",
+      "definition_hash": "82e09f17fcb0b6ccfe25fd5fca096f2c9cd43b88cbeea4f5171a96038b3af8cd",
+      "reference_units": 8,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ17-cheqiao",
+      "battle": "抗日战争-车桥战役-1944.03.05至1944.03.06",
+      "version": "1.1.0",
+      "definition_hash": "a6a15f8eaf1668daae7eb0f31be93108b8155ca799b3693f8e9c4692b26cd99c",
+      "reference_units": 18,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ17-cheqiao",
+      "battle": "抗日战争-车桥战役-1944.03.05至1944.03.06",
+      "version": "1.2.0",
+      "definition_hash": "eff470ecfdaed4a768185363eb91d4d38a468bbb2e719406205c7b7ef6927446",
+      "reference_units": 18,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "AJ17-cheqiao",
+      "battle": "抗日战争-车桥战役-1944.03.05至1944.03.06",
+      "version": "1.3.0",
+      "definition_hash": "fea7e47d589c12ef52141097a842e373a69128e61d23cde7ad102983f4cbed43",
+      "reference_units": 18,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "KW08-sangganling",
+      "battle": "抗美援朝-上甘岭战役-1952.10.14至1952.11.25",
+      "version": "1.0.0",
+      "definition_hash": "bbc463371aa5327ecb90b376ca9969d5679e1a00244ebd22a621559a7babe89d",
+      "reference_units": 10,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "KW09-summer1953",
+      "battle": "抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27",
+      "version": "1.0.0",
+      "definition_hash": "1f238744e16029c4cbea743f89d82b8d4e78291e44e86332485e2224499b7f67",
+      "reference_units": 9,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "KW06-autumn1951",
+      "battle": "抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22",
+      "version": "1.0.0",
+      "definition_hash": "f519ba8cc41e8fd21dffb410b1395bc5ff0701d7df38910e05965150a03d0ae5",
+      "reference_units": 7,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "KW07-counter1952",
+      "battle": "抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31",
+      "version": "1.0.0",
+      "definition_hash": "ff01f47f2ae4fd7d27061eb66f6f1c884341d63c8c1ab81aef33f33126f58507",
+      "reference_units": 7,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "KW01-first",
+      "battle": "抗美援朝-第一次战役-1950.10.25至1950.11.05",
+      "version": "1.0.0",
+      "definition_hash": "4ca877de5a8efb8672561a9d6390c0ed65ec7d776ec431f38c9ec4591e75a84e",
+      "reference_units": 62,
+      "parent_phase_candidates": [
+        {
+          "phase_id": "liangshuidong_opening",
+          "parent_id": "kw.cn.division118",
+          "parent_name": "志愿军第118师",
+          "child_ids": [
+            "kw.cn.regiment354"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "parent_id": "kw.rok.division6",
+          "parent_name": "韩国第6师",
+          "child_ids": [
+            "kw.rok.regiment2"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "liangshuidong_opening",
+          "parent_id": "kw.rok.regiment2",
+          "parent_name": "韩国第6师第2团",
+          "child_ids": [
+            "kw.rok.regiment2.battalion3"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "unsan_evening",
+          "parent_id": "kw.us.cavalry_division1",
+          "parent_name": "美骑兵第1师",
+          "child_ids": [
+            "kw.us.cavalry_regiment8"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "unsan_evening",
+          "parent_id": "kw.us.cavalry_regiment8",
+          "parent_name": "美骑兵第8团",
+          "child_ids": [
+            "kw.us.cavalry8.battalion1",
+            "kw.us.cavalry8.battalion2",
+            "kw.us.cavalry8.battalion3"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "unsan_evening",
+          "parent_id": "kw.rok.division1",
+          "parent_name": "韩国第1师",
+          "child_ids": [
+            "kw.rok.regiment15"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        }
+      ],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "KW03-third",
+      "battle": "抗美援朝-第三次战役-1950.12.31至1951.01.08",
+      "version": "1.0.0",
+      "definition_hash": "268beb2ca6f7eada1eae20cfaf2d7d8539825c631748da396ea3135abe7f5cd7",
+      "reference_units": 13,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "KW02-second",
+      "battle": "抗美援朝-第二次战役-1950.11.07至1950.12.24",
+      "version": "1.0.0",
+      "definition_hash": "237ad95d5ac4438df8c0ff1c6ddabd1398cf662fce2d6151d5709cadab58d256",
+      "reference_units": 16,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "KW05-fifth",
+      "battle": "抗美援朝-第五次战役-1951.04.22至1951.06.10",
+      "version": "1.0.0",
+      "definition_hash": "3b30522b4fbbb06d1c4be2a4f7006896a1f2b9d646cce56448123dac3cd5c850",
+      "reference_units": 11,
+      "parent_phase_candidates": [
+        {
+          "phase_id": "gloster_final_morning",
+          "parent_id": "kw.cn.division187",
+          "parent_name": "志愿军第187师",
+          "child_ids": [
+            "kw.cn.regiment560"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        }
+      ],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "KW04-fourth",
+      "battle": "抗美援朝-第四次战役-1951.01.25至1951.04.21",
+      "version": "1.0.0",
+      "definition_hash": "509b0e084f78c0e7525f2fc3f15c6f68241024e3a22e29f86fdc2d8fea1129b5",
+      "reference_units": 11,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM04-jinsha1935",
+      "battle": "红军长征-中央红军巧渡金沙江-1935.05.03至1935.05.09",
+      "version": "1.0.0",
+      "definition_hash": "72984395689accb5f26032bbb4e39694f505b9981920328c32f9685d16ffa53c",
+      "reference_units": 9,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM12-wumeng",
+      "battle": "红军长征-乌蒙山回旋战-1936.02.27至1936.03.28",
+      "version": "1.0.0",
+      "definition_hash": "a0107225cf03865bbf21760e91b05a1981eeb05916bb4be92f850b990bf29ba2",
+      "reference_units": 4,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM07-baozuo",
+      "battle": "红军长征-包座战役-1935.08.29至1935.09.01",
+      "version": "1.0.0",
+      "definition_hash": "82cf11c15860d7801eda6c59f729560b0987c79f4bd077c12cac914dd5c34b89",
+      "reference_units": 23,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM10-jialing",
+      "battle": "红军长征-嘉陵江战役-1935.03.28至1935.04.21",
+      "version": "1.0.0",
+      "definition_hash": "d36fa3d990970c9c7476800d2f34589a0d1056b673e532e7e015923d767be504",
+      "reference_units": 18,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM03-chishui",
+      "battle": "红军长征-四渡赤水-1935.01.19至1935.03.22",
+      "version": "1.0.0",
+      "definition_hash": "7dc19bb38ebff76f1de08d4b8d568e09fcdab4c0798b1bdcbc3e626d1cd03dfc",
+      "reference_units": 5,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM02-wujiang",
+      "battle": "红军长征-强渡乌江-1935.01.01至1935.01.06",
+      "version": "1.0.0",
+      "definition_hash": "0a7b15f59f129798a843becacd6b6eb9df70139b7be601d08c2ecb0c9b143921",
+      "reference_units": 7,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM05-dadu",
+      "battle": "红军长征-强渡大渡河与飞夺泸定桥-1935.05.24至1935.05.29",
+      "version": "1.0.0",
+      "definition_hash": "5d14483dc70ba7eb3faa43d64a908b8b3e3f436f9f7c4df8a8b30336c150cbf3",
+      "reference_units": 2,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM06-maogong",
+      "battle": "红军长征-懋功会师与雪山草地转移-1935.06.12至1935.09.12",
+      "version": "1.0.0",
+      "definition_hash": "4dbbd0d470562fb72c61a0224e6f105001457e13fa4b58a87adb90805e4101bb",
+      "reference_units": 4,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM01-xiangjiang",
+      "battle": "红军长征-湘江战役-1934.11.25至1934.12.01",
+      "version": "1.0.0",
+      "definition_hash": "ce2fc5cc41b6c2337ba07276fbba7c70d30932b7b283fcc13b4c7bec79b9aa7a",
+      "reference_units": 20,
+      "parent_phase_candidates": [
+        {
+          "phase_id": "xinxu_nov28",
+          "parent_id": "lm.red.division5",
+          "parent_name": "红三军团第5师",
+          "child_ids": [
+            "lm.red.regiment14",
+            "lm.red.regiment15"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        },
+        {
+          "phase_id": "guanghuapu_nov30_morning",
+          "parent_id": "lm.red.division4",
+          "parent_name": "红三军团第4师",
+          "child_ids": [
+            "lm.red.regiment10"
+          ],
+          "coverage": "unknown",
+          "requires_residual": true,
+          "personnel_facts_known": 0,
+          "equipment_facts_known": 0,
+          "local_entry_includes_parent": false,
+          "local_entry_error": null
+        }
+      ],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM15-reunion",
+      "battle": "红军长征-甘孜会师至三大主力会师-1936.07.01至1936.10.22",
+      "version": "1.0.0",
+      "definition_hash": "879a6a55d84cd2ec3ea588b0f0c3728f379895b2d9b3c899e85ca5acdc179325",
+      "reference_units": 3,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM11-baizhang",
+      "battle": "红军长征-百丈关战役-1935.11",
+      "version": "1.0.0",
+      "definition_hash": "696be80645d4559856d4db2c06aafc85f78ce92b4d5833e1b519624f035fee98",
+      "reference_units": 9,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM14-zhiluo",
+      "battle": "红军长征-直罗镇战役-1935.11.20至1935.11.24",
+      "version": "1.0.0",
+      "definition_hash": "53f6118e283b7fd5456a7c783154d4abac14304c7f97dc766d980e23334f77d7",
+      "reference_units": 8,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM13-jinsha1936",
+      "battle": "红军长征-红二六军团抢渡金沙江-1936.04.25至1936.04.28",
+      "version": "1.0.0",
+      "definition_hash": "f695941d7203cd845bb438624239defd18692e4d55da0e966305329393e06def",
+      "reference_units": 7,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM09-red25",
+      "battle": "红军长征-红二十五军长征-1934.11.16至1935.09.16",
+      "version": "1.0.0",
+      "definition_hash": "ab0a9b772f5c64866819483ba34e379f7d811456f56a8ba602373fc753e4ecbe",
+      "reference_units": 8,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "LM08-lazikou",
+      "battle": "红军长征-腊子口战斗-1935.09.16至1935.09.17",
+      "version": "1.0.0",
+      "definition_hash": "db44d3654b1430cf8e7190665df2b655060eac4225be1842a4f6a3870da8fdd0",
+      "reference_units": 2,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    },
+    {
+      "profile_id": "CP01-changping",
+      "battle": "长平之战",
+      "version": "1.0.0",
+      "definition_hash": "fd0d8425be70b4904bd0de7500729dcd50afc0471e53d8cb783f069d19166926",
+      "reference_units": 5,
+      "parent_phase_candidates": [],
+      "nonphysical_present_children": []
+    }
+  ]
+}

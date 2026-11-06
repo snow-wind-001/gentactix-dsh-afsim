@@ -1,0 +1,39 @@
+﻿user-data/
+*.log
+*.tmp
+.DS_Store
+__pycache__/
+*.pyc
+.vscode/settings.json
+.cursor/mcp.json
+
+# refs/learn 内容不上传，仅保留目录结构
+# 每个子目录下放 .gitkeep 以保持 git 追踪
+refs/learn/*/
+refs/learn/*.md
+refs/learn/*.pdf
+
+# 强制保留 .gitkeep 文件（即使父目录被忽略）
+!refs/learn/*/.gitkeep
+
+# .specstory 不上传（自动生成的历史记录）
+.specstory/
+
+# 当前会话记忆不上传
+memory/hot/session.md
+
+# output 内容不上传，仅保留目录结构
+output/staging/
+output/staging/README.md
+output/verified/scenario/*.txt
+output/verified/component/*.txt
+output/verified/template/*.txt
+output/verified/scenario/*.log
+output/verified/component/*.log
+output/verified/template/*.log
+!output/*/.gitkeep
+!output/verified/*/.gitkeep
+!output/staging/README.md
+!output/verified/scenario/README.md
+!output/verified/component/README.md
+!output/verified/template/README.md

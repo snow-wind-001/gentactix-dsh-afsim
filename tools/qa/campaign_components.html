@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><link rel="icon" href="data:,"><meta name="viewport" content="width=device-width,initial-scale=1"><title>战役配置组件验证（明确QA数据）</title><style>body{margin:0;background:#14212b;color:#dce8ed;font:14px sans-serif}main{max-width:900px;margin:24px auto;padding:24px}input,textarea,button{background:#243643;color:#dce8ed;border:1px solid #56707b;padding:8px}h1{font-size:18px}pre{white-space:pre-wrap}</style></head><body><div id="app"></div><script type="module">
+import {createApp,ref,reactive} from 'vue/dist/vue.esm-bundler.js';
+import Editor from '/src/components/CampaignParametersEditor.vue';
+import MissionPanel from '/src/components/MissionPanel.vue';
+import data from './.qa-campaign-data.json';
+createApp({components:{Editor,MissionPanel},setup(){return {data:reactive(data),locked:ref(false),selected:ref(null)}},template:`<main><h1>战役配置组件验证 · QA估计参数</h1><label><input type="checkbox" v-model="locked">模拟忙碌</label><Editor :value="data.parameters.campaign" :actors="data.actors" :center="data.parameters.area.center" :disabled="locked" @pick-region="i=>selected=i"/><p data-testid="selected-region">{{selected}}</p><p data-testid="saved-ratio">{{data.parameters.campaign.objective.min_force_fraction}}</p><MissionPanel :mission="data.world.mission" :campaign="data.world.campaign" session-id="component-only" :busy="true"/></main>`}).mount('#app');
+</script></body></html>

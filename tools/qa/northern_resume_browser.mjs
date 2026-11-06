@@ -1,0 +1,58 @@
+/** Resume the actual failed eight-unit model draft through ordinary UI controls. */
+import fs from 'node:fs';
+import {createRequire} from 'node:module';
+const require=createRequire('/home/spikebai/.nvm/versions/node/v22.20.0/lib/node_modules/@playwright/cli/package.json');
+const {chromium}=require('playwright-core');
+const base=process.argv[2],api=process.argv[3],ui=process.argv[4],attempt=process.argv[5]??'resume-browser';
+if(!base||!api||!ui||!/^[a-z0-9-]+$/.test(attempt))throw Error('Require evidence root, API, UI and an unused attempt');
+const root=base+'/'+attempt;if(fs.existsSync(root))throw Error('Preserve earlier evidence');fs.mkdirSync(root);
+const failed=JSON.parse(fs.readFileSync(base+'/browser/build-response.txt')).detail;
+const scenario=JSON.parse(fs.readFileSync(base+'/generation-case.json'));
+const checks=[],errors=[],posts=[];const check=(v,m)=>{if(!v)throw Error(m);checks.push(m);};
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1000}});
+await page.addInitScript(api=>window.gentactix={backendUrl:api},api);
+page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(r.method()==='POST')posts.push(new URL(r.url()).pathname);});
+try{
+ await page.goto(ui,{waitUntil:'domcontentloaded'});
+ await page.getByRole('textbox',{name:'搜索战役',exact:true}).fill(scenario.battle_query);
+ await page.locator('.battle-option').first().click();await page.getByRole('button',{name:/继续配置/}).click();
+ await page.locator('#draft-mode').selectOption('historical');await page.locator('#draft-executor').selectOption('narrative');
+ await page.locator('#draft-step').selectOption(scenario.time_step);await page.getByLabel('编制范围',{exact:true}).selectOption('campaign');
+ await page.getByLabel('会战窗口',{exact:true}).selectOption(scenario.window);
+ await page.getByLabel('生成时必须按时间计算粮秣',{exact:true}).check();
+ await page.getByLabel('生成时采用的耗粮模型',{exact:true}).selectOption('personnel-rations-1');
+ await page.getByLabel('生成时必须校验运动与疲劳反馈',{exact:true}).check();
+ const resume=page.locator(`[data-resume-assembly="${failed.assembly_id}"]`);
+ await resume.waitFor({state:'attached'});
+ if(!await resume.isVisible())await page.getByTestId('pending-historical-assemblies').locator('summary').click();
+ check(await resume.isEnabled(),'original failed draft is available without rebuilding or changing its parameters');
+ await page.screenshot({path:root+'/before-resume-1440.png'});
+ const responsePromise=page.waitForResponse(r=>r.url().endsWith('/historical-scenarios/resume')&&r.request().method()==='POST',{timeout:0});
+ await resume.click();console.log('REAL_RESUME_STARTED',failed.assembly_id);
+ const response=await responsePromise;fs.writeFileSync(root+'/resume-request.json',response.request().postData());
+ const text=await response.text();fs.writeFileSync(root+'/resume-response.txt',text);
+ check(response.ok(),'actual original-draft resume succeeds: HTTP '+response.status());
+ const draft=JSON.parse(text);fs.writeFileSync(root+'/draft.json',JSON.stringify(draft));
+ check(draft.construction.source==='dsh_native_skill','actual Native construction provenance retained');
+ check(draft.preview_world.red_units.length===6&&draft.preview_world.blue_units.length===2,'all eight historical calculation identities remain across both teams');
+ check(draft.parameters.campaign_plan.nodes.length===5&&!draft.parameters.campaign.objective_policy,'goal graph retained without the incompatible optional policy');
+ check(draft.parameters.support_dynamics.version==='personnel-rations-1'&&draft.parameters.movement_feedback.version==='movement-feedback-1','both required process models retained');
+ await page.getByTestId('historical-validation').waitFor();
+ const initializing=page.waitForResponse(r=>r.url().endsWith('/init')&&r.request().method()==='POST',{timeout:0});
+ await page.getByTestId('launch-start').click();const initialized=await initializing;
+ check(initialized.ok(),'resumed configuration initializes from the normal frontend');
+ const snapshot=await initialized.json();await page.getByTestId('map-workbench').waitFor();
+ check(snapshot.turn_count===0&&snapshot.war_state.simulation_clock.elapsed_seconds===0,'configuration and initialization execute no battle turn');
+ await page.screenshot({path:root+'/initialized-1440.png'});await page.setViewportSize({width:900,height:1000});
+ await page.screenshot({path:root+'/initialized-900.png'});
+ check(posts.every(p=>!p.endsWith('/historical-scenarios/build')),'resume never silently regenerates the whole configuration');
+ check(errors.length===0,'no application exceptions');
+ fs.writeFileSync(base+'/live-case.json',JSON.stringify({session_id:snapshot.session_id,draft_id:draft.id,draft_path:root+'/draft.json',api,ui,actor_count:8,step_seconds:3600,goal_count:5},null,2));
+ fs.writeFileSync(root+'/initial.json',JSON.stringify(snapshot));
+ fs.writeFileSync(root+'/result.json',JSON.stringify({passed:true,checks,errors,posts,original_assembly:failed.assembly_id,session_id:snapshot.session_id,scope:'Actual failed draft resume and ordinary UI initialization; estimated parameters, no historical calibration or physical turn.'},null,2));
+ console.log('PASS',checks.length,'original draft resume and initialization checks');
+}catch(error){
+ fs.writeFileSync(root+'/result.json',JSON.stringify({passed:false,error:String(error),checks,errors,posts},null,2));
+ await page.screenshot({path:root+'/failure.png'}).catch(()=>{});throw error;
+}finally{await browser.close();}

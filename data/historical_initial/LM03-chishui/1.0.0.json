@@ -1,0 +1,965 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "LM03-chishui",
+  "version": "1.0.0",
+  "battle": "红军长征-四渡赤水-1935.01.19至1935.03.22",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "有出处的阶段参战身份，不是完整战斗序列。未知实到人数、装备与部队坐标留空；计算值必须单独说明估计依据。",
+      "战役总伤亡、出发兵力和战后残部不能替代阶段初态；不得按回合平摊伤亡或固定史实结局。",
+      "一渡命令与实际渡河次序有差异；禁止按03时电文重置已过河部队。",
+      "四次渡河各有河段和方向，不能将多个渡口放到土城同一桥；二、四渡尚缺独立渡口测绘，地域范围不是桥位置。",
+      "渡河局部使用中央红军整体编组，土城使用红3、5军团及红2师参战部；两种层级不同时累计。"
+    ]
+  },
+  "sources": {
+    "MUSEUM": {
+      "title": "一封迟了的电报——军委纵队土城一渡赤水考",
+      "url": "https://www.sdcs1935.com/html/yanjiu/sdcs/202011/8237be70a5a82828.shtml",
+      "publisher": "四渡赤水纪念馆，2020-11-12",
+      "evidence_kind": "archive_publication",
+      "original_archive_examined": false,
+      "limitations": "公开电报与日记整理；01月29日03时命令有部分未执行，不能将计划自动当到场实况。"
+    },
+    "HISTORY": {
+      "title": "四渡赤水战役（1935年）",
+      "url": "https://www.81.mil.cn/2018byzt/2018-07/31/content_9238267.htm",
+      "publisher": "中国军网，2018-07-31",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "公开回顾，未核原始名册、逐时命令及实到兵力；仅支持所列身份与过程。"
+    },
+    "TUCHENG": {
+      "title": "第八章 四渡赤水（上）",
+      "url": "https://dangshi.people.com.cn/n1/2016/0814/c406330-28634764.html",
+      "publisher": "人民网《长征记》，曲爱国、张从田",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开回顾，未核原始名册、逐时命令及实到兵力；仅支持所列身份与过程。"
+    },
+    "GEO_tucheng": {
+      "title": "红军长征-土城",
+      "url": "https://www.geonames.org/1792435/",
+      "publisher": "GeoNames；项目2026-10-22地名核验",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代聚落点。不是历史渡口、桥面或阵地；计算半径与部署是模型假设。"
+    },
+    "GEO_maotai": {
+      "title": "红军长征-茅台",
+      "url": "https://www.geonames.org/1801143/",
+      "publisher": "GeoNames；项目2026-10-22地名核验",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代聚落点。不是历史渡口、桥面或阵地；计算半径与部署是模型假设。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "全程序列参考",
+      "date": {
+        "label": "1935年1月19日至3月22日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河及遵义作战总述"
+          }
+        ]
+      },
+      "scope": "全程序列参考",
+      "evidence": [
+        {
+          "source_id": "HISTORY",
+          "locator": "四次渡河及遵义作战总述"
+        }
+      ]
+    },
+    {
+      "id": "tucheng_jan28",
+      "label": "土城青杠坡局部接战",
+      "date": {
+        "label": "1935年1月28日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "TUCHENG",
+            "locator": "红3、5军团与郭勋祺部；红2师投入"
+          }
+        ]
+      },
+      "scope": "红军攻击后发现敌情规模超出预判；局部脱离与保存兵力，不能默认完成围歼。",
+      "evidence": [
+        {
+          "source_id": "TUCHENG",
+          "locator": "红3、5军团与郭勋祺部；红2师投入"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 28.2925,
+          "lng": 105.99389
+        },
+        "radius_km": 25,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_tucheng",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1935-01-28T06:00",
+        "end": "1935-01-29T00:00",
+        "kind": "model_scope_limit",
+        "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。",
+        "evidence": [
+          {
+            "source_id": "TUCHENG",
+            "locator": "红3、5军团与郭勋祺部；红2师投入"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crossing_one",
+      "label": "一渡赤水：土城渡河片段",
+      "date": {
+        "label": "1935年1月29日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "scope": "所选河段的运输片段；敌主力在外围追堵，不推定在本渡口接敌。二、四渡需在太平渡、二郎滩一带另绘通道，不能以土城镇点充作渡口。",
+      "evidence": [
+        {
+          "source_id": "HISTORY",
+          "locator": "四次渡河的方向、地域和日期"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 28.2925,
+          "lng": 105.99389
+        },
+        "radius_km": 100,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_tucheng",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1935-01-29T00:00",
+        "end": "1935-01-30T00:00",
+        "kind": "model_scope_limit",
+        "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "interaction": {
+        "kind": "non_contact_transfer",
+        "active_teams": [
+          "red"
+        ],
+        "scope": "只计算所列红军转移、集结与供给；不表示全战区无敌军，不生成虚构对手。",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "process_requirements": [
+        {
+          "kind": "formation_crossing",
+          "scope": "须以有限河线、可用通道、容量、排队和编组渡完量检验渡河，不能只占领目标点。",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "四次渡河的方向、地域和日期"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crossing_two",
+      "label": "二渡赤水：回师黔北",
+      "date": {
+        "label": "1935年2月18日至21日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "scope": "所选河段的运输片段；敌主力在外围追堵，不推定在本渡口接敌。二、四渡需在太平渡、二郎滩一带另绘通道，不能以土城镇点充作渡口。",
+      "evidence": [
+        {
+          "source_id": "HISTORY",
+          "locator": "四次渡河的方向、地域和日期"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 28.2925,
+          "lng": 105.99389
+        },
+        "radius_km": 100,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_tucheng",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1935-02-18T00:00",
+        "end": "1935-02-22T00:00",
+        "kind": "model_scope_limit",
+        "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "interaction": {
+        "kind": "non_contact_transfer",
+        "active_teams": [
+          "red"
+        ],
+        "scope": "只计算所列红军转移、集结与供给；不表示全战区无敌军，不生成虚构对手。",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "process_requirements": [
+        {
+          "kind": "formation_crossing",
+          "scope": "须以有限河线、可用通道、容量、排队和编组渡完量检验渡河，不能只占领目标点。",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "四次渡河的方向、地域和日期"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crossing_three",
+      "label": "三渡赤水：茅台西渡",
+      "date": {
+        "label": "1935年3月16日至17日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "scope": "所选河段的运输片段；敌主力在外围追堵，不推定在本渡口接敌。二、四渡需在太平渡、二郎滩一带另绘通道，不能以土城镇点充作渡口。",
+      "evidence": [
+        {
+          "source_id": "HISTORY",
+          "locator": "四次渡河的方向、地域和日期"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 27.85243,
+          "lng": 106.37753
+        },
+        "radius_km": 100,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_maotai",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1935-03-16T00:00",
+        "end": "1935-03-18T00:00",
+        "kind": "model_scope_limit",
+        "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "interaction": {
+        "kind": "non_contact_transfer",
+        "active_teams": [
+          "red"
+        ],
+        "scope": "只计算所列红军转移、集结与供给；不表示全战区无敌军，不生成虚构对手。",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "process_requirements": [
+        {
+          "kind": "formation_crossing",
+          "scope": "须以有限河线、可用通道、容量、排队和编组渡完量检验渡河，不能只占领目标点。",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "四次渡河的方向、地域和日期"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crossing_four",
+      "label": "四渡赤水：折向东岸",
+      "date": {
+        "label": "1935年3月21日至22日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "scope": "所选河段的运输片段；敌主力在外围追堵，不推定在本渡口接敌。二、四渡需在太平渡、二郎滩一带另绘通道，不能以土城镇点充作渡口。",
+      "evidence": [
+        {
+          "source_id": "HISTORY",
+          "locator": "四次渡河的方向、地域和日期"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 28.2925,
+          "lng": 105.99389
+        },
+        "radius_km": 100,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_tucheng",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1935-03-21T00:00",
+        "end": "1935-03-23T00:00",
+        "kind": "model_scope_limit",
+        "note": "限制本地计算片段；钟点为离散化假设，除明确引用时刻外不称历史时刻。开放推演不强制历史结果。",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "interaction": {
+        "kind": "non_contact_transfer",
+        "active_teams": [
+          "red"
+        ],
+        "scope": "只计算所列红军转移、集结与供给；不表示全战区无敌军，不生成虚构对手。",
+        "evidence": [
+          {
+            "source_id": "HISTORY",
+            "locator": "四次渡河的方向、地域和日期"
+          }
+        ]
+      },
+      "process_requirements": [
+        {
+          "kind": "formation_crossing",
+          "scope": "须以有限河线、可用通道、容量、排队和编组渡完量检验渡河，不能只占领目标点。",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "四次渡河的方向、地域和日期"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "cs.red.r3",
+      "name": "红3军团土城参战部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "TUCHENG",
+          "locator": "1月28日攻击与预备队投入"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "tucheng_jan28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_one",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_two",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_three",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_four",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "cs.red.r5",
+      "name": "红5军团土城参战部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军团参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "TUCHENG",
+          "locator": "1月28日攻击与预备队投入"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "tucheng_jan28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_one",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_two",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_three",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_four",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "cs.red.r2div",
+      "name": "红1军团第2师土城参战部",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "TUCHENG",
+          "locator": "1月28日攻击与预备队投入"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "tucheng_jan28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_one",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_two",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_three",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_four",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "TUCHENG",
+              "locator": "1月28日攻击与预备队投入"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "cs.blue.guo",
+      "name": "郭勋祺旅土城参战部",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "旅参战部",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "MUSEUM",
+          "locator": "1月29日03时电报对郭旅及后续部队的记载"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "MUSEUM",
+              "locator": "1月29日03时电报对郭旅及后续部队的记载"
+            }
+          ]
+        },
+        {
+          "phase_id": "tucheng_jan28",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "MUSEUM",
+              "locator": "1月29日03时电报对郭旅及后续部队的记载"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_one",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "MUSEUM",
+              "locator": "1月29日03时电报对郭旅及后续部队的记载"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_two",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "MUSEUM",
+              "locator": "1月29日03时电报对郭旅及后续部队的记载"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_three",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "MUSEUM",
+              "locator": "1月29日03时电报对郭旅及后续部队的记载"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_four",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "MUSEUM",
+              "locator": "1月29日03时电报对郭旅及后续部队的记载"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "MUSEUM",
+              "locator": "1月29日03时电报对郭旅及后续部队的记载"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "MUSEUM",
+              "locator": "1月29日03时电报对郭旅及后续部队的记载"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "MUSEUM",
+              "locator": "1月29日03时电报对郭旅及后续部队的记载"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "cs.red.crossing",
+      "name": "中央红军渡河部队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "野战军运输集合",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "HISTORY",
+          "locator": "中央红军四次渡河；同名集合仅表示本段投入，不能自动等同全军人数"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "中央红军四次渡河；同名集合仅表示本段投入，不能自动等同全军人数"
+            }
+          ]
+        },
+        {
+          "phase_id": "tucheng_jan28",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "中央红军四次渡河；同名集合仅表示本段投入，不能自动等同全军人数"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_one",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "中央红军四次渡河；同名集合仅表示本段投入，不能自动等同全军人数"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_two",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "中央红军四次渡河；同名集合仅表示本段投入，不能自动等同全军人数"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_three",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "中央红军四次渡河；同名集合仅表示本段投入，不能自动等同全军人数"
+            }
+          ]
+        },
+        {
+          "phase_id": "crossing_four",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "中央红军四次渡河；同名集合仅表示本段投入，不能自动等同全军人数"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "中央红军四次渡河；同名集合仅表示本段投入，不能自动等同全军人数"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "中央红军四次渡河；同名集合仅表示本段投入，不能自动等同全军人数"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "HISTORY",
+              "locator": "中央红军四次渡河；同名集合仅表示本段投入，不能自动等同全军人数"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    }
+  ]
+}

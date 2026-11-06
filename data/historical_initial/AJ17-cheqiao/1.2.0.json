@@ -1,0 +1,1795 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ17-cheqiao",
+  "version": "1.2.0",
+  "battle": "抗日战争-车桥战役-1944.03.05至1944.03.06",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "新增核心攻坚、芦家滩打援、南侧警戒及预备队的全程参战框架；这不是完整当日名册，也不是已经验收的过程模型。",
+      "分别保留6日晨与7日撤离两种公开叙述，形成两个可选择计算窗口；至13日扩展战果另属后续窗口，不挤入核心战斗。",
+      "南侧18旅50／52团有异文：本版本沿用52团来源身份，同时明示地方文章作50团；不另造一个50团加入而重复计算。",
+      "守备规模存在日军约40、伪军500余／600余等记述；常驻量不是3月5日实到名册，逐单位人数继续null。",
+      "中方伤亡192（54阵亡、138负伤）与238（53阵亡、185负伤，另述松野觉牺牲）的公开口径并存；不得相加、取均值或作固定扣兵配额。",
+      "日军465是否含俘24、伪军483的地域统计范围存在异文；仅可选择并注明来源，不能再加俘虏凑总数。",
+      "全程参战不等于全体在01:50已进入据点；淮安援军、南侧出援、预备队必须保留集结、接近和入场条件。",
+      "未掌握全部配属、逐单位人数、可用武器库存和配准阵地；缺载事实保持null，计算估计另存。",
+      "本版新增输入参考约束：公开常驻规模与当日实到量分开；建模上下界和前沿参考区为审查假设，不是精确史实。启程与前沿入场分开，不预定交火或胜负。"
+    ]
+  },
+  "sources": {
+    "CQ_HISTORY": {
+      "title": "车桥战役：揭开华中抗战战略反攻序幕",
+      "url": "https://www.dswxyjy.org.cn/n/2015/0722/c244523-27342895.html",
+      "publisher": "中共中央党史和文献研究院",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    },
+    "CQ_REVIEW": {
+      "title": "车桥战役相关军事历史报道",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4842146.html",
+      "publisher": "解放军报／国防部",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开出版叙述，未逐页核验战时原始命令；不能由战役总数推导逐单位实到量、装备或阵地。"
+    },
+    "CQ_LOCAL2024": {
+      "title": "车桥战役80周年：一场惊心动魄的华中敌后战场反攻战",
+      "url": "https://zx.huaian.gov.cn/col/13970_116131/art/m/17224416/1722842897870d2DUA0R9.html",
+      "publisher": "淮安市政协文史网，转载方志淮安，2024-08-08",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开战史整理，未核作战日记；该文记南侧50团和7日撤离，保留与52团、6日晨等异文，不据此虚构所有精确阵地。"
+    },
+    "CQ_SUYU": {
+      "title": "民族记忆·抗战战役中的纪律（四）：车桥战役",
+      "url": "https://m.ccdi.gov.cn/content/a4/71/5154.html",
+      "publisher": "中央纪委网站，整理自粟裕《车桥战役简要经过》",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开回忆整理，非战时原始电令；作52团、7日撤离、53阵亡及185负伤，日军465另俘24，与其他报道口径不合并。"
+    },
+    "CQ_ARCHIVE": {
+      "title": "浴血奋战——档案里的中国抗战：第二十八集车桥战役",
+      "url": "https://www.saac.gov.cn/zt/2014-09/15/content_67054.htm",
+      "publisher": "国家档案局／中央档案馆",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "本次网页直开超时，搜索索引正文可读；未逐页核验原始电报和要图。支持发起、攻点打援及分批增援，不把扩展战果全部归为镇内损失。"
+    },
+    "CQ_BJWMB2025": {
+      "title": "车桥战役：打响华中反攻第一枪",
+      "url": "https://www.bjwmb.gov.cn/kz2025/jdzy/10103410.html",
+      "publisher": "首都精神文明网，来源军报记者，2025-07-22",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开报道，采用至6日晨结束的口径；来源可能与军报其他转载重合，不算独立的第二份原始证据。"
+    }
+  },
+  "phases": [
+    {
+      "id": "core_march5_6",
+      "label": "完整核心攻坚与打援（6日撤离口径）",
+      "date": {
+        "label": "1944-03-05至1944-03-06",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "CQ_LOCAL2024",
+            "locator": "战役经过与部署：攻坚、芦家滩打援、南侧警戒、预备队及后续出援"
+          }
+        ]
+      },
+      "scope": "车桥镇攻坚、西北芦家滩打援、南侧警戒及预备队；按来源分工运行，不将所有参战部队同时部署进镇内。至13日扩展战果另列。",
+      "evidence": [
+        {
+          "source_id": "CQ_LOCAL2024",
+          "locator": "战役经过与部署：攻坚、芦家滩打援、南侧警戒、预备队及后续出援"
+        }
+      ],
+      "execution_window": {
+        "start": "1944-03-05T01:50",
+        "end": "1944-03-06T06:20",
+        "kind": "model_scope_limit",
+        "note": "采用6日结束口径；06:20是30分钟步长下的晨间计算边界，不是核实的撤离钟点。不同口径不能混成一条精确命令链。",
+        "evidence": [
+          {
+            "source_id": "CQ_BJWMB2025",
+            "locator": "残敌撤离／战斗结束的日期叙述"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 33.49,
+          "lng": 119.27
+        },
+        "radius_km": 45,
+        "kind": "model_scope_limit",
+        "note": "为车桥、两淮出援方向及南侧警戒设置的计算地域；中心和半径是估计，不是实测战区或1944年道路。",
+        "evidence": [
+          {
+            "source_id": "CQ_LOCAL2024",
+            "locator": "战役经过与部署：攻坚、芦家滩打援、南侧警戒、预备队及后续出援"
+          }
+        ]
+      },
+      "process_requirements": [
+        {
+          "kind": "combined_operation",
+          "scope": "须绑定初攻、出援入场、工事攻坚、受降、撤离与多方向目标的连续过程；缺任一项不能宣称全役已就绪。",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "战役经过与部署：攻坚、芦家滩打援、南侧警戒、预备队及后续出援"
+            }
+          ]
+        }
+      ],
+      "input_constraints": {
+        "version": "historical-input-1",
+        "personnel": [
+          {
+            "unit_id": "ww2.jp.cheqiao_garrison",
+            "minimum": 40,
+            "maximum": 60,
+            "reported": "公开报道记常驻日军一个小队40余人；地方史叙述约40人，非精确当日点名册。",
+            "assumption": "40—60为本版本围绕约40人量级的人工建模筛选范围，并非史料给出的置信区间或核定编制。超界须补充来源并建立新输入版本，或进入合成演习；不能只写估计便增加到260人。",
+            "evidence": [
+              {
+                "source_id": "CQ_HISTORY",
+                "locator": "据点概况：日军一小队40余人；伪军500余人，与援军分别统计。"
+              },
+              {
+                "source_id": "CQ_LOCAL2024",
+                "locator": "战役背景：日军一个小队约40人，伪军600余人；不同口径分别保留。"
+              }
+            ]
+          }
+        ],
+        "entries": [
+          {
+            "id": "cq_huaian_1",
+            "unit_id": "ww2.jp.huaian_relief",
+            "label": "首批援军前沿接触",
+            "earliest": "1944-03-05T15:00",
+            "latest": "1944-03-05T15:15",
+            "region": {
+              "center": {
+                "lat": 33.51,
+                "lng": 119.29
+              },
+              "radius_km": 1.5
+            },
+            "assumption": "时段采用所列来源的前沿接触/到达记述，各异文不合并为逐分钟真值。中心33.51,119.29、半径1.5公里是车桥西北阻援方向的计算入口假设，尚非韩庄、周庄或芦家滩历史阵地坐标核验。battlefield_entry只覆盖前沿入场之后；departure须在此时间之前留足最低行军时间，后续是否到达由命令与AFSIM决定。",
+            "evidence": [
+              {
+                "source_id": "CQ_HISTORY",
+                "locator": "芦家滩打援：15:15首批240余人到周庄；地方史记15时许到阵地前。"
+              }
+            ]
+          },
+          {
+            "id": "cq_huaian_2",
+            "unit_id": "ww2.jp.huaian_relief",
+            "label": "第二批援军到达",
+            "earliest": "1944-03-05T16:00",
+            "latest": "1944-03-05T16:00",
+            "region": {
+              "center": {
+                "lat": 33.51,
+                "lng": 119.29
+              },
+              "radius_km": 1.5
+            },
+            "assumption": "时段采用所列来源的前沿接触/到达记述，各异文不合并为逐分钟真值。中心33.51,119.29、半径1.5公里是车桥西北阻援方向的计算入口假设，尚非韩庄、周庄或芦家滩历史阵地坐标核验。battlefield_entry只覆盖前沿入场之后；departure须在此时间之前留足最低行军时间，后续是否到达由命令与AFSIM决定。",
+            "evidence": [
+              {
+                "source_id": "CQ_LOCAL2024",
+                "locator": "芦家滩阻击战：16时再次增援；整点是本版离散化，不声称分钟精度。"
+              }
+            ]
+          },
+          {
+            "id": "cq_huaian_3",
+            "unit_id": "ww2.jp.huaian_relief",
+            "label": "第三批援军到达",
+            "earliest": "1944-03-05T17:30",
+            "latest": "1944-03-05T17:30",
+            "region": {
+              "center": {
+                "lat": 33.51,
+                "lng": 119.29
+              },
+              "radius_km": 1.5
+            },
+            "assumption": "时段采用所列来源的前沿接触/到达记述，各异文不合并为逐分钟真值。中心33.51,119.29、半径1.5公里是车桥西北阻援方向的计算入口假设，尚非韩庄、周庄或芦家滩历史阵地坐标核验。battlefield_entry只覆盖前沿入场之后；departure须在此时间之前留足最低行军时间，后续是否到达由命令与AFSIM决定。",
+            "evidence": [
+              {
+                "source_id": "CQ_LOCAL2024",
+                "locator": "芦家滩阻击战：17时30分再次增援。"
+              }
+            ]
+          },
+          {
+            "id": "cq_huaian_4",
+            "unit_id": "ww2.jp.huaian_relief",
+            "label": "次日第四批援军到达",
+            "earliest": "1944-03-06T02:00",
+            "latest": "1944-03-06T03:00",
+            "region": {
+              "center": {
+                "lat": 33.51,
+                "lng": 119.29
+              },
+              "radius_km": 1.5
+            },
+            "assumption": "时段采用所列来源的前沿接触/到达记述，各异文不合并为逐分钟真值。中心33.51,119.29、半径1.5公里是车桥西北阻援方向的计算入口假设，尚非韩庄、周庄或芦家滩历史阵地坐标核验。battlefield_entry只覆盖前沿入场之后；departure须在此时间之前留足最低行军时间，后续是否到达由命令与AFSIM决定。",
+            "evidence": [
+              {
+                "source_id": "CQ_LOCAL2024",
+                "locator": "6日凌晨2至3时约120人到达；与2015年报道第四批紧接第三批的叙述不同，本版单列采用该时段。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "core_march5_7",
+      "label": "完整核心攻坚与打援（7日撤离口径）",
+      "date": {
+        "label": "1944-03-05至1944-03-07",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "CQ_LOCAL2024",
+            "locator": "战役经过与部署：攻坚、芦家滩打援、南侧警戒、预备队及后续出援"
+          }
+        ]
+      },
+      "scope": "车桥镇攻坚、西北芦家滩打援、南侧警戒及预备队；按来源分工运行，不将所有参战部队同时部署进镇内。至13日扩展战果另列。",
+      "evidence": [
+        {
+          "source_id": "CQ_LOCAL2024",
+          "locator": "战役经过与部署：攻坚、芦家滩打援、南侧警戒、预备队及后续出援"
+        }
+      ],
+      "execution_window": {
+        "start": "1944-03-05T01:50",
+        "end": "1944-03-07T06:20",
+        "kind": "model_scope_limit",
+        "note": "采用7日结束口径；06:20是30分钟步长下的晨间计算边界，不是核实的撤离钟点。不同口径不能混成一条精确命令链。",
+        "evidence": [
+          {
+            "source_id": "CQ_SUYU",
+            "locator": "残敌撤离／战斗结束的日期叙述"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 33.49,
+          "lng": 119.27
+        },
+        "radius_km": 45,
+        "kind": "model_scope_limit",
+        "note": "为车桥、两淮出援方向及南侧警戒设置的计算地域；中心和半径是估计，不是实测战区或1944年道路。",
+        "evidence": [
+          {
+            "source_id": "CQ_LOCAL2024",
+            "locator": "战役经过与部署：攻坚、芦家滩打援、南侧警戒、预备队及后续出援"
+          }
+        ]
+      },
+      "process_requirements": [
+        {
+          "kind": "combined_operation",
+          "scope": "须绑定初攻、出援入场、工事攻坚、受降、撤离与多方向目标的连续过程；缺任一项不能宣称全役已就绪。",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "战役经过与部署：攻坚、芦家滩打援、南侧警戒、预备队及后续出援"
+            }
+          ]
+        }
+      ],
+      "input_constraints": {
+        "version": "historical-input-1",
+        "personnel": [
+          {
+            "unit_id": "ww2.jp.cheqiao_garrison",
+            "minimum": 40,
+            "maximum": 60,
+            "reported": "公开报道记常驻日军一个小队40余人；地方史叙述约40人，非精确当日点名册。",
+            "assumption": "40—60为本版本围绕约40人量级的人工建模筛选范围，并非史料给出的置信区间或核定编制。超界须补充来源并建立新输入版本，或进入合成演习；不能只写估计便增加到260人。",
+            "evidence": [
+              {
+                "source_id": "CQ_HISTORY",
+                "locator": "据点概况：日军一小队40余人；伪军500余人，与援军分别统计。"
+              },
+              {
+                "source_id": "CQ_LOCAL2024",
+                "locator": "战役背景：日军一个小队约40人，伪军600余人；不同口径分别保留。"
+              }
+            ]
+          }
+        ],
+        "entries": [
+          {
+            "id": "cq_huaian_1",
+            "unit_id": "ww2.jp.huaian_relief",
+            "label": "首批援军前沿接触",
+            "earliest": "1944-03-05T15:00",
+            "latest": "1944-03-05T15:15",
+            "region": {
+              "center": {
+                "lat": 33.51,
+                "lng": 119.29
+              },
+              "radius_km": 1.5
+            },
+            "assumption": "时段采用所列来源的前沿接触/到达记述，各异文不合并为逐分钟真值。中心33.51,119.29、半径1.5公里是车桥西北阻援方向的计算入口假设，尚非韩庄、周庄或芦家滩历史阵地坐标核验。battlefield_entry只覆盖前沿入场之后；departure须在此时间之前留足最低行军时间，后续是否到达由命令与AFSIM决定。",
+            "evidence": [
+              {
+                "source_id": "CQ_HISTORY",
+                "locator": "芦家滩打援：15:15首批240余人到周庄；地方史记15时许到阵地前。"
+              }
+            ]
+          },
+          {
+            "id": "cq_huaian_2",
+            "unit_id": "ww2.jp.huaian_relief",
+            "label": "第二批援军到达",
+            "earliest": "1944-03-05T16:00",
+            "latest": "1944-03-05T16:00",
+            "region": {
+              "center": {
+                "lat": 33.51,
+                "lng": 119.29
+              },
+              "radius_km": 1.5
+            },
+            "assumption": "时段采用所列来源的前沿接触/到达记述，各异文不合并为逐分钟真值。中心33.51,119.29、半径1.5公里是车桥西北阻援方向的计算入口假设，尚非韩庄、周庄或芦家滩历史阵地坐标核验。battlefield_entry只覆盖前沿入场之后；departure须在此时间之前留足最低行军时间，后续是否到达由命令与AFSIM决定。",
+            "evidence": [
+              {
+                "source_id": "CQ_LOCAL2024",
+                "locator": "芦家滩阻击战：16时再次增援；整点是本版离散化，不声称分钟精度。"
+              }
+            ]
+          },
+          {
+            "id": "cq_huaian_3",
+            "unit_id": "ww2.jp.huaian_relief",
+            "label": "第三批援军到达",
+            "earliest": "1944-03-05T17:30",
+            "latest": "1944-03-05T17:30",
+            "region": {
+              "center": {
+                "lat": 33.51,
+                "lng": 119.29
+              },
+              "radius_km": 1.5
+            },
+            "assumption": "时段采用所列来源的前沿接触/到达记述，各异文不合并为逐分钟真值。中心33.51,119.29、半径1.5公里是车桥西北阻援方向的计算入口假设，尚非韩庄、周庄或芦家滩历史阵地坐标核验。battlefield_entry只覆盖前沿入场之后；departure须在此时间之前留足最低行军时间，后续是否到达由命令与AFSIM决定。",
+            "evidence": [
+              {
+                "source_id": "CQ_LOCAL2024",
+                "locator": "芦家滩阻击战：17时30分再次增援。"
+              }
+            ]
+          },
+          {
+            "id": "cq_huaian_4",
+            "unit_id": "ww2.jp.huaian_relief",
+            "label": "次日第四批援军到达",
+            "earliest": "1944-03-06T02:00",
+            "latest": "1944-03-06T03:00",
+            "region": {
+              "center": {
+                "lat": 33.51,
+                "lng": 119.29
+              },
+              "radius_km": 1.5
+            },
+            "assumption": "时段采用所列来源的前沿接触/到达记述，各异文不合并为逐分钟真值。中心33.51,119.29、半径1.5公里是车桥西北阻援方向的计算入口假设，尚非韩庄、周庄或芦家滩历史阵地坐标核验。battlefield_entry只覆盖前沿入场之后；departure须在此时间之前留足最低行军时间，后续是否到达由命令与AFSIM决定。",
+            "evidence": [
+              {
+                "source_id": "CQ_LOCAL2024",
+                "locator": "6日凌晨2至3时约120人到达；与2015年报道第四批紧接第三批的叙述不同，本版单列采用该时段。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "reference",
+      "label": "全战役参战参考（非同日部署）",
+      "date": {
+        "label": "1944.03.05至1944.03.06",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "CQ_HISTORY",
+            "locator": "主攻7团与师炮兵大队；西北打援和南侧警戒分工另列"
+          }
+        ]
+      },
+      "scope": "保留累计参战身份；不宣称所有单位在战役开端同时到场。",
+      "evidence": [
+        {
+          "source_id": "CQ_HISTORY",
+          "locator": "主攻7团与师炮兵大队；西北打援和南侧警戒分工另列"
+        }
+      ]
+    },
+    {
+      "id": "cheqiao_mar5",
+      "label": "3月5日车桥据点初攻",
+      "date": {
+        "label": "1944-03-05",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "CQ_HISTORY",
+            "locator": "主攻7团与师炮兵大队；西北打援和南侧警戒分工另列"
+          }
+        ]
+      },
+      "scope": "仅车桥镇初攻地面及炮兵；援敌尚未在镇内，不把全65师团或南侧52团提前灌入。",
+      "evidence": [
+        {
+          "source_id": "CQ_HISTORY",
+          "locator": "主攻7团与师炮兵大队；西北打援和南侧警戒分工另列"
+        }
+      ],
+      "execution_window": {
+        "start": "1944-03-05T02:00",
+        "end": "1944-03-05T06:00",
+        "kind": "model_scope_limit",
+        "note": "本日局部计算假设窗口，钟点不作史实命令；超窗须另核后续部队与兵种，不能自动继承为全会战。",
+        "evidence": [
+          {
+            "source_id": "CQ_HISTORY",
+            "locator": "主攻7团与师炮兵大队；西北打援和南侧警戒分工另列"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 33.46667,
+          "lng": 119.4
+        },
+        "radius_km": 12,
+        "kind": "model_scope_limit",
+        "note": "地名附近的计算区域假设，以现代参考点或文字地域为中心；不是已测绘的历史阵地、战线或射界。",
+        "evidence": [
+          {
+            "source_id": "CQ_HISTORY",
+            "locator": "主攻7团与师炮兵大队；西北打援和南侧警戒分工另列"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.new4_division1",
+      "name": "新四军第1师指挥部",
+      "team": "red",
+      "role": "command",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CQ_HISTORY",
+          "locator": "粟裕、叶飞组织战役；叶飞前线指挥"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "粟裕、叶飞组织战役；叶飞前线指挥"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "粟裕、叶飞组织战役；叶飞前线指挥"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.new4_regiment7",
+      "name": "新四军第1师第3旅第7团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.new4_division1",
+      "evidence": [
+        {
+          "source_id": "CQ_HISTORY",
+          "locator": "第7团担负主攻"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "第7团担负主攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "第7团担负主攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.new4_artillery_battalion",
+      "name": "新四军第1师炮兵大队",
+      "team": "red",
+      "role": "support",
+      "echelon": "大队",
+      "parent_id": "ww2.cn.new4_division1",
+      "evidence": [
+        {
+          "source_id": "CQ_HISTORY",
+          "locator": "师炮兵大队支援主攻"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "师炮兵大队支援主攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "师炮兵大队支援主攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.cheqiao_garrison",
+      "name": "日军车桥守备队（下级番号未核）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "守备队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CQ_HISTORY",
+          "locator": "车桥据点日军守备；未给可核中队番号"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "车桥据点日军守备；未给可核中队番号"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "车桥据点日军守备；未给可核中队番号"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.puppet.cheqiao_garrison",
+      "name": "车桥伪军守备队（番号未核）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "守备队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CQ_HISTORY",
+          "locator": "车桥日伪守备部队，缺逐单位名册"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "车桥日伪守备部队，缺逐单位名册"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "车桥日伪守备部队，缺逐单位名册"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.regiment52",
+      "name": "新四军第18旅第52团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CQ_HISTORY",
+          "locator": "崔河一带南侧警戒，不是车桥镇主攻"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "崔河一带南侧警戒，不是车桥镇主攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "崔河一带南侧警戒，不是车桥镇主攻"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_SUYU",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_SUYU",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.new4_regiment1",
+      "name": "新四军第1旅第1团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CQ_HISTORY",
+          "locator": "西北芦家滩阻援，与主攻分工不同"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "西北芦家滩阻援，与主攻分工不同"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "西北芦家滩阻援，与主攻分工不同"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.huaian_relief",
+      "name": "日军淮安方向援军（下级番号未核）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "援军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CQ_HISTORY",
+          "locator": "后续增援与打援阶段，不能等同初攻镇内守军"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "后续增援与打援阶段，不能等同初攻镇内守军"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "CQ_HISTORY",
+              "locator": "后续增援与打援阶段，不能等同初攻镇内守军"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "参战身份和任务分工；属于全程参战参考，不证明全体在发起时已进入镇内"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.subdistrict3.special",
+      "name": "新四军第3分区特务营",
+      "team": "red",
+      "role": "formation",
+      "echelon": "参战分队",
+      "parent_id": "ww2.cn.new4_division1",
+      "evidence": [
+        {
+          "source_id": "CQ_LOCAL2024",
+          "locator": "战役部署：与1团、泰州独立团参战营组成西北打援纵队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "战役部署：与1团、泰州独立团参战营组成西北打援纵队"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "战役部署：与1团、泰州独立团参战营组成西北打援纵队"
+            }
+          ]
+        },
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "战役部署：与1团、泰州独立团参战营组成西北打援纵队"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "战役部署：与1团、泰州独立团参战营组成西北打援纵队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.taizhou_independent.part",
+      "name": "泰州独立团参战营（临时第4营）",
+      "team": "red",
+      "role": "formation",
+      "echelon": "参战分队",
+      "parent_id": "ww2.cn.new4_division1",
+      "evidence": [
+        {
+          "source_id": "CQ_LOCAL2024",
+          "locator": "战役部署与芦家滩：参战一个营，地方文称临时第4营，不等同全团到场"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "战役部署与芦家滩：参战一个营，地方文称临时第4营，不等同全团到场"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "战役部署与芦家滩：参战一个营，地方文称临时第4营，不等同全团到场"
+            }
+          ]
+        },
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "战役部署与芦家滩：参战一个营，地方文称临时第4营，不等同全团到场"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "战役部署与芦家滩：参战一个营，地方文称临时第4营，不等同全团到场"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jiangdu_independent.part",
+      "name": "江都独立团参战营",
+      "team": "red",
+      "role": "formation",
+      "echelon": "参战分队",
+      "parent_id": "ww2.cn.new4_division1",
+      "evidence": [
+        {
+          "source_id": "CQ_LOCAL2024",
+          "locator": "第三纵队：独立团各一个营，官田、大施河方向"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "第三纵队：独立团各一个营，官田、大施河方向"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "第三纵队：独立团各一个营，官田、大施河方向"
+            }
+          ]
+        },
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "第三纵队：独立团各一个营，官田、大施河方向"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "第三纵队：独立团各一个营，官田、大施河方向"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.gaoyou_independent.part",
+      "name": "高邮独立团参战营",
+      "team": "red",
+      "role": "formation",
+      "echelon": "参战分队",
+      "parent_id": "ww2.cn.new4_division1",
+      "evidence": [
+        {
+          "source_id": "CQ_LOCAL2024",
+          "locator": "第三纵队：独立团各一个营，官田、大施河方向"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "第三纵队：独立团各一个营，官田、大施河方向"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "第三纵队：独立团各一个营，官田、大施河方向"
+            }
+          ]
+        },
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "第三纵队：独立团各一个营，官田、大施河方向"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "第三纵队：独立团各一个营，官田、大施河方向"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.teaching_regiment.battalion1",
+      "name": "第1师教导团第1营",
+      "team": "red",
+      "role": "formation",
+      "echelon": "参战分队",
+      "parent_id": "ww2.cn.new4_division1",
+      "evidence": [
+        {
+          "source_id": "CQ_LOCAL2024",
+          "locator": "总预备队：赵杨庄待命"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "总预备队：赵杨庄待命"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "总预备队：赵杨庄待命"
+            }
+          ]
+        },
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "总预备队：赵杨庄待命"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "总预备队：赵杨庄待命"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.subdistrict4.special.part",
+      "name": "第4分区特务团参战两营",
+      "team": "red",
+      "role": "formation",
+      "echelon": "参战分队",
+      "parent_id": "ww2.cn.new4_division1",
+      "evidence": [
+        {
+          "source_id": "CQ_LOCAL2024",
+          "locator": "总预备队：两个营，作为已识别参战部分登记，不等同全团实到"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "总预备队：两个营，作为已识别参战部分登记，不等同全团实到"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "总预备队：两个营，作为已识别参战部分登记，不等同全团实到"
+            }
+          ]
+        },
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "总预备队：两个营，作为已识别参战部分登记，不等同全团实到"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "总预备队：两个营，作为已识别参战部分登记，不等同全团实到"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.new4_division3",
+      "name": "新四军第3师北侧策应指挥机构",
+      "team": "red",
+      "role": "command",
+      "echelon": "指挥机构",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CQ_LOCAL2024",
+          "locator": "北侧安全由第3师友邻部队保障；不与第1师指挥机构合并计兵"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "北侧安全由第3师友邻部队保障；不与第1师指挥机构合并计兵"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "北侧安全由第3师友邻部队保障；不与第1师指挥机构合并计兵"
+            }
+          ]
+        },
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "北侧安全由第3师友邻部队保障；不与第1师指挥机构合并计兵"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "北侧安全由第3师友邻部队保障；不与第1师指挥机构合并计兵"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.new4_division3.northern_cover",
+      "name": "第3师北侧策应部队（下级番号未核齐）",
+      "team": "red",
+      "role": "formation",
+      "echelon": "参战分队",
+      "parent_id": "ww2.cn.new4_division3",
+      "evidence": [
+        {
+          "source_id": "CQ_LOCAL2024",
+          "locator": "友邻第7旅两团在顺和集、仇桥、凤谷桥；另有骑兵佯动记述，不能据此虚构全部下级番号和人数"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "友邻第7旅两团在顺和集、仇桥、凤谷桥；另有骑兵佯动记述，不能据此虚构全部下级番号和人数"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "友邻第7旅两团在顺和集、仇桥、凤谷桥；另有骑兵佯动记述，不能据此虚构全部下级番号和人数"
+            }
+          ]
+        },
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "友邻第7旅两团在顺和集、仇桥、凤谷桥；另有骑兵佯动记述，不能据此虚构全部下级番号和人数"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "友邻第7旅两团在顺和集、仇桥、凤谷桥；另有骑兵佯动记述，不能据此虚构全部下级番号和人数"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.caodian_relief",
+      "name": "曹甸、塔儿头方向出援部（下级番号未核）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "参战分队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CQ_LOCAL2024",
+          "locator": "大施河阻援：5日下午百余人出援，接触后退回；不是淮安同一批援军"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "core_march5_6",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "大施河阻援：5日下午百余人出援，接触后退回；不是淮安同一批援军"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "大施河阻援：5日下午百余人出援，接触后退回；不是淮安同一批援军"
+            }
+          ]
+        },
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "大施河阻援：5日下午百余人出援，接触后退回；不是淮安同一批援军"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "大施河阻援：5日下午百余人出援，接触后退回；不是淮安同一批援军"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.baoying_reference",
+      "name": "宝应守备参考（未出援）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "参战分队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "CQ_LOCAL2024",
+          "locator": "宝应之敌未出援，不生成在场进攻队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "core_march5_6",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "宝应之敌未出援，不生成在场进攻队"
+            }
+          ]
+        },
+        {
+          "phase_id": "core_march5_7",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "宝应之敌未出援，不生成在场进攻队"
+            }
+          ]
+        },
+        {
+          "phase_id": "reference",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "宝应之敌未出援，不生成在场进攻队"
+            }
+          ]
+        },
+        {
+          "phase_id": "cheqiao_mar5",
+          "status": "outside_scope",
+          "evidence": [
+            {
+              "source_id": "CQ_LOCAL2024",
+              "locator": "宝应之敌未出援，不生成在场进攻队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺逐单位阶段实到名册、分类可用量或配准阵地；不得从全役或上级总数反推。"
+        }
+      }
+    }
+  ]
+}

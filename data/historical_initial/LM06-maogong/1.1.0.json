@@ -1,0 +1,810 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "LM06-maogong",
+  "version": "1.1.0",
+  "battle": "红军长征-懋功会师与雪山草地转移-1935.06.12至1935.09.12",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "有出处的阶段参战身份，不是完整战斗序列。未知实到人数、装备与部队坐标留空；计算值必须单独说明估计依据。",
+      "战役总伤亡、出发兵力和战后残部不能替代阶段初态；不得按回合平摊伤亡或固定史实结局。",
+      "只支持右路军过草地的非接敌运输片段。懋功会师、左路军路线与9月分途保留史料总览，不能混放到同一地点。",
+      "已按1935年8月番号称红1军、红3军；与原军团的对应不产生重复兵力。",
+      "1.1.0补充右路军四个军的行政来源、临时指挥参考和出发/抵达集体节点；不登记无法核定的师团下级、左路军同期部署或全方面军人数。",
+      "8月27日抵达巴西是右路军集体记述，不是四军逐一到达的精确时刻。8月29日包座战斗在本窗口之外；不移用该网页有争议的后续战果。",
+      "方面军与右路军为指挥参考，不生成步兵实体。已列四军不能代表右路军全部机关、红军大学及军委纵队人员。"
+    ]
+  },
+  "sources": {
+    "PLAN": {
+      "title": "党史上的今天：1935年8月3日夏洮战役计划",
+      "url": "https://www.forestry.gov.cn/c/www/dszl/9451.jhtml",
+      "publisher": "国家林草局转载党史学习教育官网，2022-08-03",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "公开回顾，未核原始名册、逐时命令及实到兵力；仅支持所列身份与过程。"
+    },
+    "CROSS": {
+      "title": "1935年8月21日，红一、四方面军开始穿越草地",
+      "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11735370.html",
+      "publisher": "盐田档案与史志信息网",
+      "evidence_kind": "official_history",
+      "original_archive_examined": false,
+      "limitations": "只采用右路军过草地至班佑的转移日期，文末包座战果另有口径，不并入本初态。"
+    },
+    "GEO_baxi": {
+      "title": "红军长征-巴西",
+      "url": "https://www.geonames.org/1816836/",
+      "publisher": "GeoNames；项目2026-10-22地名核验",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "现代聚落点。不是历史渡口、桥面或阵地；计算半径与部署是模型假设。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_reference",
+      "label": "会师、计划与分途参考",
+      "date": {
+        "label": "1935年6月12日至9月12日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "PLAN",
+            "locator": "夏洮计划中两路军的编成；不是6月在场表"
+          }
+        ]
+      },
+      "scope": "会师、计划与分途参考",
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "夏洮计划中两路军的编成；不是6月在场表"
+        }
+      ],
+      "operations": [
+        {
+          "id": "LM06-Aug3-right-plan",
+          "kind": "command",
+          "date": {
+            "label": "1935-08-03",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "mg.red.army1",
+            "mg.red.army3",
+            "mg.red.army4",
+            "mg.red.army30",
+            "mg.red.right_column"
+          ],
+          "places": [],
+          "description": "夏洮计划规定右路军由两方面军所列四个军等组成，向北经草地行动。",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ],
+          "limitations": "计划编组不能证明当日各军全部到场；机关、大学和纵队未量化，不拆出虚构师团。"
+        }
+      ]
+    },
+    {
+      "id": "right_column_grassland",
+      "label": "右路军穿越草地至巴西",
+      "date": {
+        "label": "1935年8月21日至27日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "CROSS",
+            "locator": "8月21日出发、8月下旬到达班佑方向"
+          }
+        ]
+      },
+      "scope": "只计算右路军四个军的非接敌转移；机关和其他部队不作虚构战斗实体。毛儿盖—巴西为来源方向，湿地可通行路线及逐军实到未知。",
+      "evidence": [
+        {
+          "source_id": "CROSS",
+          "locator": "8月21日出发、8月下旬到达班佑方向"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 33.60697,
+          "lng": 103.23396
+        },
+        "radius_km": 160,
+        "kind": "model_scope_limit",
+        "note": "以现代地名为地域检索中心；半径为模型边界，所有单位位置另填，不是实测历史阵地。",
+        "evidence": [
+          {
+            "source_id": "GEO_baxi",
+            "locator": "现代地名记录及项目long_march_anchors.json"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1935-08-21T00:00",
+        "end": "1935-08-28T00:00",
+        "kind": "model_scope_limit",
+        "note": "8月21—27日来源过程的计算范围；零时和末日边界为离散化估计，不是逐军出发/抵达钟点。开放模式按目标可延伸，不能据此补造包座敌军或战果。",
+        "evidence": [
+          {
+            "source_id": "CROSS",
+            "locator": "8月21日出发、8月下旬到达班佑方向"
+          }
+        ]
+      },
+      "interaction": {
+        "kind": "non_contact_transfer",
+        "active_teams": [
+          "red"
+        ],
+        "scope": "只计算所列红军转移、集结与供给；不表示全战区无敌军，不生成虚构对手。",
+        "evidence": [
+          {
+            "source_id": "CROSS",
+            "locator": "8月21日出发、8月下旬到达班佑方向"
+          }
+        ]
+      },
+      "relations": [
+        {
+          "id": "LM06-right-command-1",
+          "kind": "operational_command",
+          "parent_id": "mg.red.right_column",
+          "child_id": "mg.red.army1",
+          "scope": "夏洮计划的临时右路军指挥，不改变两方面军行政隶属；不自动创建本局任务群或命令。",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ]
+        },
+        {
+          "id": "LM06-right-command-2",
+          "kind": "operational_command",
+          "parent_id": "mg.red.right_column",
+          "child_id": "mg.red.army3",
+          "scope": "夏洮计划的临时右路军指挥，不改变两方面军行政隶属；不自动创建本局任务群或命令。",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ]
+        },
+        {
+          "id": "LM06-right-command-3",
+          "kind": "operational_command",
+          "parent_id": "mg.red.right_column",
+          "child_id": "mg.red.army4",
+          "scope": "夏洮计划的临时右路军指挥，不改变两方面军行政隶属；不自动创建本局任务群或命令。",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ]
+        },
+        {
+          "id": "LM06-right-command-4",
+          "kind": "operational_command",
+          "parent_id": "mg.red.right_column",
+          "child_id": "mg.red.army30",
+          "scope": "夏洮计划的临时右路军指挥，不改变两方面军行政隶属；不自动创建本局任务群或命令。",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ]
+        }
+      ],
+      "operations": [
+        {
+          "id": "LM06-Aug21-depart",
+          "kind": "movement",
+          "date": {
+            "label": "1935-08-21",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "mg.red.army1",
+            "mg.red.army3",
+            "mg.red.army4",
+            "mg.red.army30",
+            "mg.red.right_column"
+          ],
+          "places": [
+            {
+              "name": "毛儿盖",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "CROSS",
+                  "locator": "8月21日自毛儿盖出发进入草地段"
+                }
+              ]
+            },
+            {
+              "name": "草地",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "CROSS",
+                  "locator": "8月21日自毛儿盖出发进入草地段"
+                }
+              ]
+            }
+          ],
+          "description": "右路军从毛儿盖方向出发进入草地。",
+          "evidence": [
+            {
+              "source_id": "CROSS",
+              "locator": "8月21日自毛儿盖出发进入草地段"
+            }
+          ],
+          "limitations": "集体方向与日级节点；不证明各军同时过同一点、逐时行军路线或具体损失。位置、人数和库存仍须独立估计。"
+        },
+        {
+          "id": "LM06-Aug27-baxi",
+          "kind": "movement",
+          "date": {
+            "label": "1935-08-27",
+            "precision": "day"
+          },
+          "unit_ids": [
+            "mg.red.army1",
+            "mg.red.army3",
+            "mg.red.army4",
+            "mg.red.army30",
+            "mg.red.right_column"
+          ],
+          "places": [
+            {
+              "name": "草地",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "CROSS",
+                  "locator": "8月27日走出草地到达巴西段；不采用次段包座战果"
+                }
+              ]
+            },
+            {
+              "name": "巴西",
+              "position": null,
+              "evidence": [
+                {
+                  "source_id": "CROSS",
+                  "locator": "8月27日走出草地到达巴西段；不采用次段包座战果"
+                }
+              ]
+            }
+          ],
+          "description": "右路军走出草地到达巴西方向，等待左路军。",
+          "evidence": [
+            {
+              "source_id": "CROSS",
+              "locator": "8月27日走出草地到达巴西段；不采用次段包座战果"
+            }
+          ],
+          "limitations": "集体方向与日级节点；不证明各军同时过同一点、逐时行军路线或具体损失。位置、人数和库存仍须独立估计。"
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "mg.red.army1",
+      "name": "红一方面军第1军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": "mg.red.front1",
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "右路军四个军的编成"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ]
+        },
+        {
+          "phase_id": "right_column_grassland",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "mg.red.army3",
+      "name": "红一方面军第3军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": "mg.red.front1",
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "右路军四个军的编成"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ]
+        },
+        {
+          "phase_id": "right_column_grassland",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "mg.red.army4",
+      "name": "红四方面军第4军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": "mg.red.front4",
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "右路军四个军的编成"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ]
+        },
+        {
+          "phase_id": "right_column_grassland",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "mg.red.army30",
+      "name": "红四方面军第30军",
+      "team": "red",
+      "role": "formation",
+      "echelon": "军",
+      "parent_id": "mg.red.front4",
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "右路军四个军的编成"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ]
+        },
+        {
+          "phase_id": "right_column_grassland",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "右路军四个军的编成"
+            }
+          ],
+          "scope": "本地实到或精确部署未载；未知不等于零，另用显式估计配置。"
+        }
+      }
+    },
+    {
+      "id": "mg.red.front1",
+      "name": "红一方面军指挥参考",
+      "team": "red",
+      "role": "command",
+      "echelon": "方面军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ]
+        },
+        {
+          "phase_id": "right_column_grassland",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ],
+          "scope": "仅指挥层级参考，人数、装备、机关所在地未核定；不转换为战斗部队。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ],
+          "scope": "仅指挥层级参考，人数、装备、机关所在地未核定；不转换为战斗部队。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ],
+          "scope": "仅指挥层级参考，人数、装备、机关所在地未核定；不转换为战斗部队。"
+        }
+      },
+      "children_coverage": {
+        "status": "partial",
+        "scope": "仅列本窗口可核身份，不表示完整方面军或右路军的下级覆盖。",
+        "evidence": [
+          {
+            "source_id": "PLAN",
+            "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mg.red.front4",
+      "name": "红四方面军指挥参考",
+      "team": "red",
+      "role": "command",
+      "echelon": "方面军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ]
+        },
+        {
+          "phase_id": "right_column_grassland",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ],
+          "scope": "仅指挥层级参考，人数、装备、机关所在地未核定；不转换为战斗部队。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ],
+          "scope": "仅指挥层级参考，人数、装备、机关所在地未核定；不转换为战斗部队。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ],
+          "scope": "仅指挥层级参考，人数、装备、机关所在地未核定；不转换为战斗部队。"
+        }
+      },
+      "children_coverage": {
+        "status": "partial",
+        "scope": "仅列本窗口可核身份，不表示完整方面军或右路军的下级覆盖。",
+        "evidence": [
+          {
+            "source_id": "PLAN",
+            "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mg.red.right_column",
+      "name": "右路军临时指挥参考",
+      "team": "red",
+      "role": "command",
+      "echelon": "路军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "PLAN",
+          "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_reference",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ]
+        },
+        {
+          "phase_id": "right_column_grassland",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ],
+          "scope": "仅指挥层级参考，人数、装备、机关所在地未核定；不转换为战斗部队。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ],
+          "scope": "仅指挥层级参考，人数、装备、机关所在地未核定；不转换为战斗部队。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [
+            {
+              "source_id": "PLAN",
+              "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+            }
+          ],
+          "scope": "仅指挥层级参考，人数、装备、机关所在地未核定；不转换为战斗部队。"
+        }
+      },
+      "children_coverage": {
+        "status": "partial",
+        "scope": "仅列本窗口可核身份，不表示完整方面军或右路军的下级覆盖。",
+        "evidence": [
+          {
+            "source_id": "PLAN",
+            "locator": "1935年8月3日夏洮计划，右路军组成及两方面军的行政来源"
+          }
+        ]
+      }
+    }
+  ]
+}

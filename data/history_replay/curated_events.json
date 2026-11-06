@@ -1,0 +1,1238 @@
+{
+  "version": "strict-history-1",
+  "note": "从现有审订史料卡整理；时间窗可重叠，回放帧不等于精确战斗时序。未核原始档案的公开叙述不能升级为原始命令。",
+  "battles": [
+    {
+      "battle": "抗美援朝-第一次战役-1950.10.25至1950.11.05",
+      "corpus": "corpus/抗美援朝-第一次战役-1950.10.25至1950.11.05.md",
+      "events": [
+        {
+          "date_label": "1950-10-19起",
+          "precision": "保留原文时段；不补钟点",
+          "event": "志愿军秘密入朝，原定防御部署因敌军北进而调整为遭遇与反突击。",
+          "sources": [
+            {
+              "title": "全国征兵网：抗美援朝战争第一次战役，2014-03-14",
+              "url": "https://www.gfbzb.gov.cn/zbbm/gfzs/201403/20140314/819930541.html"
+            },
+            {
+              "title": "中国征兵网转载人民政协报：三十九军重创美开国“元勋师”始末，2015-02-28",
+              "url": "https://www.gfbzb.gov.cn/ssts/querybyid.action?artid=1430987107&item=GFZS"
+            },
+            {
+              "title": "舰船知识网络版：第一次战役，2003-07-26，新浪军事存档",
+              "url": "https://mil.news.sina.com.cn/2003-07-26/139650.html"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1950-10-25",
+          "precision": "保留原文时段；不补钟点",
+          "event": "两水洞、温井方向首先接战，随后在古场、云山等方向连续作战。",
+          "sources": [
+            {
+              "title": "全国征兵网：抗美援朝战争第一次战役，2014-03-14",
+              "url": "https://www.gfbzb.gov.cn/zbbm/gfzs/201403/20140314/819930541.html"
+            },
+            {
+              "title": "中国征兵网转载人民政协报：三十九军重创美开国“元勋师”始末，2015-02-28",
+              "url": "https://www.gfbzb.gov.cn/ssts/querybyid.action?artid=1430987107&item=GFZS"
+            },
+            {
+              "title": "舰船知识网络版：第一次战役，2003-07-26，新浪军事存档",
+              "url": "https://mil.news.sina.com.cn/2003-07-26/139650.html"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1950-11-01至11-03",
+          "precision": "保留原文时段；不补钟点",
+          "event": "云山战斗重创美骑兵第1师第8骑兵团等部；不是全师被歼。",
+          "sources": [
+            {
+              "title": "全国征兵网：抗美援朝战争第一次战役，2014-03-14",
+              "url": "https://www.gfbzb.gov.cn/zbbm/gfzs/201403/20140314/819930541.html"
+            },
+            {
+              "title": "中国征兵网转载人民政协报：三十九军重创美开国“元勋师”始末，2015-02-28",
+              "url": "https://www.gfbzb.gov.cn/ssts/querybyid.action?artid=1430987107&item=GFZS"
+            },
+            {
+              "title": "舰船知识网络版：第一次战役，2003-07-26，新浪军事存档",
+              "url": "https://mil.news.sina.com.cn/2003-07-26/139650.html"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1950-11-05",
+          "precision": "保留原文时段；不补钟点",
+          "event": "西线停止进攻；东线阻击与西线结束日期不能混同。",
+          "sources": [
+            {
+              "title": "全国征兵网：抗美援朝战争第一次战役，2014-03-14",
+              "url": "https://www.gfbzb.gov.cn/zbbm/gfzs/201403/20140314/819930541.html"
+            },
+            {
+              "title": "中国征兵网转载人民政协报：三十九军重创美开国“元勋师”始末，2015-02-28",
+              "url": "https://www.gfbzb.gov.cn/ssts/querybyid.action?artid=1430987107&item=GFZS"
+            },
+            {
+              "title": "舰船知识网络版：第一次战役，2003-07-26，新浪军事存档",
+              "url": "https://mil.news.sina.com.cn/2003-07-26/139650.html"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        }
+      ]
+    },
+    {
+      "battle": "抗美援朝-第二次战役-1950.11.07至1950.12.24",
+      "corpus": "corpus/抗美援朝-第二次战役-1950.11.07至1950.12.24.md",
+      "events": [
+        {
+          "date_label": "1950年11月上中旬",
+          "precision": "保留原文时段；不补钟点",
+          "event": "志愿军部分兵力接触、主力后撤与示弱诱敌，联军继续北进。",
+          "sources": [
+            {
+              "title": "全国征兵网：抗美援朝战争第二次战役，2014-03-14",
+              "url": "https://www.gfbzb.gov.cn/zbbm/gfzs/201403/20140314/819925728.html"
+            },
+            {
+              "title": "中国军网：抗美援朝第二次战役评析，2020-10-10",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916016.htm"
+            },
+            {
+              "title": "国防部：这场战役彻底扭转朝鲜战局",
+              "url": "http://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4897557.html"
+            },
+            {
+              "title": "美国陆军军史中心：Korean War campaign summaries",
+              "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Korean-War/"
+            },
+            {
+              "title": "新华网：朝鲜战争最惨痛一役，2015-12-10，第2页",
+              "url": "https://www.xinhuanet.com/mil/2015-12/10/c_128516942_2.htm"
+            },
+            {
+              "title": "美国海军陆战队历史刊物 Fortitudine 28卷4期：Cold Weather Combat Clothing",
+              "url": "https://www.marines.mil/portals/1/Publications/Fortitudine%20Vol%2028%20No%204.pdf"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1950-11-25",
+          "precision": "保留原文时段；不补钟点",
+          "event": "西线反击，随后向美第8集团军侧后迂回，抢占部分退路要点。",
+          "sources": [
+            {
+              "title": "全国征兵网：抗美援朝战争第二次战役，2014-03-14",
+              "url": "https://www.gfbzb.gov.cn/zbbm/gfzs/201403/20140314/819925728.html"
+            },
+            {
+              "title": "中国军网：抗美援朝第二次战役评析，2020-10-10",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916016.htm"
+            },
+            {
+              "title": "国防部：这场战役彻底扭转朝鲜战局",
+              "url": "http://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4897557.html"
+            },
+            {
+              "title": "美国陆军军史中心：Korean War campaign summaries",
+              "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Korean-War/"
+            },
+            {
+              "title": "新华网：朝鲜战争最惨痛一役，2015-12-10，第2页",
+              "url": "https://www.xinhuanet.com/mil/2015-12/10/c_128516942_2.htm"
+            },
+            {
+              "title": "美国海军陆战队历史刊物 Fortitudine 28卷4期：Cold Weather Combat Clothing",
+              "url": "https://www.marines.mil/portals/1/Publications/Fortitudine%20Vol%2028%20No%204.pdf"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1950-11-27晚",
+          "precision": "保留原文时段；不补钟点",
+          "event": "东线发起反击，长津湖地区美军被分隔；不能写成陆战第1师被全歼。",
+          "sources": [
+            {
+              "title": "全国征兵网：抗美援朝战争第二次战役，2014-03-14",
+              "url": "https://www.gfbzb.gov.cn/zbbm/gfzs/201403/20140314/819925728.html"
+            },
+            {
+              "title": "中国军网：抗美援朝第二次战役评析，2020-10-10",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916016.htm"
+            },
+            {
+              "title": "国防部：这场战役彻底扭转朝鲜战局",
+              "url": "http://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4897557.html"
+            },
+            {
+              "title": "美国陆军军史中心：Korean War campaign summaries",
+              "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Korean-War/"
+            },
+            {
+              "title": "新华网：朝鲜战争最惨痛一役，2015-12-10，第2页",
+              "url": "https://www.xinhuanet.com/mil/2015-12/10/c_128516942_2.htm"
+            },
+            {
+              "title": "美国海军陆战队历史刊物 Fortitudine 28卷4期：Cold Weather Combat Clothing",
+              "url": "https://www.marines.mil/portals/1/Publications/Fortitudine%20Vol%2028%20No%204.pdf"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1950-12-24",
+          "precision": "保留原文时段；不补钟点",
+          "event": "兴南撤离结束，战役收束。",
+          "sources": [
+            {
+              "title": "全国征兵网：抗美援朝战争第二次战役，2014-03-14",
+              "url": "https://www.gfbzb.gov.cn/zbbm/gfzs/201403/20140314/819925728.html"
+            },
+            {
+              "title": "中国军网：抗美援朝第二次战役评析，2020-10-10",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916016.htm"
+            },
+            {
+              "title": "国防部：这场战役彻底扭转朝鲜战局",
+              "url": "http://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4897557.html"
+            },
+            {
+              "title": "美国陆军军史中心：Korean War campaign summaries",
+              "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Korean-War/"
+            },
+            {
+              "title": "新华网：朝鲜战争最惨痛一役，2015-12-10，第2页",
+              "url": "https://www.xinhuanet.com/mil/2015-12/10/c_128516942_2.htm"
+            },
+            {
+              "title": "美国海军陆战队历史刊物 Fortitudine 28卷4期：Cold Weather Combat Clothing",
+              "url": "https://www.marines.mil/portals/1/Publications/Fortitudine%20Vol%2028%20No%204.pdf"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        }
+      ]
+    },
+    {
+      "battle": "抗美援朝-第三次战役-1950.12.31至1951.01.08",
+      "corpus": "corpus/抗美援朝-第三次战役-1950.12.31至1951.01.08.md",
+      "events": [
+        {
+          "date_label": "1950-12-31晚",
+          "precision": "保留原文时段；不补钟点",
+          "event": "发起攻击并突破三八线阵地，随后展开追击。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：中国人民志愿军入朝作战和朝鲜战局的稳定，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "新湖南：抗美援朝战争第三次战役，2020-09",
+              "url": "https://m.voc.com.cn/xhn/news/202009/13792607.html"
+            },
+            {
+              "title": "中国军网：抗美援朝中的战役之最，2020-10-10",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916079.htm"
+            },
+            {
+              "title": "Royal Irish团史资料馆：Battle of Chaegunghyon (Happy Valley)",
+              "url": "https://www.royal-irish.org/stories/battle-of-chaegunghyon-happy-valley"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951-01-03至01-04",
+          "precision": "保留原文时段；不补钟点",
+          "event": "英皇家奥斯特步枪团第1营及配属部队在Happy Valley一带遭重创；不能称全营全歼。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：中国人民志愿军入朝作战和朝鲜战局的稳定，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "新湖南：抗美援朝战争第三次战役，2020-09",
+              "url": "https://m.voc.com.cn/xhn/news/202009/13792607.html"
+            },
+            {
+              "title": "中国军网：抗美援朝中的战役之最，2020-10-10",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916079.htm"
+            },
+            {
+              "title": "Royal Irish团史资料馆：Battle of Chaegunghyon (Happy Valley)",
+              "url": "https://www.royal-irish.org/stories/battle-of-chaegunghyon-happy-valley"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951-01-04",
+          "precision": "保留原文时段；不补钟点",
+          "event": "中朝部队进入汉城。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：中国人民志愿军入朝作战和朝鲜战局的稳定，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "新湖南：抗美援朝战争第三次战役，2020-09",
+              "url": "https://m.voc.com.cn/xhn/news/202009/13792607.html"
+            },
+            {
+              "title": "中国军网：抗美援朝中的战役之最，2020-10-10",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916079.htm"
+            },
+            {
+              "title": "Royal Irish团史资料馆：Battle of Chaegunghyon (Happy Valley)",
+              "url": "https://www.royal-irish.org/stories/battle-of-chaegunghyon-happy-valley"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951-01-08",
+          "precision": "保留原文时段；不补钟点",
+          "event": "推进到三七线附近后停止追击；累计推进不能平均分配给各单位。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：中国人民志愿军入朝作战和朝鲜战局的稳定，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "新湖南：抗美援朝战争第三次战役，2020-09",
+              "url": "https://m.voc.com.cn/xhn/news/202009/13792607.html"
+            },
+            {
+              "title": "中国军网：抗美援朝中的战役之最，2020-10-10",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916079.htm"
+            },
+            {
+              "title": "Royal Irish团史资料馆：Battle of Chaegunghyon (Happy Valley)",
+              "url": "https://www.royal-irish.org/stories/battle-of-chaegunghyon-happy-valley"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        }
+      ]
+    },
+    {
+      "battle": "抗美援朝-第四次战役-1951.01.25至1951.04.21",
+      "corpus": "corpus/抗美援朝-第四次战役-1951.01.25至1951.04.21.md",
+      "events": [
+        {
+          "date_label": "1951-01-25起",
+          "precision": "保留原文时段；不补钟点",
+          "event": "联军实施Thunderbolt等推进，中朝部队在汉江方向防御。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：《中国共产党历史》相关摘录，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "中国江苏网：抗美援朝战争第四次战役，2020-10-10",
+              "url": "https://news.jschina.com.cn/zt2020/kmych70/mjfhsy/202010/t20201010_2642355.shtml"
+            },
+            {
+              "title": "美国陆军军史中心：Korean War campaign summaries",
+              "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Korean-War/"
+            },
+            {
+              "title": "美国陆军：Korean War veterans remember Battle of Chipyong-ni，2012-06-26",
+              "url": "https://www.army.mil/article/82510/"
+            },
+            {
+              "title": "美国陆军大学出版社：The 2d Infantry Division at Wonju and Chipyong-ni，教员资料",
+              "url": "https://www.armyupress.army.mil/Portals/7/educational-services/staff-rides/3_The_2d_Infantry_Division_at_the_Battles_of_Wonju_and_Chipyong-ni_Instructor_Notes_Walkbook_Exportable.pdf"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951-02-11起",
+          "precision": "保留原文时段；不补钟点",
+          "event": "横城方向反击韩国部队及美军配属部队。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：《中国共产党历史》相关摘录，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "中国江苏网：抗美援朝战争第四次战役，2020-10-10",
+              "url": "https://news.jschina.com.cn/zt2020/kmych70/mjfhsy/202010/t20201010_2642355.shtml"
+            },
+            {
+              "title": "美国陆军军史中心：Korean War campaign summaries",
+              "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Korean-War/"
+            },
+            {
+              "title": "美国陆军：Korean War veterans remember Battle of Chipyong-ni，2012-06-26",
+              "url": "https://www.army.mil/article/82510/"
+            },
+            {
+              "title": "美国陆军大学出版社：The 2d Infantry Division at Wonju and Chipyong-ni，教员资料",
+              "url": "https://www.armyupress.army.mil/Portals/7/educational-services/staff-rides/3_The_2d_Infantry_Division_at_the_Battles_of_Wonju_and_Chipyong-ni_Instructor_Notes_Walkbook_Exportable.pdf"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951-02-13至02-15",
+          "precision": "保留原文时段；不补钟点",
+          "event": "砥平里美第23团战斗队及法国营等守住阵地，志愿军攻击未达预期。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：《中国共产党历史》相关摘录，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "中国江苏网：抗美援朝战争第四次战役，2020-10-10",
+              "url": "https://news.jschina.com.cn/zt2020/kmych70/mjfhsy/202010/t20201010_2642355.shtml"
+            },
+            {
+              "title": "美国陆军军史中心：Korean War campaign summaries",
+              "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Korean-War/"
+            },
+            {
+              "title": "美国陆军：Korean War veterans remember Battle of Chipyong-ni，2012-06-26",
+              "url": "https://www.army.mil/article/82510/"
+            },
+            {
+              "title": "美国陆军大学出版社：The 2d Infantry Division at Wonju and Chipyong-ni，教员资料",
+              "url": "https://www.armyupress.army.mil/Portals/7/educational-services/staff-rides/3_The_2d_Infantry_Division_at_the_Battles_of_Wonju_and_Chipyong-ni_Instructor_Notes_Walkbook_Exportable.pdf"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951年2月下旬至3月",
+          "precision": "保留原文时段；不补钟点",
+          "event": "联军实施Killer、Ripper等行动，中朝部队转入运动防御。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：《中国共产党历史》相关摘录，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "中国江苏网：抗美援朝战争第四次战役，2020-10-10",
+              "url": "https://news.jschina.com.cn/zt2020/kmych70/mjfhsy/202010/t20201010_2642355.shtml"
+            },
+            {
+              "title": "美国陆军军史中心：Korean War campaign summaries",
+              "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Korean-War/"
+            },
+            {
+              "title": "美国陆军：Korean War veterans remember Battle of Chipyong-ni，2012-06-26",
+              "url": "https://www.army.mil/article/82510/"
+            },
+            {
+              "title": "美国陆军大学出版社：The 2d Infantry Division at Wonju and Chipyong-ni，教员资料",
+              "url": "https://www.armyupress.army.mil/Portals/7/educational-services/staff-rides/3_The_2d_Infantry_Division_at_the_Battles_of_Wonju_and_Chipyong-ni_Instructor_Notes_Walkbook_Exportable.pdf"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951年3月中旬",
+          "precision": "保留原文时段；不补钟点",
+          "event": "联军重新控制汉城。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：《中国共产党历史》相关摘录，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "中国江苏网：抗美援朝战争第四次战役，2020-10-10",
+              "url": "https://news.jschina.com.cn/zt2020/kmych70/mjfhsy/202010/t20201010_2642355.shtml"
+            },
+            {
+              "title": "美国陆军军史中心：Korean War campaign summaries",
+              "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Korean-War/"
+            },
+            {
+              "title": "美国陆军：Korean War veterans remember Battle of Chipyong-ni，2012-06-26",
+              "url": "https://www.army.mil/article/82510/"
+            },
+            {
+              "title": "美国陆军大学出版社：The 2d Infantry Division at Wonju and Chipyong-ni，教员资料",
+              "url": "https://www.armyupress.army.mil/Portals/7/educational-services/staff-rides/3_The_2d_Infantry_Division_at_the_Battles_of_Wonju_and_Chipyong-ni_Instructor_Notes_Walkbook_Exportable.pdf"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951年4月",
+          "precision": "保留原文时段；不补钟点",
+          "event": "联军继续向三八线附近推进。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：《中国共产党历史》相关摘录，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "中国江苏网：抗美援朝战争第四次战役，2020-10-10",
+              "url": "https://news.jschina.com.cn/zt2020/kmych70/mjfhsy/202010/t20201010_2642355.shtml"
+            },
+            {
+              "title": "美国陆军军史中心：Korean War campaign summaries",
+              "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Korean-War/"
+            },
+            {
+              "title": "美国陆军：Korean War veterans remember Battle of Chipyong-ni，2012-06-26",
+              "url": "https://www.army.mil/article/82510/"
+            },
+            {
+              "title": "美国陆军大学出版社：The 2d Infantry Division at Wonju and Chipyong-ni，教员资料",
+              "url": "https://www.armyupress.army.mil/Portals/7/educational-services/staff-rides/3_The_2d_Infantry_Division_at_the_Battles_of_Wonju_and_Chipyong-ni_Instructor_Notes_Walkbook_Exportable.pdf"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        }
+      ]
+    },
+    {
+      "battle": "抗美援朝-第五次战役-1951.04.22至1951.06.10",
+      "corpus": "corpus/抗美援朝-第五次战役-1951.04.22至1951.06.10.md",
+      "events": [
+        {
+          "date_label": "1951-04-22",
+          "precision": "保留原文时段；不补钟点",
+          "event": "发起西线进攻，临津江方向激战。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：《中国共产党历史》相关摘录，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "中国军网：抗美援朝中的战役之最",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916079.htm"
+            },
+            {
+              "title": "英国国家陆军博物馆：Battle of the Imjin River",
+              "url": "https://www.nam.ac.uk/explore/battle-imjin"
+            },
+            {
+              "title": "杭州网抗美援朝纪念专题：美军开始反击",
+              "url": "https://z.hangzhou.com.cn/2020/kmyc70zn/content/content_7832551.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951年4月下旬",
+          "precision": "保留原文时段；不补钟点",
+          "event": "第一阶段收束。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：《中国共产党历史》相关摘录，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "中国军网：抗美援朝中的战役之最",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916079.htm"
+            },
+            {
+              "title": "英国国家陆军博物馆：Battle of the Imjin River",
+              "url": "https://www.nam.ac.uk/explore/battle-imjin"
+            },
+            {
+              "title": "杭州网抗美援朝纪念专题：美军开始反击",
+              "url": "https://z.hangzhou.com.cn/2020/kmyc70zn/content/content_7832551.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951-05-16起",
+          "precision": "保留原文时段；不补钟点",
+          "event": "东线第二阶段展开，县里方向韩国部队受重创，随后志愿军转移。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：《中国共产党历史》相关摘录，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "中国军网：抗美援朝中的战役之最",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916079.htm"
+            },
+            {
+              "title": "英国国家陆军博物馆：Battle of the Imjin River",
+              "url": "https://www.nam.ac.uk/explore/battle-imjin"
+            },
+            {
+              "title": "杭州网抗美援朝纪念专题：美军开始反击",
+              "url": "https://z.hangzhou.com.cn/2020/kmyc70zn/content/content_7832551.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951年5月下旬",
+          "precision": "保留原文时段；不补钟点",
+          "event": "联军反击；志愿军撤退部署与通信困难加重局部损失。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：《中国共产党历史》相关摘录，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "中国军网：抗美援朝中的战役之最",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916079.htm"
+            },
+            {
+              "title": "英国国家陆军博物馆：Battle of the Imjin River",
+              "url": "https://www.nam.ac.uk/explore/battle-imjin"
+            },
+            {
+              "title": "杭州网抗美援朝纪念专题：美军开始反击",
+              "url": "https://z.hangzhou.com.cn/2020/kmyc70zn/content/content_7832551.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951年5月下旬至6月上旬",
+          "precision": "保留原文时段；不补钟点",
+          "event": "第180师严重受损，铁原方向第63军等实施阻击；公开卡未载此处逐小时损失。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：《中国共产党历史》相关摘录，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "中国军网：抗美援朝中的战役之最",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916079.htm"
+            },
+            {
+              "title": "英国国家陆军博物馆：Battle of the Imjin River",
+              "url": "https://www.nam.ac.uk/explore/battle-imjin"
+            },
+            {
+              "title": "杭州网抗美援朝纪念专题：美军开始反击",
+              "url": "https://z.hangzhou.com.cn/2020/kmyc70zn/content/content_7832551.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951年6月上旬",
+          "precision": "保留原文时段；不补钟点",
+          "event": "战线重新稳定在三八线附近。",
+          "sources": [
+            {
+              "title": "中共中央党史和文献研究院：《中国共产党历史》相关摘录，第2页",
+              "url": "https://www.dswxyjy.org.cn/n/2015/1019/c244520-27715299-2.html"
+            },
+            {
+              "title": "中国军网：抗美援朝中的战役之最",
+              "url": "https://www.81.mil.cn/2020zt/2020-10/10/content_9916079.htm"
+            },
+            {
+              "title": "英国国家陆军博物馆：Battle of the Imjin River",
+              "url": "https://www.nam.ac.uk/explore/battle-imjin"
+            },
+            {
+              "title": "杭州网抗美援朝纪念专题：美军开始反击",
+              "url": "https://z.hangzhou.com.cn/2020/kmyc70zn/content/content_7832551.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        }
+      ]
+    },
+    {
+      "battle": "抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22",
+      "corpus": "corpus/抗美援朝-夏秋季防御战役-1951.08.18至1951.10.22.md",
+      "events": [
+        {
+          "date_label": "1951年8月起",
+          "precision": "保留原文时段；不补钟点",
+          "event": "联军主要进攻人民军东线；局部战斗各有日期，不混同为同一战场。",
+          "sources": [
+            {
+              "title": "新浪军事军史资料：1951年夏秋防御战役，2000-06-20",
+              "url": "https://news.sina.com.cn/world/2000-06-20/99214.html"
+            },
+            {
+              "title": "中国军网：第二阶段主要作战形式是阵地战，2020-10-15",
+              "url": "https://www.81.cn/zt/2020nzt/zgrmzyjkmyccgzz70zn/zsjs_196572/9919248.html"
+            },
+            {
+              "title": "美国陆军军史中心：Korean War campaign summaries",
+              "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Korean-War/"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951-09-29起",
+          "precision": "保留原文时段；不补钟点",
+          "event": "西线攻势加剧。",
+          "sources": [
+            {
+              "title": "新浪军事军史资料：1951年夏秋防御战役，2000-06-20",
+              "url": "https://news.sina.com.cn/world/2000-06-20/99214.html"
+            },
+            {
+              "title": "中国军网：第二阶段主要作战形式是阵地战，2020-10-15",
+              "url": "https://www.81.cn/zt/2020nzt/zgrmzyjkmyccgzz70zn/zsjs_196572/9919248.html"
+            },
+            {
+              "title": "美国陆军军史中心：Korean War campaign summaries",
+              "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Korean-War/"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1951年10月上旬",
+          "precision": "保留原文时段；不补钟点",
+          "event": "向金城、文登里方向发展，中朝部队依托工事、反击及反坦克作战抗击。",
+          "sources": [
+            {
+              "title": "新浪军事军史资料：1951年夏秋防御战役，2000-06-20",
+              "url": "https://news.sina.com.cn/world/2000-06-20/99214.html"
+            },
+            {
+              "title": "中国军网：第二阶段主要作战形式是阵地战，2020-10-15",
+              "url": "https://www.81.cn/zt/2020nzt/zgrmzyjkmyccgzz70zn/zsjs_196572/9919248.html"
+            },
+            {
+              "title": "美国陆军军史中心：Korean War campaign summaries",
+              "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Korean-War/"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        }
+      ]
+    },
+    {
+      "battle": "抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31",
+      "corpus": "corpus/抗美援朝-秋季战术反击作战-1952.09.18至1952.10.31.md",
+      "events": [
+        {
+          "date_label": "1952-09-18起",
+          "precision": "保留原文时段；不补钟点",
+          "event": "各部依准备情况陆续攻击，实施有限目标突击。",
+          "sources": [
+            {
+              "title": "新浪舰船知识网络版：1952年秋季战术反击作战，2003-07-26",
+              "url": "https://mil.news.sina.com.cn/2003-07-26/139657.html"
+            },
+            {
+              "title": "中国军网：强袭高阳垈西山拉开志愿军1952年秋季战术反击作战序幕，2023",
+              "url": "https://www.81.mil.cn/zt/2023nzt/mjwdsltjwdsyjnkmycsl70zn/jsgc/16237038.html"
+            },
+            {
+              "title": "中国军网：第二阶段主要作战形式是阵地战",
+              "url": "https://www.81.cn/zt/2020nzt/zgrmzyjkmyccgzz70zn/zsjs_196572/9919248.html"
+            },
+            {
+              "title": "中国军网：消耗敌人的“肉磨子”",
+              "url": "https://www.81.mil.cn/2020zt/2020-09/27/content_9919840.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1952-10-06起",
+          "precision": "保留原文时段；不补钟点",
+          "event": "扩大攻击点。",
+          "sources": [
+            {
+              "title": "新浪舰船知识网络版：1952年秋季战术反击作战，2003-07-26",
+              "url": "https://mil.news.sina.com.cn/2003-07-26/139657.html"
+            },
+            {
+              "title": "中国军网：强袭高阳垈西山拉开志愿军1952年秋季战术反击作战序幕，2023",
+              "url": "https://www.81.mil.cn/zt/2023nzt/mjwdsltjwdsyjnkmycsl70zn/jsgc/16237038.html"
+            },
+            {
+              "title": "中国军网：第二阶段主要作战形式是阵地战",
+              "url": "https://www.81.cn/zt/2020nzt/zgrmzyjkmyccgzz70zn/zsjs_196572/9919248.html"
+            },
+            {
+              "title": "中国军网：消耗敌人的“肉磨子”",
+              "url": "https://www.81.mil.cn/2020zt/2020-09/27/content_9919840.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1952-10-08",
+          "precision": "保留原文时段；不补钟点",
+          "event": "停战谈判无限期休会；不能倒置成9月18日攻击的先行事件。",
+          "sources": [
+            {
+              "title": "新浪舰船知识网络版：1952年秋季战术反击作战，2003-07-26",
+              "url": "https://mil.news.sina.com.cn/2003-07-26/139657.html"
+            },
+            {
+              "title": "中国军网：强袭高阳垈西山拉开志愿军1952年秋季战术反击作战序幕，2023",
+              "url": "https://www.81.mil.cn/zt/2023nzt/mjwdsltjwdsyjnkmycsl70zn/jsgc/16237038.html"
+            },
+            {
+              "title": "中国军网：第二阶段主要作战形式是阵地战",
+              "url": "https://www.81.cn/zt/2020nzt/zgrmzyjkmyccgzz70zn/zsjs_196572/9919248.html"
+            },
+            {
+              "title": "中国军网：消耗敌人的“肉磨子”",
+              "url": "https://www.81.mil.cn/2020zt/2020-09/27/content_9919840.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1952-10-14起",
+          "precision": "保留原文时段；不补钟点",
+          "event": "上甘岭遭联军进攻，全线反击继续，与上甘岭方向形成配合。",
+          "sources": [
+            {
+              "title": "新浪舰船知识网络版：1952年秋季战术反击作战，2003-07-26",
+              "url": "https://mil.news.sina.com.cn/2003-07-26/139657.html"
+            },
+            {
+              "title": "中国军网：强袭高阳垈西山拉开志愿军1952年秋季战术反击作战序幕，2023",
+              "url": "https://www.81.mil.cn/zt/2023nzt/mjwdsltjwdsyjnkmycsl70zn/jsgc/16237038.html"
+            },
+            {
+              "title": "中国军网：第二阶段主要作战形式是阵地战",
+              "url": "https://www.81.cn/zt/2020nzt/zgrmzyjkmyccgzz70zn/zsjs_196572/9919248.html"
+            },
+            {
+              "title": "中国军网：消耗敌人的“肉磨子”",
+              "url": "https://www.81.mil.cn/2020zt/2020-09/27/content_9919840.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        }
+      ]
+    },
+    {
+      "battle": "抗美援朝-上甘岭战役-1952.10.14至1952.11.25",
+      "corpus": "corpus/抗美援朝-上甘岭战役-1952.10.14至1952.11.25.md",
+      "events": [
+        {
+          "date_label": "1952-10-14",
+          "precision": "保留原文时段；不补钟点",
+          "event": "联军发动攻击，战斗由战术规模扩大。",
+          "sources": [
+            {
+              "title": "国防部转载中国军网，徐平：上甘岭战役为什么这么出名，2019-06-17",
+              "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4843738.html"
+            },
+            {
+              "title": "退役军人事务部：战役故事·上甘岭，2020-09-29",
+              "url": "https://www.mva.gov.cn/sy/zt/kmyc70zn/zygs/202009/t20200929_42460.html"
+            },
+            {
+              "title": "人民网党史频道：向守志，从太行山到上甘岭的岁月，2014-09-09",
+              "url": "https://dangshi.people.com.cn/n/2014/0909/c85037-25625008.html"
+            },
+            {
+              "title": "中国军网：消耗敌人的“肉磨子”",
+              "url": "https://www.81.mil.cn/2020zt/2020-09/27/content_9919840.htm"
+            },
+            {
+              "title": "Walter G. Hermes，美国陆军官方军史 Truce Tent and Fighting Front，第16章，原书352—357页；哥廷根馆藏镜像",
+              "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/korea/truce/ch16.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "战役早期（无逐时记录）",
+          "precision": "保留原文时段；不补钟点",
+          "event": "双方反复争夺表面阵地，志愿军依托坑道坚持；表面与坑道控制不能合并。",
+          "sources": [
+            {
+              "title": "国防部转载中国军网，徐平：上甘岭战役为什么这么出名，2019-06-17",
+              "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4843738.html"
+            },
+            {
+              "title": "退役军人事务部：战役故事·上甘岭，2020-09-29",
+              "url": "https://www.mva.gov.cn/sy/zt/kmyc70zn/zygs/202009/t20200929_42460.html"
+            },
+            {
+              "title": "人民网党史频道：向守志，从太行山到上甘岭的岁月，2014-09-09",
+              "url": "https://dangshi.people.com.cn/n/2014/0909/c85037-25625008.html"
+            },
+            {
+              "title": "中国军网：消耗敌人的“肉磨子”",
+              "url": "https://www.81.mil.cn/2020zt/2020-09/27/content_9919840.htm"
+            },
+            {
+              "title": "Walter G. Hermes，美国陆军官方军史 Truce Tent and Fighting Front，第16章，原书352—357页；哥廷根馆藏镜像",
+              "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/korea/truce/ch16.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1952年10月下旬",
+          "precision": "保留原文时段；不补钟点",
+          "event": "组织补给、增援及反击，后续第12军接续投入。",
+          "sources": [
+            {
+              "title": "国防部转载中国军网，徐平：上甘岭战役为什么这么出名，2019-06-17",
+              "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4843738.html"
+            },
+            {
+              "title": "退役军人事务部：战役故事·上甘岭，2020-09-29",
+              "url": "https://www.mva.gov.cn/sy/zt/kmyc70zn/zygs/202009/t20200929_42460.html"
+            },
+            {
+              "title": "人民网党史频道：向守志，从太行山到上甘岭的岁月，2014-09-09",
+              "url": "https://dangshi.people.com.cn/n/2014/0909/c85037-25625008.html"
+            },
+            {
+              "title": "中国军网：消耗敌人的“肉磨子”",
+              "url": "https://www.81.mil.cn/2020zt/2020-09/27/content_9919840.htm"
+            },
+            {
+              "title": "Walter G. Hermes，美国陆军官方军史 Truce Tent and Fighting Front，第16章，原书352—357页；哥廷根馆藏镜像",
+              "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/korea/truce/ch16.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1952年11月下旬",
+          "precision": "保留原文时段；不补钟点",
+          "event": "阵地争夺继续到11月下旬；未据此生成未载明的逐单位伤亡。",
+          "sources": [
+            {
+              "title": "国防部转载中国军网，徐平：上甘岭战役为什么这么出名，2019-06-17",
+              "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4843738.html"
+            },
+            {
+              "title": "退役军人事务部：战役故事·上甘岭，2020-09-29",
+              "url": "https://www.mva.gov.cn/sy/zt/kmyc70zn/zygs/202009/t20200929_42460.html"
+            },
+            {
+              "title": "人民网党史频道：向守志，从太行山到上甘岭的岁月，2014-09-09",
+              "url": "https://dangshi.people.com.cn/n/2014/0909/c85037-25625008.html"
+            },
+            {
+              "title": "中国军网：消耗敌人的“肉磨子”",
+              "url": "https://www.81.mil.cn/2020zt/2020-09/27/content_9919840.htm"
+            },
+            {
+              "title": "Walter G. Hermes，美国陆军官方军史 Truce Tent and Fighting Front，第16章，原书352—357页；哥廷根馆藏镜像",
+              "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/korea/truce/ch16.htm"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        }
+      ]
+    },
+    {
+      "battle": "抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27",
+      "corpus": "corpus/抗美援朝-夏季反击战役含金城战役-1953.05.13至1953.07.27.md",
+      "events": [
+        {
+          "date_label": "1953年5月起",
+          "precision": "保留原文时段；不补钟点",
+          "event": "前两阶段反击改善阵地并施加军事压力。",
+          "sources": [
+            {
+              "title": "中国军网：金城战役——抗美援朝战争收局之战，2023",
+              "url": "https://www.81.mil.cn/yw_208727/16235801.html"
+            },
+            {
+              "title": "银川党史网：杨得志相关党史人物资料，2018-05-07",
+              "url": "https://dsyjs.yinchuan.gov.cn/rwyj/201805/t20180507_749577.htm"
+            },
+            {
+              "title": "Walter G. Hermes，美国陆军官方军史 Truce Tent and Fighting Front，第21章，原书金城攻势部分；哥廷根镜像",
+              "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/korea/truce/ch21.htm"
+            },
+            {
+              "title": "美国国家档案馆：1953年朝鲜停战协定原文",
+              "url": "https://www.archives.gov/milestone-documents/armistice-agreement-restoration-south-korean-state"
+            },
+            {
+              "title": "美国海军历史与遗产司令部：Korean War Chronology, May–July 1953",
+              "url": "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/k/korean-war-chronology/may-july-1953.html"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1953年6月中旬",
+          "precision": "保留原文时段；不补钟点",
+          "event": "韩国方面处置被俘人员，停战进程再生波折。",
+          "sources": [
+            {
+              "title": "中国军网：金城战役——抗美援朝战争收局之战，2023",
+              "url": "https://www.81.mil.cn/yw_208727/16235801.html"
+            },
+            {
+              "title": "银川党史网：杨得志相关党史人物资料，2018-05-07",
+              "url": "https://dsyjs.yinchuan.gov.cn/rwyj/201805/t20180507_749577.htm"
+            },
+            {
+              "title": "Walter G. Hermes，美国陆军官方军史 Truce Tent and Fighting Front，第21章，原书金城攻势部分；哥廷根镜像",
+              "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/korea/truce/ch21.htm"
+            },
+            {
+              "title": "美国国家档案馆：1953年朝鲜停战协定原文",
+              "url": "https://www.archives.gov/milestone-documents/armistice-agreement-restoration-south-korean-state"
+            },
+            {
+              "title": "美国海军历史与遗产司令部：Korean War Chronology, May–July 1953",
+              "url": "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/k/korean-war-chronology/may-july-1953.html"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1953-07-13 21时",
+          "precision": "保留原文时段；不补钟点",
+          "event": "金城方向发起进攻，炮火准备后突破。",
+          "sources": [
+            {
+              "title": "中国军网：金城战役——抗美援朝战争收局之战，2023",
+              "url": "https://www.81.mil.cn/yw_208727/16235801.html"
+            },
+            {
+              "title": "银川党史网：杨得志相关党史人物资料，2018-05-07",
+              "url": "https://dsyjs.yinchuan.gov.cn/rwyj/201805/t20180507_749577.htm"
+            },
+            {
+              "title": "Walter G. Hermes，美国陆军官方军史 Truce Tent and Fighting Front，第21章，原书金城攻势部分；哥廷根镜像",
+              "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/korea/truce/ch21.htm"
+            },
+            {
+              "title": "美国国家档案馆：1953年朝鲜停战协定原文",
+              "url": "https://www.archives.gov/milestone-documents/armistice-agreement-restoration-south-korean-state"
+            },
+            {
+              "title": "美国海军历史与遗产司令部：Korean War Chronology, May–July 1953",
+              "url": "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/k/korean-war-chronology/may-july-1953.html"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1953-07-14至07-16",
+          "precision": "保留原文时段；不补钟点",
+          "event": "向纵深发展，随后巩固并抗击反扑。",
+          "sources": [
+            {
+              "title": "中国军网：金城战役——抗美援朝战争收局之战，2023",
+              "url": "https://www.81.mil.cn/yw_208727/16235801.html"
+            },
+            {
+              "title": "银川党史网：杨得志相关党史人物资料，2018-05-07",
+              "url": "https://dsyjs.yinchuan.gov.cn/rwyj/201805/t20180507_749577.htm"
+            },
+            {
+              "title": "Walter G. Hermes，美国陆军官方军史 Truce Tent and Fighting Front，第21章，原书金城攻势部分；哥廷根镜像",
+              "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/korea/truce/ch21.htm"
+            },
+            {
+              "title": "美国国家档案馆：1953年朝鲜停战协定原文",
+              "url": "https://www.archives.gov/milestone-documents/armistice-agreement-restoration-south-korean-state"
+            },
+            {
+              "title": "美国海军历史与遗产司令部：Korean War Chronology, May–July 1953",
+              "url": "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/k/korean-war-chronology/may-july-1953.html"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1953-07-27 10时",
+          "precision": "保留原文时段；不补钟点",
+          "event": "在板门店签署停战协定。",
+          "sources": [
+            {
+              "title": "中国军网：金城战役——抗美援朝战争收局之战，2023",
+              "url": "https://www.81.mil.cn/yw_208727/16235801.html"
+            },
+            {
+              "title": "银川党史网：杨得志相关党史人物资料，2018-05-07",
+              "url": "https://dsyjs.yinchuan.gov.cn/rwyj/201805/t20180507_749577.htm"
+            },
+            {
+              "title": "Walter G. Hermes，美国陆军官方军史 Truce Tent and Fighting Front，第21章，原书金城攻势部分；哥廷根镜像",
+              "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/korea/truce/ch21.htm"
+            },
+            {
+              "title": "美国国家档案馆：1953年朝鲜停战协定原文",
+              "url": "https://www.archives.gov/milestone-documents/armistice-agreement-restoration-south-korean-state"
+            },
+            {
+              "title": "美国海军历史与遗产司令部：Korean War Chronology, May–July 1953",
+              "url": "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/k/korean-war-chronology/may-july-1953.html"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        },
+        {
+          "date_label": "1953-07-27 22时",
+          "precision": "保留原文时段；不补钟点",
+          "event": "停战协定生效，停止敌对行动；不能提前到当天零时。",
+          "sources": [
+            {
+              "title": "中国军网：金城战役——抗美援朝战争收局之战，2023",
+              "url": "https://www.81.mil.cn/yw_208727/16235801.html"
+            },
+            {
+              "title": "银川党史网：杨得志相关党史人物资料，2018-05-07",
+              "url": "https://dsyjs.yinchuan.gov.cn/rwyj/201805/t20180507_749577.htm"
+            },
+            {
+              "title": "Walter G. Hermes，美国陆军官方军史 Truce Tent and Fighting Front，第21章，原书金城攻势部分；哥廷根镜像",
+              "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/korea/truce/ch21.htm"
+            },
+            {
+              "title": "美国国家档案馆：1953年朝鲜停战协定原文",
+              "url": "https://www.archives.gov/milestone-documents/armistice-agreement-restoration-south-korean-state"
+            },
+            {
+              "title": "美国海军历史与遗产司令部：Korean War Chronology, May–July 1953",
+              "url": "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/k/korean-war-chronology/may-july-1953.html"
+            }
+          ],
+          "evidence_status": "curated_published_account"
+        }
+      ]
+    },
+    {
+      "battle": "长平之战",
+      "corpus": "corpus/长平之战.md",
+      "events": [
+        {
+          "date_label": "公元前260年决战阶段 · 相对顺序1",
+          "precision": "仅可考相对顺序，未知日时",
+          "event": "秦数挑战，廉颇筑垒壁坚守不出，赵王数次责备廉颇怯战。",
+          "sources": [
+            {
+              "title": "《史记·白起王翦列传》《史记·廉颇蔺相如列传》；见本项目史料卡",
+              "url": ""
+            }
+          ],
+          "evidence_status": "received_text_with_disputes"
+        },
+        {
+          "date_label": "公元前260年决战阶段 · 相对顺序2",
+          "precision": "仅可考相对顺序，未知日时",
+          "event": "秦用应侯范雎反间计，散布「秦独畏马服君之子赵括」，赵王遂以赵括代廉颇。",
+          "sources": [
+            {
+              "title": "《史记·白起王翦列传》《史记·廉颇蔺相如列传》；见本项目史料卡",
+              "url": ""
+            }
+          ],
+          "evidence_status": "received_text_with_disputes"
+        },
+        {
+          "date_label": "公元前260年决战阶段 · 相对顺序3",
+          "precision": "仅可考相对顺序，未知日时",
+          "event": "蔺相如谏：「括徒能读其父书传，不知合变也。」赵王不听；赵括母亦上书言括不可使，赵王不听。",
+          "sources": [
+            {
+              "title": "《史记·白起王翦列传》《史记·廉颇蔺相如列传》；见本项目史料卡",
+              "url": ""
+            }
+          ],
+          "evidence_status": "received_text_with_disputes"
+        },
+        {
+          "date_label": "公元前260年决战阶段 · 相对顺序4",
+          "precision": "仅可考相对顺序，未知日时",
+          "event": "秦闻赵括为将，阴使武安君白起为上将军，王龁为尉裨将，令军中有敢泄武安君将者斩。",
+          "sources": [
+            {
+              "title": "《史记·白起王翦列传》《史记·廉颇蔺相如列传》；见本项目史料卡",
+              "url": ""
+            }
+          ],
+          "evidence_status": "received_text_with_disputes"
+        },
+        {
+          "date_label": "公元前260年决战阶段 · 相对顺序5",
+          "precision": "仅可考相对顺序，未知日时",
+          "event": "赵括至军，悉更约束、易置军吏，出兵击秦。秦军佯败而走。",
+          "sources": [
+            {
+              "title": "《史记·白起王翦列传》《史记·廉颇蔺相如列传》；见本项目史料卡",
+              "url": ""
+            }
+          ],
+          "evidence_status": "received_text_with_disputes"
+        },
+        {
+          "date_label": "公元前260年决战阶段 · 相对顺序6",
+          "precision": "仅可考相对顺序，未知日时",
+          "event": "赵军乘胜追击，造秦壁垒，壁坚不得入。",
+          "sources": [
+            {
+              "title": "《史记·白起王翦列传》《史记·廉颇蔺相如列传》；见本项目史料卡",
+              "url": ""
+            }
+          ],
+          "evidence_status": "received_text_with_disputes"
+        },
+        {
+          "date_label": "公元前260年决战阶段 · 相对顺序7",
+          "precision": "仅可考相对顺序，未知日时",
+          "event": "秦奇兵二万五千人绝赵军后路；另五千骑兵插入赵军营垒之间，赵军被分割为二，粮道断绝。",
+          "sources": [
+            {
+              "title": "《史记·白起王翦列传》《史记·廉颇蔺相如列传》；见本项目史料卡",
+              "url": ""
+            }
+          ],
+          "evidence_status": "received_text_with_disputes"
+        },
+        {
+          "date_label": "公元前260年决战阶段 · 相对顺序8",
+          "precision": "仅可考相对顺序，未知日时",
+          "event": "秦王亲至河内，发民年十五以上悉诣长平，遮绝赵之救兵与粮道。",
+          "sources": [
+            {
+              "title": "《史记·白起王翦列传》《史记·廉颇蔺相如列传》；见本项目史料卡",
+              "url": ""
+            }
+          ],
+          "evidence_status": "received_text_with_disputes"
+        },
+        {
+          "date_label": "公元前260年决战阶段 · 相对顺序9",
+          "precision": "仅可考相对顺序，未知日时",
+          "event": "赵军断粮四十六日，「皆内阴相杀食」。",
+          "sources": [
+            {
+              "title": "《史记·白起王翦列传》《史记·廉颇蔺相如列传》；见本项目史料卡",
+              "url": ""
+            }
+          ],
+          "evidence_status": "received_text_with_disputes"
+        },
+        {
+          "date_label": "公元前260年决战阶段 · 相对顺序10",
+          "precision": "仅可考相对顺序，未知日时",
+          "event": "赵括率锐卒自搏战，秦军射杀赵括，赵军大败。",
+          "sources": [
+            {
+              "title": "《史记·白起王翦列传》《史记·廉颇蔺相如列传》；见本项目史料卡",
+              "url": ""
+            }
+          ],
+          "evidence_status": "received_text_with_disputes"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ01-shanghai",
+  "version": "1.0.0",
+  "battle": "抗日战争-淞沪会战-1937.08.13至1937.11.12",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "仅截取上海市区首日地面双方；后续登陆师团保留后续参考，不代表吴淞、罗店或金山卫全线。",
+      "仅提供有来源的具名参战框架。人数、分类装备、库存和逐单位阵地缺载，保持null；参数化配置须独立说明估计。",
+      "阶段时钟、区域半径和胜负阈值是计算假设；不代表已完成全会战复现、航空舰炮/后续增援或历史战损标定。"
+    ]
+  },
+  "sources": {
+    "SH_ARCHIVE": {
+      "title": "淞沪会战（档案专题）",
+      "url": "https://www.saac.gov.cn/zt/2014-08/25/content_63842.htm",
+      "publisher": "国家档案局",
+      "evidence_kind": "archive_publication",
+      "original_archive_examined": false,
+      "limitations": "阅读机构专题介绍与档案目录，未逐页核验影像；8月27日电不能作为8月13日逐小时命令。"
+    }
+  },
+  "phases": [
+    {
+      "id": "reference",
+      "label": "全战役参战参考（非同日部署）",
+      "date": {
+        "label": "1937.08.13至1937.11.12",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "SH_ARCHIVE",
+            "locator": "专题开端：第9集团军87、88师与驻沪海军陆战队交战"
+          }
+        ]
+      },
+      "scope": "保留累计参战身份；不宣称所有单位在战役开端同时到场。",
+      "evidence": [
+        {
+          "source_id": "SH_ARCHIVE",
+          "locator": "专题开端：第9集团军87、88师与驻沪海军陆战队交战"
+        }
+      ]
+    },
+    {
+      "id": "city_aug13",
+      "label": "8月13日上海市区地面接触",
+      "date": {
+        "label": "1937-08-13",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "SH_ARCHIVE",
+            "locator": "专题开端：第9集团军87、88师与驻沪海军陆战队交战"
+          }
+        ]
+      },
+      "scope": "仅截取上海市区首日地面双方；后续登陆师团保留后续参考，不代表吴淞、罗店或金山卫全线。",
+      "evidence": [
+        {
+          "source_id": "SH_ARCHIVE",
+          "locator": "专题开端：第9集团军87、88师与驻沪海军陆战队交战"
+        }
+      ],
+      "execution_window": {
+        "start": "1937-08-13T16:00",
+        "end": "1937-08-13T22:00",
+        "kind": "model_scope_limit",
+        "note": "本日局部计算假设窗口，钟点不作史实命令；超窗须另核后续部队与兵种，不能自动继承为全会战。",
+        "evidence": [
+          {
+            "source_id": "SH_ARCHIVE",
+            "locator": "专题开端：第9集团军87、88师与驻沪海军陆战队交战"
+          }
+        ]
+      },
+      "geographic_scope": {
+        "center": {
+          "lat": 31.22222,
+          "lng": 121.45806
+        },
+        "radius_km": 22,
+        "kind": "model_scope_limit",
+        "note": "地名附近的计算区域假设，以现代参考点或文字地域为中心；不是已测绘的历史阵地、战线或射界。",
+        "evidence": [
+          {
+            "source_id": "SH_ARCHIVE",
+            "locator": "专题开端：第9集团军87、88师与驻沪海军陆战队交战"
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.armygroup9",
+      "name": "第9集团军司令部",
+      "team": "red",
+      "role": "command",
+      "echelon": "集团军",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "SH_ARCHIVE",
+          "locator": "张治中指挥第9集团军"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "张治中指挥第9集团军"
+            }
+          ]
+        },
+        {
+          "phase_id": "city_aug13",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "张治中指挥第9集团军"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division87",
+      "name": "第87师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.armygroup9",
+      "evidence": [
+        {
+          "source_id": "SH_ARCHIVE",
+          "locator": "8月13日投入市区作战的87、88师"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "8月13日投入市区作战的87、88师"
+            }
+          ]
+        },
+        {
+          "phase_id": "city_aug13",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "8月13日投入市区作战的87、88师"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division88",
+      "name": "第88师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": "ww2.cn.armygroup9",
+      "evidence": [
+        {
+          "source_id": "SH_ARCHIVE",
+          "locator": "8月13日投入市区作战的87、88师"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "8月13日投入市区作战的87、88师"
+            }
+          ]
+        },
+        {
+          "phase_id": "city_aug13",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "8月13日投入市区作战的87、88师"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.shanghai_marines",
+      "name": "日本驻沪海军陆战队",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "驻沪陆战部队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "SH_ARCHIVE",
+          "locator": "驻沪海军陆战队虹口基地；为地面陆战人员而非海上舰艇"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "驻沪海军陆战队虹口基地；为地面陆战人员而非海上舰艇"
+            }
+          ]
+        },
+        {
+          "phase_id": "city_aug13",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "驻沪海军陆战队虹口基地；为地面陆战人员而非海上舰艇"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division36",
+      "name": "第36师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "SH_ARCHIVE",
+          "locator": "专题后续增援序列；不据此断言13日已投入市区"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "专题后续增援序列；不据此断言13日已投入市区"
+            }
+          ]
+        },
+        {
+          "phase_id": "city_aug13",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "专题后续增援序列；不据此断言13日已投入市区"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division3",
+      "name": "日军第3师团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "SH_ARCHIVE",
+          "locator": "后续上海派遣军两个师团登陆，不是13日驻沪兵力"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "后续上海派遣军两个师团登陆，不是13日驻沪兵力"
+            }
+          ]
+        },
+        {
+          "phase_id": "city_aug13",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "后续上海派遣军两个师团登陆，不是13日驻沪兵力"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division11",
+      "name": "日军第11师团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "SH_ARCHIVE",
+          "locator": "后续上海派遣军两个师团登陆，不是13日驻沪兵力"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "reference",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "后续上海派遣军两个师团登陆，不是13日驻沪兵力"
+            }
+          ]
+        },
+        {
+          "phase_id": "city_aug13",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "SH_ARCHIVE",
+              "locator": "后续上海派遣军两个师团登陆，不是13日驻沪兵力"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺本阶段本单位实到人数；不能摊分全军总数或累计减员。"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺分类可用量及库存；不能由师、军或海军陆战队名称自动配发装备。"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "缺可配准历史阵地；计算层须另写明确部署估计，现代地名不是部队点位。"
+        }
+      }
+    }
+  ]
+}

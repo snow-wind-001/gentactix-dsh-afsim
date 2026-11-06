@@ -1,0 +1,817 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ04-xuzhou",
+  "version": "1.2.0",
+  "battle": "抗日战争-徐州会战总览-1938.01至1938.05",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "目前仅覆盖台儿庄阶段具名部队；南线等序列仍缺，非全徐州会战初态。",
+      "3月作战电报证明该阶段参战，不能推定所有部队1月已到场。",
+      "实际人数、分类装备、逐时部署及第20军团／第二集团军下属完整序列待核。",
+      "第31师在台儿庄抗敌已见目录；本条所读导言未展开其隶属，父级暂留空待核。",
+      "1.1.0按到场过程区分23—28日前期和31日至4月6日后期；29—30日转进暂不提供完整可计算片段。旧1.0.0仅供原快照恢复，不作为新局默认。",
+      "1.2.0补正台儿庄前期阶段的24—28日依据及计算边界；不用3月31日电报目录单独证明此前到场。旧1.1.0定义保持原样。"
+    ]
+  },
+  "sources": {
+    "XZ_ARCHIVE": {
+      "title": "第十二集 台儿庄大捷：导言与作战电报目录",
+      "url": "https://www.saac.gov.cn/zt/2014-09/03/content_65289.htm",
+      "publisher": "国家档案局／中国第二历史档案馆",
+      "evidence_kind": "archive_publication",
+      "original_archive_examined": false,
+      "limitations": "已读导言和电报目录，未辨读全部扫描原件；本档案覆盖徐州会战台儿庄片段，不能视为全徐州序列。"
+    },
+    "XZ_ARRIVAL": {
+      "title": "中国抗战正面战场主要战役（三）",
+      "url": "https://finance.sina.cn/sa/2005-08-18/detail-ikknscsi2596020.d.html",
+      "publisher": "新浪转载战史整理",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开二手叙述：3月29日夜南下、31日到向城爱曲；不能证明同日在台儿庄城内。"
+    },
+    "XZ_MUSEUM": {
+      "title": "台儿庄战役",
+      "url": "https://sdkrzzjng.com/wzdz/jdzy/201506/t20150613_12546767.htm",
+      "publisher": "山东抗日战争纪念馆／中共山东省委党史研究室",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "载4月1日坂本主力进入兰陵，地点和阶段与31日到向城爱曲分别保留；非同一点同一时刻。"
+    },
+    "TEZ_DAY": {
+      "title": "台儿庄战役",
+      "url": "https://www.bjwmb.gov.cn/kz2025/jdzy/10104689.html",
+      "publisher": "首都文明网转载新华网，2025-08-05",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开叙述提供24、27、28日第31师与濑谷支队交战；未核原始战报，报道中伤亡统计另有冲突，不反推实到量。"
+    },
+    "GEO": {
+      "title": "台儿庄现代地名参考",
+      "url": "https://www.geonames.org/1793694/",
+      "publisher": "GeoNames，项目既有地名参考",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "城市参考点，未配准1938年城墙、运河浮桥与街巷，边界半径为估计。"
+    }
+  },
+  "phases": [
+    {
+      "id": "campaign_opening",
+      "label": "徐州会战初期",
+      "date": {
+        "label": "1938年初",
+        "precision": "period",
+        "evidence": [
+          {
+            "source_id": "XZ_ARCHIVE",
+            "locator": "导言：1937年12月南京、济南失守后南北夹击徐州"
+          }
+        ]
+      },
+      "scope": "本阶段参战与到场另行标注；不会把全战役累计名单视为同日到场",
+      "evidence": [
+        {
+          "source_id": "XZ_ARCHIVE",
+          "locator": "导言：1937年12月南京、济南失守后南北夹击徐州"
+        }
+      ]
+    },
+    {
+      "id": "taierzhuang_opening",
+      "label": "台儿庄城内前期：坂本南援前",
+      "date": {
+        "label": "1938年3月24日至3月28日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "TEZ_DAY",
+            "locator": "3月24日至28日的31师与濑谷支队交战叙述"
+          }
+        ]
+      },
+      "scope": "只绑定31师与濑谷支队在城内及近郊的投入部；外围部队保留来源参考，不能当作全会战部署。",
+      "evidence": [
+        {
+          "source_id": "TEZ_DAY",
+          "locator": "3月24日至28日的31师与濑谷支队交战叙述"
+        }
+      ],
+      "geographic_scope": {
+        "center": {
+          "lat": 34.55528,
+          "lng": 117.73917
+        },
+        "radius_km": 12,
+        "kind": "model_scope_limit",
+        "note": "现代地名参考及局部计算边界假设，不是历史阵地、街道、河道或逐单位测量坐标。",
+        "evidence": [
+          {
+            "source_id": "GEO",
+            "locator": "项目既有GeoNames地名参考；区域大小为模型约束"
+          }
+        ]
+      },
+      "execution_window": {
+        "start": "1938-03-24T00:00",
+        "end": "1938-03-29T00:00",
+        "kind": "model_scope_limit",
+        "note": "按日级史料设置计算窗口的离散化假设；00时只界定计算日期，不表示此时发布命令或发起攻击，也不强制窗口内出现历史战果。",
+        "evidence": [
+          {
+            "source_id": "TEZ_DAY",
+            "locator": "3月24日至28日的31师与濑谷支队交战叙述"
+          }
+        ]
+      }
+    },
+    {
+      "id": "taierzhuang",
+      "label": "台儿庄后期：含向城—兰陵侧翼",
+      "date": {
+        "label": "1938年3月31日至4月6日",
+        "precision": "range",
+        "evidence": [
+          {
+            "source_id": "XZ_ARRIVAL",
+            "locator": "增援过程：29日夜离临沂；31日进入向城、爱曲，牵动第52军侧背"
+          },
+          {
+            "source_id": "XZ_MUSEUM",
+            "locator": "31日关军合围后，4月1日坂本主力进入兰陵，主力再向台儿庄右翼推进"
+          }
+        ]
+      },
+      "scope": "3月31日至4月6日；坂本到向城爱曲及兰陵的侧翼过程，不表示全支队同日在庄内。不得把其部署到31师旁而冒充史实。",
+      "evidence": [
+        {
+          "source_id": "XZ_ARRIVAL",
+          "locator": "增援过程：29日夜离临沂；31日进入向城、爱曲，牵动第52军侧背"
+        },
+        {
+          "source_id": "XZ_MUSEUM",
+          "locator": "31日关军合围后，4月1日坂本主力进入兰陵，主力再向台儿庄右翼推进"
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.warzone5",
+      "name": "第五战区司令部",
+      "team": "red",
+      "role": "command",
+      "echelon": "战区",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XZ_ARCHIVE",
+          "locator": "导言：李宗仁统筹"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言：李宗仁统筹"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言：李宗仁统筹"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言：李宗仁统筹"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.group2",
+      "name": "第二集团军",
+      "team": "red",
+      "role": "command",
+      "echelon": "集团军",
+      "parent_id": "ww2.cn.warzone5",
+      "evidence": [
+        {
+          "source_id": "XZ_ARCHIVE",
+          "locator": "导言及1938年战斗详报目录"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言及1938年战斗详报目录"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言及1938年战斗详报目录"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言及1938年战斗详报目录"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.division31",
+      "name": "第31师",
+      "team": "red",
+      "role": "formation",
+      "echelon": "师",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XZ_ARCHIVE",
+          "locator": "3月31日第31师在台儿庄抗敌电报目录"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "3月31日第31师在台儿庄抗敌电报目录"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang_opening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "TEZ_DAY",
+              "locator": "3月24至28日31师与濑谷支队在台儿庄交战"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "3月31日第31师在台儿庄抗敌电报目录"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.corps20",
+      "name": "第二十军团",
+      "team": "red",
+      "role": "command",
+      "echelon": "军团",
+      "parent_id": "ww2.cn.warzone5",
+      "evidence": [
+        {
+          "source_id": "XZ_ARCHIVE",
+          "locator": "3月20日汤恩伯报告津浦路北段战斗经过目录"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "3月20日汤恩伯报告津浦路北段战斗经过目录"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "3月20日汤恩伯报告津浦路北段战斗经过目录"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "3月20日汤恩伯报告津浦路北段战斗经过目录"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.group22",
+      "name": "第二十二集团军",
+      "team": "red",
+      "role": "command",
+      "echelon": "集团军",
+      "parent_id": "ww2.cn.warzone5",
+      "evidence": [
+        {
+          "source_id": "XZ_ARCHIVE",
+          "locator": "3月18日孙震等报告死守滕县电报目录"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "3月18日孙震等报告死守滕县电报目录"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "3月18日孙震等报告死守滕县电报目录"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "3月18日孙震等报告死守滕县电报目录"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.corps3",
+      "name": "第三军团",
+      "team": "red",
+      "role": "command",
+      "echelon": "军团",
+      "parent_id": "ww2.cn.warzone5",
+      "evidence": [
+        {
+          "source_id": "XZ_ARCHIVE",
+          "locator": "3月22日庞炳勋报告板垣部战斗目录"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "3月22日庞炳勋报告板垣部战斗目录"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "3月22日庞炳勋报告板垣部战斗目录"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "3月22日庞炳勋报告板垣部战斗目录"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division5",
+      "name": "日军第5师团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XZ_ARCHIVE",
+          "locator": "导言：3月第5师团进逼临沂"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言：3月第5师团进逼临沂"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang_opening",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "XZ_ARRIVAL",
+              "locator": "增援过程：29日夜离临沂；31日进入向城、爱曲，牵动第52军侧背"
+            },
+            {
+              "source_id": "XZ_MUSEUM",
+              "locator": "31日关军合围后，4月1日坂本主力进入兰陵，主力再向台儿庄右翼推进"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言：3月第5师团进逼临沂"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division10",
+      "name": "日军第10师团",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "XZ_ARCHIVE",
+          "locator": "导言：第10师团沿津浦路南下"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言：第10师团沿津浦路南下"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang_opening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言：第10师团沿津浦路南下"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言：第10师团沿津浦路南下"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.seya_detachment",
+      "name": "日军濑谷支队",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "支队",
+      "parent_id": "ww2.jp.division10",
+      "evidence": [
+        {
+          "source_id": "XZ_ARCHIVE",
+          "locator": "导言：第10师团濑谷支队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言：第10师团濑谷支队"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang_opening",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "TEZ_DAY",
+              "locator": "3月24至28日31师与濑谷支队在台儿庄交战"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言：第10师团濑谷支队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.sakamoto_detachment",
+      "name": "日军坂本支队",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "支队",
+      "parent_id": "ww2.jp.division5",
+      "evidence": [
+        {
+          "source_id": "XZ_ARCHIVE",
+          "locator": "导言：第5师团坂本支队一部；不能表示全支队全部在场"
+        },
+        {
+          "source_id": "XZ_ARRIVAL",
+          "locator": "增援过程：29日夜离临沂；31日进入向城、爱曲，牵动第52军侧背"
+        },
+        {
+          "source_id": "XZ_MUSEUM",
+          "locator": "31日关军合围后，4月1日坂本主力进入兰陵，主力再向台儿庄右翼推进"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "campaign_opening",
+          "status": "unverified",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言：第5师团坂本支队一部；不能表示全支队全部在场"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang_opening",
+          "status": "later_participant",
+          "evidence": [
+            {
+              "source_id": "XZ_ARRIVAL",
+              "locator": "增援过程：29日夜离临沂；31日进入向城、爱曲，牵动第52军侧背"
+            },
+            {
+              "source_id": "XZ_MUSEUM",
+              "locator": "31日关军合围后，4月1日坂本主力进入兰陵，主力再向台儿庄右翼推进"
+            }
+          ]
+        },
+        {
+          "phase_id": "taierzhuang",
+          "status": "reported_present",
+          "evidence": [
+            {
+              "source_id": "XZ_ARCHIVE",
+              "locator": "导言：第5师团坂本支队一部；不能表示全支队全部在场"
+            },
+            {
+              "source_id": "XZ_ARRIVAL",
+              "locator": "增援过程：29日夜离临沂；31日进入向城、爱曲，牵动第52军侧背"
+            },
+            {
+              "source_id": "XZ_MUSEUM",
+              "locator": "31日关军合围后，4月1日坂本主力进入兰陵，主力再向台儿庄右翼推进"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    }
+  ]
+}

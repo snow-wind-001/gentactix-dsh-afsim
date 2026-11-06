@@ -1,0 +1,301 @@
+{
+  "kind": "read_only_handover_snapshot",
+  "before_at": "2026-11-03T23:02:10.824001+08:00",
+  "after_at": "2026-11-03T23:07:14.312356+08:00",
+  "head": "b5a38a5d0c440cb41f77edb5ce6261cff1020082",
+  "branch": "main",
+  "git_status_at_start": {
+    "tracked_modified": 131,
+    "untracked_entries": 981
+  },
+  "changes_by_this_task": {
+    "business_code": false,
+    "configuration": false,
+    "simulation_turn": false,
+    "model_call": false,
+    "regression_launch": false,
+    "service_restart": false,
+    "install_or_package": false,
+    "github_sync": false,
+    "new_handover_documents_and_local_read_only_evidence_only": true
+  },
+  "document": {
+    "path": "docs/项目交接说明-2026-11-03-23时只读快照.md",
+    "sha256": "f411076d92b3fbf4305517a97eee9ae4de848b09e8accae4cd83f8902902478d"
+  },
+  "selected_existing_files": {
+    "count": 1174,
+    "sha256_bytes_and_mtime_exact": true,
+    "changed_paths": []
+  },
+  "protected_files": {
+    "count": 114,
+    "same_as_previous_development_baseline": true,
+    "unchanged_during_handover": true,
+    "changed_paths": []
+  },
+  "previous_complete_gate": {
+    "path": ".cache/qa/reunion-validation-2026-11-03/stable-gate/results.json",
+    "groups": 172,
+    "unittest_cases": 2022,
+    "failed_groups": 0,
+    "skipped_cases": 0,
+    "summed_seconds": 1152.61,
+    "frozen_files": 560,
+    "all_prior_frozen_files_still_exact": true,
+    "changed_paths": [],
+    "covers_new_northern_files": false,
+    "rerun_this_task": false
+  },
+  "current_northern_package": {
+    "evidence": ".cache/qa/northern-campaign-2026-11-03/green-v1.log",
+    "targeted_tests": 6,
+    "targeted_passed": true,
+    "full_gate_after_increment": false,
+    "actual_frontend_generation": false,
+    "actual_dsh_afsim_process": false,
+    "canonical_cards_csv_sync": false,
+    "original_pdf_page_visual_review_complete": false,
+    "files": {
+      "data/historical_initial/AJ06-wuhan/1.2.0.json": {
+        "sha256": "473be5bd2e4b5eafb12ab1790c212f98c6d28b05f07fe83b3923d1456ec84723",
+        "mtime_ns": 1793717469056672499,
+        "bytes": 444565
+      },
+      "data/historical_initial/AJ07-wanjialing/1.5.0.json": {
+        "sha256": "f01e4dbdb4dc62c2612b3a1732d7dee5601fa0da8d7d184ef3a61d1fb0311328",
+        "mtime_ns": 1793717469043672768,
+        "bytes": 230262
+      },
+      "data/campaign_windows/WH-northern-sep17-18/1.0.0.json": {
+        "sha256": "413c7b0f9fd8278049ee1457102ad3b90bf066eed5a00bff366600d9ff307c3a",
+        "mtime_ns": 1793717469062672374,
+        "bytes": 100749
+      },
+      "data/campaign_windows/WJL-oct6-10/1.6.0.json": {
+        "sha256": "abe759f066b534339af6d0f7f59b5b24992d262031a3b2c3b3a4693b6cadf4fd",
+        "mtime_ns": 1793717469059672436,
+        "bytes": 182423
+      },
+      "tools/upgrade_northern_campaign.py": {
+        "sha256": "69b0121a20ad80b81d84c265785dd1571908b6c077b55789f6dde060b5ce20c4",
+        "mtime_ns": 1793717468744678970,
+        "bytes": 24265
+      },
+      "verify_northern_campaign.py": {
+        "sha256": "aa59dad6f0d3d1955477c8d0d63cd8933a98f02f01c4ec939b96aed9895080a7",
+        "mtime_ns": 1793717181315167259,
+        "bytes": 5904
+      }
+    }
+  },
+  "current_inventory": {
+    "scenarios": 45,
+    "versions": 61,
+    "latest_reference_identities": 643,
+    "latest_phases": 121,
+    "known_unit_facts": {
+      "personnel": 0,
+      "equipment": 0,
+      "position": 1
+    },
+    "campaign_window_families": 6,
+    "campaign_window_versions": 12
+  },
+  "services": {
+    "19358": {
+      "status": "ok",
+      "pid": 186277,
+      "same_pid": true,
+      "session_count": 2,
+      "same_session_count": true,
+      "loaded_revision": "a4a94121b09d081c",
+      "disk_revision": "01cff3337cb12b5e",
+      "restart_required": true,
+      "runtime": {
+        "mode": null,
+        "ptc": false,
+        "connected": false
+      },
+      "afsim_files_available": true,
+      "afsim_health_is_not_execution_test": true
+    },
+    "19368": {
+      "status": "ok",
+      "pid": 474702,
+      "same_pid": true,
+      "session_count": 3,
+      "same_session_count": true,
+      "loaded_revision": "a54b60df09972c07",
+      "disk_revision": "01cff3337cb12b5e",
+      "restart_required": true,
+      "runtime": {
+        "mode": null,
+        "ptc": false,
+        "connected": false
+      },
+      "afsim_files_available": true,
+      "afsim_health_is_not_execution_test": true
+    },
+    "19378": {
+      "status": "ok",
+      "pid": 690071,
+      "same_pid": true,
+      "session_count": 2,
+      "same_session_count": true,
+      "loaded_revision": "1119bbf318e3cfa5",
+      "disk_revision": "01cff3337cb12b5e",
+      "restart_required": true,
+      "runtime": {
+        "mode": null,
+        "ptc": false,
+        "connected": false
+      },
+      "afsim_files_available": true,
+      "afsim_health_is_not_execution_test": true
+    },
+    "19388": {
+      "status": "ok",
+      "pid": 807848,
+      "same_pid": true,
+      "session_count": 0,
+      "same_session_count": true,
+      "loaded_revision": "a30e7949ab0f0b8e",
+      "disk_revision": "01cff3337cb12b5e",
+      "restart_required": true,
+      "runtime": {
+        "mode": "native",
+        "ptc": false,
+        "connected": true
+      },
+      "afsim_files_available": true,
+      "afsim_health_is_not_execution_test": true
+    },
+    "19398": {
+      "status": "ok",
+      "pid": 943892,
+      "same_pid": true,
+      "session_count": 2,
+      "same_session_count": true,
+      "loaded_revision": "01cff3337cb12b5e",
+      "disk_revision": "01cff3337cb12b5e",
+      "restart_required": false,
+      "runtime": {
+        "mode": null,
+        "ptc": false,
+        "connected": false
+      },
+      "afsim_files_available": true,
+      "afsim_health_is_not_execution_test": true
+    }
+  },
+  "sessions": {
+    "19358:2c51981789fd": {
+      "turn": 3,
+      "elapsed_seconds": 64800,
+      "mission_status": "active",
+      "active": false,
+      "whole_session_json_exact": true,
+      "whole_export_json_exact": true,
+      "progress_json_exact": true,
+      "session_sha256": "278071f87d9c959d1d744e62d5efd590a8696d7cda5f3ba0754cefbce33fe568"
+    },
+    "19358:041fe52b2b8d": {
+      "turn": 1,
+      "elapsed_seconds": 21600,
+      "mission_status": "active",
+      "active": false,
+      "whole_session_json_exact": true,
+      "whole_export_json_exact": true,
+      "progress_json_exact": true,
+      "session_sha256": "b99d0a4bed208bd718ffa95b9d918e92b4e3f4248e5b083f171dc6880ba639de"
+    },
+    "19368:cbb95b02630c": {
+      "turn": 7,
+      "elapsed_seconds": 6300,
+      "mission_status": "completed",
+      "active": false,
+      "whole_session_json_exact": true,
+      "whole_export_json_exact": true,
+      "progress_json_exact": true,
+      "session_sha256": "73d85fe61607a817799c8776d635b53fa4462b53218a2dcb278c009de7329600"
+    },
+    "19368:fb11ed13786b": {
+      "turn": 9,
+      "elapsed_seconds": 8100,
+      "mission_status": "completed",
+      "active": false,
+      "whole_session_json_exact": true,
+      "whole_export_json_exact": true,
+      "progress_json_exact": true,
+      "session_sha256": "05ce71e77ac90318d889b2c16794e5aeabf18483bc67e0b5e65fa85e297ee908"
+    },
+    "19368:5f55ddd507a7": {
+      "turn": 3,
+      "elapsed_seconds": 10800,
+      "mission_status": "active",
+      "active": false,
+      "whole_session_json_exact": true,
+      "whole_export_json_exact": true,
+      "progress_json_exact": true,
+      "session_sha256": "340c892bab7fb30429c7cc1b16912a0fb204f71bea5e2a1260f6785080893233"
+    },
+    "19378:91ee5e8bf177": {
+      "turn": 6,
+      "elapsed_seconds": 10800,
+      "mission_status": "active",
+      "active": false,
+      "whole_session_json_exact": true,
+      "whole_export_json_exact": true,
+      "progress_json_exact": true,
+      "session_sha256": "49266b61604286a735c8cec61399e01e9e2706e0a36237cb2bc78b49ec3c7eb8"
+    },
+    "19378:24f1946c7010": {
+      "turn": 6,
+      "elapsed_seconds": 10800,
+      "mission_status": "active",
+      "active": false,
+      "whole_session_json_exact": true,
+      "whole_export_json_exact": true,
+      "progress_json_exact": true,
+      "session_sha256": "0c2bc98ca23df6d38dea1c319c554e0ff5cedac5c69fe53934ba108229d74523"
+    },
+    "19398:bbf384efebe6": {
+      "turn": 5,
+      "elapsed_seconds": 9000,
+      "mission_status": "completed",
+      "active": false,
+      "whole_session_json_exact": true,
+      "whole_export_json_exact": true,
+      "progress_json_exact": true,
+      "session_sha256": "5bb5069f402d6d6554a7d638a853a66f783f2996b71b8eb73ff8c7440b18cc99"
+    },
+    "19398:e1536577f91f": {
+      "turn": 5,
+      "elapsed_seconds": 9000,
+      "mission_status": "completed",
+      "active": false,
+      "whole_session_json_exact": true,
+      "whole_export_json_exact": true,
+      "progress_json_exact": true,
+      "session_sha256": "2d87b983c8c29d0367dc2f744a4e273fd3bc5f59aa3b7113e66a3d11daa9fd16"
+    }
+  },
+  "all_nine_sessions_export_and_progress_exact": true,
+  "original_seven_sessions_still_match_21h_snapshot": {
+    "19358:2c51981789fd": true,
+    "19358:041fe52b2b8d": true,
+    "19368:cbb95b02630c": true,
+    "19368:fb11ed13786b": true,
+    "19368:5f55ddd507a7": true,
+    "19378:24f1946c7010": true,
+    "19378:91ee5e8bf177": true
+  },
+  "source_and_user_configuration_values_not_included": true,
+  "historical_acceptance": {
+    "full_history_45_scenarios_270_cells": false,
+    "current_status": "partial_progress_no_full_history_acceptance"
+  },
+  "local_before_evidence": ".cache/qa/handover-2026-11-03-23h/before.json",
+  "verification_method": "Read-only health, session list, export and operation progress; complete JSON digests, file bytes/SHA-256/mtime. Avoided session snapshot endpoint because it can lazily populate adjudication state."
+}

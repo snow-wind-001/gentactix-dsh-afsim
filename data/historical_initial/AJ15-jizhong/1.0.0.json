@@ -1,0 +1,1987 @@
+{
+  "format": "gentactix-historical-initial-v1",
+  "id": "AJ15-jizhong",
+  "version": "1.0.0",
+  "battle": "抗日战争-冀中五一反扫荡-1942.05.01至1942.06.20",
+  "coverage": {
+    "order_of_battle_complete": false,
+    "opening_deployment_complete": false,
+    "strength_complete": false,
+    "notes": [
+      "按公开整理记录军分区、主力团、地区队与直属力量；不声称全部地方武装完整。",
+      "人数、装备、精确阵地缺载；地区范围不能换成每团同一坐标。",
+      "日军直接参战与配合部队分开记录；父级师团／旅团不与其分遣部队重复累计。",
+      "第41师团在第一阶段有铁路调动，不能把整师视为5月1日已在三角区展开。"
+    ]
+  },
+  "sources": {
+    "JZ_OOB": {
+      "title": "冀中军区反五一大扫荡",
+      "url": "https://m.krzzjn.com/show-320-72570.html",
+      "publisher": "抗日战争纪念网／碣石钓叟整理",
+      "evidence_kind": "published_secondary",
+      "original_archive_examined": false,
+      "limitations": "公开二手战史整理；内引《华北治安战》第141页等，原书与命令原件未核。网页有文字讹误，数量与战果未作为确证录入。"
+    }
+  },
+  "phases": [
+    {
+      "id": "sweep_opening",
+      "label": "五月初反扫荡初期",
+      "date": {
+        "label": "1942-05-01",
+        "precision": "day",
+        "evidence": [
+          {
+            "source_id": "JZ_OOB",
+            "locator": "战役前态势、战斗序列及第一阶段5月1日至10日"
+          }
+        ]
+      },
+      "scope": "本阶段参战与到场另行标注；不会把全战役累计名单视为同日到场",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战役前态势、战斗序列及第一阶段5月1日至10日"
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "ww2.cn.jizhong",
+      "name": "冀中军区司令部",
+      "team": "red",
+      "role": "command",
+      "echelon": "军区",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战役前态势：冀中军区序列"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战役前态势：冀中军区序列"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area6",
+      "name": "冀中军区第6军分区",
+      "team": "red",
+      "role": "command",
+      "echelon": "军分区",
+      "parent_id": "ww2.cn.jizhong",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第6军分区"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第6军分区"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area6.reg1",
+      "name": "冀中军区第6军分区警备第1团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.jizhong.area6",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第6军分区的警备第1团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第6军分区的警备第1团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area6.reg2",
+      "name": "冀中军区第6军分区警备第2团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.jizhong.area6",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第6军分区的警备第2团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第6军分区的警备第2团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area6.district31",
+      "name": "冀中军区第6军分区第31地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area6",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第6军分区第31地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第6军分区第31地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area6.district40",
+      "name": "冀中军区第6军分区第40地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area6",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第6军分区第40地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第6军分区第40地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area6.district44",
+      "name": "冀中军区第6军分区第44地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area6",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第6军分区第44地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第6军分区第44地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area7",
+      "name": "冀中军区第7军分区",
+      "team": "red",
+      "role": "command",
+      "echelon": "军分区",
+      "parent_id": "ww2.cn.jizhong",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第7军分区"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第7军分区"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area7.reg17",
+      "name": "冀中军区第7军分区第17团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.jizhong.area7",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第7军分区的第17团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第7军分区的第17团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area7.reg22",
+      "name": "冀中军区第7军分区第22团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.jizhong.area7",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第7军分区的第22团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第7军分区的第22团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area7.district32",
+      "name": "冀中军区第7军分区第32地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area7",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第7军分区第32地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第7军分区第32地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area7.district36",
+      "name": "冀中军区第7军分区第36地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area7",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第7军分区第36地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第7军分区第36地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area7.district45",
+      "name": "冀中军区第7军分区第45地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area7",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第7军分区第45地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第7军分区第45地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area8",
+      "name": "冀中军区第8军分区",
+      "team": "red",
+      "role": "command",
+      "echelon": "军分区",
+      "parent_id": "ww2.cn.jizhong",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第8军分区"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第8军分区"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area8.reg30",
+      "name": "冀中军区第8军分区第30团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.jizhong.area8",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第8军分区的第30团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第8军分区的第30团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area8.reg23",
+      "name": "冀中军区第8军分区第23团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.jizhong.area8",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第8军分区的第23团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第8军分区的第23团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area8.district37",
+      "name": "冀中军区第8军分区第37地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area8",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第8军分区第37地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第8军分区第37地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area8.district33",
+      "name": "冀中军区第8军分区第33地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area8",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第8军分区第33地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第8军分区第33地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area8.district41",
+      "name": "冀中军区第8军分区第41地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area8",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第8军分区第41地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第8军分区第41地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area9",
+      "name": "冀中军区第9军分区",
+      "team": "red",
+      "role": "command",
+      "echelon": "军分区",
+      "parent_id": "ww2.cn.jizhong",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第9军分区"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第9军分区"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area9.reg18",
+      "name": "冀中军区第9军分区第18团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.jizhong.area9",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第9军分区的第18团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第9军分区的第18团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area9.reg34",
+      "name": "冀中军区第9军分区第34团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.jizhong.area9",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第9军分区的第34团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第9军分区的第34团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area9.district34",
+      "name": "冀中军区第9军分区第34地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area9",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第9军分区第34地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第9军分区第34地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area9.district38",
+      "name": "冀中军区第9军分区第38地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area9",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第9军分区第38地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第9军分区第38地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area9.district42",
+      "name": "冀中军区第9军分区第42地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area9",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第9军分区第42地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第9军分区第42地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area10",
+      "name": "冀中军区第10军分区",
+      "team": "red",
+      "role": "command",
+      "echelon": "军分区",
+      "parent_id": "ww2.cn.jizhong",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第10军分区"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第10军分区"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area10.reg29",
+      "name": "冀中军区第10军分区第29团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.jizhong.area10",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第10军分区的第29团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第10军分区的第29团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area10.reg27",
+      "name": "冀中军区第10军分区第27团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.jizhong.area10",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第10军分区的第27团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第10军分区的第27团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area10.district35",
+      "name": "冀中军区第10军分区第35地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area10",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第10军分区第35地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第10军分区第35地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.area10.district43",
+      "name": "冀中军区第10军分区第43地区队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "地区队",
+      "parent_id": "ww2.cn.jizhong.area10",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：第10军分区第43地区队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：第10军分区第43地区队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.hui",
+      "name": "冀中军区回民支队",
+      "team": "red",
+      "role": "formation",
+      "echelon": "支队",
+      "parent_id": "ww2.cn.jizhong",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：军区直属回民支队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：军区直属回民支队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.cavalry",
+      "name": "冀中军区骑兵团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.jizhong",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：军区直属骑兵团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：军区直属骑兵团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.cn.jizhong.training",
+      "name": "冀中军区教导团",
+      "team": "red",
+      "role": "formation",
+      "echelon": "团",
+      "parent_id": "ww2.cn.jizhong",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "战斗序列：军区直属教导团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "战斗序列：军区直属教导团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division110",
+      "name": "日军第110师团司令部",
+      "team": "blue",
+      "role": "command",
+      "echelon": "师团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "参战计划：第110师团部队及分遣部队的来源；非整师实到"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "参战计划：第110师团部队及分遣部队的来源；非整师实到"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division26",
+      "name": "日军第26师团司令部",
+      "team": "blue",
+      "role": "command",
+      "echelon": "师团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "参战计划：第26师团部队及分遣部队的来源；非整师实到"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "参战计划：第26师团部队及分遣部队的来源；非整师实到"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.independent_brigade7",
+      "name": "日军独立混成第7旅团司令部",
+      "team": "blue",
+      "role": "command",
+      "echelon": "旅团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "参战计划：独立混成第7旅团部分兵力；非全旅团实到"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "参战计划：独立混成第7旅团部分兵力；非全旅团实到"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.independent_brigade9",
+      "name": "日军独立混成第9旅团司令部",
+      "team": "blue",
+      "role": "command",
+      "echelon": "旅团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "参战计划：独立混成第9旅团部分兵力；非全旅团实到"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "参战计划：独立混成第9旅团部分兵力；非全旅团实到"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division41",
+      "name": "日军第41师团主力",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师团",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "直接参战计划及第1期铁路佯动；主力而非全师精确实到"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "直接参战计划及第1期铁路佯动；主力而非全师精确实到"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.ikegami_force",
+      "name": "日军独立混成第9旅团参战部队",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "旅团部分",
+      "parent_id": "ww2.jp.independent_brigade9",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "直接参战计划：池上部队约2大队，非整个旅团"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "直接参战计划：池上部队约2大队，非整个旅团"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.shirataki_force",
+      "name": "日军白泷部队",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "分遣队",
+      "parent_id": "ww2.jp.division110",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "直接参战计划：第110师团白泷部队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "直接参战计划：第110师团白泷部队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.sakamoto_jizhong",
+      "name": "日军坂本支队（冀中）",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "支队",
+      "parent_id": "ww2.jp.division26",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "直接参战计划：第26师团独立步兵第12联队长指挥的部分兵力"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "直接参战计划：第26师团独立步兵第12联队长指挥的部分兵力"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.cavalry13",
+      "name": "日军骑兵第13联队",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "联队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "直接参战计划：骑兵第13联队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "直接参战计划：骑兵第13联队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.ogawa_force",
+      "name": "日军小川部队",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "分遣队",
+      "parent_id": "ww2.jp.independent_brigade7",
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "直接参战计划：独立混成第7旅团小川部队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "直接参战计划：独立混成第7旅团小川部队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.division27",
+      "name": "日军第27师团配合部队",
+      "team": "blue",
+      "role": "formation",
+      "echelon": "师团部分",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "配合作战部队与冀中警备；参战时点和部分兵力待核"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "配合作战部队与冀中警备；参战时点和部分兵力待核"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    },
+    {
+      "id": "ww2.jp.flight29",
+      "name": "日军第29独立飞行队",
+      "team": "blue",
+      "role": "aviation",
+      "echelon": "飞行队",
+      "parent_id": null,
+      "evidence": [
+        {
+          "source_id": "JZ_OOB",
+          "locator": "配合作战部队：第29独立飞行队"
+        }
+      ],
+      "presence": [
+        {
+          "phase_id": "sweep_opening",
+          "status": "campaign_participant",
+          "evidence": [
+            {
+              "source_id": "JZ_OOB",
+              "locator": "配合作战部队：第29独立飞行队"
+            }
+          ]
+        }
+      ],
+      "facts": {
+        "personnel": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "equipment": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        },
+        "position": {
+          "value": null,
+          "evidence": [],
+          "scope": "本条来源未提供逐单位、同一时点的实到量或可核部署；保持未知"
+        }
+      }
+    }
+  ]
+}
