@@ -8,6 +8,12 @@ A map-based military-history teaching workbench. DSH retrieves sources, plans un
 
 ![Campaign selection](docs/screenshots/launch-docker-3.7.6-beta.1.png)
 
+## Introduction video
+
+[Download/play the 15-minute introduction](https://github.com/snow-wind-001/gentactix-dsh-afsim/releases/download/v3.7.6-beta.1/GenTactix-DSH-AFSIM-3.7.6-beta.1-Introduction-1080p-15min.mp4): 1080p, Chinese female narration and 22 chapters covering historical context, the actual UI, commands and real DSH/AFSIM results. Subtitles, narration and the editable project are available in the same [Release](https://github.com/snow-wind-001/gentactix-dsh-afsim/releases/tag/v3.7.6-beta.1). See the [production and validation record](docs/15分钟软件介绍视频制作与验收-2026-11-06.md).
+
+[![Introduction video](docs/screenshots/software-intro-3.7.6-beta.1.jpg)](https://github.com/snow-wind-001/gentactix-dsh-afsim/releases/download/v3.7.6-beta.1/GenTactix-DSH-AFSIM-3.7.6-beta.1-Introduction-1080p-15min.mp4)
+
 ## Install and launch
 
 Source: **[snow-wind-001/gentactix-dsh-afsim](https://github.com/snow-wind-001/gentactix-dsh-afsim)**.

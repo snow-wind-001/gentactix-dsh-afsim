@@ -8,6 +8,12 @@
 
 ![战役选择界面](docs/screenshots/launch-docker-3.7.6-beta.1.png)
 
+## 软件介绍视频
+
+[下载/播放15分钟介绍视频](https://github.com/snow-wind-001/gentactix-dsh-afsim/releases/download/v3.7.6-beta.1/GenTactix-DSH-AFSIM-3.7.6-beta.1-Introduction-1080p-15min.mp4)：1080p、中文女声、22章节，包含战役背景、实际界面、可视化/自然语言指挥及真实DSH与AFSIM结果。字幕、独立配音和编辑工程位于同一[Release](https://github.com/snow-wind-001/gentactix-dsh-afsim/releases/tag/v3.7.6-beta.1)；见[制作与验收记录](docs/15分钟软件介绍视频制作与验收-2026-11-06.md)。
+
+[![软件介绍视频](docs/screenshots/software-intro-3.7.6-beta.1.jpg)](https://github.com/snow-wind-001/gentactix-dsh-afsim/releases/download/v3.7.6-beta.1/GenTactix-DSH-AFSIM-3.7.6-beta.1-Introduction-1080p-15min.mp4)
+
 ## 安装与使用
 
 代码仓库：**[snow-wind-001/gentactix-dsh-afsim](https://github.com/snow-wind-001/gentactix-dsh-afsim)**。

@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "duration_seconds": 900.0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "frames": 27000,
+  "chapters": 22,
+  "subtitles": 211,
+  "audio_sample_rate": 48000,
+  "audio_channels": 2,
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_gender": "Female",
+  "voice_speed": 1.065,
+  "audio_peak_dbfs": -4.8,
+  "full_decode_exit_code": 0,
+  "unexpected_black_intervals": 0,
+  "video_bytes": 299617639,
+  "video_sha256": "2f1994034d35c767553d6c192649c018a6301f898817568911ee1214e20b2a3c",
+  "scope": "Actual final container UI and isolated synthetic native executions; not full historical campaign acceptance."
+}
