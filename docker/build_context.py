@@ -34,6 +34,14 @@ if a.afsim_runtime:
   file.chmod(0o755 if file.is_dir() else 0o644)
  (out/'afsim-runtime/bin').chmod(0o755)
  shutil.copy2(Path(__file__).with_name('AFSIM-DISTRIBUTION-NOTICE.txt'),out/'afsim-runtime/AFSIM-DISTRIBUTION-NOTICE.txt')
+ notices=out/'afsim-notices'
+ for relative in ('resources/data/3rd_party_licenses','resources/data/fonts/LICENSE','resources/models/mil-std2525d/LICENSE.txt','resources/data/colornames.txt','documentation/html/docs/main_page.html'):
+  original=a.afsim_runtime/relative
+  if not original.exists():raise SystemExit('Required original distribution notice missing: '+relative)
+  target=notices/relative;target.parent.mkdir(parents=True,exist_ok=True)
+  if original.is_dir():shutil.copytree(original,target)
+  else:shutil.copy2(original,target)
+ for file in notices.rglob('*'):file.chmod(0o755 if file.is_dir() else 0o644)
  # Do not remove DLLs or embedded notices. Additional runtime resources can be
  # deliberately added only after the corresponding application scenario requires them.
 (out/'.dockerignore').write_text('**/__pycache__\n**/*.pyc\n**/node_modules\n**/.git\n**/.env*\n**/*.enc\n**/*.key\n')

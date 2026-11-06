@@ -15,6 +15,17 @@ Docker 文件请向 [snowwind001@gmail.com](mailto:snowwind001@gmail.com) 发送
 
 默认 `-afsim` 标签包含当前应用需要的 AFSIM 2.9 命令行运行文件和 Wine，无需手工挂载 AFSIM。`-core` 是不含 AFSIM/Wine 的轻量版本，用 `docker compose -f docker-compose.yml -f docker-compose.core.yml up -d` 启动。两者复用代码基础层。AFSIM 的版权和授权条件独立于应用 MIT 许可，原文件内的声明均保留；不包含非运行必需的演示、培训文档和原始书籍扫描素材。
 
+## 申请离线镜像包
+
+若通过邮件申请取得完整离线镜像归档，先将其与启动包放在本机，再导入：
+
+```bash
+docker load -i gentactix-dsh-afsim-3.7.6-beta.1-afsim-linux-amd64.tar.gz
+docker compose up -d --pull never
+```
+
+导入后也可双击 Windows 启动器或使用 `docker/start.sh`；它们复用本地已有镜像，不再下载同一标签。离线归档包括镜像所需基础层，无需登录 Docker Hub；仍需已运行的 Docker 和可访问的本地/局域网模型服务。不包含模型权重。联网影像底图不可用时可使用内置离线海岸线。AFSIM 离线归档按授权申请提供，不放进公开 GitHub Release。
+
 ## 启停、更新和数据
 
 ```bash

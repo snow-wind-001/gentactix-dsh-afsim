@@ -6,7 +6,7 @@ A map-based military-history teaching workbench. DSH retrieves sources, plans un
 
 **3.7.6-beta.1 is a limited-scenario classroom beta.** The catalog contains 45 entries; complete historical campaigns and all mode combinations have not passed acceptance. See the [release record](docs/releases/v3.7.6-beta.1.md).
 
-![Campaign selection](docs/screenshots/launch.png)
+![Campaign selection](docs/screenshots/launch-docker-3.7.6-beta.1.png)
 
 ## Install and launch
 
@@ -32,6 +32,8 @@ docker compose stop
 
 The default `3.7.6-beta.1-afsim` image includes the application, DSH SDK/runtime, the required AFSIM 2.9 command-line runtime and Wine. No separate AFSIM mount is required. Unneeded demos, training material and original book scans are excluded. The lighter `3.7.6-beta.1-core` omits AFSIM/Wine; select it with `docker compose -f docker-compose.yml -f docker-compose.core.yml up -d`.
 
+The full image downloads about 619MB and extracts to 1.70GB; the first Wine prefix adds about 726MB. The core image downloads about 239MB.
+
 A named volume preserves saves, trajectories, encrypted configuration and keys across upgrades. **Do not run `docker compose down -v`.** Fernet protects stored configuration; administrators with host or Docker access can still obtain the key. Back up and protect the whole volume. The default port is bound to loopback only. See the [Docker guide](docker/README.zh-CN.md) for permissions, upgrades and source builds.
 
 ## Features
@@ -42,6 +44,8 @@ A named volume preserves saves, trajectories, encrypted configuration and keys a
 - **Native DSH plugins:** persistent role sessions, domain MCP tools, events, budgets and cancellation. Bounded observations read checkpoints instead of repeatedly rewriting the entire world. A JSON protocol remains as a compatibility path.
 - **Two engines:** standalone DSH, or DSH planning with AFSIM execution. Registered models cover ground combat, classified ammunition, air support, abstract air defense, logistics and selected crossing/engineering mechanisms. Combinations have separate acceptance limits.
 - **Review and saves:** sourced reports, key decisions, turning points, trajectory attribution and branch comparisons; save/recovery and JSON import/export. Counterfactuals are model experiments rather than proven historical causal conclusions.
+
+![Current container workbench: explicitly synthetic initial state and unit inspector.](docs/screenshots/workbench-docker-3.7.6-beta.1.png)
 
 ## Three purposes
 

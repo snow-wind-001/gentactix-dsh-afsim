@@ -6,7 +6,7 @@
 
 当前交付：**3.7.6-beta.1，限定场景教学内测版**。包含45个资料条目，尚未完成全部历史会战及全部模式组合验收。已验证范围与剩余问题见[交付说明](docs/releases/v3.7.6-beta.1.md)。
 
-![战役选择界面](docs/screenshots/launch.png)
+![战役选择界面](docs/screenshots/launch-docker-3.7.6-beta.1.png)
 
 ## 安装与使用
 
@@ -34,6 +34,8 @@ docker compose stop
 
 默认 `3.7.6-beta.1-afsim` 镜像包括应用、DSH SDK/runtime、AFSIM 2.9命令行运行集和Wine，教员无需另行挂载AFSIM。不含非运行必需的示例、培训材料及原始书籍扫描。`3.7.6-beta.1-core` 不含AFSIM/Wine，可用 `docker compose -f docker-compose.yml -f docker-compose.core.yml up -d` 选择。
 
+完整镜像压缩下载约619MB、展开约1.70GB；首次Wine环境另需约726MB。轻量版压缩约239MB。
+
 对局、轨迹、配置和密钥保存在命名卷中，升级复用。**不要执行 `docker compose down -v`**。配置经Fernet认证加密，密钥单独保存；拥有宿主或Docker管理权限者仍可访问，备份须保护整个数据卷。默认仅向本机开放8080端口。详细部署、权限、升级及源码构建见[Docker指南](docker/README.zh-CN.md)。
 
 ## 主要功能
@@ -44,6 +46,8 @@ docker compose stop
 - **DSH原生插件**：持久角色会话、领域MCP工具、运行事件、预算和取消；通过有界观察读取检查点，减少整世界重复送入模型。保留应用层JSON协议兼容路径。
 - **双引擎**：DSH独立推演，或DSH规划、AFSIM执行。已注册模型覆盖地面交战、分类弹耗、航空支援、防空抽象、后勤与部分渡运/工程机制；每种组合有独立准入范围。
 - **分析与保存**：来源检索、战报、关键决策与转折点、轨迹归因及分支对照，支持保存恢复和JSON导入导出。反事实结果属于模型实验，不等同于已证实的历史因果结论。
+
+![当前容器版工作台：合成教学初态与单位参数检查器。](docs/screenshots/workbench-docker-3.7.6-beta.1.png)
 
 ## 三种使用方式
 

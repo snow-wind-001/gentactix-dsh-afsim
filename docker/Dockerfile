@@ -84,4 +84,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends wine64 \
     && ln -s /usr/lib/x86_64-linux-gnu/wine/x86_64-unix /app/vendor/afsim/local/afsim/compat/usr/lib/x86_64-linux-gnu/wine/x86_64-unix \
     && ln -s /usr/lib/x86_64-linux-gnu/wine/x86_64-windows /app/vendor/afsim/local/afsim/compat/usr/lib/x86_64-linux-gnu/wine/x86_64-windows \
     && ln -s /usr/lib/x86_64-linux-gnu/wine/x86_64-windows/zlib1.dll /app/vendor/afsim/local/afsim/compat/usr/lib/x86_64-linux-gnu/zlib1.dll
+# Preserve original runtime and third-party license notices at their source paths.
+COPY --chown=0:0 afsim-notices/ /app/vendor/afsim/local/afsim/runtime/afsim-2.9.0-win64/
 USER 10001:10001

@@ -1,0 +1,118 @@
+{
+  "version": "3.7.6-beta.1",
+  "distribution": "limited-scenario classroom beta",
+  "github": "snow-wind-001/gentactix-dsh-afsim",
+  "docker_repository": "snowwind001/gentactix-dsh-afsim",
+  "repository_private": true,
+  "images": [
+    {
+      "tag": "3.7.6-beta.1-core",
+      "registry_compressed_bytes": 238565375,
+      "digest": "sha256:50291346ff57f61389cbd4a1ad092ece0e74909d5240450cde174bca84065d68",
+      "platforms": [
+        {
+          "architecture": "amd64",
+          "os": "linux",
+          "size": 238565375,
+          "digest": "sha256:50291346ff57f61389cbd4a1ad092ece0e74909d5240450cde174bca84065d68"
+        }
+      ],
+      "local_image_id": "sha256:03ae150b8251ff55201421409b3e3dc8f079b206d6bec75965838be9cb4637f9",
+      "extracted_bytes": 504568057,
+      "local_repo_digests": [
+        "snowwind001/gentactix-dsh-afsim@sha256:50291346ff57f61389cbd4a1ad092ece0e74909d5240450cde174bca84065d68"
+      ]
+    },
+    {
+      "tag": "3.7.6-beta.1-afsim",
+      "registry_compressed_bytes": 618521725,
+      "digest": "sha256:05a33d57f4a08ddbc6144a57e1591ed7132a618a5a81df8399b8777d6b7d043c",
+      "platforms": [
+        {
+          "architecture": "amd64",
+          "os": "linux",
+          "size": 618521725,
+          "digest": "sha256:05a33d57f4a08ddbc6144a57e1591ed7132a618a5a81df8399b8777d6b7d043c"
+        }
+      ],
+      "local_image_id": "sha256:ced14a7772730c6b97a89856f9a3146f26114b99de003cbc6f23d1662567e4a3",
+      "extracted_bytes": 1704184676,
+      "local_repo_digests": [
+        "snowwind001/gentactix-dsh-afsim@sha256:05a33d57f4a08ddbc6144a57e1591ed7132a618a5a81df8399b8777d6b7d043c"
+      ]
+    }
+  ],
+  "source_revision": "c1d04546cadac9e1",
+  "frozen_engineering_baseline": {
+    "source_revision": "2b7547c0882a4c2a",
+    "groups": 220,
+    "checks": 2580,
+    "failures": 0,
+    "skips": 0
+  },
+  "final_images_http": {
+    "core": 14,
+    "afsim": 14
+  },
+  "native_afsim_cases": [
+    "ground_move",
+    "ground_fire",
+    "air_strike",
+    "combined_accounting"
+  ],
+  "real_llm": {
+    "scope": "Real model via final Docker HTTP API; QA configuration only, no user game mutation",
+    "port": 19881,
+    "ok": true,
+    "model": "qwen3.8-flash-next-iq3_s",
+    "transport": "DSH",
+    "finish_reason": "completed",
+    "wall_seconds": 2.258
+  },
+  "http_command_turn": {
+    "scope": "One synthetic six-unit HTTP command-to-AFSIM commit, then real DSH native read-only analysis; not historical calibration",
+    "session_id": "fa6c359b5563",
+    "turn": 1,
+    "unit_count": 6,
+    "turn_wall_seconds": 1.613,
+    "transport": "dsh-native-mcp",
+    "returncode": 0,
+    "manual_orders": 6,
+    "analysis_wall_seconds": 25.02,
+    "analysis_turn_unchanged": true,
+    "passed": true,
+    "personnel_fact_checks": [
+      {
+        "name": "红方教学步兵团",
+        "before": 3000,
+        "after": 2938,
+        "killed": 15,
+        "wounded": 47
+      },
+      {
+        "name": "蓝方教学步兵团",
+        "before": 3000,
+        "after": 2938,
+        "killed": 15,
+        "wounded": 47
+      }
+    ]
+  },
+  "map_focus_before_after_restart": "outline none; focus true",
+  "protected_user_files_changed": 0,
+  "limitations": [
+    "45 complete campaigns and 270 combinations not accepted",
+    "Historical effect calibration incomplete",
+    "Taierzhuang source event replay has no sourced unit positions",
+    "Windows host and 48-hour stability not accepted",
+    "Unadmitted shared-engineering combinations remain closed"
+  ],
+  "linux_launcher": {
+    "passed": true,
+    "fresh_named_volume": true,
+    "localhost_port": 19882,
+    "browser_url_requested": "http://localhost:19882",
+    "afsim_available": true,
+    "host_curl_required": false
+  }
+}

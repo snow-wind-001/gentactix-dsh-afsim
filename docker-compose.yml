@@ -17,7 +17,7 @@ services:
       - "host.docker.internal:host-gateway"
     read_only: true
     tmpfs:
-      - /tmp:rw,nosuid,nodev,size=256m
+      - /tmp:rw,nosuid,nodev,noexec,size=256m
     security_opt:
       - no-new-privileges:true
     restart: unless-stopped
