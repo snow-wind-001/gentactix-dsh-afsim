@@ -124,7 +124,10 @@ def validate_parameters(snapshot,parameters):
         return None
     if value is None:raise ValueError('完整战役必须绑定入场、工事、受降与多方向目标，不能退回局部占点模板')
     _fields(value,{'version','arrivals','fortifications','surrender','objective','assumption'}|
+        ({'availability_mode'} if 'availability_mode' in value else set())|
         ({'objective_policy'} if 'objective_policy' in value else set()),'战役过程')
+    if value.get('availability_mode', 'scheduled') not in ('scheduled', 'immediate'):
+        raise ValueError('单位行动可用方式须为scheduled或immediate')
     if 'objective_policy' in value:
         if (value['objective_policy']!=DEFENSIVE_DELAY or parameters['goal']['profile']!='delay'
                 or not campaign_scope.enabled(parameters)):
@@ -281,7 +284,7 @@ def initial_state(world,config,start):
     for team in ('red','blue'):
         for unit in world[team+'_units']:
             key=actor_key(unit);fort=config['fortifications'][key]
-            actors[unit['name']]={'active':_time(scheduled_time(config,unit),'入场')<=_time(start,'起点'),
+            actors[unit['name']]={'active':config.get('availability_mode')=='immediate' or _time(scheduled_time(config,unit),'入场')<=_time(start,'起点'),
                 'fortification_integrity':fort['integrity'],'base_protection':unit['formation']['protection'],
                 'base_entrenchment':unit['formation']['entrenchment'],'captured_this_turn':0}
     return {'version':VERSION,'source':'显式战役过程估计；原始档案缺载量不补造',
@@ -307,7 +310,9 @@ def capture_target(world,order):
 def release_seconds(world,unit):
     value=definition(world)
     if value is None:return 0
-    return max(0,(_time(scheduled_time(value,unit,world=world),'入场')-_time(world['current_time'],'当前计算时间')).total_seconds())
+    scheduled=scheduled_time(value,unit,world=world)
+    if value.get('availability_mode')=='immediate':return 0
+    return max(0,(_time(scheduled,'入场')-_time(world['current_time'],'当前计算时间')).total_seconds())
 
 
 def check_order(world,order):
@@ -399,7 +404,8 @@ def delay_assess(world):
 def observation(world):
     value=definition(world)
     if value is None:return None
-    return {'version':VERSION,'scope':'入场时点和战役参数是明确估计；状态来自当前已提交运行，不是历史实测部署',
+    return {'version':VERSION,'scope':('全部配置单位开局可行动；入场时点仅为估计参考，不是历史实测部署' if value.get('availability_mode')=='immediate' else '入场时点和战役参数是明确估计；状态来自当前已提交运行，不是历史实测部署'),
+        **({'availability_mode':'immediate'} if value.get('availability_mode')=='immediate' else {}),
         **({'objective_policy':DEFENSIVE_DELAY,'delay_goal':delay_assess(world),
             'spatial_metrics_note':'据点与阻援区域为参考态势，不作为本迟滞目标的夺控条件'} if value.get('objective_policy')==DEFENSIVE_DELAY else {}),
         'turn':world['campaign']['turn'],'objective':copy.deepcopy(world['campaign']['objective']),

@@ -8,6 +8,32 @@ from gentactix import missions
 
 
 class ObservationTests(unittest.TestCase):
+    def test_initial_projection_matches_public_observation_without_mutating_state(self):
+        from gentactix import commands
+        for extra in (False, True):
+            with self.subTest(partial_roster=extra):
+                session = self.session()
+                if extra:
+                    for team in ('red', 'blue'):
+                        units = session['war_state'][team + '_units']
+                        units.extend(dict(copy.deepcopy(units[0]), name=f'{team}-extra-{i}') for i in range(8))
+                session['command_state'] = commands.state(session)
+                original = copy.deepcopy(session)
+                pairs = commands.resolve_units(session)
+                ids = [identity for team in ('red', 'blue') for identity, (entry, _) in pairs.items()
+                       if entry['team'] == team]
+                red = [i for i in ids if pairs[i][0]['team'] == 'red']
+                blue = [i for i in ids if pairs[i][0]['team'] == 'blue']
+                chosen = red[:4] + blue[:4]
+                chosen += [i for i in ids if i not in chosen][:8-len(chosen)]
+                expected = afsim_state.observation(session, {'ids': chosen, 'limit': 8})
+                actual = afsim_state.initial_observation(session)
+                for key in ('next_offset', 'registered_list_complete', 'paging_note', 'force_organization'):
+                    expected.pop(key, None)
+                    actual.pop(key, None)
+                self.assertEqual(actual, expected)
+                self.assertEqual(session, original)
+
     def test_decision_projection_preserves_before_after_and_missing_budget(self):
         from gentactix import commands
         s = self.session()

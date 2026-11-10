@@ -12,6 +12,34 @@ from tools.qa.historical_operational_fixture import BATTLE, inputs
 
 
 class HistoricalScenarioBuilderTests(unittest.TestCase):
+    def test_old_scheduled_draft_requires_new_validation_before_new_session(self):
+        from fastapi.testclient import TestClient
+        from backend import main, scenario_builder
+        from tools.qa.baozuo_fixture import inputs as baozuo_inputs, BATTLE as BAOZUO
+        snapshot, params=baozuo_inputs()
+        record={'kind':'historical_operation','construction':{'source':'dsh_native_skill'},
+                'execution_backend':'narrative','initial':snapshot,'parameters':params}
+        with patch.object(scenario_builder,'load',return_value=record):
+            response=TestClient(main.app).post('/api/sessions',json={'scenario':'旧草稿验证',
+                'battle':BAOZUO,'product_mode':'historical','simulation_mode':'open',
+                'execution_backend':'narrative','scenario_draft_id':'a'*32,'historical_parameters':params})
+        self.assertEqual(response.status_code,422)
+        self.assertIn('重新装载验证',response.json()['detail'])
+
+    def test_new_historical_draft_starts_all_units_and_keeps_source_schedule(self):
+        from backend import scenario_builder as b
+        from gentactix import campaign
+        from tools.qa.baozuo_fixture import inputs as baozuo_inputs
+        snapshot, params=baozuo_inputs(); original=copy.deepcopy(params)
+        with tempfile.TemporaryDirectory() as folder,patch.dict(os.environ,{'GENTACTIX_SESSION_DIR':folder+'/sessions'}):
+            staged=b.stage_historical(snapshot,params,construction={'source':'dsh_native_skill'},execution_backend='narrative')
+            self.assertEqual(staged['parameters']['campaign']['availability_mode'],'immediate')
+            self.assertEqual(staged['parameters']['campaign']['arrivals'],original['campaign']['arrivals'])
+            self.assertEqual(params,original)
+            world=historical_operations.initial(snapshot,staged['parameters'])
+            self.assertTrue(all(actor['active'] for actor in world['campaign']['actors'].values()))
+            self.assertTrue(all(campaign.release_seconds(world,u)==0 for team in ('red','blue') for u in world[team+'_units']))
+
     def test_saved_legacy_window_drafts_remain_discoverable_after_transport_projection(self):
         from backend import scenario_builder as b
         from gentactix import campaign_windows as cw

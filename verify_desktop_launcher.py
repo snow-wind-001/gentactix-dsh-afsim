@@ -2,6 +2,7 @@
 import contextlib
 import io
 import os
+import shlex
 from pathlib import Path
 import subprocess
 import sys
@@ -21,7 +22,8 @@ class DesktopLauncherTests(unittest.TestCase):
             source = root / 'fake.AppImage'
             # Model the observed runtime boundary: extraction is shared, while
             # a second Electron process can exit before the first process does.
-            source.write_text(f'#!{sys.executable}\n' + textwrap.dedent('''\
+            helper = root / 'fake_appimage.py'
+            helper.write_text(textwrap.dedent('''\
                 import os, shutil, sys, time
                 from pathlib import Path
                 root = Path(os.environ['GTX_LAUNCH_TEST_STATE'])
@@ -41,6 +43,8 @@ class DesktopLauncherTests(unittest.TestCase):
                     if os.environ.get('NO_CLEANUP') != '1':
                         shutil.rmtree(payload, ignore_errors=True)
                 '''))
+            source.write_text('#!/bin/sh\nexec ' + shlex.quote(sys.executable) + ' ' +
+                              shlex.quote(str(helper)) + ' "$@"\n')
             source.chmod(0o755)
             data = root / 'user data'
             desktop = root / 'Desktop'

@@ -206,6 +206,12 @@ def _names(unit, allocations, mode, snapshot):
     parent = index.get(unit.get('historical_unit_id'))
     if parent is None:
         raise ValueError('历史父单位不在冻结资料中')
+    # Calculated parts retain the source parent identity; labels never become
+    # historical IDs or evidence of an actual subordinate formation.
+    if all(set(p) == {'id', 'label', 'committed'} for p in allocations):
+        for part in allocations:
+            _text(part['label'], '计算分队名称', 40)
+        return [dict(name=unit['name']+' · '+p['label']+'（计算分队）') for p in allocations]
     known_children = {u['id'] for u in index.values() if u['parent_id'] == parent['id']}
     selected = set(); residual = False; result = []
     for p in allocations:

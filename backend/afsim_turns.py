@@ -68,8 +68,14 @@ def advance(session, prepared, observer, *, instruction='', briefing='', native_
             except ValueError as exc:
                 if attempt:
                     raise
-                prompt += ('\n【候选未执行，战局和资源未改动】' + str(exc)[:1200] +
+                # A parse exception contains the raw model response. Do not
+                # feed that untrusted text back into the next planning run.
+                reason = ('AI 返回的 JSON 无法解析：' + exc.diagnostics['reason']
+                          if isinstance(exc, h.JSONOutputError) else str(exc)[:1200])
+                prompt += ('\n【候选未执行，战局和资源未改动】' + reason +
                     '。这是最后一次校验重试。重新观察必要单位，核对完整ID和可用行动，返回完整orders。'
+                    + ('原生规划工具可用时，请调用submit_planner_orders提交完整候选；仅文字确认不能代替提交。'
+                       if native_submit else '') +
                     '合法身份：' + json.dumps({identity: entry['name'] for identity, entry in by_id.items()}, ensure_ascii=False))
     proposals.extend(copy.deepcopy(list(native_orders)))
     executed = commands.merge_proposal(session, prepared, proposals)

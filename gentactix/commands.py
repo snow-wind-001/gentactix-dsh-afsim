@@ -271,6 +271,7 @@ def capabilities(session, unit, team):
         if process is not None:
             weapons['arrival']={'status':'staging' if campaign.release_seconds(session['war_state'],unit)>0 else 'active',
                 'not_before':campaign.scheduled_time(process,unit,world=session['war_state']),'source':'model_schedule',
+                **({'availability_mode':'immediate'} if process.get('availability_mode')=='immediate' else {}),
                 **campaign.schedule_metadata(process,unit,world=session['war_state'])}
             if process['surrender']['enabled']:weapons['capture_range_m']=process['surrender']['range_m']
     from . import air_assets

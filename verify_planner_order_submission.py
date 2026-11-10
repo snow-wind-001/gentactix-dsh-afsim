@@ -188,6 +188,21 @@ class PlannerOrderSubmissionTests(unittest.TestCase):
         self.assertEqual(sum('proposal' in r for r in records), 20)
         self.assertEqual(sum('proposal' in r for r in state['receipts']), 20)
 
+    def test_native_retry_requests_tool_without_replaying_invalid_text(self):
+        from backend import afsim_turns
+        native = [commands.step_order(self.session, dict(unit_id=self.agent['id'],
+            action='hold', duration='next'), self.prepared['state'])]
+        error = h.JSONOutputError('untrusted raw content', raw_text='untrusted raw content', reason='missing_complete_object')
+        with patch.object(h, 'NATIVE_RUNTIME', True), \
+             patch.object(h, 'get_ai_response', side_effect=[error, self.args]) as planner, \
+             patch.object(afsim_turns, 'execute_scene', return_value='fixture') as execute:
+            self.assertEqual(afsim_turns.advance(self.session, self.prepared, self.observer, native_orders=native), 'fixture')
+        self.assertEqual(planner.call_count, 2)
+        retry = planner.call_args.args[0]
+        self.assertIn('submit_planner_orders', retry)
+        self.assertNotIn('untrusted raw content', retry)
+        execute.assert_called_once()
+
 
 if __name__ == '__main__':
     unittest.main()

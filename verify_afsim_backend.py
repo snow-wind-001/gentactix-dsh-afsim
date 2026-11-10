@@ -157,7 +157,7 @@ class AfsimBackendTests(unittest.TestCase):
 
     def test_malformed_json_gets_existing_feedback_retry_before_execution(self):
         sid = self.create(); calls = self.executor.call_count
-        malformed = '{"orders":[{"destination":{"lat":39.97,","lng":125.8035}}]}'
+        malformed = '{"orders":[{"note":"untrusted-raw-marker","destination":{"lat":39.97,","lng":125.8035}}]}'
         def first(*_args, **_kwargs):
             self.planner.side_effect = None
             self.planner.return_value = self.full_plan(sid)
@@ -169,6 +169,7 @@ class AfsimBackendTests(unittest.TestCase):
         self.assertEqual(self.executor.call_count, calls + 1)
         self.assertIn('JSON', self.planner.call_args.args[0])
         self.assertIn('候选未执行', self.planner.call_args.args[0])
+        self.assertNotIn('untrusted-raw-marker', self.planner.call_args.args[0])
 
     def test_repeated_parse_failure_keeps_world_time_and_manual_queue(self):
         sid = self.create()

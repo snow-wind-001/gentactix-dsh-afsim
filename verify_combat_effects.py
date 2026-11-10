@@ -11,6 +11,21 @@ class CombatEffectsTests(unittest.TestCase):
     def world(self):
         return historical_operations.initial(*inputs())
 
+    def test_new_baozuo_reference_has_no_taierzhuang_assumption_and_frozen_reference_is_preserved(self):
+        from gentactix import combat_effects as c
+        world = {'mission': {'definition': {'battle': '红军长征-包座战役-1935.08.29至1935.09.01'}}}
+        reference = c.reference(world)
+        self.assertTrue(any('本场战役已知分项' in s for s in reference['assumptions']))
+        self.assertFalse(any('台儿庄' in s for s in reference['assumptions']))
+        c.validate_profile(reference)
+        old = copy.deepcopy(reference)
+        old['assumptions'][4] = '阵亡比例0.25是伤亡分类假设，不是台儿庄已知分项；其余新伤亡为负伤，既有未分类损失不改写。'
+        old['definition_hash'] = c.digest({k:v for k,v in old.items() if k != 'definition_hash'})
+        world['combat_reference'] = copy.deepcopy(old)
+        self.assertEqual(c.reference(world), old)
+        self.assertEqual(world['combat_reference'], old)
+        self.assertTrue(any('不是台儿庄已知分项' in s for s in c.reference(self.world())['assumptions']))
+
     def test_local_completion_never_claims_campaign_completion(self):
         from backend import afsim_state
         world=self.world();world['mission'].update(status='completed',winner='red')

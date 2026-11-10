@@ -112,7 +112,9 @@ def instruction(world):
     return ('\n本局有显式战役过程参数。每轮额外提交campaign={"actors":{"精确单位名":'
         '{"active":布尔值,"fortification_integrity":0至100,"base_entrenchment":0至100,"captured_this_turn":本轮被俘整数}}}，覆盖全部单位。'
         '响应最外层的campaign仅包含actors；combined_arms如需更新，放在响应最外层与campaign并列。'
-        'active严格按轮末时钟与not_before判断；等待部队不能提前移动、开火或被攻击。'
+        + ('本局全部配置单位从开局active，not_before仅为来源估计参考，不限制行动。'
+           if spec.get('availability_mode')=='immediate' else
+           'active严格按轮末时钟与not_before判断；等待部队不能提前移动、开火或被攻击。') +
         '永久工事完整度不能增加，减少量不超过实际命中该目标的炮击单位所消耗炮弹×degradation_per_shell；未炮击不减。'
         'base_entrenchment只允许本单位fortify且有材料消耗时增加；不要提交base_protection或来源。'
         'capture命令附target，须满足已知受降范围和压制/缺弹条件；模型可以估计部分或零人受降，不能强制复刻历史俘虏配额。'

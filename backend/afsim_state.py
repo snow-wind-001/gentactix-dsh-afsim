@@ -150,6 +150,10 @@ def _clock_context(session):
 
 
 def observation(session, args=None):
+    return _observation(session, args)
+
+
+def _observation(session, args=None, *, resolved=None):
     args = args or {}
     if not isinstance(args, dict) or type(args.get('detail', False)) is not bool:
         raise ValueError('detail须为布尔值；默认紧凑观测，true按单位读取完整字段')
@@ -161,8 +165,11 @@ def observation(session, args=None):
     if not isinstance(ids, list) or len(ids) > 16 or any(not isinstance(identity, str) for identity in ids):
         raise ValueError('一次最多查询16个单位ID')
     readonly_history = bool(session['war_state'].get('history_replay'))
-    cs = commands.state(session)
-    pairs = commands.resolve_units(session, cs)
+    if resolved is None:
+        cs = commands.state(session)
+        pairs = commands.resolve_units(session, cs)
+    else:
+        cs, pairs = resolved
     # A source prompt names historical references, while the shared reader also
     # serves registered operational IDs. Resolve aliases only in readonly replay;
     # an open battle may have several calculation parts from the same reference.
@@ -406,14 +413,15 @@ def observation(session, args=None):
 def initial_observation(session):
     # The first page used to contain only red units in larger scenarios. Keep
     # normal paging stable, but seed the planner with a bounded view of both sides.
-    pairs = commands.resolve_units(session)
+    cs = commands.state(session)
+    pairs = commands.resolve_units(session, cs)
     ids = [identity for team in ('red', 'blue') for identity, (entry, _) in pairs.items()
            if entry['team'] == team]
     red = [i for i in ids if pairs[i][0]['team'] == 'red']
     blue = [i for i in ids if pairs[i][0]['team'] == 'blue']
     chosen = red[:4] + blue[:4]
     chosen += [i for i in ids if i not in chosen][:8-len(chosen)]
-    value = observation(session, {'ids': chosen, 'limit': 8})
+    value = _observation(session, {'ids': chosen, 'limit': 8}, resolved=(cs, pairs))
     value['next_offset'] = None
     value['registered_list_complete']=len(chosen)==len(pairs)
     value['paging_note'] = (f'本次已覆盖全部已登记单位条目（{len(pairs)}条）；不证明完整历史编制或传感器探测范围。' if value['registered_list_complete'] else

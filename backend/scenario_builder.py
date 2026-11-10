@@ -103,6 +103,45 @@ def bind_model_configuration(identity,config, *, historical_base=None):
     return {**copy.deepcopy(config),'version':seed['version'],'historical_basis':seed['historical_basis']}
 
 
+def generate_exercise_candidate(identity, prompt, context, observer, *, historical_base=None, combat_reference=None):
+    """Retry one rejected model candidate without staging or repairing its text."""
+    required = {'read_scenario_skill', 'get_scenario_basis', 'validate_scenario_configuration'}
+    for attempt in range(2):
+        if observer.cancel_requested:
+            raise RuntimeError('已取消想定生成；已有战局未改动')
+        start = len(observer.runs)
+        result = h._run_brain(prompt, None, role='scenario-builder', observer=observer, native_context=context,
+                              cancel_check=lambda: observer.cancel_requested)
+        try:
+            if observer.cancel_requested:
+                raise RuntimeError('已取消想定生成；已有战局未改动')
+            answer = h.parse_json_object(result.final_response)
+            if not isinstance(answer, dict) or set(answer) - {'configuration', 'explanation'} or 'configuration' not in answer:
+                raise ValueError('想定生成只能返回configuration与explanation，且必须包含configuration')
+            calls = {event.get('name') for run in observer.runs[start:] for event in run.get('events', [])
+                     if event.get('type') == 'tool/call'}
+            if not required <= calls:
+                raise ValueError('缺少本次DSH实际skill/史料/配置校验调用证据，未接受直接生成结果')
+            config = bind_model_configuration(identity, answer['configuration'], historical_base=historical_base)
+            validate_configuration(identity, config, historical_base=historical_base, combat_reference=combat_reference)
+            return answer, config
+        except (ValueError, KeyError, TypeError) as exc:
+            if len(observer.runs) > start:
+                observer.runs[-1].update(accepted=False, rejection='invalid_scenario_candidate')
+            if attempt or observer.cancel_requested:
+                raise
+            # The model must regenerate its candidate; never infer or patch a
+            # broken response, and never include its full raw text in feedback.
+            reason = exc.diagnostics['reason'] if isinstance(exc, h.JSONOutputError) else str(exc)[:500]
+            observer.progress.update(phase='scenario_output_recovery', recovery_attempt=1)
+            prompt += ('\n【配置未提交，重新生成】上次候选未通过校验：' + reason +
+                '。请重新读取skill和史料基础，再调用配置校验工具；'
+                'configuration只包含teams和种子已有规则字段，teams只包含red和blue数组；'
+                '不要添加engine、seed_policy或validation_status等说明字段。'
+                'explanation放在configuration之外；输出完整合法JSON。')
+    raise AssertionError('unreachable')
+
+
 def configuration_alternatives(battle,termination_mode=None):
     """Offer explicit supported scopes, never change a requested version or facts."""
     choices=[]
@@ -394,6 +433,10 @@ def stage_historical(snapshot, parameters, *, construction, parent=None, cancel_
         from gentactix import campaign_windows
         parameters['campaign_scope']['window']=campaign_windows.transport_pin(snapshot,window)
     scenario_constraints.validate(parameters,construction.get('fixed_parameters'))
+    # New interactive teaching scenarios start with all configured units
+    # available. Preserve the original estimated schedule as reference data.
+    if parameters.get('campaign') is not None:
+        parameters['campaign']['availability_mode'] = 'immediate'
     historical_operations.initial(snapshot, parameters)
     parameters = copy.deepcopy(parameters)
     parameters['goal']['description'] = historical_goal_text(parameters)
@@ -959,22 +1002,17 @@ def build_router(serialized):
                 '调用get_scenario_basis读取本次史料基础，调用validate_scenario_configuration校验最终候选。'
                 '只返回JSON {"configuration":...,"explanation":"说明估计参数"}。'
                 '不生成战损结果，不把派生演习称为原始历史复原。用户需求：'+req.instruction)
-            result=h._run_brain(prompt,None,role='scenario-builder',observer=observer,native_context=context)
-            answer=h.parse_json_object(result.final_response)
-            if not isinstance(answer,dict) or set(answer)-{'configuration','explanation'}:
-                raise ValueError('想定生成只能返回configuration与explanation')
-            calls={event.get('name') for run in observer.runs for event in run.get('events',[])
-                   if event.get('type')=='tool/call'}
-            if not {'read_scenario_skill','get_scenario_basis','validate_scenario_configuration'} <= calls:
-                raise ValueError('缺少DSH实际skill/史料/配置校验调用证据，未接受直接生成结果')
+            answer,config=generate_exercise_candidate(req.mission_id,prompt,context,observer,
+                historical_base=binding,combat_reference=reference)
             construction={'source':'dsh_native_skill','skill':'historical-afsim-scenario',
                 'explanation':str(answer.get('explanation') or '')[:2000],
                 'runs':extensions.safe(observer.runs),'meta':observer.meta()}
-            config=bind_model_configuration(req.mission_id,answer['configuration'],historical_base=binding)
             return stage(req.mission_id,config,construction=construction,cancel_check=lambda:observer.cancel_requested,
                 execution_backend=req.execution_backend,historical_base=binding,combat_reference=reference)
         except (ValueError,KeyError,TypeError,RuntimeError) as exc:
-            raise HTTPException(502,'想定配置生成未完成：'+str(exc)+'；已有战局未改动') from exc
+            detail = ('AI 返回的 JSON 无法解析：' + exc.diagnostics['reason']
+                      if isinstance(exc, h.JSONOutputError) else str(exc))
+            raise HTTPException(502,'想定配置生成未完成：'+detail+'；已有战局未改动') from exc
         finally:
             with _active_lock:
                 _active.pop(req.operation_id,None)

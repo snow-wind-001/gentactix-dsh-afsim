@@ -16,9 +16,11 @@ def layout(project=PROJECT):
     code = Path(getattr(sys, '_MEIPASS', project))
     vendor = project / 'vendor/afsim'
     local = vendor / 'local/afsim'
-    runtime = local / 'runtime/afsim-2.9.0-win64'
+    native_root = os.environ.get('GENTACTIX_AFSIM_LINUX_ROOT') if sys.platform == 'linux' else None
+    runtime = Path(native_root).expanduser().resolve() if native_root else local / 'runtime/afsim-2.9.0-win64'
     return {'project': project, 'vendor': vendor, 'local': local, 'runtime': runtime,
-            'mission': runtime / 'bin/mission.exe', 'compat': local / 'compat',
+            'native_linux': bool(native_root),
+            'mission': runtime / ('bin/mission' if native_root else 'bin/mission.exe'), 'compat': local / 'compat',
             'wine': local / 'compat/usr/lib/wine/wine64',
             'prefix': local / 'wineprefix', 'state': local / 'state',
             'workspace': local / 'workspace',
@@ -29,7 +31,7 @@ def layout(project=PROJECT):
 def mission_command(paths, arguments, platform=None):
     platform = platform or sys.platform
     native = [str(paths['mission']), *map(str, arguments)]
-    if platform == 'win32':
+    if platform == 'win32' or (platform == 'linux' and paths.get('native_linux')):
         return native
     if platform == 'linux':
         return [str(paths['wine']), *native]
@@ -43,7 +45,14 @@ def execution_env(paths, source=None, platform=None):
             env.pop(name)
     env['PYTHONIOENCODING'] = 'utf-8'
     env['PYTHONDONTWRITEBYTECODE'] = '1'
-    if (platform or sys.platform) == 'linux':
+    if (platform or sys.platform) == 'linux' and paths.get('native_linux'):
+        runtime = paths['runtime']
+        libraries = [runtime / 'bin/lib']
+        for directory in sorted((runtime / '3rd_party').glob('*')):
+            libraries.extend(p for p in (directory / 'lib', directory / 'lib64') if p.is_dir())
+        extra = env.get('GENTACTIX_AFSIM_EXTRA_LIBS', '')
+        env['LD_LIBRARY_PATH'] = os.pathsep.join(filter(None, [*(str(p) for p in libraries), extra, env.get('LD_LIBRARY_PATH', '')]))
+    elif (platform or sys.platform) == 'linux':
         compat = paths['compat']
         lib = compat / 'usr/lib/x86_64-linux-gnu'
         env.update(WINEPREFIX=str(paths['prefix']), WINEARCH='win64', WINEDEBUG='-all',
@@ -68,11 +77,11 @@ def status(paths=None, platform=None):
     paths = paths or layout()
     platform = platform or sys.platform
     required = [paths['mission'], paths['mcp']]
-    if platform == 'linux':
+    if platform == 'linux' and not paths.get('native_linux'):
         required += [paths['wine'], paths['prefix'] / 'drive_c/windows/system32/zlib1.dll']
     missing = [str(path) for path in required if not path.exists()]
     return {'available': not missing, 'verified': False, 'missing': missing,
-            'mode': 'native-windows' if platform == 'win32' else 'wine-cli',
+            'mode': 'native-linux' if paths.get('native_linux') else ('native-windows' if platform == 'win32' else 'wine-cli'),
             'runtime': str(paths['runtime']),
             'note': '文件存在仅代表已配置；实际执行须检查退出码、版本和结果证据。'}
 
@@ -95,7 +104,7 @@ def prepare_mcp(paths=None):
 def prepare_runtime(paths=None):
     """Recreate a project-owned Wine prefix after copying the runtime bundle."""
     paths = paths or layout()
-    if sys.platform == 'win32':
+    if sys.platform == 'win32' or paths.get('native_linux'):
         return
     import shutil
     target = paths['prefix'] / 'drive_c/windows/system32/zlib1.dll'

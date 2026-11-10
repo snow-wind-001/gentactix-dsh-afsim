@@ -31,9 +31,9 @@ function removePart(id:string,part:string){const row=props.value.arrivals[id];if
   </details>
   <details v-for="actor in actors" :key="actor.id" :data-campaign-actor="actor.id"><summary>{{actor.team==='red'?'红方':'蓝方'}} · {{actor.name}} · 入场与工事</summary>
    <template v-if="value.arrivals[actor.id]&&value.fortifications[actor.id]">
-    <ArrivalScheduleEditor :entry="value.arrivals[actor.id]!" :label="actor.name" :references="constraints?.entries.filter(r=>r.unit_id===actor.id)??[]" />
+    <ArrivalScheduleEditor :entry="value.arrivals[actor.id]!" :label="actor.name" :immediate="value.availability_mode==='immediate'" :references="constraints?.entries.filter(r=>r.unit_id===actor.id)??[]" />
     <div v-for="part in partitions?.groups[actor.id]?.parts??[]" :key="part.id" class="part">
-     <template v-if="value.arrivals[actor.id]!.parts?.[part.id]"><strong>{{part.label}}</strong><ArrivalScheduleEditor :entry="value.arrivals[actor.id]!.parts![part.id]!" :label="part.label" :references="constraints?.entries.filter(r=>r.unit_id===actor.id)??[]" /><button type="button" @click="removePart(actor.id,part.id)">恢复继承父单位时点</button></template>
+     <template v-if="value.arrivals[actor.id]!.parts?.[part.id]"><strong>{{part.label}}</strong><ArrivalScheduleEditor :entry="value.arrivals[actor.id]!.parts![part.id]!" :label="part.label" :immediate="value.availability_mode==='immediate'" :references="constraints?.entries.filter(r=>r.unit_id===actor.id)??[]" /><button type="button" @click="removePart(actor.id,part.id)">恢复继承父单位时点</button></template>
      <button v-else type="button" @click="addPart(actor.id,part.id)">为{{part.label}}单独设置入场</button>
     </div>
     <div class="grid"><label>初始工事完整度<input v-model.number="value.fortifications[actor.id]!.integrity" type="number" min="0" max="100" :aria-label="`${actor.name}工事完整度`"></label><label>每发工事损耗系数<input v-model.number="value.fortifications[actor.id]!.degradation_per_shell" type="number" min="0" max="100" step="0.01"></label></div>

@@ -211,6 +211,19 @@ class ConversionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'在场|阶段'):
             fc.split_current(u,parts,assumption='QA',operation_id='d'*32,product_mode='historical',historical_snapshot=s)
 
+    def test_estimated_parts_keep_source_parent_and_conserve_resources(self):
+        snapshot=hi.initial(BATTLE,'oct7_attack',version='1.3.0')['historical_initial']
+        unit=damaged();unit.update(historical_unit_id='ww2.cn.army74',name='第74军')
+        proposal=fc.split_current(unit,parts(),assumption='教学计算分队，番号和分配均为估计',
+            operation_id='e'*32,product_mode='historical',historical_snapshot=snapshot)
+        self.assertEqual(proposal['totals_before'],proposal['totals_after'])
+        for child in proposal['after']:
+            self.assertEqual(child['historical_unit_id'],unit['historical_unit_id'])
+            self.assertIn('计算分队',child['name'])
+            self.assertEqual(child['runtime_allocation']['parent_identity']['historical_unit_id'],unit['historical_unit_id'])
+        merged=fc.merge_current(proposal['after'],assumption='合并教学计算分队',operation_id='f'*32)
+        self.assertEqual(merged['totals_before'],merged['totals_after'])
+
 
 class ConversionIntegrationTests(unittest.TestCase):
     def setUp(self):

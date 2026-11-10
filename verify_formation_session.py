@@ -178,6 +178,23 @@ class SessionHandoffTests(unittest.TestCase):
         rest=next(u for u in after['war_state']['red_units'] if u.get('runtime_allocation') and u['name'].endswith('未分配余部（估计）'))
         self.assertIn('ww2.cn.army74',forces.effective_command_chains(after)[forces.leaf_key('red',rest)])
 
+    def test_estimated_historical_parts_remain_under_parent_in_command_tree(self):
+        from tools.qa.formation_ownership_fixture import historical_parent_world
+        w=historical_parent_world();s=dict(id='b'*12,war_state=w,turn_count=0,role_epoch=0,product_mode='historical',
+            simulation_mode='open',execution_backend='narrative',time_step=w['mission']['definition']['time_step'])
+        s['command_state']=commands.replace_queue(s,[],control_team='red',director=True,no_fire=False,intent='QA')
+        parent=next(u for u in w['red_units'] if u['historical_unit_id']=='ww2.cn.army74')
+        p=fc.split_current(parent,[dict(id='a',label='甲团级估计',committed=4000),dict(id='b',label='乙团级估计',committed=6000)],
+            assumption='教学计算分队，并非历史番号',operation_id='e'*32,product_mode='historical',historical_snapshot=w['historical_initial'])
+        after=prepare(s,p)['session'];view=forces.view(after)
+        node=next(n for n in view['nodes'] if n['id']=='ww2.cn.army74')
+        self.assertEqual(node['totals']['committed'],10000)
+        self.assertEqual(node['totals']['units'],2)
+        children=[u for u in after['war_state']['red_units'] if u.get('runtime_allocation')]
+        self.assertEqual(len(children),2)
+        for child in children:
+            self.assertIn('ww2.cn.army74',forces.effective_command_chains(after)[forces.leaf_key('red',child)])
+
     def test_task_round_settlement_counts_each_current_actor_once_without_summing_ancestors(self):
         s,uid,group=setup();tid=register(s,group);r=s['command_state']['task_plans'][tid]['execution']
         r['member_states'][uid]['executions']=3;tasks._stamp(r)

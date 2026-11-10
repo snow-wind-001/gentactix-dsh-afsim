@@ -160,6 +160,7 @@ export interface ArrivalSchedule {
   not_before:string;assumption:string;event_kind?:'departure'|'battlefield_entry';reference_id?:string;
 }
 export interface CampaignConfiguration {
+  availability_mode?:'scheduled'|'immediate';
   objective_policy?:'defensive-delay-1';
   version:string;assumption:string;
   arrivals:Record<string,ArrivalSchedule&{parts?:Record<string,ArrivalSchedule>}>;
@@ -634,7 +635,7 @@ export interface CommandUnit { id: string; team: string; name: string; present: 
   logistics?: { food?: number; ammo?: number } | null; attack_range?: number;
   position: MapPoint | null; available: boolean; controllable: boolean;
   capabilities: { actions: string[]; enabled: boolean; reason: string; move_km: number; movement_basis: string; unsupported: string[];
-    arrival?:{status:'active'|'staging';not_before:string;source:'model_schedule';event_kind?:ArrivalSchedule['event_kind'];reference_id?:string};capture_range_m?:number;
+    arrival?:{status:'active'|'staging';not_before:string;source:'model_schedule';availability_mode?:'immediate';event_kind?:ArrivalSchedule['event_kind'];reference_id?:string};capture_range_m?:number;
     air_pools?:{id:string;name:string;package:number}[];
     participation?:ParticipationView;
     operation_routes?:{id:string;inside:MapPoint;outside:MapPoint;on_corridor:boolean}[];

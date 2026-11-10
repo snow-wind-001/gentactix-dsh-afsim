@@ -18,7 +18,7 @@ const selectedSupply = computed(()=>{
 const emit = defineEmits<{ preview: [value: CommandPreview | null]; picking: [value: 'move' | 'fire' | null];
   queueChanged: [];
   opened: [value: boolean];
-  selected: [value: { team: string; name: string } | null]; busy: [value: string]; snapshot: [value: Snapshot] }>();
+  selected: [value: { team: string; name: string } | null]; 'open-formation':[unitId:string]; busy: [value: string]; snapshot: [value: Snapshot] }>();
 const data = ref<CommandView | null>(null), opened = ref(false), localBusy = ref(false), error = ref('');
 watch(opened, value => emit('opened', value));
 const selectedId = ref(''), picking = ref<'move' | 'fire' | null>(null), action = ref('hold');
@@ -294,6 +294,8 @@ defineExpose({ select, mapTarget, next, refresh, applyConversion,close });
         <p v-for="warning in selected.capabilities.weapon_warnings??[]" :key="warning" class="muted" data-testid="weapon-warning">{{warning}}</p>
         <p class="muted" v-if="!canCommand">{{ selected.capabilities.reason || '无指挥权限；双边控制需启用导演模式并保存' }}</p>
         <p v-if="selected.capabilities.arrival?.status==='staging'" class="muted" data-testid="unit-arrival">{{selected.capabilities.arrival.event_kind==='departure'?'待启程': '待入场'}} · {{selected.capabilities.arrival.not_before}}起可参与行动（计算时点估计）。{{selected.capabilities.arrival.event_kind==='departure'?'解锁后仍须按命令行军，不表示已接敌。':selected.capabilities.arrival.event_kind==='battlefield_entry'?'从配置的前沿区域参与，不模拟此前驻地行程。':''}}保留人员装备账，可待命、补给、侦察或恢复联络。</p>
+        <p v-if="selected.capabilities.arrival?.availability_mode==='immediate'" class="muted">本局所有配置单位开局可行动；原估计入场时间仅作参考，并非历史实到。</p>
+        <button type="button" data-testid="open-formation" :disabled="locked||!canCommand" @click="emit('open-formation',selected.id)">拆分／合并单位与查看隶属</button>
         <p v-if="selected.capabilities.participation" class="muted" data-testid="unit-participation-status">当前参与：{{selected.capabilities.participation.label}}<template v-if="selected.capabilities.participation.operation_zone"> · 作战区{{selected.capabilities.participation.operation_zone==='inside'?'内':'外'}}</template> · {{selected.capabilities.participation.controls_objectives?'可承担作战目标':'暂不承担作战目标'}}。后方仍保留实际位置、伤损与库存，可受到攻击。</p>
         <label>行动<select ref="actionMenu" data-testid="unit-action" v-model="action" :disabled="locked || !canCommand" @change="duration = 'next';participation='' "><option v-for="a in selected.capabilities.actions" :key="a" :value="a">{{ labels[a] ?? a }}</option></select></label>
         <p v-if="selected.capabilities.weapon_limits_m?.[action]" class="muted" data-testid="selected-weapon-range">当前动作射程 {{selected.capabilities.weapon_limits_m[action]!.min_range_m}}—{{selected.capabilities.weapon_limits_m[action]!.max_range_m}} m；射程不代表通视、命中或行动已获准。</p>

@@ -715,6 +715,9 @@ def create_session(req: CreateSessionRequest):
                     raise ValueError('历史草稿与所选战役不一致')
                 if missions.digest(canonical_numbers(construction['parameters'])) != missions.digest(canonical_numbers(req.historical_parameters)):
                     raise ValueError('历史参数已修改，请重新装载验证')
+                stored_campaign = construction['parameters'].get('campaign')
+                if stored_campaign is not None and stored_campaign.get('availability_mode') != 'immediate':
+                    raise ValueError('此旧草稿沿用分批入场，请重新装载验证以建立开局全员可行动的新战局；旧存档不受影响')
                 initial = construction['initial']
                 if req.historical_initial_version is not None and req.historical_initial_version!=initial['version']:
                     raise ValueError('所选历史初态版本与冻结配置草稿不一致')
@@ -727,7 +730,10 @@ def create_session(req: CreateSessionRequest):
                 historical_definition=historical_operations.from_binding(dict(format=historical_operations.FORMAT,
                     initial=initial,parameters=construction['parameters']))
             else:
-                historical_definition = historical_operations.definition(initial, req.historical_parameters)
+                parameters = copy.deepcopy(req.historical_parameters)
+                if parameters.get('campaign') is not None:
+                    parameters['campaign']['availability_mode'] = 'immediate'
+                historical_definition = historical_operations.definition(initial, parameters)
             if ('time_step' in req.model_fields_set and sim_clock.duration_seconds(req.time_step)
                     != sim_clock.duration_seconds(historical_definition['time_step'])):
                 raise ValueError('回合跨度与已验证历史配置不一致，请重新验证当前选择；不会覆盖启动页设置')

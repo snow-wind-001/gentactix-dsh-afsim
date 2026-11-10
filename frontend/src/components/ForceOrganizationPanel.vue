@@ -3,11 +3,12 @@ import {computed,ref,watch} from 'vue';
 import {api,ApiError} from '../api';
 import ForceTaskExecutionPanel from './ForceTaskExecutionPanel.vue';
 import FormationConversionPanel from './FormationConversionPanel.vue';
-import type {ForceView,ForceNode,MapPoint,ForceTask,ForceTaskRole,ForceTaskPreview,ForceTaskExecutionDefinition,FormationConversionCommit,FormationConversionResponse} from '../types';
+import type {CommandUnit,ForceView,ForceNode,MapPoint,ForceTask,ForceTaskRole,ForceTaskPreview,ForceTaskExecutionDefinition,FormationConversionCommit,FormationConversionResponse} from '../types';
 const props=defineProps<{sessionId:string;turn:number;busy:boolean;readonly?:boolean;productMode?:'analysis'|'historical'|'synthetic';
  submitConversion:(sid:string,request:FormationConversionCommit)=>Promise<FormationConversionResponse>}>();
 const emit=defineEmits<{changed:[];'pick-map':[];selection:[ids:string[]];'unit-select':[value:{team:string;name:string}]}>();
 const data=ref<ForceView|null>(null),loading=ref(false),working=ref(false),error=ref(''),notice=ref('');
+const commandUnits=ref<CommandUnit[]>([]);
 const search=ref(''),team=ref(''),selected=ref<string[]>([]),groups=ref<string[]>([]),target=ref('');
 const hierarchy=ref<'historical'|'command'>('command');
 const label=ref(''),assumption=ref(''),action=ref('hold'),destination=ref<MapPoint|null>(null),parent=ref('');
@@ -27,9 +28,9 @@ watch([taskInput,replaceExisting,target,execution],()=>{if(preview.value)preview
 watch(target,()=>{roles.value={};enemy.value='';});
 watch([taskKind,action],()=>{participation.value='';});
 let generation=0;
-async function refresh(){const g=++generation;loading.value=true;error.value='';try{const r=await api.forces(props.sessionId);if(g===generation){
+async function refresh(){const g=++generation;loading.value=true;error.value='';try{const [r,commands]=await Promise.all([api.forces(props.sessionId),api.commands(props.sessionId)]);if(g===generation){
  if(preview.value&&data.value&&(r.command_revision!==data.value.command_revision||r.revision!==data.value.revision))previewDirty.value=true;
- data.value=r;selected.value=selected.value.filter(i=>r.controllable_ids.includes(i));groups.value=groups.value.filter(i=>r.groups.some(g=>g.id===i));
+ data.value=r;commandUnits.value=commands.world_version===r.world_version&&commands.revision===r.command_revision?commands.units:[];selected.value=selected.value.filter(i=>r.controllable_ids.includes(i));groups.value=groups.value.filter(i=>r.groups.some(g=>g.id===i));
 }}catch(e){if(g===generation)error.value=String(e);}finally{if(g===generation)loading.value=false;}}
 watch(()=>[props.sessionId,props.turn],()=>{selected.value=[];groups.value=[];target.value='';parent.value='';notice.value='';preview.value=null;roles.value={};void refresh();},{immediate:true});
 const disabled=computed(()=>props.busy||working.value||loading.value||props.readonly);
@@ -45,6 +46,11 @@ const rows=computed(()=>{
 function displayIds(node:ForceNode){return hierarchy.value==='command'?(node.command_execution_ids??node.execution_ids):node.execution_ids;}
 function displayChildren(node:ForceNode){return hierarchy.value==='command'?(node.command_children??node.children):node.children;}
 function displayTotals(node:ForceNode){return hierarchy.value==='command'?(node.command_totals??node.totals):node.totals;}
+function directMembers(node:ForceNode){
+ const descendants=new Set(displayChildren(node).flatMap(id=>{const child=data.value?.nodes.find(n=>n.id===id);return child?displayIds(child):[];}));
+ const ids=displayIds(node).filter(id=>!descendants.has(id));
+ return ids.length>1?commandUnits.value.filter(unit=>ids.includes(unit.id)&&unit.present):[];
+}
 function selectable(node:ForceNode){return displayIds(node).filter(i=>data.value?.controllable_ids.includes(i));}
 function toggle(node:ForceNode){const ids=selectable(node),all=ids.length&&ids.every(i=>selected.value.includes(i));selected.value=all?selected.value.filter(i=>!ids.includes(i)):[...new Set([...selected.value,...ids])];emit('selection',selected.value);target.value=node.id;}
 function revision(){const v=data.value!;return {expected_turn:v.turn,revision:v.command_revision,world_version:v.world_version,organization_revision:v.revision};}
@@ -74,14 +80,20 @@ async function confirmTask(){
  }catch(e){error.value=String(e);previewDirty.value=true;await refresh();error.value=String(e);}finally{working.value=false;}
 }
 function mapPoint(point:MapPoint){destination.value=point;}
+async function selectForConversion(id:string){
+ await refresh();
+ if(data.value?.controllable_ids.includes(id)){selected.value=[id];emit('selection',selected.value);}
+ await new Promise<void>(resolve=>requestAnimationFrame(()=>resolve()));
+ document.querySelector<HTMLElement>('[data-testid="formation-conversion"]')?.scrollIntoView({block:'start'});
+}
 function setRole(unitId:string,event:Event){roles.value[unitId]=(event.target as HTMLSelectElement).value as ForceTaskRole|'';}
-defineExpose({refresh,mapPoint});
+defineExpose({refresh,mapPoint,selectForConversion});
 </script>
 
 <template>
  <section class="force-panel" data-testid="force-organization">
   <header><div><small>ORDER OF BATTLE</small><h3>兵团指挥与任务编组</h3></div><button type="button" :disabled="disabled" @click="refresh">刷新</button></header>
-  <p>历史建制保持可追溯，下级单位各自执行、分别记账。临时分合编调整指挥关系；集结仍须下达移动命令。</p>
+  <p>在编制树选择单位后使用下方“实体分合兵”，分出的单位可分别下令；历史建制保持可追溯。临时任务群调整指挥关系，不拆分人员装备。</p>
   <p v-if="loading" role="status">正在读取权威编制…</p><p v-if="error" role="alert" class="error">{{error}}</p><p v-if="notice" role="status">{{notice}}</p>
   <template v-if="data">
    <div class="strengths"><div v-for="side in ['red','blue']" :key="side"><small>{{side==='red'?'红方':'蓝方'}} · {{data.totals[side]?.units}}个执行单位</small><strong>{{data.totals[side]?.current??'未知'}}<span> 人</span></strong><small>累计战斗减员 {{data.totals[side]?.casualties??'未知'}}</small></div></div>
@@ -90,7 +102,9 @@ defineExpose({refresh,mapPoint});
    <div class="force-tree" role="group" :aria-label="data.command_baseline&&hierarchy==='command'?'初始作战指挥树':'历史编制树'">
     <div v-for="{node,depth} in rows" :key="node.id" class="tree-row" :class="node.team" :style="{'--depth':Math.min(depth,5)}" :data-force-node="node.id">
      <input type="checkbox" :aria-label="`选择${node.name}及已部署下级`" :disabled="disabled||!selectable(node).length" :checked="!!selectable(node).length&&selectable(node).every(i=>selected.includes(i))" @change="toggle(node)">
-     <button type="button" class="node-name" @click="target=node.effective_execution_ids.length?node.id:''"><b>{{node.name}}</b><small>{{node.echelon}} · {{displayIds(node).length?`${displayChildren(node).length?'已部署下级汇总 ':''}${displayTotals(node).current??'未知'}人 / ${displayIds(node).length}执行单位`:'参考节点 · 无已部署下级'}}{{node.role==='command'?' · 指挥机关':''}} · 当前可指挥 {{node.effective_execution_ids.length}}</small><small v-if="displayChildren(node).length&&displayIds(node).length">汇总仅含本局已部署下级；未列余部不计入。</small></button>
+     <div class="node-content"><button type="button" class="node-name" @click="target=node.effective_execution_ids.length?node.id:''"><b>{{node.name}}</b><small>{{node.echelon}} · {{displayIds(node).length?`${displayChildren(node).length?'已部署下级汇总 ':''}${displayTotals(node).current??'未知'}人 / ${displayIds(node).length}执行单位`:'参考节点 · 无已部署下级'}}{{node.role==='command'?' · 指挥机关':''}} · 当前可指挥 {{node.effective_execution_ids.length}}</small><small v-if="displayChildren(node).length&&displayIds(node).length">汇总仅含本局已部署下级；未列余部不计入。</small></button>
+      <div v-if="directMembers(node).length" class="direct-members" data-testid="force-direct-members"><button v-for="unit in directMembers(node)" :key="unit.id" type="button" @click="emit('unit-select',{team:unit.team,name:unit.name})">{{unit.name}} · {{unit.personnel?.current??'未知'}}人</button></div>
+     </div>
     </div>
    </div>
    <FormationConversionPanel :session-id="sessionId" :view="data" :selected-ids="selected" :busy="!!disabled" :readonly="readonly" :product-mode="productMode"
@@ -136,5 +150,6 @@ defineExpose({refresh,mapPoint});
 </template>
 
 <style scoped>
+.node-content{flex:1;min-width:0}.direct-members{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0 0 8px}.direct-members button{text-align:left;color:#c4e0df}
 .force-panel{font-size:12px;line-height:1.6;color:#b9cbd3}header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:12px}h3{margin:2px 0;color:#e8eff0;font-size:17px}header small{letter-spacing:2px;color:#91afb9}.strengths{display:flex;gap:24px;padding:14px 0;border-block:1px solid var(--line)}.strengths>div{flex:1}.strengths small,.strengths strong{display:block}.strengths strong{color:#e6d3aa;font-size:23px;font-variant-numeric:tabular-nums}.strengths span{font-size:11px}.filters{display:grid;grid-template-columns:2fr 1fr;gap:8px;margin-block:12px}label{display:block}input:not([type=checkbox]),select,textarea{display:block;width:100%;box-sizing:border-box;margin:4px 0 10px}input[type=checkbox]{accent-color:#6ebfc5}.force-tree{max-height:410px;overflow:auto;border-block:1px solid var(--line)}.tree-row{display:flex;gap:7px;align-items:center;padding:7px 3px 7px calc(var(--depth)*11px + 3px);border-bottom:1px solid #2a414d;border-left:2px solid #588ba4}.tree-row.red{border-left-color:#ab7770}.node-name{display:block;text-align:left;flex:1;border:0;background:transparent;padding:0;color:#dce7e9}.node-name small{display:block;color:#8fa6b2;font-size:10px}.task-row{border-bottom:1px solid var(--line);padding-block:8px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}.task-row label{flex:1}fieldset{border:0;margin:18px 0 0;padding:0}legend{color:#d8e4e7;margin-bottom:10px}button{font-size:11px;margin-block:3px}hr{border:0;border-top:1px solid var(--line);margin-block:16px}.error{color:#efb1a7}input:focus-visible,button:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #82d0d0;outline-offset:2px}
 </style>

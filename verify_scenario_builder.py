@@ -1,14 +1,96 @@
 """Historical reference integrity and staged exercise construction contracts."""
 import copy
+import json
 import os
 from pathlib import Path
 import tempfile
 import unittest
+from types import SimpleNamespace
 from unittest.mock import patch
 from gentactix import combined_arms,missions,scenario_basis
 
 
 class ScenarioBuilderTests(unittest.TestCase):
+    def test_rejected_model_candidate_is_regenerated_and_validated_once(self):
+        from backend import scenario_builder as b, harness_engine as h
+        seed = scenario_basis.exercise_seed('CA-AJ18-v1')
+        context = {'scenario_composer': {'mission_id': 'CA-AJ18-v1', 'seed': seed}}
+        candidate = b.execute_tool(context, {'tool': 'get_scenario_basis'})['configuration']
+        observer = h.RunObserver('test')
+        prompts = []
+        names = ('read_scenario_skill', 'get_scenario_basis', 'validate_scenario_configuration')
+        def run(prompt, *args, **kwargs):
+            prompts.append(prompt)
+            observer.runs.append({'events': [{'type': 'tool/call', 'name': name} for name in names]})
+            return SimpleNamespace(final_response=('{"configuration":' if len(prompts) == 1 else
+                                   json.dumps({'configuration': candidate, 'explanation': 'test'})))
+        with patch.object(h, '_run_brain', side_effect=run):
+            answer, config = b.generate_exercise_candidate('CA-AJ18-v1', 'initial', context, observer)
+        self.assertEqual(len(prompts), 2)
+        self.assertIn('配置未提交', prompts[1])
+        self.assertTrue(observer.runs[0]['rejection'] == 'invalid_scenario_candidate')
+        self.assertEqual(answer['configuration'], candidate)
+        self.assertEqual(config['historical_basis'], seed['configuration']['historical_basis'])
+
+    def test_retries_are_bounded_and_tool_evidence_cannot_cross_attempts(self):
+        from backend import scenario_builder as b, harness_engine as h
+        seed = scenario_basis.exercise_seed('CA-AJ18-v1')
+        context = {'scenario_composer': {'mission_id': 'CA-AJ18-v1', 'seed': seed}}
+        candidate = b.execute_tool(context, {'tool': 'get_scenario_basis'})['configuration']
+        observer = h.RunObserver('test')
+        calls = []
+        def run(*args, **kwargs):
+            names = ('read_scenario_skill', 'get_scenario_basis') if not calls else ('validate_scenario_configuration',)
+            calls.append(names)
+            observer.runs.append({'events': [{'type': 'tool/call', 'name': name} for name in names]})
+            return SimpleNamespace(final_response=json.dumps({'configuration': candidate}))
+        with patch.object(h, '_run_brain', side_effect=run):
+            with self.assertRaisesRegex(ValueError, '调用证据'):
+                b.generate_exercise_candidate('CA-AJ18-v1', 'initial', context, observer)
+        self.assertEqual(len(calls), 2)
+
+    def test_cancelled_scenario_candidate_does_not_call_model(self):
+        from backend import scenario_builder as b, harness_engine as h
+        observer = h.RunObserver('test'); observer.cancel_requested = True
+        with patch.object(h, '_run_brain') as run:
+            with self.assertRaisesRegex(RuntimeError, '取消'):
+                b.generate_exercise_candidate('CA-AJ18-v1', 'initial', {}, observer)
+        run.assert_not_called()
+
+    def test_build_route_never_stages_rejected_candidate(self):
+        from fastapi.testclient import TestClient
+        from backend import main, scenario_builder as b, harness_engine as h
+        seed = scenario_basis.exercise_seed('CA-AJ18-v1')
+        context = {'scenario_composer': {'mission_id': 'CA-AJ18-v1', 'seed': seed}}
+        candidate = b.execute_tool(context, {'tool': 'get_scenario_basis'})['configuration']
+        bad = copy.deepcopy(candidate); bad['unexpected'] = True
+        names = ('read_scenario_skill', 'get_scenario_basis', 'validate_scenario_configuration')
+        calls = []
+        def run(prompt, *args, **kwargs):
+            calls.append(prompt)
+            kwargs['observer'].runs.append({'events': [{'type': 'tool/call', 'name': name} for name in names]})
+            return SimpleNamespace(final_response=json.dumps({'configuration': bad if len(calls) == 1 else candidate}))
+        with patch.object(h, '_run_brain', side_effect=run), patch.object(b, 'stage', return_value={'id': 'validated'}) as stage:
+            result = TestClient(main.app).post('/api/scenarios/build', json={'mission_id': 'CA-AJ18-v1', 'execution_backend': 'narrative'})
+        self.assertEqual(result.status_code, 200, result.text)
+        self.assertEqual(len(calls), 2)
+        stage.assert_called_once()
+        self.assertNotIn('unexpected', stage.call_args.args[1])
+
+    def test_build_route_does_not_echo_invalid_model_response(self):
+        from fastapi.testclient import TestClient
+        from backend import main, scenario_builder as b, harness_engine as h
+        def run(prompt, *args, **kwargs):
+            kwargs['observer'].runs.append({'events': []})
+            return SimpleNamespace(final_response='{"private-model-marker":')
+        with patch.object(h, '_run_brain', side_effect=run) as model, patch.object(b, 'stage') as stage:
+            result = TestClient(main.app).post('/api/scenarios/build', json={'mission_id': 'CA-AJ18-v1', 'execution_backend': 'narrative'})
+        self.assertEqual(result.status_code, 502)
+        self.assertIn('JSON', result.text)
+        self.assertNotIn('private-model-marker', result.text)
+        self.assertEqual(model.call_count, 2)
+        stage.assert_not_called()
+
     def test_all_catalog_seeds_bind_both_sides_without_fabricated_historical_counts(self):
         specs=combined_arms.catalog();self.assertEqual(len(specs),45)
         for spec in specs:

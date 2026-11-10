@@ -10,6 +10,27 @@ PHASE='baozuo_core'
 
 
 class BaozuoInitialTests(unittest.TestCase):
+    def test_immediate_teaching_mode_preserves_estimated_schedule_and_releases_units(self):
+        from gentactix import campaign, commands
+        from tools.qa.baozuo_fixture import inputs
+        source, parameters = inputs()
+        legacy = ho.initial(source, parameters)
+        later = next(u for u in legacy['blue_units'] if campaign.release_seconds(legacy, u) > 0)
+        original_time = campaign.scheduled_time(campaign.definition(legacy), later, world=legacy)
+        parameters = copy.deepcopy(parameters)
+        parameters['campaign']['availability_mode'] = 'immediate'
+        world = ho.initial(source, parameters)
+        unit = next(u for u in world['blue_units'] if u['name'] == later['name'])
+        self.assertEqual(campaign.release_seconds(world, unit), 0)
+        self.assertTrue(world['campaign']['actors'][unit['name']]['active'])
+        self.assertEqual(campaign.scheduled_time(campaign.definition(world), unit, world=world), original_time)
+        session = {'id':'a123456789ab','war_state':world,'turn_count':0,'time_step':'1小时','execution_backend':'afsim'}
+        capability = commands.capabilities(session, unit, 'blue')
+        self.assertIn('move', capability['actions'])
+        self.assertGreater(capability['move_km'], 0)
+        self.assertEqual(capability['arrival']['availability_mode'], 'immediate')
+        self.assertGreater(campaign.release_seconds(legacy, later), 0)
+
     def snapshot(self):return hi.initial(BATTLE,PHASE)['historical_initial']
 
     def test_named_roster_has_no_double_counted_armies_or_early_reserves(self):

@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 
 class AfsimComponentTests(unittest.TestCase):
@@ -26,6 +27,17 @@ class AfsimComponentTests(unittest.TestCase):
             cmd = self.launch.mission_command(layout, ['case.afsim'], platform='linux')
             self.assertEqual(cmd, [str(layout['wine']), str(layout['mission']), 'case.afsim'])
             self.assertTrue(all(Path(cmd[i]).is_relative_to(Path(tmp)) for i in (0, 1)))
+
+    def test_opt_in_linux_runtime_uses_native_mission(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.dict(os.environ, {'GENTACTIX_AFSIM_LINUX_ROOT': tmp}):
+            paths = self.launch.layout(Path(tmp))
+            self.assertEqual(self.launch.mission_command(paths, ['-h'], platform='linux'),
+                             [str(Path(tmp) / 'bin/mission'), '-h'])
+            env = self.launch.execution_env(paths, {'PATH': '/usr/bin', 'DEEPSEEK_API_KEY': 'private'}, platform='linux')
+            self.assertNotIn('DEEPSEEK_API_KEY', env)
+            self.assertNotIn('WINEPREFIX', env)
+            self.assertIn(str(Path(tmp) / 'bin/lib'), env['LD_LIBRARY_PATH'])
+            self.assertEqual(self.launch.status(paths, platform='linux')['mode'], 'native-linux')
 
     def test_environment_is_detached_and_stores_state_inside_project(self):
         with tempfile.TemporaryDirectory() as tmp:

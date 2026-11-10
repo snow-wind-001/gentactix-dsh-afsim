@@ -40,6 +40,11 @@ function pickForceTarget(){forcePicking.value=true;commandCenter.value?.close();
 function mapCommandTarget(point:MapPoint){if(forcePicking.value){forcePanel.value?.mapPoint(point);forcePicking.value=false;workbench.value?.openAnalysis('forces');}else commandCenter.value?.mapTarget(point);}
 function selectMapUnit(team:string,name:string){workbench.value?.focusMap();if(strictReplay.value)selectedUnit.value={team,name};else commandCenter.value?.select(team,name);}
 async function forceChanged(){await commandCenter.value?.refresh();}
+async function openFormation(unitId:string){
+ workbench.value?.openAnalysis('forces');
+ await nextTick();
+ await forcePanel.value?.selectForConversion(unitId);
+}
 async function submitFormation(sid:string,request:FormationConversionCommit){
  if(busy.value)throw Error('当前操作尚未完成，请稍后使用原请求重试');
  busy.value='正在保存实体编组…';
@@ -595,7 +600,7 @@ function flagLine(f: NumericFlag): string {
           @unit-select="selectMapUnit" @map-target="mapCommandTarget" />
         <CommandCenter v-if="snap && !strictReplay" ref="commandCenter" :session-id="sessionId" :snap="snap" :busy="!!busy"
           @preview="commandPreview = $event" @selected="selectedUnit = $event" @picking="commandPicking = $event"
-          @busy="setChildBusy" @snapshot="commandSnapshot" @queue-changed="forcePanel?.refresh()" @opened="value => { if (value) workbench?.focusMap(); }" />
+          @busy="setChildBusy" @snapshot="commandSnapshot" @queue-changed="forcePanel?.refresh()" @open-formation="openFormation" @opened="value => { if (value) workbench?.focusMap(); }" />
         <aside v-if="strictReplay&&selectedUnit&&snap?.war_state" class="replay-unit-inspector" aria-label="史料单位参数"><header><b>史料单位 · 只读</b><button type="button" aria-label="关闭单位资料" @click="selectedUnit=null">×</button></header><UnitInspector :unit="replaySelectedUnit" :symbol-id="replaySelectedSymbol" :world="snap.war_state" :team="selectedUnit.team" :turn="snap.turn_count" read-only /></aside>
       </div>
       <div class="idle" v-else>

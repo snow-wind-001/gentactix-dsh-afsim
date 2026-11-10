@@ -22,6 +22,7 @@ try{
   await page.getByRole('tab',{name:/已保存战局/}).click();await page.locator(`[data-session-id="${branch.session_id}"] .open-battle`).click();
   await page.getByTestId('analysis-tab-forces').click();const panel=page.getByTestId('formation-conversion');
   await panel.getByLabel('实体转换单位',{exact:true}).selectOption([parent.id]);
+  await panel.getByLabel('分队身份',{exact:true}).selectOption('historical');
   await panel.getByLabel('实体转换依据',{exact:true}).fill('有来源的74军下属51、58师；4000/4000/2000仅QA分配估计，不是历史兵额');
   await panel.getByLabel('分队1历史身份',{exact:true}).waitFor({timeout:10000});
   check(await panel.getByLabel('分队1名称',{exact:true}).count()===0,engine+' historical mode offers source identities rather than free names');

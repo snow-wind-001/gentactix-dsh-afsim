@@ -62,6 +62,13 @@ class SettingsTests(unittest.TestCase):
         self.assertEqual(provider_overlay('https://api.deepseek.com/anthropic', 'deepseek-flash', 262144, 65536), [])
         self.assertEqual(provider_overlay('https://proxy.example/anthropic', 'deepseek-flash', 262144, 65536), [])
 
+    def test_strata_efforts_are_mapped_to_supported_values(self):
+        from backend.llm_transport import provider_overlay
+        with patch.dict(os.environ, {'GENTACTIX_STRATA_COMPAT': '1'}):
+            rows = provider_overlay('http://127.0.0.1:8080/v1', 'local-model', 262144, 65536)
+        model = rows[1]['insert'][0]['config']['providers']['deepseek-official']['models'][0]
+        self.assertEqual(model['reasoningEfforts'], {'low': 'low', 'medium': 'low', 'high': 'high', 'xhigh': 'max'})
+
     def test_bad_endpoint_and_budget_rejected(self):
         for url in ('file:///tmp/model', 'https://user:pass@example.org/v1', 'https://example.org/v1?key=test'):
             value = config(); value['base_url'] = url

@@ -17,6 +17,8 @@ const eligible=computed(()=>units.value?.units.filter(u=>u.present&&u.controllab
 const source=computed(()=>units.value?.units.find(u=>u.id===ids.value[0]));
 const committed=computed(()=>ids.value.length===1?source.value?.personnel?.committed:undefined);
 const historical=computed(()=>props.productMode!=='synthetic');
+const splitMode=ref<'estimated'|'historical'>('estimated');
+const namedHistorical=computed(()=>historical.value&&splitMode.value==='historical');
 const sourceNode=computed(()=>{
  const id=ids.value.length===1?source.value?.id:undefined;
  const candidates=props.view.nodes.filter(n=>id&&n.execution_ids.includes(id)&&
@@ -26,15 +28,15 @@ const sourceNode=computed(()=>{
 const historicalChildren=computed(()=>props.view.nodes.filter(n=>n.parent_id===sourceNode.value?.id&&
  n.presence==='reported_present'&&['formation','support'].includes(n.role)));
 const historicalIds=computed(()=>allocations.value.map(a=>a.historical_unit_id));
-const needsResidual=computed(()=>historical.value&&sourceNode.value&&
+const needsResidual=computed(()=>namedHistorical.value&&sourceNode.value&&
  (sourceNode.value.children_coverage?.status!=='complete'||sourceNode.value.children.some(id=>!historicalIds.value.includes(id)))&&
  !historicalIds.value.includes('__residual__'));
-const canAdd=computed(()=>allocations.value.length<32&&!!committed.value&&(!historical.value||historicalChildren.value.length>0&&
+const canAdd=computed(()=>allocations.value.length<32&&!!committed.value&&(!namedHistorical.value||historicalChildren.value.length>0&&
  (historicalChildren.value.some(n=>!historicalIds.value.includes(n.id))||!historicalIds.value.includes('__residual__'))));
 const locked=computed(()=>props.busy||working.value||!!pending.value||props.readonly);
 const request=computed<FormationConversionRequest>(()=>({expected_turn:props.view.turn,revision:props.view.command_revision,
  world_version:props.view.world_version,organization_revision:props.view.revision,kind:kind.value,unit_ids:[...ids.value],
- ...(kind.value==='split'?{allocations:allocations.value.map(a=>historical.value?
+ ...(kind.value==='split'?{allocations:allocations.value.map(a=>namedHistorical.value?
   {id:a.id,historical_unit_id:a.historical_unit_id==='__residual__'?null:a.historical_unit_id??null,committed:a.committed}:
   {id:a.id,label:a.label,committed:a.committed})}:{}),assumption:assumption.value.trim()}));
 const fingerprint=computed(()=>JSON.stringify(request.value));
@@ -42,7 +44,7 @@ const duplicateLabels=computed(()=>new Set(allocations.value.map(a=>a.label.trim
 const valid=computed(()=>assumption.value.trim()&&ids.value.every(id=>eligible.value.some(u=>u.id===id))&&
  (kind.value==='merge'?ids.value.length>=2&&ids.value.length<=32:ids.value.length===1&&allocations.value.length>=2&&allocations.value.length<=32&&
  allocations.value.every(a=>Number.isInteger(a.committed)&&a.committed>0)&&
- (historical.value?!!sourceNode.value&&!needsResidual.value&&new Set(historicalIds.value).size===allocations.value.length&&
+ (namedHistorical.value?!!sourceNode.value&&!needsResidual.value&&new Set(historicalIds.value).size===allocations.value.length&&
   allocations.value.every(a=>a.historical_unit_id==='__residual__'||historicalChildren.value.some(n=>n.id===a.historical_unit_id)):
   !duplicateLabels.value&&allocations.value.every(a=>a.label.trim()&&a.label.length<=40))&&
  allocations.value.reduce((n,a)=>n+a.committed,0)===committed.value));
@@ -55,10 +57,10 @@ const stockLabels:Record<string,string>={fuel_liters:'燃油（升）',spares:'�
 const allocated=computed(()=>allocations.value.reduce((n,a)=>n+(Number.isFinite(a.committed)?a.committed:0),0));
 function invalidate(){if(!pending.value){preview.value=null;basis.value=null;receipt.value=null;notice.value='';}}
 watch(fingerprint,invalidate);
-watch(()=>JSON.stringify([kind.value,ids.value,committed.value,props.productMode,sourceNode.value?.id,historicalChildren.value.map(n=>n.id)]),()=>{
+watch(()=>JSON.stringify([kind.value,ids.value,committed.value,props.productMode,splitMode.value,sourceNode.value?.id,historicalChildren.value.map(n=>n.id)]),()=>{
  if(pending.value||kind.value!=='split')return;
  const n=committed.value;
- if(typeof n==='number'&&n>=2&&(!historical.value||historicalChildren.value.length)){part=2;
+ if(typeof n==='number'&&n>=2&&(!namedHistorical.value||historicalChildren.value.length)){part=2;
   allocations.value=[{id:'p1',label:'甲分队（估计）',historical_unit_id:historicalChildren.value[0]?.id,committed:Math.floor(n/2)},
    {id:'p2',label:'乙分队（估计）',historical_unit_id:'__residual__',committed:n-Math.floor(n/2)}];}
  else allocations.value=[];
@@ -84,7 +86,7 @@ watch(()=>props.sessionId,()=>{
 onBeforeUnmount(()=>{disposed=true;generation++;});
 function addPart(){
  if(!canAdd.value)return;
- if(historical.value){
+ if(namedHistorical.value){
   const next=historicalChildren.value.find(n=>!historicalIds.value.includes(n.id));
   allocations.value.push({id:'p'+(++part),label:next?.name??'未分配余部（估计）',historical_unit_id:next?.id??'__residual__',committed:1});return;
  }
@@ -133,7 +135,7 @@ async function commit(){
  <section class="conversion" data-testid="formation-conversion" aria-label="运行中实体分合兵">
   <h4>实体分合兵</h4>
   <p>改变当前执行单位，人员、装备与库存随之交接。临时任务群仅调整指挥关系，两者分别操作；估计分队不代表新增历史番号。</p>
-  <p v-if="historical">历史战局仅可选择冻结资料中本阶段在场的直接下级。投入分配仍须注明估计依据，不代表史实兵额；覆盖缺载时保留余部。</p>
+  <p v-if="historical">可创建归属于原单位的计算分队，或选择来源已确认的下级；计算分队是教学估计，不是新增历史番号。</p>
   <p v-if="error" role="alert" class="error">{{error}}</p><p v-if="notice" role="status">{{notice}}</p>
   <p v-if="working" role="status">{{pending?'正在核对并保存编组…':'正在核对分配与交接…'}}</p>
   <fieldset :disabled="!!locked">
@@ -141,12 +143,13 @@ async function commit(){
    <label>实体转换单位<select v-model="ids" multiple size="5" aria-label="实体转换单位"><option v-for="u in eligible" :key="u.id" :value="u.id">{{u.team==='red'?'红':'蓝'}} · {{u.name}} · 投入{{u.personnel?.committed??'未知'}}／可用{{u.personnel?.current??'未知'}}人</option></select></label>
    <p>按Ctrl／Command可选择多个单位；也可先勾选上方编制树。本次选择{{ids.length}}个，合兵最多32个。</p>
    <template v-if="kind==='split'">
+    <label v-if="historical">分队身份<select v-model="splitMode" aria-label="分队身份"><option value="estimated">计算分队（估计，可分别下令）</option><option value="historical">史料确认的直接下级</option></select></label>
     <p>原投入{{committed??'未登记'}}人，已分配{{allocated}}人；合计必须相等，伤损不补满。</p>
-    <p v-if="historical&&!historicalChildren.length">当前冻结资料未载本阶段可用的直接下级，不能虚构历史番号分兵。可先补充并验证新版资料。</p>
+    <p v-if="namedHistorical&&!historicalChildren.length">当前冻结资料未载本阶段可用的直接下级，可选择计算分队，不作为史实名义。</p>
     <p v-if="needsResidual" role="alert" class="error">下级覆盖未证明完整，须保留未分配余部，不能将全部兵力假定为已列下级。</p>
-    <p v-if="!historical&&duplicateLabels" role="alert" class="error">分队名称不可重复，请为每个执行身份设置不同名称。</p>
+    <p v-if="!namedHistorical&&duplicateLabels" role="alert" class="error">分队名称不可重复，请为每个执行身份设置不同名称。</p>
     <div v-for="(row,index) in allocations" :key="row.id" class="allocation" data-testid="formation-allocation">
-     <label v-if="historical">分队{{index+1}}历史身份<select v-model="row.historical_unit_id" :aria-label="`分队${index+1}历史身份`">
+     <label v-if="namedHistorical">分队{{index+1}}历史身份<select v-model="row.historical_unit_id" :aria-label="`分队${index+1}历史身份`">
       <option v-for="child in historicalChildren" :key="child.id" :value="child.id" :disabled="allocations.some(other=>other.id!==row.id&&other.historical_unit_id===child.id)">{{child.name}} · 本阶段在场</option>
       <option value="__residual__" :disabled="allocations.some(other=>other.id!==row.id&&other.historical_unit_id==='__residual__')">未分配余部（估计）</option>
      </select></label>

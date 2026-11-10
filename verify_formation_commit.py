@@ -237,4 +237,39 @@ class ConversionCommitTests(unittest.TestCase):
             finally:main._OP_LOCK.release()
 
 
+class HistoricalEstimatedCommitTests(unittest.TestCase):
+    def test_estimated_split_commits_as_distinct_units_under_source_parent(self):
+        from backend import formation_commit
+        from tools.qa.formation_ownership_fixture import historical_parent_world
+        world=historical_parent_world();definition=world['mission']['definition']
+        session=main._new_session('历史计算分队事务验证',definition['time_step'],False,definition['battle'],False,False,agent_mode='native')
+        session.update(war_state=world,mission_id=world['mission']['id'],historical_definition=definition,
+            product_mode='historical',simulation_mode='open',execution_backend='narrative')
+        session['command_state']=commands.replace_queue(session,[],control_team='red',director=True,no_fire=False,intent='QA')
+        view=commands.view(session);unit=next(u for u in view['units'] if u['name']=='第74军')
+        total=unit['personnel']['committed']
+        args=dict(kind='split',unit_ids=[unit['id']],allocations=[dict(id='a',label='甲计算团',committed=total//2),
+            dict(id='b',label='乙计算团',committed=total-total//2)],assumption='教学计算分队，不是历史番号')
+        preview=conversion.observation(session,args)
+        request=dict(**args,expected_turn=session['turn_count'],revision=view['revision'],world_version=view['world_version'],
+            organization_revision=force_organization.state(session)['revision'],view_version=preview['view_version'],commit_id='e'*32)
+        with tempfile.TemporaryDirectory() as tmp,patch.dict(os.environ,{'GENTACTIX_SESSION_DIR':tmp+'/sessions',
+                'GENTACTIX_TRACE_DIR':tmp+'/traces','GENTACTIX_ROLE_INDEX':tmp+'/roles.json'}):
+            session_store.save(session)
+            result=formation_commit.commit(session,request)
+            children=result['current_command_map'][unit['id']]
+            self.assertEqual(len(children),2)
+            roster=commands.view(session)['units']
+            self.assertTrue(all(any(u['id']==identity and u['controllable'] for u in roster) for identity in children))
+            node=next(n for n in force_organization.view(session)['nodes'] if n['id']=='ww2.cn.army74')
+            self.assertEqual(node['totals']['committed'],total)
+            self.assertEqual(node['totals']['units'],2)
+            session_store.validate(session)
+            self.assertFalse(session_store.load_all()[1])
+            queue=commands.replace_queue(session,[dict(unit_id=children[0],action='hold',duration='next'),
+                dict(unit_id=children[1],action='recon',duration='next')],control_team='red',director=True,no_fire=False,intent='QA')
+            self.assertEqual({order['action'] for order in queue['orders']},{'hold','recon'})
+            self.assertEqual({order['unit_id'] for order in queue['orders']},set(children))
+
+
 if __name__=='__main__':unittest.main(verbosity=2)
